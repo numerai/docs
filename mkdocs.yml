@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: Numerai Documentation
+theme:
+  name: 'material'
+  palette:
+    primary: 'grey'
+    accent: 'grey'
