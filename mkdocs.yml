@@ -4,3 +4,5 @@ theme:
   palette:
     primary: 'grey'
     accent: 'grey'
+extra_css:
+  - 'stylesheets/extra.css' 
