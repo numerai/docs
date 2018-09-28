@@ -31,7 +31,7 @@ Numeraire(NMR) is a cryptocurrency rewarded to data scientists who compete in a 
 ## Account
 - **How do I withdraw earnings ?**  
 ![WithdrawNMRUSD](../img/withdrawWallet.jpg)  
- When logged in, see the "WITHDRAW/DEPOSIT" link at the bottom of your user information control panel.
+ When logged in, see the "WITHDRAW/DEPOSIT" link at the bottom of your user wallet panel.
  <br/>
 
 - **How do I get an ether wallet to withdraw earnings into?  How do I sell ether ?**
@@ -120,7 +120,6 @@ No.  The initial distribution of NMR has already been given out to all of Numera
 - **What is `-ln(0.5)` used in the [whitepaper](https://numer.ai/whitepaper.pdf) ?**
 <br/>
 `-ln(0.5) = 0.6931471805599453...`  This is the logloss you'd expect to get from making completely random guesses.  A logloss lower than this is better than random guessing.
-
 
 <br />
 <br />
