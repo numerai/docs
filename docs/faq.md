@@ -3,22 +3,30 @@ This is a FAQ for common questions about Numerai.  If you see any mistakes or ha
 Numeraire(NMR) is a cryptocurrency rewarded to data scientists who compete in a tournament to develop algorithms to predict and profit off of market trends. It is currently tradeable on Bittrex.com.
 
 ## The Tournament
-- How many tournaments are there?
-  - There are currently 5 tournaments
-- How long is each round of the tournament?
-  - 1 week.
-- When are round earnings paid out?
-  - Weekly, 4 weeks after the start of the round.
-- Does everybody get the same data?
-  - Yes, the dataset download link is the same for everybody.  Everyone gets the same data.
-- How much USD or NMR is awarded?
-  - Check out the https://numer.ai/rounds to see the prize pools for current round.
-- How are the weekly payouts determined?
-  - See the Payouts section of the [Tutorial](https://numer.ai/learn).  
-- Does Numerai consider my best submission or only my latest submission?
-  - Numerai uses only the latest submission.
-- Which of my submissions are considered for payout?
-  - Only the last submission made by an account in a given round is considered for earnings.
+- **How many tournaments are there ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;There are currently 5 tournaments.
+- **How long is each round of the tournament ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;1 week.
+- **When are round earnings paid out ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;Weekly, 4 weeks after the start of the round.  
+- **Does everybody get the same data ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;Yes, the dataset download link is the same for everybody.  Everyone gets the same data.
+- **How much USD or NMR is awarded ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;Check out the https://numer.ai/rounds to see the prize pools for current round.
+- **How are the weekly payouts determined ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;See the Payouts section of the [Tutorial](https://numer.ai/learn).  
+- **Does Numerai consider my best submission or only my latest submission?**
+<br/>
+  &nbsp;&nbsp;&nbsp;Numerai uses only the latest submission.
+- **Which of my submissions are considered for payout ?**
+<br/>
+  &nbsp;&nbsp;&nbsp;Only the last submission made by an account in a given round is considered for earnings.
 
 ## Account
 - How do I withdraw earnings?
