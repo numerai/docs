@@ -12,7 +12,7 @@
 
   [7b03fd8b]: https://www.mkdocs.org "mkdocs"
 
-  
+
 -  `pip install mkdocs`
 - `mkdocs serve`
 
@@ -25,3 +25,5 @@ Publish : `mkdocs gh-deploy`
 - Material for mkDocs : [https://squidfunk.github.io/mkdocs-material/][63c429fa]
 
   [63c429fa]: https://squidfunk.github.io/mkdocs-material/ "Material for mkdocs"
+
+- Tables : [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)

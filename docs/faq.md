@@ -27,6 +27,9 @@ Numeraire(NMR) is a cryptocurrency rewarded to data scientists who compete in a 
 - **Which of my submissions are considered for payout ?**
 <br/>
   Only the last submission made by an account in a given round is considered for earnings.
+- **Why did you change the payouts from X to Y ?**
+<br/>
+  The payout structure has changed and will probably continue to change and evolve in response to model performance and the tournament rules, which in turn are an interplay in between users behavior, and said tournament rules.
 
 ## Account
 - **How do I withdraw earnings ?**  
@@ -52,6 +55,25 @@ Bittrex, Shapeshift, Airswap, 0x, Upbit, DDEX, Paradex
 - **Is there a telegram ?**
 <br/>
 Yes [https://t.me/joinchat/FluX1UoXVyd08zhrgwZLqQ](https://t.me/joinchat/FluX1UoXVyd08zhrgwZLqQ)
+- **What is the current supply of NMR ?, How much is under Numerai's control ?**
+<br/>
+NMR supply and distribution changes often, for the latest numbers [please consult the contract on the blockchain](https://etherscan.io/address/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671#readContract).
+
+    The following table summarizes publicly available information as of August 13th 2018 :
+
+    | Total Supply                     |   | 6,362,843 |
+    |----------------------------------|---|-----------|
+    | Mintable                         |   | 1,554,219 |
+    | Weekly Disbursement              |   | 96,154    |
+    | Total Minted                     |   | 6,433,454 |
+    | Locked                           |   | 3,000,000 |
+    | Burned (Minted -supply)          |   | (70,611)  |
+    | Numerai (known wallet)           |   | 316,467   |
+    | Under control (mintable+locked+Numerai Wallet)                    |   | 4,870,686 |
+
+
+
+
 
 ## Data
 - **What are the features and ids in the dataset ?**
