@@ -13,7 +13,7 @@ If you have decided to participate or have doubts as to how to, here's a detaile
 
 After you have created an account and logged in, the latest data can be found in the [Tournament Page](https://numer.ai/rounds) :  
 
-![downloadData](../img/downloadData.jpg)
+![downloadData](img/downloadData.jpg)
 
 
 !!! cite "Note:"
