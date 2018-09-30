@@ -26,4 +26,9 @@ Publish : `mkdocs gh-deploy`
 
   [63c429fa]: https://squidfunk.github.io/mkdocs-material/ "Material for mkdocs"
 
+
+- Extensions:
+- [https://squidfunk.github.io/mkdocs-material/extensions/admonition/](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
+- [https://facelessuser.github.io/pymdown-extensions/](https://facelessuser.github.io/pymdown-extensions/)
+
 - Tables : [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
