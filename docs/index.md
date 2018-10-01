@@ -43,6 +43,34 @@ numerox_example.py
 
 ### 2. Create Predictions
 
+Once you have downloaded the dataset and familiarized yourself with it, you can start creating your own models and generating predictions.
+
+A good place to start is the **`example_model.py`** or **`example_model.r`** files which use a [logistic regression classifier](https://en.wikipedia.org/wiki/Logistic_regression) as a starting point.
+
+
+!!! warning "Targets"
+
+    Be aware of the different targets and submit in the correct file format to the correct tournament, for example ( _in python_ ):
+
+    **Training:**
+    ``` python
+    Y_train = training_data["target_ken"]        
+    ```
+    **Predicting:**
+    ``` python
+    y_prediction = model.predict_probabilities(validation["features_target_ken"])    
+    ```
+    **Submission File: predictionsKen.csv**
+    ```csv
+    id,probability_ken
+    nc89137dfd782464,0.4942169804417248
+    n5f7abc0a8646441,0.5040417878616712
+    n0268070abecb419,0.5119778573460162
+    ndaea9db3f8384dc,0.5041644642593843... etc
+
+    ```
+    **Note:** You can of course use targets from different tournaments as part of your models, check the example files for full examples and other relevant information.
+
 
 ### 3. Upload Data
 ### 4. Stake

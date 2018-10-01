@@ -397,6 +397,26 @@ numerox_example.py
 </ul>
 </details>
 <h3 id="2-create-predictions">2. Create Predictions<a class="headerlink" href="#2-create-predictions" title="Permanent link">&para;</a></h3>
+<p>Once you have downloaded the dataset and familiarized yourself with it, you can start creating your own models and generating predictions.</p>
+<p>A good place to start is the <strong><code>example_model.py</code></strong> or <strong><code>example_model.r</code></strong> files which use a <a href="https://en.wikipedia.org/wiki/Logistic_regression">logistic regression classifier</a> as a starting point.</p>
+<div class="admonition warning">
+<p class="admonition-title">Targets</p>
+<p>Be aware of the different targets and submit in the correct file format to the correct tournament, for example ( <em>in python</em> ):</p>
+<p><strong>Training:</strong>
+<div class="codehilite"><pre><span></span><span class="n">Y_train</span> <span class="o">=</span> <span class="n">training_data</span><span class="p">[</span><span class="s2">&quot;target_ken&quot;</span><span class="p">]</span>        
+</pre></div>
+<strong>Predicting:</strong>
+<div class="codehilite"><pre><span></span><span class="n">y_prediction</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_probabilities</span><span class="p">(</span><span class="n">validation</span><span class="p">[</span><span class="s2">&quot;features_target_ken&quot;</span><span class="p">])</span>    
+</pre></div>
+<strong>Submission File: predictionsKen.csv</strong>
+<div class="codehilite"><pre><span></span>id,probability_ken
+nc89137dfd782464,0.4942169804417248
+n5f7abc0a8646441,0.5040417878616712
+n0268070abecb419,0.5119778573460162
+ndaea9db3f8384dc,0.5041644642593843... etc
+</pre></div>
+<strong>Note:</strong> You can of course use targets from different tournaments as part of your models, check the example files for full examples and other relevant information.</p>
+</div>
 <h3 id="3-upload-data">3. Upload Data<a class="headerlink" href="#3-upload-data" title="Permanent link">&para;</a></h3>
 <h3 id="4-stake">4. Stake<a class="headerlink" href="#4-stake" title="Permanent link">&para;</a></h3>
 <h3 id="5-evaluate">5. Evaluate<a class="headerlink" href="#5-evaluate" title="Permanent link">&para;</a></h3>
