@@ -435,7 +435,7 @@ ndaea9db3f8384dc,0.5041644642593843... etc
 <p><img alt="uploadPredictions" src="img/uploadPredictions.jpg" /></p>
 <p>Make sure you upload the correct prediction targets with the right file format to the correct tournament or your submission might fail.</p>
 <p>You can call your submission file anything you like, but the id's and column names need to be the correct ones, so for instance if you wanted to upload to the Bernie tournament your file, let's
-say you named it <code>predictions_bernie.csv</code> should have matching id's <code>numerai_tournament_data.csv</code> and the correct column names :</p>
+say you named it <code>predictions_bernie.csv</code>, it should have matching id's with our provided dataset:  <code>numerai_tournament_data.csv</code> and the correct column names :</p>
 <div class="codehilite"><pre><span></span>id,probability_bernie
 nc89137dfd782464,0.49348768765828444
 n5f7abc0a8646441,0.5161787424278924
@@ -444,11 +444,22 @@ ndaea9db3f8384dc,0.5032981123372411... etc
 </pre></div>
 
 <h3 id="4-validate-your-predictions">4. Validate your predictions<a class="headerlink" href="#4-validate-your-predictions" title="Permanent link">&para;</a></h3>
-<p>Upon successfully uploading your predictions,they will be automatically validated and your submission file name will appear.</p>
+<p>Upon successfully uploading your predictions, they will be automatically validated and your submission file name will appear.</p>
 <p><img alt="uploadedPredictions" src="img/uploadedPredictions.jpg" /></p>
 <p>Once validated ( you might need to refresh the page ) your submission score will appear :</p>
 <p><img alt="validatedPredictions" src="img/validatedPredictions.jpg" /></p>
 <h3 id="5-stake">5. Stake<a class="headerlink" href="#5-stake" title="Permanent link">&para;</a></h3>
+<p>You can only stake when:</p>
+<p><strong>1.</strong> Staking is open ( <em>currently the first 2 days after the round / tournament opens</em> )
+<br/>
+<strong>2.</strong> Your model has achieved certain metrics.</p>
+<p>The UI will display your current stake eligibility along with the required metrics and your score:</p>
+<p align="center">
+  <img src="img/stakeEligibility.jpg">
+</p>
+
+<p>You can then stake via the staking screen:</p>
+<p><img alt="stakingModal" src="img/StakingModal.jpg" /></p>
 <h3 id="6-results">6. Results<a class="headerlink" href="#6-results" title="Permanent link">&para;</a></h3>
                 
                   

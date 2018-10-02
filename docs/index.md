@@ -79,7 +79,7 @@ A good place to start is the **`example_model.py`** or **`example_model.r`** fil
 Make sure you upload the correct prediction targets with the right file format to the correct tournament or your submission might fail.
 
 You can call your submission file anything you like, but the id's and column names need to be the correct ones, so for instance if you wanted to upload to the Bernie tournament your file, let's
-say you named it `predictions_bernie.csv` should have matching id's `numerai_tournament_data.csv` and the correct column names :
+say you named it `predictions_bernie.csv`, it should have matching id's with our provided dataset:  `numerai_tournament_data.csv` and the correct column names :
 
 ``` csv
 id,probability_bernie
@@ -92,7 +92,7 @@ ndaea9db3f8384dc,0.5032981123372411... etc
 
 ### 4. Validate your predictions
 
-Upon successfully uploading your predictions,they will be automatically validated and your submission file name will appear.
+Upon successfully uploading your predictions, they will be automatically validated and your submission file name will appear.
 
 ![uploadedPredictions](img/uploadedPredictions.jpg)
 
@@ -101,6 +101,33 @@ Once validated ( you might need to refresh the page ) your submission score will
 ![validatedPredictions](img/validatedPredictions.jpg)
 
 ### 5. Stake
+
+You can only stake when:
+
+**1.** Staking is open ( _currently the first 2 days after the round / tournament opens_ )
+<br/>
+**2.** Your model has achieved certain metrics.
+
+The UI will display your current stake eligibility along with the required metrics and your score:
+
+<p align="center">
+  <img src="img/stakeEligibility.jpg">
+</p>
+
+
+You can then stake via the staking screen:
+
+![stakingModal](img/StakingModal.jpg)
+
+
+
+
+
+
+
+
+
+
 
 
 ### 6. Results
