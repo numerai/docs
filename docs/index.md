@@ -1,6 +1,6 @@
 # Getting Started
 
-- For an overview please visit our LEARN page: [numer.ai/learn](https://numer.ai/learn).
+- For an overview of the project please visit our LEARN page: [numer.ai/learn](https://numer.ai/learn).
 <br/>
 
 ## Step by step.
@@ -72,6 +72,35 @@ A good place to start is the **`example_model.py`** or **`example_model.r`** fil
     **Note:** You can of course use targets from different tournaments as part of your models, check the example files for full examples and other relevant information.
 
 
-### 3. Upload Data
-### 4. Stake
-### 5. Evaluate
+### 3. Upload your predictions.
+
+![uploadPredictions](img/uploadPredictions.jpg)
+
+Make sure you upload the correct prediction targets with the right file format to the correct tournament or your submission might fail.
+
+You can call your submission file anything you like, but the id's and column names need to be the correct ones, so for instance if you wanted to upload to the Bernie tournament your file, let's
+say you named it `predictions_bernie.csv` should have matching id's `numerai_tournament_data.csv` and the correct column names :
+
+``` csv
+id,probability_bernie
+nc89137dfd782464,0.49348768765828444
+n5f7abc0a8646441,0.5161787424278924
+n0268070abecb419,0.5158960837554011
+ndaea9db3f8384dc,0.5032981123372411... etc
+```
+
+
+### 4. Validate your predictions
+
+Upon successfully uploading your predictions,they will be automatically validated and your submission file name will appear.
+
+![uploadedPredictions](img/uploadedPredictions.jpg)
+
+Once validated ( you might need to refresh the page ) your submission score will appear :
+
+![validatedPredictions](img/validatedPredictions.jpg)
+
+### 5. Stake
+
+
+### 6. Results

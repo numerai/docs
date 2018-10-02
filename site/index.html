@@ -227,22 +227,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-upload-data" title="3. Upload Data" class="md-nav__link">
-    3. Upload Data
+  <a href="#3-upload-your-predictions" title="3. Upload your predictions." class="md-nav__link">
+    3. Upload your predictions.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-stake" title="4. Stake" class="md-nav__link">
-    4. Stake
+  <a href="#4-validate-your-predictions" title="4. Validate your predictions" class="md-nav__link">
+    4. Validate your predictions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-evaluate" title="5. Evaluate" class="md-nav__link">
-    5. Evaluate
+  <a href="#5-stake" title="5. Stake" class="md-nav__link">
+    5. Stake
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-results" title="6. Results" class="md-nav__link">
+    6. Results
   </a>
   
 </li>
@@ -318,22 +325,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-upload-data" title="3. Upload Data" class="md-nav__link">
-    3. Upload Data
+  <a href="#3-upload-your-predictions" title="3. Upload your predictions." class="md-nav__link">
+    3. Upload your predictions.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-stake" title="4. Stake" class="md-nav__link">
-    4. Stake
+  <a href="#4-validate-your-predictions" title="4. Validate your predictions" class="md-nav__link">
+    4. Validate your predictions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-evaluate" title="5. Evaluate" class="md-nav__link">
-    5. Evaluate
+  <a href="#5-stake" title="5. Stake" class="md-nav__link">
+    5. Stake
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-results" title="6. Results" class="md-nav__link">
+    6. Results
   </a>
   
 </li>
@@ -362,7 +376,7 @@
                 
                 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
 <ul>
-<li>For an overview please visit our LEARN page: <a href="https://numer.ai/learn">numer.ai/learn</a>.
+<li>For an overview of the project please visit our LEARN page: <a href="https://numer.ai/learn">numer.ai/learn</a>.
 <br/></li>
 </ul>
 <h2 id="step-by-step">Step by step.<a class="headerlink" href="#step-by-step" title="Permanent link">&para;</a></h2>
@@ -417,9 +431,25 @@ ndaea9db3f8384dc,0.5041644642593843... etc
 </pre></div>
 <strong>Note:</strong> You can of course use targets from different tournaments as part of your models, check the example files for full examples and other relevant information.</p>
 </div>
-<h3 id="3-upload-data">3. Upload Data<a class="headerlink" href="#3-upload-data" title="Permanent link">&para;</a></h3>
-<h3 id="4-stake">4. Stake<a class="headerlink" href="#4-stake" title="Permanent link">&para;</a></h3>
-<h3 id="5-evaluate">5. Evaluate<a class="headerlink" href="#5-evaluate" title="Permanent link">&para;</a></h3>
+<h3 id="3-upload-your-predictions">3. Upload your predictions.<a class="headerlink" href="#3-upload-your-predictions" title="Permanent link">&para;</a></h3>
+<p><img alt="uploadPredictions" src="img/uploadPredictions.jpg" /></p>
+<p>Make sure you upload the correct prediction targets with the right file format to the correct tournament or your submission might fail.</p>
+<p>You can call your submission file anything you like, but the id's and column names need to be the correct ones, so for instance if you wanted to upload to the Bernie tournament your file, let's
+say you named it <code>predictions_bernie.csv</code> should have matching id's <code>numerai_tournament_data.csv</code> and the correct column names :</p>
+<div class="codehilite"><pre><span></span>id,probability_bernie
+nc89137dfd782464,0.49348768765828444
+n5f7abc0a8646441,0.5161787424278924
+n0268070abecb419,0.5158960837554011
+ndaea9db3f8384dc,0.5032981123372411... etc
+</pre></div>
+
+<h3 id="4-validate-your-predictions">4. Validate your predictions<a class="headerlink" href="#4-validate-your-predictions" title="Permanent link">&para;</a></h3>
+<p>Upon successfully uploading your predictions,they will be automatically validated and your submission file name will appear.</p>
+<p><img alt="uploadedPredictions" src="img/uploadedPredictions.jpg" /></p>
+<p>Once validated ( you might need to refresh the page ) your submission score will appear :</p>
+<p><img alt="validatedPredictions" src="img/validatedPredictions.jpg" /></p>
+<h3 id="5-stake">5. Stake<a class="headerlink" href="#5-stake" title="Permanent link">&para;</a></h3>
+<h3 id="6-results">6. Results<a class="headerlink" href="#6-results" title="Permanent link">&para;</a></h3>
                 
                   
                 
