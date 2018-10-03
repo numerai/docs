@@ -114,20 +114,25 @@ The UI will display your current stake eligibility along with the required metri
   <img src="img/stakeEligibility.jpg">
 </p>
 
+!!! info "You will also need NMR to Stake !"
+    - You can acquire NMR at [Shapeshift](http://shapeshift.io/), [Bittrex](https://bittrex.com) or other exchanges.
+    - Numerai also provides NMR to users which models beat certain metrics, ( currently 0.1 NMR for models that achieve Log Loss under 0.693 paid upon round resolution ).
 
 You can then stake via the staking screen:
 
 ![stakingModal](img/StakingModal.jpg)
 
 
+!!! tip "Quick guide to Staking:"
+    - The minimum you can stake is 0.1 NMR.
+    - Probability signifies your estimate for your model passing benchmark (logloss < 0.693 ) and the minimum value is 0.1 (10% probability).
+    - You can stake multiple times but your NMR Stake or your Probability needs to be greater than your previous stake.
+    - Your Earning Potential depends on the current rules and other factors, currently stakes with probability below the moving cutoff probability are not considered for payouts or burns.
+    - Carefully review both fields before staking or updating your stake,once submitted they are final !
 
+Once submitted, your stake will appear in the corresponding tournament ( _you might need to wait for it to be included in the blockchain and refresh your page_ ).
 
-
-
-
-
-
-
+![staked](img/staked.jpg)
 
 
 ### 6. Results
