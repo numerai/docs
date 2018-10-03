@@ -147,4 +147,4 @@ You can see how your model performed in the resolved tournament table:
 
 Please consult the rest of this documentation for more details.
 
-## GOOD LUCK !
+**GOOD LUCK !**
