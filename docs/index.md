@@ -134,5 +134,17 @@ Once submitted, your stake will appear in the corresponding tournament ( _you mi
 
 ![staked](img/staked.jpg)
 
-
 ### 6. Results
+
+Your submitted predictions will be used internally as part of our meta model over a period of time and graded on how well they perform, after that period ( currently 31 days ), your result along with that of others will be made public and you will receive a payout 💰 if you staked and performed well or burn 🔥 ( loose your stake ) if you performed poorly ( else your stake will be returned ), submitted models that did not stake are also graded and might be given NMR if they perform well (currently 0.1 NMR if their logloss is < 0.693 ).
+
+You can see how your model performed in the resolved tournament table:
+
+![Results](img/Results.png)
+
+<br />
+
+
+Please consult the rest of this documentation for more details.
+
+## GOOD LUCK !
