@@ -113,7 +113,7 @@ You can create and manage your stake on the [website](http://numer.ai) or direct
 
 ![](../.gitbook/assets/image%20%2832%29.png)
 
-You can increase your stake at any time and it will apply next Thursday. Decreasing works similarly except it always takes an additional 4 weeks. You 
+You can increase your stake at any time and it will apply next Thursday. Decreasing works similarly except it always takes an additional 4 weeks.
 
 At the beginning of each Thursday, up to `100K NMR` in stakes will be selected and eligible for payouts. If the total amount staked exceeds this, then all stakes will be selected pro rata.  
 
