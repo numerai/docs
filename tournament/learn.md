@@ -2,7 +2,7 @@
 
 ## Introduction <a id="rounds"></a>
 
-Numerai is a data science tournament that powers the Numerai hedge fund. Watch the [meta model video](https://www.youtube.com/watch?v=dhJnt0N497c) to understand how it works at a high level.  
+Numerai is a data science tournament that powers the Numerai hedge fund. Watch the [meta-model video](https://www.youtube.com/watch?v=dhJnt0N497c) to understand how it works at a high level.  
 
 The long term vision of Numerai is to manage all the money in the world with a decentralized network of autonomous AI agents. Read our [master plan](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) to learn more.
 
@@ -147,6 +147,5 @@ We reserve the right to refund your stake and void all earnings and burns if we 
 
 Need help with anything?
 
-Find us on [rocket chat](https://community.numer.ai) for questions, support, and feedback!
+Find us on [RocketChat](https://community.numer.ai) for questions, support, and feedback!
 
-TBD
