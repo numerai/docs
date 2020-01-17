@@ -1,6 +1,6 @@
 # FAQ
 
-#### I lost my MFA device, can you help recover my account?
+**I lost my MFA device, can you help recover my account?**
 
 For security reasons, Numerai will never recover an account that is secured with MFA. This is to prevent others from impersonating and taking over your account. We recognize that this is not the best user experience, but because large amounts of money accounts can hold, we must prioritize security above all else.
 
