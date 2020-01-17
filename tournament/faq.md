@@ -1,17 +1,5 @@
 # FAQ
 
-#### How many accounts am I allowed to compete with?
-
-You are allowed to compete with up to 3 accounts. Many data scientists use multiple accounts to experiment or compete with different types models. This is fine. In fact, the ability to manage multiple accounts will become a feature on the website eventually.
-
-The purpose of the 3 account limit is to prevent spamming and information attacks. 
-
-Spamming is bad for the tournament as it adds noise and creates a poor UX for everyone else. For example, creating many accounts can take up spots on the leaderboard visually \(even though this does not impact payouts\). This may not always be malicious, but it is clearly negative for everyone else.
-
-Information attacks is the attempt to access information about live targets that is not supposed to be revealed, and thereby gaining an unfair advantage over other competitors. Regardless of how effective this attack is, or how much of an advantage this actually yields, attacks like this is clearly degrades the integrity of the tournament. 
-
-Any user with more than 3 accounts detected will be given notice and 1 week to wind down to 3 accounts. After that, Numerai reserves the right to return any stakes, invalidate any payouts and to ban ALL of the accounts associated with the violator.
-
 #### I lost my MFA device, can you help recover my account?
 
 For security reasons, Numerai will never recover an account that is secured with MFA. This is to prevent others from impersonating and taking over your account. We recognize that this is not the best user experience, but because large amounts of money accounts can hold, we must prioritize security above all else.
