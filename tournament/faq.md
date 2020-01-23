@@ -41,5 +41,5 @@ Please join [RocketChat](https://community.numer.ai) and visit the \#newusers ch
 This is the most difficult puzzle in the world. Models with a given correlation score on the validation data may or may not be performant in the tournament on live data. Your best course of action is to save your production model to stabilize the predictions generated and submit to the tournament every week for several months. Automate your process using Compute so that you don’t have to worry about being on-time. Observe how your model performs relative to other users. After some time has passed and you feel confident in your model, then begin to stake NMR.
 
 **Who controls Numeraire?**  
-Numeraire is a decentralized ERC20 token. You can view the smart contract [here](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671#readContract) and read the history of the smart contract development [here](https://github.com/numerai/contract). T
+Numeraire is a decentralized ERC20 token. You can view the smart contract [here](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671#readContract) and read the history of the smart contract development [here](https://github.com/numerai/contract).
 
