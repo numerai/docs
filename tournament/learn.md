@@ -145,6 +145,39 @@ Like payouts, bonuses are paid into your stake balance. The max bonus paid out p
 
 We reserve the right to refund your stake and void all earnings and burns if we believe that you are actively abusing or exploiting the payout rules.
 
+
+# Metamodel Contribution
+
+Metamodel Contribution (MMC) is a secondary scoring system that rewards uniqueness in conjunction with performance. 
+MMC is scheduled to be released in late Q1 of 2020.
+
+#### Calculation
+To calculate a user's (U) MMC for a given round we
+* select a random 67% of all staking users (with replacement)
+* assume U staked the mean of these users
+* calculate the stake weighted predictions of these users
+* score those predictions against the round's real targets using rank correlation.  This gives us score S
+* remove U from the 67% of users
+* recalulate the stake weighted predictions without U included
+* score those new predictions against the real targets.  This gives us S'
+* U's MMC = S - S' 
+* repeat this whole process 20 times and keep the average MMC score
+* Your final MMC score is multiplied by the total number of stakers for the round
+
+#### Design Explanations
+* Stake weight is necessary to make the system unattackable
+* Sampling a random 67% each time is important to incentivize some redundancy. 
+A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this. 
+* Multiplying by the total number of stakers makes the magnitude of MMC stay consistent as the number of users grows.
+Otherwise, as the number of users increases, MMC magnitude would scale down proportionally
+
+#### Payouts
+* MMC is (will be) payed in a very similar way to the  main tournament.
+* It uses the same curve of -1.0 to 1.0, where a score of 0 doesn't effect your stake, 1.0 doubles your stake, and -1.0  burns your whole stake. 
+* MMC will be opt-in.  You can choose to put 20% of your stake towards MMC instead of the main tournament.  
+
+Read more about MMC [here](https://docs.google.com/document/d/1z3WKnwvchbq67sw7JQ-Y46aJjwUFbHAnbdnjL6khxU8/edit?usp=sharing)!
+
 ## Support
 
 Need help with anything?
