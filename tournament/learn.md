@@ -1,6 +1,8 @@
 # Tournament Overview
 
-## Introduction <a id="rounds"></a>
+## Tournament Overview
+
+### Introduction <a id="rounds"></a>
 
 Numerai is a data science tournament that powers the Numerai hedge fund. Watch the [meta-model video](https://www.youtube.com/watch?v=dhJnt0N497c) to understand how it works at a high level.
 
@@ -8,7 +10,7 @@ The long term vision of Numerai is to manage all the money in the world with a d
 
 This document is a brief overview of the tournament structure and rules. If you are new, start here!
 
-## Data <a id="rounds"></a>
+### Data <a id="rounds"></a>
 
 To make good predictions, you need good data. But production grade financial data is not easy to find. Hedge funds spend millions buying and managing this data, so they keep it secret.
 
@@ -18,7 +20,7 @@ This is what our `training_data` looks like. Each `id` represents an asset with 
 
 ![](../.gitbook/assets/ex_data.png)
 
-## Modeling <a id="rounds"></a>
+### Modeling <a id="rounds"></a>
 
 Your task is to train a model to make predictions on the out-of-sample `tournament_data`. This dataset includes `validation` and `test` hold out sets, as well as `live` features of current stock market.
 
@@ -49,7 +51,7 @@ To help you get started, we have also written two detailed walkthroughs of the p
 
 If you want to learn more about why we have setup the problem this way, check out the book [Advances in Financial Machine Learning](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089) by [Marcos Lopez de Prado](https://www.linkedin.com/in/lopezdeprado/), who is our scientific advisor.
 
-## Submissions
+### Submissions
 
 Every weekend, new `tournament_data` is released and a new round begins. To participate in the round, run the new `tournament_data` through your model and submit your predictions back to Numerai.
 
@@ -65,19 +67,17 @@ You can upload your submission to our [website](https://numer.ai/) or[ api](http
 
 For advanced users, check out [Numerai Compute](https://docs.numer.ai/tournament/compute) - a framework to help you automate your submission workflow.
 
-## Scoring
+### Scoring
 
 Numerai measures performance based on the `rank_correlation` between your predictions and the true targets.
 
 {% tabs %}
 {% tab title="scoring\_function.py" %}
-
 ```python
 # method='first' breaks ties based on order in array
 ranked_predictions = predictions.rank(pct=True, method="first")
 correlation = np.corrcoef(labels, ranked_predictions)[0, 1]
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -97,13 +97,13 @@ Here is a graph of the daily marginal changes in `correlation`shown above in col
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
-## Staking <a id="staking"></a>
+### Staking <a id="staking"></a>
 
 You can `stake` on your model to start earning daily payouts.
 
 Staking requires you to lock up [NMR](https://coinmarketcap.com/currencies/numeraire/) in an [Erasure](https://github.com/erasureprotocol/erasure-protocol) smart contract agreement. This gives Numerai the ability to grief \(aka burn\) your stake if your performance is poor. This also known as having "skin in the game".
 
-![payout band of ±0.2](../.gitbook/assets/image%20%281%29.png)
+![payout band of &#xB1;0.2](../.gitbook/assets/image%20%281%29.png)
 
 Your daily payout is a function of your `stake_value` and `average_daily_correlation`. For example, if your `stake_value` is 100 NMR, and your `average_daily_correlation` is 0.1, your payout will be +50% and so you will earn 50 NMR. If instead your `average_daily_correlation` is -0.1, then your payout will be -50% and so you will lose 50 NMR.
 
@@ -121,7 +121,7 @@ At the beginning of each Thursday, up to `100K NMR` in stakes will be selected a
 
 If you don't already have NMR, you can acquire it on the open market. The easiest way is through [ETH](https://coinmarketcap.com/currencies/ethereum/) on [Uniswap](https://uniswap.exchange/swap) or through [BTC](https://coinmarketcap.com/currencies/bitcoin/) on [Changelly](https://changelly.com/), [Upbit](https://upbit.com/exchange?code=CRIX.UPBIT.BTC-NMR), [Bittrex](https://bittrex.com/Market/Index?MarketName=BTC-NMR), [Poloniex](https://poloniex.com/exchange#btc_nmr), and [HitBTC](https://hitbtc.com/NMR-to-BTC).
 
-## Leaderboard
+### Leaderboard
 
 Maintaining a high `average_daily_correlation` over time earns you a place on the leaderboard and a large daily bonus.
 
@@ -136,24 +136,24 @@ Your bonus is a function of your `rank` amongst all staked models \(otherwise kn
 Like payouts, bonuses are paid into your stake balance. The max bonus paid out per day is `250 NMR` across all models. If the total bonus amount exceeds this, then all bonuses will be paid pro rata.
 
 | Staked Rank | Daily Bonus |
-| :---------- | :---------- |
-| Top 1       | 5%          |
-| Top 10      | 4%          |
-| Top 25      | 3%          |
-| Top 100     | 2%          |
-| Top 300     | 0.5%        |
+| :--- | :--- |
+| Top 1 | 5% |
+| Top 10 | 4% |
+| Top 25 | 3% |
+| Top 100 | 2% |
+| Top 300 | 0.5% |
 
 We reserve the right to refund your stake and void all earnings and burns if we believe that you are actively abusing or exploiting the payout rules.
 
+## Metamodel Contribution
 
-# Metamodel Contribution
-
-Metamodel Contribution (MMC) is a secondary scoring system that rewards uniqueness in conjunction with performance. 
-MMC is scheduled to be released in late Q1 of 2020.
+Metamodel Contribution \(MMC\) is a secondary scoring system that rewards uniqueness in conjunction with performance. MMC is scheduled to be released in late Q1 of 2020.
 
 #### Calculation
-To calculate a user's (U) MMC for a given round we
-* select a random 67% of all staking users (with replacement)
+
+To calculate a user's \(U\) MMC for a given round we
+
+* select a random 67% of all staking users \(with replacement\)
 * assume U staked the mean of these users
 * calculate the stake weighted predictions of these users
 * score those predictions against the round's real targets using rank correlation.  This gives us score S
@@ -165,21 +165,27 @@ To calculate a user's (U) MMC for a given round we
 * Your final MMC score is multiplied by the total number of stakers for the round
 
 #### Design Explanations
+
 * Stake weight is necessary to make the system unattackable
 * Sampling a random 67% each time is important to incentivize some redundancy. 
-A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this. 
+
+  A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this. 
+
 * Multiplying by the total number of stakers makes the magnitude of MMC stay consistent as the number of users grows.
-Otherwise, as the number of users increases, MMC magnitude would scale down proportionally
+
+  Otherwise, as the number of users increases, MMC magnitude would scale down proportionally
 
 #### Payouts
-* MMC is (will be) payed in a very similar way to the  main tournament.
+
+* MMC is \(will be\) payed in a very similar way to the  main tournament.
 * It uses the same curve of -1.0 to 1.0, where a score of 0 doesn't effect your stake, 1.0 doubles your stake, and -1.0  burns your whole stake. 
 * MMC will be opt-in.  You can choose to put 20% of your stake towards MMC instead of the main tournament.  
 
 Read more about MMC [here](https://docs.google.com/document/d/1z3WKnwvchbq67sw7JQ-Y46aJjwUFbHAnbdnjL6khxU8/edit?usp=sharing)!
 
-## Support
+### Support
 
 Need help with anything?
 
 Find us on [RocketChat](https://community.numer.ai) for questions, support, and feedback!
+
