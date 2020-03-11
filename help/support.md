@@ -9,3 +9,4 @@ Email us at support@numer.ai
 If you intend to hold NMR in our wallet, we strongly advise you to enable MFA to secure your account. Please make sure to keep your MFA backup codes in a safe place accessible to yourself as **we will not** **recover your account** if you lose your MFA device.
 
 ​
+
