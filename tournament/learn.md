@@ -131,7 +131,7 @@ Your `rank` on the leaderboard depends on your `reputation`, which is the sum of
 
 Any days with a missing `average_daily_correlation` score will be filled with a `-0.005`. We call this adjusted score `average_daily_correlation_penalized` and will use this to compute your reputation instead. This means that new users start with `reputation` of `-0.5`. This also means that if you have been submitting weekly, you would need to miss 4 submissions in a row to be penalized.
 
-Your bonus is a function of your `rank` amongst all staked models \(otherwise known as `staked_rank`\) and your `stake_value` at the beginning of the 100 day window. For example, if your `stake_value` was 100 NMR at the beginning of the window and your `staked_rank` is 1, then you will get a 5 NMR bonus.
+Your bonus is a function of your `rank` amongst all staked models \(otherwise known as `staked_rank`\) and your `selected_stake_value` 20 rounds ago. Here, `selected stake value` means Thursday's stake value after applying any stake changes but before applying payouts. For example, if your `selected_stake_value` was 100 NMR and your `staked_rank` is 1, then you will get a 5 NMR bonus. 
 
 Like payouts, bonuses are paid into your stake balance. The max bonus paid out per day is `250 NMR` across all models. If the total bonus amount exceeds this, then all bonuses will be paid pro rata.
 
