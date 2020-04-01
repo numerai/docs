@@ -33,6 +33,7 @@ While researching, we'd like to ask you to refrain from:
  - CSRF without any security impact
  - Rate Limiting (unless it constitutes a significant risk)
  - Email sending checks
+ - Dead or misconfigured DNS records
 
 ### How to submit a bug report
 
