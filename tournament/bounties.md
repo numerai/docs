@@ -16,7 +16,10 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 | :--- | :--- |
 | Small _website display issues, broken email, broken links_ | 1 NMR |
 | Medium _data errors, incorrect payouts, cannot submit/stake_ | 5 NMR |
-| Large _exploits, security issues, smart contract vulnerabilities_ | 10-100 NMR |
+| Minor _exploits or vulnerabilities that do not compromise user funds_ | 1-10 NMR |
+| Major _exploits, security issues, smart contract vulnerabilities_ | 10-100 NMR |
+
+Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US taxpayers receiveing a bounty valued > $600 USD will be required to submit W9 taxpayer information.
 
 ### How to submit a bug report
 
