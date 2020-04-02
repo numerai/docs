@@ -116,6 +116,7 @@ Maintaining a consistent high `round_correlation` over time earns you a place on
 Your `rank` on the leaderboard depends on your `reputation`, which is the average of your `round_correlation`over the past 20 rounds.
 The last 20 `round_correlation`s are weighted in a particular way so that new rounds gradually get incorporated into your `reputation` as they resolve.
 Here is an example of the round weights on day 3 for round 204.
+
 ![round_weights example](../.gitbook/assets/round_weights_horizontal.png)
 
 Since each round is 20 days, and round 204 has had 3 days scored so far, round 204 carries a weight of 3/20 or 0.15.
