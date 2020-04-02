@@ -9,6 +9,7 @@
 * [Tools and Libraries](tournament/tools.md)
 * [FAQ](tournament/faq.md)
 * [Bounties](tournament/bounties.md)
+* [US Taxes](tournament/us-taxes.md)
 
 ## Help
 
