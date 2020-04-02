@@ -97,7 +97,7 @@ And if your `round_correlation` was -0.3, you will have 25 NMR burned.
 
 At the open of each round, your `stake_value` will be locked in, and you will be payed according to that value at the end of the round.
 
-You can create and manage your stake on the [website](http://numer.ai) or directly [on the Ethereum blockchain](https://github.com/numerai/tournament-contracts). Below is an example of staking on the website.
+You can create and manage your stake on the [compute](http://numer.ai) or directly [on the Ethereum blockchain](https://github.com/numerai/tournament-contracts). Below is an example of staking on the website.
 
 ![](../.gitbook/assets/image%20%2832%29.png)
 
