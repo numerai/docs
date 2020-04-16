@@ -33,7 +33,7 @@ While researching, we'd like to ask you to refrain from:
  - CSRF without any security impact
  - Rate limiting attacks (unless it constitutes a significant risk)
  - Email sending checks
- - Dead or misconfigured DNS (unless it constitutes a significant risk)
+ - Misconfigured DNS records (unless it constitutes a significant risk)
 
 ### How to submit a bug report
 
