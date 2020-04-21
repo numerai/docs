@@ -19,21 +19,22 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 | Medium _data errors, incorrect payouts, cannot submit/stake_ | 1-5 NMR |
 | Major _exploits, security issues, smart contract vulnerabilities_ | 1-100 NMR |
 
-Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiveing a bounty valued > $600 USD will be required to submit [W9 taxpayer information](us-taxes.md).
+Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiveing a bounty valued &gt; $600 USD will be required to submit [W9 taxpayer information](us-taxes.md).
 
 ### Exclusions
+
 While researching, we'd like to ask you to refrain from:
 
- - Denial of service
- - Spamming
- - Automated scanning of any kind
- - Missing Security Headers (eg. HSTS, CSP)
- - Missing Secure Flags on Cookies
- - SSL issues (weak ciphers/key-size/BEAST/CRIME)
- - CSRF without any security impact
- - Rate limiting attacks (unless it constitutes a significant risk)
- - Email sending checks
- - Misconfigured DNS records (unless it constitutes a significant risk)
+* Denial of service
+* Spamming
+* Automated scanning of any kind
+* Missing Security Headers \(eg. HSTS, CSP\)
+* Missing Secure Flags on Cookies
+* SSL issues \(weak ciphers/key-size/BEAST/CRIME\)
+* CSRF without any security impact
+* Rate limiting attacks \(unless it constitutes a significant risk\)
+* Email sending checks
+* Misconfigured DNS records \(unless it constitutes a significant risk\)
 
 ### How to submit a bug report
 

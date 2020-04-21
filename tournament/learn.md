@@ -81,19 +81,15 @@ correlation = np.corrcoef(labels, ranked_predictions)[0, 1]
 {% endtab %}
 {% endtabs %}
 
-
 ### Staking <a id="staking"></a>
 
 You can `stake` on your model to start earning daily payouts.
 
 Staking requires you to lock up [NMR](https://coinmarketcap.com/currencies/numeraire/) in an [Erasure](https://github.com/erasureprotocol/erasure-protocol) smart contract agreement. This gives Numerai the ability to grief \(aka burn\) your stake if your performance is poor. This also known as having "skin in the game".
 
-![payout band of ±1.0 clipped at 0.25](../.gitbook/assets/new_payout_curve.png)
+![payout band of &#xB1;1.0 clipped at 0.25](../.gitbook/assets/new_payout_curve.png)
 
-Your round payout is a function of your `stake_value` and `round_correlation` for each round.
-The formula for payouts is simple.  It's your `stake_value` * `round_correlation`, with a min/max of +-0.25. 
-For example, if your `stake_value` was 100 NMR, and your `round_correlation` was 0.1, you will be payed 10 NMR. 
-And if your `round_correlation` was -0.3, you will have 25 NMR burned.  
+Your round payout is a function of your `stake_value` and `round_correlation` for each round. The formula for payouts is simple. It's your `stake_value` \* `round_correlation`, with a min/max of +-0.25. For example, if your `stake_value` was 100 NMR, and your `round_correlation` was 0.1, you will be payed 10 NMR. And if your `round_correlation` was -0.3, you will have 25 NMR burned.
 
 At the open of each round, your `stake_value` will be locked in, and you will be payed according to that value at the end of the round.
 
@@ -113,24 +109,16 @@ Maintaining a consistent high `round_correlation` over time earns you a place on
 
 ![](../.gitbook/assets/image%20%2811%29.png)
 
-Your `rank` on the leaderboard depends on your `reputation`, which is the average of your `round_correlation`over the past 20 rounds.
-The last 20 `round_correlation`s are weighted in a particular way so that new rounds gradually get incorporated into your `reputation` as they resolve.
-Here is an example of the round weights on day 3 for round 204.
+Your `rank` on the leaderboard depends on your `reputation`, which is the average of your `round_correlation`over the past 20 rounds. The last 20 `round_correlation`s are weighted in a particular way so that new rounds gradually get incorporated into your `reputation` as they resolve. Here is an example of the round weights on day 3 for round 204.
 
-![round_weights example](../.gitbook/assets/round_weights_horizontal.png)
+![round\_weights example](../.gitbook/assets/round_weights_horizontal.png)
 
-Since each round is 20 days, and round 204 has had 3 days scored so far, round 204 carries a weight of 3/20 or 0.15.
-Meanwhile rounds 185 to 188 drop leave the calculation at the same rate that new rounds are being added.  This represents older rounds being less relevant to reputation score than more recent rounds are.
-This symmetrical weighting scheme also keeps a consistent weight to the reputation score at all times.
+Since each round is 20 days, and round 204 has had 3 days scored so far, round 204 carries a weight of 3/20 or 0.15. Meanwhile rounds 185 to 188 drop leave the calculation at the same rate that new rounds are being added. This represents older rounds being less relevant to reputation score than more recent rounds are. This symmetrical weighting scheme also keeps a consistent weight to the reputation score at all times.
 
-Users are forgiven of one (1) missing round at a time for consideration in the reputation.  
-The earliest missing round to be included in reputation will be filled in with the same score that you would have received if you submitted the example_predictions.
-Any subsequent missing rounds will receive a very low score of -0.1.
-This one-missing-week policy is meant to offer some forgiveness so that if you miss one week due to extraordinary circumstance, that you will not have to wait 20 weeks to climb the leaderboard again.
-However, if you miss more than one week, the penalty is very harsh. 
-We suggest you set up your models to run on [website](https://docs.numer.ai/tournament/compute) in order to avoid missing weeks.   
+Users are forgiven of one \(1\) missing round at a time for consideration in the reputation.  
+The earliest missing round to be included in reputation will be filled in with the same score that you would have received if you submitted the example\_predictions. Any subsequent missing rounds will receive a very low score of -0.1. This one-missing-week policy is meant to offer some forgiveness so that if you miss one week due to extraordinary circumstance, that you will not have to wait 20 weeks to climb the leaderboard again. However, if you miss more than one week, the penalty is very harsh. We suggest you set up your models to run on [compute](https://docs.numer.ai/tournament/compute) in order to avoid missing weeks.
 
-Your bonus is a function of your `rank` amongst all staked models \(otherwise known as `staked_rank`\) and your `selected_stake_value` 20 rounds ago. Here, `selected stake value` means Thursday's stake value after applying any stake changes but before applying payouts. For example, if your `selected_stake_value` was 100 NMR and your `staked_rank` is 1, then you will get a 5 NMR bonus. 
+Your bonus is a function of your `rank` amongst all staked models \(otherwise known as `staked_rank`\) and your `selected_stake_value` 20 rounds ago. Here, `selected stake value` means Thursday's stake value after applying any stake changes but before applying payouts. For example, if your `selected_stake_value` was 100 NMR and your `staked_rank` is 1, then you will get a 5 NMR bonus.
 
 Like payouts, bonuses are paid into your stake balance. The max bonus paid out per day is `250 NMR` across all models. If the total bonus amount exceeds this, then all bonuses will be paid pro rata.
 
@@ -166,9 +154,9 @@ To calculate a user's \(U\) MMC for a given round we
 #### Design Explanations
 
 * Stake weight is necessary to make the system unattackable
-* Sampling a random 67% each time is important to incentivize some redundancy. 
+* Sampling a random 67% each time is important to incentivize some redundancy.
 
-  A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this. 
+  A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this.
 
 * Multiplying by the total number of stakers makes the magnitude of MMC stay consistent as the number of users grows.
 
