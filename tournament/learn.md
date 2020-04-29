@@ -105,11 +105,13 @@ If you don't already have NMR, you can acquire it on the open market. The easies
 
 ### Leaderboard
 
-Maintaining a consistent high `round_correlation` over time earns you a place on the leaderboard and a large daily bonus.
+Maintaining a consistent high `round_correlation` over time earns you a place on the leaderboard.
 
 ![](../.gitbook/assets/image%20%2811%29.png)
 
-Your `rank` on the leaderboard depends on your `reputation`, which is the average of your `round_correlation`over the past 20 rounds. The last 20 `round_correlation`s are weighted in a particular way so that new rounds gradually get incorporated into your `reputation` as they resolve. Here is an example of the round weights on day 3 for round 204.
+Your `rank` on the leaderboard depends on your `reputation`, which is a weighted average of your `round_correlation`over the past 20 rounds.
+The last 20 `round_correlation`s are weighted in a particular way so that new rounds gradually get incorporated into your `reputation` as they resolve.
+Here is an example of the round weights on day 3 for round 204.
 
 ![round\_weights example](../.gitbook/assets/round_weights_horizontal.png)
 
@@ -118,57 +120,53 @@ Since each round is 20 days, and round 204 has had 3 days scored so far, round 2
 Users are forgiven of one \(1\) missing round at a time for consideration in the reputation.  
 The earliest missing round to be included in reputation will be filled in with the same score that you would have received if you submitted the example\_predictions. Any subsequent missing rounds will receive a very low score of -0.1. This one-missing-week policy is meant to offer some forgiveness so that if you miss one week due to extraordinary circumstance, that you will not have to wait 20 weeks to climb the leaderboard again. However, if you miss more than one week, the penalty is very harsh. We suggest you set up your models to run on [compute](https://docs.numer.ai/tournament/compute) in order to avoid missing weeks.
 
-Your bonus is a function of your `rank` amongst all staked models \(otherwise known as `staked_rank`\) and your `selected_stake_value` 20 rounds ago. Here, `selected stake value` means Thursday's stake value after applying any stake changes but before applying payouts. For example, if your `selected_stake_value` was 100 NMR and your `staked_rank` is 1, then you will get a 5 NMR bonus.
 
-Like payouts, bonuses are paid into your stake balance. The max bonus paid out per day is `250 NMR` across all models. If the total bonus amount exceeds this, then all bonuses will be paid pro rata.
-
-| Staked Rank | Daily Bonus |
-| :--- | :--- |
-| Top 1 | 5% |
-| Top 10 | 4% |
-| Top 25 | 3% |
-| Top 100 | 2% |
-| Top 300 | 0.5% |
+There is currently no bonus for high leaderboard placement.  The past leaderboard bonus will continue to be payed out until September 9, 2020.  
 
 We reserve the right to refund your stake and void all earnings and burns if we believe that you are actively abusing or exploiting the payout rules.
 
 ## Metamodel Contribution
 
-Metamodel Contribution \(MMC\) is a secondary scoring system that rewards uniqueness in conjunction with performance. MMC is scheduled to be released in late Q1 of 2020.
+Metamodel Contribution \(MMC\) is a secondary scoring system that rewards uniqueness in conjunction with performance. MMC is scheduled to be released in late Q2 of 2020.
 
 #### Calculation
 
 To calculate a user's \(U\) MMC for a given round we
 
 * select a random 67% of all staking users \(with replacement\)
-* assume U staked the mean of these users
 * calculate the stake weighted predictions of these users
-* score those predictions against the round's real targets using rank correlation.  This gives us score S
-* remove U from the 67% of users
-* recalulate the stake weighted predictions without U included
-* score those new predictions against the real targets.  This gives us S'
-* U's MMC = S - S' 
+* transform both the stake weighted predictions, and U's model to be uniformly distributed
+* neutralize U's model with respect to the uniform stake weighted predictions
+* calculate the covariance between U's model and the kazutsugi targets
+* divide this value by 0.0841 \(this step is to bring the expected score up to the same magnitude as correlation\)
+* the resultant value is an MMC score 
 * repeat this whole process 20 times and keep the average MMC score
-* Your final MMC score is multiplied by the total number of stakers for the round
+
+
+Read more about MMC calculation [here](https://forum.numer.ai/t/mmc2-announcement/93)!
 
 #### Design Explanations
 
 * Stake weight is necessary to make the system unattackable
-* Sampling a random 67% each time is important to incentivize some redundancy.
+* Sampling a random 67% each time is important to incentivize some redundancy.  
+A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this.
 
-  A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this.
+#### Design Explanations
 
-* Multiplying by the total number of stakers makes the magnitude of MMC stay consistent as the number of users grows.
-
-  Otherwise, as the number of users increases, MMC magnitude would scale down proportionally
+* Stake weight is necessary to make the system unattackable
+* Sampling a random 67% each time is important to incentivize some redundancy.  A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this. 
 
 #### Payouts
 
 * MMC is \(will be\) payed in a very similar way to the  main tournament.
-* It uses the same curve of -1.0 to 1.0, where a score of 0 doesn't effect your stake, 1.0 doubles your stake, and -1.0  burns your whole stake. 
-* MMC will be opt-in.  You can choose to put 20% of your stake towards MMC instead of the main tournament.  
+* Your payout each round will be `stake * MMC * 2`.  
+* This will be clipped such that you can neither gain, nor lose more than 25% of your stake in any one round.
+* MMC will be opt-in.  You can choose to either participate in MMC, or in the primary tournament for each of your models.
+* This decision can be changed week to week and model by model at will; but once a round opens, all decisions are final for that round.  
 
-Read more about MMC [here](https://docs.google.com/document/d/1z3WKnwvchbq67sw7JQ-Y46aJjwUFbHAnbdnjL6khxU8/edit?usp=sharing)!
+Read more about MMC payouts [here](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220)!
+
+
 
 ### Support
 
