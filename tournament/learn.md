@@ -143,7 +143,8 @@ To calculate a user's \(U\) MMC for a given round we
 * repeat this whole process 20 times and keep the average MMC score
 
 
-Read more about MMC calculation [here](https://forum.numer.ai/t/mmc2-announcement/93)!
+Read more about MMC calculation [here](https://forum.numer.ai/t/mmc2-announcement/93).
+
 
 #### Design Explanations
 
@@ -158,13 +159,13 @@ A very large staker submitting similar predictions to yours would penalize you t
 
 #### Payouts
 
-* MMC is \(will be\) payed in a very similar way to the  main tournament.
+* MMC will be payed in a very similar way to the  main tournament.
 * Your payout each round will be `stake * MMC * 2`.  
 * This will be clipped such that you can neither gain, nor lose more than 25% of your stake in any one round.
 * MMC will be opt-in.  You can choose to either participate in MMC, or in the primary tournament for each of your models.
 * This decision can be changed week to week and model by model at will; but once a round opens, all decisions are final for that round.  
 
-Read more about MMC payouts [here](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220)!
+Read more about MMC payouts [here](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220).
 
 
 
