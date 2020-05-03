@@ -93,7 +93,7 @@ correlation_payout = (stake * correlation).clip(-0.25, 0.25)
 mmc_payout = (2 * stake * mmc).clip(-0.25, 0.25)
 ```
 
-See the [staking and payouts](https://docs.numer.ai/tournament/staking-payouts) section for details.
+See the [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for details.
 
 ## Daily Updates
 
