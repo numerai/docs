@@ -58,5 +58,5 @@ If you have any good ideas about how to improve the Numerai propose it to us! If
 
 Message us on the [RocketChat](https://community.numer.ai/) \#[feedback channel](https://community.numer.ai/channel/feedback).
 
-If you are going for a large, it would be helpful if you wrote up your idea in a document \(pdf or google docs\) or a notebook \(google colab, github\).
+If you are going for a large bounty, it would be helpful if you wrote up your idea in a document \(pdf or google docs\) or a notebook \(google colab, github\).
 
