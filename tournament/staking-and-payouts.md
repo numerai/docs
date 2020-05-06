@@ -37,6 +37,10 @@ For example, if your `stake_value` on round N is `100`, and your `correlation = 
 Decreasing your stake will lower your `stake_value` in the immediate next round, even though the decrease will only happen 4 weeks later.
 {% endhint %}
 
+{% hint style="info" %}
+If you decide to cancel your decrease request, your stake value will go back up to the original value in the immediate next round.
+{% endhint %}
+
 ## Abuse
 
 We reserve the right to refund your stake and void all earnings and burns if we believe that you are actively abusing or exploiting the payout rules.
