@@ -88,9 +88,9 @@ Staking requires you to lock up [NMR](https://coinmarketcap.com/currencies/numer
 You `earn` or `burn` a percentage of your stake based on the score you are staking on. For example, if you stake `100 NMR` on `correlation` and your score was `+0.05`, then you will earn `5% of 100NMR = 5NMR`. The maximum you can earn or burn is `25%` of your stake each round.
 
 ```python
-correlation_payout = (stake * correlation).clip(-0.25, 0.25)
+corr_payout = stake * clip(corr, -0.25, 0.25)
 
-mmc_payout = (2 * stake * mmc).clip(-0.25, 0.25)
+mmc_payout = 2 * stake * clip(mmc, -0.25, 0.25)
 ```
 
 See the [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for details.
