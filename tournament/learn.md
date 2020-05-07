@@ -90,7 +90,7 @@ You `earn` or `burn` a percentage of your stake based on the score you are staki
 ```python
 corr_payout = stake * clip(corr, -0.25, 0.25)
 
-mmc_payout = 2 * stake * clip(mmc, -0.25, 0.25)
+mmc_payout = stake * clip(2 * mmc, -0.25, 0.25)
 ```
 
 See the [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for details.
