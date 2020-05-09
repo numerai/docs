@@ -1,4 +1,4 @@
-# Numeraire
+# Numeraire Overview
 
 * [Tournament stake info](https://numer.ai/tournament)
 * [Supply information](https://numer.ai/nmr)
