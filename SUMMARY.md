@@ -24,6 +24,7 @@
 
 ## Numeraire
 
+* [Numeraire Index](numeraire/index.md)
 * [Tournament stake info](https://numer.ai/tournament)
 * [Supply information](https://numer.ai/nmr)
 * [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
@@ -31,6 +32,7 @@
 
 ## Connect
 
+* [Connect Index](connect/index.md)
 * [RocketChat](https://community.numer.ai/)
 * [Twitter](https://twitter.com/numerai)
 * [Medium](https://medium.com/numerai)
