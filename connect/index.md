@@ -1,4 +1,4 @@
-# Connect Overview
+# Connect Index
 
 * [RocketChat](https://community.numer.ai/)
 * [Twitter](https://twitter.com/numerai)

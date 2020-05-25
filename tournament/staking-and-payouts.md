@@ -41,6 +41,14 @@ Decreasing your stake will lower your `stake_value` in the immediate next round,
 If you decide to cancel your decrease request, your stake value will go back up to the original value in the immediate next round.
 {% endhint %}
 
+## Compounding
+
+Since there is a new round every week and each round lasts 4 weeks, stake values compound with a 4 week delay.
+
+For example, the stake value of week 6 is based on the previous stake value of week 5 \(110 NMR\) + the payout from week 2 \(-5 NMR\) = 105 NMR.
+
+![stake compounding](https://documents.app.lucidchart.com/documents/2cb7265f-6e5b-454a-a84d-6f32b6058f34/pages/0_0?a=466&x=249&y=136&w=1112&h=486&store=1&accept=image%2F*&auth=LCA%20a086c3be9ef17d9fa2cd22ee9808e742d1a2d888-ts%3D1590449860)
+
 ## Abuse
 
 We reserve the right to refund your stake and void all earnings and burns if we believe that you are actively abusing or exploiting the payout rules.
