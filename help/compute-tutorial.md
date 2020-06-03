@@ -1,12 +1,12 @@
 # Compute Tutorial
 
-Compute is a way to automate your weekly submissions to the Numerai Tournament.  Lean how to set it up in this tutorial.
+Compute is a way to automate your weekly submissions to the Numerai Tournament. Lean how to set it up in this tutorial.
 
 _Watch the tutorial video at_ [_YouTube_](https://youtu.be/YFgXMpQszpM)_._
 
 ![](https://lh6.googleusercontent.com/JT1YyvA-AYlAGqlIVd-7Vg2NhPuO8rU_hoNX8z1XigAf1PN2ieWIuaBeY_PubKm8kGtMFy09qN_I-pOdtYjK2C9Ab3PO9HvOx3eG_E7y9PCq-WZf7zjWNdy_2eHf4kH2R6A2kPCm)
 
-\(0:24\) Start at your AWS console home page.   
+\(0:24\) Start at your AWS console home page.  
 You can access the IAM account control panel by either searching for it like so or by using the pull-down menu \(0:30\)
 
 ![](https://lh4.googleusercontent.com/KfbxMlBZWCpxBqCY6Cu1FTXIRhqU81W8efaHRvu8zjVezXGWpQW56g69z-zwBVPXf8kJZj7zA0y0WmKynGBJof_ZN65nuGBpYGLrrQJ9WbttRmpnCmm57Y77b0TgZrccc4VuJXMR)
@@ -37,7 +37,7 @@ Next, open your numerai account settings page and click Add. \(1:31\)
 
 ![](https://lh5.googleusercontent.com/zqGTjBjlR_RvBXQlZXhYjVg1bWCHo7BGpqvhjzpZwtbgW2atUE-fIdGK7cP8xe7J2b8n48VOTQ9QSGWB3FBUIdxa7XhWLXcFWAxgFqlHMj2Ub-HFbL7AJPwRj35a78QtGCYvheKN)
 
-Name your key, and check “upload submissions”, “make stakes”, “view historical submission info” and “view user info”. Type in your password, then, click generate key. \(1:48\) 
+Name your key, and check “upload submissions”, “make stakes”, “view historical submission info” and “view user info”. Type in your password, then, click generate key. \(1:48\)
 
 ![](https://lh3.googleusercontent.com/ociyl3axYtpsX4Om_2RkV3WjG5xL4UsB-zm7TcGu6S8Y8Ke-ZgFntY-CASfvm5QQ6XBjlsGx_CSYxplgDh7oe_uHJROz2UahQQZLtL7_0U1yhONIvSC84kYre3boOB7v-kwjrRSf)
 
@@ -47,15 +47,15 @@ Copy the secret key which is displayed in the pop-up box in the bottom left corn
 
 You can save this key in the CSV you downloaded from AWS. Also gather the public key \(2:04\)
 
-_**Note: access and secret keys give control over your AWS and Numerai accounts. Keep them safe like you would usernames and passwords!**_ 
+_**Note: access and secret keys give control over your AWS and Numerai accounts. Keep them safe like you would usernames and passwords!**_
 
 ![](https://lh3.googleusercontent.com/epoIhcwStnpCFXueAGOhZwKmM9-TqLJXCrtLY4cBAUaKSF5wWeh8y32MJGuEyMGUMfft0j5j43oeUHKK9dwUCCFDRa44I4k8Gd5igP49ewR-NEtLQ0DU3aQLGIfUz7k1UUIBMi_J)
 
-Save the public key in the CSV as well. Next, open your anaconda prompt and pip3 install numerai\_cli. \(2:23\) 
+Save the public key in the CSV as well. Next, open your anaconda prompt and pip3 install numerai\_cli. \(2:23\)
 
 ![](https://lh6.googleusercontent.com/zZHb0hph83WJ4ypaUBhmpDu1wHoNXCJKeuVmWswTrweUd2mFJc8zARD8Osis5RcJA3conQOS0kbLSUM-wmCB9hqDoif-lnjDtiwtFQCjrk1mm6QZgBeBtQgv9Y6Fig9l_x0hTP4H)
 
-Once installed, type mkdir example-numerai, then cd example-numerai, then numerai setup. \(2:42\) 
+Once installed, type mkdir example-numerai, then cd example-numerai, then numerai setup. \(2:42\)
 
 ![](https://lh4.googleusercontent.com/7_w6V8l6sqcqjPc_XNf1pq3HJmEZwVmg68w4XqoM5i2hrmQXNG2gNXkxDg7aP-Q0vZia_jsaMg8Leg9TddHbq3V56JszLoz3ydGvtsGpuh5CZ92dEK8orM8xNh0efP4_kTt-crnX)
 
@@ -99,11 +99,10 @@ Type **numerai docker deploy** and wait for your docker files to be pushed to AW
 
 ![](https://lh3.googleusercontent.com/BknJF6TzVUKr01EnAUA_eeAZQTjxI3UDhaBhyfA_i09DFcRHZrWwWRcjiUzkCXsdK3QuHHk-Qmq9poDBdVvZetql2wo4ecQYSqMH4c-TW-HOq4IOz4mOfscYjsfsvK0pu3jifWqB)
 
-Test the webhook by typing numerai compute test-webhook. You can get your logs by typing numerai compute logs -f.   
+Test the webhook by typing numerai compute test-webhook. You can get your logs by typing numerai compute logs -f.  
 When you see the message “Task is now in the DEPROVISIONING state, your code is finished. \(6:37\)
 
 ![](https://lh6.googleusercontent.com/UMDqrC30nc0b8EhpEKK5WilfPFAIj1Jy2T-CJo2PTqtfnzL-inv5TYe6MvQ7lrdCqcvuPH910wRvsmQGl-ZVDHQJd6zPZoWfKLz1wTLY-vEIbyybeCGGg6bWhMGhutEplTwvt-Z8)
 
-_Congratulations, you are now free to enjoy your Saturdays!_  
-
+_Congratulations, you are now free to enjoy your Saturdays!_
 

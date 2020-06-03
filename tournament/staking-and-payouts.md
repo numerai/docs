@@ -2,13 +2,13 @@
 
 ## Motivation
 
-How do we design a payout system that is open, fair, and resistant against [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack)? 
+How do we design a payout system that incentive aligned and resistant against [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack)? 
 
 The answer is staking.
 
-Staking allows Numerai to trust the predictions submitted by users because Numerai knows that it can burn the user's stake if the predictions are junk. In other words, users have "skin in the game".
+Numerai wants accurate predictions and is willing to reward it. How much you can earn/burn is a function of your performance and stake. This is also known as having [skin in the game](https://www.amazon.com/dp/B075HYVP7C/).    
 
-Staking also gives Numerai a fair way to allocate payouts. Since payouts are a percentage of your stake value, you cannot cheat the payout system by simply creating duplicate accounts.
+Staking also gives Numerai a sybil resistant way to allocate payouts. Since payouts are a percentage of your stake value, you cannot game the payout system by simply creating duplicate accounts.
 
 {% hint style="success" %}
 What would the internet look like if every interaction was staked? Read more at [erasure.world](https://erasure.world/)
@@ -16,20 +16,21 @@ What would the internet look like if every interaction was staked? Read more at 
 
 ## Managing your stake
 
-You can increase or decrease your stake on the Numerai website by opening the staking modal. 
+You can manage your stake on the Numerai website by opening the staking modal. Use this modal to increase or decrease your stake amount, or switch your stake type between `corr` and `mmc`.
+
+![staking modal](../.gitbook/assets/image%20%2844%29.png)
 
 Increasing your stake will take NMR from your wallet and put it into the stake. Decreasing will take NMR from the stake and back into your wallet.
 
 Changes to your stake do not apply immediately, instead they apply on the `effective_date` as shown on the right.
 
-* Increases apply to the next `Thursday`
-* Decreases apply to the next `Thursday + 4 weeks`
-
-![the staking modal](../.gitbook/assets/image%20%2824%29.png)
+* Switching between `corr` and `mmc` applies next `Thursday`
+* Increases apply next `Thursday`
+* Decreases impact your `stake amount`next Thursday,  but the funds are only released after next `Thursday + 4 weeks`
 
 ## Payouts
 
-The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the end of each round on Wednesday. 
+The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the beginning of the next round on Thursday. 
 
 For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05`, then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.  
 
@@ -43,7 +44,7 @@ If you decide to cancel your decrease request, your stake value will go back up 
 
 ## Compounding
 
-Since there is a new round every week and each round lasts 4 weeks, stake values compound with a 4 week delay.
+Since there is a new round every week and each round lasts 4 weeks, stake values compound with a 4-week delay.
 
 For example, the stake value of week 6 is based on the previous stake value of week 5 \(110 NMR\) + the payout from week 2 \(-5 NMR\) = 105 NMR.
 
