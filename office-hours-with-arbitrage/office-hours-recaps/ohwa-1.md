@@ -1,8 +1,8 @@
 ---
-description: 'Date: March 5, 2020. Written by http://twitter.com/mandelliant'
+description: 'Date: March 5, 2020 / Written by http://twitter.com/mandelliant'
 ---
 
-# OHwA \#1
+# OHwA S01E01
 
 #### Office Hours with Arbitrage \#1
 
