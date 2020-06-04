@@ -16,7 +16,6 @@
 ## Numerai Signals
 
 * [Signals Overview](numerai-signals/signals-overview.md)
-* [Tools and Libraries](numerai-signals/tools-and-libraries.md)
 
 ## Office Hours with Arbitrage
 
