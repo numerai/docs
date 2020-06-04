@@ -4,7 +4,7 @@ Numerai Signals is a new decentralized marketplace for stock market data built o
 
 ### **How Numerai Signals Works**
 
-1. Sign up to [Numerai Signals](https://signals.numer.ai)
+1. Sign up to [Numerai Signals](https://signals.numer.ai). Accounts are shared with the main Numerai tournament, and you can just use your email/password from there if you've already made an account with Numerai.
 2. Upload signals on stocks in our universe \(it's roughly the Russel 3000, plus some other markets, see [example signals](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv)\)
 3. \(Coming Soon\) Prove you believe in your signals by staking them with cryptocurrency
 4. \(Coming Soon\) Earn money if your signals get bought by Numerai’s hedge fund
