@@ -13,6 +13,10 @@
 * [FAQ](tournament/faq.md)
 * [Bounties](tournament/bounties.md)
 
+## Numerai Signals
+
+* [Signals Overview](numerai-signals/signals-overview.md)
+
 ## Office Hours with Arbitrage
 
 * [Office Hours Recaps](office-hours-with-arbitrage/office-hours-recaps/README.md)
