@@ -16,9 +16,9 @@ Stock market signals are feeds of data that can be used by hedge funds like Nume
 
 Format your signals as a CSV, with tickers on one column and signals, expressed between 0 and 1, on the other. Your CSV upload must contain at least 100 predictions to be considered a valid submission.
 
-[![](https://camo.githubusercontent.com/052698b66c7178eaec7079e71214f357fd5d71f9/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f584a584d61334d5f756b584e6c3459516645473734426972755749683159724337414b703242316770727778467a4654736f4f3069475473795f347855736473756c335f7370366f4e55475259685a68582d56685436465a3052742d4353464772413977354b504c6d3945694e42364946545f4562564d4d655f3567386e5053704a4862666a4665)](https://camo.githubusercontent.com/052698b66c7178eaec7079e71214f357fd5d71f9/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f584a584d61334d5f756b584e6c3459516645473734426972755749683159724337414b703242316770727778467a4654736f4f3069475473795f347855736473756c335f7370366f4e55475259685a68582d56685436465a3052742d4353464772413977354b504c6d3945694e42364946545f4562564d4d655f3567386e5053704a4862666a4665)
+![](../.gitbook/assets/screen-shot-2020-06-04-at-11.39.52-am.png)
 
-An example CSV is [here](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv). This CSV includes an up to date universe that is updated daily.
+An example CSV is [here](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv). This CSV includes an up to date universe that is generated daily.
 
 ### **Creating Signals**
 
