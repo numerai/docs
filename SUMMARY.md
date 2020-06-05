@@ -32,7 +32,7 @@
   * [OHwA S01E09](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e09.md)
   * [OHwA S01E10](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e10.md)
   * [OHwA S01E11](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e11.md)
-  * [OHwA S01E07](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e07.md)
+  * [OHwA S01E12](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e07.md)
 * [FAQ in Office Hours](office-hours-with-arbitrage/faq-in-office-hours.md)
 
 ## Help
