@@ -1,5 +1,5 @@
 ---
-description: 'Date: April 2, 2020 / Interview with Bor'
+description: 'April 2, 2020 / Interview with Bor'
 ---
 
 # OHwA S01E05

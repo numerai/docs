@@ -1,5 +1,5 @@
 ---
-description: 'Date: March 19, 2020 / Interview with Michael Oliver'
+description: 'March 19, 2020 / Interview with Michael Oliver'
 ---
 
 # OHwA S01E03

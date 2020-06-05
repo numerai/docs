@@ -1,5 +1,5 @@
 ---
-description: 'Date: March 5, 2020 / Written by http://twitter.com/mandelliant'
+description: 'March 5, 2020 / Written by http://twitter.com/mandelliant'
 ---
 
 # OHwA S01E01
