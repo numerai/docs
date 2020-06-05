@@ -1,6 +1,6 @@
 # Signals Overview
 
-Numerai Signals is a new decentralized marketplace for stock market data built on Ethereum. It allows anybody to upload signals, build a track record that anyone can verify, and earn money.
+Numerai Signals allows anybody to upload signals, build a verifiable track record, and earn money.
 
 ### **How Numerai Signals Works**
 
