@@ -1,10 +1,10 @@
 ---
-description: 'Date: April 2, 2020 / Written by http://twitter.com/mandelliant'
+description: 'Date: April 2, 2020 / Interview with Bor'
 ---
 
 # OHwA S01E05
 
-**The one where Arbitrage interviews Bor**
+_**The one where Arbitrage interviews Bor.** Written by_ [_http://twitter.com/mandelliant_](http://twitter.com/mandelliant)_._
 
 For the fifth edition of Office Hours, Arbitrage welcomed longtime tournament participant [Bor](https://numer.ai/bor1) who was not only ready to answer questions, but came with a presentation of his own. Before Bor could present, though, he had to make it through Arbitrage’s gauntlet.
 
