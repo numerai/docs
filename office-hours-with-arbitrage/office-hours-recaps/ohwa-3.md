@@ -1,12 +1,10 @@
 ---
-description: 'Date: March 19, 2020 / Written by http://twitter.com/mandelliant'
+description: 'Date: March 19, 2020 / Interview with Michael Oliver'
 ---
 
 # OHwA S01E03
 
-### Office Hours with Arbitrage \#3
-
-#### _**The one where Arbitrage interviews Michael Oliver**_
+**The one where Arbitrage interviews Michael Oliver** _/ Written by_ [_http://twitter.com/mandelliant_](http://twitter.com/mandelliant)\_\_
 
 Arbitrage welcomed [Numerai tournament](https://numer.ai/tournament) data scientist [Michael Oliver](https://twitter.com/the_moliver) to Office Hours, showing off the questions he prepared in advance.
 
