@@ -1,14 +1,10 @@
+---
+description: 'From April 23, 2020'
+---
+
 # OHwA S01E08
 
-#### Office Hours with Arbitrage \#8
-
-![](https://cdn-images-1.medium.com/max/1600/1*-BNBDP6fa2yaJKKHfHCgkQ.png)
-
-_From April 23, 2020_
-
-After a busy week since [Office Hours \#7](https://medium.com/numerai/office-hours-with-arbitrage-7-c82eaae8c6e8), team member and pizza lover [Patrick Schork](https://twitter.com/pschork) joined Arbitrage to talk data before diving into the questions from Slido.
-
-#### The one where Arbitrage interviews Patrick Schork
+_The one where Arbitrage interviews Patrick Schork_
 
 **Arbitrage:** Why don’t you start us out … I don’t think you’ve even introduced yourself in [the forum](https://forum.numer.ai) yet.
 
@@ -60,7 +56,9 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **Arbitrage:** Alright, so who’s your favorite team member? I’m going to guess Anson.
 
-**Patrick:** My favorite team member at Numerai? I would say probably [NJ](https://twitter.com/tasha_jade).![](https://cdn-images-1.medium.com/max/1600/1*Um3PSMVA_9JO5brKgOsN6A.gif)Gauntlet = thrown
+**Patrick:** My favorite team member at Numerai? I would say probably [NJ](https://twitter.com/tasha_jade).Gauntlet = thrown
+
+![](https://cdn-images-1.medium.com/max/1600/1*Um3PSMVA_9JO5brKgOsN6A.gif)
 
 **Arbitrage:** There we go. The race is on.
 
@@ -74,7 +72,10 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **Patrick:** Hold on.
 
-**Arbitrage:** That’s right Keno, I’m watching the chat. And there were a ton of questions in Slido, too, so I’m pretty pumped for that. That’s my favorite segment of Office Hours: me trying to answer a question and then Richard telling me how it is. Or if I have no idea, I’ll just pawn it off to [Bor](https://numer.ai/bor1) or [Michael Oliver](https://numer.ai/mdo). The more people I interview, the more people I can pawn it off to, so that’s working out pretty well for me. But if you guys stop showing up, I’m in a heap of trouble. Oh well, I’ll figure it out. Here we go, I think it’s puppy time.![](https://cdn-images-1.medium.com/max/1600/1*L_z81NO-alH1JN3ZoVUxFQ.gif)“NJ is melting.” — Arbitrage
+**Arbitrage:** That’s right Keno, I’m watching the chat. And there were a ton of questions in Slido, too, so I’m pretty pumped for that. That’s my favorite segment of Office Hours: me trying to answer a question and then Richard telling me how it is. Or if I have no idea, I’ll just pawn it off to [Bor](https://numer.ai/bor1) or [Michael Oliver](https://numer.ai/mdo). The more people I interview, the more people I can pawn it off to, so that’s working out pretty well for me. But if you guys stop showing up, I’m in a heap of trouble. Oh well, I’ll figure it out. Here we go, I think it’s puppy time.  
+
+
+![](https://cdn-images-1.medium.com/max/1600/1*L_z81NO-alH1JN3ZoVUxFQ.gif)“NJ is melting.” — Arbitrage
 
 **Patrick:** His name is Espresso.
 
@@ -110,7 +111,7 @@ To clone the meta model, a data scientist would have to know the proportions of 
 
 Arbitrage prefaced his answer by saying that he’s quit the Numerai tournament for months at a time in the past because he felt there was too much cheating going on. “When I play a sport, I try to follow the rules as they’re written, and I don’t try to invent ways to get around the rules.”
 
-He looks at the situation with Madmin through the lens of whether or not that person is operating in the spirit of the competition or purposely trying to find a way to extract value. He also pointed out that the [Bot hunting channel](https://community.numer.ai/channel/bothunting) in the Numerai community has been around for a long time, with several users who actively search out people who are exploiting the tournament.![](https://cdn-images-1.medium.com/max/1600/1*Xx4OsHNknDI7pY_t6F6_HQ.gif)Pictured: Bot hunting channel
+He looks at the situation with Madmin through the lens of whether or not that person is operating in the spirit of the competition or purposely trying to find a way to extract value. He also pointed out that the [Bot hunting channel](https://community.numer.ai/channel/bothunting) in the Numerai community has been around for a long time, with several users who actively search out people who are exploiting the tournament.
 
 Arbitrage doesn’t like when users create models that don’t contribute to the hedge fund because ultimately, it hurts everyone, data scientists and Numerai alike.
 
@@ -122,7 +123,9 @@ _Author’s note: read about_ [_The DAO hack_](https://medium.com/@pullnews/unde
 
 “While there are still humans involved,” Arbitrage said, “I have no problem with intervention from the team to set things straight. I think it’s called for and justified.” He added that the fact Madmin was the top contributor on both the traditional leaderboard and MMC leaderboard is very interesting. Arbitrage’s conclusion, after reading [Mike P’s forum post](https://forum.numer.ai/t/leaderboard-bonus-exploit-uncovered/200), was that Madmin is performant, so actually contributing to the hedge fund, but the person behind the model designed other accounts to neutralize the risk.
 
-If a model is actually good, backtests will prove it. “I’ve always wondered if the team would attribute backtests to an individual user.” If a test showed conclusively that a particular model appeared performant but was actually terrible, it would be possible to send that user a message, prodding them to take action.![](https://cdn-images-1.medium.com/max/1600/1*sZxPcJC2yDngFYE_ssZm2A.jpeg)“Hey, your model sucks. We did all of this backtesting and the actual results are horrendous. You should redo it. Or, wait 20 weeks to find out.” — Arbitrage’s proposed backtesting message
+If a model is actually good, backtests will prove it. “I’ve always wondered if the team would attribute backtests to an individual user.” If a test showed conclusively that a particular model appeared performant but was actually terrible, it would be possible to send that user a message, prodding them to take action.“
+
+![](https://cdn-images-1.medium.com/max/1600/1*sZxPcJC2yDngFYE_ssZm2A.jpeg)
 
 He argued that in some scenarios, it would be okay for the Numerai team to let data scientists know the results of their backtests. That way, if a model performs uncharacteristically well, the data scientist will know it’s an outlier and not likely to last.
 
@@ -146,7 +149,7 @@ Arbitrage’s personal style: “I just pick a fixed amount of NMR to skate and 
 
 Arbitrage believes it’s still too soon to compare staking on MMC to correlation. “I had some crazy high scores on correlation,” he said, “like 12% for three weeks in a row, and I don’t think I’ve ever seen a score that high on the MMC side.”
 
-He’s in wait and see mode: “I’m going to wait and take a better look at it,” he said, adding “I would probably look at my MMC after a month, and if I had an indication that while all models are doing well, I’m also getting a high MMC, that would probably be your clue to look at burns: if everybody’s burning, how did your model do relative?”![](https://cdn-images-1.medium.com/max/1600/1*FGiSwKuqX9_R_C2S07SYiA.jpeg)When you realize you’re only in the middle of the burn group
+He’s in wait and see mode: “I’m going to wait and take a better look at it,” he said, adding “I would probably look at my MMC after a month, and if I had an indication that while all models are doing well, I’m also getting a high MMC, that would probably be your clue to look at burns: if everybody’s burning, how did your model do relative?”
 
 In the past, Arbitrage said data scientists would look at where they were positioned in the burn group \(whether they saw some of the worst burns or closer to the middle\) and used that as a way to gauge variance relative to other models. His advice: have patience because results take time and to pick a stake and stick with it for a while.
 
@@ -154,7 +157,7 @@ In the past, Arbitrage said data scientists would look at where they were positi
 
 As Numerai engineer Jason explained to Arbitrage, the Integration Test accounts are the same example model but submitted on different days of the week to test the system.
 
-**Arbitrage:** I don’t know if that’s still true. I don’t think Jason’s on… Jason? Jason?![](https://cdn-images-1.medium.com/max/1600/1*RycGfEDwxG3IafTju1CCRw.gif)Speak of the devil
+**Arbitrage:** I don’t know if that’s still true. I don’t think Jason’s on… Jason? Jason?![](https://cdn-images-1.medium.com/max/1600/1*RycGfEDwxG3IafTju1CCRw.gif)_Speak of the devil_
 
 **Jason**: Yeah, I’m here and yeah that is true, that’s exactly what that is.
 
@@ -202,7 +205,9 @@ For [MMC 2](https://forum.numer.ai/t/mmc2-announcement/93/2), there is no bonus,
 
 **Zen:** It looks really good, I’m ready to check the box.
 
-**Arbitrage:** I’m a little jealous because I don’t have very high MMC which is that stability I like.![](https://cdn-images-1.medium.com/max/1600/1*dhGPhL3IvraJX7_bRWZgCw.jpeg)Pictured: Arbitrage
+**Arbitrage:** I’m a little jealous because I don’t have very high MMC which is that stability I like.
+
+![Pictured: Arbitrage](https://cdn-images-1.medium.com/max/1600/1*dhGPhL3IvraJX7_bRWZgCw.jpeg)
 
 **Arbitrage:** I think without the bonus is fine, especially with the 2x multiplier on performance. I think that’s a big incentive. I’ll be interested to see, without the rolling bonus approach, how the users will respond. Will we have MMC chasers?
 

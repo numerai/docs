@@ -1,10 +1,8 @@
 ---
-description: 'From April 30, 202'
+description: 'From April 30, 2020'
 ---
 
 # OHwA S01E09
-
-#### Office Hours with Arbitrage \#9
 
 **From chat: The NMR value staked is different from the Staked Total tab now. Did the increases for pending rounds get dropped from the running total?**
 
