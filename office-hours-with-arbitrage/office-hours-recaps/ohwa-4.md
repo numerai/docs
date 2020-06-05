@@ -1,10 +1,10 @@
 ---
-description: 'Date: March 26, 2020 / Written by http://twitter.com/mandelliant'
+description: 'Date: March 26, 2020 / Interview with Richard Craib'
 ---
 
 # OHwA S01E04
 
-_**The one where Arbitrage interviews Richard Craib**_
+_**The one where Arbitrage interviews Richard Craib** Written by_ [_http://twitter.com/mandelliant_](http://twitter.com/mandelliant)\_\_
 
 In [the previous office hours](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-3), Arbitrage introduced a new segment where he interviews a member of the Numerai community or team \(Numerati\). For Office Hours \#4, Numerai founder [Richard Craib](http://twitter.com/richardcraib) joined Arbitrage in the hot seat.
 
