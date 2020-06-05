@@ -12,6 +12,7 @@
 * [Reputation](tournament/reputation.md)
 * [FAQ](tournament/faq.md)
 * [Bounties](tournament/bounties.md)
+* [Forum](https://forum.numer.ai/)
 
 ## Numerai Signals
 
@@ -53,4 +54,5 @@
 * [r/numerai](https://www.reddit.com/r/numerai/)
 * [Meetup](https://www.meetup.com/Numerai/)
 * [Telegram](https://t.me/NMR_Official)
+* [Forum](https://forum.numer.ai/)
 
