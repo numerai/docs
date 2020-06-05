@@ -1,5 +1,5 @@
 ---
-description: 'Date: March 26, 2020'
+description: 'Date: March 26, 2020 / Written by http://twitter.com/mandelliant'
 ---
 
 # OHwA S01E04
@@ -144,11 +144,13 @@ Richard shared that the first thing Numerai is going to do about this is introdu
 
 **From Keno:** **where are we with payouts? Are you comfortable with how the payouts have transpired over the last two highly volatile weeks?**
 
-In the two week period leading up to this Office Hours, the market saw a period of significant volatility which saw staked users outside of the top 100 burning sometimes up to 50% of their stake.![](https://cdn-images-1.medium.com/max/1600/1*wBaHuBYpPZQR0MV4WvTn5w.png)Payout band of ±0.2. Learn more about staking and payouts in the [tournament docs](https://docs.numer.ai/tournament/learn#staking).
+In the two week period leading up to this Office Hours, the market saw a period of significant volatility which saw staked users outside of the top 100 burning sometimes up to 50% of their stake.
+
+![Payout band of &#xB1;0.2. Learn more about staking and payouts in the tournament docs](https://cdn-images-1.medium.com/max/1600/1*wBaHuBYpPZQR0MV4WvTn5w.png)
 
 Payout is a function of a model’s total stake and it’s average daily correlation, meaning that for a 100 NMR stake, a daily correlation of -0.1 would result in a payout of -50%, burning 50 of the NMR at stake. Keno’s question reflects that correlation is likely to be far off during periods of high market volatility, potentially leading to significant losses for participants.
 
-Arbitrage took the opportunity to plug \#BurnInsurance \(you can read more about his ideas from [Office Hours \#1](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d) and [Office Hours \#2](https://medium.com/numerai/office-hours-with-arbitrage-2-a0686dc88417)\); Richard directed the question towards Michael, who has been working on improving the payouts system.
+Arbitrage took the opportunity to plug \#BurnInsurance \(you can read more about his ideas from [Office Hours \#1](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-1) and [Office Hours \#2](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-2)\); Richard directed the question towards Michael, who has been working on improving the payouts system.
 
 Michael mentioned that he’s been working on small changes to the payouts system to help reduce volatility \(read [his latest announcement](https://docs.google.com/document/d/1o3-J8qFyo7aQQZ8BIja0Lmw7Gr81sPVYazq6v41-ENI/edit) for more details\). The challenge, however, is that path dependency and automatic compounding cause data scientists to be more exposed than they would want during periods of high burn. “I’m still in the camp that if you want to burn less, you can stake less or build a less volatile model that’s less exposed to the bad periods.”
 
@@ -192,7 +194,7 @@ Michael Oliver was on the call, and was promptly asked, “what’s your secret?
 
 **Arbitrage:** This is the part of the show where we all talk about a lot of stuff but specifically nothing.
 
-_Author’s note: learn more about Michael’s approach to data science and the tournament in his interview from the previous_ [_Office Hours_](https://medium.com/numerai/office-hours-with-arbitrage-3-b3a3ce4d6833)_._
+_Author’s note: learn more about Michael’s approach to data science and the tournament in his interview from the previous_ [_Office Hours_](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-3)_._
 
 **Is Stata useful or can it be used for the Numerai tournament?**
 
@@ -248,7 +250,9 @@ Slyfox opened that question up to everyone on the call, asking how other data sc
 
 [Michael P](https://numer.ai/master_key) answered this question, noting that validation sharpes are high values, with the Example Prediction model’s sharpe being around 1.5. Michael added the advice that the Example Prediction sharpe is “verification that you’re calculating things correctly, but you want to calculate your sharpe yourself on the cross validation and training set. You don’t want to rely on the validation sharpe to pick your model because the validation eras are too easy.”
 
-Richard then brought up the Validation 2 data set Slyfox mentioned during [Office Hours \#2](https://medium.com/numerai/office-hours-with-arbitrage-2-a0686dc88417). Validation 2 is a data set the Numerai team are exploring which contains the previous year of live data, meant to be used as a more robust validation data set \(or additional training data as Arbitrage and Bor pointed out\).![](https://cdn-images-1.medium.com/max/1600/1*ET-ZvrpiXKsxzbELOww9-w.gif)Excited for new data.
+Richard then brought up the Validation 2 data set Slyfox mentioned during [Office Hours \#2](https://medium.com/numerai/office-hours-with-arbitrage-2-a0686dc88417). Validation 2 is a data set the Numerai team are exploring which contains the previous year of live data, meant to be used as a more robust validation data set \(or additional training data as Arbitrage and Bor pointed out\).
+
+![](https://cdn-images-1.medium.com/max/1600/1*ET-ZvrpiXKsxzbELOww9-w.gif)Excited for new data.
 
 If you’re passionate about finance, machine learning, or data science and you’re not competing in [the most challenging data science tournament in the world](https://numer.ai/tournament), what are you waiting for?
 
