@@ -20,7 +20,7 @@
 
 ## Office Hours with Arbitrage
 
-* [Office Hours Recaps](office-hours-with-arbitrage/office-hours-recaps/README.md)
+* [Office Hours Recaps: Season 1](office-hours-with-arbitrage/office-hours-recaps/README.md)
   * [OHwA S01E01](office-hours-with-arbitrage/office-hours-recaps/ohwa-1.md)
   * [OHwA S01E02](office-hours-with-arbitrage/office-hours-recaps/ohwa-2.md)
   * [OHwA S01E03](office-hours-with-arbitrage/office-hours-recaps/ohwa-3.md)
@@ -28,6 +28,11 @@
   * [OHwA S01E05](office-hours-with-arbitrage/office-hours-recaps/ohwa-5.md)
   * [OHwA S01E06](office-hours-with-arbitrage/office-hours-recaps/ohwa-6.md)
   * [OHwA S01E07](office-hours-with-arbitrage/office-hours-recaps/ohwa-7.md)
+  * [OHwA S01E08](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e08.md)
+  * [OHwA S01E09](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e09.md)
+  * [OHwA S01E10](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e10.md)
+  * [OHwA S01E11](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e11.md)
+  * [OHwA S01E07](office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e07.md)
 * [FAQ in Office Hours](office-hours-with-arbitrage/faq-in-office-hours.md)
 
 ## Help
