@@ -1,5 +1,5 @@
 ---
-description: 'April 16, 2020 / Interview with Bor'
+description: 'April 16, 2020 / Interview with ZEN'
 ---
 
 # OHwA S01E07
