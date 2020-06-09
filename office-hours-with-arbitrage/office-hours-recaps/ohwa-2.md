@@ -79,7 +79,7 @@ _Author’s note: Numerai names the targets in their data sets. The targets are 
 
 **How do users tune hyperparameters?**
 
-[Michael P](https://numer.ai/master_key) \(engineer/coolguy\) joined the video call to expand on the first question regarding tuning hyperparameters as a user, specifically what form of optimization to use and what score to optimize for.
+[Michael P](https://numer.ai/master_key) \(Data Scientist at Numerai/coolguy\) joined the video call to expand on the first question regarding tuning hyperparameters as a user, specifically what form of optimization to use and what score to optimize for.
 
 Starting with what to optimize for, Michael said that for maximizing payouts, the data scientists are incentivized to optimize for mean correlation. He noted, however, that they do find it useful to optimize against something like a Sharpe ratio, taking the mean of a user’s error scores and dividing by the standard deviation of the era scores. This, he said, leads to much better consistency and lower risk \(specifically out of sample\).
 

@@ -2,11 +2,11 @@
 
 ## Motivation
 
-How do we design a payout system that incentive aligned and resistant against [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack)? 
+How do we design a payout system that incentive aligned and resistant against [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack)?
 
 The answer is staking.
 
-Numerai wants accurate predictions and is willing to reward it. How much you can earn/burn is a function of your performance and stake. This is also known as having [skin in the game](https://www.amazon.com/dp/B075HYVP7C/).    
+Numerai wants accurate predictions and is willing to reward it. How much you can earn/burn is a function of your performance and stake. This is also known as having [skin in the game](https://www.amazon.com/dp/B075HYVP7C/).
 
 Staking also gives Numerai a sybil resistant way to allocate payouts. Since payouts are a percentage of your stake value, you cannot game the payout system by simply creating duplicate accounts.
 
@@ -26,9 +26,9 @@ Changes to your stake do not apply immediately, instead they apply on the `effec
 
 ## Payouts
 
-The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the beginning of the next round on Thursday. 
+The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the beginning of the next round on Thursday.
 
-For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05` then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.  
+For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05` then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.
 
 {% hint style="warning" %}
 Decreasing your stake will lower your `stake_value` in the immediate next round, even though the decrease will only happen 4 weeks later.
@@ -52,5 +52,5 @@ We reserve the right to refund your stake and void all earnings and burns if we 
 
 We will rarely ever exercise this right, as our payout systems are designed to be attack resistant, and we want users to try new ideas without fear of punishment.
 
-If we do detect abuse, we will inform the community about it and explain the actions we take against it. Here is [one example](https://forum.numer.ai/t/leaderboard-bonus-exploit-uncovered/200/8). 
+If we do detect abuse, we will inform the community about it and explain the actions we take against it. Here is [one example](https://forum.numer.ai/t/leaderboard-bonus-exploit-uncovered/200/8).
 
