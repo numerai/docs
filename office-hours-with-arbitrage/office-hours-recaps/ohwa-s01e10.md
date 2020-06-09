@@ -1,5 +1,5 @@
 ---
-description: 'From May 7, 2020'
+description: 'From May 7, 2020 / Interview with Jason @Numerai'
 ---
 
 # OHwA S01E10
