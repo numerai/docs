@@ -12,7 +12,7 @@ Staking also gives Numerai a sybil resistant way to allocate payouts. Since payo
 
 ## Managing your stake
 
-You can manage your stake on the Numerai website by opening the staking modal. Use this modal to increase or decrease your stake amount, or switch your stake type between `corr` and `mmc`.
+You can manage your stake on the Numerai website by clicking 'Manage Stake'. Use this modal to increase or decrease your stake amount, or switch your stake type between `corr` and `mmc`.
 
 ![staking modal](../.gitbook/assets/image%20%2844%29.png)
 
@@ -28,7 +28,7 @@ Changes to your stake do not apply immediately, instead they apply on the `effec
 
 The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the beginning of the next round on Thursday. 
 
-For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05`, then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.  
+For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05` then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.  
 
 {% hint style="warning" %}
 Decreasing your stake will lower your `stake_value` in the immediate next round, even though the decrease will only happen 4 weeks later.
