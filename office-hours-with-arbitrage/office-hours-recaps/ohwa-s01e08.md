@@ -1,10 +1,8 @@
 ---
-description: 'From April 23, 2020'
+description: 'From April 23, 2020 / interview with Patrick @Numerai'
 ---
 
 # OHwA S01E08
-
-_The one where Arbitrage interviews Patrick Schork_
 
 **Arbitrage:** Why don’t you start us out … I don’t think you’ve even introduced yourself in [the forum](https://forum.numer.ai) yet.
 
