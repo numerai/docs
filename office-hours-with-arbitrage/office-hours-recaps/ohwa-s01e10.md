@@ -4,11 +4,11 @@ description: 'From May 7, 2020'
 
 # OHwA S01E10
 
-Arbitrage opened with a brief note on how Office Hours has grown since [number one](ohwa-1.md): we’ve had many people come back week after week, with lots of new faces each time. He noted that about half of the people who visit the Office Hours summaries on Medium actually read the post \(nice\), and each week he sees lots of questions posted on Slido and sent to him directly on Rocket.Chat.
+Arbitrage opened with a brief note on how Office Hours has grown since [number one](ohwa-1.md): we’ve had many people come back week after week, with lots of new faces each time. He noted that about half of the people who visit the Office Hours summaries actually read the post, and each week he sees lots of questions posted on Slido and sent to him directly on Rocket.Chat.
 
 Arbitrage gave a shout-out to Patrick for his work on multi-model accounts, then in beta. This feature had been in the works for a while, first teased by Slyfox during Office Hours with Arbitrage [S01E02](ohwa-2.md).
 
-_Author’s note: one week after this episode was recorded, multi-model accounts were made generally available._
+_Author’s note: one week after this episode was recorded, multi-model accounts were made generally available:_ [_https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399_](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399)\_\_
 
 ### Questions from Slido
 
@@ -41,13 +41,11 @@ A quick poll of the audience revealed that most of the Office Hours regulars hav
 
 ![Office Hours regulars](../../.gitbook/assets/the_breakfast_club.jpg)
 
-In chat, some rookie admitted to only having one model \(_Author’s note_: 🙋‍♂️\).
-
 Bor mentioned that, with at least 100 people focused solely on data modeling, that would rank Numerai up with some of the top quantitative hedge funds in the world in terms of data resources.
 
 **Is smart sharpe that much better than normal sharpe?**
 
-On Richard Craib’s post on the Numerai forum about performance stationarity, Michael Oliver referenced [smart sharpe](https://forum.numer.ai/t/performance-stationarity/151/2?u=beanstalk), a modified sharpe calculation that accounts for autocorrelation.   
+On Richard Craib’s post on the Numerai forum about [performance stationarity](https://forum.numer.ai/t/performance-stationarity/151), Michael Oliver referenced [smart sharpe](https://forum.numer.ai/t/performance-stationarity/151/2?u=beanstalk), a modified sharpe calculation that accounts for autocorrelation.   
   
 The paper [Michael Oliver](https://numer.ai/mdo) referenced posits that smart sharpe leads to better model performance out of sample, which would be an advantage for anyone competing in the Numerai tournament. Michael noted that in model selection, smart sharpe offered tighter parameters than traditional sharpe, meaning it was more clear which models performed best according to smart sharpe.
 
@@ -57,7 +55,7 @@ Arbitrage prefaced his answer with the caveat that Erasure Quant falls outside t
   
 Obtaining good daily or tick-level data on equities is extremely difficult. The best data source candidate, Arbitrage thinks, is the [Quandl Wiki Daily](https://blog.quandl.com/getting-started-with-the-quandl-api) data followed by [Big Charts](https://bigcharts.marketwatch.com/default.asp). Another recommended platform is [Alpaca](https://alpaca.markets/), and tournament data scientist Keno mentioned that doing his calculations within [Quantopian](https://www.quantopian.com/) has worked for him.  
   
-_Author’s note: The Erasure Quant revamp, called Numerai Signals, was in beta as of June 4. Check out_ [_Numerai Signals_](https://signals.numer.ai/tournament)_, read the_ [_Signals docs_](https://docs.numer.ai/numerai-signals/signals-overview)_, or join the conversation on_ [_Rocket.Chat_](https://community.numer.ai/channel/signals)_. At this point, Arbitrage had a brief interlude to interview Numerai engineer Jason. Transcript below._
+_Author’s note: The Erasure Quant revamp, called Numerai Signals, is in beta as at June 4, 2020. Check out_ [_Numerai Signals_](https://signals.numer.ai/tournament)_, read the_ [_Signals docs_](https://docs.numer.ai/numerai-signals/signals-overview)_, or join the conversation on_ [_Rocket.Chat_](https://community.numer.ai/channel/signals)_. At this point, Arbitrage had a brief interlude to interview Numerai engineer Jason. Transcript below._
 
 **What are good approaches to get started on the Russell 3000?**
 
