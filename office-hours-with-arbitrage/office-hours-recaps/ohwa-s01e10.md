@@ -47,7 +47,7 @@ Bor mentioned that, with at least 100 people focused solely on data modeling, th
 
 On Richard Craib’s post on the Numerai forum about [performance stationarity](https://forum.numer.ai/t/performance-stationarity/151), Michael Oliver referenced [smart sharpe](https://forum.numer.ai/t/performance-stationarity/151/2?u=beanstalk), a modified sharpe calculation that accounts for autocorrelation.   
   
-The paper [Michael Oliver](https://numer.ai/mdo) referenced posits that smart sharpe leads to better model performance out of sample, which would be an advantage for anyone competing in the Numerai tournament. Michael noted that in model selection, smart sharpe offered tighter parameters than traditional sharpe, meaning it was more clear which models performed best according to smart sharpe.
+The [paper](https://www.keyquant.com/Download/GetFile?Filename=%5CPublications%5CKeyQuant_WhitePaper_APT_Part2.pdf) [Michael Oliver](https://numer.ai/mdo) referenced \[_not endorsement_\] posits that smart sharpe leads to better model performance out of sample, which would be an advantage for anyone competing in the Numerai tournament. Michael noted that in model selection, smart sharpe offered tighter parameters than traditional sharpe, meaning it was more clear which models performed best according to smart sharpe.
 
 **Quant revamp is coming soon - what are good data sets to get started?**
 
