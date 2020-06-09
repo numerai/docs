@@ -7,12 +7,9 @@
 * Kahneman, D. \(1973\). Attention and effort \(Vol. 1063\). Englewood Cliffs, NJ: Prentice-Hall.
 * Malkiel, B. G., & Fama, E. F. \(1970\). Efficient capital markets: A review of theory and empirical work. The journal of Finance, 25\(2\), 383-417. [https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.1970.tb00518.x](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.1970.tb00518.x)
 * Grossman, S. J., & Stiglitz, J. E. \(1980\). On the impossibility of informationally efficient markets. The American economic review, 70\(3\), 393-408. [https://www.jstor.org/stable/1805228?seq=1](https://www.jstor.org/stable/1805228?seq=1)
-* Jensen, M. C., & Meckling, W. H. \(1979\). Theory of the firm: Managerial behavior, agency costs, and ownership structure. In Economics social institutions \(pp. 163-231\). Springer, Dordrecht.
-* [https://link.springer.com/chapter/10.1007/978-94-009-9257-3\_8](https://link.springer.com/chapter/10.1007/978-94-009-9257-3_8)
-* Merton, R. C. \(1987\). A simple model of capital market equilibrium with incomplete information. The journal of finance, 42\(3\), 483-510.
-* [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x)
-* Fama, E. F., & French, K. R. \(1993\). Common risk factors in the returns on stocks and bonds. Journal of Financial Economics, Volume 33, 3-56.
-* [https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235](https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235)
+* Jensen, M. C., & Meckling, W. H. \(1979\). Theory of the firm: Managerial behavior, agency costs, and ownership structure. In Economics social institutions \(pp. 163-231\). Springer, Dordrecht. [https://link.springer.com/chapter/10.1007/978-94-009-9257-3\_8](https://link.springer.com/chapter/10.1007/978-94-009-9257-3_8)
+* Merton, R. C. \(1987\). A simple model of capital market equilibrium with incomplete information. The journal of finance, 42\(3\), 483-510. [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x)
+* Fama, E. F., & French, K. R. \(1993\). Common risk factors in the returns on stocks and bonds. Journal of Financial Economics, Volume 33, 3-56. [https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235](https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235)
 
 ### Resources for Python Users: Packages, modules, etc:
 
