@@ -1,5 +1,5 @@
 ---
-description: 'March 26, 2020 / Interview with Richard Craib'
+description: 'March 26, 2020 / Interview with Richard @Numerai'
 ---
 
 # OHwA S01E04
