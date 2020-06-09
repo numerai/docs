@@ -10,10 +10,6 @@ Numerai wants accurate predictions and is willing to reward it. How much you can
 
 Staking also gives Numerai a sybil resistant way to allocate payouts. Since payouts are a percentage of your stake value, you cannot game the payout system by simply creating duplicate accounts.
 
-{% hint style="success" %}
-What would the internet look like if every interaction was staked? Read more at [erasure.world](https://erasure.world/)
-{% endhint %}
-
 ## Managing your stake
 
 You can manage your stake on the Numerai website by opening the staking modal. Use this modal to increase or decrease your stake amount, or switch your stake type between `corr` and `mmc`.
