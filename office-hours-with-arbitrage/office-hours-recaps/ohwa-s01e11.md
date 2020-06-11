@@ -84,7 +84,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** So 1. Take notes; 2. Be patient; and 3. Have fun. That's great! I think that's awesome. I'll buy into that. Here comes a really big question, and this is going to be fought over, I'm sure: who's your favorite team member?
 
-**T**h**emicon:** Well it has to be either [Richard](https://twitter.com/richardcraib) or [NJ](https://twitter.com/tasha_jade) - Cape Town for the win!
+**Themicon:** Well it has to be either [Richard](https://twitter.com/richardcraib) or [NJ](https://twitter.com/tasha_jade) - Cape Town for the win!
 
 ![Table Bay Harbour in Cape Town](../../.gitbook/assets/table-bay-harbour-3541607_960_720.jpg)
 
