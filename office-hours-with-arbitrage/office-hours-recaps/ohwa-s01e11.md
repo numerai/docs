@@ -1,5 +1,5 @@
 ---
-description: 'From May 14, 2020'
+description: "May 14, 2020 / Interview with Dr. Rudi Kuhn \U0001F1FF\U0001F1E6"
 ---
 
 # OHwA S01E11
