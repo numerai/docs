@@ -51,6 +51,8 @@ You can see the historical universe by downloading old example predictions files
 
 Signal uploads will be scored daily \(see Evaluating Data below\). Your submission is valid for 60 days from the time of submission. After that, you will no longer be eligible for payments and will be removed from the leaderboard. You will still receive scores, and as soon as you submit again, you will be eligible for payouts.
 
+If you submit before NYSE market close \(4pm EST most days\), then you will be scored for the next day. If you submit after the close, then you will be scored 2 days in the future.
+
 ### **Staking \(Coming Soon\)**
 
 To be eligible to receive payouts from Numerai, Numerai Signals users are required to stake the NMR cryptocurrency on their signals. If you don't have NMR, there are exchanges where you can trade ETH for NMR. For example [Uniswap](https://uniswap.io/).
