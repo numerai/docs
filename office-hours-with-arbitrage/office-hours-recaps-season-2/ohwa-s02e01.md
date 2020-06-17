@@ -10,7 +10,7 @@ description: 'June 04, 2020 / Interview with Joakim'
 
 **Arbitrage:** Can you talk to me a little bit about how Quantopian prepared you for Numerai or maybe Numerai enhanced your skills for Quantopian? While they're related, they're completely, totally different.
 
-**Joakim:** Yeah, well first of all, I had to learn Python in order to compete in either Quantopian or Numerai. You could use other programming languages with Numerai, but Python is the one for data science. But Python is the language for data science, I think, and there are courses online on UDemy, Coursera, and there's also YouTube and videos in general. If I didn't learn Python for Quantopian I wouldn't have been able to compete in Numerai, and Numerai teaches me about machine learning and data science. They benefit from each other.
+**Joakim:** Yeah, well first of all, I had to learn Python in order to compete in either Quantopian or Numerai. You could use other programming languages with Numerai, but Python is the one for data science, I think. There are courses online on UDemy, Coursera, and there's also YouTube and videos in general. If I didn't learn Python for Quantopian I wouldn't have been able to compete in Numerai, and Numerai teaches me about machine learning and data science. They benefit from each other.
 
 **Arbitrage:** I think they're complements, for sure. When I started coding, I was looking for domain-specific applications of Python and I found Quantopian and to me it was a perfect fit. But then I realized I don't really know how to code. At the time I didn't know enough core Python to even get started, I would find some example script and hack it. It was awful and I quit. But then in the Quantopian forum somebody mentioned Numerai, and that's what brought me over. I went all-in on Numerai because of the machine learning aspect. I thought that was the wave of the future, that it was a good thing for me to do \(and it's worked out quite well\). Now I know the Python, I don't have time to try anything new. I can't be a baller like you and be highly successful in both. You're regarded as one of the top users on Quantopian - have you always been near the top or did you kind of learn as you go?
 
@@ -18,7 +18,7 @@ description: 'June 04, 2020 / Interview with Joakim'
 
 **Arbitrage:** I can kind of tell by your coffee that you're on the opposite side of the world - where do you live these days?
 
-**Joakim:** We live in Brisbane, Australia. I'm Swedish originally, but I haven't actually lived in Sweden since '94 - so I'm quite old as well. A bit above average for this group, I think. 
+**Joakim:** We live in Brisbane, Australia. I'm Swedish originally, but I haven't actually lived in Sweden since '94 - so I'm a bit above average age for this group, I think.
 
 **Arbitrage:** I don't know what I can ask you about your Quantopian stuff, but like I said you're one of their top users. How did you get there, and what makes you one of their top users? I'm trying to ask you a question without really asking the question so you don't have to give things away.
 
