@@ -1,16 +1,12 @@
 ---
-description: 'From June 04, 2020'
+description: 'June 04, 2020 / Interview with Joakim'
 ---
 
 # OHwA S02E01
 
-## Welcome to Season 2🎉🎉
-
-### The one where Arbitrage interviews [Joakim](https://numer.ai/joakim_arvidsson)
-
 **Arbitrage:** So, how did you first hear about Numerai?
 
-**Joakim:** I think it was through Quantopian. I've been an active user on Quantopian for a couple of years now and I think it was through a forum post there. Or I was looking up Quantopian's competitors. Then I found Numerai, and it looked really difficult so I didn't try it, but I actually just started a couple of months ago. Early on I wanted to build my own stock market prediction strategy, and Quantopian is good for that, but now I want to learn machine learning and data science, and Numerai is just perfect for that.
+\*\*\*\*[**Joakim**](https://numer.ai/joakim_arvidsson)**:** I think it was through Quantopian. I've been an active user on Quantopian for a couple of years now and I think it was through a forum post there. Or I was looking up Quantopian's competitors. Then I found Numerai, and it looked really difficult so I didn't try it, but I actually just started a couple of months ago. Early on I wanted to build my own stock market prediction strategy, and Quantopian is good for that, but now I want to learn machine learning and data science, and Numerai is just perfect for that.
 
 **Arbitrage:** Can you talk to me a little bit about how Quantopian prepared you for Numerai or maybe Numerai enhanced your skills for Quantopian? While they're related, they're completely, totally different.
 
