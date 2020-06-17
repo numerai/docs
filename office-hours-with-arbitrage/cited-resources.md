@@ -24,6 +24,7 @@
 * Example Scripts - [https://github.com/numerai/example-scripts](https://github.com/numerai/example-scripts)
 * Compute - [https://github.com/numerai/numerai-cli](https://github.com/numerai/numerai-cli)
 * NumerAPI - [https://numerapi.readthedocs.io/en/stable/](https://numerapi.readthedocs.io/en/stable/)
+* MLJAR - [https://mljar.com/automl/](https://mljar.com/automl/)
 
 ### Resources for R Users: Packages, misc:
 
