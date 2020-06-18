@@ -62,7 +62,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** So you're using Python and none of your crazy neural net stuff?
 
-**JRB:** I was using TensorFlow for the longest time until I discovered this other neural net library from Google called [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html). I use that a lot these days. [Michael Oliver](https://numer.ai/mdo) said it looks a lot like Python.
+**JRB:** I was using TensorFlow for the longest time until I discovered this other neural net library from Google called [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html). I use that a lot these days. [Michael Oliver](https://numer.ai/mdo) said it looks a lot like PyTorch.
 
 **Arbitrage:** This one's going to be pretty clutch because I think you'll have some tips that nobody's said before. What are your top three tips for the tournament?
 
