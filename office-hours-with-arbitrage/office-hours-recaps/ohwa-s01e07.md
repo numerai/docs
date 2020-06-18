@@ -172,7 +172,7 @@ As for strategies, Arbitrage speculated that one possible strategy for MMC might
 
 **Are the live targets we are scored on the actual ranking values, or also obfuscated before calculating the scores?**
 
-Arbitrage explained that our predictions are scored like a probability. Data scientists give float values as predictions, ranging from 0 to 1, and predictions they're not really sure about end up at .5. He said if you look at the tails, top and bottom, and pretended that was a portfolio of a long and a short, you can kind of see how you would do with regards to performance. "For our actual results," he said, "you take our predictions, put them in a rank from high to low, and then take the actual stocks and see how they did ranked high to low, and compare how similar those are. That's your scoring metric." 
+Arbitrage speculated that our predictions are scored like a probability. Data scientists give float values as predictions, ranging from 0 to 1, and predictions they're not really sure about end up at .5. He said if you look at the tails, top and bottom, and pretended that was a portfolio of a long and a short, you can kind of see how you would do with regards to performance. "For our actual results," he said, "you take our predictions, put them in a rank from high to low, and then take the actual stocks and see how they did ranked high to low, and compare how similar those are. That's your scoring metric." 
 
 Mike P added that the live targets are calculated exactly the same as the training targets and they are related to stock performance in some way, but a very abstracted way. 
 
