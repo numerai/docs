@@ -88,7 +88,7 @@ He wondered what would happen if he restricted those interactions from happening
 
 Arbitrage added that neural nets and XGBoost, two of the traditionally best performing models, both look at interactions, so that might be a way to leverage the feature categories.
 
-**Elementary school-level question: why do unit 16 or unit 8 data types in Python help reduce memory on trees but not on Keras?**
+**Elementary school-level question: why do float 16 \(**_16 bit floating point numbers_**\) or uint 8 \(**_8 bit unsigned integers_**\) data types in Python help reduce memory on trees but not on Keras?**
 
 > “Good god I have no freaking clue.” — Arbitrage
 
@@ -104,13 +104,13 @@ Arbitrage admitted that he doesn’t have much experience in computer science \(
 
 **Arbitrage:** Yeah JRB! Take it away.
 
-**JRB:** With neural networks, and for that matter linear models, it’s usually a good idea to standardize your input. Essentially, the way you look at a tree-based model is that it tries to split the data set with the best possible split, so there’s scale and variance. That being said, I don’t think there’s anything preventing you from training a neural net with intake features \(that’s what I do for my day job\). I do a lot of model quantization, which is essentially trying to compress models to fit them on mobile phones and embedded devices- there it’s all intake. It makes convergence a lot harder, but there are a lot of tricks. You can train a neural net with intake features, but it’s easier with fully primed features which are standardized with zero mean and intake variance.
+**JRB:** With neural networks, and for that matter linear models, it’s usually a good idea to standardize your input. Essentially, the way you look at a tree-based model is that it tries to split the data set with the best possible split, so it's scale invariant. That being said, I don’t think there’s anything preventing you from training a neural net with quantized features \(that’s what I do for my day job\). I do a lot of model quantization, which is essentially trying to compress models to fit them on mobile phones and embedded devices- there it’s all quantized. It makes convergence a lot harder, but there are a lot of tricks. You can train a neural net with quantized features, but it’s easier with full precision features which are standardized with zero mean and unit variance.
 
 **Arbitrage:** Thanks for that, that’s very helpful.
 
 **Michael Oliver:** I think by default, Keras will just convert everything to float32, also, unless you do work to tell it not to do that. They usually want things to run on a GPU, which is usually float32, so by default Keras is just going to up-convert anything you pass it.
 
-**JRB:** One thing you could do if you’re using Keras: there’s a layer called the [lambda layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda) and you could possibly feed it intake inputs and upscale the first layer in your batch to float32. I haven’t used Keras in a while, so I’m not sure if it will work but it’s definitely worth trying.
+**JRB:** One thing you could do if you’re using Keras: there’s a layer called the [lambda layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda) and you could possibly feed it quantized inputs and upscale the first layer in your batch to float32. I haven’t used Keras in a while, so I’m not sure if it will work but it’s definitely worth trying.
 
 **Arbitrage:** Yeah, what neural network modules or packages are people using these days? Anybody willing to divulge?
 
