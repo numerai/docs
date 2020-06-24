@@ -46,7 +46,7 @@ For Season 2 Episode 3 Arbitrage interviewed tournament data scientist [John Sca
 
 **Arbitrage:** I resemble that comment.
 
-**John:** My parents are proud, and I have to say I've never felt such an awesome responsibility as looking 25 at-risk kids in the face knowing I need to prepare them for the future. In general, my parents and my wife make me laugh because they say that, for lack of a better word, I'm unemployable because I have a distaste for rules and institutions. At school I don't feel that way because I feel the importance of being a role model to the kids - it just dissipates out of there.
+**John:** My parents are proud, and I have to say I've never felt such an awesome responsibility as looking 25 kids in the face knowing I need to prepare them for the future. In general, my parents and my wife make me laugh because they say that, for lack of a better word, I'm unemployable because I have a distaste for rules and institutions. At school I don't feel that way because I feel the importance of being a role model to the kids - it just dissipates out of there.
 
 **Arbitrage:** Is that a Title I school? Is that what that is?
 
