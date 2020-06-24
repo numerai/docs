@@ -9,6 +9,7 @@
 * Jensen, M. C., & Meckling, W. H. \(1979\). Theory of the firm: Managerial behavior, agency costs, and ownership structure. In Economics social institutions \(pp. 163-231\). Springer, Dordrecht. [https://link.springer.com/chapter/10.1007/978-94-009-9257-3\_8](https://link.springer.com/chapter/10.1007/978-94-009-9257-3_8)
 * Merton, R. C. \(1987\). A simple model of capital market equilibrium with incomplete information. The journal of finance, 42\(3\), 483-510. [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x)
 * Fama, E. F., & French, K. R. \(1993\). Common risk factors in the returns on stocks and bonds. Journal of Financial Economics, Volume 33, 3-56. [https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235](https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235)
+* Staff, WikiHow \(2006\). How to dial a rotary phone. WikiHow. [https://www.wikihow.com/Dial-a-Rotary-Phone](https://www.wikihow.com/Dial-a-Rotary-Phone)
 
 ### Resources for Python Users: Packages, modules, etc:
 
