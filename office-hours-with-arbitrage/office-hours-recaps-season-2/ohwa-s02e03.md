@@ -168,9 +168,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** Well, you're up 22% today and I'm down like 1.5% so, you're doing something right. We'll see if it holds. I gotta egg you on a little bit because you're volatility is so high. You're doing okay today, but what's tomorrow going to look like? But you're targeting a different thing. I'm going after stable, top 100 performance. That's it. I don't care about [MMC](https://forum.numer.ai/t/metamodel-contribution-live/449) right now. You're doing something different and unique and I think it's important. You and I know, and [Keno](https://numer.ai/wander) knows, all of our finance bros know, we know how important MMC is overall to the long term strategic goal we're all hoping for. So I applaud your efforts sir and wish you the best of luck. Here's a fun one: if you could have a billboard with anything on it, what would it be and why?
 
-**John:** As a new teacher, my billboard would say: "quality of education and wealth of zip code should have 0 correlation." 
-
-**John:** Otherwise, we might miss the next Einstein. Like [what Richard would say](https://twitter.com/richardcraib/status/1260533528405532672). 
+**John:** As a new teacher, my billboard would say: "quality of education and wealth of zip code should have 0 correlation." Otherwise, we might miss the next Einstein. Like [what Richard would say](https://twitter.com/richardcraib/status/1260533528405532672). 
 
 **Arbitrage:** Yeah - that's a good one. Ant, make sure you write that down, that's a good one.
 
