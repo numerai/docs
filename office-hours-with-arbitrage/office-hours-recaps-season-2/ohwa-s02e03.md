@@ -268,10 +268,6 @@ _Author's note: Same._
 
 ### Questions from Slido
 
-**When Coinbase? When Binance?**
-
-The context for these questions is a recent [blog post from Coinbase](https://blog.coinbase.com/coinbase-continues-to-explore-support-for-new-digital-assets-2c5b84813fcf) where they announced they are considering 18 new assets for listing on their platform. The Numerai team is unable to discuss anything surrounding possible listings until the information is made public. 
-
 **How do I stop my models from being MMC toxic?**
 
 **Slyfox:** Get good.
