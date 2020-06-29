@@ -10,6 +10,7 @@
 * Merton, R. C. \(1987\). A simple model of capital market equilibrium with incomplete information. The journal of finance, 42\(3\), 483-510. [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1987.tb04565.x)
 * Fama, E. F., & French, K. R. \(1993\). Common risk factors in the returns on stocks and bonds. Journal of Financial Economics, Volume 33, 3-56. [https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235](https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235)
 * Staff, WikiHow \(2006\). How to dial a rotary phone. WikiHow. [https://www.wikihow.com/Dial-a-Rotary-Phone](https://www.wikihow.com/Dial-a-Rotary-Phone)
+* Hirshleifer, D., & Shumway, T. \(2003\) Good Day Sunshine: Stock Returns and the Weather. The Journal of Finance, Volume 58\(3\), 1009-1032 [https://www.jstor.org/stable/3094570?seq=1](https://www.jstor.org/stable/3094570?seq=1) 
 
 ### Resources for Python Users: Packages, modules, etc:
 
