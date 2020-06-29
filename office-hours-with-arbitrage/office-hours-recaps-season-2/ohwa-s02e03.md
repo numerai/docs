@@ -1,10 +1,10 @@
 ---
-description: 'From June 18, 2020'
+description: 'June 18, 2020 / John Scaife Interview'
 ---
 
 # OHwA S02E03
 
-For Season 2 Episode 3 Arbitrage interviewed tournament data scientist [John Scaife](https://numer.ai/johnscaife_), who was totally worthy of being interviewed.
+For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Scaife](https://numer.ai/johnscaife_):
 
 ![A model worth talking about](../../.gitbook/assets/john.png)
 
@@ -67,8 +67,6 @@ For Season 2 Episode 3 Arbitrage interviewed tournament data scientist [John Sca
 ![Audiobooks have their own unique risks](../../.gitbook/assets/audiobook.jpg)
 
 **Arbitrage:** I can't listen to people talk, I need to see them talk. It's always been a challenge for me to listen to that kind of stuff so I would rather read it. Something about a physical book, too. I don't know, maybe it's because I'm 36 and I'm just on that edge of, 'I grew up with the tech change.' My grandmother had a rotary phone - so I know how to use a rotary phone but anybody who's two or three years younger than I am don't have any idea how to use a rotary phone.
-
-![Just FYI](../../.gitbook/assets/phone.png)
 
 **John:** So I'm your age, I'm 36, and I remember going to my grandma's and using one to call my mom.
 
