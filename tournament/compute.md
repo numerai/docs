@@ -32,6 +32,10 @@ numerai compute test-webhook
 numerai compute logs -f
 ```
 
+## Timing <a id="getting-started"></a>
+
+Once you've added your webhook url to your [account settings](https://numer.ai/account), Numerai will execute your webhook on Saturday at 19:00 UTC \(an hour after the round starts\). If we haven't successfully received your submission by Sunday 2:00 UTC, we will email you a warning that it looks like your compute job has failed. If it failed, we will try to trigger your compute webhook again on Sunday 19:00 UTC and if it fails again, we will send out a final email on Monday 2:00 UTC.
+
 ## Help <a id="getting-started"></a>
 
 Follow our step by step [tutorial](https://docs.numer.ai/help/compute-tutorial) or watch the video on [YouTube](https://www.youtube.com/watch?v=YFgXMpQszpM).
