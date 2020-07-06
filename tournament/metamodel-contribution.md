@@ -11,7 +11,7 @@ If you are a manager of a basketball team, and you already have 4 Shaq O'Neals o
 {% endhint %}
 
 {% hint style="success" %}
-In 2019, tree based models like [integration\_test](https://numer.ai/integration_test) have done well become very popular. Knowing this, how would you design a model that would ensemble well with this group of models?
+In 2019, tree based models like [integration\_test](https://numer.ai/integration_test) have done well and become very popular. Knowing this, how would you design a model that would ensemble well with this group of models?
 {% endhint %}
 
 ## Calculation
