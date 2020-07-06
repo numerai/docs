@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Each user is incentivized to to maximize their individual correlation score. But Numerai wants to maximize the meta model's correlation score, where the meta model is the stake weighted ensemble of all submissions.
+Each user is incentivized to maximize their individual correlation score. But Numerai wants to maximize the meta model's correlation score, where the meta model is the stake weighted ensemble of all submissions.
 
 Meta model contribution `mmc` is designed to bridge this gap. Whereas `correlation` rewards individual performance, `mmc` rewards contribution to the meta model's `correlation` or group performance. 
 
