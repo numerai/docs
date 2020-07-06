@@ -1,10 +1,10 @@
-# Metamodel Contribution
+# Meta Model Contribution
 
 ## Motivation
 
-Each user is incentivized to to maximize their individual correlation score. But Numerai wants to maximize the metamodel's correlation score, where the metamodel is the stake weighted ensemble of all submissions.
+Each user is incentivized to to maximize their individual correlation score. But Numerai wants to maximize the meta model's correlation score, where the meta model is the stake weighted ensemble of all submissions.
 
-Metamodel contribution `mmc` is designed to bridge this gap. Whereas `correlation` rewards individual performance, `mmc` rewards contribution to the metamodel's `correlation` or group performance. 
+Meta model contribution `mmc` is designed to bridge this gap. Whereas `correlation` rewards individual performance, `mmc` rewards contribution to the meta model's `correlation` or group performance. 
 
 {% hint style="info" %}
 If you are a manager of a basketball team, and you already have 4 Shaq O'Neals on your team, would you draft another Shaq as your 5th? Or would rather take a guard like Kobe? 
@@ -36,7 +36,6 @@ To calculate a user's \(U\) `mmc` for a given round we
 
 ## Discussion
 
-Read more about the MMC calculation [here](https://forum.numer.ai/t/mmc2-announcement/93).
-
+Read more about the MMC calculation [here](https://forum.numer.ai/t/mmc2-announcement/93).  
 Read more about MMC and profitability [here](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220).
 

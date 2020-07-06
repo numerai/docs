@@ -7,7 +7,7 @@
 * [Tournament Overview](tournament/learn.md)
 * [Numerai Compute](tournament/compute.md)
 * [Tools and Libraries](tournament/tools.md)
-* [Metamodel Contribution](tournament/metamodel-contribution.md)
+* [Meta Model Contribution](tournament/metamodel-contribution.md)
 * [Staking and Payouts](tournament/staking-and-payouts.md)
 * [Reputation](tournament/reputation.md)
 * [FAQ](tournament/faq.md)
