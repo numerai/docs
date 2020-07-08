@@ -4,7 +4,7 @@ description: 'June 25, 2020 / Quantverse Interview'
 
 # OHwA S02E04
 
-In this episode, Arbitrage interviewed long-time tournament competitor [Quantverse](https://twitter.com/CarlossVavros) from Prague. You can check out the full interview after the Slido questions below.
+In this episode, Arbitrage interviewed long-time tournament competitor [Quantverse](https://twitter.com/CarlossVavros) from Prague. [You can check out the full interview after the Slido questions below.](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e04#interview-with-quantverse)
 
 ### Questions from Slido
 
