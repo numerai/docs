@@ -51,7 +51,7 @@ predictions.to_csv("predictions.csv")
 
 Every Saturday at `18:00 UTC`, a new `round` begins and new `tournament_data` is released. Submit your predictions to Numerai to enter the tournament. 
 
-The submission deadline is `Monday 14:30 UTC`. 
+The submission deadline is `Monday 14:30 UTC`. Late submissions will not be eligible for payouts.
 
 {% hint style="info" %}
 Use our [tools and libraries](https://docs.numer.ai/tournament/tools) to connect with our GraphQL [API](https://api-tournament.numer.ai/). 
