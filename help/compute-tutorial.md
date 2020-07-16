@@ -1,6 +1,6 @@
 # Compute Tutorial
 
-Compute is a way to automate your weekly submissions to the Numerai Tournament. Lean how to set it up in this tutorial.
+Compute is a way to automate your weekly submissions to the Numerai Tournament. Learn how to set it up in this tutorial.
 
 _Watch the tutorial video at_ [_YouTube_](https://youtu.be/YFgXMpQszpM)_._
 
