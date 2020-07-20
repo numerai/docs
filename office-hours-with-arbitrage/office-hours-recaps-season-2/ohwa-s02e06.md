@@ -8,7 +8,7 @@ Arbitrage had a special surprise for Episode 06 with the [Master Key](https://nu
 
 ![Arbitrage is very excited](../../.gitbook/assets/excited.png)
 
-You can check out the full interview after the questions from Slido below.
+You can check out [the full interview after the questions from Slido below](ohwa-s02e06.md#interview-with-mike-p).
 
 ### Questions from Slido
 
