@@ -20,7 +20,7 @@ Increasing your stake will take NMR from your wallet and put it into the stake. 
 
 Changes to your stake do not apply immediately, instead they apply on the `effective_date` as shown on the right.
 
-* Opting into our out of `mmc` applies next `Thursday`
+* Opting into or out of `mmc` applies next `Thursday`
 * Increases apply next `Thursday`
 * Decreases impact your `stake amount`next Thursday,  but the funds are only released after next `Thursday + 4 weeks`
 
