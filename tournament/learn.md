@@ -79,7 +79,7 @@ See the [metamodel contribution](https://docs.numer.ai/tournament/metamodel-cont
 
 ## Staking and Payouts
 
-You can `stake` on your submission to start earning `payouts`. You can either stake on `correlation` or `mmc`.
+You can `stake` on your submission to start earning `payouts`. You can either stake on `correlation` or `corr plus mmc`.
 
 {% hint style="info" %}
 Staking requires you to lock up [NMR](https://coinmarketcap.com/currencies/numeraire/) in an [Erasure](https://erasure.world/) smart contract agreement. This gives Numerai the ability to burn your stake if your model performs poorly. 
@@ -90,7 +90,7 @@ You `earn` or `burn` a percentage of your stake based on the score you are staki
 ```python
 corr_payout = stake * clip(corr, -0.25, 0.25)
 
-mmc_payout = stake * clip(2 * mmc, -0.25, 0.25)
+mmc_payout = stake * clip(corr + mmc, -0.25, 0.25)
 ```
 
 See the [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for details.

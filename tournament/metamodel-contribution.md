@@ -37,6 +37,6 @@ To calculate a user's \(U\) `mmc` for a given round we
 ## Discussion
 
 Read more about the MMC calculation [here](https://forum.numer.ai/t/mmc2-announcement/93).  
-Read more about MMC and profitability [here](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220).  
+Read more about MMC and profitability [here](https://forum.numer.ai/t/mmc-staking-change-corr-mmc/698).  
 Read [this Medium post about MMC](https://medium.com/numerai/a-new-data-science-competition-where-being-different-pays-251c2aecc40a) and the value of originality.
 
