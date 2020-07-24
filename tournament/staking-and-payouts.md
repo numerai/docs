@@ -12,15 +12,15 @@ Staking also gives Numerai a sybil resistant way to allocate payouts. Since payo
 
 ## Managing your stake
 
-You can manage your stake on the Numerai website by clicking 'Manage Stake'. Use this modal to increase or decrease your stake amount, or switch your stake type between `corr` and `mmc`.
+You can manage your stake on the Numerai website by clicking 'Manage Stake'. Use this modal to increase or decrease your stake amount, or opt into or out of `mmc`.
 
-![staking modal](../.gitbook/assets/image%20%2844%29.png)
+![staking modal](../.gitbook/assets/corr_mmc_stake_modal.png)
 
 Increasing your stake will take NMR from your wallet and put it into the stake. Decreasing will take NMR from the stake and back into your wallet.
 
 Changes to your stake do not apply immediately, instead they apply on the `effective_date` as shown on the right.
 
-* Switching between `corr` and `mmc` applies next `Thursday`
+* Opting into or out of `mmc` applies next `Thursday`
 * Increases apply next `Thursday`
 * Decreases impact your `stake amount`next Thursday,  but the funds are only released after next `Thursday + 4 weeks`
 
@@ -29,6 +29,8 @@ Changes to your stake do not apply immediately, instead they apply on the `effec
 The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the beginning of the next round on Thursday.
 
 For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05` then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.
+
+If you have opted into `mmc`, then you are paid for both `correlation` and `mmc`.  For example if your `correlation = 0.05` and your `mmc = 0.01`, your payout will be `0.06 * stake_value NMR` 
 
 {% hint style="warning" %}
 Decreasing your stake will lower your `stake_value` in the immediate next round, even though the decrease will only happen 4 weeks later.
