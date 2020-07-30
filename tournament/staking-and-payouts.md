@@ -30,7 +30,7 @@ The payout for each round is based on your `stake_value` as of the first Thursda
 
 For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05` then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.
 
-If you have opted into `mmc`, then you are paid for both `correlation` and `mmc`.  For example if your `correlation = 0.05` and your `mmc = 0.01`, your payout will be `0.06 * stake_value NMR` 
+If you have opted into `mmc`, then you are paid for both `correlation` and `mmc`. For example if your `correlation = 0.05` and your `mmc = 0.01`, your payout will be `0.06 * stake_value NMR`
 
 {% hint style="warning" %}
 Decreasing your stake will lower your `stake_value` in the immediate next round, even though the decrease will only happen 4 weeks later.

@@ -40,6 +40,7 @@
   * [OHwA S02E04](office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e04.md)
   * [OHwA S02E05](office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e05.md)
   * [OHwA S02E06](office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e06.md)
+  * [OHwA S02E07](office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e07.md)
 * [Cited resources](office-hours-with-arbitrage/cited-resources.md)
 * [FAQ in Office Hours](office-hours-with-arbitrage/faq-in-office-hours.md)
 

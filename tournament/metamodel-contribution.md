@@ -4,10 +4,10 @@
 
 Each user is incentivized to maximize their individual correlation score. But Numerai wants to maximize the meta model's correlation score, where the meta model is the stake weighted ensemble of all submissions.
 
-Meta model contribution `mmc` is designed to bridge this gap. Whereas `correlation` rewards individual performance, `mmc` rewards contribution to the meta model's `correlation` or group performance. 
+Meta model contribution `mmc` is designed to bridge this gap. Whereas `correlation` rewards individual performance, `mmc` rewards contribution to the meta model's `correlation` or group performance.
 
 {% hint style="info" %}
-If you are a manager of a basketball team, and you already have 4 Shaq O'Neals on your team, would you draft another Shaq as your 5th? Or would rather take a guard like Kobe? 
+If you are a manager of a basketball team, and you already have 4 Shaq O'Neals on your team, would you draft another Shaq as your 5th? Or would rather take a guard like Kobe?
 {% endhint %}
 
 {% hint style="success" %}
@@ -30,7 +30,7 @@ To calculate a user's \(U\) `mmc` for a given round we
 ## Design Considerations
 
 * Stake weight is necessary to make the system unattackable
-* Sampling a random 67% each time is important to incentivize some redundancy.  
+* Sampling a random 67% each time is important to incentivize some redundancy.
 
   A very large staker submitting similar predictions to yours would penalize you too much if we didn't do this.
 
