@@ -40,7 +40,7 @@ Decreasing your stake will lower your `stake_value` in the immediate next round,
 If you decide to cancel your decrease request, your stake value will go back up to the original value in the immediate next round.
 {% endhint %}
 
-Track your payouts with the community-built Numerai Payouts app.
+Track your payouts with the community-built [Numerai Payouts](https://docs.numer.ai/help/payouts-app) app.
 
 ## Compounding
 
