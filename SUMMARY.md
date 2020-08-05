@@ -47,6 +47,7 @@
 ## Help
 
 * [Compute Tutorial](help/compute-tutorial.md)
+* [Payouts App](help/payouts-app.md)
 * [Technical Support](help/support.md)
 * [Read, watch, listen](help/read-watch-listen.md)
 * [The Erasure Protocol](help/the-erasure-protocol.md)

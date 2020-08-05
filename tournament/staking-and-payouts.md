@@ -40,6 +40,8 @@ Decreasing your stake will lower your `stake_value` in the immediate next round,
 If you decide to cancel your decrease request, your stake value will go back up to the original value in the immediate next round.
 {% endhint %}
 
+Track your payouts with the community-built Numerai Payouts app.
+
 ## Compounding
 
 Since there is a new round every week and each round lasts 4 weeks, stake values compound with a 4-week delay.
