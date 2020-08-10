@@ -43,7 +43,7 @@ Users also have a thread on the forums discussing potential data sources. [Check
 
 ### Universe
 
-The stock universe is updated daily, but in general only a couple, low volume stocks will move in/out on a given day. You can see today's universe by downloading the [latest example predictions](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv).
+The stock universe is updated daily, but in general only a couple, low volume stocks will move in/out on a given day. You can see today's universe by downloading the [latest example predictions](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv).
 
 You can see the historical universe by downloading old example predictions files directly from s3, with urls like so: [https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example\_predictions/20200519.csv](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/20200519.csv)
 
