@@ -1,8 +1,10 @@
 # New Users
 
-Want to start participating in the hardest data science competition in the world? We're in the process of creating new user videos and more tutorials for a range of data science experience levels.   
-Subscribe to [Numerai on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA) to be notified.   
-Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support.
+Want to start participating in the hardest data science competition in the world? We're in the process of creating new user videos and more tutorials for a range of data science experience levels. 
+
+* Subscribe to [Numerai on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA) to be notified
+* Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support
+* Check out the [Numerai Forum](https://forum.numer.ai) for long-form posts on data analysis, tips and tutorials
 
 #### Walkthroughs and Tutorials
 
