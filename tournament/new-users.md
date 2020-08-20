@@ -1,6 +1,6 @@
 # New Users
 
-Want to start participating in the hardest data science competition in the world? We're in the process of creating new user videos and more tutorials for a range of data science experience levels. Get started with the resources below. 
+Want to start participating in the hardest data science competition in the world? We're in the process of creating new user videos and more tutorials for a range of data science experience levels. Until then, get started with the resources below. 
 
 * Subscribe to [Numerai on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA) to be notified of video tutorials
 * Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support
