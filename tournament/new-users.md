@@ -24,9 +24,9 @@ Tutorial with Kaggle Kernal by community member [perfect\_fit](https://numer.ai/
 
 #### Example Scripts and Tools
 
-{% embed url="https://github.com/numerai/example-scripts" %}
+{% embed url="https://github.com/numerai/example-scripts" caption="Example Scripts" %}
 
-{% embed url="https://github.com/numerai/example-scripts/blob/master/analysis\_and\_tips.ipynb" %}
+{% embed url="https://github.com/numerai/example-scripts/blob/master/analysis\_and\_tips.ipynb" caption="Analysis and Tips" %}
 
 {% embed url="https://docs.numer.ai/tournament/tools" %}
 
