@@ -13,7 +13,7 @@ Numerai notebook at [https://numer.ai/submit](https://numer.ai/submit)
 
 {% embed url="https://numer.ai/submit" %}
 
-Easy guide  with Google Colab by community member [SurajP](https://numer.ai/surajp)
+Easy guide with Google Colab by community member [SurajP](https://numer.ai/surajp)
 
 {% embed url="https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690" %}
 
