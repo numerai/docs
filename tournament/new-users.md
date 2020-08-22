@@ -17,7 +17,7 @@ Easy guide with Google Colab by community member [SurajP](https://numer.ai/suraj
 
 {% embed url="https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690" %}
 
-Tutorial with Kaggle Kernal by community member [perfect\_fit](https://numer.ai/perfect_fit)
+Tutorial with Kaggle Kernel by community member [perfect\_fit](https://numer.ai/perfect_fit)
 
 {% embed url="https://app.wandb.ai/carlolepelaars/numerai\_tutorial/reports/Build-the-World-s-Open-Hedge-Fund-by-Modeling-the-Stock-Market--VmlldzoxODU0NTQ" %}
 
