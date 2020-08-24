@@ -32,7 +32,25 @@ Arbitrage added that any suggestions for improvement from Numerai would also int
 
 **Which is the metric \(or combination of several\) that we should optimize for?**
 
-"There is no one metric to rule them all," Arbitrage said, "you should consider several."
+"There is no one metric to rule them all," Arbitrage said, "you should consider several." Arbitrage suggested that given accounts can have up to ten models, try optimizing different models for different metrics. He said different people are going to have different techniques and different metrics they optimize for, adding "don't just chase high correlation- I think that's risky."
+
+**Can the team elaborate on how predictions are combined? Have you gone from simple averaging to stacking or some sort of IPW?**
+
+Without divulging too much, Michael Oliver said that they're not doing anything particularly complicated when combining predictions, adding that it's still stake-weighted.
+
+**How can I start staking? Any video tutorials?**
+
+🎥 Coming soon 🎥
+
+Arbitrage is working on video tutorials and is close to publishing the first, so stay tuned. Some will be short videos covering the basics, others will be longer tackling different aspects of the [tips and tricks](https://github.com/numerai/example-scripts/blob/master/analysis_and_tips.ipynb) notebook.
+
+_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)_, what are you waiting for?  
+  
+Don’t miss the next Office Hours with Arbitrage : follow_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) _for the next time and date.  
+  
+Thank you to_ [_Michael Oliver_](https://numer.ai/mdo) _for contributing to answers during this Office Hours, to Carlo for being interviewed and writing an awesome_ [_guide to the tournament_](https://app.wandb.ai/carlolepelaars/numerai_tutorial/reports/Build-the-World-s-Open-Hedge-Fund-by-Modeling-the-Stock-Market--VmlldzoxODU0NTQ)_,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+
+\*\*\*\*
 
 
 
