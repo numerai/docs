@@ -10,11 +10,11 @@ Every year, the US government requires Numerai to issue a [1099-misc](https://ww
 
 All tournament earnings, bonuses and bounties in any currency or token count as "payment". In order to calculate the USD value of each non-USD payment, we simply multiply the amount by the most recent price as per CoinMarketCap at the time of the transaction.
 
-Important: We do not "net" out burns when calculating payments. This is because we do not know the [cost basis](https://www.irs.gov/taxtopics/tc703) of the NMR you used for staking - only you can compute this. Therefore, you must do your own math to calculate your gains and losses.
+**Important:** We do not "net" out burns when calculating payments. This is because we do not know the [cost basis](https://www.irs.gov/taxtopics/tc703) of the NMR you used for staking - only you can compute this. Therefore, you must do your own math to calculate your gains and losses.
 
-Important: Only deposited funds that you fully control count as payments. For example, if you create a stake and get rewarded with daily payouts and reputation bonuses, it is not counted as a payment until you decrease \(withdraw from the stake\) into your wallet. The amount "paid" here is equal to the amount withdrawn minus your original stake amount. If you were paid "USD" in the legacy system, this counts as a payment since it can be immediately withdrawn.
+**Important:** Only deposited funds that you fully control count as payments. For example, if you create a stake and get rewarded with daily payouts and reputation bonuses, it is not counted as a payment until your stake withdrawal is "settled" and NMR is deposited into your wallet. The amount "paid" here is equal to the amount withdrawn minus your original stake amount. If you were paid "USD" in the legacy system, this counts as a payment since it can be immediately withdrawn.
 
-Important: Payments are summed across all forms including \(but not limited to\) tournament payouts, bonuses, incentives, ErasureQuant payouts, bounties, grants etc when determining if the $600 threshold is crossed.   
+**Important:** Payments are summed across all forms including \(but not limited to\) tournament payouts, bonuses, incentives, ErasureQuant payouts, bounties, grants etc when determining if the $600 threshold is crossed.   
 
 ### **When will I get my 1099?**
 
