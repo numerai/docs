@@ -1,5 +1,5 @@
 ---
-description: 'March 5, 2020 / Written by http://twitter.com/mandelliant'
+description: 'March 5, 2020'
 ---
 
 # OHwA S01E01
@@ -9,6 +9,10 @@ description: 'March 5, 2020 / Written by http://twitter.com/mandelliant'
 If you’ve ever entered Numerai’s [data science tournament](https://numer.ai/tournament) or you’re active in the [RocketChat](https://community.numer.ai/), you’re probably familiar with [Arbitrage](https://numer.ai/arbitrage). A third-year PhD Student studying finance and focusing on Fintech and Bank Distress, Arbitrage has been involved with the Numerai tournament since 2016 \(often ranking in the top 100 users\), and teaches several finance courses including Financial Machine Learning with Python where he uses Numerai data.
 
 In early March, Arbitrage held his first office hours for users to talk about the tournament at a high level and get help and feedback on their models. Here’s a recap for those who couldn’t attend or want to revisit any of the discussion.
+
+Watch the video recap [here](https://youtu.be/JhI8tIb7FpQ).
+
+{% embed url="https://youtu.be/JhI8tIb7FpQ" %}
 
 #### Questions from Slido
 
