@@ -10,6 +10,8 @@ On episode 11, Arbitrage interviewed Carlo Lepelaars who recently wrote a [guide
 
 Check out the full interview with Carlo [on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA).
 
+{% embed url="https://youtu.be/5j6Nf1s\_tTU" %}
+
 ### Questions from Slido
 
 **When** [**Sorios**](https://numer.ai/sorios)**?**

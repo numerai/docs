@@ -8,7 +8,9 @@ For this episode, Arbitrage interviewed data scientist [Suraj P](https://numer.a
 
 ![Great turnout for episode 10](../../.gitbook/assets/everybody.png)
 
-The full interview with Suraj will be published on YouTube.
+Check out Suraj's interview on YouTube:
+
+{% embed url="https://youtu.be/cYY-omNU0G4" %}
 
 ### Questions from Slido
 
