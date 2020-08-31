@@ -8,7 +8,7 @@ On episode 11, Arbitrage interviewed Carlo Lepelaars who recently wrote a [guide
 
 ![Carlo in the hot seat on Arbitrage&apos;s right](../../.gitbook/assets/carlo.png)
 
-The full interview with Carlo will be published [on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA).
+Check out the full interview with Carlo [on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA).
 
 ### Questions from Slido
 
