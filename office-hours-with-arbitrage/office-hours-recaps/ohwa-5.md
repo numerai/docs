@@ -163,7 +163,7 @@ _Author’s note: See the entirety of Bor’s presentation_ [_on the Numerai for
 
 #### Questions from Slido
 
-Do you know when and how Numerai actually burns our stakes, and is there a way to see this change on a weekly basis? In other words, how is it affecting circulation?
+**Do you know when and how Numerai actually burns our stakes, and is there a way to see this change on a weekly basis? In other words, how is it affecting circulation?**
 
 Arbitrage and Slyfox determined that this question was a perfect fit for Stephane, who readily answered.
 
@@ -171,21 +171,21 @@ Stephane explained that there are several components to the NMR burn process. Th
 
 There is a difference between how Numerai and Erasure Bay handle burns. Because the contracts on Erasure Bay are one-time agreements, they enact immediate transactions where someone either withdraws or burns.
 
-Arbitrage: If I increase my stake, does that trigger the meteing out as well? So if I have 100 NMR staked, I go down to 50, and then refill to 100, does that burn get enacted upon deposit?
+**Arbitrage**: If I increase my stake, does that trigger the meteing out as well? So if I have 100 NMR staked, I go down to 50, and then refill to 100, does that burn get enacted upon deposit?
 
-Slyfox: It’s not just withdraws, it’s whenever you make a change to your stake, we will apply whatever changes we have in \[our\] database on-chain. So if you don’t make any changes at all, we’ll just continue accruing payouts and burns in the database. I’ll add one thing: why did we move to this model?
+**Slyfox**: It’s not just withdraws, it’s whenever you make a change to your stake, we will apply whatever changes we have in \[our\] database on-chain. So if you don’t make any changes at all, we’ll just continue accruing payouts and burns in the database. I’ll add one thing: why did we move to this model?
 
 In the past, when we had weekly stakes, weekly payouts, and weekly burns. This meant we had to do one on-chain transaction for every user each week. If I pay you 10 NMR, then you burn 10 the next week, then I pay you 10 again, this actually cost us a lot of money to operate. When we burn, we burn from you, and we don’t get any of that back. When we pay, we pay out of our own pocket and we have to pay gas. The operational complexity of that was getting really high as we scale.
 
 When we decided to move to daily payouts, we thought we could do the exact same thing except daily. Then I looked at our gas bill and it was almost more than what I was paying to all of the users \[being paid to Ethereum in gas\]. Stephane and I got together and came up with this new way of doing it.
 
-Arbitrage: Thank you, Stephane.
+**Arbitrage**: Thank you, Stephane.
 
-Keno: What would I be looking for in the contract? What event logs should I be filtering for if I want to see the burn?
+**Keno**: What would I be looking for in the contract? What event logs should I be filtering for if I want to see the burn?
 
-Stephane: We have an endpoint that allows you to track all of this — I’ll give you all more info on that.
+**Stephane**: We have an endpoint that allows you to track all of this — I’ll give you all more info on that.
 
-What kind of hedge fund is Numerai? A fundamental data-driven alpha model seems like a good match, but what else? Counter spread? Quant? Long/short?
+**What kind of hedge fund is Numerai? A fundamental data-driven alpha model seems like a good match, but what else? Counter spread? Quant? Long/short?**
 
 Fortunately for Arbitrage, Mr. Numerai himself Richard Craib was on the call and was willing to take a stab at answering.
 
@@ -193,7 +193,7 @@ Richard explained that Numerai is a global equities hedge fund driven by the mac
 
 _Author’s note: to hear more from Richard on Numerai, the tournament, and the hedge fund industry, check out his OH interview at_ [_Office Hours with Arbitrage \#4_](https://medium.com/numerai/office-hours-with-arbitrage-4-2c5da71ef40)_._
 
-Is there a difference between using R and Python? Is one better than the other? I know they should be the same, but are they? Or is one faster?
+**Is there a difference between using R and Python? Is one better than the other? I know they should be the same, but are they? Or is one faster?**
 
 Regarding computation, R and Python should come up with the same solution, Arbitrage explained. The differences are in the language syntax and what happens on the back end.
 
@@ -201,13 +201,13 @@ Regarding computation, R and Python should come up with the same solution, Arbit
 
 Given the same set of inputs, R and Python should return the same outputs. The speed of either language is largely dependent on optimization and whether any given libraries being used are optimized for a task in that language.
 
-How do we avoid overfitting when we use these methods \[discussed by Bor\] and are these algorithms useful at all?
+**How do we avoid overfitting when we use these methods \[discussed by Bor\] and are these algorithms useful at all?**
 
 > “If they’re useful, well [BOR3](https://numer.ai/bor3) is doing quite okay. I can’t tell why BOR3 is okay but it’s doing well.” — Bor
 
 To avoid overfitting, Bor explained that he uses a maximum limit of 200 features for training genetic algorithms to avoid using all 310 and overfitting. He also limits each generation of the algorithms to seeing 10% of a given era, the fitness is determined by the last 20 eras it saw, and the era is selected at random from the group of eras Bor is training on. His fitness function is the sharpe over those 20 eras minus the feature correlation of the solution, in effort to mirror what Numerai has recommended models focus on.
 
-Will Numerai offer a route for non-participants to stake on participants’ models for a fee paid to them and to Numerai?
+**Will Numerai offer a route for non-participants to stake on participants’ models for a fee paid to them and to Numerai?**
 
 “The purpose of the staking is to see if you believe in your model,” Richard said, “so if you’re staking someone else, and you’ve never seen any code and you don’t know data science, your stake is just based on some leaderboard information… It doesn’t give us very much information.”
 
@@ -217,9 +217,11 @@ On top of that, Richard explained that there are legal risks in trying to have t
 
 > “I see it more like we’re buying signals: we’re buying data from our users and they’re staking on the quality of their data, rather than we’re investing in their hedge fund.” -Richard Craib
 
-Can you talk a bit about what feature selection and/or engineering you recommend doing? What’s a good feature exposure range?
+**Can you talk a bit about what feature selection and/or engineering you recommend doing? What’s a good feature exposure range?**
 
-“I don’t do any feature engineering. At all,” Arbitrage said. “The data is clean, and they’ve done a really good job of smoothing out any kind of obvious relationships.”![](https://cdn-images-1.medium.com/max/1600/1*RGiHQnO-I-jcT4bZRxWWSg.jpeg)When it comes to data, there’s only one Mr.
+“I don’t do any feature engineering. At all,” Arbitrage said. “The data is clean, and they’ve done a really good job of smoothing out any kind of obvious relationships.”
+
+![When it comes to data, there&#x2019;s only one Mr.](https://cdn-images-1.medium.com/max/1600/1*RGiHQnO-I-jcT4bZRxWWSg.jpeg)
 
 Arbitrage said that he’s a fan of Occam’s Razor: the simple explanation is the right answer. “While Bor’s presentation was mind blowing and very fascinating, I don’t do anything close to that and I think I’m well within rank of Bor to say he and I are close in rank over time.” He pointed out that their approaches are radically different: Bor does a ton to the data, whereas Arbitrage does nothing to it.
 
@@ -229,33 +231,33 @@ Along with that, Arbitrage noted that feature selection is very important \(and 
 
 Feature exposure range is something Arbitrage is still figuring out. Looking at his top performing model, he noted that the feature exposure is lower than his main model, which suggests lower may be better. For his models, Arbitrage said anything above 0.08 seems too high, but he hasn’t been able to get below 0.07.
 
-What are good strategies to reduce correlation with Example Predictions and feature exposure?
+**What are good strategies to reduce correlation with Example Predictions and feature exposure?**
 
 Don’t use the same model as the example model. “That’s going to give you a very different correlation. If you use XGBoost, you’re going to have a high correlation. That’s pretty much it.” He added, “If the example predictions are doing well, you want to be correlated; but to get MMC you want to have positive correlation but not too much.”
 
-What are good approaches to ensembles in the Numerai data set?
+**What are good approaches to ensembles in the Numerai data set?**
 
 Arbitrage suggested that any kind of ensemble will probably perform relatively well. There is a wide variety of ways to implement an ensemble, but the important thing is to still reduce feature exposure in whatever method is used.
 
-The data is encrypted — is it really homomorphic? Are some mathematical properties lost? Our models may be tricked! Is there anything to avoid?
+**The data is encrypted — is it really homomorphic? Are some mathematical properties lost? Our models may be tricked! Is there anything to avoid?**
 
-Richard: The homomorphic thing comes up so much, I think it’s a cool word. When we first launched … the homepage said ‘structure-preserving encryption’ in December 2015, but the [Medium post](https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8) said ‘using encryption techniques like [homomorphic encryption](https://news.ycombinator.com/item?id=14947768)’ and people really latched onto us using precisely homomorphic encryption schemes. Which [I did try to do](https://www.reddit.com/r/MachineLearning/comments/3zvuge/encrypted_data_for_efficient_markets_an_mnist_for/cyprq84/), and I had the data encrypted in this way, but it turned one megabyte of data into 16 gigabytes.
+**Richard**: The homomorphic thing comes up so much, I think it’s a cool word. When we first launched … the homepage said ‘structure-preserving encryption’ in December 2015, but the [Medium post](https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8) said ‘using encryption techniques like [homomorphic encryption](https://news.ycombinator.com/item?id=14947768)’ and people really latched onto us using precisely homomorphic encryption schemes. Which [I did try to do](https://www.reddit.com/r/MachineLearning/comments/3zvuge/encrypted_data_for_efficient_markets_an_mnist_for/cyprq84/), and I had the data encrypted in this way, but it turned one megabyte of data into 16 gigabytes.
 
 ![https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8](https://cdn-images-1.medium.com/max/1600/1*cCCz6ASL4cTanIFN4ha7Zw.png)
 
-Richard: The data went from normal nice numbers like you have now to very high dimensional polynomials that you had to operate on.To any normal data scientist, or even expert data scientists, it looked so weird to have these strange polynomials that you have to operate on. So I decided not to launch with that, and instead went with a different kind of obfuscation. Encryption implies that there’s a key that if you had, you could unlock it, but the data is really just obfuscated.
+**Richard**: The data went from normal nice numbers like you have now to very high dimensional polynomials that you had to operate on.To any normal data scientist, or even expert data scientists, it looked so weird to have these strange polynomials that you have to operate on. So I decided not to launch with that, and instead went with a different kind of obfuscation. Encryption implies that there’s a key that if you had, you could unlock it, but the data is really just obfuscated.
 
 The other important thing to note is that there are so many phases between the raw data and the obfuscated data. The raw data, you could understand, but in the middle, just the normalization stuff that we try to do to clean the data is taking away a lot of the structure of the original data. But it makes it more normal and makes eras look more alike than they would otherwise.
 
 If we gave away our normalized data and didn’t even do the final obfuscation, I think people would still be really confused about what it was. Maybe if you were an expert who had the exact same data, you would be able to tell something.
 
-Has anyone mentioned creating an app for large block trades of NMR? Similar to an OTC platform?
+**Has anyone mentioned creating an app for large block trades of NMR? Similar to an OTC platform?**
 
 Arbitrage mentioned that this would fall outside the scope of the tournament team and opens them up to potential risk as they can’t be involved in the market. He did add that, anecdotally, OTC trading seems to take place in London, and several organizations involved were aware of NMR.
 
-Has Numerai ever discussed what a solution to this competition looks like? Perhaps metric thresholds i.e. MMC 2, Sortino, or Sharpe through multiple regimes?
+**Has Numerai ever discussed what a solution to this competition looks like? Perhaps metric thresholds i.e. MMC 2, Sortino, or Sharpe through multiple regimes?**
 
-Richard: We’ve been refining the problem while people are refining solutions to the problem,” Richard said. “We change the targets, and [these new targets that are out now](https://medium.com/numerai/numerai-in-2019-1ad686348538) are an attempt at a better way of thinking about the problem. If you can be good at these targets, you’re really good. If you could be good at the previous targets, I would sometimes wonder, ‘Why do I prefer this model in position 100 over the model that’s coming in first?’ That’s really bad for the tournament. Even the users can tell that they could be at the top by making a bad model they would never stake.
+**Richard**: We’ve been refining the problem while people are refining solutions to the problem,” Richard said. “We change the targets, and [these new targets that are out now](https://medium.com/numerai/numerai-in-2019-1ad686348538) are an attempt at a better way of thinking about the problem. If you can be good at these targets, you’re really good. If you could be good at the previous targets, I would sometimes wonder, ‘Why do I prefer this model in position 100 over the model that’s coming in first?’ That’s really bad for the tournament. Even the users can tell that they could be at the top by making a bad model they would never stake.
 
 What’s true right now, thinking about the feature-neutral targets or whatever future targets are going to be, we want the situation to be that a model that was in 20th but now is 25th, well we like the model that’s now in 20th even more. And that’s because we’ve refined the problem.
 
@@ -263,13 +265,13 @@ Ultimately, the live data is harder than the validation data so if you’ve foun
 
 It’s kind of open ended, and that’s why no one will ever really know the answer. If we knew precisely how to frame the problem and frame the solution, we could just create a neural net ourselves. But, we need people to figure things out and stake a lot to prove that they believe in them.
 
-Are there any rules for what Numerai can do with the NMR token or can they choose freely?
+**Are there any rules for what Numerai can do with the NMR token or can they choose freely?**
 
 Arbitrage noted that he imagines what the team can do with the tokens is pretty heavily regulated, and Richard mentioned [an earlier post from Numerai detailing their plans for the future of NMR](https://medium.com/numerai/nmr2point0-66a45a9a5e70) that details some of their allocations for users and investors.
 
 “We wouldn’t want it to be that 70% of the tokens are owned by investors who are never going to use Numerai or Erasure,” Richard said. “We think it’s very important to have that. I like the way our tokens look: there are a lot out in the community and a lot have been given away. When we sold to investors, it hasn’t been too much, and it’s often very much helped the token.”
 
-Given a long enough time frame, do you think that Numerai can “solve” the stock market?
+**Given a long enough time frame, do you think that Numerai can “solve” the stock market?**
 
 Arbitrage said no, because ultimately data scientists can’t model everything like regime changes \(such as global pandemics\). “Also,” he said, “we have rule changes like tip rules, stop limits, and all kinds of strange stuff that doesn’t even fall within the purview of the tournament that we’re not able to model ahead of time. But the very nature of what we’re doing is working to make the market more efficient. So in that sense, we’re partially solving the stock market. And the very nature of acting on signals that exist shrinks the profitability of those signals and for hedge funds, scale is one of the largest challenges they can face.”
 
