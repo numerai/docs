@@ -214,7 +214,7 @@ Richard stepped in to answer this question: “Yeah, it’s possible now, and it
 
 **How many predictive signals has Numerai received vs how many does it use?**
 
-**Richard:** It’s between all of the stakers and half of the stakeless; it’s quite hard to be the average of all of the users who are staking. The stakers do perform quite a lot better than people who aren’t staking, that’s for sure.
+**Richard:** It’s between all of the stakers and half of the stakeless; it’s quite hard to beat the average of all of the users who are staking. The stakers do perform quite a lot better than people who aren’t staking, that’s for sure.
 
 **Does it make sense to use nonlinear dimensionality reduction methods in Numerai? If so, why and which are the most scalable?**
 
