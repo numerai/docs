@@ -8,7 +8,9 @@ description: 'April 9, 2020'
 
 Before diving into the questions from Slido, Arbitrage started off by talking about the recent change to the tournament’s [reputation calculations](https://docs.google.com/document/d/1o3-J8qFyo7aQQZ8BIja0Lmw7Gr81sPVYazq6v41-ENI/edit) that resulted in models being reranked \(including historical ranking\). For Arbitrage, this put him in the top 25 for a period of about two months — a net positive for his reputation. He asked the audience, “What was your impression of the change?”
 
-Feelings were mixed:![](https://cdn-images-1.medium.com/max/1600/1*xaVwZiYdF3FIq02KI1ryXA.gif)👍/👎
+
+
+![Feelings were mixed: &#x1F44D;/&#x1F44E;](https://cdn-images-1.medium.com/max/1600/1*xaVwZiYdF3FIq02KI1ryXA.gif)
 
 [Joakim](https://numer.ai/joakim_arvidsson) mentioned that his model is still young and dropped several ranks under the new system. “I think it has a lot to do with whether or not you already have four or more weeks in a row of submissions, then you weren’t averaged across like we used to be,” Arbitrage said. “That would increase your volatility because it was based on less than four rounds.”
 
@@ -22,7 +24,9 @@ Data scientist [Keno](https://numer.ai/wander) expressed that it might be cause 
 
 Arbitrage noted that this is a concern, although this behavior has yet to manifest. “It’s always been a risk,” he said, “but I don’t think anyone’s using \[that method\] because of diversification benefits.”
 
-He then explained [McNemar’s test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3716987/), a way to score two models against each other to see if they’re the same model or not. The test produces a statistical analysis that says if the two models are similar. “I’ve proposed that as a way to sniff out if somebody is running clones of something, and also to prevent people from submitting the example predictions.”![](https://cdn-images-1.medium.com/max/1600/1*0c40viHwPzvmvB-hkU6N-A.jpeg)Not quite …
+He then explained [McNemar’s test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3716987/), a way to score two models against each other to see if they’re the same model or not. The test produces a statistical analysis that says if the two models are similar. “I’ve proposed that as a way to sniff out if somebody is running clones of something, and also to prevent people from submitting the example predictions.”
+
+![Not quite &#x2026;](https://cdn-images-1.medium.com/max/1600/1*0c40viHwPzvmvB-hkU6N-A.jpeg)
 
 Keno pointed out that, historically, once the tournament data scientists “solve” the payout structure, the Numerai team is quick to update the payout calculations. He said, “Trying to earn NMR, from my observations of others, works for a little bit but then they figure it out and say, ‘these people are gaming us,’ so they change the \[payouts\] … you kind of have to think ‘what am I going to do with this competition — am I going to always try to game them? Or do I just submit a model that makes sense?’”
 
@@ -130,7 +134,9 @@ Even though Numerai data is delivered chronologically, Arbitrage pointed out tha
 
 **Joakim:** I’m mostly just curious.
 
-**Arbitrage:** Oh me too! Every time I see Richard I’m asking him every possible question I can and he always laughs at me and thinks I’m an idiot for even bothering to try, but so be it.![](https://cdn-images-1.medium.com/max/1600/1*WIwpYldq7J1WS5pdgpUUQw.jpeg)“Lol” — Richard Craib
+**Arbitrage:** Oh me too! Every time I see Richard I’m asking him every possible question I can and he always laughs at me and thinks I’m an idiot for even bothering to try, but so be it.
+
+![&quot;Lol&#x201D;&#x200A;&#x2014;&#x200A;Richard Craib](https://cdn-images-1.medium.com/max/1600/1*WIwpYldq7J1WS5pdgpUUQw.jpeg)
 
 Michael Oliver indicated in the chat that he has a counterpart model which performed well during era 202, prompting Arbitrage to wonder if Michael averaged the performance of his primary model with the one that performed during the high volatility period, what would the resulting score look like.
 
@@ -153,7 +159,9 @@ A model diversification strategy like MIchael’s counterpart models may have be
 Arbitrage said his plan is to essentially keep killing his worst performing models. He also considers volatility to be one of his parameters, so if he has a performant model but one that keeps swinging on the leaderboard, he would consider killing it just because of how volatile it is. “To me, that’s not very good.”
 
 Ultimately, Arbitrage pointed out that iterating on tournament models takes a significant amount of time so his strategy is focused more on steady growth as opposed to big incremental gains. One example he gave was having three models in the top 50 for a cumulative period of nine months. As to how he’ll achieve that, Arbitrage said he “can’t think of any way other than to kill the worst performing one in some kind of death match among my own ten models.”  
-![](https://cdn-images-1.medium.com/max/1600/1*S0htcUiRBAeHCNluG9x9Ww.jpeg)Are you not entertained?
+
+
+![Are you not entertained?](https://cdn-images-1.medium.com/max/1600/1*S0htcUiRBAeHCNluG9x9Ww.jpeg)
 
 **Themicon:** Yeah, I think I’m going to do what you’ve been discussing. It’s such a long game. Keep the things that are working, and kill off the things that aren’t working after four months. That’s why I haven’t filled up my accounts yet. I have three that are working, four more with ideas, and I’ll see how those go before I start adding more.
 
@@ -186,7 +194,9 @@ After Keno asked about competition as a threat to the tournament, Arbitrage adde
 **Arbitrage:** Richard’s laughing, what do you have to say Richard?
 
 **Richard:** Well, that’s why I have more than half the shares and control the board of the company.  
-![](https://cdn-images-1.medium.com/max/1600/1*OLsdWV--sM52oU4QbkmpEQ.gif)Richard to people trying to buy Numerai
+
+
+![Richard to people trying to buy Numerai](https://cdn-images-1.medium.com/max/1600/1*OLsdWV--sM52oU4QbkmpEQ.gif)
 
 Richard explained that he doesn’t mind investing in his own company and his own token because he specifically doesn’t want some kind of hostile takeover to happen.
 
