@@ -48,7 +48,9 @@ Kicking off number seven, Arbitrage welcomed data scientist [Zen](https://numer.
 
 **Arbitrage:** Okay so a little after the first wave, but still early on. And we’ve established now that you live in New York, or at least the New York area.
 
-**Zen:** New Jersey.![](https://cdn-images-1.medium.com/max/1600/1*e_ifPfiMrZaybfi0KEu_xA.jpeg)True New Jersey priorities
+**Zen:** New Jersey.
+
+![True New Jersey priorities](https://cdn-images-1.medium.com/max/1600/1*e_ifPfiMrZaybfi0KEu_xA.jpeg)
 
 **Arbitrage:** New Jersey, yeah like I said New York area basically. What do you do for a living?
 
@@ -144,7 +146,9 @@ It’s like, their objective is to get the best models so that they can create a
 
 **Zen:** I know it makes sense.
 
-**Arbitrage:** It is in the sense that it’s a zero-effort way to climb the leaderboard. I don’t like that because I want people to struggle as much as I did and so I want the path to be as difficult and onerous as possible so they don’t inadvertently surpass me, but I digress.![](https://cdn-images-1.medium.com/max/1600/1*Tnoo_hN9H7ymZWOqTZJWxw.jpeg)Learning data science
+**Arbitrage:** It is in the sense that it’s a zero-effort way to climb the leaderboard. I don’t like that because I want people to struggle as much as I did and so I want the path to be as difficult and onerous as possible so they don’t inadvertently surpass me, but I digress.
+
+![Learning data science](https://cdn-images-1.medium.com/max/1600/1*Tnoo_hN9H7ymZWOqTZJWxw.jpeg)
 
 **Zen:** I understand. I mean, it’s a competition, so you’ve got to have your own secret sauce so you can beat the other guys, but there’s a certain amount of collaboration we’re all doing \(to a certain level\).
 
@@ -194,15 +198,17 @@ Extrapolating that example to the Numerai tournament: if all of the data scienti
 
 [NJ](https://twitter.com/tasha_jade) shared that [Michael P](https://twitter.com/EasyMikeP) used a similar explanation at Numerai HQ in the past \(although Numerai engineer Jason didn’t quite agree\).
 
-Michael P’s controversial example opted for a basketball team with four Shaquille O’Neals \(one of the most dominant players ever but with a specific skill set\) and posed the question: would that team be better off with a fifth Shaq or literally any other player with a different skill set \(even if that player isn’t as talented\). Slyfox and Arbitrage were quick to side with Jason and draft Shaq \#5.“
+Michael P’s controversial example opted for a basketball team with four Shaquille O’Neals \(one of the most dominant players ever but with a specific skill set\) and posed the question: would that team be better off with a fifth Shaq or literally any other player with a different skill set \(even if that player isn’t as talented\). Slyfox and Arbitrage were quick to side with Jason and draft Shaq \#5.
 
-![Data science is not a singular act, but a habit. You are what you repeatedly do.&#x201D;&#x200A;&#x2014;&#x200A;Shaq Craib](https://cdn-images-1.medium.com/max/1600/1*VI3pOE7BdZhWTnUE2iwWDA.jpeg)
+![&quot;Data science is not a singular act, but a habit. You are what you repeatedly do.&#x201D;&#x200A;&#x2014;&#x200A;Shaq Craib](https://cdn-images-1.medium.com/max/1600/1*VI3pOE7BdZhWTnUE2iwWDA.jpeg)
 
 _Author’s note: Michael P’s basketball reputation dropped to -0.0547_
 
 Slyfox tried his hand at an explanation, also choosing a basketball analogy in the form of the plus-minus score. When someone evaluates an athlete’s performance, they can look at their individual stats \(like points scored, plays made, etc\). But, you can also statistically measure how well the team does when that player is on the court compared to when they’re on the bench. If you play fantasy sports, this kind of scoring is already popular. “To me, MMC is just plus-minus,” Slyfox said. “Does the team perform better with you in it or not?”
 
-“But what if you **are** the team?” Arbitrage asked.![](https://cdn-images-1.medium.com/max/1600/1*nSxlefwP9lJCu-FeeS0COA.gif)Slyfox was **not** ready for that
+“But what if you **are** the team?” Arbitrage asked.
+
+![Slyfox was not ready for that](https://cdn-images-1.medium.com/max/1600/1*nSxlefwP9lJCu-FeeS0COA.gif)
 
 “In the case of my model,” Arbitrage explained, “I submit predictions on Saturday afternoon. And then the meta model is built after that. So if the meta model converges on the solution that I’ve already uploaded, I don’t get an MMC bonus.”
 
