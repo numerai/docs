@@ -10,7 +10,9 @@ description: 'From April 23, 2020 / interview with Patrick @Numerai'
 
 That stuff has been happening under the covers for a while, and it’s kind of imminent- it’s going to be rolling out very soon. Some of our APIs, like [Omni Analytics](https://github.com/Omni-Analytics-Group/Rnumerai) and [UUA](https://github.com/uuazed/numerapi)’s already have API updates that are going to support the multiple account stuff. So things are happening, and if anyone has questions I’m happy to answer stuff like that.
 
-**Arbitrage:** Very cool! So you get to answer some questions because I keep this list, this handy list that I’ve been using for a couple of weeks now. So you’re the next victim.![](https://cdn-images-1.medium.com/max/1600/1*MUp55VUVVqYaH8sX2pSwiA.gif)He only checked it once to avoid overfitting
+**Arbitrage:** Very cool! So you get to answer some questions because I keep this list, this handy list that I’ve been using for a couple of weeks now. So you’re the next victim.
+
+![He only checked it once to avoid overfitting](https://cdn-images-1.medium.com/max/1600/1*MUp55VUVVqYaH8sX2pSwiA.gif)
 
 **Arbitrage:** I’m going to guess that you heard about Numerai from Anson.
 
@@ -48,15 +50,17 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **Arbitrage:** Makes sense. Have you participated in the tournament yet at this point?
 
-**Patrick:** Not really. I have my own little [Integration Test](https://numer.ai/integration_test) that I use mostly for making sure all of the changes I’m making aren’t breaking things.![](https://cdn-images-1.medium.com/max/1600/1*tqbxpq-pvy67rXJ_z4wo6A.gif)“Thank you!” — Arbitrage to Patrick
+**Patrick:** Not really. I have my own little [Integration Test](https://numer.ai/integration_test) that I use mostly for making sure all of the changes I’m making aren’t breaking things.
+
+![&#x201C;Thank you!&#x201D;&#x200A;&#x2014;&#x200A;Arbitrage to Patrick](https://cdn-images-1.medium.com/max/1600/1*tqbxpq-pvy67rXJ_z4wo6A.gif)
 
 **Patrick:** I don’t have any serious models that I’m working on or anything like that.
 
 **Arbitrage:** Alright, so who’s your favorite team member? I’m going to guess Anson.
 
-**Patrick:** My favorite team member at Numerai? I would say probably [NJ](https://twitter.com/tasha_jade).Gauntlet = thrown
+**Patrick:** My favorite team member at Numerai? I would say probably [NJ](https://twitter.com/tasha_jade).
 
-![](https://cdn-images-1.medium.com/max/1600/1*Um3PSMVA_9JO5brKgOsN6A.gif)
+![Gauntlet = thrown](https://cdn-images-1.medium.com/max/1600/1*Um3PSMVA_9JO5brKgOsN6A.gif)
 
 **Arbitrage:** There we go. The race is on.
 
@@ -70,10 +74,9 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **Patrick:** Hold on.
 
-**Arbitrage:** That’s right Keno, I’m watching the chat. And there were a ton of questions in Slido, too, so I’m pretty pumped for that. That’s my favorite segment of Office Hours: me trying to answer a question and then Richard telling me how it is. Or if I have no idea, I’ll just pawn it off to [Bor](https://numer.ai/bor1) or [Michael Oliver](https://numer.ai/mdo). The more people I interview, the more people I can pawn it off to, so that’s working out pretty well for me. But if you guys stop showing up, I’m in a heap of trouble. Oh well, I’ll figure it out. Here we go, I think it’s puppy time.  
+**Arbitrage:** That’s right Keno, I’m watching the chat. And there were a ton of questions in Slido, too, so I’m pretty pumped for that. That’s my favorite segment of Office Hours: me trying to answer a question and then Richard telling me how it is. Or if I have no idea, I’ll just pawn it off to [Bor](https://numer.ai/bor1) or [Michael Oliver](https://numer.ai/mdo). The more people I interview, the more people I can pawn it off to, so that’s working out pretty well for me. But if you guys stop showing up, I’m in a heap of trouble. Oh well, I’ll figure it out. Here we go, I think it’s puppy time.
 
-
-![](https://cdn-images-1.medium.com/max/1600/1*L_z81NO-alH1JN3ZoVUxFQ.gif)“NJ is melting.” — Arbitrage
+![&#x201C;NJ is melting.&#x201D;&#x200A;&#x2014;&#x200A;Arbitrage](https://cdn-images-1.medium.com/max/1600/1*L_z81NO-alH1JN3ZoVUxFQ.gif)
 
 **Patrick:** His name is Espresso.
 
@@ -105,7 +108,7 @@ To clone the meta model, a data scientist would have to know the proportions of 
 
 **Madmin Drama: thoughts on the top model being engineered to cheat and not predict well, and the pragmatism of banning the top contributor to hedge fund performance?**
 
-![](https://cdn-images-1.medium.com/max/1600/1*BuSdxe0nk88nOLZDUEIH4Q.jpeg)No, [Mad**MIN**](https://numer.ai/madmin) drama.
+![No, MadMIN drama.](https://cdn-images-1.medium.com/max/1600/1*BuSdxe0nk88nOLZDUEIH4Q.jpeg)
 
 Arbitrage prefaced his answer by saying that he’s quit the Numerai tournament for months at a time in the past because he felt there was too much cheating going on. “When I play a sport, I try to follow the rules as they’re written, and I don’t try to invent ways to get around the rules.”
 
@@ -121,7 +124,7 @@ _Author’s note: read about_ [_The DAO hack_](https://medium.com/@pullnews/unde
 
 “While there are still humans involved,” Arbitrage said, “I have no problem with intervention from the team to set things straight. I think it’s called for and justified.” He added that the fact Madmin was the top contributor on both the traditional leaderboard and MMC leaderboard is very interesting. Arbitrage’s conclusion, after reading [Mike P’s forum post](https://forum.numer.ai/t/leaderboard-bonus-exploit-uncovered/200), was that Madmin is performant, so actually contributing to the hedge fund, but the person behind the model designed other accounts to neutralize the risk.
 
-If a model is actually good, backtests will prove it. “I’ve always wondered if the team would attribute backtests to an individual user.” If a test showed conclusively that a particular model appeared performant but was actually terrible, it would be possible to send that user a message, prodding them to take action.“
+If a model is actually good, backtests will prove it. “I’ve always wondered if the team would attribute backtests to an individual user.” If a test showed conclusively that a particular model appeared performant but was actually terrible, it would be possible to send that user a message, prodding them to take action.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*sZxPcJC2yDngFYE_ssZm2A.jpeg)
 
@@ -155,7 +158,9 @@ In the past, Arbitrage said data scientists would look at where they were positi
 
 As Numerai engineer Jason explained to Arbitrage, the Integration Test accounts are the same example model but submitted on different days of the week to test the system.
 
-**Arbitrage:** I don’t know if that’s still true. I don’t think Jason’s on… Jason? Jason?![](https://cdn-images-1.medium.com/max/1600/1*RycGfEDwxG3IafTju1CCRw.gif)_Speak of the devil_
+**Arbitrage:** I don’t know if that’s still true. I don’t think Jason’s on… Jason? Jason?
+
+![Speak of the devil](https://cdn-images-1.medium.com/max/1600/1*RycGfEDwxG3IafTju1CCRw.gif)
 
 **Jason**: Yeah, I’m here and yeah that is true, that’s exactly what that is.
 
@@ -257,7 +262,7 @@ Richard added that they wouldn’t be giving data scientists backtests over the 
 
 **Richard:** I don’t, I never really have put one in. It’s maybe because I’m lazy, and I actually do want to get some in. Maybe convince Anson to do it, make sure they’re all hooked up to [Compute](https://docs.numer.ai/tournament/compute), or just run automatically. But there is actually a model that’s one of ours \(which I was going to mention in the [era boosting post I wrote](https://forum.numer.ai/t/era-boosted-models/189)\). This model, [Sugaku](https://numer.ai/sugaku), is a Numerai employee’s model that uses some of the era boosting ideas. It’s not only \[era boosting\] so I didn’t want to bring it up as an example of that, but it does use some of the ideas and it’s had a very consistent score.
 
-**Arbitrage:** I’ll tell you that you might like your Sugaku, by my student’s ranked higher at 68 to your 73.
+**Arbitrage:** I’ll tell you that you might like your Sugaku, but my student’s ranked higher at 68 to your 73.
 
 **Joakim:** Sugaku means ‘smart’ in Japanese, by the way.
 
