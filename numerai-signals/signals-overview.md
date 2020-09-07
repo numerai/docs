@@ -2,14 +2,16 @@
 
 Numerai Signals allows anybody to upload stock market signals and find out how original they are vs all other signals on Numerai. Signals can be staked with the NMR cryptocurrency to earn rewards. The best most orignal signals are used in Numerai's hedge fund.
 
-## How Numerai Signals Works
+TK link to Medium post
+
+## Summary Of How Numerai Signals Works
 
 1. Sign up to [Numerai Signals](https://signals.numer.ai). Accounts are shared with the main Numerai tournament, and you can just use your email/password from there if you've already made an account with Numerai.
 2. Upload signals on stocks in our universe \(it's roughly the biggest 5000 stocks in the world, see [example signals for full universe](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv)\).
-3. Prove you believe in your signals by staking them with cryptocurrency.
+3. Prove you believe your signals will continue to work on live data by staking them with cryptocurrency.
 4. Earn or lose money based on how original and good your signals are according to Numerai.
 
-## Signals
+## Stock Market Signals
 
 Stock market signals are data feeds about stocks that can be used by hedge funds like Numerai to improve performance. A count of the number of tweets mentioning ticker symbols in the Russell 3000 universe every day could be a signal. By itself, it might not be very predictive but taken together with other signals, it might improve predictive accuracy. Other examples of signals include signals produced from quant models such as those created on Quantopian, raw high quality data about stocks such as P/E ratios, executive compensation data, signals based on public filings or earnings calls, etc.
 
@@ -21,38 +23,25 @@ An example CSV is [here](https://numerai-quant-public-data.s3-us-west-2.amazonaw
 
 ## Creating Signals
 
-Unlike Numerai which provides clean training data to build your model, Numerai Signals provides no data. This is because Numerai Signals is a tool for people who have already built their own models or already have access to data they believe might produce good signals. However, there is a lot of free or low cost data available on the internet and a number of tools such as Quantopian, QauntConnect and Alpaca that provide data or make it easy to turn data into signals.
-
-Quantopian has a hosted IDE, with tightly integrated data sources and backtesting engine. Unfortunately, it’s tricky to export orders from that IDE. One strategy:
-
-1. Publish your algorithm for live trading
-2. Copy the live trading ID in the URL \(ie, ...live\_algorithms/\[your\_ID\]\)
-3. Go to their research notebook \(Research &gt; Notebooks\)
-4. Run this command:
-
-```text
-bt = get_live_results(‘[your_ID]’)
-bt = bt.pyfolio_positions.to_string()
-print(bt)
-```
+Unlike Numerai which provides clean training data to build your model, Numerai Signals provides no data. This is because Numerai Signals is a tool for people who have already built their own models or already have access to data they believe might produce good signals. However, there is a lot of free or low cost data available on the internet and a number of tools such as Quantopian, QuantConnect and Alpaca that provide data or make it easy to turn data into signals.
 
 Quantopian descriptions on the kinds of models they like give some good insights as to what would make a good signal on Numerai Signals as well. Quantopian's Risk Model and AlphaLens Tearsheets are a great way to analyze the quality of a signal (what they call a "factor"). See [https://www.quantopian.com/tutorials/alphalens#lesson1](https://www.quantopian.com/tutorials/alphalens#lesson1) and [https://www.quantopian.com/risk-model](https://www.quantopian.com/risk-model)
 
-Alpaca has a freely available set of scripting tools, including data, with a broker backend to place trades once designed. TK [Alpaca built a tool to export from Alpaca to Erasure](https://github.com/alpacahq/alpaca-erasure).
+Users have a thread on the forums discussing potential data sources. [Check it out](https://forum.numer.ai/t/free-or-cheap-data-for-erasure-numerai-quant/350), and add what works for you.
 
-Users also have a thread on the forums discussing potential data sources. [Check it out](https://forum.numer.ai/t/free-or-cheap-data-for-erasure-numerai-quant/350), and add what works for you.
+TK Users have a thread on the forums for integrating 3rd party systems such as submiting Quantopian factors directly to Signals.
 
 ## Universe
 
-The stock universe is updated daily, but in general only a couple, low volume stocks will move in/out on a given day. You can see today's universe by downloading the [latest example predictions](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv).
-
-You can view the historical universe by downloading old example predictions files directly from s3, with urls like the following: [https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example\_predictions/20200519.csv](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/20200519.csv)
+The stock universe cointains roughly 5000 of the biggests stocks in the world. It is updated daily, but in general only a couple, low volume stocks will move in/out on a given day. You can see today's universe by downloading the [latest example predictions](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv).
 
 ## Neutralization
 
+TK clean this up and get a description of neutralization broadly and then in submissions say submissions/scoring say signals are neutralized
+
 The way Numerai assesses the originality of an uploaded signal is by neutralizing it to all other signals Numerai already has. All signals uploaded to Signals are neutralized by Numerai before being scored. If Numerai, already has 12 month momentum as a signal, the neutralization ensures Signals users aren't rewarded for uploading that same signal again. The goal of Numerai Signals is to capture original new data for Numerai. The predictive value of common signals is diminished by neutralization but the predictive value of highly original signals will be unchanged or even improved by neutralization.
 
-TK Example of neutralization picture, mathematics and code
+TK Example of neutralization picture, mathematics and code see https://forum.numer.ai/t/model-diagnostics-feature-exposure/899 ``` ```
 
 ## Submissions
 
@@ -62,14 +51,14 @@ The submission deadline for each round is `Monday 14:30 UTC`. Late submissions w
 
 TK
 {% hint style="info" %}
-Use our [tools and libraries](https://docs.numer.ai/tournament/tools) to connect with our GraphQL [API](https://api-tournament.numer.ai/).
+NumerAPI supports API subissions so you can automate your submission flow see [NumerAPI Signals example] (https://github.com/uuazed/numerapi#usage-example---numerai-signals)
 {% endhint %}
 
 ## Targets
 
 Numerai Signals is looking for signals we don't already have and also signals we can implement in live trading in our hedge fund. To achieve each of these two goals we score all signals based on their correlation to a custom target which is (1) neutralized to the signals we already have and (2) ignores the first two days of returns.
 
-## ***One Week Neutralized Return Targets***
+## ***Six Day Neutralized Return Targets***
 
 Numerai Signals rewards users based on their signal's correlation to custom target created by Numerai. This target is created by neutralizing subsequent 6 day returns (ignoring the first 2 days) to all the signals Numerai already has. Since Signals users are not provided any of the data that Numerai uses to create the target, the target is a blackbox. The targets are in effect a Numerai customized "specific return" aka "residual return" where major risk factors and features such as country risk, sector risk, size, value etc are neutralized out of the return.
 
@@ -127,11 +116,9 @@ See Numerai's [staking and payouts](https://docs.numer.ai/tournament/staking-and
 
 ## Daily Updates
 
-Each submission will receive daily updated scores starting from the first Thursday after the submission deadline to the Wednesday one week after (TK correct?). For example, if you made the blue submission on `Sun 7th`, you will receive your first score on `Thur 11th` and your final score on `Wed 7th` of the next month.
+Each submission will receive daily updated scores starting from the first Friday after the submission deadline to the Wednesday one week after. For example, if you made the blue submission on `Sun 7th`, you will receive your first score on `Friday 12th` and your final score on `Wed 17th` of the next week.
 
 If you staked on your submission, you will also receive daily updates on your payouts. But only your final score and final payout will count.
-
-![submission and scoring calendar](https://documents.lucidchart.com/documents/d20914fb-a3d0-4bf5-a775-718fe5b41f17/pages/0_0?a=59169&x=-3266&y=-4681&w=1276&h=902&store=1&accept=image%2F*&auth=LCA%20016838a180a592a2c9146b00e03b2c9e7576491c-ts%3D1588381543)
 
 ## Reputation and Leaderboard
 
