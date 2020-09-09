@@ -1,5 +1,5 @@
 ---
-description: 'From May 21, 2020'
+description: 'From May 21, 2020 / JRB interview'
 ---
 
 # OHwA S01E12
