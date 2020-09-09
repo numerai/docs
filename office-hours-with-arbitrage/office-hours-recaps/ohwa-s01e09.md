@@ -38,7 +38,9 @@ Arbitrage brought up a previous tournament iteration where competitors could ear
 
 Arbitrage answered by explaining that he’s not certain maximizing on the [Validation 2](https://forum.numer.ai/t/validation-2-announcement/166) data is the correct path because the data is from a crisis period and, as Richard has [mentioned previously](https://medium.com/numerai/office-hours-with-arbitrage-4-2c5da71ef40), the data isn’t a full year. Because it encompasses the COVID-19 drawdown, it represents a special segment of the Numerai data. “I would be concerned to have a model that performed well on Validation 2 but perhaps didn’t do well on Validation 1,” he said, “I want it to do well on Validation 1 **and** 2.”
 
-How do you do that? Arbitrage said he doesn’t know, he hasn’t experimented enough with Validation 2 yet, but he’s created models trained on both validation data sets. And as of the week before this Office Hours, Arbitrage finally installed XGBoost.![](https://cdn-images-1.medium.com/max/1600/1*jGZULHhSRJR15dyryXZeMQ.jpeg)“Install XGBoost.”
+How do you do that? Arbitrage said he doesn’t know, he hasn’t experimented enough with Validation 2 yet, but he’s created models trained on both validation data sets. And as of the week before this Office Hours, Arbitrage finally installed XGBoost.
+
+![&#x201C;Install XGBoost.&#x201D;](https://cdn-images-1.medium.com/max/1600/1*jGZULHhSRJR15dyryXZeMQ.jpeg)
 
 “I’ve got that spooled up, the models are uploaded to [Compute](https://docs.numer.ai/tournament/compute), and I’m going to wait and see how they perform.”
 
@@ -92,7 +94,7 @@ Arbitrage added that neural nets and XGBoost, two of the traditionally best perf
 
 > “Good god I have no freaking clue.” — Arbitrage
 
-![](https://cdn-images-1.medium.com/max/1600/1*cmmdQy1XK3HM1Bee6Y5H8g.jpeg)Arbitrage’s computer science knowledge.
+![Arbitrage&#x2019;s computer science knowledge.](https://cdn-images-1.medium.com/max/1600/1*cmmdQy1XK3HM1Bee6Y5H8g.jpeg)
 
 Arbitrage admitted that he doesn’t have much experience in computer science \(his background is finance\), and so passed the question along to anyone who wanted to give it a try.
 
@@ -204,9 +206,11 @@ Arbitrage redirected the question to Mike, who immediately called for backup. Hi
 
 **Unfortunately, I can’t participate \(differences in time zones\), but I want to listen to what you will discuss in Office Hours. Can you record and post a link to the video?**
 
-Arbitrage pointed out that the Office Hours are recorded, but in effort to keep it an intellectual safe-space \(where anyone can, and should, feel encouraged to ask any questions and discuss openly\), the recordings are not shared publicly. However, each week’s Office Hours are summarized and published on Numerai’s [Medium page](https://medium.com/numerai).
+Each week's Office Hours are summarized and published in the Numerai Tournament Docs: see [Season One](./) and [Season Two](../office-hours-recaps-season-2/).
 
-He also teased that over the summer, he’s looking forward to producing more content and playing around with how it’s shared with everyone.
+You can find the recordings on the Numerai [YouTube channel](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA).
+
+Arbitrage also teased that over the summer, he’s looking forward to producing more content and playing around with how it’s shared with everyone.
 
 **Arbitrage asks Michael Oliver about his era-boosted trees: The only optimization parameter for the era-boosted trees is the correlation, is there a way to do era-boosted trees with two optimization parameters?**
 
