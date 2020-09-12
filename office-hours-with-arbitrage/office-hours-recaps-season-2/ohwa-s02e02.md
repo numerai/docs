@@ -1,5 +1,5 @@
 ---
-description: 'From June 11, 2020'
+description: 'From June 11, 2020 / Jason interview pt. II'
 ---
 
 # OHwA S02E02
@@ -10,7 +10,7 @@ After welcoming new and returning guests of Office Hours, Arbitrage tackled the 
 
 ### Questions from Slido
 
-**Arb - what is your golf handicap?**
+**Abr - what is your golf handicap?**
 
 > "I'm actually not very good at golf." - Arbitrage
 

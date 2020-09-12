@@ -22,7 +22,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** Oh not too far off.
 
-**Arbitrage:** Yeah not far. I think I mentinoed that I actually found Numerai through the Quantopian forum - someone mentioned it there and I was looking for a project that was domain-related. Since it was stocks, it was like oh! This is great!
+**Arbitrage:** Yeah not far. I think I mentioned that I actually found Numerai through the Quantopian forum - someone mentioned it there and I was looking for a project that was domain-related. Since it was stocks, it was like oh! This is great!
 
 **JRB:** Do you remember someone named [WSW](https://numer.ai/wsw)?
 

@@ -109,7 +109,7 @@ After creating the list from the data and storing it as a feather file, the new 
 
 ### Questions from Slido
 
-**Is it possible to create an external service to enable staking with leverage  up to 4x on Numerai?**
+**Is it possible to create an external service to enable staking with leverage up to 4x on Numerai?**
 
 While this isn't something the team could work on, it's technically possible for someone to build a service to do this. It would have to exist independent of the tournament, but it's possible. 
 

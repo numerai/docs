@@ -284,7 +284,7 @@ Keno had a follow-up question about [Numerai Signals](https://signals.numer.ai/t
 
 **What are some suggested ways to explore and develop decent MMC models?**
 
-John explained a bit of his approach to MMC models: when looking at the data set, if we're thinking about quintiles, are those quintiles representative of numerical edges? For example, if he's looking at the fourth quintile, somewhere in the 0.75 range, if he puts a basket of data within that quintile, what does it look like? If something is in the 81st percentile versus the 99th percentile. those are bucketed into the same quintile. 
+John explained a bit of his approach to MMC models: when looking at the data set, if we're thinking about quintiles, are those quintiles representative of numerical edges? For example, if he's looking at the fourth quintile, somewhere in the 0.75 range, if he puts a basket of data within that quintile, what does it look like? If something is in the 81st percentile versus the 99th percentile. Those are bucketed into the same quintile. 
 
 > "Is there a way for me to exploit the numerical edges; is the stock that is in the 81st percentile a momentum, and the stock in the 99th percentile mean reverting, but I'm putting them into the same category?" - John Scaife
 
