@@ -26,7 +26,7 @@ Arbitrage speculated that, were data scientists able to somehow find out country
 
 > "It goes back to the idea that I don't touch the data, because if I knew more about it, it would bias what's going on." - Arbitrage
 
-Richard added that if they gave out the country category, strange things could happen like users who only trade in countries that are more expensive for Numerai to trade in. "At some point there might be such a thing," Richard said, "but remember that the Kazutsugi targets is very neutral to all of the things we know so you're not missing out on too much." Richard also mentioned that some of this might cross over with [Numerai Signals](https://docs.numer.ai/numerai-signals/signals-overview): someone with a model that's performant in one country might want to put that on Signals. 
+Richard added that if they gave out the country category, strange things could happen like users who only trade in countries that are more expensive for Numerai to trade in. "At some point there might be such a thing," Richard said, "but remember that the Kazutsugi targets are very neutral to all of the things we know so you're not missing out on too much." Richard also mentioned that some of this might cross over with [Numerai Signals](https://docs.numer.ai/numerai-signals/signals-overview): someone with a model that's performant in one country might want to put that on Signals. 
 
 **Does flipping a model with positive correlation and negative MMC work to get a model with positive MMC? Is that allowed?**
 
@@ -151,7 +151,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ ðŸ•ºðŸ
 
 **Arbitrage:** Yeah.
 
-**Quantverse:** The owners of Slushpool are good friends of mine and we're working on a project together, and they're whole company uses Rust now.
+**Quantverse:** The owners of Slushpool are good friends of mine and we're working on a project together, and their whole company uses Rust now.
 
 **Arbitrage:** That's amazing! How cool! Can you give us your top three tips for the tournament?
 

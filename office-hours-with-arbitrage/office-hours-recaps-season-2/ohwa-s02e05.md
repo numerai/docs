@@ -42,7 +42,7 @@ Arbitrage asked Yuki to help answer this one.
 
 **Where do you see Numerai and its userbase in a few years?**
 
-Arbitrage sees it expanding but hopes that as more new people join, they'll stick around longer. "There's too much churn," he said. More users helps because it brings more eyes onto the problem.
+Arbitrage sees it expanding but hopes that as more new people join, they'll stick around longer. "There's too much churn," he said. More users help because they bring more eyes onto the problem.
 
 **How sad is it that most of us can't seem to beat the** [**example predictions**](https://numer.ai/integration_test)**?**
 
@@ -56,7 +56,7 @@ Arbitrage's current hypothesis is that if you can beat the example predictions' 
 
 There are so many models chasing correlation that it's pushing the performance of the meta-model in that direction. If all of the data scientists tried to have high Numerai sharpe instead of correlation, the meta-model itself may not swing as wildly and its own sharpe would be better. Arbitrage thinks that this would improve the meta-model's alpha.
 
-**Joakim ask Yuki: Are people skeptical about blending machine learning with a traditional quantitative approach?** 
+**Joakim asks Yuki: Are people skeptical about blending machine learning with a traditional quantitative approach?** 
 
 Yuki believes there's still a lot of skepticism out there for integrating machine learning into quantitative finance. He referenced the surplus of firms that claim to be AI-based but don't actually employ any AI as a contributing factor to the skepticism. 
 
@@ -86,7 +86,7 @@ No because if people are adjusting their risk appropriately, they'll be selling 
 
 **Richard:** Yeah, we do. Country and sector play a large part in explaining returns and so do factors. Factors like the value factor, or momentum, are important to neutralize out as well.
 
-**From the audience:** Ah cool, so those are not in the Kazutsugi target value set?
+\*\*\*\*[**TheMicon**](https://numer.ai/themicon)**:** Ah cool, so those are not in the Kazutsugi target value set?
 
 **Richard:** Well ... \[long pause\] ... Some of our features might be things to do with value. But that doesn't mean that we can't neutralize to some other measure of value. You can think about it as very much inspired by the [Barra model](https://www.msci.com/www/research-paper/barra-s-risk-models/014972229) where the major Barra factors are country, sector, and factor returns. We are trying to take all of those out. 
 
@@ -94,7 +94,7 @@ No because if people are adjusting their risk appropriately, they'll be selling 
 
 **Richard:** Right. What we thought we could do in previous versions of the tournament was give you all data to model the raw returns and then in our optimizer we could just pull out all of the factor returns and the sector returns and neutralize to them. But there was very little left. Having the target match what we actually want is much better, so that's why \[the Kazutsugi\] targets were a bigger help.
 
-**Audience:** Do you think that's why we're doing so well on the data set? Or do you think that's a coincidence and the markets are just juicy for quant funds?
+**TheMicon:** Do you think that's why we're doing so well on the data set? Or do you think that's a coincidence and the markets are just juicy for quant funds?
 
 **Richard:** I don't think the markets are that good for quant funds, one of the market neutral funds is down 20% for the year. Even the ones that don't take factor exposure haven't done well. I think there's also some interplay between having a target that's residual and then the models tending to generalize more. I think the targets are a big reason, but also that if you're going to do machine learning problems in the same format that we've set them up, it really is quite well designed for residual targets. It wouldn't make as much sense to have the problem set up without them. The other approach we could have done was given the users all of the sector and factor data and said, "here's the country category and the value category," or something like that, and had them think about the whole problem. But I think this approach is a lot better because you're building things that tend to be much more robust and generalize better because anything you're learning on this data set is something that applies to all sectors, countries, and regimes \(ideally\).
 
@@ -117,7 +117,7 @@ Richard Craib : *sqrt(12)
 
 **Arbitrage:** There it is, you definitely don't want everybody chasing the same thing like correlation or Numerai sharpe. But I think that the models that have good Numerai sharpe will do well and have positive MMC in burn periods solely because they're not trying to hit home runs on correlation.
 
-**Richard:** Yeah, you can't have it all. One of the things that we gave out before subtracting the cost, is that if you ever optimize for sharpe without doing that subtraction, it would somehow tend to favor minimizing vol rather than maximizing correlation. And if you have this little penalty of costs, you tend to make models that maximize it in a more balanced way. You can think about it, even in a normal sharpe calculation it's the return minus the risk free rate. 
+**Richard:** Yeah, you can't have it all. One of the things that we gave out before subtracting the cost, is that if you ever optimize for sharpe without doing that subtraction, it would somehow tend to favor minimizing volatility rather than maximizing correlation. And if you have this little penalty of costs, you tend to make models that maximize it in a more balanced way. You can think about it, even in a normal sharpe calculation it's the return minus the risk free rate. 
 
 ### Interview with [Yuki](https://numer.ai/uki)
 
