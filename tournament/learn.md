@@ -81,6 +81,8 @@ See the [metamodel contribution](https://docs.numer.ai/tournament/metamodel-cont
 
 You can `stake` on your submission to start earning `payouts`. You can either stake on `correlation` or `corr plus mmc`.
 
+You can start participating in Numerai without staking to learn more about the tournament and about your model\(s\)' performance. When you feel confident in your model\(s\), you can attach some stake to it. The minimum stake value is 0.01 NMR. 
+
 {% hint style="info" %}
 Staking requires you to lock up [NMR](https://coinmarketcap.com/currencies/numeraire/) in an [Erasure](https://erasure.world/) smart contract agreement. This gives Numerai the ability to burn your stake if your model performs poorly.
 {% endhint %}
