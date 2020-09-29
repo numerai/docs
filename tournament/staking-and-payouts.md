@@ -10,6 +10,8 @@ Numerai wants accurate predictions and is willing to reward it. How much you can
 
 Staking also gives Numerai a sybil resistant way to allocate payouts. Since payouts are a percentage of your stake value, you cannot game the payout system by simply creating duplicate accounts.
 
+You can start participating in Numerai without staking to learn more about the tournament and about your model\(s\)' performance. When you feel confident in your model\(s\), you can attach some stake to it. The minimum stake value is 0.01 NMR. 
+
 ## Managing your stake
 
 You can manage your stake on the Numerai website by clicking 'Manage Stake'. Use this modal to increase or decrease your stake amount, or opt into or out of `mmc`.
