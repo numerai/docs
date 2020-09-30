@@ -20,7 +20,7 @@ Format your signals as a CSV, with tickers on one column and signals, expressed 
 
 ![](../.gitbook/assets/signals-content-image.png)
 
-TK (waiting on init round) this should be updated to the finalize example csv which contains predictions over validation not just live.
+TK this should be updated to the finalize example csv which contains predictions over validation not just live.
 An example CSV is [here](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv). This CSV includes an up to date universe that is generated daily.
 
 ## Creating Signals
@@ -55,7 +55,6 @@ Every Saturday at `18:00 UTC`, a new `round` begins. Submit your predictions to 
 
 The submission deadline for each round is `Monday 14:30 UTC`. Late submissions will not be eligible for payouts.
 
-TK @Anson make sure this style thing works?
 {% hint style="info" %}
 NumerAPI supports API subissions so you can automate your submission flow see [NumerAPI Signals example] (https://github.com/uuazed/numerapi#usage-example---numerai-signals)
 {% endhint %}
