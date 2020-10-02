@@ -114,7 +114,7 @@ Staking requires you to lock up the \[NMR cryptocurrency\] \([https://coinmarket
 You `earn` or `burn` a percentage of your stake based on the score of your submissions. For example, if you stake `100 NMR` on `correlation` and your score was `+0.05`, then you will earn `5% of 100NMR = 5NMR`. The maximum you can earn or burn is `25%` of your stake each round.
 
 ```python
-corr_payout = stake * clip(corr, -0.25, 0.25)
+corr_payout = stake * clip(2 * corr, -0.25, 0.25)
 
 mmc_payout = stake * clip(corr + mmc, -0.25, 0.25)
 ```
