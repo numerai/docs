@@ -34,7 +34,7 @@ For example, if your `stake_value` on round N is `100`, and your `correlation = 
 
 If you have opted into `mmc`, then you are paid for both `correlation` and `mmc`. For example if your `correlation = 0.05` and your `mmc = 0.01`, your payout will be `0.06 * stake_value NMR`
 
-Payouts are capped at plus or minus `25%` per week.
+Payouts are capped at plus or minus `25%` per round.
 
 {% hint style="warning" %}
 Decreasing your stake will lower your `stake_value` in the immediate next round, even though the decrease will only happen 4 weeks later.
