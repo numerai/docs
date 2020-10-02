@@ -116,7 +116,7 @@ You `earn` or `burn` a percentage of your stake based on the score of your submi
 ```python
 corr_payout = stake * clip(2 * corr, -0.25, 0.25)
 
-mmc_payout = stake * clip(corr + mmc, -0.25, 0.25)
+mmc_payout = stake * clip(2 * corr + mmc, -0.25, 0.25)
 ```
 
 See Numerai's [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for further details.
