@@ -111,15 +111,13 @@ You need to `stake` your submission if you want the opportunity to earn `payouts
 Staking requires you to lock up the \[NMR cryptocurrency\] \([https://coinmarketcap.com/currencies/numeraire/](https://coinmarketcap.com/currencies/numeraire/)\) for a week. This gives Numerai the ability to burn your stake if your signal performs poorly.
 {% endhint %}
 
-You `earn` or `burn` a percentage of your stake based on the score of your submissions. For example, if you stake `100 NMR` on `correlation` and your score was `+0.05`, then you will earn `5% of 100NMR = 5NMR`. The maximum you can earn or burn is `25%` of your stake each round.
+You `earn` or `burn` a percentage of your stake based on the score of your submissions. For example, if you stake `100 NMR` on `correlation` and your score was `+0.05`, then you will earn `2 x 5% of 100NMR = 10NMR`. The maximum you can earn or burn is `25%` of your stake each round.
 
 ```python
 corr_payout = stake * clip(2 * corr, -0.25, 0.25)
 
 mmc_payout = stake * clip(2 * corr + mmc, -0.25, 0.25)
 ```
-
-See Numerai's [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for further details.
 
 It is important to note that staking your signal does not create an investment contract, a security, a swap, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users. Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals. Please read our [Terms of Service](https://numer.ai/terms) for further information.
 
