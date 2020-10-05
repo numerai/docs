@@ -7,7 +7,7 @@ Understand the purpose of Numerai Signals in this Medium post: TK add link to Me
 ## Summary Of How Numerai Signals Works
 
 1. Sign up to [Numerai Signals](https://signals.numer.ai). Accounts are shared with the main Numerai tournament, and you can just use your email/password from there if you've already made an account with Numerai.
-2. Upload signals on stocks in our universe \(it's roughly the biggest 5000 stocks in the world, see [example signals for full universe](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv)\).
+2. Upload signals on stocks in our universe \(it's roughly the biggest 5000 stocks in the world, see [example signals for full universe](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_signal/latest.csv)\).
 3. Prove you believe your signals will continue to work on live data by staking them with cryptocurrency.
 4. Earn or lose NMR based on how original and good your signals are compared to Numerai's targets.
 
@@ -19,7 +19,7 @@ Format your signals as a CSV, with tickers on one column and signals, expressed 
 
 ![](../.gitbook/assets/signals-content-image.png)
 
-TK this should be updated to the finalize example csv which contains predictions over validation not just live. An example CSV is [here](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv). This CSV includes an up to date universe that is generated daily.
+TK this should be updated to the finalize example csv which contains signals over validation not just live. An example CSV is [here](https://numerai-quant-public-data.s3-us-west-2.amazonaws.com/example_signal/latest.csv). This CSV includes an up to date universe that is generated daily.
 
 ## Creating Signals
 
@@ -31,7 +31,7 @@ Users have a thread on the forums discussing potential data sources. [Check it o
 
 ## Universe
 
-The stock universe contains roughly 5000 of the biggest stocks in the world. It is updated daily, but in general only a couple, low volume stocks will move in/out on a given day. You can see today's universe by downloading the [latest example predictions](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_predictions/latest.csv).
+The stock universe contains roughly 5000 of the biggest stocks in the world. It is updated daily, but in general only a couple, low volume stocks will move in/out on a given day. You can see today's universe by downloading the [latest example signal](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_signal/latest.csv).
 
 ## Neutralization
 
@@ -49,7 +49,7 @@ For a broader discussion on feature neutralization see [this forum post](https:/
 
 ## Submissions
 
-Every Saturday at `18:00 UTC`, a new `round` begins. Submit your predictions to Numerai Signals to enter the tournament.
+Every Saturday at `18:00 UTC`, a new `round` begins. Submit your signal to Numerai Signals to enter the tournament.
 
 The submission deadline for each round is `Monday 14:30 UTC`. Late submissions will not be eligible for payouts.
 
@@ -57,7 +57,7 @@ The submission deadline for each round is `Monday 14:30 UTC`. Late submissions w
 NumerAPI supports API subissions so you can automate your submission flow see \[NumerAPI Signals example\] \([https://github.com/uuazed/numerapi\#usage-example---numerai-signals](https://github.com/uuazed/numerapi#usage-example---numerai-signals)\)
 {% endhint %}
 
-Each submission should include 1. ticker column \(could be ticker, cusip, sedol, or bloomberg\_ticker\) 2. prediction column. Values between 0 and 1. \(Remember we rank these, so only relative order matters\) 3. friday\_date column. If submitting validation data, this allows us to know which week each prediction is for. 4. data\_type column. This allows us to easily separate your live submission from your validation data.
+Each submission should include 1. ticker column \(could be ticker, cusip, sedol, or bloomberg\_ticker\) 2. signal column. Values between 0 and 1. \(Remember we rank these, so only relative order matters\) 3. friday\_date column. If submitting validation data, this allows us to know which week each prediction is for. 4. data\_type column. This allows us to easily separate your live submission from your validation data.
 
 ![](../.gitbook/assets/submission_screenshot.png)
 
