@@ -35,7 +35,5 @@ The first late or missed submission will receive the score equivalent to the `ex
 
 To avoid this penalty, automate your weekly submission workflow with [Numerai Compute](https://docs.numer.ai/tournament/compute).
 
-## Leaderboard bonus \(soon to be deprecated\)
 
-Numerai used to give out extra bonuses to models at the top of the leaderboard. This bonus will continue to be payed out until September 9, 2020.
 
