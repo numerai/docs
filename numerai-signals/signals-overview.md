@@ -54,9 +54,9 @@ The Numerai Signals stock market universe covers roughly the top 5000 largest st
 
 The universe is updated every week, but in general only a couple low volume stocks will move in or out on a given week. 
 
-You can see the latest universe by downloading the latest example signal:
+You can see the latest universe by downloading the latest universe file:
 
-{% embed url="https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example\_signal/latest.csv" %}
+{% embed url="https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv" %}
 
 ### Submissions
 
@@ -76,6 +76,8 @@ Submissions that include the `validation` time period must include two extra col
 
 ![An example submission with bloomberg\_tickers](../.gitbook/assets/submission_screenshot.png)
 
+
+
 ### Diagnostics
 
 Once your submission has been accepted, it will be queued for diagnostics. This usually takes 10-15 minutes depending on the number of weeks and tickers that span your submission.
@@ -87,6 +89,10 @@ These diagnostics serve as a guide for you to estimate whether your signal is go
 {% hint style="danger" %}
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process. 
 {% endhint %}
+
+All of the historical targets used to calculate diagnostics is available here:
+
+{% embed url="https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv" %}
 
 ### API and Automation
 
