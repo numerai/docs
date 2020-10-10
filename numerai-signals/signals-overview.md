@@ -1,16 +1,14 @@
-# Signals Overview
+# Numerai Signals Overview
 
-So you have a stock market signal. But how original is it? And can you make money trading it after costs?
-
-Numerai Signals is an application that you use to evaluate and earn cryptocurrency on the originality and performance of your stock market signals - without having to set up your own hedge fund.
+[Numerai Signals](https://signals.numer.ai) lets you upload stock market signals and find out how original they are compared to all other signals on Numerai. Signals can be staked with the NMR cryptocurrency to earn rewards. The best most orignal signals are used in Numerai's hedge fund.
 
 Numerai Signals is a part of the Numerai master plan to build the world's last hedge fund. Read the &lt;medium post&gt; to learn more about how it all fits together.
 
-## Quickstart
+## Summary
 
 1. Sign up to [Numerai Signals](https://signals.numer.ai) or sign in with your existing Numerai tournament account.
 2. Upload your signal on Numerai's stock universe to receive performance, risk, and profitability diagnostics over the historical portion of your signal.
-3. Stake NMR on the live portion of your signal to earn or burn NMR based on your performance relative to Numerai's custom targets.
+3. Stake NMR on the live portion of your signal to earn or lose NMR based on your performance relative to Numerai's custom targets.
 4. Automate the weekly upload of your signal by connecting directly to our API and grow the value of your stake over time.
 
 ## What are stock market signals?
@@ -74,7 +72,7 @@ Submissions that include the `validation` time period must include two extra col
 * A `friday_date` column - values must be Fridays as week periods begin on Friday in Numerai Signals.  
 * A `data_type` column - values can only be `live` or `validation`. Rows with `data_type` of `live` must contain the date of the most recent Friday. 
 
-![An example submission with bloomberg\_tickers](../.gitbook/assets/submission_screenshot.png)
+![An example submission with bloomberg\_ticker](../.gitbook/assets/submission_screenshot.png)
 
 
 
@@ -90,7 +88,7 @@ These diagnostics serve as a guide for you to estimate whether your signal is go
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process. 
 {% endhint %}
 
-All of the historical targets used to calculate diagnostics is available here:
+All of the historical targets used to calculate diagnostics are available here:
 
 {% embed url="https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv" %}
 
@@ -111,7 +109,7 @@ Or using our official Python client library
 Numerai has a variety of existing signals. Our existing signals include Barra factors \(like size, value, momemtum, etc\) country and sector risk factors, and custom stock features. 
 
 {% hint style="info" %}
-**Definition**: A signal or target is considered "neutralized" after Numerai transforms it to have no correlation with any of Numerai's existing signals such as Barra factors, country, sector factors and other custom stock features.
+**Definition**: A signal or target is considered "neutralized" after Numerai transforms it to have zero correlation with any of Numerai's existing signals such as Barra factors, country, sector factors and other custom stock features.
 {% endhint %}
 
 Every signal uploaded to Numerai Signals is neutralized before being scored. The point of the neutralization is to isolate the original or orthogonal component of the signal that is not already present in known signals.
@@ -119,12 +117,12 @@ Every signal uploaded to Numerai Signals is neutralized before being scored. The
 ![A visualization of neutralization against a single known signal](../.gitbook/assets/image%20%2853%29.png)
 
 {% hint style="warning" %}
-If you submit a simple linear combination of a few well known signals, there will be little to no orthogonal component after neutralization. 
+If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization. 
 {% endhint %}
 
 The targets used to evaluate signals are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
 
-The data that is used to perform neutralization is not provided, which means the process is "black box". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future.        
+The data that is used to perform neutralization is not provided, which means the process is a "black box". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future although it’s important to note that signals with strong scores over the historical period may not score well in any current or future round.
 
 The code that is used to implement neutralization is open source. You can learn more about the neutralization process in this example notebook:
 
@@ -138,7 +136,7 @@ Signals with very high correlation with subsequent stock returns may score very 
 
 In other words, “good” signals with strong predictive value when considered alone may score poorly on Numerai Signals. This highlights the key unique aspect of Signals: Numerai Signals is not about predicting stock returns, it is about finding original signals that has not already available to Numerai.
 
-### _**Six Day Neutralized Return Targets**_
+### **Six Day Neutralized Return Targets**
 
 Signals are evaluated against a custom target created by Numerai. This target is based on 6 day neutralized subsequent returns \(ignoring the first 2 days\) starting from Friday close.
 
@@ -158,7 +156,7 @@ If you only have signals on a subset of the universe \(eg only signals on US sto
 
 ### Meta Model Contribution
 
-If `corr` is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai, Metamodel Contribution \(MMC\) is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai _and all other staked signals on Numerai Signals._ This score is simply referred to as `mmc` throughout this doc and the website.
+If `corr` is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai, Meta Model Contribution \(MMC\) is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai _and all other staked signals on Numerai Signals._ This score is simply referred to as `mmc` throughout this doc and the website.
 
 The `mmc` of a signal is computed by first constructing a special signal called the Signals' Meta Model,  which is defined as the stake weighted average of all the \(ranked and neutralized\) signals on Numerai Signals for a given round. The `mmc` of a signal is the correlation of the signal to the target after being neutralized to the Signals' Meta Model.
 
@@ -168,7 +166,7 @@ High and consistent MMC on Signals is doubly impressive because it means your si
 
 MMC is a concept that is taken from the main Numerai Tournament and the scoring system is very similar. See the  [metamodel contribution](https://docs.numer.ai/tournament/metamodel-contribution) section in the Numerai Tournament docs for details on how we compute MMC on Numerai.
 
-To note,  the computation of Numerai Signals' MMC is completely separate from that of the Numerai Tournament. Specifically, only submissions to Numerai Signals are used to construct the Signals' Meta Model.
+Note the computation of Numerai Signals' MMC is completely separate from that of the Numerai Tournament. Specifically, only submissions to Numerai Signals are used to construct the Signals' Meta Model.
 
 ## Staking and Payouts
 
@@ -191,7 +189,7 @@ For example, if you stake `100 NMR` on `corr` and your score was `+0.05`, then y
 The maximum you can earn or burn is `25%` of your stake each round. Payouts are automatically rolled into your stake. 
 
 {% hint style="danger" %}
-I**t is important to note that staking your signal does not create an investment contract, a security, a swap, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users. Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.** 
+It is important to note that the opportunity to stake your signal **is not** an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users.  Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.
 
 **Please read our** [**Terms of Service**](https://numer.ai/terms) **for further information.**
 {% endhint %}
