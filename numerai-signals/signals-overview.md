@@ -80,7 +80,7 @@ Submissions that include the `validation` time period must include two extra col
 
 Once your submission has been accepted, it will be queued for diagnostics. This usually takes 10-15 minutes depending on the number of weeks and tickers that span your submission.
 
-![An example diagnostics report](../.gitbook/assets/image%20%2854%29.png)
+![An example diagnostics report](../.gitbook/assets/screen-shot-2020-10-10-at-4.19.28-pm.png)
 
 These diagnostics serve as a guide for you to estimate whether your signal is good enough to be worth staking on. It is important to note that signals with strong diagnostics over the historical `validation` period may not score well in any current or future `live` periods.
 
