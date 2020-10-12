@@ -98,7 +98,7 @@ You can automate your submission workflow by connecting directly to our [GraphQL
 
 ### Neutralization
 
-Numerai has a variety of existing signals. Our existing signals include Barra factors \(like size, value, momemtum, etc\) country and sector risk factors, and custom stock features. 
+Numerai has a variety of existing signals. Our existing signals include Barra factors \(like size, value, momentum, etc\) country and sector risk factors, and custom stock features. 
 
 {% hint style="info" %}
 **Definition**: A signal or target is considered "neutralized" after Numerai transforms it to have zero correlation with any of Numerai's existing signals such as Barra factors, country, sector factors and other custom stock features.
