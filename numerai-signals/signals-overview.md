@@ -52,9 +52,7 @@ The Numerai Signals stock market universe covers roughly the top 5000 largest st
 
 The universe is updated every week, but in general only a couple low volume stocks will move in or out on a given week. 
 
-You can see the latest universe by downloading the latest universe file:
-
-{% embed url="https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv" %}
+You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv).
 
 ### Submissions
 
@@ -74,7 +72,7 @@ Submissions that include the `validation` time period must include two extra col
 
 ![An example submission with bloomberg\_ticker](../.gitbook/assets/submission_screenshot.png)
 
-
+Download the latest example submission [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_signal/latest.csv).
 
 ### Diagnostics
 
@@ -88,17 +86,11 @@ These diagnostics serve as a guide for you to estimate whether your signal is go
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process. 
 {% endhint %}
 
-All of the historical targets used to calculate diagnostics are available here:
-
-{% embed url="https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv" %}
+All of the historical targets used to calculate diagnostics is available [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv).
 
 ### API and Automation
 
-You can automate your submission workflow by connecting directly to our GraphQL API
-
-{% embed url="https://api-tournament.numer.ai/" %}
-
-Or using our official Python client library 
+You can automate your submission workflow by connecting directly to our [GraphQL API](https://api-tournament.numer.ai/) or by using the official python client. 
 
 {% embed url="https://github.com/uuazed/numerapi\#usage-example---numerai-signals" %}
 
@@ -196,7 +188,7 @@ It is important to note that the opportunity to stake your signal **is not** an 
 
 To create a stake, click the "manage stake" button on the website and create a "change request" to "increase" your stake. Here you can select whether you want to stake on `corr` or `corr_plus_mmc`. If at any time you wish to reduce your stake, you can also create a "change request" to "decrease" your stake.  
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![The stake modal on the website](../.gitbook/assets/image%20%2850%29.png)
 
 Please note that change requests do not apply immediately. Always double check the "effective date" shown on the website before applying changes.
 
@@ -209,23 +201,27 @@ There are two types of dates in Numerai Signals
 * `data_date` - dates corresponding to the underlying stock market data. All `data_dates` refer to the market close of that date and do not include a time. For example, values in the `friday_date` column of submissions are of type `data_date`.
 * `effective_date`- dates corresponding to actions or events that take place on Numerai Signals and may include a time which is always specified in UTC. There is usually a delay between the `data_date` and the `effective_date` because of time zones and the time it takes for stock market data to be processed. Unless otherwise specified, all dates mentioned in the website and this doc are of type `effective_date`. 
 
-### Rounds
+### Round
 
 All actions and events and their corresponding dates and times are grouped into numbered `rounds` to make them easier to talk about.
 
+{% hint style="info" %}
+A new round begins every Saturday at 18:00 UTC
+{% endhint %}
+
 Every `Saturday at 18:00 UTC` a new `round` begins. The submission window \(blue\) is open until the submission deadline of `Monday at 14:30 UTC`. Stakes are locked in during a processed known as "stake selection" on the following Friday. Preliminary scores and pending payouts are reported over the span of 4 days \(green\) on Friday, Saturday, Tuesday and Wednesday. The score and payout reported on Wednesday is taken as the final score and payout for the round.
 
-![Example effective dates for a single round](https://documents.app.lucidchart.com/documents/9e91ae48-1fb7-4603-bf30-8428d1a4fe1e/pages/0_0?a=1995&x=302&y=125&w=1276&h=770&store=1&accept=image%2F*&auth=LCA%207753c57aaa6418ec9384eec80145adfc6731f248-ts%3D1602207875)
+![Effective dates of a round](../.gitbook/assets/signals_effective_dates.png)
 
 The universe of the `round` is a defined by the market as of the `data_date` of the prior Friday. The 6 day returns are constructed using the `data_date` of the following Monday, Tuesday, Wednesday, Thursday, Friday and the subsequent Monday. As mentioned above, the first two days are ignored. Weekends are skipped \(grey\) as the markets are closed. 
 
-![Example data dates for a single round](https://documents.app.lucidchart.com/documents/9e91ae48-1fb7-4603-bf30-8428d1a4fe1e/pages/0_0?a=2075&x=321&y=945&w=1276&h=770&store=1&accept=image%2F*&auth=LCA%2016eb13929c60220c4fb03784d58c0b244f884a0b-ts%3D1602207875)
+![Data dates of a round](../.gitbook/assets/signals_data_dates.png)
 
 ## Reputation and Leaderboard
 
 The `reputation` of your signal is a weighted average of your signal's `corr` over the past 20 rounds. Similarly, the `mmc_reputation` of your signal is a weighted average of your signals' `mmc` over the past 20 rounds.
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2855%29.png)
 
 ## Support
 
