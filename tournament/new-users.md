@@ -2,6 +2,7 @@
 
 Want to start participating in the hardest data science competition in the world? We're in the process of creating new user videos and more tutorials for a range of data science experience levels. Until then, get started with the resources below. 
 
+* Check out this [playlist of Getting Started videos](https://www.youtube.com/playlist?list=PLz3D6SeXhT3v39noGoGEDFMfhZsa1P9Qz)
 * Subscribe to [Numerai on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA) to be notified of video tutorials
 * Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support
 * Check out the [Numerai Forum](https://forum.numer.ai) for long-form posts on data analysis, tips and tutorials
