@@ -201,7 +201,7 @@ There are two types of dates in Numerai Signals
 * `data_date` - dates corresponding to the underlying stock market data. All `data_dates` refer to the market close of that date and do not include a time. For example, values in the `friday_date` column of submissions are of type `data_date`.
 * `effective_date`- dates corresponding to actions or events that take place on Numerai Signals and may include a time which is always specified in UTC. There is usually a delay between the `data_date` and the `effective_date` because of time zones and the time it takes for stock market data to be processed. Unless otherwise specified, all dates mentioned in the website and this doc are of type `effective_date`. 
 
-### Round
+### Rounds
 
 All actions and events and their corresponding dates and times are grouped into numbered `rounds` to make them easier to talk about.
 
@@ -211,11 +211,11 @@ A new round begins every Saturday at 18:00 UTC
 
 Every `Saturday at 18:00 UTC` a new `round` begins. The submission window \(blue\) is open until the submission deadline of `Monday at 14:30 UTC`. Stakes are locked in during a processed known as "stake selection" on the following Friday. Preliminary scores and pending payouts are reported over the span of 4 days \(green\) on Friday, Saturday, Tuesday and Wednesday. The score and payout reported on Wednesday is taken as the final score and payout for the round.
 
-![Effective dates of a round](../.gitbook/assets/signals_effective_dates.png)
+![Effective dates for a round](../.gitbook/assets/signals_effective_dates.png)
 
 The universe of the `round` is a defined by the market as of the `data_date` of the prior Friday. The 6 day returns are constructed using the `data_date` of the following Monday, Tuesday, Wednesday, Thursday, Friday and the subsequent Monday. As mentioned above, the first two days are ignored. Weekends are skipped \(grey\) as the markets are closed. 
 
-![Data dates of a round](../.gitbook/assets/signals_data_dates.png)
+![Data dates for a round](../.gitbook/assets/signals_data_dates%20%281%29.png)
 
 ## Reputation and Leaderboard
 
