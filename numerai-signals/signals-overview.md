@@ -188,7 +188,7 @@ It is important to note that the opportunity to stake your signal **is not** an 
 
 To create a stake, click the "manage stake" button on the website and create a "change request" to "increase" your stake. Here you can select whether you want to stake on `corr` or `corr_plus_mmc`. If at any time you wish to reduce your stake, you can also create a "change request" to "decrease" your stake.  
 
-![The stake modal on the website](../.gitbook/assets/image%20%2850%29.png)
+![The staking modal on the website](../.gitbook/assets/image%20%2856%29.png)
 
 Please note that change requests do not apply immediately. Always double check the "effective date" shown on the website before applying changes.
 
