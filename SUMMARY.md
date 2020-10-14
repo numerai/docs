@@ -50,6 +50,7 @@
   * [OHwA S03E01](office-hours-with-arbitrage/office-hours-recaps-season-3/ohwa-s03e01.md)
   * [OHwA S03E02](office-hours-with-arbitrage/office-hours-recaps-season-3/ohwa-s03e02.md)
   * [OHwA S03E03](office-hours-with-arbitrage/office-hours-recaps-season-3/ohwa-s03e03.md)
+  * [OHwA S03E04](office-hours-with-arbitrage/office-hours-recaps-season-3/ohwa-s03e04.md)
 * [Cited resources](office-hours-with-arbitrage/cited-resources.md)
 * [FAQ in Office Hours](office-hours-with-arbitrage/faq-in-office-hours.md)
 
