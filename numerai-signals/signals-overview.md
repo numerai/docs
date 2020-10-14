@@ -54,6 +54,8 @@ The universe is updated every week, but in general only a couple low volume stoc
 
 You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv).
 
+You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv).
+
 ### Submissions
 
 When you submit a signal to Numerai Signals, you must include at least two columns:
