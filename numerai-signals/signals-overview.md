@@ -132,7 +132,11 @@ In other words, “good” signals with strong predictive value when considered 
 
 ### **Six Day Neutralized Return Targets**
 
-Signals are evaluated against a custom target created by Numerai. This target is based on 6 day neutralized subsequent returns \(ignoring the first 2 days\) starting from Friday close.
+Signals are evaluated against a custom target created by Numerai. This target is based on 6 day neutralized subsequent returns \(ignoring the first 2 days\) starting from Friday close to the next Monday close.
+
+{% hint style="success" %}
+Target = 6 day returns - first 2 day returns  
+{% endhint %}
 
 The reason why signals are evaluated on a 6 day horizon \(minus the first 2 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".      
 
