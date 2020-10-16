@@ -92,6 +92,10 @@ All of the historical targets used to calculate diagnostics is available [here](
 
 ### API and Automation
 
+{% hint style="info" %}
+You must submit your latest signal to Numerai every week
+{% endhint %}
+
 You can automate your submission workflow by connecting directly to our [GraphQL API](https://api-tournament.numer.ai/) or by using the official python client. 
 
 {% embed url="https://github.com/uuazed/numerapi\#usage-example---numerai-signals" %}
@@ -209,19 +213,19 @@ There are two types of dates in Numerai Signals
 
 ### Rounds
 
-All actions and events and their corresponding dates and times are grouped into numbered `rounds` to make them easier to talk about.
+Submissions, stakes, scores and payouts are grouped into numbered `rounds` to make them easier to talk about.
 
-{% hint style="info" %}
-A new round begins every Saturday at 18:00 UTC
-{% endhint %}
+A new `round` beings every `Saturday at 18:00 UTC`. The deadline for submissions and staking is at `Monday at 14:30 UTC`. Late submissions will not be scored and will not count for payouts. Stake changes made after the deadline will apply to the next round. 
 
-Every `Saturday at 18:00 UTC` a new `round` begins. The submission window \(blue\) is open until the submission deadline of `Monday at 14:30 UTC`. Stakes are locked in during a processed known as "stake selection" on the following Friday. Preliminary scores and pending payouts are reported over the span of 4 days \(green\) on Friday, Saturday, Tuesday and Wednesday. The score and payout reported on Wednesday is taken as the final score and payout for the round.
+On-time submissions will be scored and pending payouts will be calculated on Friday, Saturday, Tuesday and Wednesday. Stake values are locked by Friday during "stake selection", which means payouts from the previous round compound into your stake value for the next round. The score and payout on Wednesday is taken as the final score and payout for the round.
 
 ![Effective dates for a round](../.gitbook/assets/signals_effective_dates.png)
 
-The universe of the `round` is a defined by the market as of the `data_date` of the prior Friday. The 6 day returns are constructed using the `data_date` of the following Monday, Tuesday, Wednesday, Thursday, Friday and the subsequent Monday. As mentioned above, the first two days are ignored. Weekends are skipped \(grey\) as the markets are closed. 
+The universe of the `round` is defined by the `data_date` of the prior Friday. The 4 days of scoring and payouts are based on `3day-2day`, `4day-2day`, `5day-2day` and `6day-2day` returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `6day-2day` returns are up to Monday market close, but only become available on Wednesday.
 
-![Data dates for a round](../.gitbook/assets/signals_data_dates%20%281%29.png)
+
+
+![Data dates for a round](../.gitbook/assets/signals_data_dates%20%282%29.png)
 
 ## Reputation and Leaderboard
 
