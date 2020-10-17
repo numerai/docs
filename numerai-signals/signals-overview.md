@@ -120,7 +120,7 @@ If you submit a simple linear combination of a few well-known signals, there wil
 
 The targets used to evaluate signals are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
 
-The data that is used to perform neutralization is not provided, which means the process is a "black box". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future although it’s important to note that signals with strong scores over the historical period may not score well in any current or future round.
+The data that is used to perform neutralization is not provided, which means the process is a "blackbox". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future although it’s important to note that signals with strong scores over the historical period may not score well in any current or future round.
 
 The code that is used to implement neutralization is open source. You can learn more about the neutralization process in this example notebook:
 
@@ -136,15 +136,11 @@ In other words, “good” signals with strong predictive value when considered 
 
 ### **Six Day Neutralized Return Targets**
 
-Signals are evaluated against a custom target created by Numerai. This target is based on 6 day neutralized subsequent returns \(ignoring the first 2 days\) starting from Friday close to the next Monday close.
-
-{% hint style="success" %}
-Target = 6 day returns - first 2 day returns  
-{% endhint %}
+Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 6 day neutralized subsequent returns \(ignoring the first 2 days\). 
 
 The reason why signals are evaluated on a 6 day horizon \(minus the first 2 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".      
 
-For more information on the exact market days that make up the 6 days of subsequent returns, see the following section on dates and deadlines. 
+For more information on the exact market days that make up the 6 days of subsequent neutralized returns, see the following section on dates and deadlines. 
 
 ### Scoring
 
@@ -221,7 +217,7 @@ On-time submissions will be scored and pending payouts will be calculated on Fri
 
 ![Effective dates for a round](../.gitbook/assets/signals_effective_dates.png)
 
-The universe of the `round` is defined by the `data_date` of the prior Friday. The 4 days of scoring and payouts are based on `3day-2day`, `4day-2day`, `5day-2day` and `6day-2day` returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `6day-2day` returns are up to Monday market close, but only become available on Wednesday.
+The universe of the `round` is defined by the `data_date` of the prior Friday. The 4 days of scoring and payouts are based on `3day-2day`, `4day-2day`, `5day-2day` and `6day-2day` neutralized returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `6day-2day` neutralized returns are up to Monday market close, but only become available on Wednesday.
 
 
 
