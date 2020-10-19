@@ -219,9 +219,7 @@ On-time submissions will be scored and pending payouts will be calculated on Fri
 
 The universe of the `round` is defined by the `data_date` of the prior Friday. The 4 days of scoring and payouts are based on `3day-2day`, `4day-2day`, `5day-2day` and `6day-2day` neutralized returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `6day-2day` neutralized returns are up to Monday market close, but only become available on Wednesday.
 
-
-
-![Data dates for a round](../.gitbook/assets/signals_data_dates%20%282%29.png)
+![Data dates for a round](../.gitbook/assets/signals_data_dates%20%283%29.png)
 
 ## Reputation and Leaderboard
 
