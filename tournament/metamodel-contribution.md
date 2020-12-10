@@ -22,7 +22,7 @@ To calculate a user's \(U\) `mmc` for a given round we
 * calculate the stake weighted predictions of these users
 * transform both the stake weighted predictions, and U's model to be uniformly distributed
 * neutralize U's model with respect to the uniform stake weighted predictions
-* calculate the covariance between U's model and the kazutsugi targets
+* calculate the covariance between U's model and the targets
 * divide this value by 0.0841 \(this step is to bring the expected score up to the same magnitude as correlation\)
 * the resultant value is an MMC score 
 * repeat this whole process 20 times and keep the average MMC score

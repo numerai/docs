@@ -6,7 +6,7 @@ For security reasons, Numerai will never recover an account that is secured with
 
 Some users choose not to enable MFA at all. This is not recommended as it decreases the security of your account.
 
-In order order to secure your account with MFA but not risk losing your account when you lose your device, you just need to save your recovery codes in a safe place. You can either save it in a password manager or on a piece of paper.
+In order to secure your account with MFA but not risk losing your account when you lose your device, you just need to save your recovery codes in a safe place. You can either save it in a password manager or on a piece of paper.
 
 **What is being predicted?**  
 Richard Craib has stated that the training data represents global stock market data.
