@@ -182,7 +182,7 @@ corr_payout = stake * clip(2 * corr, -0.25, 0.25)
 corr_plus_mmc_payout = stake * clip(2 * corr + mmc, -0.25, 0.25)
 ```
 
-For example, if you stake `100 NMR` on `corr` and your score was `+0.05`, then you will earn `2 * 5% of 100NMR = 10NMR`. If you staked on `corr_plus_mmc` and your `mmc` was `+0.03` then you will earn `(2 * 5% + 3%) of 100NMR = 13NMR`.
+`corr` is always multiplied by 2, while you can select your `mmc` exposure. For example, if you stake `100 NMR` on `corr` and your score was `+0.05`, then you will earn `2 * 5% of 100NMR = 10NMR`. If you staked on `corr_plus_mmc` and your `mmc` was `+0.03` then you will earn `(2 * 5% + 3%) of 100NMR = 13NMR`.  If you staked on `corr + 2x mmc` then instead you would earn `(2 * 5% + 2 * 3%) of 100NMR = 16NMR.`
 
 The maximum you can earn or burn is `25%` of your stake each round. Payouts are automatically rolled into your stake. 
 
