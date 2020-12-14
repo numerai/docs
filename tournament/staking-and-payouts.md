@@ -16,7 +16,7 @@ You can start participating in Numerai without staking to learn more about the t
 
 You can manage your stake on the Numerai website by clicking 'Manage Stake'. Use this modal to increase or decrease your stake amount, or opt into or out of `mmc`.
 
-![staking modal](../.gitbook/assets/corr_mmc_stake_modal.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
 Increasing your stake will take NMR from your wallet and put it into the stake. Decreasing will take NMR from the stake and back into your wallet.
 
@@ -32,7 +32,13 @@ The payout for each round is based on your `stake_value` as of the first Thursda
 
 For example, if your `stake_value` on round N is `100`, and your `correlation = 0.05` then your payout will be `+ 5NMR`, which will be applied to your stake value in round N+4.
 
-If you have opted into `mmc`, then you are paid for both `correlation` and `mmc`. For example if your `correlation = 0.05` and your `mmc = 0.01`, your payout will be `0.06 * stake_value NMR`
+If you have opted into `mmc`, then you are paid for both `correlation` and `mmc`.  `correlation` is always a 1x multiple, but `mmc` could be 0.0x, 0.5x, 1.0x, or 2.0x.
+
+ For example if you have `mmc+corr` selected, and your round scores are `correlation = 0.05` and `mmc = 0.01`, your payout will be `0.06 * stake_value NMR.`
+
+ If instead you have `corr + 2x mmc` selected, for the same round, your payout would be `0.07 * stake_value NMR.`
+
+Note that 2x MMC could be risky!  Be certain of your model's live MMC performance before selecting this option! 
 
 Payouts are capped at plus or minus `25%` per round.
 
