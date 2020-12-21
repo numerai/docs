@@ -13,11 +13,13 @@ Numerai notebook at [https://numer.ai/submit](https://numer.ai/submit)
 
 {% embed url="https://numer.ai/submit" %}
 
+Walkthrough of basic tables, graphs and visualizations a new participant may want to investigate, by [OmniAnalytics](https://twitter.com/OmniAnalytics).
+
+{% embed url="https://forum.numer.ai/t/performing-exploratory-data-analysis-on-numerai-tournament-data-with-r/1199" %}
+
 Video walkthrough series by [Arbitrage](https://numer.ai/arbitrage)
 
 {% embed url="https://www.youtube.com/playlist?list=PLz3D6SeXhT3v39noGoGEDFMfhZsa1P9Qz" %}
-
-
 
 Easy guide with Google Colab by community member [SurajP](https://numer.ai/surajp)
 
