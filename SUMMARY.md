@@ -11,7 +11,8 @@
 * [Staking and Payouts](tournament/staking-and-payouts.md)
 * [Reputation](tournament/reputation.md)
 * [New Users](tournament/new-users.md)
-* [FAQ](tournament/faq.md)
+* [Tournament FAQ](tournament/faq.md)
+* [Numerai General FAQ](tournament/numerai-general-faq.md)
 * [Bounties](tournament/bounties.md)
 * [Forum](https://forum.numer.ai/)
 

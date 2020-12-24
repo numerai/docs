@@ -1,4 +1,4 @@
-# FAQ
+# Tournament FAQ
 
 **I lost my MFA device, can you help recover my account?**
 
