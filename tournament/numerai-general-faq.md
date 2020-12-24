@@ -18,11 +18,9 @@ Watch the video and read the press:
 {% embed url="https://vimeo.com/205032211" caption="Numeraire Announcement" %}
 
 **When was Numerai Signals launched?**  
-The idea of Numerai Signals was first introduced in the [Numerai Masterplan](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) in October of 2017: Monopolize Data. Signals went live in October of 2020 after a few weeks in beta.
+The idea of Numerai Signals was first introduced in the [Numerai Masterplan](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) in October of 2017: Monopolize Data. Signals went live in October of 2020 after a few weeks in beta. Here's the launch [Medium post](https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c).
 
 {% embed url="https://youtu.be/GWeC2PK4yXQ" caption="Signals Launch" %}
-
-
 
 
 
