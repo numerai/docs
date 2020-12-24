@@ -11,11 +11,19 @@ Numerai was incorporated in October of 2015.
 
 **When was Numeraire launched?**  
 Numeraire was announced in February of 2017 and launched in June of 2017.  
-Watch the video and read the press:  
-[https://vimeo.com/205032211](https://vimeo.com/205032211)
+Watch the video and read the press:
+
+{% embed url="https://vimeo.com/205032211" caption="Numeraire Announcement" %}
+
+  
+
 
 **When was Numerai Signals launched?**  
 The idea of Numerai Signals was first introduced in the [Numerai Masterplan](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) in October of 2017: Monopolize Data. Signals went live in October of 2020 after a few weeks in beta.
+
+{% embed url="https://youtu.be/GWeC2PK4yXQ" caption="Signals Launch" %}
+
+
 
 
 
