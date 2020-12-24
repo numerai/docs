@@ -13,7 +13,10 @@ Numerai was incorporated in October of 2015.
 
 **When was Numeraire launched?**  
 Numeraire was announced in February of 2017 and launched in June of 2017.  
-Watch the video and read the press:
+[Announcement Medium](https://medium.com/numerai/a-new-cryptocurrency-for-coordinating-artificial-intelligence-on-numerai-9251a131419a)  
+[Wired Announcement](https://www.wired.com/2017/02/ai-hedge-fund-created-new-currency-make-wall-street-work-like-open-source/) by Cade Metz  
+[Forbes Announcement](https://www.forbes.com/sites/laurashin/2017/02/21/this-is-the-worlds-first-cryptocurrency-issued-by-a-hedge-fund/?sh=72adaafe60b6) by Laura Shin  
+[Launch Medium](https://medium.com/numerai/an-ai-hedge-fund-goes-live-on-ethereum-a80470c6b681)
 
 {% embed url="https://vimeo.com/205032211" caption="Numeraire Announcement" %}
 
