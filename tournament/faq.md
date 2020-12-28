@@ -31,6 +31,9 @@ Yes! You can earn NMR by reporting vulnerabilities, creating or contributing to 
 **I’m receiving an upload error on the website. How do I fix my CSV file so that it will be accepted?**  
 If your prediction file contains parentheses, percentage signs, or spaces then the submission will fail. Remove all special characters and try again. Save yourself some trouble and visit [numer.ai/submit](http://numer.ai/submit) which gives you example code so you can utilize the API and avoid manual submission entirely! For further technical support, reach out at [https://community.numer.ai](https://community.numer.ai).
 
+**What should I do when I upload a submission but it hangs on "uploading"?**  
+Try connecting your computer to a data hotspot on your phone. Some small internet service providers block uploads to S3, which is where we store submissions.
+
 **I’m receiving an “invalid ID’s” error when I try to upload my submissions. How do I fix my predictions so that my file will be accepted?**  
 You are likely trying to upload predictions from the previous round. Make sure that you are using the latest tournament data by downloading the dataset again. Re-run your model with the latest tournament data and you should not receive this error message again.
 
