@@ -14,7 +14,7 @@ description: Official Numerai Channels
 * [Blockfolio](https://blockfolio.com/coin/NMR)
 * [Telegram](https://t.me/NMR_Official)
 
-For support, email us at support@numer.ai
+For support, email us at [support@numer.ai](mailto:support@numer.ai)
 
-For general enquiries, email us at contact@numer.ai
+For general enquiries, email us at [contact@numer.ai](mailto:contact@numer.ai)
 
