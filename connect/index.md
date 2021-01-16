@@ -10,6 +10,7 @@ description: Official Numerai Channels
 * [Forum](https://forum.numer.ai)
 * [YouTube](https://youtube.com/numerai)
 * [r/numerai](https://www.reddit.com/r/numerai/)
+* [LinkedIn](https://www.linkedin.com/company/numerai/)
 * [Meetup](https://www.meetup.com/Numerai/)
 * [Blockfolio](https://blockfolio.com/coin/NMR)
 * [Telegram](https://t.me/NMR_Official)
