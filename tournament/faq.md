@@ -1,18 +1,16 @@
 # Tournament FAQ
 
-**I lost my MFA device, can you help recover my account?**
+**I lost my MFA device, can you help recover my account?**  
+For security reasons, Numerai will never recover an account that is secured with MFA. This is to prevent others from impersonating and taking over your account. We recognize that this is not the best user experience, but because large amounts of NMR accounts can hold, we must prioritize security above all else. 
 
-For security reasons, Numerai will never recover an account that is secured with MFA. This is to prevent others from impersonating and taking over your account. We recognize that this is not the best user experience, but because large amounts of money accounts can hold, we must prioritize security above all else.
+When setting up MFA on your account, **note down your recovery codes** and save them in a secure location. These recovery codes will allow you to regain access to your account should you lose access to your MFA device. At the time of signing on to the Numerai, simply enter a recovery code when prompted to enter MFA.
 
 Some users choose not to enable MFA at all. This is not recommended as it decreases the security of your account.
-
-In order to secure your account with MFA but not risk losing your account when you lose your device, you just need to save your recovery codes in a safe place. You can either save it in a password manager or on a piece of paper.
 
 **What is being predicted?**  
 Richard Craib has stated that the training data represents global stock market data.
 
-**Why so vague about what is being predicted?**
-
+**Why so vague about what is being predicted?**  
 Numerai purposely releases very little information about the data in order to maintain the integrity of the tournament. Additionally, the only way to provide hedge-fund quality data for free is to ensure that the data is encrypted and obfuscated. Providing participants with more information only introduces bias and potentially decreases the quality of the predictions submitted.
 
 **Does Numerai trade cryptocurrency?**  
@@ -20,7 +18,7 @@ Numerai does not trade cryptocurrency. Further, users are not predicting cryptoc
 
 **If I obtain NMR, am I effectively buying into the Hedge Fund?**  
 No. Numeraire is an ERC20 utility token. [https://www.cryptoratingcouncil.com/asset-ratings](https://www.cryptoratingcouncil.com/asset-ratings)  
-Only institutional and accredited investors can allocate funds to the Hedge Fund for management. Tournament operations and Numeraire are a separate entity from the Hedge Fund.
+Only suitable institutional and accredited investors can allocate funds to the Hedge Fund for management. Tournament operations and Numeraire are a separate entity from the Hedge Fund.
 
 **Why do I have to stake NMR in order to be compensated?**  
 Staking NMR on predictions removes some of the information asymmetry between tournament participants and Numerai. By staking on predictions, users are providing a “costly signal” about the quality of their model \([Spence](https://www.jstor.org/stable/1882010), 1973\). Staking involves risk, which is compensated with NMR for good performance.
