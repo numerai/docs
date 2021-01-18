@@ -6,7 +6,7 @@ description: 'If you are NOT a US person, you can ignore this.'
 
 ## Background
 
-Every year, the US government requires Numerai to issue a [1099-misc](https://www.irs.gov/forms-pubs/about-form-1099-misc) to every [US person](https://www.irs.gov/individuals/international-taxpayers/classification-of-taxpayers-for-us-tax-purposes) to whom we have paid least $600. In order to do so, we will need to send you a [W9](https://www.irs.gov/pub/irs-pdf/fw9.pdf) form in order to collect information like your [Taxpayer Identification Number](https://www.irs.gov/individuals/international-taxpayers/taxpayer-identification-numbers-tin) and your mailing address. 
+Every year, the US government requires Numerai to issue a [1099-misc](https://www.irs.gov/forms-pubs/about-form-1099-misc) to every [US person](https://www.irs.gov/individuals/international-taxpayers/classification-of-taxpayers-for-us-tax-purposes) to whom we have paid least $600 in that year. In order to do so, we will need to send you a [W9](https://www.irs.gov/pub/irs-pdf/fw9.pdf) form in order to collect information like your [Taxpayer Identification Number](https://www.irs.gov/individuals/international-taxpayers/taxpayer-identification-numbers-tin) and your mailing address. 
 
 ## How do I know if I am a US person?
 
