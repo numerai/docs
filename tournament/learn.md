@@ -4,9 +4,18 @@ description: The official rules and getting started guide
 
 # Tournament Overview
 
-## Data
+Numerai is a data science tournament where you build machine learning models on obfuscated financial data to predict the stock market. Models can be staked with the NMR cryptocurrency to earn rewards. Together, staked models across the tournament control Numerai's hedge fund. 
 
-At the core of Numerai is a data science problem - the problem of predicting the stock market.
+The Numerai Tournament is a part the Numerai master plan to build the world's last hedge fund. Read the [Medium Post](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) and watch this [short film](https://www.youtube.com/watch?v=dhJnt0N497c) to learn more about how it all fits together. 
+
+## Summary
+
+1. Sign up to [Numerai](https://numer.ai/).  
+2. Build a machine learning model on the obfuscated dataset and upload your predictions via the website or API.
+3. Stake NMR on your model to earn or lose NMR based on your performance relative to Numerai's custom targets.
+4.  Automate the weekly upload of your predictions and grow the value of your stake over time.
+
+## Data
 
 In the provided `training_data`, each `id` corresponds to a stock with a set of obfuscated `features`. The`target` represents future performance. Rows are grouped into `eras` that represent different points in time.
 
@@ -103,7 +112,7 @@ Each submission will receive daily updated scores starting from the first Thursd
 
 If you staked on your submission, you will also receive daily updates on your payouts. But only your final score and final payout will count.
 
-![submission and scoring calendar](https://documents.lucidchart.com/documents/d20914fb-a3d0-4bf5-a775-718fe5b41f17/pages/0_0?a=59169&x=-3266&y=-4681&w=1276&h=902&store=1&accept=image%2F*&auth=LCA%20016838a180a592a2c9146b00e03b2c9e7576491c-ts%3D1588381543)
+![Submission and scoring calendar](../.gitbook/assets/image%20%2860%29.png)
 
 ## Reputation and Leaderboard
 
