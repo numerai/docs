@@ -31,6 +31,10 @@ Tutorial with Kaggle Kernel by community member [perfect\_fit](https://numer.ai/
 
 {% embed url="https://www.kaggle.com/carlolepelaars/how-to-get-started-with-numerai" %}
 
+Kaggle notebook for fitting MLP to Numerai tournament data by [Katsu1110](https://twitter.com/kk1110tt)
+
+{% embed url="https://www.kaggle.com/code1110/numerai-mlp-with-kerastuner-starter/notebook" %}
+
 #### Example Scripts and Tools
 
 {% embed url="https://github.com/numerai/example-scripts" caption="Example Scripts" %}
