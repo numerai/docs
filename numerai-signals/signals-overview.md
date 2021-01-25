@@ -1,3 +1,7 @@
+---
+description: The official rules and getting started guide to the Numerai Signals Tournament
+---
+
 # Numerai Signals Overview
 
 [Numerai Signals](https://signals.numer.ai) lets you upload stock market signals and find out how original they are compared to all other signals on Numerai. Signals can be staked with the NMR cryptocurrency to earn rewards. The best most orignal signals are used in Numerai's hedge fund.

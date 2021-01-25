@@ -1,5 +1,5 @@
 ---
-description: The official rules and getting started guide
+description: The official rules and getting started guide to the classic Numerai Tournament
 ---
 
 # Tournament Overview
