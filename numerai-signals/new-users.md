@@ -3,7 +3,7 @@
 We're in the process of creating new user videos and more tutorials for a range of experience levels. Until then, get started with the Numerai Signals new user resources below. 
 
 * Subscribe to [Numerai on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA) to be notified of video tutorials
-* Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support
+* Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support as well as the dedicated [\#Signals channel](https://community.numer.ai/channel/signals)
 * Check out the [Numerai Forum](https://forum.numer.ai) for long-form posts on data analysis, tips and tutorials
 
 #### Walkthroughs, Tutorials, Notebooks
