@@ -11,8 +11,7 @@
 * [Staking and Payouts](tournament/staking-and-payouts.md)
 * [Reputation](tournament/reputation.md)
 * [New Users](tournament/new-users.md)
-* [Tournament FAQ](tournament/faq.md)
-* [Numerai General FAQ](tournament/numerai-general-faq.md)
+* [Numerai tournament FAQ](tournament/faq.md)
 * [Bounties](tournament/bounties.md)
 * [Forum](https://forum.numer.ai/)
 
@@ -20,6 +19,18 @@
 
 * [Numerai Signals Overview](numerai-signals/signals-overview.md)
 * [New Users](numerai-signals/new-users.md)
+* [Signals FAQ](numerai-signals/signals-faq.md)
+
+## Help
+
+* [Compute Tutorial](help/compute-tutorial.md)
+* [Numerai General FAQ](help/numerai-general-faq.md)
+* [Payouts App](help/payouts-app.md)
+* [Technical Support](help/support.md)
+* [Read, watch, listen](help/read-watch-listen.md)
+* [The Erasure Protocol](help/the-erasure-protocol.md)
+* [Uniswap Tutorial](help/uniswap-tutorial.md)
+* [US Taxes](help/us-taxes.md)
 
 ## Office Hours with Arbitrage
 
@@ -55,16 +66,6 @@
   * [OHwA S03E04](office-hours-with-arbitrage/office-hours-recaps-season-3/ohwa-s03e04.md)
 * [Cited resources](office-hours-with-arbitrage/cited-resources.md)
 * [FAQ in Office Hours](office-hours-with-arbitrage/faq-in-office-hours.md)
-
-## Help
-
-* [Compute Tutorial](help/compute-tutorial.md)
-* [Payouts App](help/payouts-app.md)
-* [Technical Support](help/support.md)
-* [Read, watch, listen](help/read-watch-listen.md)
-* [The Erasure Protocol](help/the-erasure-protocol.md)
-* [Uniswap Tutorial](help/uniswap-tutorial.md)
-* [US Taxes](help/us-taxes.md)
 
 ## Numeraire
 
