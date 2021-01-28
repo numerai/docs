@@ -18,7 +18,7 @@
 ## Numerai Signals
 
 * [Numerai Signals Overview](numerai-signals/signals-overview.md)
-* [New Users](numerai-signals/new-users.md)
+* [Signals New Users](numerai-signals/new-users.md)
 * [Signals FAQ](numerai-signals/signals-faq.md)
 
 ## Help

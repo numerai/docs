@@ -1,4 +1,4 @@
-# New Users
+# Signals New Users
 
 We're in the process of creating new user videos and more tutorials for a range of experience levels. Until then, get started with the Numerai Signals new user resources below. 
 
