@@ -15,7 +15,7 @@ The weights on each round change as the round progresses. New rounds start low a
 ```python
 # delta is the difference between the current and target round number
 def round_weight(delta, day):
-  if delta <= 4:
+  if delta < 4:
       return (5 * delta + day) / 20
   elif delta >= 16:
       return (5 * (20 - delta) - day) / 20
