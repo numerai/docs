@@ -16,9 +16,5 @@
 
 {% embed url="https://github.com/numerai/numerai-cli" %}
 
-{% embed url="https://github.com/numerai/numerox" %}
-
-{% embed url="https://github.com/thebrain85/numerauto" %}
-
 
 

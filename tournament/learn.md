@@ -1,39 +1,38 @@
 ---
-description: The official rules and getting started guide to the classic Numerai Tournament
+description: The official rules and getting started guide to the Numerai Tournament
 ---
 
-# Tournament Overview
+# Numerai Tournament Overview
 
-Numerai is a data science tournament where you build machine learning models on obfuscated financial data to predict the stock market. Models can be staked with the NMR cryptocurrency to earn rewards. Together, staked models across the tournament control Numerai's hedge fund. 
+The Numerai Tournament is where you build machine learning models on abstract financial data to predict the stock market. Your models can be staked with the NMR cryptocurrency to earn rewards based on performance. 
 
-The Numerai Tournament is a part of the Numerai master plan to build the world's last hedge fund. Read the [Medium Post](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) and watch this [short film](https://www.youtube.com/watch?v=dhJnt0N497c) to learn more about how it all fits together. 
+The staked models of Numerai are combined to form the Meta Model which controls the capital of the Numerai hedge fund across the global stock market. 
 
-## Summary
+Watch this short film to learn how it all fits together:
 
-1. Sign up to [Numerai](https://numer.ai/).  
-2. Build a machine learning model on the obfuscated dataset and upload your predictions via the website or API.
-3. Stake NMR on your model to earn or lose NMR based on your performance relative to Numerai's custom targets.
-4.  Automate the weekly upload of your predictions and grow the value of your stake over time.
+{% embed url="https://www.youtube.com/watch?v=dhJnt0N497c" %}
+
+## Summary 
+
+1. Sign up at [https://numer.ai/](https://numer.ai/)
+2. Download the dataset with training data and example scripts.
+3. Build your model and submit your predictions back to Numerai.
+4. Stake NMR on your models to earn/burn based on performance.
+5. Automate your weekly submissions and grow your stake over time.
 
 ## Data
 
-In the provided `training_data`, each `id` corresponds to a stock with a set of obfuscated `features`. The`target` represents future performance. Rows are grouped into `eras` that represent different points in time.
+At the core of the Numerai Tournament is the dataset. It is made of high quality financial data that has been cleaned, regularized, and obfuscated.  
 
-Your goal is to train a machine learning model to predict the `target` given new `features`.
+![](../.gitbook/assets/ex_data.png)
 
-{% hint style="info" %}
-Read the [analysis and tips notebook](https://github.com/numerai/example-scripts/blob/master/analysis_and_tips.ipynb) for an in-depth exploration of the dataset.
-{% endhint %}
-
-![numerai\_training\_data.csv](../.gitbook/assets/ex_data.png)
+Each `id` corresponds to a stock at a specific time `era`. The `features` describe known attributes of the stock at the time. The `target` represents an abstract measure of future performance. 
 
 ## Modeling
 
-Below is an example how to train a model on the `training_data` to make predictions on the `tournament_data`.
+Your objective is to build a model to predict the target given features that correspond to the stock market at the current time. 
 
-{% hint style="info" %}
-Check out the [example-scripts](https://github.com/numerai/example-scripts) repo for more advanced examples.
-{% endhint %}
+Here is a basic example using XGBoost in Python. We train the model using the historical training data, and make predictions on the live tournament data. 
 
 ```python
 import pandas as pd
@@ -58,19 +57,15 @@ predictions.to_csv("predictions.csv")
 
 ## Submissions
 
-Every Saturday at `18:00 UTC`, a new `round` begins and new `tournament_data` is released. Submit your predictions to Numerai to enter the tournament.
+Every Saturday a new `round` begins and new tournament data is released. To participate in the tournament, you must submit your latest predictions every week by the deadline on `Monday 14:30 UTC`.
 
-The submission deadline is `Monday 14:30 UTC`. Late submissions will not be eligible for payouts.
+You can download the new data and submit your predictions using the website, via our [GraphQL API](https://api-tournament.numer.ai/) directly or using the [Python](https://github.com/uuazed/numerapi) or [R](https://github.com/Omni-Analytics-Group/Rnumerai) api-client. You can also automate your entire submission workflow with [Numerai Compute](https://github.com/numerai/numerai-cli).  
 
-{% hint style="info" %}
-Use our [tools and libraries](https://docs.numer.ai/tournament/tools) to connect with our GraphQL [API](https://api-tournament.numer.ai/).
-{% endhint %}
-
-![predictions.csv](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 ## Scoring
 
-Your submission is scored on the `correlation` between your predictions and the true targets. The higher the correlation the better.
+You are primarily scored on the `corr` or correlation between your predictions and the true targets. The higher the correlation the better.
 
 {% tabs %}
 {% tab title="scoring\_function.py" %}
@@ -82,49 +77,37 @@ correlation = np.corrcoef(labels, ranked_predictions)[0, 1]
 {% endtab %}
 {% endtabs %}
 
-Your submission will also be scored on your metamodel contribution or `mmc`.
+You are also scored on your `mmc` or your contribution to the stake weighted Meta Model. See [Meta Model Contribution](https://docs.numer.ai/tournament/metamodel-contribution) for details. 
 
-See the [metamodel contribution](https://docs.numer.ai/tournament/metamodel-contribution) section for details.
+Your model's performance is displayed on its public model profile. Here is an example of a model's performance over 20 rounds.
 
-## Staking and Payouts
+![](../.gitbook/assets/image%20%2865%29.png)
 
-You can `stake` on your submission to start earning `payouts`. You can either stake on `correlation` or `corr plus mmc`.
+Upon each submission, we will show you diagnostic metrics to help you understand the performance characteristics of your model.
 
-You can start participating in Numerai without staking to learn more about the tournament and about your model\(s\)' performance. When you feel confident in your model\(s\), you can attach some stake to it. The minimum stake value is 0.01 NMR. 
+![](../.gitbook/assets/image%20%2862%29.png)
 
-{% hint style="info" %}
-Staking requires you to lock up [NMR](https://coinmarketcap.com/currencies/numeraire/) in an [Erasure](https://erasure.world/) smart contract agreement. This gives Numerai the ability to burn your stake if your model performs poorly.
-{% endhint %}
+## Staking & Payouts
 
-You `earn` or `burn` a percentage of your stake based on the score you are staking on. For example, if you stake `100 NMR` on `correlation` and your score was `+0.05`, then you will earn `5% of 100NMR = 5NMR`. The maximum you can earn or burn is `25%` of your stake each round.
+You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your live `corr` and `mmc` scores. For the duration of the stake, you will earn a percentage of your stake if you have positive scores, and burn if you have negative scores.
 
-```python
-corr_payout = stake * clip(corr, -0.25, 0.25)
+Here is an example of how you would use the website to manage the stake on our official example model named [INTEGRATION\_TEST](https://numer.ai/integration_test). 
 
-mmc_payout = stake * clip(corr + mmc, -0.25, 0.25)
-```
+![](../.gitbook/assets/image%20%2861%29.png)
 
-See the [staking and payouts](https://docs.numer.ai/tournament/staking-and-payouts) section for details.
+See [Staking and Payouts](https://docs.numer.ai/tournament/staking-and-payouts) for details.
 
-## Daily Updates
+## Leaderboard
 
-Each submission will receive daily updated scores starting from the first Thursday after the submission deadline to the Wednesday 4 weeks after. For example, if you made the blue submission on `Sun 7th`, you will receive your first score on `Thur 11th` and your final score on `Wed 7th` of the next month.
+Your rank on the leaderboard is based on your `reputation` or weighted average correlation over the past 20 rounds.
 
-If you staked on your submission, you will also receive daily updates on your payouts. But only your final score and final payout will count.
+Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![Submission and scoring calendar](../.gitbook/assets/image%20%2860%29.png)
-
-## Reputation and Leaderboard
-
-Your `rank` on the leaderboard is based on your `reputation`, which is a weighted average of your `correlation` scores over the past 20 rounds.
-
-See the [reputation](https://docs.numer.ai/tournament/reputation) section for details.
-
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2864%29.png)
 
 ## Support
 
-Need help?
+We are here to help.
 
 Find us on [RocketChat](https://community.numer.ai) for questions, support, and feedback!
 

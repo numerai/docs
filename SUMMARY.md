@@ -4,7 +4,7 @@
 
 ## Tournament
 
-* [Tournament Overview](tournament/learn.md)
+* [Numerai Tournament Overview](tournament/learn.md)
 * [Numerai Compute](tournament/compute.md)
 * [Tools and Libraries](tournament/tools.md)
 * [Meta Model Contribution](tournament/metamodel-contribution.md)
