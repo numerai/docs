@@ -58,7 +58,7 @@ Since there is a new round every week and each round lasts 4 weeks, stake values
 
 For example, the stake value of week 6 is based on the previous stake value of week 5 \(110 NMR\) + the payout from week 2 \(-5 NMR\) = 105 NMR.
 
-![stake compounding](https://documents.app.lucidchart.com/documents/2cb7265f-6e5b-454a-a84d-6f32b6058f34/pages/0_0?a=466&x=249&y=136&w=1112&h=486&store=1&accept=image%2F*&auth=LCA%20a086c3be9ef17d9fa2cd22ee9808e742d1a2d888-ts%3D1590449860)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 ## Abuse
 

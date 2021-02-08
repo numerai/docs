@@ -61,7 +61,7 @@ Every Saturday a new `round` begins and new tournament data is released. To part
 
 You can download the new data and submit your predictions using the website, via our [GraphQL API](https://api-tournament.numer.ai/) directly or using the [Python](https://github.com/uuazed/numerapi) or [R](https://github.com/Omni-Analytics-Group/Rnumerai) api-client. You can also automate your entire submission workflow with [Numerai Compute](https://github.com/numerai/numerai-cli).  
 
-![](../.gitbook/assets/image%20%2867%29.png)
+![](../.gitbook/assets/image%20%2868%29.png)
 
 ## Scoring
 
@@ -81,11 +81,11 @@ You are also scored on your `mmc` or your contribution to the stake weighted Met
 
 Your model's performance is displayed on its public model profile. Here is an example of a model's performance over 20 rounds.
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 Upon each submission, we will show you diagnostic metrics to help you understand the performance characteristics of your model.
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
 ## Staking & Payouts
 
@@ -103,7 +103,7 @@ Your rank on the leaderboard is based on your `reputation` or weighted average c
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2865%29.png)
 
 ## Support
 
