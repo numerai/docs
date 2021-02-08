@@ -91,7 +91,7 @@ Upon each submission, we will show you diagnostic metrics to help you understand
 
 You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your live `corr` and `mmc` scores. For the duration of the stake, you will earn a percentage of your stake if you have positive scores, and burn if you have negative scores.
 
-Here is an example of how you would use the website to manage the stake on our official example model named [INTEGRATION\_TEST](https://numer.ai/integration_test). 
+Here is an example of how you would manage a stake on the website. [INTEGRATION\_TEST](https://numer.ai/integration_test) is our official example model. 
 
 ![](../.gitbook/assets/image%20%2861%29.png)
 
