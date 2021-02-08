@@ -6,7 +6,7 @@ description: The official rules and getting started guide to the classic Numerai
 
 Numerai is a data science tournament where you build machine learning models on obfuscated financial data to predict the stock market. Models can be staked with the NMR cryptocurrency to earn rewards. Together, staked models across the tournament control Numerai's hedge fund. 
 
-The Numerai Tournament is a part the Numerai master plan to build the world's last hedge fund. Read the [Medium Post](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) and watch this [short film](https://www.youtube.com/watch?v=dhJnt0N497c) to learn more about how it all fits together. 
+The Numerai Tournament is a part of the Numerai master plan to build the world's last hedge fund. Read the [Medium Post](https://medium.com/numerai/numerais-master-plan-1a00f133dba9) and watch this [short film](https://www.youtube.com/watch?v=dhJnt0N497c) to learn more about how it all fits together. 
 
 ## Summary
 
