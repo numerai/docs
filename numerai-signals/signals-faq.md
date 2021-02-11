@@ -26,23 +26,5 @@ _\[under construction\]_
 3. Do I have to stake NMR in order to participate? You can submit your prediction file and receive performance without staking. Stake NMR on the live portion of your signal to earn or lose NMR based on your performance relative to Numerai's custom targets. 
 4.  Why should I submit a good trading system to you if I could just trade on my own? Learn more in this Medium post. 
 5. Can you tell me if \[insert diagnostic output here\] is good enough? Since you do not need to stake Numeraire in order to participate, we recommend that you submit your predictions and find out over time. This is often called ‘paper trading’ and constant timely submissions will give you more feedback than any out-of-sample estimation could.  
-
-8 - Do I need to know how to code in order to participate?  
-
-
-While example models and exploratory notebooks are available to aid in idea development, new coders are encouraged to try Numerai Classic rather than Signals. Signals does require a high-level of coding / scripting knowledge to be successful.  
-
-
-9 - Do I need to know quantitative finance in order to participate?  
-
-
-The best Signals users have a high-level working knowledge of quantitative finance, but given the nature of the problem, highly successful users will likely participate from other fields as well. Fields such as Physics, Machine Learning Engineering, Medicine, and many more.  
-
-
-10 - Stock price data is the most heavily researched quantitative finance dataset in the world. How am I supposed to succeed in Signals if all I have is pricing data?  
-
-
-Signals was designed to allow people from all over the world with varying domain knowledge and sources of data to help predict stock prices using any dataset available. How you assemble various datasets is part of the challenge. However, consider that thousands of PhD’s in Economics and Finance continuously try to model the stock market, and fail. This is the hardest prediction challenge in the world for a reason!  
-  
-
+6. Do I need to know how to code in order to participate? While example models and exploratory notebooks are available to aid in idea development, new coders are encouraged to try Numerai Classic rather than Signals. Signals does require a high-level of coding / scripting knowledge to be successful.  
 
