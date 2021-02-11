@@ -28,7 +28,7 @@
 
 Numerati Dashboard by [Jo-fai Chow](https://twitter.com/matlabulous)
 
-{% embed url="https://www.jofaichow.co.uk/numerati/" caption="" %}
+{% embed url="https://www.jofaichow.co.uk/numerati/" caption="\"Numerati - yet another dashboard for the Numerai tournament\"" %}
 
 
 
