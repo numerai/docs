@@ -67,7 +67,12 @@ When you submit a signal to Numerai Signals, you must include at least two colum
 * A `cusip`, `sedol`, or `bloomberg_ticker` column - values must be valid tickers associated with the ticker type in the header.     
 * A `signal` column - values must be between 0 and 1 \(exclusive\).
 
-Submissions with only two columns are assumed to correspond to the current `live` time period, which means the ticker values must be unique.
+Additionally, for a submission to be valid:
+
+* There must be at least 10 rows with predictions for tickers in the Signals stock market universe for the current `live` time period.
+* A ticker cannot appear in the current `live` time period more than once.
+
+Submissions with only two columns are assumed to correspond to the current `live` time period.
 
 You may also to upload your signal over a historical `validation` time period to receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans `374` weeks from `20130104` to `20200228`. 
 
