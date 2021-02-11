@@ -2,8 +2,6 @@
 
 _\[under construction\]_
 
-
-
 #### FAQ from classic Numerai users starting Signals
 
 1. What is a Symbol? A stock symbol is an arrangement of characters—usually letters—representing publicly-traded securities on an exchange.
