@@ -8,7 +8,7 @@ While your payouts depend on your performance in a single round, your reputation
 
 ## Calculation
 
-Your reputation on round `n` is a weighted average of your `correlation` over the past 20 rounds including rounds that are currently resolving.
+Your reputation for `corr`, `mmc`, and `fnc` on round `n` is a weighted average of that metric over the past 20 rounds including rounds that are currently resolving.
 
 The weights on each round change as the round progresses. New rounds start low and gain weight as it nears resolution. Resolved rounds have full weight, but lose weight as it ages until it is dropped entirely.
 

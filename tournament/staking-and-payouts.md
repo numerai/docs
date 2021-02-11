@@ -26,6 +26,10 @@ Changes to your stake do not apply immediately, instead they apply on the `effec
 * Increases apply next `Thursday`
 * Decreases impact your `stake amount`next Thursday,  but the funds are only released after next `Thursday + 4 weeks`
 
+/par
+
+Please note that [feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) \(`fnc`\) cannot be staked on.
+
 ## Payouts
 
 The payout for each round is based on your `stake_value` as of the first Thursday after the submission deadline. Payouts are rolled back into your stake value at the beginning of the next round on Thursday.

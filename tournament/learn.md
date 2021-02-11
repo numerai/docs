@@ -77,7 +77,7 @@ correlation = np.corrcoef(labels, ranked_predictions)[0, 1]
 {% endtab %}
 {% endtabs %}
 
-You are also scored on your `mmc` or your contribution to the stake weighted Meta Model. See [Meta Model Contribution](https://docs.numer.ai/tournament/metamodel-contribution) for details. 
+You are also scored on your [meta model contribution](https://docs.numer.ai/tournament/metamodel-contribution) \(`mmc`\) and [feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) \(`fnc`\).
 
 Your model's performance is displayed on its public model profile. Here is an example of a model's performance over 20 rounds.
 
@@ -85,11 +85,13 @@ Your model's performance is displayed on its public model profile. Here is an ex
 
 Upon each submission, we will show you diagnostic metrics to help you understand the performance characteristics of your model.
 
-![](../.gitbook/assets/image%20%2863%29.png)
+![](../.gitbook/assets/image%20%2871%29.png)
 
 ## Staking & Payouts
 
 You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your live `corr` and `mmc` scores. For the duration of the stake, you will earn a percentage of your stake if you have positive scores, and burn if you have negative scores.
+
+You cannot stake on your `fnc` scores.
 
 Here is an example of how you would manage a stake on the website. [INTEGRATION\_TEST](https://numer.ai/integration_test) is our official example model. 
 
@@ -99,11 +101,11 @@ See [Staking and Payouts](https://docs.numer.ai/tournament/staking-and-payouts) 
 
 ## Leaderboard
 
-Your rank on the leaderboard is based on your `reputation` or weighted average correlation over the past 20 rounds.
+The leaderboard can be sorted by the reputation of model's `corr`, `mmc`, and `fnc`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 
 ## Support
 
