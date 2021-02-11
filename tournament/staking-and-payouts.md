@@ -26,8 +26,6 @@ Changes to your stake do not apply immediately, instead they apply on the `effec
 * Increases apply next `Thursday`
 * Decreases impact your `stake amount`next Thursday,  but the funds are only released after next `Thursday + 4 weeks`
 
-/par
-
 Please note that [feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) \(`fnc`\) cannot be staked on.
 
 ## Payouts
