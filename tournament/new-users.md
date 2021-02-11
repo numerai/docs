@@ -13,7 +13,11 @@ Numerai notebook at [https://numer.ai/submit](https://numer.ai/submit)
 
 {% embed url="https://numer.ai/submit" %}
 
-Walkthrough of basic tables, graphs and visualizations a new participant may want to investigate, by [OmniAnalytics](https://twitter.com/OmniAnalytics).
+A comprehensive guide to competing in Numerai, including website feature overview, by [tit\_btcqash](https://twitter.com/tit_BTCQASH)
+
+{% embed url="https://medium.com/@tit\_btcqash/a-comprehensive-guide-to-competing-at-numerai-70b356edbe07" %}
+
+Walkthrough of basic tables, graphs and visualizations a new participant may want to investigate, by [OmniAnalytics](https://twitter.com/OmniAnalytics)
 
 {% embed url="https://forum.numer.ai/t/performing-exploratory-data-analysis-on-numerai-tournament-data-with-r/1199" %}
 
