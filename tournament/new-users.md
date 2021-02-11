@@ -21,10 +21,6 @@ Walkthrough of basic tables, graphs and visualizations a new participant may wan
 
 {% embed url="https://forum.numer.ai/t/performing-exploratory-data-analysis-on-numerai-tournament-data-with-r/1199" %}
 
-Video walkthrough series by [Arbitrage](https://numer.ai/arbitrage)
-
-{% embed url="https://www.youtube.com/playlist?list=PLz3D6SeXhT3v39noGoGEDFMfhZsa1P9Qz" %}
-
 Easy guide with Google Colab by community member [SurajP](https://numer.ai/surajp)
 
 {% embed url="https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690" %}
@@ -39,7 +35,11 @@ Kaggle notebook for fitting MLP to Numerai tournament data by [Katsu1110](https:
 
 {% embed url="https://www.kaggle.com/code1110/numerai-mlp-with-kerastuner-starter/notebook" %}
 
-#### Example Scripts and Tools
+Video walkthrough series by [Arbitrage](https://numer.ai/arbitrage)
+
+{% embed url="https://youtube.com/playlist?list=PLz3D6SeXhT3v39noGoGEDFMfhZsa1P9Qz" %}
+
+#### **Example Scripts and Tools**
 
 {% embed url="https://github.com/numerai/example-scripts" caption="Example Scripts" %}
 
