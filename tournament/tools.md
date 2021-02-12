@@ -18,7 +18,9 @@
 
 ## Community-built dashboards
 
-{% embed url="https://numerai-dashboard.herokuapp.com/" caption="by jamesg.9" %}
+Numerai Insights is an application designed to allow side by side comparison of models, pending payouts, and overall model collection performance, by [james.g9](https://numer.ai/fuka_eri):
+
+{% embed url="https://www.numerai-insights.com/" %}
 
 [Numerai Payouts](https://twitter.com/NumeraiPayouts) by [Bouwe Cuenen](https://twitter.com/BouweCeunen), available as a dashboard or download the app for iOS and Android:
 
