@@ -6,7 +6,7 @@
 
 * [Numerai Tournament Overview](tournament/learn.md)
 * [Numerai Compute](tournament/compute.md)
-* [Tools and Libraries](tournament/tools.md)
+* [Tools, Libraries, Dashboards](tournament/tools.md)
 * [Meta Model Contribution](tournament/metamodel-contribution.md)
 * [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
 * [Staking and Payouts](tournament/staking-and-payouts.md)
