@@ -57,7 +57,7 @@ predictions.to_csv("predictions.csv")
 
 ## Submissions
 
-Every Saturday a new `round` begins and new tournament data is released. To participate in the tournament, you must submit your latest predictions every week by the deadline on `Monday 14:30 UTC`.
+A new `round` begins every `Saturday at 18:00 UTC` and new tournament data is released. To participate in the tournament, you must submit your latest predictions every week by the deadline on `Monday 14:30 UTC`.
 
 You can download the new data and submit your predictions using the website, via our [GraphQL API](https://api-tournament.numer.ai/) directly or using the [Python](https://github.com/uuazed/numerapi) or [R](https://github.com/Omni-Analytics-Group/Rnumerai) api-client. You can also automate your entire submission workflow with [Numerai Compute](https://github.com/numerai/numerai-cli).  
 
