@@ -105,7 +105,7 @@ All of the historical targets used to calculate diagnostics is available [here](
 You must submit your latest signal to Numerai every week
 {% endhint %}
 
-You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either connecting directly to our [GraphQL API](https://api-tournament.numer.ai/) or the official python client. 
+You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either our [GraphQL API](https://api-tournament.numer.ai/) or the official python client.
 
 {% embed url="https://github.com/uuazed/numerapi\#usage-example---numerai-signals" %}
 
