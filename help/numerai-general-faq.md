@@ -25,5 +25,5 @@ The idea of Numerai Signals was first introduced in the [Numerai Masterplan](htt
 
 {% embed url="https://youtu.be/GWeC2PK4yXQ" caption="Signals Launch" %}
 
-
+For more detailed FAQ related to getting started on Numerai or Numerai Signals, check out the community-generated documentation section.
 
