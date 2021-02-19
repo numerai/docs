@@ -1,4 +1,4 @@
-# About
+# About this section
 
 This section contains unofficial documentation, tools, walkthroughs and more developed by the Numerai community. Numerai strongly encourages community-generated content. Soon, you will be able to make PR for edits at GitHub.  
 While anything added here is thought to be correct and helpful to the broader community at the time of inclusion, none of these content creators, product developers and other contributors are employees of Numerai at the time of publication and do not formally represent Numerai in any way. 

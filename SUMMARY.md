@@ -34,6 +34,7 @@
 
 ## Community Content
 
+* [About this section](community-content/about.md)
 * [Community Documentation](community-content/community-documentation.md)
 * [Community-built products](community-content/community-built-products.md)
 * [Numerai Community Office Hours](community-content/numerai-community-office-hours/README.md)
@@ -70,7 +71,6 @@
   * [Office Hours Season 4](community-content/numerai-community-office-hours/office-hours-season-4.md)
   * [FAQ in Office Hours](community-content/numerai-community-office-hours/faq-in-office-hours.md)
   * [Cited resources](community-content/numerai-community-office-hours/cited-resources.md)
-* [About](community-content/about.md)
 
 ## Numeraire
 
