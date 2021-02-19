@@ -1,5 +1,5 @@
 ---
-description: Content made by Numerai users
+description: Content created by Numerai users
 ---
 
 # About this section
