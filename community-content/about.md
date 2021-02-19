@@ -1,3 +1,7 @@
+---
+description: Content made by Numerai users
+---
+
 # About this section
 
 This section contains unofficial documentation, tools, walkthroughs and more developed by the Numerai community. Numerai strongly encourages community-generated content. Soon, you will be able to make PR for edits at GitHub.  
