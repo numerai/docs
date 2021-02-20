@@ -176,7 +176,7 @@ Here are some example payout calculations. The first 2 examples show the impact 
 | 100 NMR | 0.8 | -0.03 | 1.0x | 0.002 | 0.5x | -2.32 NMR |
 | 100 NMR | 0.8 | 0.15 | 1.0x | 0.07 | 2.0 | 20 |
 
-With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. You can track your daily payouts with the community-built [Numerai Payouts](https://docs.numer.ai/help/payouts-app) app.
+With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. You can track your daily payouts with the community-built [Numerai Payouts](https://docs.numer.ai/community-content/community-built-products#numerai-payouts) app.
 
 Final payouts are paid into your stake at the end of the round. When you start staking, your stake value will remain constant for the first 4 rounds. Afterwards, your stake value will update every week based on your payout of the round 4 weeks ago.  
 
