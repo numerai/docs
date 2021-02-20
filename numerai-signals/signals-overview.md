@@ -58,7 +58,7 @@ The universe is updated every week, but in general only a couple low volume stoc
 
 You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv).
 
-You can see the historical universe and their targets by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv). This file has data up to the third most recent Friday, due to Signals rounds resolving two Mondays \(11 days\) after the round opens.
+You can see the historical universe and their targets by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv). This file has data up to the third most recent Friday, due to Signals rounds resolving two Wednesdays \(11 days\) after they open.
 
 E.g. In the fourth week of the month, data from the first Friday of the month will be the date with the most recent available data.
 
