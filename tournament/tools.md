@@ -22,7 +22,7 @@ Numerai Insights is an application designed to allow side by side comparison of 
 
 {% embed url="https://www.numerai-insights.com/" %}
 
-[Numerai Payouts](https://twitter.com/NumeraiPayouts) by [Bouwe Cuenen](https://twitter.com/BouweCeunen), available as a dashboard or download the app for iOS and Android.
+[Numerai Payouts](https://twitter.com/NumeraiPayouts) by [Bouwe Ceunen](https://twitter.com/BouweCeunen), available as a dashboard or download the app for iOS and Android.
 
 {% embed url="https://dashboard.numeraipayouts.com/" caption="dashboard" %}
 
