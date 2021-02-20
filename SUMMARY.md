@@ -9,7 +9,6 @@
 * [Tools, Libraries, Dashboards](tournament/tools.md)
 * [Meta Model Contribution](tournament/metamodel-contribution.md)
 * [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
-* [Staking and Payouts](tournament/staking-and-payouts.md)
 * [Reputation](tournament/reputation.md)
 * [New Users](tournament/new-users.md)
 * [Numerai tournament FAQ](tournament/faq.md)

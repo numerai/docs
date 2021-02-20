@@ -2,7 +2,7 @@
 
 ## Motivation
 
-How can you tell if your model is working or not? Only time will tell.
+Long term performance is key.  
 
 While your payouts depend on your performance in a single round, your reputation and rank depends on your performance over 20 rounds. 
 
