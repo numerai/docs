@@ -34,7 +34,7 @@
 ## Community Content
 
 * [About this section](community-content/about.md)
-* [Community Documentation](community-content/community-documentation.md)
+* [Understanding Numerai](community-content/community-documentation.md)
 * [Community-built products](community-content/community-built-products.md)
 * [Numerai Community Office Hours](community-content/numerai-community-office-hours/README.md)
   * [Office Hours Recaps: Season 1](community-content/numerai-community-office-hours/office-hours-recaps/README.md)
