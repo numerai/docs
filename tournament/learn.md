@@ -99,7 +99,11 @@ numerai docker deploy
 
 ## Diagnostics
 
-Upon each submission, we will show you diagnostic metrics to help you understand the performance and risk characteristics of your model. 
+Upon each submission, we will show you diagnostic metrics to help you understand the performance and risk characteristics of your model over the historical validation eras. 
+
+{% hint style="warning" %}
+Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your model research process. 
+{% endhint %}
 
 Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/model-diagnostics-update/902).
 
@@ -155,7 +159,7 @@ The `stake_value` is the value of your stake on the first Thursday \(scoring day
 
 The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 300K threshold the lower the payout factor.
 
-![](../.gitbook/assets/image%20%2886%29.png)
+![](../.gitbook/assets/image%20%2889%29.png)
 
 The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
@@ -167,18 +171,18 @@ The `corr_multiplier` and `mmc_multiplier` are configured by you to control your
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
 {% endhint %}
 
-Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the payout is capped at ±25%.
+Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the payout is capped at ±25% of the stake value.
 
 | stake value | payout factor | corr | corr multiplier | mmc | mmc multiplier | payout |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 100 NMR | 0.8 | 0.02 | 1.0x | 0.002 | 2.0x | 1.92 NMR |
 | 100 NMR | 0.8 | 0.02 | 1.0x | 0.002 | 0.0x | 1.6 NMR |
 | 100 NMR | 0.8 | -0.03 | 1.0x | 0.002 | 0.5x | -2.32 NMR |
-| 100 NMR | 0.8 | 0.15 | 1.0x | 0.07 | 2.0 | 20 |
+| 100 NMR | 0.8 | 0.15 | 1.0x | 0.1 | 2.0 | 25 NMR |
 
 With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. You can track your daily payouts with the community-built [Numerai Payouts](https://docs.numer.ai/community-content/community-built-products#numerai-payouts) app.
 
-Final payouts are paid into your stake at the end of the round. When you start staking, your stake value will remain constant for the first 4 rounds. Afterwards, your stake value will update every week based on your payout of the round 4 weeks ago.  
+Final payouts are paid into your stake at the end of the round \(Wednesday\). When you start staking, your stake value will remain constant for the first 4 rounds. Afterwards, your stake value will update every week based on your payout of the round 4 weeks ago.  
 
 ![](../.gitbook/assets/image%20%2887%29.png)
 

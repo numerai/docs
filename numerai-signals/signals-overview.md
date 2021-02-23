@@ -95,7 +95,7 @@ Once your submission has been accepted, it will be queued for diagnostics. This 
 
 These diagnostics serve as a guide for you to estimate whether your signal is good enough to be worth staking on. It is important to note that signals with strong diagnostics over the historical `validation` period may not score well in any current or future `live` periods.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process. 
 {% endhint %}
 
@@ -125,7 +125,7 @@ Every signal uploaded to Numerai Signals is neutralized before being scored. The
 
 ![A visualization of neutralization against a single known signal](../.gitbook/assets/image%20%2853%29.png)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization. 
 {% endhint %}
 
@@ -177,25 +177,11 @@ MMC is a concept that is taken from the main Numerai Tournament and the scoring 
 
 Note the computation of Numerai Signals' MMC is completely separate from that of the Numerai Tournament. Specifically, only submissions to Numerai Signals are used to construct the Signals' Meta Model.
 
-## Staking and Payouts
+## Staking <a id="staking"></a>
 
-You can `stake` your submission if you want the opportunity to earn `payouts`. You can either stake on `corr` or `corr_plus_mmc`.
+You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `mmc` scores. 
 
-{% hint style="info" %}
-Staking requires you to lock up the [NMR cryptocurrency](https://www.coinbase.com/price/numeraire). This gives Numerai the ability to burn your stake if your signal performs poorly.
-{% endhint %}
-
-Once staked, you will `earn` or `burn` a percentage of your stake based on the score of your submissions. 
-
-```python
-corr_payout = stake * clip(2 * corr, -0.25, 0.25)
-
-corr_plus_mmc_payout = stake * clip(2 * corr + mmc, -0.25, 0.25)
-```
-
-`corr` is always multiplied by 2, while you can select your `mmc` exposure. For example, if you stake `100 NMR` on `corr` and your score was `+0.05`, then you will earn `2 * 5% of 100NMR = 10NMR`. If you staked on `corr_plus_mmc` and your `mmc` was `+0.03` then you will earn `(2 * 5% + 3%) of 100NMR = 13NMR`.  If you staked on `corr + 2x mmc` then instead you would earn `(2 * 5% + 2 * 3%) of 100NMR = 16NMR.`
-
-The maximum you can earn or burn is `25%` of your stake each round. Payouts are automatically rolled into your stake. 
+Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
 {% hint style="danger" %}
 It is important to note that the opportunity to stake your signal **is not** an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users.  Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.
@@ -203,11 +189,52 @@ It is important to note that the opportunity to stake your signal **is not** an 
 **Please read our** [**Terms of Service**](https://numer.ai/terms) **for further information.**
 {% endhint %}
 
-To create a stake, click the "manage stake" button on the website and create a "change request" to "increase" your stake. Here you can select whether you want to stake on `corr` or `corr_plus_mmc`. If at any time you wish to reduce your stake, you can also create a "change request" to "decrease" your stake.  
+You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a ~4 week delay. You can also change your stake type, which determines which scores \(`corr` and/or `mmc`\) you want to stake on.
 
-![The staking modal on the website](../.gitbook/assets/image%20%2856%29.png)
+![](https://gblobscdn.gitbook.com/assets%2F-LmGruQ_-ZYj9XMQUd5x%2F-MTwWeGztnW6NaH6Sd_A%2F-MTxK8xvV36McXIClWAt%2Fimage.png?alt=media&token=aea91c60-7079-439b-bbd6-f64e9d8c26d7)
 
-Please note that change requests do not apply immediately. Always double check the "effective date" shown on the website before applying changes.
+## Payouts
+
+### Payout function
+
+Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±25% of the stake value per round.
+
+```python
+payout = stake_value * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
+```
+
+The `stake_value` is the value of your stake on the first Friday \(scoring day\) of the round.
+
+The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 100K threshold the lower the payout factor.
+
+![](../.gitbook/assets/image%20%2892%29.png)
+
+The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
+
+| **corr multiplier options** | **mmc multiplier options** |
+| :--- | :--- |
+| 2.0x | 0.0x, 0.5x, 1.0x, 2.0x |
+
+{% hint style="info" %}
+The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
+{% endhint %}
+
+Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the payout is capped at ±25% of the stake value.
+
+| stake value | payout factor | corr | corr multiplier | mmc | mmc multiplier | payout |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 100 NMR | 0.8 | 0.02 | 2.0x | 0.002 | 2.0x | 3.52 NMR |
+| 100 NMR | 0.8 | 0.02 | 2.0x | 0.002 | 0.0x | 3.2 NMR |
+| 100 NMR | 0.8 | -0.03 | 2.0x | 0.002 | 0.5x | -4.8 NMR |
+| 100 NMR | 0.8 | 0.15 | 2.0x | 0.07 | 2.0 | 25 NMR |
+
+### Stake growth
+
+With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. Final payouts are paid into your stake at the end of the round \(Wednesday\).
+
+Your stake value will grow as long as you continue to have positive scores. Here are some example payout projections assuming that the model gets the same positive scores every week for 52 weeks.  
+
+![](../.gitbook/assets/image%20%2891%29.png)
 
 ## Dates and Deadlines
 
@@ -232,15 +259,17 @@ The universe of the `round` is defined by the `data_date` of the prior Friday. T
 
 ![Data dates for a round](../.gitbook/assets/signals_data_dates%20%283%29.png)
 
-## Reputation and Leaderboard
+## Leaderboard
 
-The `reputation` of your signal is a weighted average of your signal's `corr` over the past 20 rounds. Similarly, the `mmc_reputation` of your signal is a weighted average of your signals' `mmc` over the past 20 rounds.
+The leaderboard can be sorted by the reputation of model's `corr`, `mmc`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.
 
-![](../.gitbook/assets/image%20%2855%29.png)
+Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
+
+![](../.gitbook/assets/image%20%2893%29.png)
 
 ## Support
 
-Need help?
+We are here to help.
 
 Find us on [RocketChat](https://community.numer.ai) for questions, support, and feedback!
 
