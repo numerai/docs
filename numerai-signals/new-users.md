@@ -12,6 +12,8 @@ End to end notebook for Numerai Signals using completely free data from Yahoo Fi
 
 {% embed url="https://colab.research.google.com/drive/1ECh69C0LDCUnuyvEmNFZ51l\_276nkQqo" caption="Notebook by Jason Rosenfeld" %}
 
+{% embed url="https://youtu.be/JxxNx4Qej7M" caption="Example notebook walkthrough video" %}
+
 Example notebook and article by [Surajp](https://twitter.com/parmarsuraj99), inspired by [example\_model.py](https://github.com/numerai/example-scripts/blob/master/signals/example_model.py) and [Jason Rosenfeld](https://twitter.com/jrosenfeld13)’s [notebook](https://twitter.com/jrosenfeld13/status/1315749231387443202?s=20) above.
 
 {% embed url="https://parmarsuraj99.medium.com/lets-talk-about-signals-841934f24450" caption="Article and Notebook by Suraj Parmar" %}
