@@ -42,7 +42,7 @@ Data scientist with no stock market data? Participate in the [Numerai Tournament
 
 If you do not already have access to stock market data, there are a number of free or cheap data providers on the internet such as [Yahoo Finance](https://finance.yahoo.com/), [Quandl](https://www.quandl.com/), and [Koyfin](https://www.koyfin.com/). 
 
-There are also platforms that make it easy to create signals such as [Quantopian](https://www.quantopian.com/), [QuantConnect](https://www.quantconnect.com/), and [Alpaca](https://alpaca.markets/). In particular, [Risk Model](https://www.quantopian.com/risk-model) and [AlphaLens Tearsheets](https://www.quantopian.com/tutorials/alphalens#lesson1) are great ways to analyze the quality of a signal. 
+There are also platforms that make it easy to create signals such as [QuantConnect](https://www.quantconnect.com/), and [Alpaca](https://alpaca.markets/). 
 
 Check out this [forum thread](https://forum.numer.ai/t/free-or-cheap-data-for-erasure-numerai-quant/350) for a list of sources popular data sources, platforms, and tools used by our community. 
 

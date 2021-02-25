@@ -5,7 +5,7 @@ Want to start participating in the hardest data science competition in the world
 * Subscribe to [Numerai on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA) to be notified of video tutorials
 * Join the [RocketChat \#NewUsers channel](https://community.numer.ai/channel/newusers) for tips and support
 * Check out the [Numerai Forum](https://forum.numer.ai) for long-form posts on data analysis, tips and tutorials
-* Read past [Office Hours recaps](https://docs.numer.ai/office-hours-with-arbitrage/), which often include tips and tricks
+* Read past [Office Hours recaps](https://docs.numer.ai/community-content/numerai-community-office-hours), which often include tips and tricks
 
 #### Walkthroughs and Tutorials
 
