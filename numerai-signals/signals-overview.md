@@ -60,8 +60,6 @@ You can see the latest universe by downloading the [latest universe file](https:
 
 You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv).
 
-E.g. In the fourth week of the month, data from the first Friday of the month will be the date with the most recent available data.
-
 ### Submissions
 
 When you submit a signal to Numerai Signals, you must include at least two columns:
