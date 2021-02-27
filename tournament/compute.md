@@ -40,7 +40,7 @@ Once you've added your webhook url to your [account settings](https://numer.ai/a
 
 Follow our step by step [tutorial](https://docs.numer.ai/help/compute-tutorial) or watch the video on [YouTube](https://www.youtube.com/watch?v=YFgXMpQszpM).
 
-Ask for help in the [compute rocketchat channel](https://community.numer.ai/channel/compute).
+Ask for help in the [\#Compute RocketChat channel](https://community.numer.ai/channel/compute).
 
 
 
