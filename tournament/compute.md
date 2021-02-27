@@ -1,5 +1,7 @@
 # Numerai Compute
 
+Numerai is currently working on significant updates to automation tools and data structures, so you can focus on data science rather than resources. A new version of Compute is coming soon to Numerai and Numerai Signals. Keep an eye on the [Announcements](https://community.numer.ai/channel/announcements) channel.
+
 ## Introduction
 
 Compute is a framework to help you automate your weekly submission workflow __with your own infrastructure.
