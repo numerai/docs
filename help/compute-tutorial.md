@@ -51,11 +51,11 @@ _**Note: access and secret keys give control over your AWS and Numerai accounts.
 
 ![](https://lh3.googleusercontent.com/epoIhcwStnpCFXueAGOhZwKmM9-TqLJXCrtLY4cBAUaKSF5wWeh8y32MJGuEyMGUMfft0j5j43oeUHKK9dwUCCFDRa44I4k8Gd5igP49ewR-NEtLQ0DU3aQLGIfUz7k1UUIBMi_J)
 
-Save the public key in the CSV as well. Next, open your anaconda prompt and pip3 install numerai\_cli. \(2:23\)
+Save the public key in the CSV as well. Next, open your anaconda prompt and type `pip3 install numerai_cli`. \(2:23\)
 
 ![](https://lh6.googleusercontent.com/zZHb0hph83WJ4ypaUBhmpDu1wHoNXCJKeuVmWswTrweUd2mFJc8zARD8Osis5RcJA3conQOS0kbLSUM-wmCB9hqDoif-lnjDtiwtFQCjrk1mm6QZgBeBtQgv9Y6Fig9l_x0hTP4H)
 
-Once installed, type mkdir example-numerai, then cd example-numerai, then numerai setup. \(2:42\)
+Once installed, type `mkdir example-numerai`, then `cd example-numerai`, then `numerai setup`. \(2:42\)
 
 ![](https://lh4.googleusercontent.com/7_w6V8l6sqcqjPc_XNf1pq3HJmEZwVmg68w4XqoM5i2hrmQXNG2gNXkxDg7aP-Q0vZia_jsaMg8Leg9TddHbq3V56JszLoz3ydGvtsGpuh5CZ92dEK8orM8xNh0efP4_kTt-crnX)
 
@@ -67,15 +67,15 @@ You should see a bunch of print messages showing that you’ve successfully inst
 
 ![](https://lh5.googleusercontent.com/L3DVgnjU_cxeU2Sv7WP-u6gYrPjlgCYuD9hzHlqovS9RdqjeOLISoZ_SyWwFFTj8DIfEcEaeb56CJjas0HE2VgUyZFUpa5kp-Olos6ssUdAxkp923NvITZWo4a6tFH0HsVFklkWK)
 
-Type numerai docker copy-example. This gives us all the necessary file names and example code which we can overwrite. \(3:56\)
+Type `numerai docker copy-example`. This gives us all the necessary file names and example code which we can overwrite. \(3:56\)
 
 ![](https://lh6.googleusercontent.com/4Z-cFieomwv8gV2d9BtBdltBGsU3Eel9QhYSk01E5h2kIFam5cebN-xAFHIxWw8yjxB6JEnMI45SLbgyPJtyNaxlwyVoCeS6riADOhNm8-Ab399ysh4syyjuvLPKxf-jOnOkUs-v)
 
-Now, I am going to run a very simple regression model using RidgeCV from scikit-learn. We’ll save this model using joblib. Type numerai docker train. Docker runs the train.py file, which downloads the data, fits the model, then saves the model using joblib. I’ll spare you the boredom of watching the data download and waiting for the model to train. As you can see, the joblib file has been saved in the example\_numerai folder along with the numerai dataset. \(4:28\)
+Now, I am going to run a very simple regression model using RidgeCV from scikit-learn. We’ll save this model using joblib. Type `numerai docker train`. Docker runs the train.py file, which downloads the data, fits the model, then saves the model using joblib. I’ll spare you the boredom of watching the data download and waiting for the model to train. As you can see, the joblib file has been saved in the example\_numerai folder along with the numerai dataset. \(4:28\)
 
 ![](https://lh6.googleusercontent.com/MQayrwIgIVnj-D0JjNUuFDRl1De9GBxvOpwRn5tsz7lr6F7dYlnBgbG5H_xA9U9ZF0HY2AFJyS2YPaEsrLJ5pq7VWVTSkbyrJzSZIh-A5rzYrU3X2-rZ2N61sz4vhg9ebaWeOUt7)
 
-We want to make sure that the model works correctly before we deploy our docker image to AWS. type numerai docker run. This will build the docker image and run predict.py on your machine. Once your model finishes generating predictions, numerox will then upload your predictions using the API keys you provided. \(4:51\)
+We want to make sure that the model works correctly before we deploy our docker image to AWS. Type `numerai docker run`. This will build the docker image and run predict.py on your machine. Once your model finishes generating predictions, numerox will then upload your predictions using the API keys you provided. \(4:51\)
 
 ![](https://lh3.googleusercontent.com/OkYPLYPpsNtp-r15IlxfQOdrpSWuqFVJqwTRZQ8sJ8ZdZkFIiMGSiz6pl3iLIkfDcW4YTVh5QAo8UVnrHrN0FQ6RaXnYUH8mlrGLHFHwx4xbixxw6NyzvCn13xC5hLiaTMRwIbuT)
 
@@ -95,11 +95,13 @@ As you can see, the last submission shows that our local test was successful. \(
 
 ![](https://lh4.googleusercontent.com/Kj7BZsN4ZiJ-3-FUaW9b17PZmAJam6xUJTxKjXzdx9Z3HReUKtdKUr6cghw7i9eV0h1XcEPjV4p5bOwPK6Ao6f-pyltBPs5IEjL0onYprWPyUuSL1NYVhYvcp9SuNAUN6TR6wnYS)
 
-Type **numerai docker deploy** and wait for your docker files to be pushed to AWS. \(5:48\)
+Type `numerai docker deploy` and wait for your docker files to be pushed to AWS. \(5:48\)
 
 ![](https://lh3.googleusercontent.com/BknJF6TzVUKr01EnAUA_eeAZQTjxI3UDhaBhyfA_i09DFcRHZrWwWRcjiUzkCXsdK3QuHHk-Qmq9poDBdVvZetql2wo4ecQYSqMH4c-TW-HOq4IOz4mOfscYjsfsvK0pu3jifWqB)
 
-Test the webhook by typing numerai compute test-webhook. You can get your logs by typing numerai compute logs -f.  
+Test the webhook by typing `numerai compute test-webhook`. You can get your logs by typing `numerai compute logs -f`.  
+
+
 When you see the message “Task is now in the DEPROVISIONING state, your code is finished. \(6:37\)
 
 ![](https://lh6.googleusercontent.com/UMDqrC30nc0b8EhpEKK5WilfPFAIj1Jy2T-CJo2PTqtfnzL-inv5TYe6MvQ7lrdCqcvuPH910wRvsmQGl-ZVDHQJd6zPZoWfKLz1wTLY-vEIbyybeCGGg6bWhMGhutEplTwvt-Z8)
