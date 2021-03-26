@@ -9,13 +9,13 @@ _This page was last updated March 17, 2021_
 This page is part of [_Understanding Numerai_ ](./)by **wigglemuse**.  
  
 
-**Hey you!  New user!**  
+**Hey you! New user!**  
 
 Are you perplexed, bewildered, flummoxed?  
 
 _**Are you just trying to figure out what the heck is going on here?**_
 
-You've come to right place.  Let's break it down and figure it out!
+You've come to right place. Let's break it down and figure it out!
 
 Here's what the official docs say in the introduction:
 
@@ -25,7 +25,7 @@ Here's what the official docs say in the introduction:
 
 Ok, but _huh_?
 
-**Numerai** is made up of three quite different but interdependent components.  Think of the points of a triangle: each connected to the others, and all are needed to complete the whole.
+**Numerai** is made up of three quite different but interdependent components. Think of the points of a triangle: each connected to the others, and all are needed to complete the whole.
 
 ## The Numerai Triangle
 
@@ -50,7 +50,7 @@ HEDGE FUND ____________________  USER MODELS
 
 ### Hedge Fund
 
-The Hedge Fund \("the HF"\) is the reason for all of this. Numerai \(the company\) operates a hedge fund. This is a traditional quantitative hedge fund, operating in and regulated by the United States. They take long and short positions on stocks of real-world companies in the traditional financial markets, just like any other hedge fund.  The Numerai fund is market neutral -- the aim is to profit in any market condition and not be exposed to market swings or any major risk factors.
+The Hedge Fund \("the HF"\) is the reason for all of this. Numerai \(the company\) operates a hedge fund. This is a traditional quantitative hedge fund, operating in and regulated by the United States. They take long and short positions on stocks of real-world companies in the traditional financial markets, just like any other hedge fund. The Numerai fund is market neutral -- the aim is to profit in any market condition and not be exposed to market swings or any major risk factors.
 
 #### HF common questions
 
@@ -72,34 +72,34 @@ This is the part of the HF that is not traditional, and is the _cornerstone inno
 
 #### AI / Data Science / Machine Learning
 
-This is the "AI" part of NumerAI, and is where we come in.  Again, Numerai's HF has to determine what positions on which stocks it is going to take. You'll see the word "signal" quite often around here, and that's what we as participants provide: numerical predictions of where we think individual stocks are going to go in the in next days and weeks -- that's a signal.
+This is the "AI" part of NumerAI, and is where we come in. Again, Numerai's HF has to determine what positions on which stocks it is going to take. You'll see the word "signal" quite often around here, and that's what we as participants provide: numerical predictions of where we think individual stocks are going to go in the in next days and weeks -- that's a signal.
 
-Because Numerai does not have that small army of quants, they need signals: predictions of future market behavior.  And they crowdsource those predictions from us.  However, we're not just "picking stocks", we are creating _machine learning models_ to evaluate and predict thousands of stocks weekly.  Specifically, we are ranking stocks relative to each other, rather than trying to predict specific price values \(or any specific values\).
+Because Numerai does not have that small army of quants, they need signals: predictions of future market behavior.  And they crowdsource those predictions from us.  However, we're not just "picking stocks", we are creating _machine learning models_ to evaluate and predict thousands of stocks weekly. Specifically, we are ranking stocks relative to each other, rather than trying to predict specific price values \(or any specific values\).
 
-So all of us users create all these predictions and submit them to Numerai.  Numerai then combines them all into one big ensemble model which is referred to as the **Meta Model**.  \(I'm just gonna go with the single word "metamodel" from now on.\) And this metamodel -- the combined predictions/signals of the users -- are what they use to make trading decisions for the Hedge Fund.
+So all of us users create all these predictions and submit them to Numerai. Numerai then combines them all into one big ensemble model which is referred to as the **Meta Model**.  \(I'm just gonna go with the single word "metamodel" from now on.\) And this metamodel -- the combined predictions/signals of the users -- are what they use to make trading decisions for the Hedge Fund.
 
 There are two ways to participate and provide signals to Numerai:
 
 1. Numerai Tournament
 2. Numerai Signals
 
-The main \(or "classic"\) Numerai Tournament has been around for several years now, and has gone through a few major transformations.  It has maintained the basic form that it presently has since about mid-2019.  However, it is still under active development, so some of the rules and data gets adjusted from time to time.
+The main \(or "classic"\) Numerai Tournament has been around for several years now, and has gone through a few major transformations. It has maintained the basic form that it presently has since about mid-2019.  However, it is still under active development, so some of the rules and data gets adjusted from time to time.
 
-On the other hand, Numerai Signals is quite new having only gone live a couple of months ago \(late 2020\), and as of this writing is not quite fully mature with rapid changes and constant improvements.  I'm mostly going to be talking about the main Tournament here, as Signals is for more "advanced" users.  You will find Signals much easier to understand once you've got a solid understanding the classic Tournament.
+On the other hand, Numerai Signals is quite new having only gone live a couple of months ago \(late 2020\), and as of this writing is not quite fully mature with rapid changes and constant improvements. I'm mostly going to be talking about the main Tournament here, as Signals is for more "advanced" users. You will find Signals much easier to understand once you've got a solid understanding the classic Tournament.
 
 What's the difference? In the main Tournament, Numerai provides us with a large training data set. Our task is then to take that data and make machine learning models which are capable of predicting unseen data of the same format, a new batch of which is released every week.
 
-The data set is cleaned, regularized, and most importantly: obfuscated.  That means we don't know what it represents! So the data itself is essentially a black box.  It has rows of feature columns along with a target for your model to learn to predict.  But we are given \(almost\) no information about what the features actually are.  So even though the each row represents a stock market security, there is no way for the user to discover which real-world stocks they represent.
+The data set is cleaned, regularized, and most importantly: obfuscated. That means we don't know what it represents! So the data itself is essentially a black box. It has rows of feature columns along with a target for your model to learn to predict. But we are given \(almost\) no information about what the features actually are. So even though the each row represents a stock market security, there is no way for the user to discover which real-world stocks they represent.
 
-Why is all this information hidden?  The main reason is that they couldn't give you the data otherwise! High-quality financial data is _very_ expensive, and because of license restrictions they cannot just give it to you for free.  But, if the data is obfuscated so that you can't tell what the stocks or the features are, they've worked it out so they can freely give away the data for you to make models.
+Why is all this information hidden? The main reason is that they couldn't give you the data otherwise! High-quality financial data is _very_ expensive, and because of license restrictions they cannot just give it to you for free. But, if the data is obfuscated so that you can't tell what the stocks or the features are, they've worked it out so they can freely give away the data for you to make models.
 
 ![the data](../../.gitbook/assets/ex_data.png)
 
-There are a ton of common questions and confusions about the data set and what is expected of your models.  A few of the most common ones are below.  But many more ~~are~~ \[will be soon\] covered in detail in the following pages.  For now, it is enough to know that for you to participate in the Tournament, you don't need to bring anything but your data science and machine learning skills. \(And if you don't have those skills, this is a great project to work on in order to learn them.\)
+There are a ton of common questions and confusions about the data set and what is expected of your models. A few of the most common ones are below. But many more ~~are~~ \[will be soon\] covered in detail in the following pages. For now, it is enough to know that for you to participate in the Tournament, you don't need to bring anything but your data science and machine learning skills. \(And if you don't have those skills, this is a great project to work on in order to learn them.\)
 
   
 **So what's Signals?**  
-Numerai Signals is for those participants that have access to or can acquire their own data.  And then they make models and submit predictions based on that.  Signals is more of a free-for-all, and is going to be more difficult for most users.  As I said, I'm not going to get into Signals details too much as it is pretty new, undergoing changes quite rapidly, and I myself am not participating yet so I just have less ability to explain it.  However, even if you are only interested in Signals \(or think you are\), take some time to at least understand the basics of the main Tournament as it will make much easier to understand Signals.  The basic structure is much the same.
+Numerai Signals is for those participants that have access to or can acquire their own data.  And then they make models and submit predictions based on that.  Signals is more of a free-for-all, and is going to be more difficult for most users.  As I said, I'm not going to get into Signals details too much as it is pretty new, undergoing changes quite rapidly, and I myself am not participating yet so I just have less ability to explain it. However, even if you are only interested in Signals \(or think you are\), take some time to at least understand the basics of the main Tournament as it will make much easier to understand Signals.  The basic structure is much the same.
 
 #### 
 
@@ -107,13 +107,13 @@ Numerai Signals is for those participants that have access to or can acquire the
 
 Congratulations, you are now a data scientist!
 
-New users often come to Numerai with a lot of assumptions about how it must work.  A lot of these assumptions are wrong, so here are a few of the questions that almost always come up immediately for new participants.
+New users often come to Numerai with a lot of assumptions about how it must work. A lot of these assumptions are wrong, so here are a few of the questions that almost always come up immediately for new participants.
 
 **In the main Tournament, how can this possibly work if I don't know what the features represent?**  
 If you already have some background in finance/trading or working with stock data, you probably have some ideas about how this should be tackled, what features you want to look at, etc etc. It is best to forget all that when making models with this data -- domain knowledge is not likely to help you here. Some people really bristle at this, but I assure you that there are many users competing quite successfully using the given data.
 
 **Why does Numerai even do this? If it had that small army of quants using the "real" data, couldn't they make better predictions that us?**  
-Well, that's what they are finding out.  Numerai's bet is that a large army \(thousands, anyway\) of "citizen data scientists" from all over the world, all with different skills and ideas, can -- when combined -- beat that small army of quants, who tend to come from similar backgrounds with similar training.  The vast majority of Numerai participants are not employed in finance, and are not expert traders. Although it is true we don't currently know how the HF is performing, we have gotten feedback that the team is pretty happy with the metamodel that our predictions creates.  _So it seems to be working._  The wisdom of the crowd.
+Well, that's what they are finding out. Numerai's bet is that a large army \(thousands, anyway\) of "citizen data scientists" from all over the world, all with different skills and ideas, can -- when combined -- beat that small army of quants, who tend to come from similar backgrounds with similar training.  The vast majority of Numerai participants are not employed in finance, and are not expert traders. Although it is true we don't currently know how the HF is performing, we have gotten feedback that the team is pretty happy with the metamodel that our predictions creates.  _So it seems to be working._  The wisdom of the crowd.
 
 **Stock market prediction requires time-series analysis.  How can I do that with this data?**  
 There you go again with your assumptions. I'm afraid to inform you that basically, you can't. Although there is _some_ temporal ordering to the data as it comes in blocks of rows called eras, it is a tabular format with each row representing some real-world equity for that time period. But none of these rows are identified, so there is no way to match up a row that represents a particular stock to another row from a different time period that represents the same stock. However, if you are really dying to do time-series analysis, then you can certainly do that in Numerai Signals \(but you gotta acquire your own data\).
@@ -155,23 +155,23 @@ How to reconcile these requirements?  Well, what if there was a _punishment_ for
 Staking uses the "skin in the game" principle.  In order to be eligible for rewards, you must put up something yourself that is at risk.  So you put up a **stake** on your model. And then if your predictions turn out to be accurate, your stake remains and you earn additional rewards. But if your predictions turn out badly, you lose some of your stake. We call that "burning".
 
 {% hint style="info" %}
-**STAKING IS OPTIONAL.** You do not have to stake in order to make models and submit predictions to Numerai.  If you aren't staked you won't earn rewards, but you won't be at risk of losing anything either.  In face, it is recommended that new users do not stake \(or stake very little\) for a while until they make some models and get some feedback on their performance. Some users never stake -- they just want to learn machine learning. Unstaked models are evaluated/scored just like any other, but they are not used by the hedge fund for making trading decisions.
+**STAKING IS OPTIONAL.** You do not have to stake in order to make models and submit predictions to Numerai.  If you aren't staked you won't earn rewards, but you won't be at risk of losing anything either.  In fact, it is recommended that new users do not stake \(or stake very little\) for a while until they make some models and get some feedback on their performance. Some users never stake -- they just want to learn machine learning. Unstaked models are evaluated/scored just like any other, but they are not used by the hedge fund for making trading decisions.
 {% endhint %}
 
-Before we get into how all that is implemented, let's continue on with the _why_ for a bit.  Why should users be at risk?  Because it creates that _trust_ mentioned above.  If you are willing to risk losing some of your stake in order to earn rewards, it ensures to Numerai that you are submitting good faith predictions.  When implemented correctly, it gets rid of the bad actors who would game the system with nonsense predictions that attempt to earn without having any true predictive value.  \(In earlier versions of the Tournament, this was a real problem.\)
+Before we get into how all that is implemented, let's continue on with the _why_ for a bit.  Why should users be at risk?  Because it creates that _trust_ mentioned above.  If you are willing to risk losing some of your stake in order to earn rewards, it ensures to Numerai that you are submitting good faith predictions. When implemented correctly, it gets rid of the bad actors who would game the system with nonsense predictions that attempt to earn without having any true predictive value. \(In earlier versions of the Tournament, this was a real problem.\)
 
 {% hint style="info" %}
-Your actual performance score that determines the amounts of your earns and burns is based on correlation with the prediction target.  So the difference between earning and burning is whether or not that correlation is positive \(good, earn\) or negative \(bad, burn\).  Details of the exact scoring method ~~are~~ \[will be soon\] covered in the following pages of this section.
+Your actual performance score that determines the amounts of your earns and burns is based on correlation with the prediction target. So the difference between earning and burning is whether or not that correlation is positive \(good, earn\) or negative \(bad, burn\). Details of the exact scoring method ~~are~~ \[will be soon\] covered in the following pages of this section.
 {% endhint %}
 
 **Sounds like gambling.  Are we just making bets and gambling?**  
-If we consider the staking mechanism and the earns and burns solely from the user point-of-view as a risk vs reward math problem, then yes, it fits into that framework.  But that's a unnecessarily disingenuous label to put on it, because the same basic equation applies to so many other things we wouldn't dismiss as "mere gambling".  Stock market investment for one!  Or any kind of investment like buying real estate, starting a business, even things like getting married, etc etc.  No risk, no reward is a basic truism everywhere in life.  Also, in true gambling-type gambling, there is a "house" hoping for you to lose -- someone that will gain by your loss. Not so here.  Everybody wants you to win!  Staking at Numerai is about establishing that trust relationship as I mentioned, but the amount you stake is also a indicator of the confidence you have in your predictions -- the more you stake, the more weight your signal is given in the metamodel that determines the trading decisions for the hedge fund.  In fact, from what we understand from the team, stake value is actually the _only_ thing that they use to determine how much weight to give to a user model in the metamodel ensemble. \(You'll often hear the longer term "stake-weighted metamodel" used, because that's how it is created.\)
+If we consider the staking mechanism and the earns and burns solely from the user point-of-view as a risk vs reward math problem, then yes, it fits into that framework. But that's a unnecessarily disingenuous label to put on it, because the same basic equation applies to so many other things we wouldn't dismiss as "mere gambling". Stock market investment for one! Or any kind of investment like buying real estate, starting a business, even things like getting married, etc etc. No risk, no reward is a basic truism everywhere in life. Also, in true gambling-type gambling, there is a "house" hoping for you to lose -- someone that will gain by your loss. Not so here. Everybody wants you to win! Staking at Numerai is about establishing that trust relationship as I mentioned, but the amount you stake is also a indicator of the confidence you have in your predictions -- the more you stake, the more weight your signal is given in the metamodel that determines the trading decisions for the hedge fund. In fact, from what we understand from the team, stake value is actually the _only_ thing that they use to determine how much weight to give to a user model in the metamodel ensemble. \(You'll often hear the longer term "stake-weighted metamodel" used, because that's how it is created.\)
 
 **So if I suffer a burn and lose some of my stake, where does that lost portion go?  Who gets it?**  
 _This is where it gets a bit weird._ Nobody gets it. It is just destroyed.
 
 **What do you mean it is just destroyed? What is this sorcery?**  
-I haven't yet discussed _what_ you are actually staking.  For staking on Numerai, we use a cryptocurrency token called Numeraire, or NMR.  This is an ERC-20 token on the Ethereum \(ETH\) blockchain. NMR powers a protocol called Erasure. The Erasure Protocol can be used to create smart contracts that enable such things as... surprise, the Numerai staking mechanism! _Numerai staking runs on the ETH blockchain using the Erasure Protocol powered by the token NMR._ Wow!
+I haven't yet discussed _what_ you are actually staking. For staking on Numerai, we use a cryptocurrency token called Numeraire, or NMR. This is an ERC-20 token on the Ethereum \(ETH\) blockchain. NMR powers a protocol called Erasure. The Erasure Protocol can be used to create smart contracts that enable such things as... surprise, the Numerai staking mechanism! _Numerai staking runs on the ETH blockchain using the Erasure Protocol powered by the token NMR._ Wow!
 
 {% hint style="info" %}
 I'm not going to attempt to explain the technical bits of smart contracts or Erasure or the NMR token.  I couldn't if I wanted to. However, there are some links at the bottom of this section to read more about the NMR token and Erasure.
@@ -250,7 +250,7 @@ NUMERAI ____________________  USERS
         (EARN/BURN INTERFACE)
 ```
 
-Numerai and the Users, and the relationships between them.  Data flows directly from Numerai to the Users, and predictions/signals flow directly back. But when it comes to staking and earning/burning, that relationship is indirect and runs through the interface of staking, governed by the smart contract running on the blockchain using NMR as currency.  So simple now.
+Numerai and the Users, and the relationships between them.  Data flows directly from Numerai to the Users, and predictions/signals flow directly back. But when it comes to staking and earning/burning, that relationship is indirect and runs through the interface of staking, governed by the smart contract running on the ETH blockchain using NMR as currency.  So simple now.
 
 **Got it?  Good.**
 
