@@ -4,7 +4,7 @@ description: A high-level overview of the basics for the confused and overwhelme
 
 # The Structure of Numerai
 
-_This page was last updated March 17, 2021_
+_This page was last updated March 26, 2021_
 
 This page is part of [_Understanding Numerai_ ](./)by **wigglemuse**.  
  
@@ -216,6 +216,9 @@ You can also get small amounts of NMR directly from Numerai. You might find a ti
 **The price of NMR itself can change.  Isn't that risk too?**  
 Yes, it definitely is.  The NMR token is traded in crypto markets, and is subject to the same ups and downs as Bitcoin, Ethereum, etc.  And this so-called "currency risk" could be quite significant as a big drop in NMR price might not have anything to do with Numerai specifically, but just crypto trends in general.  Of course the reverse is also true, and NMR has had a general upward trend for the last year or so as of this writing.  So when making decisions about how much risk you are willing to tolerate, currency risk must definitely be considered.  _Never risk more than you can afford to lose_, as they say.
 
+**I don't want to make models -- I just want to stake and generate earnings. Can I stake on other people's models?**  
+Not at this time, not officially anyway. However, this is a popular topic. While there is nothing preventing you and a user from making a private arrangement for you to provide staking/backing for one of their models, there is no mechanism provided by Numerai for this and there probably will not be for the foreseeable future. So any such arrangements would be private and the risk would be 100% yours between you and such a user. \(There are experiments and work going on in this area from users trying to figure out the best way to facilitate such arrangements. Check out RocketChat and the Forum about that.\)
+
 **But why this way instead of that way? Seems like they should do X, Y, & Z -- that'd be smarter and work better.**  
 In this document, I'm trying to stick to _the way things are_. Questions about why isn't it some other way are a bit too much into the weeds for now, but I will tackle some of those questions and concerns in the next \[upcoming\] pages.  \(But the short answer for most of those questions is usually "they tried that already".\)
 
@@ -256,7 +259,7 @@ Numerai and the Users, and the relationships between them.  Data flows directly 
 
 On the following pages \[coming soon!\], I'll cover more "how to do it" details and answer all your questions. 
 
-‌ _This page was last updated March 17, 2021 by **wigglemuse**_
+‌ _This page was last updated March 26, 2021 by **wigglemuse**_
 
 ## 
 
