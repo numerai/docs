@@ -4,7 +4,7 @@ description: Everything you ever wanted to know about Numerai
 
 # Understanding Numerai
 
-_This page was last updated March 17, 2021_
+_This section was last updated March 26, 2021_
 
 Welcome to _**Understanding Numerai**_ 
 
@@ -32,7 +32,7 @@ I take requests!  Right now there is not much content here, but once I fill it o
 
 _**A note on errors:** remember I am not part of the team, this is "unofficial" documentation, and I'm going to be editing it heavily and often for the time being. Therefore, while I certainly appreciate anybody pointing out errors or typos in this section, I have no ability to give out bounties for that._
 
-_This page was last updated March 17, 2021 by **wigglemuse**_
+_This section was last updated March 26, 2021 by **wigglemuse**_
 
 ## 
 
