@@ -1,42 +1,51 @@
-# Numerai Compute
+# Numerai CLI and Compute
 
-Numerai is currently working on significant updates to automation tools and data structures, so you can focus on data science rather than resources. A new version of Compute is coming soon to Numerai and Numerai Signals. Keep an eye on the [Announcements](https://community.numer.ai/channel/announcements) channel.
+Numerai CLI 0.3.0 is here! This update introduces breaking changes, so if you're already using Numerai CLI 0.1 or 0.2, please make sure you follow the upgrade guide below.
 
 ## Introduction
 
-Compute is a framework to help you automate your weekly submission workflow __with your own infrastructure.
+Numerai CLI \(Command Line Interface\) is a command line tool that helps you automate your weekly submission workflow by creating your own Numerai Compute Cluster and deploying Prediction Nodes to your cluster. The goal is to provision resources in the cloud for your Numerai models so they can automatically submit each week so you don't have to worry about getting burned by late submissions.
 
-Use the [numerai-cli](https://github.com/numerai/numerai-cli) to provision your infrastructure, and deploy your pre-trained model as a server that listens for new tournament data, runs your model and uploads the predictions back to Numerai.
+![Prediction Nodes in the Numerai Network ](../.gitbook/assets/architecture_prediction_network.png)
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LhIINlU0vnTY9ulNmAH%2F-LjcTM9mF7HKAM9kD3qm%2F-LjcTYRaegP4jfdnrWGL%2Fcompute_architecture.png?alt=media&token=da7df4e6-69c3-47bd-8daa-217494464077)
+Use the [numerai-cli](https://github.com/numerai/numerai-cli) to provision your own cloud infrastructure and deploy your pre-trained model as a Prediction Node that can be triggered by Numerai to download new tournament data, run your model, and upload predictions to Numerai.
 
-## Quick start
+## Getting Started
+
+You need 4 things to use Numerai CLI: Docker, Python3, Numerai API Keys, and AWS API Keys. If you want some help getting these, you can follow the documentation on the Github Repository:
+
+[https://github.com/numerai/numerai-cli](https://github.com/numerai/numerai-cli)
+
+If you have everything, you can get started right away:
 
 ```text
 pip3 install numerai-cli
 
-mkdir example-numerai
-cd example-numerai
-
-# set up your compute node in AWS
+# initialize the CLI with API keys and a config folder
 numerai setup
 
-# copy a python example model
-numerai docker copy-example
+# copy a python example and configure a Prediction Node 
+numerai node config --example tournament-python3
 
-# build the docker container and deploys it to AWS
-numerai docker deploy
+# build and deploy a docker container to AWS
+numerai node deploy
 
-# trigger your compute node in AWS
-numerai compute test-webhook
-
-# watch the logs of the running compute node from AWS
-numerai compute logs -f
+# trigger your compute node in AWS and monitor it
+numerai node tes
 ```
 
 ## Timing <a id="getting-started"></a>
 
-Once you've added your webhook url to your [account settings](https://numer.ai/account), Numerai will execute your webhook on Saturday at 19:00 UTC \(an hour after the round starts\). If we haven't successfully received your submission by Sunday 2:00 UTC, we will email you a warning that it looks like your compute job has failed. If it failed, we will try to trigger your compute webhook again on Sunday 19:00 UTC and if it fails again, we will send out a final email on Monday 2:00 UTC.
+The webhook url assigned to your Prediction Nodes are automatically registered with your Numerai Models. Numerai will execute those webhooks on Saturday at 19:00 UTC \(an hour after the round starts\). If we haven't successfully received submissions from your models by Sunday 2:00 UTC, we will email you a warning that it looks like your compute jobs have failed. If any failed, we will try to trigger those webhooks again on Sunday 19:00 UTC and if any fail again, we will send out a final email on Monday 2:00 UTC.
+
+## Upgrading
+
+The newest version of the CLI changes the configuration format that is not backwards compatible with 0.1 and 0.2 versions of the CLI. Upgrading to the new version is simple:
+
+```text
+pip3 install --upgrade numerai-cli --user
+numerai upgrade
+```
 
 ## Help <a id="getting-started"></a>
 

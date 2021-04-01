@@ -5,7 +5,7 @@
 ## Tournament
 
 * [Numerai Tournament Overview](tournament/learn.md)
-* [Numerai Compute](tournament/compute.md)
+* [Numerai CLI and Compute](tournament/compute.md)
 * [Tools, Libraries, Dashboards](tournament/tools.md)
 * [Meta Model Contribution](tournament/metamodel-contribution.md)
 * [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
