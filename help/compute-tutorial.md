@@ -4,7 +4,7 @@ description: This tutorial helps you update Compute to CLI version 0.3.0
 
 # Compute Tutorial
 
-[Watch the video on YouTube](https://youtu.be/-3y0N7fqfOI)
+[Watch the video on YouTube](https://youtu.be/-3y0N7fqfOI).
 
 IMPORTANT! After you’ve installed the latest version of numerai-cli, use the `--help` flag at any time if you aren’t sure what to do.
 
