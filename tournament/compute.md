@@ -49,7 +49,7 @@ numerai upgrade
 
 ## Help <a id="getting-started"></a>
 
-Follow our step by step [tutorial](https://docs.numer.ai/help/compute-tutorial) or watch the video on [YouTube](https://www.youtube.com/watch?v=YFgXMpQszpM).
+Follow our step by step [tutorial](https://docs.numer.ai/help/compute-tutorial) or watch the video on [YouTube](https://youtu.be/-3y0N7fqfOI) for help updating to 0.3.0.
 
 Ask for help in the [\#Compute RocketChat channel](https://community.numer.ai/channel/compute).
 
