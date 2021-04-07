@@ -1,110 +1,54 @@
+---
+description: This tutorial helps you update Compute to CLI version 0.3.0
+---
+
 # Compute Tutorial
 
-Compute is a way to automate your weekly submissions to the Numerai Tournament. Learn how to set it up in this tutorial.
+[Watch the video on YouTube](https://youtu.be/-3y0N7fqfOI)
 
-_Watch the tutorial video at_ [_YouTube_](https://youtu.be/YFgXMpQszpM)_._
+IMPORTANT! After you’ve installed the latest version of numerai-cli, use the ‘--help’ flag at any time if you aren’t sure what to do.
 
-![](https://lh6.googleusercontent.com/JT1YyvA-AYlAGqlIVd-7Vg2NhPuO8rU_hoNX8z1XigAf1PN2ieWIuaBeY_PubKm8kGtMFy09qN_I-pOdtYjK2C9Ab3PO9HvOx3eG_E7y9PCq-WZf7zjWNdy_2eHf4kH2R6A2kPCm)
+![](https://lh4.googleusercontent.com/Z2tOBeUHGNwCv7OCqhiPwEOBQPZxfgQu7vF5hGADFhpw6xKWOa4UaO8EKbCWKveJ4aRgcMHC8OLh-TJvf7qK8epgzAoR9gnNucFAtaUUgv5mWgUsYjsgty-lGj2hgNWklDZy3GwK)
 
-\(0:24\) Start at your AWS console home page.  
-You can access the IAM account control panel by either searching for it like so or by using the pull-down menu \(0:30\)
+**\[0:30\] Open your command prompt and type pip install --upgrade numerai-cli then hit ENTER**
 
-![](https://lh4.googleusercontent.com/KfbxMlBZWCpxBqCY6Cu1FTXIRhqU81W8efaHRvu8zjVezXGWpQW56g69z-zwBVPXf8kJZj7zA0y0WmKynGBJof_ZN65nuGBpYGLrrQJ9WbttRmpnCmm57Y77b0TgZrccc4VuJXMR)
+![](https://lh3.googleusercontent.com/HRyRFQO_wqSoepe037Qs7nFE0oCtqZdKx4t6sKKSab88pLBaUB1rp5890Ajmbd8F_H_4dkO17D_L9YOWFDtsIHzNj39hVXDVdSptsZpgFiPFuB8PLCuuDoL-ul44ZPfOtnsBNUPg)
 
-and clicking on the link.
+**\[1:09\] Review the available options for CPU cores and RAM by typing numerai list-constants then hit ENTER**
 
-![](https://lh5.googleusercontent.com/wZI-PSfGNdzSJuGXnOt2GKh3bOqKLvH8MoGcPxxZbfv6u-ysF71iyBjU95Za0P3adHPRWBhZevouhr9JoeOQO-zFX_c_YUlKYvc8Cn5h-uPPoFRVLJAkhbNlSvkYQOjaPwsFuKif)
+![](https://lh3.googleusercontent.com/OmyFE37_rGmPSyXfRUmkE8pmPrY7FbnRwqnLFDOoE6FEc8qMU0HpflRjuWVtPPg6jMuricsJpLmKAuB_qyWtTlklcYBrtmbiwuw6vVlmbscz8htV8hgAqpYdtieYGblJBV-ia_1s)
 
-\(0:36\)
+**\[2:00\] You must upgrade from within the directory of your previous compute installation. Some people used ‘example-numerai’ so you’ll need to direct your command prompt to that directory. In this case, my compute was installed in C:\Users\Jon\example-numerai so I type: cd C:\Users\Jon\example-numerai**
 
-Click users, then click add user. \(0:40\)
+![](https://lh3.googleusercontent.com/tYZ_5X_QRM4XWKpN1A533TjeeCykhv2ESlvLERXRvZ_J69jxk8j13sx5jP-SyFcXx7QyCNgsq7pdcfkeSGDenUQwRjI01kq-h1lcBlqMxdIShHI7MEbitcuf0A5ukSmfWFvTKEac)
 
-![](https://lh3.googleusercontent.com/HHrPPunj5VTQg9tBrVeT0sAzZ48j3M3cRV9sI-jd0W28wiGPVB74CS14nxmxTvWDXS4LF1hc3TX26afnF5yzpjOiWY9BTsqGw-Fy-vCuUmMgwyZXSLHImdepZ_IFujIazDYvVwcl)
+**\[2:27\] Next, type numerai upgrade and hit ENTER**
 
-Give your new user a name – mine will be numerai\_train. Under access type, click programmatic access, then click next. \(0:50\)
+![](https://lh6.googleusercontent.com/jefXvZopiVR5PxvRqrQpog3WbsyiQITlaJdDY2wdCE1VmuT-8ilmAIYZedOeWSbfDborilxs0w9hczIftRzhBgx4cfSD5a6S9SAQYMVVZhriAe-6SA60cbsWoOs-AicvBRfvKifK)
 
-![](https://lh6.googleusercontent.com/UQzDp2KWesCZhe9jb0idCiNI7yszgq3fyYWIldPI-EUx-IGqWW1QgwtU6j24usHJz94j7_7z05rjrGGV_urj1kgZfEXBmFfDMMTFKEtc91cZv1rBiuvvj7R0qJn3XJkXeIgfZ-XE)
+**\[3:08\] You’ll be asked if you want to continue. Type y and hit ENTER**
 
-Now click attach existing policies directly, and click the first box to grant administrator access. Click next. \(0:58\)
+![](https://lh4.googleusercontent.com/m871qIYIErv-3pwzGkqcCDHNawfsPiU2ABCpfYqs34x6E4DAtjDopacmoXjRwccFYXVWYe4i3Romb1lLspUeclzAFMn4BSO-NAbXGcXK-Y4en-bFif2afw_J8_uStvGlSBaI55jT)
 
-You don’t need to add tags, so click next again. One final click creates your new user. The new user has been created, and the page displays your public key and hides the secret key. I’m going to download the CSV so I can store my numerai API keys as well. \(1:08\)
+**\[7:27\] After reviewing the available options for numerai node config --help we proceed by telling numerai-cli what size preset to use for our node and the path to the folder containing our model. For this example, I type numerai node config -s mem-lg -p C:\Users\Jon\ex-nomi and hit ENTER**
 
-![](https://lh3.googleusercontent.com/GoNx8KnC6ytT467kMRPLqVKTHV-qHniUolbz3m1lVR3wh2KFN4redjSk7YJKM2jI4UmE_HSMg6VKLCgE_WD11L0VzSfk3TBI9gBdOf-ga6wbjf45yGJ9LMEIn1ym_7wSYylUEriM)
+**When prompted for the model name, be sure that you identify the correct model, as the webhook will be registered to that model name.**
 
-![](https://lh5.googleusercontent.com/6ihfmBIuTe-4BFEUzqwQeQa0v8sMkhrgepSJxQaBQErtNDjAYpjLgXAW2jfHh48xzxmxeae6n6EVeqvcMSePfwyp5LvlCchJkPRuKZfcviyfZ_ZEhXUQ1yAayvQn40UNux_ZcG6h)
+**Type your model name and hit ENTER. For this example, I typed twitch\_example\_nomi and hit ENTER**
 
-Next, open your numerai account settings page and click Add. \(1:31\)
+![](https://lh5.googleusercontent.com/suOSIpGR6_Gk9CIgrmRdQj0RWTgP89Y-gwjz6oI9TpSXEhMTqpm08C7LeOhGm48q_GOho8uFD3gTLHAI-M2P2QGNqPXd5PZPkuG9zi1eZe2fKzkDmTLSouNagcrO7RQpEPcWSIzw)
 
-![](https://lh5.googleusercontent.com/zqGTjBjlR_RvBXQlZXhYjVg1bWCHo7BGpqvhjzpZwtbgW2atUE-fIdGK7cP8xe7J2b8n48VOTQ9QSGWB3FBUIdxa7XhWLXcFWAxgFqlHMj2Ub-HFbL7AJPwRj35a78QtGCYvheKN)
+**\[8:48\] Following the success message, numerai-cli recommends to us that we deploy and test the node. Test locally first. Do so by typing numerai node test -l -v and hit ENTER**
 
-Name your key, and check “upload submissions”, “make stakes”, “view historical submission info” and “view user info”. Type in your password, then, click generate key. \(1:48\)
+![](https://lh3.googleusercontent.com/H1a0OCVFGzb2NvcIu-IFXs3P-VVB9C1f9YAcFH3XiVbsmBjNM3FWs_mjBECPsNCXwJVk-REOSRgTkWh3iZnjExsTFaa-YuTVOc52gmDD6pFUwbebqnrKTGL_oweeFWG0opzE3IpJ)
 
-![](https://lh3.googleusercontent.com/ociyl3axYtpsX4Om_2RkV3WjG5xL4UsB-zm7TcGu6S8Y8Ke-ZgFntY-CASfvm5QQ6XBjlsGx_CSYxplgDh7oe_uHJROz2UahQQZLtL7_0U1yhONIvSC84kYre3boOB7v-kwjrRSf)
+**\[12:00\] If your local test succeeds, then deploy your mode to AWS. Do so by typing numerai node deploy and hit ENTER. Type your model name and hit ENTER.**
 
-Copy the secret key which is displayed in the pop-up box in the bottom left corner. \(1:53\)
+![](https://lh4.googleusercontent.com/-7h0rRCAWppXwC7-cbM9msmJ5iQcmHAz7xUPhPRn0j1FpTPXJ88ffVVqz3zpeLx9jTLnciMynAiMvy1mtKP89MXjsmw_ZyuCtLFTM1CiF051RpRMyMFN5xnGrWf7DSEpgkOt9rWL)
 
-![](https://lh5.googleusercontent.com/mB9G0owNROjyM0dAU08YCG7qRyJSKVqTpI6HyDpWd4KMB5XG5Dm_v3MMy_mYI0aGVCIQznqYkSYv_3dK2YvRuWcueAy1MVoC80O_2pvCKyooL7KPNCYQVl8_B5N4dGpJlwwsfYcf)
+**\[12:50\] Once your mode is deployed, do one final test by triggering the webhook. Type numerai node test -v and hit ENTER then type your model name and hit ENTER.**
 
-You can save this key in the CSV you downloaded from AWS. Also gather the public key \(2:04\)
+If your final test was successful, then you are finished! Repeat the node config step for each additional node that you wish to deploy. Enjoy your weekends!  
+  
 
-_**Note: access and secret keys give control over your AWS and Numerai accounts. Keep them safe like you would usernames and passwords!**_
-
-![](https://lh3.googleusercontent.com/epoIhcwStnpCFXueAGOhZwKmM9-TqLJXCrtLY4cBAUaKSF5wWeh8y32MJGuEyMGUMfft0j5j43oeUHKK9dwUCCFDRa44I4k8Gd5igP49ewR-NEtLQ0DU3aQLGIfUz7k1UUIBMi_J)
-
-Save the public key in the CSV as well. Next, open your anaconda prompt and type `pip3 install numerai_cli`. \(2:23\)
-
-![](https://lh6.googleusercontent.com/zZHb0hph83WJ4ypaUBhmpDu1wHoNXCJKeuVmWswTrweUd2mFJc8zARD8Osis5RcJA3conQOS0kbLSUM-wmCB9hqDoif-lnjDtiwtFQCjrk1mm6QZgBeBtQgv9Y6Fig9l_x0hTP4H)
-
-Once installed, type `mkdir example-numerai`, then `cd example-numerai`, then `numerai setup`. \(2:42\)
-
-![](https://lh4.googleusercontent.com/7_w6V8l6sqcqjPc_XNf1pq3HJmEZwVmg68w4XqoM5i2hrmQXNG2gNXkxDg7aP-Q0vZia_jsaMg8Leg9TddHbq3V56JszLoz3ydGvtsGpuh5CZ92dEK8orM8xNh0efP4_kTt-crnX)
-
-Now, copy and paste the keys as directed by the command prompt. \(3:15\)
-
-![](https://lh4.googleusercontent.com/C0zbxWABUMpQwAsPtMb78XvyfnRa6c4bZT1F4hyvJkA8aFuBuR_hSQv7Pn_xZVMj52grXKaAVxvYeHhPE__NfNk-G7HynDlGuReAqoLDia-lqpSUxNgGC8yXV5YvCU1M8SudPyKS)
-
-You should see a bunch of print messages showing that you’ve successfully installed numerai-cli. \(3:41\)
-
-![](https://lh5.googleusercontent.com/L3DVgnjU_cxeU2Sv7WP-u6gYrPjlgCYuD9hzHlqovS9RdqjeOLISoZ_SyWwFFTj8DIfEcEaeb56CJjas0HE2VgUyZFUpa5kp-Olos6ssUdAxkp923NvITZWo4a6tFH0HsVFklkWK)
-
-Type `numerai docker copy-example`. This gives us all the necessary file names and example code which we can overwrite. \(3:56\)
-
-![](https://lh6.googleusercontent.com/4Z-cFieomwv8gV2d9BtBdltBGsU3Eel9QhYSk01E5h2kIFam5cebN-xAFHIxWw8yjxB6JEnMI45SLbgyPJtyNaxlwyVoCeS6riADOhNm8-Ab399ysh4syyjuvLPKxf-jOnOkUs-v)
-
-Now, I am going to run a very simple regression model using RidgeCV from scikit-learn. We’ll save this model using joblib. Type `numerai docker train`. Docker runs the train.py file, which downloads the data, fits the model, then saves the model using joblib. I’ll spare you the boredom of watching the data download and waiting for the model to train. As you can see, the joblib file has been saved in the example\_numerai folder along with the numerai dataset. \(4:28\)
-
-![](https://lh6.googleusercontent.com/MQayrwIgIVnj-D0JjNUuFDRl1De9GBxvOpwRn5tsz7lr6F7dYlnBgbG5H_xA9U9ZF0HY2AFJyS2YPaEsrLJ5pq7VWVTSkbyrJzSZIh-A5rzYrU3X2-rZ2N61sz4vhg9ebaWeOUt7)
-
-We want to make sure that the model works correctly before we deploy our docker image to AWS. Type `numerai docker run`. This will build the docker image and run predict.py on your machine. Once your model finishes generating predictions, numerox will then upload your predictions using the API keys you provided. \(4:51\)
-
-![](https://lh3.googleusercontent.com/OkYPLYPpsNtp-r15IlxfQOdrpSWuqFVJqwTRZQ8sJ8ZdZkFIiMGSiz6pl3iLIkfDcW4YTVh5QAo8UVnrHrN0FQ6RaXnYUH8mlrGLHFHwx4xbixxw6NyzvCn13xC5hLiaTMRwIbuT)
-
-Let’s gather the webhook address. Navigate to the .numerai folder in the example\_predictions folder. \(4:59\)
-
-![](https://lh3.googleusercontent.com/-qIvZJdaYN-MixvSEDTxFesieZK_cEq8exyzoi8Vh2HH3Ff9TM_wY7qTQ_PFRxeN9PD4kboBFSFr837S1Uwj55hFzCLUnkjmkAGU5CUVBZ_UFzxeTRxDsTtdaLdgtdkLFL_yyskP)
-
-Open submission\_url.txt and copy the address. \(5:03\)
-
-![](https://lh6.googleusercontent.com/-tDzCP5PvZuNDr2KLUswWdNm-SQGsIYFypCaqpkMLMjrV-HYGKal3jH5a75AZ7zBrBKYg5ih7MWCyOdpDWNfJlDpykxyO1pchg8RWUHOJTStos4-MSLRwjyuqim9yVyu29ogk4qC)
-
-Open your numerai account settings once again, click Compute, and paste this address in the field, and click change webhooks. \(5:15\)
-
-![](https://lh3.googleusercontent.com/FIJeEii3ArKQwjrhzkLKniCKSo_KIIYbrB0TFgOad6C6mGhyyY6XJ05jf45sqQ9_w1gqY1BCERnj6LCPx-KKscZDGdMXwpmtyhGCVavoYZzCN3QKs9wyKWgvhz47dyzbxNG_pZNu)
-
-As you can see, the last submission shows that our local test was successful. \(5:23\)
-
-![](https://lh4.googleusercontent.com/Kj7BZsN4ZiJ-3-FUaW9b17PZmAJam6xUJTxKjXzdx9Z3HReUKtdKUr6cghw7i9eV0h1XcEPjV4p5bOwPK6Ao6f-pyltBPs5IEjL0onYprWPyUuSL1NYVhYvcp9SuNAUN6TR6wnYS)
-
-Type `numerai docker deploy` and wait for your docker files to be pushed to AWS. \(5:48\)
-
-![](https://lh3.googleusercontent.com/BknJF6TzVUKr01EnAUA_eeAZQTjxI3UDhaBhyfA_i09DFcRHZrWwWRcjiUzkCXsdK3QuHHk-Qmq9poDBdVvZetql2wo4ecQYSqMH4c-TW-HOq4IOz4mOfscYjsfsvK0pu3jifWqB)
-
-Test the webhook by typing `numerai compute test-webhook`. You can get your logs by typing `numerai compute logs -f`.  
-
-
-When you see the message “Task is now in the DEPROVISIONING state, your code is finished. \(6:37\)
-
-![](https://lh6.googleusercontent.com/UMDqrC30nc0b8EhpEKK5WilfPFAIj1Jy2T-CJo2PTqtfnzL-inv5TYe6MvQ7lrdCqcvuPH910wRvsmQGl-ZVDHQJd6zPZoWfKLz1wTLY-vEIbyybeCGGg6bWhMGhutEplTwvt-Z8)
-
-_Congratulations, you are now free to enjoy your Saturdays!_
 
