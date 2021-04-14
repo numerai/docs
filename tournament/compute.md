@@ -31,7 +31,7 @@ numerai node config --example tournament-python3
 numerai node deploy
 
 # trigger your compute node in AWS and monitor it
-numerai node tes
+numerai node test
 ```
 
 ## Timing <a id="getting-started"></a>
