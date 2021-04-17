@@ -42,11 +42,11 @@ Type `your model name` and hit ENTER. For this example, I typed `twitch_example_
 
 ![](https://lh3.googleusercontent.com/H1a0OCVFGzb2NvcIu-IFXs3P-VVB9C1f9YAcFH3XiVbsmBjNM3FWs_mjBECPsNCXwJVk-REOSRgTkWh3iZnjExsTFaa-YuTVOc52gmDD6pFUwbebqnrKTGL_oweeFWG0opzE3IpJ)
 
-\[12:00\] If your local test succeeds, then deploy your mode to AWS. Do so by typing `numerai node deploy` and hit ENTER. Type `your model name` and hit ENTER.
+\[12:00\] If your local test succeeds, then deploy your node to AWS. Do so by typing `numerai node deploy` and hit ENTER. Type `your model name` and hit ENTER.
 
 ![](https://lh4.googleusercontent.com/-7h0rRCAWppXwC7-cbM9msmJ5iQcmHAz7xUPhPRn0j1FpTPXJ88ffVVqz3zpeLx9jTLnciMynAiMvy1mtKP89MXjsmw_ZyuCtLFTM1CiF051RpRMyMFN5xnGrWf7DSEpgkOt9rWL)
 
-\[12:50\] Once your mode is deployed, do one final test by triggering the webhook. Type `numerai node test -v` and hit ENTER then type `your model name` and hit ENTER.
+\[12:50\] Once your node is deployed, do one final test by triggering the webhook. Type `numerai node test -v` and hit ENTER then type `your model name` and hit ENTER.
 
 If your final test was successful, then you are finished! Repeat the node config step for each additional node that you wish to deploy. Enjoy your weekends!  
   
