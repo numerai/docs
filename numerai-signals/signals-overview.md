@@ -64,7 +64,7 @@ You can see the historical universe by downloading the [historical targets file]
 
 When you submit a signal to Numerai Signals, you must include at least two columns:
 
-* A `cusip`, `sedol`, or `bloomberg_ticker` column - values must be valid tickers associated with the ticker type in the header.     
+* A `cusip`, `sedol`, or `ticker` column - values must be valid tickers associated with the ticker type in the header.     
 * A `signal` column - values must be between 0 and 1 \(exclusive\).
 
 Additionally, for a submission to be valid:
@@ -81,7 +81,7 @@ Submissions that include the `validation` time period must include two extra col
 * A `friday_date` column - values must be Fridays as week periods begin on Friday in Numerai Signals.  
 * A `data_type` column - values can only be `live` or `validation`. Rows with `data_type` of `live` must contain the date of the most recent Friday. 
 
-![An example submission with bloomberg\_ticker](../.gitbook/assets/submission_screenshot.png)
+![An example submission with ticker](../.gitbook/assets/example.png)
 
 Download the latest example submission [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example_signal/latest.csv).
 
