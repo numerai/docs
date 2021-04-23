@@ -19,7 +19,7 @@ Numerai Signals is a part of the Numerai master plan to build the world's last h
 
 Stock market signals are feeds of numerical data about stocks used by quantitative hedge funds like Numerai to construct portfolios. 
 
-![An example stock market signal](../.gitbook/assets/group-42-2.png)
+![](../.gitbook/assets/group-42-2%20%281%29.png)
 
 Examples of stock market signals include:
 
