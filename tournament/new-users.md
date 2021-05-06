@@ -9,9 +9,9 @@ Want to start participating in the hardest data science competition in the world
 
 #### Walkthroughs and Tutorials
 
-Numerai notebook at [https://numer.ai/submit](https://numer.ai/submit)
+Numerai notebook at [https://numer.ai/notebook](https://numer.ai/notebook)
 
-{% embed url="https://numer.ai/submit" %}
+{% embed url="https://numer.ai/notebook" %}
 
 A comprehensive guide to competing in Numerai, including website feature overview, by [tit\_btcqash](https://twitter.com/tit_BTCQASH)
 
