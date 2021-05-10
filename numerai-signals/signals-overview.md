@@ -247,7 +247,7 @@ There are two types of dates in Numerai Signals
 
 Submissions, stakes, scores and payouts are grouped into numbered `rounds` to make them easier to talk about.
 
-A new `round` beings every `Saturday at 18:00 UTC`. The deadline for submissions and staking is at `Monday at 14:30 UTC`. Late submissions will not be scored and will not count for payouts. Stake changes made after the deadline will apply to the next round. 
+A new `round` begins every `Saturday at 18:00 UTC`. The deadline for submissions and staking is at `Monday at 14:30 UTC`. Late submissions will not be scored and will not count for payouts. Stake changes made after the deadline will apply to the next round. 
 
 On-time submissions will be scored and pending payouts will be calculated on Friday, Saturday, Tuesday and Wednesday. Stake values are locked by Friday during "stake selection", which means payouts from the previous round compound into your stake value for the next round. The score and payout on Wednesday is taken as the final score and payout for the round.
 
