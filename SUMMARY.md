@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Numerai Tournament Docs](README.md)
+* [Japanese/日本語](https://jp.docs.numer.ai/)
 
 ## Tournament
 
