@@ -8,7 +8,7 @@ This tutorial assumes that you already know how to obtain Ether and that you’v
 
 First, visit [Uniswap](https://uniswap.io) and familiarize yourself with the documentation. Uniswap is a protocol for automated exchange of ERC20 tokens. You use metamask to interact with a smart contract that executes your exchange.
 
-![](../.gitbook/assets/step1.JPG)
+![](../.gitbook/assets/step1%20%281%29.JPG)
 
 \(0:39\) Click Swap Tokens to get started.
 

@@ -72,14 +72,6 @@
   * [FAQ in Office Hours](community-content/numerai-community-office-hours/faq-in-office-hours.md)
   * [Cited resources](community-content/numerai-community-office-hours/cited-resources.md)
 
-## Numeraire
-
-* [Numeraire Index](numeraire/index.md)
-* [Tournament stake info](https://numer.ai/tournament)
-* [Supply information](https://numer.ai/nmr)
-* [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
-* [Contract](https://github.com/numerai/contract)
-
 ## Connect
 
 * [Connect Index](connect/index.md)
@@ -90,4 +82,12 @@
 * [Meetup](https://www.meetup.com/Numerai/)
 * [Telegram](https://t.me/NMR_Official)
 * [Forum](https://forum.numer.ai/)
+
+## Numeraire
+
+* [Numeraire Index](numeraire/index.md)
+* [Tournament stake info](https://numer.ai/tournament)
+* [Supply information](https://numer.ai/nmr)
+* [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
+* [Contract](https://github.com/numerai/contract)
 
