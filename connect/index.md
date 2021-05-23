@@ -20,7 +20,7 @@ If you are still unsure, reach out at `support@numer.ai`.
 * [LinkedIn](https://www.linkedin.com/company/numerai/)
 * [Meetup](https://www.meetup.com/Numerai/)
 * [Blockfolio](https://blockfolio.com/coin/NMR)
-* [Telegram](https://t.me/NMR_Official) - there is only one official Numerai Telegram channel
+* [Telegram](https://t.me/NMR_Official) - the only official Numerai Telegram channel
 
 For support, email us at [support@numer.ai](mailto:support@numer.ai)
 
