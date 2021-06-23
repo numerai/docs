@@ -190,7 +190,7 @@ I don't want to give the impression that it is likely that your entire stake wil
 {% endhint %}
 
 **Enough about burning.  What about earning?**  
-That's what everybody wants!  If you've listened to Numerai founder and head visionary Richard Craib in an interview, it is highly likely you've heard him use the phrase "aligned incentives".  That's what the  staking/reward mechanism does: gets all parties rowing the boat in the same direction. Let's look at the situation again.
+That's what everybody wants!  If you've listened to Numerai founder and head visionary Richard Craib in an interview, it is highly likely you've heard him use the phrase "aligned incentives".  That's what the staking/reward mechanism does: gets all parties rowing the boat in the same direction. Let's look at the situation again.
 
 * Numerai needs the hedge fund to thrive and profit in order to survive and attract more investors.
 * Numerai doesn't have in-house quants. We are their intelligence department.  Therefore, to survive and thrive, they need good predictions from us. 
