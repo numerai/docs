@@ -64,7 +64,7 @@ You can see the historical universe by downloading the [historical targets file]
 
 When you submit a signal to Numerai Signals, you must include at least two columns:
 
-* A `cusip`, `sedol`, or `ticker` column - values must be valid tickers associated with the ticker type in the header.     
+* A `cusip`, `sedol`, or `numerai_ticker` column - values must be valid tickers associated with the ticker type in the header.     
 * A `signal` column - values must be between 0 and 1 \(exclusive\).
 
 Additionally, for a submission to be valid:
