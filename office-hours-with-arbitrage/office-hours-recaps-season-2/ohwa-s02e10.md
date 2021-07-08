@@ -14,7 +14,7 @@ Check out Suraj's interview on YouTube:
 
 ### Questions from Slido
 
-**Which one is less wrong: `import torch stf` or `import tensorFlow as torch`?**
+**Which one is less wrong: `import torch as tf` or `import tensorflow as torch`?**
 
 Resident neural net wizard [JRB](https://numer.ai/jrb) said both are pretty much equally wrong, a more optimal method would be `import jax.numpy as np`. 
 
