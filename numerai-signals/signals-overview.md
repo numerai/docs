@@ -58,7 +58,11 @@ The universe is updated every week, but in general only a couple low volume stoc
 
 You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv).
 
-You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv). This file has data up to the third most recent Friday, due to Signals rounds resolving two Wednesdays \(11 days\) after they open. In the fourth week of the month, data from the first Friday of the month will be the date with the most recent available data.
+You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals_train_val_bbg.csv). This file has two target columns: `target_4d` and `target_20d`. You are only scored on the latter.
+
+Values for `target_4d` and `target_20d` become available after they have resolved, 11 and 33 days respectively from round open. `target_20d` takes longer to resolve, and so the most recent dates will have a value of `NaN` for `target_20d`, while `target_4d` will not.
+
+`target_20d` is what your Signal is evaluated against for scoring and payouts.
 
 ### Submissions
 
@@ -74,7 +78,7 @@ Additionally, for a submission to be valid:
 
 Submissions with only two columns are assumed to correspond to the current `live` time period.
 
-You may also to upload your signal over a historical `validation` time period to receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans `374` weeks from `20130104` to `20200228`.
+You may also to upload your signal over a historical `validation` time period to receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans from `20130104` to the present.
 
 Submissions that include the `validation` time period must include two extra columns:
 
@@ -127,7 +131,7 @@ Every signal uploaded to Numerai Signals is neutralized before being scored. The
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
 {% endhint %}
 
-The targets used to evaluate signals are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
+The targets used to evaluate signals \(`target_20d`\) are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
 
 The data that is used to perform neutralization is not provided, which means the process is a "blackbox". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future although it’s important to note that signals with strong scores over the historical period may not score well in any current or future round.
 
@@ -143,17 +147,17 @@ Signals with very high correlation with subsequent stock returns may score very 
 
 In other words, “good” signals with strong predictive value when considered alone may score poorly on Numerai Signals. This highlights the key unique aspect of Signals: Numerai Signals is not about predicting stock returns, it is about finding original signals that Numerai doesn't already have.
 
-### **Six Day Neutralized Return Targets**
+### **22 Day Neutralized Return Targets**
 
-Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 6 day neutralized subsequent returns \(ignoring the first 2 days\).
+Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 22 day neutralized subsequent returns \(ignoring the first 2 days\).
 
-The reason why signals are evaluated on a 6 day horizon \(minus the first 2 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
+The reason why signals are evaluated on a 22 day horizon \(minus the first 22 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
 
 For more information on the exact market days that make up the 6 days of subsequent neutralized returns, see the following section on dates and deadlines.
 
 ### Scoring
 
-Before scoring, signals are first ranked between \[0, 1\] and then neutralized. Finally the score is computed by taking the Spearman correlation between the neutralized signal and the target. This score is simply referred to as `corr` throughout this doc and the website.
+Before scoring, signals are first ranked between \[0, 1\] and then neutralized. Finally the score is computed by taking the Spearman correlation between the neutralized signal and the target \(`target_20d`\). This score is simply referred to as `corr` throughout this doc and the website.
 
 By neutralizing your signal before scoring, Numerai aligns it with the target which improves its performance against the target. Since the target is also neutralized, the neutralization step effectively optimizes your signal for best performance without Numerai having to give out the data used for neutralization.
 
@@ -249,13 +253,13 @@ Submissions, stakes, scores and payouts are grouped into numbered `rounds` to ma
 
 A new `round` begins every `Saturday at 18:00 UTC`. The deadline for submissions and staking is at `Monday at 14:30 UTC`. Late submissions will not be scored and will not count for payouts. Stake changes made after the deadline will apply to the next round.
 
-On-time submissions will be scored and pending payouts will be calculated on Friday, Saturday, Tuesday and Wednesday. Stake values are locked by Friday during "stake selection", which means payouts from the previous round compound into your stake value for the next round. The score and payout on Wednesday is taken as the final score and payout for the round.
+Each submission will be scored over the ~4 week duration of the round. Submissions will receive its first score starting on the Friday after the Monday deadline and final score on Thursday 4 weeks later for a total of 20 scores.
 
-![Effective dates for a round](../.gitbook/assets/signals_effective_dates.png)
+![Effective dates for a round](../.gitbook/assets/signals-calendar-3-.png)
 
-The universe of the `round` is defined by the `data_date` of the prior Friday. The 4 days of scoring and payouts are based on `3day-2day`, `4day-2day`, `5day-2day` and `6day-2day` neutralized returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `6day-2day` neutralized returns are up to Monday market close, but only become available on Wednesday.
+The universe of the `round` is defined by the `data_date` of the prior Friday. The 20 days of scoring and payouts are based on `3day-2day` through `22day-2day` neutralized returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `22day-2day` neutralized returns are up to Tuesday market close, but only become available on Thursday.
 
-![Data dates for a round](../.gitbook/assets/signals_data_dates%20%283%29.png)
+![Data dates for a round](../.gitbook/assets/signals-calendar-2-.png)
 
 ## Leaderboard
 

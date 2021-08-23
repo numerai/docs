@@ -1,7 +1,5 @@
 # Signals FAQ
 
-_\[under construction\]_
-
 #### FAQ from classic Numerai users starting Signals
 
 1. What is a Symbol? A stock symbol is an arrangement of characters—usually letters—representing publicly-traded securities on an exchange.
@@ -19,10 +17,11 @@ _\[under construction\]_
 
 #### General FAQ
 
-1. Where can I find stock price data and data in general? Check out [this discussion at the forum](https://forum.numer.ai/t/free-or-cheap-data-and-tools-for-numerai-signals/350/8) 
-2. How do I know if my IP is protected? Numerai does not view the source code that builds your predictions; Numerai only receives the predictions themselves. Reverse-engineering such a complex system is impossible. 
-3. Do I have to stake NMR in order to participate? You can submit your prediction file and receive performance without staking. Stake NMR on the live portion of your signal to earn or lose NMR based on your performance relative to Numerai's custom targets. 
-4.  Why should I submit a good trading system to you if I could just trade on my own? [Learn more in this Medium post](https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c). 
-5. Can you tell me if \[insert diagnostic output here\] is good enough? Since you do not need to stake Numeraire in order to participate, we recommend that you submit your predictions and find out over time. This is often called ‘paper trading’ and constant timely submissions will give you more feedback than any out-of-sample estimation could.  
-6. Do I need to know how to code in order to participate? While example models and exploratory notebooks are available to aid in idea development, new coders are encouraged to try Numerai Classic rather than Signals. Signals does require a high-level of coding / scripting knowledge to be successful.  
+1. Which target column should I use? `target_20d` is what your Signal is evaluated against for scoring and payouts 
+2. Where can I find stock price data and data in general? Check out [this discussion at the forum](https://forum.numer.ai/t/free-or-cheap-data-and-tools-for-numerai-signals/350/8) 
+3. How do I know if my IP is protected? Numerai does not view the source code that builds your predictions; Numerai only receives the predictions themselves. Reverse-engineering such a complex system is impossible. 
+4. Do I have to stake NMR in order to participate? You can submit your prediction file and receive performance without staking. Stake NMR on the live portion of your signal to earn or lose NMR based on your performance relative to Numerai's custom targets. 
+5.  Why should I submit a good trading system to you if I could just trade on my own? [Learn more in this Medium post](https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c). 
+6. Can you tell me if \[insert diagnostic output here\] is good enough? Since you do not need to stake Numeraire in order to participate, we recommend that you submit your predictions and find out over time. This is often called ‘paper trading’ and constant timely submissions will give you more feedback than any out-of-sample estimation could.  
+7. Do I need to know how to code in order to participate? While example models and exploratory notebooks are available to aid in idea development, new coders are encouraged to try Numerai Classic rather than Signals. Signals does require a high-level of coding / scripting knowledge to be successful.  
 
