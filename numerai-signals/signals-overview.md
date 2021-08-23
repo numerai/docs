@@ -147,11 +147,11 @@ Signals with very high correlation with subsequent stock returns may score very 
 
 In other words, “good” signals with strong predictive value when considered alone may score poorly on Numerai Signals. This highlights the key unique aspect of Signals: Numerai Signals is not about predicting stock returns, it is about finding original signals that Numerai doesn't already have.
 
-### **22 Day Neutralized Return Targets**
+### **20 Day Neutralized Return Targets**
 
-Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 22 day neutralized subsequent returns \(ignoring the first 2 days\).
+Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 22 day neutralized subsequent returns \(ignoring the first 2 days\), for a total of 20 days worth of returns.
 
-The reason why signals are evaluated on a 22 day horizon \(minus the first 2 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
+The reason why signals are evaluated on 20 days of returns is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
 
 For more information on the exact market days that make up the 6 days of subsequent neutralized returns, see the following section on dates and deadlines.
 
