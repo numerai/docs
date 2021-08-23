@@ -215,7 +215,7 @@ The `corr_multiplier` and `mmc_multiplier` are configured by you to control your
 
 | **corr multiplier options** | **mmc multiplier options** |
 | :--- | :--- |
-| 2.0x | 0.0x, 0.5x, 1.0x, 2.0x |
+| 2.0x | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
 
 {% hint style="info" %}
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
