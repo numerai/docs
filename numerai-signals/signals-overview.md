@@ -151,7 +151,7 @@ In other words, “good” signals with strong predictive value when considered 
 
 Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 22 day neutralized subsequent returns \(ignoring the first 2 days\).
 
-The reason why signals are evaluated on a 22 day horizon \(minus the first 22 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
+The reason why signals are evaluated on a 22 day horizon \(minus the first 2 days\) is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
 
 For more information on the exact market days that make up the 6 days of subsequent neutralized returns, see the following section on dates and deadlines.
 
