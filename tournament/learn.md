@@ -99,15 +99,15 @@ numerai docker deploy
 
 ## Diagnostics
 
-Upon each submission, we will show you diagnostic metrics to help you understand the performance and risk characteristics of your model over the historical validation eras. 
+Upload your validation predictions to the diagnostics tool to understand the performance and risk characteristics of your model over the historical validation eras. 
 
 {% hint style="warning" %}
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your model research process. 
 {% endhint %}
 
-Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/model-diagnostics-update/902).
+![](../.gitbook/assets/dignostics.gif)
 
-![](../.gitbook/assets/image%20%2871%29.png)
+Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/model-diagnostics-update/902).
 
 ## Scoring
 
