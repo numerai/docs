@@ -185,15 +185,15 @@ You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on yo
 
 Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
-{% hint style="danger" %}
-It is important to note that the opportunity to stake your signal **is not** an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users. Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.
-
-**Please read our** [**Terms of Service**](https://numer.ai/terms) **for further information.**
-{% endhint %}
-
 You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a ~4 week delay. You can also change your stake type, which determines which scores \(`corr` and/or `mmc`\) you want to stake on.
 
 ![](https://gblobscdn.gitbook.com/assets%2F-LmGruQ_-ZYj9XMQUd5x%2F-MTwWeGztnW6NaH6Sd_A%2F-MTxK8xvV36McXIClWAt%2Fimage.png?alt=media&token=aea91c60-7079-439b-bbd6-f64e9d8c26d7)
+
+{% hint style="info" %}
+It is important to note that the opportunity to stake your signal is not an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users. Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.
+
+**Please read our** [**Terms of Service**](https://numer.ai/terms) **for further information.**
+{% endhint %}
 
 ## Payouts
 
