@@ -9,7 +9,8 @@ Numerai was incorporated in October of 2015.
 - $1,5mil Seed: [April 2016](https://www.ft.com/content/b743fa8e-034a-11e6-af1d-c47326021344) led by Howard Morgan  
 - $6mil Series A: [November 2016](https://www.wired.com/2016/12/7500-faceless-coders-paid-bitcoin-built-hedge-funds-brain/)  led by Union Square Ventures  
 - $11mil non-equity funding: [March 2019](https://www.coindesk.com/numerai-token-sale-raises-11-million-from-vc-firms-paradigm-placeholder) co-led by Paradigm, Placeholder  
-- $3mil non-equity funding: [June 2020](https://www.theblockcrypto.com/post/67223/numerai-3-million-token-sale-staking-protocol) co-led by Union Square Ventures, Placeholder 
+- $3mil non-equity funding: [June 2020](https://www.theblockcrypto.com/post/67223/numerai-3-million-token-sale-staking-protocol) co-led by Union Square Ventures, [Placeholder](https://www.placeholder.vc/blog/2020/4/9/erasure)   
+- $5mil non-equity funding: [April 2021](https://twitter.com/joeykrug/status/1378114823582547969?s=20) led by Pantera Capital
 
 **When was Numeraire launched?**  
 Numeraire was announced in February of 2017 and launched in June of 2017.  
