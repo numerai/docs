@@ -1,18 +1,18 @@
 ---
-description: 'From April 23, 2020 / interview with Patrick @Numerai'
+description: From April 23, 2020 / interview with Patrick @Numerai
 ---
 
 # OHwA S01E08
 
 **Arbitrage:** Why don’t you start us out … I don’t think you’ve even introduced yourself in [the forum](https://forum.numer.ai) yet.
 
-**Patrick:** Well I actually built out the forum. I haven’t done a formal introduction, but I’ve been planning to do a response to Anson’s [Humans of Numerai](https://forum.numer.ai/t/the-humans-of-numerai/54), and I’m not going to give away what I’m planning to post there. But anyway, I joined Numerai earlier in the year \(I worked with Anson at Uber, actually\). A lot of the stuff I work on is backend infrastructure: I built up the forum, the whole single sign-on aspect, and what I’m working on right now is rolling out the multiple account support.
+**Patrick:** Well I actually built out the forum. I haven’t done a formal introduction, but I’ve been planning to do a response to Anson’s [Humans of Numerai](https://forum.numer.ai/t/the-humans-of-numerai/54), and I’m not going to give away what I’m planning to post there. But anyway, I joined Numerai earlier in the year (I worked with Anson at Uber, actually). A lot of the stuff I work on is backend infrastructure: I built up the forum, the whole single sign-on aspect, and what I’m working on right now is rolling out the multiple account support.
 
 That stuff has been happening under the covers for a while, and it’s kind of imminent- it’s going to be rolling out very soon. Some of our APIs, like [Omni Analytics](https://github.com/Omni-Analytics-Group/Rnumerai) and [UUA](https://github.com/uuazed/numerapi)’s already have API updates that are going to support the multiple account stuff. So things are happening, and if anyone has questions I’m happy to answer stuff like that.
 
 **Arbitrage:** Very cool! So you get to answer some questions because I keep this list, this handy list that I’ve been using for a couple of weeks now. So you’re the next victim.
 
-![He only checked it once to avoid overfitting](https://cdn-images-1.medium.com/max/1600/1*MUp55VUVVqYaH8sX2pSwiA.gif)
+![He only checked it once to avoid overfitting](https://cdn-images-1.medium.com/max/1600/1\*MUp55VUVVqYaH8sX2pSwiA.gif)
 
 **Arbitrage:** I’m going to guess that you heard about Numerai from Anson.
 
@@ -40,19 +40,19 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **Patrick:** Yeah it’s funny- I have a wife and two kids and we just got a puppy right before this. He’s having a good time with all of the attention. I don’t know what he’s going to do when we go back to work.
 
-**Arbitrage:** A puppy? Well I’m not sure I wouldn’t want to deal with a puppy 24/7 — I like being able to leave for a little while so somebody else can deal with it. So you’re an engineer at the team, that’s what you do for a living. What do you do when you’re not working?
+**Arbitrage:** A puppy? Well I’m not sure I wouldn’t want to deal with a puppy 24/7 — I like being able to leave for a little while so somebody else can deal with it. So you’re an engineer at the team, that’s what you do for a living. What do you do when you’re not working?
 
 **Patrick:** I was really into martial arts, primarily Aikido and some Brazilian Jiu Jitsu, but the whole COVID thing is really hampering on that. My dojo does Zooms but it’s really not the same. Other than that, I like to build stuff. A lot of woodworking, concrete, repairs around the house- things like that.
 
 **Arbitrage:** Gotcha. So what programming language do you use and why?
 
-**Patrick:** Right now, I do a lot of [Elixir](https://elixir-lang.org/). JavaScript is another popular one, and Python. Those are probably the three main languages I spend most of my time in.
+**Patrick:** Right now, I do a lot of [Elixir](https://elixir-lang.org). JavaScript is another popular one, and Python. Those are probably the three main languages I spend most of my time in.
 
 **Arbitrage:** Makes sense. Have you participated in the tournament yet at this point?
 
 **Patrick:** Not really. I have my own little [Integration Test](https://numer.ai/integration_test) that I use mostly for making sure all of the changes I’m making aren’t breaking things.
 
-![&#x201C;Thank you!&#x201D;&#x200A;&#x2014;&#x200A;Arbitrage to Patrick](https://cdn-images-1.medium.com/max/1600/1*tqbxpq-pvy67rXJ_z4wo6A.gif)
+![“Thank you!” — Arbitrage to Patrick](https://cdn-images-1.medium.com/max/1600/1\*tqbxpq-pvy67rXJ_z4wo6A.gif)
 
 **Patrick:** I don’t have any serious models that I’m working on or anything like that.
 
@@ -60,23 +60,23 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **Patrick:** My favorite team member at Numerai? I would say probably [NJ](https://twitter.com/tasha_jade).
 
-![Gauntlet = thrown](https://cdn-images-1.medium.com/max/1600/1*Um3PSMVA_9JO5brKgOsN6A.gif)
+![Gauntlet = thrown](https://cdn-images-1.medium.com/max/1600/1\*Um3PSMVA\_9JO5brKgOsN6A.gif)
 
 **Arbitrage:** There we go. The race is on.
 
 **Patrick:** She’s a boss.
 
-**Arbitrage:** Anson has a vote, NJ has a vote … Finally we have some people picking, so that’s good… Normally I would ask Patrick what your number one feature request or improvement for the tournament would be, but since you’re working on one, maybe you can just tell us a guesstimate on a release date for SAMM \[single account multiple models\]?
+**Arbitrage:** Anson has a vote, NJ has a vote … Finally we have some people picking, so that’s good… Normally I would ask Patrick what your number one feature request or improvement for the tournament would be, but since you’re working on one, maybe you can just tell us a guesstimate on a release date for SAMM \[single account multiple models]?
 
 **Patrick:** The plan is to have a really light beta roll out with a couple of select folk, and then open it up to the rest of the tournament user-base. This is imminent, it’s probably going to start next week.There’s a couple loose ends that I’m tying up. Expect a forum post from me soon talking about what happens to accounts, how they get absorbed, if you have any USD in your wallet you’ll have to drain that before you absorb it, how NMR gets transferred when you absorb accounts, and how the API keys change for models and stuff. So expect a forum post from me very soon, and I expect the beta period to be pretty short.
 
-**Arbitrage:** That’s great! Thanks for working on that — I’m pretty excited for it. Keno is saying show the puppy.
+**Arbitrage:** That’s great! Thanks for working on that — I’m pretty excited for it. Keno is saying show the puppy.
 
 **Patrick:** Hold on.
 
 **Arbitrage:** That’s right Keno, I’m watching the chat. And there were a ton of questions in Slido, too, so I’m pretty pumped for that. That’s my favorite segment of Office Hours: me trying to answer a question and then Richard telling me how it is. Or if I have no idea, I’ll just pawn it off to [Bor](https://numer.ai/bor1) or [Michael Oliver](https://numer.ai/mdo). The more people I interview, the more people I can pawn it off to, so that’s working out pretty well for me. But if you guys stop showing up, I’m in a heap of trouble. Oh well, I’ll figure it out. Here we go, I think it’s puppy time.
 
-![&#x201C;NJ is melting.&#x201D;&#x200A;&#x2014;&#x200A;Arbitrage](https://cdn-images-1.medium.com/max/1600/1*L_z81NO-alH1JN3ZoVUxFQ.gif)
+![“NJ is melting.” — Arbitrage](https://cdn-images-1.medium.com/max/1600/1\*L_z81NO-alH1JN3ZoVUxFQ.gif)
 
 **Patrick:** His name is Espresso.
 
@@ -84,15 +84,15 @@ We connected over the crypto stuff and when he decided to join Numerai, that’s
 
 **NJ:** Patrick, he’s going in the spare office when we’re back, just saying.
 
-**Arbitrage:** That’s awesome — thanks for sharing, Patrick. So there’s so many questions, I think I need to just hop in on this.
+**Arbitrage:** That’s awesome — thanks for sharing, Patrick. So there’s so many questions, I think I need to just hop in on this.
 
-#### Questions from Slido
+## Questions from Slido
 
 **From Keno: How would you neutralize a model, example XGBoost, against the meta model?**
 
 Arbitrage explained that the challenge here is not knowing what the meta model actually is. He joked that because his model is so close to the meta model, he could sell his weekly predictions to people to help them neutralize to the meta model.
 
-“I’m just kidding, but I really don’t have an answer for that because unless they give us some way to accurately neutralize against a set of predictions, we’re going to have to use proxies for the meta model.” Arbitrage said he could imagine a scenario where a data scientist wants to create the closest approximation to the meta model but without submitting it. Submitting the model wouldn’t work because, as it’s so closely correlated to the meta model \(by design\), the meta model contribution \(MMC\) score would be awful.
+“I’m just kidding, but I really don’t have an answer for that because unless they give us some way to accurately neutralize against a set of predictions, we’re going to have to use proxies for the meta model.” Arbitrage said he could imagine a scenario where a data scientist wants to create the closest approximation to the meta model but without submitting it. Submitting the model wouldn’t work because, as it’s so closely correlated to the meta model (by design), the meta model contribution (MMC) score would be awful.
 
 “The payoff for me,” he said, “for MMC or the regular tournament is about the same. I’m a little bummed about that, but I think overall it’s a tremendous boost to how this all works.” He went on to say that someone neutralizing against a model they’ve created which approximates the meta model could be useful, but he’s unsure how long something like that would take.
 
@@ -108,7 +108,7 @@ To clone the meta model, a data scientist would have to know the proportions of 
 
 **Madmin Drama: thoughts on the top model being engineered to cheat and not predict well, and the pragmatism of banning the top contributor to hedge fund performance?**
 
-![No, MadMIN drama.](https://cdn-images-1.medium.com/max/1600/1*BuSdxe0nk88nOLZDUEIH4Q.jpeg)
+![No, MadMIN drama.](https://cdn-images-1.medium.com/max/1600/1\*BuSdxe0nk88nOLZDUEIH4Q.jpeg)
 
 Arbitrage prefaced his answer by saying that he’s quit the Numerai tournament for months at a time in the past because he felt there was too much cheating going on. “When I play a sport, I try to follow the rules as they’re written, and I don’t try to invent ways to get around the rules.”
 
@@ -116,7 +116,7 @@ He looks at the situation with Madmin through the lens of whether or not that pe
 
 Arbitrage doesn’t like when users create models that don’t contribute to the hedge fund because ultimately, it hurts everyone, data scientists and Numerai alike.
 
-> “If Numerai’s model does well, they can attract AUM \[assets under management\]. If AUM increases, payouts will increase. If payouts increase, we’re more profitable. If we’re more profitable, then we’re happy. I want that positive feedback loop to have zero interference.”
+> “If Numerai’s model does well, they can attract AUM \[assets under management]. If AUM increases, payouts will increase. If payouts increase, we’re more profitable. If we’re more profitable, then we’re happy. I want that positive feedback loop to have zero interference.”
 
 A point of contention in this debate around what’s an acceptable submission is the idea that ‘[code is law](https://harvardmagazine.com/2000/01/code-is-law-html)’ which, basically, suggests that if something is possible within the constraints of a given piece of software, it is acceptable, and any unacceptable or ‘illegal’ behavior needs to be prevented in how the software is programmed.
 
@@ -126,7 +126,7 @@ _Author’s note: read about_ [_The DAO hack_](https://medium.com/@pullnews/unde
 
 If a model is actually good, backtests will prove it. “I’ve always wondered if the team would attribute backtests to an individual user.” If a test showed conclusively that a particular model appeared performant but was actually terrible, it would be possible to send that user a message, prodding them to take action.
 
-![](https://cdn-images-1.medium.com/max/1600/1*sZxPcJC2yDngFYE_ssZm2A.jpeg)
+![](https://cdn-images-1.medium.com/max/1600/1\*sZxPcJC2yDngFYE_ssZm2A.jpeg)
 
 He argued that in some scenarios, it would be okay for the Numerai team to let data scientists know the results of their backtests. That way, if a model performs uncharacteristically well, the data scientist will know it’s an outlier and not likely to last.
 
@@ -138,7 +138,7 @@ In a direct message, he told Bor that there are a lot of options so data scienti
 
 He tells them that if they want to trade, deposit an amount into their brokerage account that they’re willing to lose.
 
-> “Your first year of trading is your tuition. You’re probably going to lose all of it, but you’re going to learn a lot.” — Arbitrage
+> “Your first year of trading is your tuition. You’re probably going to lose all of it, but you’re going to learn a lot.” — Arbitrage
 
 Risk management is a very personal thing, and Arbitrage stressed that if you design a system, you need to stick to it. One simple but fictitious example he shared using an investment portfolio is to sell a stock if it gains 20%, no matter what, and if you lose more than 7% cut your losses and get out. He added the caveat that this is a very simple system for risk management and isn’t very robust, which probably wouldn’t be effective for someone trading in a highly volatile asset class.
 
@@ -152,7 +152,7 @@ Arbitrage believes it’s still too soon to compare staking on MMC to correlatio
 
 He’s in wait and see mode: “I’m going to wait and take a better look at it,” he said, adding “I would probably look at my MMC after a month, and if I had an indication that while all models are doing well, I’m also getting a high MMC, that would probably be your clue to look at burns: if everybody’s burning, how did your model do relative?”
 
-In the past, Arbitrage said data scientists would look at where they were positioned in the burn group \(whether they saw some of the worst burns or closer to the middle\) and used that as a way to gauge variance relative to other models. His advice: have patience because results take time and to pick a stake and stick with it for a while.
+In the past, Arbitrage said data scientists would look at where they were positioned in the burn group (whether they saw some of the worst burns or closer to the middle) and used that as a way to gauge variance relative to other models. His advice: have patience because results take time and to pick a stake and stick with it for a while.
 
 **What are the differences between the various Integration Test accounts?**
 
@@ -160,7 +160,7 @@ As Numerai engineer Jason explained to Arbitrage, the Integration Test accounts 
 
 **Arbitrage:** I don’t know if that’s still true. I don’t think Jason’s on… Jason? Jason?
 
-![Speak of the devil](https://cdn-images-1.medium.com/max/1600/1*RycGfEDwxG3IafTju1CCRw.gif)
+![Speak of the devil](https://cdn-images-1.medium.com/max/1600/1\*RycGfEDwxG3IafTju1CCRw.gif)
 
 **Jason**: Yeah, I’m here and yeah that is true, that’s exactly what that is.
 
@@ -172,7 +172,7 @@ _Author’s note: he did._
 
 **Can you create virtual eras to simulate a financial crash or economic boom or whatever? I’d like to know how my model fights against all odds.**
 
-> “If only we could create such a thing.” — Arbitrage, full of sorrow
+> “If only we could create such a thing.” — Arbitrage, full of sorrow
 
 Arbitrage explained that he didn’t think it would be possible to create a synthetic data set because outside of Numerai, no one knows what the target or feature columns represent. Simulations of different economic conditions would have to be created by Numerai. “But honestly, I don’t really care. I want my model to be good on average. It seems like we all did pretty well during the recent selloff, and like we all recovered well, so it seems that on average we’re doing pretty good.”
 
@@ -180,7 +180,7 @@ He added that if you’d like Numerai to create something like this, suggesting 
 
 **Would you recommend using the data from previous rounds for training and validation?**
 
-Arbitrage pointed out that there is no data from previous rounds. The training data doesn’t change, and the validation data doesn’t change \([although more data was recently added](https://forum.numer.ai/t/validation-2-announcement/166)\). And while many people request having old tournament data converted into training data, “it would just cause us to overfit.”
+Arbitrage pointed out that there is no data from previous rounds. The training data doesn’t change, and the validation data doesn’t change ([although more data was recently added](https://forum.numer.ai/t/validation-2-announcement/166)). And while many people request having old tournament data converted into training data, “it would just cause us to overfit.”
 
 He added that he doesn’t want more data, finding what is currently offered to be sufficient as long as it remains indicative of the market. He also recommends against using older tournament data as training data because anything you add will change your model, and [stationarity is important](https://forum.numer.ai/t/performance-stationarity/151/2).
 
@@ -196,7 +196,7 @@ He added that he doesn’t want more data, finding what is currently offered to 
 
 **Arbitrage:** I would guess that it would follow the distribution of returns for equities. It would make sense that it would. If you’re trading on equities, I’d imagine that your return series is going to be similar. But, I’ll let your non-answer stand.
 
-**Richard:** \[The data scientists\] are not buying particular equities ever, you’re submitting predictions on the entire market, so it’s very much normal because of all of the different predictions.
+**Richard:** \[The data scientists] are not buying particular equities ever, you’re submitting predictions on the entire market, so it’s very much normal because of all of the different predictions.
 
 **Do we know if the new MMC 2 will basically work the same as the current reputation bonus if MMC 2 bonuses are based on stake 100 days ago?**
 
@@ -210,7 +210,7 @@ For [MMC 2](https://forum.numer.ai/t/mmc2-announcement/93/2), there is no bonus,
 
 **Arbitrage:** I’m a little jealous because I don’t have very high MMC which is that stability I like.
 
-![Pictured: Arbitrage](https://cdn-images-1.medium.com/max/1600/1*dhGPhL3IvraJX7_bRWZgCw.jpeg)
+![Pictured: Arbitrage](https://cdn-images-1.medium.com/max/1600/1\*dhGPhL3IvraJX7\_bRWZgCw.jpeg)
 
 **Arbitrage:** I think without the bonus is fine, especially with the 2x multiplier on performance. I think that’s a big incentive. I’ll be interested to see, without the rolling bonus approach, how the users will respond. Will we have MMC chasers?
 
@@ -240,13 +240,13 @@ This will never happen because it’s too close to gambling to be within regulat
 
 Arbitrage pointed out that tree models take into account interactions and are also performant in the tournament, so feature interactions matter. “Would I want to create my own? I’ve tried that before, very early in the tournament, and it never worked out. But this was three years ago, I haven’t done it since.”
 
-He thinks interactions make sense, but is unsure that, with the way the tournament data is constructed currently, it’s conducive to create your own features \(because tree models and neural nets do it on their own\).
+He thinks interactions make sense, but is unsure that, with the way the tournament data is constructed currently, it’s conducive to create your own features (because tree models and neural nets do it on their own).
 
 **Should you Z score the features by eras before interaction? Could you use a neural net to find which new features to use?**
 
 Arbitrage passed the mic to Bor for his insight after building a complex genetic algorithm for the tournament.
 
-Bor runs his model once to generate a series of solutions and excludes the features that have the highest correlation. He repeats this several times then takes the average of all of those models \(similar to what tree models and neural nets do themselves\).
+Bor runs his model once to generate a series of solutions and excludes the features that have the highest correlation. He repeats this several times then takes the average of all of those models (similar to what tree models and neural nets do themselves).
 
 Ultimately, Arbitrage and Bor agree that some feature engineering makes sense, with Bor adding that his manual process is similar to what neural networks would be doing.
 
@@ -260,13 +260,13 @@ Richard added that they wouldn’t be giving data scientists backtests over the 
 
 **Do Richard and Slyfox have their own models in the tournament? If so, what are their names?**
 
-**Richard:** I don’t, I never really have put one in. It’s maybe because I’m lazy, and I actually do want to get some in. Maybe convince Anson to do it, make sure they’re all hooked up to [Compute](https://docs.numer.ai/tournament/compute), or just run automatically. But there is actually a model that’s one of ours \(which I was going to mention in the [era boosting post I wrote](https://forum.numer.ai/t/era-boosted-models/189)\). This model, [Sugaku](https://numer.ai/sugaku), is a Numerai employee’s model that uses some of the era boosting ideas. It’s not only \[era boosting\] so I didn’t want to bring it up as an example of that, but it does use some of the ideas and it’s had a very consistent score.
+**Richard:** I don’t, I never really have put one in. It’s maybe because I’m lazy, and I actually do want to get some in. Maybe convince Anson to do it, make sure they’re all hooked up to [Compute](https://docs.numer.ai/tournament/compute), or just run automatically. But there is actually a model that’s one of ours (which I was going to mention in the [era boosting post I wrote](https://forum.numer.ai/t/era-boosted-models/189)). This model, [Sugaku](https://numer.ai/sugaku), is a Numerai employee’s model that uses some of the era boosting ideas. It’s not only \[era boosting] so I didn’t want to bring it up as an example of that, but it does use some of the ideas and it’s had a very consistent score.
 
 **Arbitrage:** I’ll tell you that you might like your Sugaku, but my student’s ranked higher at 68 to your 73.
 
 **Joakim:** Sugaku means ‘smart’ in Japanese, by the way.
 
-**Arbitrage:** That’s cool — did not know that.
+**Arbitrage:** That’s cool — did not know that.
 
 **Does it make sense to optimize some of your models for correlation and others for MMC or is correlation something we should forget already?**
 
@@ -283,4 +283,3 @@ If you’re passionate about finance, machine learning, or data science and you�
 Don’t miss the next Office Hours with Arbitrage : follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on [Rocket.Chat](https://community.numer.ai/home) for the next time and date. And remember to stick around until the end for the exclusive conversation that doesn’t make it to publication.
 
 _Thank you to_ [_Richard_](https://twitter.com/richardcraib?lang=en)_, Jason, and_ [_Michael Oliver_](https://numer.ai/mdo) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_Patrick_](https://twitter.com/pschork) _for stepping up to be interviewed at the last minute._
-

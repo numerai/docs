@@ -1,14 +1,18 @@
 ---
-description: The official rules and getting started guide to the Numerai Signals Tournament
+description: This section will help you in getting started with the Numerai Signals.
 ---
 
 # Numerai Signals Overview
 
-[Numerai Signals](https://signals.numer.ai) lets you upload stock market signals and find out how original they are compared to all other signals on Numerai. Signals can be staked with the NMR cryptocurrency to earn rewards. The best most original signals are used in Numerai's hedge fund.
+[Numerai Signals](https://signals.numer.ai) lets you upload stock market signals and find out how original they are compared to all other signals on Numerai. Signals can be staked with the NMR to earn rewards. The best most original signals are used in Numerai's hedge fund. Numerai Signals is a part of the Numerai master plan to build the world's last hedge fund. 
 
-Numerai Signals is a part of the Numerai master plan to build the world's last hedge fund. Read the [Medium Post](https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c) and watch [the short film](https://youtu.be/GWeC2PK4yXQ) to learn more about how it all fits together.
+{% embed url="https://www.youtube.com/watch?v=GWeC2PK4yXQ" %}
 
-## Summary
+{% embed url="https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c" %}
+Introducing Numerai Signals
+{% endembed %}
+
+## Getting Started
 
 1. Sign up to [Numerai Signals](https://signals.numer.ai) or sign in with your existing Numerai tournament account.
 2. Upload your signal on Numerai's stock universe to receive performance, risk, and profitability diagnostics over the historical portion of your signal.
@@ -19,16 +23,16 @@ Numerai Signals is a part of the Numerai master plan to build the world's last h
 
 Stock market signals are feeds of numerical data about stocks used by quantitative hedge funds like Numerai to construct portfolios.
 
-![An example stock market signal](../.gitbook/assets/group-42-2%20%281%29.png)
+![An example stock market signal](<../.gitbook/assets/group-42-2 (1).png>)
 
 Examples of stock market signals include:
 
-* [Fundamental signals](https://www.investopedia.com/terms/f/fundamentalanalysis.asp)  \([P/E ratio](https://www.investopedia.com/terms/p/price-earningsratio.asp), [dividend yield](https://www.investopedia.com/terms/d/dividendyield.asp), [analyst ratings](https://www.investopedia.com/terms/r/rating.asp#:~:text=A%20rating%20is%20conducted%20by,this%20action%20for%20the%20stock.)\)
-* [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) \([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp)\)
-* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative_data_%28finance%29) \([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime)\)
-* [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) \([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp#:~:text=The%20Barra%20Risk%20Factor%20Analysis%20is%20a%20multi%2Dfactor%20model,turnover%20and%20senior%20debt%20rating.), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp)\)
+* [Fundamental signals](https://www.investopedia.com/terms/f/fundamentalanalysis.asp)  ([P/E ratio](https://www.investopedia.com/terms/p/price-earningsratio.asp), [dividend yield](https://www.investopedia.com/terms/d/dividendyield.asp), [analyst ratings](https://www.investopedia.com/terms/r/rating.asp#:\~:text=A%20rating%20is%20conducted%20by,this%20action%20for%20the%20stock.))
+* [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) ([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp))
+* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative_data_\(finance\)) ([credit card transactions](https://secondmeasure.com), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
+* [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp#:\~:text=The%20Barra%20Risk%20Factor%20Analysis%20is%20a%20multi%2Dfactor%20model,turnover%20and%20senior%20debt%20rating.), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
 
-While the underlying data used to generate these signals can be very different \(audited financials vs images of parking lots\), the signals themselves all come in the same basic format - a list of stock tickers each with an associated numerical value.
+While the underlying data used to generate these signals can be very different (audited financials vs images of parking lots), the signals themselves all come in the same basic format - a list of stock tickers each with an associated numerical value.
 
 ## Signal Creation
 
@@ -37,12 +41,12 @@ While the underlying data used to generate these signals can be very different \
 To create your own signal, you will first need to acquire some stock market data.
 
 {% hint style="info" %}
-Data scientist with no stock market data? Participate in the [Numerai Tournament](https://numer.ai/) instead.
+Data scientist with no stock market data? Participate in the [Numerai Tournament](https://numer.ai) instead.
 {% endhint %}
 
-If you do not already have access to stock market data, there are a number of free or cheap data providers on the internet such as [Yahoo Finance](https://finance.yahoo.com/), [Quandl](https://www.quandl.com/), and [Koyfin](https://www.koyfin.com/).
+If you do not already have access to stock market data, there are a number of free or cheap data providers on the internet such as [Yahoo Finance](https://finance.yahoo.com), [Quandl](https://www.quandl.com), and [Koyfin](https://www.koyfin.com).
 
-There are also platforms that make it easy to create signals such as [QuantConnect](https://www.quantconnect.com/), and [Alpaca](https://alpaca.markets/).
+There are also platforms that make it easy to create signals such as [QuantConnect](https://www.quantconnect.com), and [Alpaca](https://alpaca.markets).
 
 Check out this [forum thread](https://forum.numer.ai/t/free-or-cheap-data-for-erasure-numerai-quant/350) for a list of sources popular data sources, platforms, and tools used by our community.
 
@@ -69,7 +73,7 @@ Values for `target_4d` and `target_20d` become available after they have resolve
 When you submit a signal to Numerai Signals, you must include at least two columns:
 
 * A `cusip`, `sedol`, or `numerai_ticker` column - values must be valid tickers associated with the ticker type in the header.     
-* A `signal` column - values must be between 0 and 1 \(exclusive\).
+* A `signal` column - values must be between 0 and 1 (exclusive).
 
 Additionally, for a submission to be valid:
 
@@ -109,15 +113,13 @@ All of the historical targets used to calculate diagnostics is available [here](
 You must submit your latest signal to Numerai every week
 {% endhint %}
 
-You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either our [GraphQL API](https://api-tournament.numer.ai/) or the official python client.
-
-{% embed url="https://github.com/uuazed/numerapi\#usage-example---numerai-signals" caption="" %}
+You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either our [GraphQL API](https://api-tournament.numer.ai) or the [Python API](https://github.com/uuazed/numerapi#usage-example---numerai-signals).
 
 ## Signal Evaluation
 
 ### Neutralization
 
-Numerai has a variety of existing signals. Our existing signals include Barra factors \(like size, value, momentum, etc\) country and sector risk factors, and custom stock features.
+Numerai has a variety of existing signals. Our existing signals include Barra factors (like size, value, momentum, etc) country and sector risk factors, and custom stock features.
 
 {% hint style="info" %}
 **Definition**: A signal or target is considered "neutralized" after Numerai transforms it to have zero correlation with any of Numerai's existing signals such as Barra factors, country, sector factors and other custom stock features.
@@ -125,23 +127,23 @@ Numerai has a variety of existing signals. Our existing signals include Barra fa
 
 Every signal uploaded to Numerai Signals is neutralized before being scored. The point of the neutralization is to isolate the original or orthogonal component of the signal that is not already present in known signals.
 
-![A visualization of neutralization against a single known signal](../.gitbook/assets/image%20%2853%29.png)
+![A visualization of neutralization against a single known signal](<../.gitbook/assets/image (53).png>)
 
 {% hint style="info" %}
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
 {% endhint %}
 
-The targets used to evaluate signals \(`target_20d`\) are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
+The targets used to evaluate signals (`target_20d`) are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
 
 The data that is used to perform neutralization is not provided, which means the process is a "blackbox". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future although it’s important to note that signals with strong scores over the historical period may not score well in any current or future round.
 
 The code that is used to implement neutralization is open source. You can learn more about the neutralization process in this example notebook:
 
-{% embed url="https://github.com/numerai/example-scripts/blob/master/SignalsScoringExample.ipynb" caption="" %}
+{% embed url="https://github.com/numerai/example-scripts/blob/master/SignalsScoringExample.ipynb" %}
 
 Or check out this forum post to understand broader implications of feature exposure and neutralization.
 
-{% embed url="https://forum.numer.ai/t/model-diagnostics-feature-exposure/899" caption="" %}
+{% embed url="https://forum.numer.ai/t/model-diagnostics-feature-exposure/899" %}
 
 Signals with very high correlation with subsequent stock returns may score very badly on Numerai Signals and signals with weak correlation with subsequent returns might score well.
 
@@ -149,7 +151,7 @@ In other words, “good” signals with strong predictive value when considered 
 
 ### **20 Day Neutralized Return Targets**
 
-Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 22 day neutralized subsequent returns \(ignoring the first 2 days\), for a total of 20 days worth of returns.
+Signals are evaluated against a custom blackbox target created by Numerai. This target is based on 22 day neutralized subsequent returns (ignoring the first 2 days), for a total of 20 days worth of returns.
 
 The reason why signals are evaluated on 20 days of returns is because signals that only work on short time horizons are impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
 
@@ -157,19 +159,19 @@ For more information on the exact market days that make up the 6 days of subsequ
 
 ### Scoring
 
-Before scoring, signals are first ranked between \[0, 1\] and then neutralized. Finally the score is computed by taking the Spearman correlation between the neutralized signal and the target \(`target_20d`\). This score is simply referred to as `corr` throughout this doc and the website.
+Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the Spearman correlation between the neutralized signal and the target (`target_20d`). This score is simply referred to as `corr` throughout this doc and the website.
 
 By neutralizing your signal before scoring, Numerai aligns it with the target which improves its performance against the target. Since the target is also neutralized, the neutralization step effectively optimizes your signal for best performance without Numerai having to give out the data used for neutralization.
 
 For example, if your signal is not neutralized to country risks, Numerai Signals will neutralize your signal against country risks before scoring so you can focus on creating an original signal without having to worry about country risk neutralization.
 
-If you only have signals on a subset of the universe \(eg only signals on US stocks\), you can still submit to Signals and still perform well. For each stock in the universe where you have missing signals, Numerai will automatically fill those in with the median value after the signal is ranked.
+If you only have signals on a subset of the universe (eg only signals on US stocks), you can still submit to Signals and still perform well. For each stock in the universe where you have missing signals, Numerai will automatically fill those in with the median value after the signal is ranked.
 
 ### Meta Model Contribution
 
-If `corr` is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai, Meta Model Contribution \(MMC\) is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai _and all other staked signals on Numerai Signals._ This score is simply referred to as `mmc` throughout this doc and the website.
+If `corr` is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai, Meta Model Contribution (MMC) is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai _and all other staked signals on Numerai Signals._ This score is simply referred to as `mmc` throughout this doc and the website.
 
-The `mmc` of a signal is computed by first constructing a special signal called the Signals' Meta Model, which is defined as the stake weighted average of all the \(ranked and neutralized\) signals on Numerai Signals for a given round. The `mmc` of a signal is the correlation of the signal to the target after being neutralized to the Signals' Meta Model.
+The `mmc` of a signal is computed by first constructing a special signal called the Signals' Meta Model, which is defined as the stake weighted average of all the (ranked and neutralized) signals on Numerai Signals for a given round. The `mmc` of a signal is the correlation of the signal to the target after being neutralized to the Signals' Meta Model.
 
 {% hint style="success" %}
 High and consistent MMC on Signals is doubly impressive because it means your signal has an edge over all of Numerai's data and the combination of all other signals on Numerai Signals as well.
@@ -179,15 +181,15 @@ MMC is a concept that is taken from the main Numerai Tournament and the scoring 
 
 Note the computation of Numerai Signals' MMC is completely separate from that of the Numerai Tournament. Specifically, only submissions to Numerai Signals are used to construct the Signals' Meta Model.
 
-## Staking <a id="staking"></a>
+## Staking <a href="staking" id="staking"></a>
 
 You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `mmc` scores.
 
 Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
-You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a ~4 week delay. You can also change your stake type, which determines which scores \(`corr` and/or `mmc`\) you want to stake on.
+You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores (`corr` and/or `mmc`) you want to stake on.
 
-![](https://gblobscdn.gitbook.com/assets%2F-LmGruQ_-ZYj9XMQUd5x%2F-MTwWeGztnW6NaH6Sd_A%2F-MTxK8xvV36McXIClWAt%2Fimage.png?alt=media&token=aea91c60-7079-439b-bbd6-f64e9d8c26d7)
+![](https://gblobscdn.gitbook.com/assets%2F-LmGruQ\_-ZYj9XMQUd5x%2F-MTwWeGztnW6NaH6Sd_A%2F-MTxK8xvV36McXIClWAt%2Fimage.png?alt=media\&token=aea91c60-7079-439b-bbd6-f64e9d8c26d7)
 
 {% hint style="info" %}
 It is important to note that the opportunity to stake your signal is not an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users. Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.
@@ -205,17 +207,17 @@ Payouts are a function of your stake value and scores. The higher your stake val
 payout = stake_value * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
 ```
 
-The `stake_value` is the value of your stake on the first Friday \(scoring day\) of the round.
+The `stake_value` is the value of your stake on the first Friday (scoring day) of the round.
 
 The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 100K threshold the lower the payout factor.
 
-![](../.gitbook/assets/image%20%2892%29.png)
+![](<../.gitbook/assets/image (92).png>)
 
 The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
-| **corr multiplier options** | **mmc multiplier options** |
-| :--- | :--- |
-| 2.0x | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
+| **corr multiplier options** | **mmc multiplier options**   |
+| --------------------------- | ---------------------------- |
+| 2.0x                        | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
 
 {% hint style="info" %}
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
@@ -223,20 +225,20 @@ The payout factor curve and available multiplier options may and will be updated
 
 Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the payout is capped at ±25% of the stake value.
 
-| stake value | payout factor | corr | corr multiplier | mmc | mmc multiplier | payout |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 100 NMR | 0.8 | 0.02 | 2.0x | 0.002 | 2.0x | 3.52 NMR |
-| 100 NMR | 0.8 | 0.02 | 2.0x | 0.002 | 0.0x | 3.2 NMR |
-| 100 NMR | 0.8 | -0.03 | 2.0x | 0.002 | 0.5x | -4.8 NMR |
-| 100 NMR | 0.8 | 0.15 | 2.0x | 0.07 | 2.0 | 25 NMR |
+| stake value | payout factor | corr  | corr multiplier | mmc   | mmc multiplier | payout   |
+| ----------- | ------------- | ----- | --------------- | ----- | -------------- | -------- |
+| 100 NMR     | 0.8           | 0.02  | 2.0x            | 0.002 | 2.0x           | 3.52 NMR |
+| 100 NMR     | 0.8           | 0.02  | 2.0x            | 0.002 | 0.0x           | 3.2 NMR  |
+| 100 NMR     | 0.8           | -0.03 | 2.0x            | 0.002 | 0.5x           | -4.8 NMR |
+| 100 NMR     | 0.8           | 0.15  | 2.0x            | 0.07  | 2.0            | 25 NMR   |
 
 ### Stake growth
 
-With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. Final payouts are paid into your stake at the end of the round \(Wednesday\).
+With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. Final payouts are paid into your stake at the end of the round (Wednesday).
 
 Your stake value will grow as long as you continue to have positive scores. Here are some example payout projections assuming that the model gets the same positive scores every week for 52 weeks.
 
-![](../.gitbook/assets/image%20%2891%29.png)
+![](<../.gitbook/assets/image (91).png>)
 
 ## Dates and Deadlines
 
@@ -253,7 +255,7 @@ Submissions, stakes, scores and payouts are grouped into numbered `rounds` to ma
 
 A new `round` begins every `Saturday at 18:00 UTC`. The deadline for submissions and staking is at `Monday at 14:30 UTC`. Late submissions will not be scored and will not count for payouts. Stake changes made after the deadline will apply to the next round.
 
-Each submission will be scored over the ~4 week duration of the round. Submissions will receive its first score starting on the Friday after the Monday deadline and final score on Thursday 4 weeks later for a total of 20 scores.
+Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the Friday after the Monday deadline and final score on Thursday 4 weeks later for a total of 20 scores.
 
 ![Effective dates for a round](../.gitbook/assets/signals-calendar-3-.png)
 
@@ -267,11 +269,4 @@ The leaderboard can be sorted by the reputation of model's `corr`, `mmc`. [Reput
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![](../.gitbook/assets/image%20%2893%29.png)
-
-## Support
-
-We are here to help.
-
-Find us on [RocketChat](https://community.numer.ai) for questions, support, and feedback!
-
+![](<../.gitbook/assets/image (93).png>)

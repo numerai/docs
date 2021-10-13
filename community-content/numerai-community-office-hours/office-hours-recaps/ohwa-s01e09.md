@@ -1,5 +1,5 @@
 ---
-description: 'From April 30, 2020'
+description: From April 30, 2020
 ---
 
 # OHwA S01E09
@@ -8,7 +8,7 @@ description: 'From April 30, 2020'
 
 Arbitrage recalled that community member Jrai answered this question on [Rocket.Chat](http://community.numer.ai) before asking the audience: “has anyone figured out how to align the reported stake value with what’s actually going on? I haven’t either. I know the team was working on that this week, so I assume that’s what was going on.” He did notice that _something_ was updated in the submissions tab, possibly the hover text over the chart.
 
-![Submissions tab, now featuring more detailed hover text](https://cdn-images-1.medium.com/max/1600/1*YceMk5lpTMhd5JQKQHY00w.png)
+![Submissions tab, now featuring more detailed hover text](https://cdn-images-1.medium.com/max/1600/1\*YceMk5lpTMhd5JQKQHY00w.png)
 
 **Will the Rep Score and Leaderboard matter much after bonuses are gone? Other than bragging rights… Will the Rep Score be replaced with something else?**
 
@@ -30,7 +30,7 @@ If the weighted average of your reputation is positive, it shows you’ve consis
 
 **Joakim:** Yeah, I don’t know the solution.
 
-**Arbitrage:** Yeah, that’s the risk. I once suggested doing a once-per-quarter bonus. Maybe every 12 weeks you get paid out in a nonlinear function on reputation? But again — [MadMIN](http://numer.ai/madmin) is still top of the board, and it’s been there for a long time. To your point, it’s difficult to avoid the gaming. I think we just go with what the team gives us, because throughout the years there have been dozens and dozens of proposals on ways to compensate people without staking, and ultimately it just doesn’t work.
+**Arbitrage:** Yeah, that’s the risk. I once suggested doing a once-per-quarter bonus. Maybe every 12 weeks you get paid out in a nonlinear function on reputation? But again — [MadMIN](http://numer.ai/madmin) is still top of the board, and it’s been there for a long time. To your point, it’s difficult to avoid the gaming. I think we just go with what the team gives us, because throughout the years there have been dozens and dozens of proposals on ways to compensate people without staking, and ultimately it just doesn’t work.
 
 Arbitrage brought up a previous tournament iteration where competitors could earn badges for different achievements, adding that he would support additional leaderboards for different metrics: highest sharpe over 20 weeks, last-minute submissions, longest running model, etc.
 
@@ -40,7 +40,7 @@ Arbitrage answered by explaining that he’s not certain maximizing on the [Vali
 
 How do you do that? Arbitrage said he doesn’t know, he hasn’t experimented enough with Validation 2 yet, but he’s created models trained on both validation data sets. And as of the week before this Office Hours, Arbitrage finally installed XGBoost.
 
-![&#x201C;Install XGBoost.&#x201D;](https://cdn-images-1.medium.com/max/1600/1*jGZULHhSRJR15dyryXZeMQ.jpeg)
+![“Install XGBoost.”](https://cdn-images-1.medium.com/max/1600/1\*jGZULHhSRJR15dyryXZeMQ.jpeg)
 
 “I’ve got that spooled up, the models are uploaded to [Compute](https://docs.numer.ai/tournament/compute), and I’m going to wait and see how they perform.”
 
@@ -50,7 +50,7 @@ Arbitrage said that he ultimately doesn’t think Validation 2 is relevant enoug
 
 We don’t know what good scores are for Validation 2 yet because it’s still too early, nobody has any results yet. “We’ll check back on it in a quarter,” Arbitrage said, adding, “some of us are training on it and some of us are not, I think that’s going to be an interesting bifurcation.”
 
-He suggested that tournament participants should take note of which models are trained on Validation 2 and which are not \(in [Rocket.Chat](http://community.numer.ai) for those who are willing to post\), then shared that his models [Arbitrage](https://numer.ai/arbitrage), [Leverage](https://numer.ai/leverage), and [Culebra Capital](https://numer.ai/culebracapital) will include Validation 2 beginning with Round 210. [Arbitrage 2](https://numer.ai/arbitrage2), [Leverage 2](https://numer.ai/leverage2), and [Culebra Capital 2](https://numer.ai/culebracapital2) only train on the training data set.
+He suggested that tournament participants should take note of which models are trained on Validation 2 and which are not (in [Rocket.Chat](http://community.numer.ai) for those who are willing to post), then shared that his models [Arbitrage](https://numer.ai/arbitrage), [Leverage](https://numer.ai/leverage), and [Culebra Capital](https://numer.ai/culebracapital) will include Validation 2 beginning with Round 210. [Arbitrage 2](https://numer.ai/arbitrage2), [Leverage 2](https://numer.ai/leverage2), and [Culebra Capital 2](https://numer.ai/culebracapital2) only train on the training data set.
 
 **Arbitrage:** How about you, [Michael Oliver](https://numer.ai/mdo)? I’m calling you out.
 
@@ -64,7 +64,7 @@ He suggested that tournament participants should take note of which models are t
 
 **Michael Oliver:** No, actually, because you do each era independently: for era 1, you do a linear regression from the features to the target, get a prediction of the target, and subtract that prediction off. Now your new target is neutralized with respect to the features in that era. Then you do that for every era.
 
-**Arbitrage:** Ohhh, you’re doing it beforehand — I was looking at the code of the person who modified their [predictions after the fact](https://forum.numer.ai/t/mmc2-announcement/93/14).
+**Arbitrage:** Ohhh, you’re doing it beforehand — I was looking at the code of the person who modified their [predictions after the fact](https://forum.numer.ai/t/mmc2-announcement/93/14).
 
 **Michael Oliver:** You could do that too, but I was training on neutralized targets. That’s how you neutralize the targets.
 
@@ -84,19 +84,19 @@ He suggested that tournament participants should take note of which models are t
 
 **What are some recommended ways to use the feature categories?**
 
-Arbitrage explained that XGBoost has a way to designate which columns can be interacted, so he considered constraining XGBoost to only consider interactions across the feature groups rather than within them \(because the features are thought to be correlated across time, e.g. Charisma from era 1 will still be correlated with Charisma from era 120\).
+Arbitrage explained that XGBoost has a way to designate which columns can be interacted, so he considered constraining XGBoost to only consider interactions across the feature groups rather than within them (because the features are thought to be correlated across time, e.g. Charisma from era 1 will still be correlated with Charisma from era 120).
 
 He wondered what would happen if he restricted those interactions from happening _within_ a feature group, and instead only looked at interactions _across_ groups, such as Charisma interacting with Intellect.
 
 Arbitrage added that neural nets and XGBoost, two of the traditionally best performing models, both look at interactions, so that might be a way to leverage the feature categories.
 
-**Elementary school-level question: why do float 16 \(**_16 bit floating point numbers_**\) or uint 8 \(**_8 bit unsigned integers_**\) data types in Python help reduce memory on trees but not on Keras?**
+**Elementary school-level question: why do float 16 (**_16 bit floating point numbers_**) or uint 8 (**_8 bit unsigned integers_**) data types in Python help reduce memory on trees but not on Keras?**
 
-> “Good god I have no freaking clue.” — Arbitrage
+> “Good god I have no freaking clue.” — Arbitrage
 
-![Arbitrage&#x2019;s computer science knowledge.](https://cdn-images-1.medium.com/max/1600/1*cmmdQy1XK3HM1Bee6Y5H8g.jpeg)
+![Arbitrage’s computer science knowledge.](https://cdn-images-1.medium.com/max/1600/1\*cmmdQy1XK3HM1Bee6Y5H8g.jpeg)
 
-Arbitrage admitted that he doesn’t have much experience in computer science \(his background is finance\), and so passed the question along to anyone who wanted to give it a try.
+Arbitrage admitted that he doesn’t have much experience in computer science (his background is finance), and so passed the question along to anyone who wanted to give it a try.
 
 **Keno:** I just posted a link to a question on [Stack Overflow](https://stackoverflow.com/questions/55348505/keras-model-output-is-float32-instead-of-uint8-despite-data-labels-being-uint): it’s basically because it returns a real number, so you have to convert it to a float. I had no idea, I had to look it up, but it makes sense that trees and XGBoost can give you floats instead of real numbers, whereas most neural networks give you a “yes or no,” binary output.
 
@@ -106,7 +106,7 @@ Arbitrage admitted that he doesn’t have much experience in computer science \(
 
 **Arbitrage:** Yeah JRB! Take it away.
 
-**JRB:** With neural networks, and for that matter linear models, it’s usually a good idea to standardize your input. Essentially, the way you look at a tree-based model is that it tries to split the data set with the best possible split, so it's scale invariant. That being said, I don’t think there’s anything preventing you from training a neural net with quantized features \(that’s what I do for my day job\). I do a lot of model quantization, which is essentially trying to compress models to fit them on mobile phones and embedded devices- there it’s all quantized. It makes convergence a lot harder, but there are a lot of tricks. You can train a neural net with quantized features, but it’s easier with full precision features which are standardized with zero mean and unit variance.
+**JRB:** With neural networks, and for that matter linear models, it’s usually a good idea to standardize your input. Essentially, the way you look at a tree-based model is that it tries to split the data set with the best possible split, so it's scale invariant. That being said, I don’t think there’s anything preventing you from training a neural net with quantized features (that’s what I do for my day job). I do a lot of model quantization, which is essentially trying to compress models to fit them on mobile phones and embedded devices- there it’s all quantized. It makes convergence a lot harder, but there are a lot of tricks. You can train a neural net with quantized features, but it’s easier with full precision features which are standardized with zero mean and unit variance.
 
 **Arbitrage:** Thanks for that, that’s very helpful.
 
@@ -126,7 +126,7 @@ Arbitrage admitted that he doesn’t have much experience in computer science \(
 
 **I feel emboldened by the new machine I got. Does it make sense to make a massive neural net with hundreds of layers and tons of custom features, or am I wasting my time?**
 
-Fresh off of building a new computer \(with input from Joakim\) and with XGBoost finally installed, Arbitrage related to this question. He doesn’t think it makes sense to build a complex model, referring back to his [conversation with Bor](https://medium.com/numerai/office-hours-with-arbitrage-5-421ea23f4eec) \(who uses an intricate genetic algorithm\) comparing their model performance.
+Fresh off of building a new computer (with input from Joakim) and with XGBoost finally installed, Arbitrage related to this question. He doesn’t think it makes sense to build a complex model, referring back to his [conversation with Bor](https://medium.com/numerai/office-hours-with-arbitrage-5-421ea23f4eec) (who uses an intricate genetic algorithm) comparing their model performance.
 
 “It goes back to Occam’s razor, which is going to be my default answer when it comes to choosing complexity over simplicity.”
 
@@ -144,7 +144,7 @@ Regarding Validation 2, Numerai didn’t provide a _new_ test set, they’ve use
 
 **Mike P:** 22.
 
-**Arbitrage:** Thank you. If you do good across all 22 eras, you have a very good model. Previously, if you did well on all 12 validations eras, you had a pretty decent model. The additional eras add more validation. It makes your validation just a little bit better — as long as you don’t peek too often! You validate your model on the validation data, you’re done. That’s it. That was your hypothesis test. If you do it again, you have to divide your test statistic by two \(if we were doing this in an empirical sense\). Every time you take a peek at the validation data as an out of sample test, you’re reducing it’s validity as a test. That’s why I urge extreme caution with all this stuff.
+**Arbitrage:** Thank you. If you do good across all 22 eras, you have a very good model. Previously, if you did well on all 12 validations eras, you had a pretty decent model. The additional eras add more validation. It makes your validation just a little bit better — as long as you don’t peek too often! You validate your model on the validation data, you’re done. That’s it. That was your hypothesis test. If you do it again, you have to divide your test statistic by two (if we were doing this in an empirical sense). Every time you take a peek at the validation data as an out of sample test, you’re reducing it’s validity as a test. That’s why I urge extreme caution with all this stuff.
 
 **Joakim:** If it doesn’t hold up on Validation, what do I do?
 
@@ -154,7 +154,7 @@ Regarding Validation 2, Numerai didn’t provide a _new_ test set, they’ve use
 
 **Arbitrage:** Yeah… sorry man.
 
-**Arbitrage:** Check your cross-validation, make sure you’re not looking at all the data at once in every model run, last week I mentioned I tell my students to divide the data into three sets, train models on each one, then average them together and you’ll get better performance. If you do improve, it shows you were overfit and the ensembling of the models cancelled out some of the bias and produced a decent prediction \(even though it’s still overfit\).
+**Arbitrage:** Check your cross-validation, make sure you’re not looking at all the data at once in every model run, last week I mentioned I tell my students to divide the data into three sets, train models on each one, then average them together and you’ll get better performance. If you do improve, it shows you were overfit and the ensembling of the models cancelled out some of the bias and produced a decent prediction (even though it’s still overfit).
 
 **What if I merge Validation 1 with the training data so I get more data to train on? I’m just a newbie to data science.**
 
@@ -162,9 +162,9 @@ Arbitrage noted that this combination strategy is exactly what he does. He said 
 
 If you wanted to try this strategy, Arbitrage said the important things to remember are to make sure the parameters are set for each model, and do everything you possibly can to avoid overfitting.
 
-**Bor asks: Are there other indices out there \(like the VIX\) that track something interesting? Maybe a zero-beta fund or index?**
+**Bor asks: Are there other indices out there (like the VIX) that track something interesting? Maybe a zero-beta fund or index?**
 
-As Arbitrage pointed out, finance people love building indices and portfolios to track different metrics or hypotheses. He said that there is actually a hedge fund index \(such as the one from [hedgefundresearch.com](https://www.hedgefundresearch.com/)\), and those indices have different categories of hedge funds.
+As Arbitrage pointed out, finance people love building indices and portfolios to track different metrics or hypotheses. He said that there is actually a hedge fund index (such as the one from [hedgefundresearch.com](https://www.hedgefundresearch.com)), and those indices have different categories of hedge funds.
 
 There’s also an AI index and an equity/quant index. Richard added that a lot of funds that are doing well don’t report to any of the hedge fund indices, whereas the ones performing poorly do, so these indices may not be the best.
 
@@ -172,15 +172,15 @@ Arbitrage asked Richard if he’s aware of any indices that track flow of funds 
 
 **How can I time the moment so I can change the stake of my model?**
 
-This refers back to the topic of risk management \(discussed at length in the [previous Office Hours](https://medium.com/numerai/office-hours-with-arbitrage-8-a1c3071ea504)\).
+This refers back to the topic of risk management (discussed at length in the [previous Office Hours](https://medium.com/numerai/office-hours-with-arbitrage-8-a1c3071ea504)).
 
 > “I decided I don’t want more than 400 NMR at stake on Arbitrage, so in the current regime I have to guess if I’m going to go over and time it one month out how much I should withdraw. The alternative is: if your model is consistently growing, queue up a withdrawal of a fixed amount every time that you can.”
 
 To get more insight into what future staking and withdrawal systems will look like, Arbitrage turned it over to Jason or Mike P to chime in. Mike P noted that it’s still too early to discuss in great detail, but they are working on redesigning the staking mechanism based on feedback in Rocket.Chat, particularly because some rules changes that shift the tournament from a daily to a weekly mentality make previous methods obsolete.
 
-**Are there signals showing changes in the market conditions? \#StakingStrategyisnotDead**
+**Are there signals showing changes in the market conditions? #StakingStrategyisnotDead**
 
-**Aribtrage:** I completely agree that \#StakingStrategyisnotDead but I just don’t know how we can utilize any information to improve our staking outcomes other than we should be able to adjust our stakes down as fast as we can increase them.
+**Aribtrage:** I completely agree that #StakingStrategyisnotDead but I just don’t know how we can utilize any information to improve our staking outcomes other than we should be able to adjust our stakes down as fast as we can increase them.
 
 **Marcos’ book talks about discrete maths and quantum computers: is there an introduction about these topics?**
 
@@ -192,9 +192,9 @@ Outside the scope of his field, Arbitrage wasn’t sure what good content primer
 
 Michael Oliver added that for the Numerai tournament, implementing a spiking neural net is probably more trouble than it’s worth. “Generally there’s no real advantage for spiking neural nets for most statistical machine learning problems,” Michael said. “Theorists find them interesting for modeling what brains actually do but if you’re just trying to learn a function, there are more straightforward ways.”
 
-![](https://cdn-images-1.medium.com/max/1600/1*_tXxapBU_0O60uGUqekhXg.jpeg)
+![](https://cdn-images-1.medium.com/max/1600/1\*\_tXxapBU\_0O60uGUqekhXg.jpeg)
 
-Arbitrage then added that if you have the ability to create a spiking neural net and can iterate it, it’s probably not a bad thing to try because it will most likely have high MMC \(because nobody else is using that strategy\).
+Arbitrage then added that if you have the ability to create a spiking neural net and can iterate it, it’s probably not a bad thing to try because it will most likely have high MMC (because nobody else is using that strategy).
 
 **Why are you not using staging for deploying changes to the user interface?**
 
@@ -204,7 +204,7 @@ Arbitrage redirected the question to Mike, who immediately called for backup. Hi
 
 **Patrick:** We’ll test it in production. I think we can do more testing in staging. Multi-accounts are actually in production now, but they’re feature-flagged in a beta group. I think we can do more of this testing, it’s just a matter of us implementing it. It’s great feedback.
 
-**Unfortunately, I can’t participate \(differences in time zones\), but I want to listen to what you will discuss in Office Hours. Can you record and post a link to the video?**
+**Unfortunately, I can’t participate (differences in time zones), but I want to listen to what you will discuss in Office Hours. Can you record and post a link to the video?**
 
 Each week's Office Hours are summarized and published in the Numerai Tournament Docs: see [Season One](./) and [Season Two](../office-hours-recaps-season-2/).
 
@@ -216,11 +216,11 @@ Arbitrage also teased that over the summer, he’s looking forward to producing 
 
 Enjoying his newly-installed XGBoost, Arbitrage was experimenting with the era-boosted tree code Michael Oliver posted on [the Numerai forum](https://forum.numer.ai/t/era-boosted-models/189/3).
 
-![More on era-boosting https://forum.numer.ai/t/era-boosted-models/189/3](https://cdn-images-1.medium.com/max/1600/1*nR92LqkmSNojclG7Kt9sbQ.png)
+![More on era-boosting https://forum.numer.ai/t/era-boosted-models/189/3](https://cdn-images-1.medium.com/max/1600/1\*nR92LqkmSNojclG7Kt9sbQ.png)
 
-**Arbitrage:** I played around with the proportions, the number of trees — this thing is so grossly overfit I don’t know what to say.
+**Arbitrage:** I played around with the proportions, the number of trees — this thing is so grossly overfit I don’t know what to say.
 
-**Michael Oliver:** I mean yeah, you can play with all of the parameters of XGBoost as well, too. You can change the column sampling, the proportions \(as you said\). You can add whatever metric you want. It’s just using a mean-squared era to fit the thing, and you’re choosing which eras based on whatever metric you want. You could potentially put an auto-correlation metric in there, too.
+**Michael Oliver:** I mean yeah, you can play with all of the parameters of XGBoost as well, too. You can change the column sampling, the proportions (as you said). You can add whatever metric you want. It’s just using a mean-squared era to fit the thing, and you’re choosing which eras based on whatever metric you want. You could potentially put an auto-correlation metric in there, too.
 
 **Arbitrage:** That’s something I want to improve. I finally got it to a point where I have a correlation on validation using the [era-boosted notebook](https://github.com/numerai/example-scripts/blob/master/era_boosting_example.ipynb) I put up, I’m at 0.037, but I think it’s grossly overfit because I’m showing sharpe scores of five or eight, and correlation scores of 0.4 in some cases.
 
@@ -240,7 +240,7 @@ Enjoying his newly-installed XGBoost, Arbitrage was experimenting with the era-b
 
 **Arbitrage:** What did you guys internally tinker with? Just so I don’t have to do it myself.
 
-**Mike P:** Not too much — it was an idea that had been floating around for a while and we wanted to put something out there so I threw together some code and so it wouldn’t take too long to run, I only used like, 200 trees. I played with the proportions a little bit; I saw the oscillations as well and wanted it to be a little bit smoother. But it’s all still wide open, I don’t know what’s best, honestly.
+**Mike P:** Not too much — it was an idea that had been floating around for a while and we wanted to put something out there so I threw together some code and so it wouldn’t take too long to run, I only used like, 200 trees. I played with the proportions a little bit; I saw the oscillations as well and wanted it to be a little bit smoother. But it’s all still wide open, I don’t know what’s best, honestly.
 
 **Arbitrage:** Yeah, I’m going to toy with it some more. But at least there’s a notebook out there that works. And Michael Oliver, if you’re still willing to share it, I’ll put up a notebook with the feature neutralization code.
 
@@ -251,4 +251,3 @@ _If you’re passionate about finance, machine learning, or data science and you
 _Don’t miss the next Office Hours with Arbitrage : follow_ [_Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_ [_Rocket.Chat_](https://community.numer.ai/home) _for the next time and date._
 
 _Thank you to_ [_Richard_](https://twitter.com/richardcraib?lang=en)_,_ [_Mike P_](https://twitter.com/EasyMikeP)_,_ [_Patrick_](https://twitter.com/pschork)_,_ [_JRB_](https://numer.ai/jrb)_, and_ [_Michael Oliver_](https://numer.ai/mdo) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
-

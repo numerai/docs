@@ -1,36 +1,24 @@
 # Table of contents
 
-* [Numerai Tournament Docs](README.md)
-* [Japanese/日本語](https://jp.docs.numer.ai/)
+* [Introduction](README.md)
+* [Frequently Asked Questions (FAQs)](numerai-general-faq.md)
+* [Translations | Japanese /日本語](https://jp.docs.numer.ai)
 
-## Tournament
+## Numerai Tournament
 
-* [Numerai Tournament Overview](tournament/learn.md)
-* [Numerai CLI and Compute](tournament/compute.md)
-* [Tools, Libraries, Dashboards](tournament/tools.md)
-* [Meta Model Contribution](tournament/metamodel-contribution.md)
-* [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
-* [Reputation](tournament/reputation.md)
-* [New Users](tournament/new-users.md)
-* [Numerai tournament FAQ](tournament/faq.md)
-* [Bounties](tournament/bounties.md)
-* [Forum](https://forum.numer.ai/)
+* [Numerai Tournament Overview](numerai-tournament/learn.md)
+* [Numerai CLI and Compute](numerai-tournament/compute.md)
+* [Meta Model Contribution](numerai-tournament/metamodel-contribution.md)
+* [Feature Neutral Correlation](numerai-tournament/feature-neutral-correlation.md)
+* [Reputation](numerai-tournament/reputation.md)
+* [Resources for New Users](numerai-tournament/new-users.md)
+* [Frequently Asked Questions (FAQs)](numerai-tournament/faq.md)
 
 ## Numerai Signals
 
 * [Numerai Signals Overview](numerai-signals/signals-overview.md)
-* [Signals New Users](numerai-signals/new-users.md)
-* [Signals FAQ](numerai-signals/signals-faq.md)
-
-## Help
-
-* [Compute Tutorial](help/compute-tutorial.md)
-* [Numerai General FAQ](help/numerai-general-faq.md)
-* [Technical Support](help/support.md)
-* [Read, watch, listen](help/read-watch-listen.md)
-* [The Erasure Protocol](help/the-erasure-protocol.md)
-* [Uniswap Tutorial](help/uniswap-tutorial.md)
-* [US Taxes](help/us-taxes.md)
+* [Resources for New Users](numerai-signals/new-users.md)
+* [Frequently Asked Questions (FAQs)](numerai-signals/signals-faq.md)
 
 ## Community Content
 
@@ -76,19 +64,20 @@
 ## Connect
 
 * [Connect Index](connect/index.md)
-* [RocketChat](https://community.numer.ai/)
+* [Technical Support](connect/support.md)
+* [Bounties](connect/bounties.md)
+* [U.S. Taxes](connect/us-taxes.md)
+* [RocketChat](https://community.numer.ai)
 * [Twitter](https://twitter.com/numerai)
 * [Medium](https://medium.com/numerai)
 * [r/numerai](https://www.reddit.com/r/numerai/)
 * [Meetup](https://www.meetup.com/Numerai/)
 * [Telegram](https://t.me/NMR_Official)
-* [Forum](https://forum.numer.ai/)
+* [Forum](https://forum.numer.ai)
 
 ## Numeraire
 
-* [Numeraire Index](numeraire/index.md)
 * [Tournament stake info](https://numer.ai/tournament)
 * [Supply information](https://numer.ai/nmr)
 * [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
 * [Contract](https://github.com/numerai/contract)
-
