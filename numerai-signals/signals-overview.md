@@ -137,7 +137,7 @@ The data that is used to perform neutralization is not provided, which means the
 
 The code that is used to implement neutralization is open source. You can learn more about the neutralization process in this example notebook:
 
-{% embed url="https://github.com/numerai/example-scripts/blob/master/SignalsScoringExample.ipynb" caption="" %}
+{% embed url="https://github.com/numerai/notebooks/blob/master/signals_scoring_example.ipynb" caption="" %}
 
 Or check out this forum post to understand broader implications of feature exposure and neutralization.
 
