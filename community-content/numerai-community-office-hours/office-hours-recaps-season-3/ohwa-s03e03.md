@@ -1,12 +1,12 @@
 ---
-description: 'From September 24, 2020 / Discussing Nomi with Michael Oliver'
+description: From September 24, 2020 / Discussing Nomi with Michael Oliver
 ---
 
 # OHwA S03E03
 
 For episode three, [Michael Oliver](https://numer.ai/mdo) returned to discuss some of the initial results from [the tournament's new target, Nomi](https://forum.numer.ai/t/new-target-nomi-release/959/3?u=jrb).
 
-![Michael Oliver pt III](../../../.gitbook/assets/mdo.png)
+![Michael Oliver pt III](<../../../.gitbook/assets/mdo (1).png>)
 
 The full video of Michael Oliver's Nomi discussion will be uploaded to [YouTube](https://youtube.com/numerai).
 
@@ -16,7 +16,7 @@ The full video of Michael Oliver's Nomi discussion will be uploaded to [YouTube]
 
 Michael Oliver explained that currently the team has no plans to change the payout structure. He teased that the team has some payout-related projects in the pipeline, but said ultimately the structure isn't likely to change.
 
-**Why do you force a probability distribution? Why not have five \(or more\) bins and let the targets fall where they may?**
+**Why do you force a probability distribution? Why not have five (or more) bins and let the targets fall where they may?**
 
 This is done partially to keep the signal as stationary as possible. The bins, especially the tail bins, would have to be unlimited width. "It's tricky to get bins that would work across time, for every era" Michael Oliver said, "so we're forcing the bins to be the same size across eras."
 
@@ -38,7 +38,7 @@ Having a stable test set makes it much easier for the Numerai team to do researc
 
 Michael Oliver added that giving us new data each week would incentivize users to retrain their models every week, "and it would be kind of a mess, I think."
 
-**If a Nomi-trained model is better than a Kazutsugi-trained model at predicting Kazutsugi targets, but worse at predicting Nomi targets, what might be the reason\(s\)?**
+**If a Nomi-trained model is better than a Kazutsugi-trained model at predicting Kazutsugi targets, but worse at predicting Nomi targets, what might be the reason(s)?**
 
 "If the target has more signal in it," Michael Oliver said, "it'll predict better on a more regularized target." He explained that Kazutsugi is an easier target, and a model that's trained with more signal will find more signal and predict better on an easier target.
 
@@ -64,13 +64,10 @@ Arbitrage empathizes because his day one results also were lower than his Kazuts
 
 Michael Oliver added that the only real way to compare performance is to have the exact same model but trained on each set of data because the overall trend was going down for most users.
 
-_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)_, what are you waiting for?  
-  
-Don’t miss the next Office Hours with Arbitrage : follow_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) _for the next time and date.   
-  
-Thank you to_ [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi \(again\), to_ [_Wigglemuse_](https://numer.ai/wigglemuse) _and_ [_Joakim_](https://numer.ai/joakim_arvidsson) _for contributing to this week's discussion,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)\_, what are you waiting for?
 
+Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
+Thank you to\_ [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi (again), to_ [_Wigglemuse_](https://numer.ai/wigglemuse) _and_ [_Joakim_](https://numer.ai/joakim\_arvidsson) _for contributing to this week's discussion,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 \*\*\*\*
-

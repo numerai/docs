@@ -1,32 +1,32 @@
 ---
-description: 'From August 6, 2020 / Wigglemuse interview'
+description: From August 6, 2020 / Wigglemuse interview
 ---
 
 # OHwA S02E09
 
 For this, the ninth episode of season two, Arbitrage interviewed longtime tournament participant and [Rocket.Chat](https://community.numer.ai) all-start [Wigglemuse](https://numer.ai/wigglemuse).
 
-![Wigglemuse gets the center square, the Square of Honor](../../../.gitbook/assets/wigglemuse.png)
+![Wigglemuse gets the center square, the Square of Honor](<../../../.gitbook/assets/wigglemuse (1).png>)
 
 The full interview with Wigglemuse will be published on YouTube.
 
 ### Questions from Slido
 
-**When** [**NJ**](https://twitter.com/tasha_jade)**?**
+**When** [**NJ**](https://twitter.com/tasha\_jade)**?**
 
 Thanks to the overwhelming crowd response, NJ agreed to come on Office Hours as a guest on August 27th, "assuming nothing groundbreaking with the tournament happens between now and then," she said.
 
-**Arbitrage:** Does that mean there's something coming?? 
+**Arbitrage:** Does that mean there's something coming??
 
 **NJ:** No.
 
-**Arbitrage:** I tried 🤷♂ 
+**Arbitrage:** I tried 🤷♂
 
 **Assuming a reasonably fit model, how much extra performance can one expect from training on validation? Is it even worth it?**
 
 Arbitrage used his [Arbitrage 2](https://numer.ai/arbitrage2) as an example, which only saw the first 120 eras and performs relatively well on the live data. The question is asking if Arbitrage were to take that model with the same parameters, settings, and configurations but add the remaining eras, will it perform better?
 
-Arbitrage explained that he and [Themicon](https://numer.ai/themicon) do something very similar. They look at eras 1 - 132 and noticed that they have a small amount of additional variance compared to similar models trained on eras 1 - 120 \(although Themicon noted that during the ongoing round at the time of recording, his model trained on validation was outperforming those that were not\).
+Arbitrage explained that he and [Themicon](https://numer.ai/themicon) do something very similar. They look at eras 1 - 132 and noticed that they have a small amount of additional variance compared to similar models trained on eras 1 - 120 (although Themicon noted that during the ongoing round at the time of recording, his model trained on validation was outperforming those that were not).
 
 Ultimately, whether or not training a model on the additional data will improve that model's performance is dependent on the current regime.
 
@@ -38,9 +38,9 @@ Since [accounts were expanded to support up to ten models](https://forum.numer.a
 
 When asked about the changes to the meta-model the team has mentioned, Michael Oliver explained that they implemented a change, but it wasn't nearly as drastic as they originally anticipated.
 
-**What's a good value for feature exposure?** 
+**What's a good value for feature exposure?**
 
-Arbitrage the person shared that [Arbitrage the model](https://numer.ai/arbitrage) has a feature exposure of 0.923 \(_Author's note: for comparison, my model is rank 623 at the time of writing and has a feature exposure of 0.0754\)._ Michael Oliver shared some of his feature exposures: [MDO](https://numer.ai/mdo) = 0.0855, [NMRO](https://numer.ai/nmro) = 0.0823, [NIAM](https://numer.ai/niam) = 0.076.
+Arbitrage the person shared that [Arbitrage the model](https://numer.ai/arbitrage) has a feature exposure of 0.923 (_Author's note: for comparison, my model is rank 623 at the time of writing and has a feature exposure of 0.0754)._ Michael Oliver shared some of his feature exposures: [MDO](https://numer.ai/mdo) = 0.0855, [NMRO](https://numer.ai/nmro) = 0.0823, [NIAM](https://numer.ai/niam) = 0.076.
 
 Michael Oliver said that if your feature exposure is too high, you'll have more variance, and if it's too low your model will have too low of a mean. He added that if you're interested in feature exposure, look at the distribution of your scores and find your maximum feature exposure. "Each feature exposure is a risk," Michael Oliver said, "and if you still have some very high risks, that might get covered up by other ones you're low on."
 
@@ -52,11 +52,8 @@ Assuming a shift refers to a burn period, Arbitrage said that he believes that a
 
 Numerai software engineer Jason confirmed that Wednesday's finish is Monday's close, and Thursday is Monday close through Tuesday close.
 
-_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)_, what are you waiting for?  
-  
-Don’t miss the next Office Hours with Arbitrage : follow_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) _for the next time and date.  
-  
-Thank you to_ [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Themicon_](https://numer.ai/themicon)_, and_ [_Wigglemuse_](https://numer.ai/wigglemuse) _for contributing to answers during this Office Hours, to Wigglemuse for being interviewed and his presence in_ [_Rocket.Chat_](https://community.numer.ai)_,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)\_, what are you waiting for?
 
+Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-
+Thank you to\_ [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Themicon_](https://numer.ai/themicon)_, and_ [_Wigglemuse_](https://numer.ai/wigglemuse) _for contributing to answers during this Office Hours, to Wigglemuse for being interviewed and his presence in_ [_Rocket.Chat_](https://community.numer.ai)_,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

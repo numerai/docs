@@ -1,5 +1,5 @@
 ---
-description: 'From May 21, 2020 / JRB interview'
+description: From May 21, 2020 / JRB interview
 ---
 
 # OHwA S01E12
@@ -12,13 +12,13 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** How did you find out about Numerai?
 
-**JRB:** I think it was sometime around Christmas in 2015. I was living in Dubai at the time. What people in Dubai usually do around Christmas is go on vacation, but I had to cancel mine for some reason. A friend of mine told me about this weird crypto machine learning tournament which operates on [homomorphically encrypted data](https://www.reddit.com/r/MachineLearning/comments/3zvuge/encrypted_data_for_efficient_markets_an_mnist_for/cyprq84/). I told him that was impossible - I had concluded that homomorphic encryption just wasn't there yet. But I took a look at Numerai and built a really stupid model and submit some predictions. It was a monthly tournament at that time, and I forgot about it for a while but at the end of the month I got a payout \(which is probably a lot of money now\). But from then on, I was hooked!
+**JRB:** I think it was sometime around Christmas in 2015. I was living in Dubai at the time. What people in Dubai usually do around Christmas is go on vacation, but I had to cancel mine for some reason. A friend of mine told me about this weird crypto machine learning tournament which operates on [homomorphically encrypted data](https://www.reddit.com/r/MachineLearning/comments/3zvuge/encrypted\_data\_for\_efficient\_markets\_an\_mnist\_for/cyprq84/). I told him that was impossible - I had concluded that homomorphic encryption just wasn't there yet. But I took a look at Numerai and built a really stupid model and submit some predictions. It was a monthly tournament at that time, and I forgot about it for a while but at the end of the month I got a payout (which is probably a lot of money now). But from then on, I was hooked!
 
 **Arbitrage:** I just scoped your [profile](https://numer.ai/jrb) on the Numerai website and your model woke on January 7, 2016, so you're the first person I've interviewed here who started their account before I did. Congratulations - you're officially the oldest OG.
 
 **JRB:** When did you start your account?
 
-**Arbitrage:** April \[2016\].
+**Arbitrage:** April \[2016].
 
 **JRB:** Oh not too far off.
 
@@ -30,9 +30,9 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** It would be great if you could interview him or her.
 
-\*\*\*\*[**NJ**](https://twitter.com/tasha_jade)**:** I can ask.
+\*\*\*\*[**NJ**](https://twitter.com/tasha\_jade)**:** I can ask.
 
-**Arbitrage:** Their account started in December of 2015, so they're the real OG. So you were in Dubai, moved to Ireland, had a couple of gaps in the tournament \(as many of us did\). What motivated you to start participating again?
+**Arbitrage:** Their account started in December of 2015, so they're the real OG. So you were in Dubai, moved to Ireland, had a couple of gaps in the tournament (as many of us did). What motivated you to start participating again?
 
 **JRB:** Kaggle was fairly boring, and this was a bit of an enigma and a challenge. Nobody tells you what Numerai is. I'm naturally drawn to hard problems. As is everyone else in the tournament, I believe.
 
@@ -46,7 +46,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** Whoa time out! What does quantize mean in the context you're talking about?
 
-**JRB:** So when you train a neural network, you train them with floating point numbers \(usually 32 or 16 bit floating point\). But it's much faster to turn these continuous numbers into discrete integers. You have a couple of different algorithms for pruning which is essentially tweaking the neural network and quantizing it, hopefully with a very small loss in accuracy but with a great performance boost.
+**JRB:** So when you train a neural network, you train them with floating point numbers (usually 32 or 16 bit floating point). But it's much faster to turn these continuous numbers into discrete integers. You have a couple of different algorithms for pruning which is essentially tweaking the neural network and quantizing it, hopefully with a very small loss in accuracy but with a great performance boost.
 
 **Arbitrage:** You mentioned that you're putting these algos directly on chips in cell phones, is that right?
 
@@ -56,7 +56,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** I don't really like Python that much -
 
-![](../../../.gitbook/assets/gasp.gif)
+![](<../../../.gitbook/assets/gasp (1).gif>)
 
 **JRB:** I used to work on making Python faster at Facebook for Instagram. I think I know a little bit too much about the internals of Python to like it. But it's super convenient for the tournament. So I just use Python for the tournament.
 
@@ -66,19 +66,19 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** This one's going to be pretty clutch because I think you'll have some tips that nobody's said before. What are your top three tips for the tournament?
 
-**JRB:** I don't know if they're going to be any good but: one thing I've learned in the past month is that I've been looking at the problem from the wrong perspective. This is something to think about - we treat this problem as a regression problem. What is there's a better way to do this? The metric we're trying to optimize for is a ranking metric, so the scales of your predictions don't matter at all. That's one reason why a lot of people rescale their predictions which helps if you're ensembling things \(averaging works better if everything is on the same scale\). Your metric doesn't have to be anything like mean squared error, or any one of those regression methods. I think the only requirement for your loss function is that it has to be [comonotonic](http://homepages.ulb.ac.be/~grdeelst/DJV.pdf) with the labels - when the label goes up it should go up and when the label goes down it should go down. And that's all that matters. With that in mind, if we try to optimize for mean squared error, you're incentivizing your learner \(whether it's a tree-based learner or a neural net\) to memorize. You're saying, 'here's a curve, learn this curve.'
+**JRB:** I don't know if they're going to be any good but: one thing I've learned in the past month is that I've been looking at the problem from the wrong perspective. This is something to think about - we treat this problem as a regression problem. What is there's a better way to do this? The metric we're trying to optimize for is a ranking metric, so the scales of your predictions don't matter at all. That's one reason why a lot of people rescale their predictions which helps if you're ensembling things (averaging works better if everything is on the same scale). Your metric doesn't have to be anything like mean squared error, or any one of those regression methods. I think the only requirement for your loss function is that it has to be [comonotonic](http://homepages.ulb.ac.be/\~grdeelst/DJV.pdf) with the labels - when the label goes up it should go up and when the label goes down it should go down. And that's all that matters. With that in mind, if we try to optimize for mean squared error, you're incentivizing your learner (whether it's a tree-based learner or a neural net) to memorize. You're saying, 'here's a curve, learn this curve.'
 
-**JRB cont:** Memorization can get you so far, but if you want to do better than that, you've got to learn the rank. This is a problem you see in ads and search, as well. This is another machine learning problem called learning to rank. It doesn't really matter if you're using a neural net or XGBoost or whatever, practically every tree-based method has a ranking module in it. Just to test this hypothesis, just like 45 minutes before I talked to you I [tweaked](https://forum.numer.ai/t/learning-to-rank/454) the [example predictions](https://github.com/numerai/example-scripts/blob/master/example_model.py). It took about half an hour to train, but you can switch XGBoostRegressor with XGBoost Ranker without tweaking any of the hyperparameters. You can get really fancy with neural nets.
+**JRB cont:** Memorization can get you so far, but if you want to do better than that, you've got to learn the rank. This is a problem you see in ads and search, as well. This is another machine learning problem called learning to rank. It doesn't really matter if you're using a neural net or XGBoost or whatever, practically every tree-based method has a ranking module in it. Just to test this hypothesis, just like 45 minutes before I talked to you I [tweaked](https://forum.numer.ai/t/learning-to-rank/454) the [example predictions](https://github.com/numerai/example-scripts/blob/master/example\_model.py). It took about half an hour to train, but you can switch XGBoostRegressor with XGBoost Ranker without tweaking any of the hyperparameters. You can get really fancy with neural nets.
 
 **Arbitrage:** JRB I don't need more stuff to work on this week, man. You're killin' me, man. So your first tip was to try it as a ranking problem instead of a minimize error problem. What else you got for us?
 
-**JRB**: When it comes to neural nets, you can innovate in one of three ways: you could think about a novel architecture, you could try a lot of different regularization techniques, and third area is in terms of loss functions. For ranking problems, there are three approaches: pointwise ranking \(which is what we're doing using a regressor to predict the rank of every single data point\), pairwise ranking \(where you train a neural net or learner to do a comparative sort\), and the third way is listwise ranking \(where you feed your learner a list and it ranks the list for you\) - this is only possible with neural nets.
+**JRB**: When it comes to neural nets, you can innovate in one of three ways: you could think about a novel architecture, you could try a lot of different regularization techniques, and third area is in terms of loss functions. For ranking problems, there are three approaches: pointwise ranking (which is what we're doing using a regressor to predict the rank of every single data point), pairwise ranking (where you train a neural net or learner to do a comparative sort), and the third way is listwise ranking (where you feed your learner a list and it ranks the list for you) - this is only possible with neural nets.
 
 **JRB cont:** Another non-tech tip is that people should be very critical of what they read on the forums because I see a lot of 💩 there. Some people are actively giving bad advice. I hate to call people out about this because I don't like to be confrontational, but it's sort of an adversarial environment.
 
 **Arbitrage:** Yeah totally, I mean, I don't want people to be higher rank than me.
 
-**JRB:** \[laughs\]
+**JRB:** \[laughs]
 
 **Arbitrage:** It's a sincere problem with finance in general: we don't want to share what works.
 
@@ -108,7 +108,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** Oh, that's tough.
 
-![](../../../.gitbook/assets/uno.png)
+![](<../../../.gitbook/assets/uno (1).png>)
 
 **JRB:** What's the tally for the votes at the moment?
 
@@ -136,7 +136,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** If we had honorable mentions, I do think Mike's pretty high up there.
 
-![Mike accepts his score](../../../.gitbook/assets/3rd.png)
+![Mike accepts his score](<../../../.gitbook/assets/3rd (1).png>)
 
 **Arbitrage:** What is your number one feature request or suggestion for improvement for the tournament?
 
@@ -154,9 +154,9 @@ After what was totally not product placement for a popular brand of flavored car
 
 Earlier in the day before Office Hours, Mike P [announced that MMC staking is live](https://forum.numer.ai/t/metamodel-contribution-live/449) and publicly available for data scientist who want to stake on MMC instead of correlation. Originally planned for a May 31st release, according to Mike the last pieces came together quickly and they decided to launch because the feature was ready and there was no reason to hold it back.
 
-MMC's live debut came with a few subtle design changes to the Numerai tournament website with the introduction of grey \(correlation\) and orange \(MMC\) badges next to staked model names to display what they are staking on, and a greyed-out correlation line on the graph under a user's 'Submissions' tab. "On the submission page where correlation is greyed-out," Mike said, "if you submit on MMC, that score will be orange as well - it indicates for each round which you're getting paid on."
+MMC's live debut came with a few subtle design changes to the Numerai tournament website with the introduction of grey (correlation) and orange (MMC) badges next to staked model names to display what they are staking on, and a greyed-out correlation line on the graph under a user's 'Submissions' tab. "On the submission page where correlation is greyed-out," Mike said, "if you submit on MMC, that score will be orange as well - it indicates for each round which you're getting paid on."
 
-Arbitrage asked Mike if he's noticed people moving to MMC because his correlation with the meta-model has been steadily decreasing. Mike hasn't checked recently, but a few weeks before this episode, Mike said models were converging on [Example Predictions](https://numer.ai/integration_test).
+Arbitrage asked Mike if he's noticed people moving to MMC because his correlation with the meta-model has been steadily decreasing. Mike hasn't checked recently, but a few weeks before this episode, Mike said models were converging on [Example Predictions](https://numer.ai/integration\_test).
 
 ## Questions from Slido
 
@@ -178,11 +178,11 @@ Mike P added that the live targets are calculated exactly the same as the traini
 
 "It is a Richard Craib creation, so it's going to be a little funky," Arbitrage said, "and I mean that with all due respect."
 
-![Dr. Craibenstein](../../../.gitbook/assets/craibenstein.jpg)
+![Dr. Craibenstein](<../../../.gitbook/assets/craibenstein (1).jpg>)
 
-**What's the neural net equivalent of the** [**Integration Test**](https://numer.ai/integration_test) **model?**
+**What's the neural net equivalent of the** [**Integration Test**](https://numer.ai/integration\_test) **model?**
 
-> "I would say that's [Master Key](https://numer.ai/master_key), and we're all patiently waiting for that code to be released" - Arbitrage
+> "I would say that's [Master Key](https://numer.ai/master\_key), and we're all patiently waiting for that code to be released" - Arbitrage
 
 **Mike P:** It is on my list for maybe later this quarter to write some more example code and example prediction-type stuff. I'm not sure if it will be the Master Key code, but it will be some simple neural net.
 
@@ -190,11 +190,10 @@ Richard said that it was Numerai's responsibility to give data scientists a pipe
 
 **How can one successfully implement one of these auto-ML-like strategies with Numerai's data?**
 
-According to Arbitrage, just figure out how to input the data. He mentioned ML Jar \(OG [user](https://numer.ai/mljar_com)\), but is also the name of an [automated pipeline](https://mljar.com/automl/). These strategies were performant years ago, and do work. Arbitrage said that the user ML Jar posted in the [data science channel](https://community.numer.ai/channel/datascience) of Rocket.Chat some of the things they were working on and some example code.
+According to Arbitrage, just figure out how to input the data. He mentioned ML Jar (OG [user](https://numer.ai/mljar\_com)), but is also the name of an [automated pipeline](https://mljar.com/automl/). These strategies were performant years ago, and do work. Arbitrage said that the user ML Jar posted in the [data science channel](https://community.numer.ai/channel/datascience) of Rocket.Chat some of the things they were working on and some example code.
 
 _If you’re passionate about finance, machine learning, or data science and you’re not competing in_ [_the most challenging data science tournament in the world_](https://numer.ai/tournament)_, what are you waiting for?_
 
 _Don’t miss the next Office Hours with Arbitrage : follow_ [_Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_ [_Rocket.Chat_](https://community.numer.ai/home) _for the next time and date._
 
 _Thank you to_ [_Mike P_](https://twitter.com/EasyMikeP) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_JRB_](https://numer.ai/jrb) _for being interviewed._
-

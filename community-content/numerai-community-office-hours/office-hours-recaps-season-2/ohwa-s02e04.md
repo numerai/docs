@@ -1,5 +1,5 @@
 ---
-description: 'June 25, 2020 / Quantverse Interview'
+description: June 25, 2020 / Quantverse Interview
 ---
 
 # OHwA S02E04
@@ -12,9 +12,9 @@ In this episode, Arbitrage interviewed long-time tournament competitor [Quantver
 
 Arbitrage should be proposing his dissertation in September, then he has about a year left to finish his program if he stays on track but has already decided to stay an extra year.
 
-**Any basic examples of Keras or TensorFlow for use with the data set? Should we request \(or make\) a boilerplate for the tournament?**
+**Any basic examples of Keras or TensorFlow for use with the data set? Should we request (or make) a boilerplate for the tournament?**
 
-Keno suggested that, because the Numerai data set is already so clean, data scientists would get a lot of use out of some basic templates for using advanced neural nets tools like Keras and TensorFlow, and it would help people with getting started because the API isn't very straightforward. 
+Keno suggested that, because the Numerai data set is already so clean, data scientists would get a lot of use out of some basic templates for using advanced neural nets tools like Keras and TensorFlow, and it would help people with getting started because the API isn't very straightforward.
 
 JRB advised that early on in your neural net journey, you want to avoid Keras because of some quirks with it's limitations.
 
@@ -22,11 +22,11 @@ Keno, JRB, and Arbitrage all expressed interest in the topic of using TensorFlow
 
 **Would it be possible for tournament participants to see net exposure to country?**
 
-Arbitrage speculated that, were data scientists able to somehow find out country exposure, they would run the risk of overfitting. 
+Arbitrage speculated that, were data scientists able to somehow find out country exposure, they would run the risk of overfitting.
 
 > "It goes back to the idea that I don't touch the data, because if I knew more about it, it would bias what's going on." - Arbitrage
 
-Richard added that if they gave out the country category, strange things could happen like users who only trade in countries that are more expensive for Numerai to trade in. "At some point there might be such a thing," Richard said, "but remember that the Kazutsugi targets are very neutral to all of the things we know so you're not missing out on too much." Richard also mentioned that some of this might cross over with [Numerai Signals](https://docs.numer.ai/numerai-signals/signals-overview): someone with a model that's performant in one country might want to put that on Signals. 
+Richard added that if they gave out the country category, strange things could happen like users who only trade in countries that are more expensive for Numerai to trade in. "At some point there might be such a thing," Richard said, "but remember that the Kazutsugi targets are very neutral to all of the things we know so you're not missing out on too much." Richard also mentioned that some of this might cross over with [Numerai Signals](https://docs.numer.ai/numerai-signals/signals-overview): someone with a model that's performant in one country might want to put that on Signals.
 
 **Does flipping a model with positive correlation and negative MMC work to get a model with positive MMC? Is that allowed?**
 
@@ -36,7 +36,7 @@ In a scenario where a submission is 75% long and 25% short with positive correla
 
 **Any feedback or feature requests for the Numerati Dashboard?**
 
-The [Numerati Dashboard](https://www.jofaichow.co.uk/numerati/) is a project by tournament data scientist [Jo-fai](https://twitter.com/matlabulous) \(Joe\) aka [IA\_AI](https://numer.ai/ia_ai). Joe built the dashboard to easily compare multiple tournament models. You can even select individual models to compare:
+The [Numerati Dashboard](https://www.jofaichow.co.uk/numerati/) is a project by tournament data scientist [Jo-fai](https://twitter.com/matlabulous) (Joe) aka [IA\_AI](https://numer.ai/ia\_ai). Joe built the dashboard to easily compare multiple tournament models. You can even select individual models to compare:
 
 ![Comparing Arbitrage with Beanstalk](../../../.gitbook/assets/beanstalk-v-arbitrage.png)
 
@@ -52,7 +52,7 @@ Richard said that he and [Mike P](https://twitter.com/easymikep) want to improve
 
 Richard posted this equation in the chat for anyone who wants to calculate what a model's sharpe would look like on an actual backtest:
 
-```text
+```
 Richard Craib : Numerai Sharpe = (mean(era_scores)-0.010415154)/std(era_scores)
 Richard Craib : *sqrt(12)
 ```
@@ -69,7 +69,7 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Quantverse:** I live in Prague, the capitol of the Czech Republic, a small country in Central Europe. It's already like, 10:00 pm now here.
 
-![](../../../.gitbook/assets/prague.png)
+![](<../../../.gitbook/assets/prague (1).png>)
 
 **Arbitrage:** So Quantverse, what do you do for a living?
 
@@ -79,13 +79,13 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Quantverse:** It's still experimental. I'm still finding new strategies, so it's not live yet. But, hopefully it will be live in like, two months probably, for some testing. Before, I was doing arbitrage strategies - pun not intended!
 
-**Arbitrage:** \( ͡° ͜ʖ ͡°\)
+**Arbitrage:** ( ͡° ͜ʖ ͡°)
 
-**Quantverse:** It was working fine in a time of really high volatility, but in the case of low volatility, it's not really that interesting. It's only when there are like, big moves in Bitcoin, that you really gain something. I think it's more interesting to focus on market making with a single system. Another project I have is a small website called [Pairs Trading](https://www.pairtradinglab.com/). It's a suite of tools to play with equity pairs trading. You can assemble a portfolio of pairs trading strategies, or there's also a really simple automated platform you can download so you can execute your strategies in real-time if you have an Interactive Brokers account - you can just let it go and it will automatically trade your pairs based on your rules. It's a small website, but there are some customers who like it. There was even a small hedge fund using it at one point.
+**Quantverse:** It was working fine in a time of really high volatility, but in the case of low volatility, it's not really that interesting. It's only when there are like, big moves in Bitcoin, that you really gain something. I think it's more interesting to focus on market making with a single system. Another project I have is a small website called [Pairs Trading](https://www.pairtradinglab.com). It's a suite of tools to play with equity pairs trading. You can assemble a portfolio of pairs trading strategies, or there's also a really simple automated platform you can download so you can execute your strategies in real-time if you have an Interactive Brokers account - you can just let it go and it will automatically trade your pairs based on your rules. It's a small website, but there are some customers who like it. There was even a small hedge fund using it at one point.
 
 **Arbitrage:** Awesome, post it in the chat so people can check it out. Now I can hit you with the next question: what would your parents say you do for a living?
 
-**Quantverse:** Yeah...  that's a good question! They basically know I'm doing projects related to bitcoin. They kind of know what bitcoin is already. Actually, they think I work for some weird American hedge fund.
+**Quantverse:** Yeah... that's a good question! They basically know I'm doing projects related to bitcoin. They kind of know what bitcoin is already. Actually, they think I work for some weird American hedge fund.
 
 ![Fair enough.](../../../.gitbook/assets/hedge-fund.png)
 
@@ -93,7 +93,7 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Arbitrage:** That's really cool.
 
-**Quantverse:** But yeah, they think I work for an American company.  ¯\\_\(ツ\)\_/¯
+**Quantverse:** But yeah, they think I work for an American company. ¯\\\_(ツ)\_/¯
 
 **Arbitrage:** I think it's great that your primary income activity comes from the tournament. That's amazing, and I think there are probably several people in here who are striving to achieve that level. It's good to hear somebody is able to pull it off. What do you do for fun? You can't just push code all the time.
 
@@ -119,7 +119,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Arbitrage:** Let's talk about the tournament. When did you start participating? How old's [your account](https://numer.ai/quantverse)?
 
-**Quantverse:** I started submitting in January 2017. It was still the old competition format where your performance was never weighted on live data but on some private holdout set. So that's how I started. I wanted to learn Python back then, I hadn't used it before, and to get some experience with machine learning. But just doing a project or some tutorials isn't very interesting so I wanted some motivation to compete and beat somebody and perhaps be lucky to get some bitcoin \(back then it was paid in bitcoin\). So I learned some Python and some machine learning just from this competition.
+**Quantverse:** I started submitting in January 2017. It was still the old competition format where your performance was never weighted on live data but on some private holdout set. So that's how I started. I wanted to learn Python back then, I hadn't used it before, and to get some experience with machine learning. But just doing a project or some tutorials isn't very interesting so I wanted some motivation to compete and beat somebody and perhaps be lucky to get some bitcoin (back then it was paid in bitcoin). So I learned some Python and some machine learning just from this competition.
 
 **Arbitrage:** It's very interesting how many of us turned to the tournament as a method of learning and then ended up being able to turn it into some profit. I think that's a wonderful part of this whole project. How did you find out about Numerai in the first place?
 
@@ -133,15 +133,15 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Quantverse:** I don't think it's that overwhelming by itself. Anybody can just take the example model and then try to make something better. Maybe people mean something else: the competition is changing so much, it's like every six months is practically a new tournament. Maybe people are just tired of changes. It's hard to guess because I don't really share that opinion myself.
 
-**Arbitrage:** Yeah, if I started the tournament and then two weeks later there was a breaking change, I'd probably throw up my hands and walk away. Fortunately the latest changes haven't been very large. But [Anson](https://twitter.com/ansonschu), aren't we coming up on the one year anniversary of Kazutsugi? 
+**Arbitrage:** Yeah, if I started the tournament and then two weeks later there was a breaking change, I'd probably throw up my hands and walk away. Fortunately the latest changes haven't been very large. But [Anson](https://twitter.com/ansonschu), aren't we coming up on the one year anniversary of Kazutsugi?
 
 **Slyfox:** Almost! I think we're like, two months away.
 
 **Arbitrage:** You at least announced it this time last year, if I remember correctly.
 
-![This was posted on a Wednesday: on Saturday July 13, Round 168 opened with the new targets](../../../.gitbook/assets/kazutsugi.png)
+![This was posted on a Wednesday: on Saturday July 13, Round 168 opened with the new targets](<../../../.gitbook/assets/kazutsugi (1).png>)
 
-**Arbitrage:** And then there was work leading up to launching. So let's call it an 18-month development process with iterations on it live. I think this is the most stable we've seen the tournament. What's changed, of course, is that binary outcome where you have a full loss if you burn. To me, that's been the most welcome change because it's given a lot of stability and confidence in my modeling. 
+**Arbitrage:** And then there was work leading up to launching. So let's call it an 18-month development process with iterations on it live. I think this is the most stable we've seen the tournament. What's changed, of course, is that binary outcome where you have a full loss if you burn. To me, that's been the most welcome change because it's given a lot of stability and confidence in my modeling.
 
 **Quantverse:** I still remember that when Kazutsugi was introduced, I wasn't initially happy about it because I had to switch my modeling from classification to regression and make a lot of changes and such. But now, after almost one year, it's been the best change that happened to the competition because the data set is much more stable to model so I'm happy we have Kazutsugi.
 
@@ -155,7 +155,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Arbitrage:** That's amazing! How cool! Can you give us your top three tips for the tournament?
 
-**Quantverse:** I guess the first tip I already kind of mentioned: bring your own reliable validation scheme so you can evaluate your models locally with some confidence. That means run cross validation, basically. Definitely evaluating on the validation set is not really enough - it doesn't really tell you anything. If you have bad results on the validation set, your model most likely sucks. But if the results are okay, it doesn't tell you anything because there's really only one regime there. 
+**Quantverse:** I guess the first tip I already kind of mentioned: bring your own reliable validation scheme so you can evaluate your models locally with some confidence. That means run cross validation, basically. Definitely evaluating on the validation set is not really enough - it doesn't really tell you anything. If you have bad results on the validation set, your model most likely sucks. But if the results are okay, it doesn't tell you anything because there's really only one regime there.
 
 **Arbitrage:** Have you looked at Validation 1 and Validation 2? I would agree with you with the previous validation set that was just Validation 1, and that didn't seem to be very representative. With the addition of Validation 2, do you still stand by your statement that the validation set is not enough if you were to combine Val1 and Val2?
 
@@ -163,7 +163,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Arbitrage:** It's still not enough?
 
-**Quantverse:** Yeah. I do cross validation - that's my primary source of truth - and I use Validation 1 and 2 as additional holdout sets to take a peek if I'm kind of matching performance. I can already see I have many models that have good results on Validation 1 and 2, but they fail in cross validation. For me to use any model, it has to have good performance on both: cross validation, and Val1 and Val2. 
+**Quantverse:** Yeah. I do cross validation - that's my primary source of truth - and I use Validation 1 and 2 as additional holdout sets to take a peek if I'm kind of matching performance. I can already see I have many models that have good results on Validation 1 and 2, but they fail in cross validation. For me to use any model, it has to have good performance on both: cross validation, and Val1 and Val2.
 
 **Arbitrage:** Are you concerned then that you don't have enough training data?
 
@@ -179,15 +179,15 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Quantverse:** Yeah.
 
-**Arbitrage:** I see what you're saying, JRB. 
+**Arbitrage:** I see what you're saying, JRB.
 
 **JRB:** Quantverse, do you end up ensembling the results of your k-fold cross validation? Or do you just pick the best one?
 
 **Quantverse:** I average them.
 
-**Arbitrage:** Quantverse I imagine that's probably why we huddle together \[on the leaderboard\] sometimes, because I'm doing that with some of my stuff. We had a huge sidebar on your first tip, which is cross validation; what's your second one?
+**Arbitrage:** Quantverse I imagine that's probably why we huddle together \[on the leaderboard] sometimes, because I'm doing that with some of my stuff. We had a huge sidebar on your first tip, which is cross validation; what's your second one?
 
-**Quantverse:** Second tip is mostly for people new to the competition. If you look at the example predictions, it's [actually quite a good model](https://numer.ai/integration_test). So for people just starting, maybe it's okay for them to take that model and try to understand how it works and why, and try to beat it. Use it as a baseline to beat, because if you beat it by just one rank, you're at rank 35 or 34. 
+**Quantverse:** Second tip is mostly for people new to the competition. If you look at the example predictions, it's [actually quite a good model](https://numer.ai/integration\_test). So for people just starting, maybe it's okay for them to take that model and try to understand how it works and why, and try to beat it. Use it as a baseline to beat, because if you beat it by just one rank, you're at rank 35 or 34.
 
 **Arbitrage:** I think some people who are struggling, even after a period of participation, would benefit from doing that too. So what is your third tip, my friend?
 
@@ -207,7 +207,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 ![Slyfox has a handsome lead.](../../../.gitbook/assets/anson-again.gif)
 
-**Arbitrage:** Yeah, he's a cool dude, I'll vouch for him. 
+**Arbitrage:** Yeah, he's a cool dude, I'll vouch for him.
 
 **Slyfox:** Thanks!
 
@@ -235,17 +235,8 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Quantverse:** Before Kazutsugi I mostly used neural networks. But now I'm mostly into tree models.
 
-_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)_, what are you waiting for?  
-  
-Don’t miss the next Office Hours with Arbitrage : follow_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) _for the next time and date.  
-  
-Thank you to_ [_Richard_](https://twitter.com/richardcraib)_,_ [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Quantverse_](https://numer.ai/quantverse) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)\_, what are you waiting for?
 
+Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-
-
-
-
-
-
-
+Thank you to\_ [_Richard_](https://twitter.com/richardcraib)_,_ [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Quantverse_](https://numer.ai/quantverse) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

@@ -2,9 +2,9 @@
 
 ## Motivation
 
-Long term performance is key.  
+Long term performance is key.
 
-While your payouts depend on your performance in a single round, your reputation and rank depends on your performance over 20 rounds. 
+While your payouts depend on your performance in a single round, your reputation and rank depends on your performance over 20 rounds.
 
 ## Calculation
 
@@ -25,7 +25,7 @@ def round_weight(delta, day):
 
 For example, here are the round weights on day 3 for round 204.
 
-![round\_weights example](../.gitbook/assets/round_weights_horizontal.png)
+![round\_weights example](<../.gitbook/assets/round\_weights\_horizontal (1).png>)
 
 ## Missing scores
 
@@ -34,6 +34,3 @@ Late and missing submissions in the 20 round window are penalized in order for r
 The first late or missed submission will receive the score equivalent to the `example_predictions`. Subsequent late or missed submissions will receive a very low score of `-0.1`.
 
 To avoid this penalty, automate your weekly submission workflow with [Numerai Compute](https://docs.numer.ai/tournament/compute).
-
-
-
