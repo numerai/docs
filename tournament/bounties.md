@@ -4,17 +4,13 @@ description: Help us improve Numerai and earn NMR!
 
 # Bounties
 
-The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion.
-
 We need and want your help to improve Numerai so we will aim to be generous and fair with our bounties where possible. If you feel like you deserve more/less bounty for your contribution just let us know!
+
+The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion. Actual bounty payouts and amounts, if any, will be determined by us in our sole discretion.&#x20;
 
 ## Bugs
 
 If you see anything that is broken, report it! If it turns out to be a real issue and your report helped us fix it then we will give you a bounty!
-
-**Bounty payouts and amount, if any, will be determined by us in our sole discretion. In no event are we obligated to provide a payout for any Submission.**&#x20;
-
-Bounty payment guidelines
 
 | Bug report                                                        | Bounty    |
 | ----------------------------------------------------------------- | --------- |
@@ -23,11 +19,13 @@ Bounty payment guidelines
 | Medium _data errors, incorrect payouts, cannot submit/stake_      | 1-5 NMR   |
 | Major _exploits, security issues, smart contract vulnerabilities_ | 1-100 NMR |
 
-Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](../help/us-taxes.md).
+Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](../help/us-taxes.md).&#x20;
 
-### **Negligible security impact**
+Regardless of your taYou are solely responsible for any tax implications related to any bounty payouts you may receive.
 
-We consider the follow to be negligible security impact unless researcher provides concrete explanation and valid proof-of-concept to support claims:
+### **Out-of-Scope**
+
+We consider the follow to be of negligible security impact unless the researcher provides concrete explanation and valid proof-of-concept to support claims:
 
 * Unchained open redirects
 * Reports that state that software is out of date/vulnerable without a proof-of-concept
@@ -61,9 +59,7 @@ While researching, we'd like to ask you to refrain from:
 
 * Denial of service
 * Spamming
-* Automated scanning of any kind
 * Rate limiting attacks (unless it constitutes a significant risk)
-* Email sending checks
 
 ### How to submit a vulnerability report
 
