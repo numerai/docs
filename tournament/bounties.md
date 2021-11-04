@@ -6,7 +6,7 @@ description: Help us improve Numerai and earn NMR!
 
 We need and want your help to improve Numerai so we will aim to be generous and fair with our bounties where possible. If you feel like you deserve more/less bounty for your contribution just let us know!
 
-The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion. Actual bounty payouts and amounts, if any, will be determined by us in our sole discretion.&#x20;
+The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion. **Actual bounty payout amounts, if any, will be determined by Numerai at its sole discretion. **
 
 ## Bugs
 
@@ -21,7 +21,7 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 
 Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](../help/us-taxes.md).&#x20;
 
-Regardless of your taYou are solely responsible for any tax implications related to any bounty payouts you may receive.
+**Regardless of your tax jurisdiction, you are solely responsible for any tax implications related to any bounty payouts you may receive.**
 
 ### **Out-of-Scope**
 
