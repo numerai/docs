@@ -152,10 +152,10 @@ You can manage your stake on the website. When you increase your stake, NMR is t
 Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±25% of the stake value per round.
 
 ```python
-payout = stake_value * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
+payout = at_risk_stake * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
 ```
 
-The `stake_value` is the value of your stake on the first Thursday (scoring day) of the round.
+The `at_risk_stake` is the value of your stake at the round submission deadline `Monday 14:30 UTC.`
 
 The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 300K threshold the lower the payout factor.
 
