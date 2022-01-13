@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Numerai Tournament Docs](README.md)
-* [Japanese/日本語](https://jp.docs.numer.ai/)
+* [Japanese/日本語](https://jp.docs.numer.ai)
 
 ## Tournament
 
@@ -14,7 +14,7 @@
 * [New Users](tournament/new-users.md)
 * [Numerai tournament FAQ](tournament/faq.md)
 * [Bounties](tournament/bounties.md)
-* [Forum](https://forum.numer.ai/)
+* [Forum](https://forum.numer.ai)
 
 ## Numerai Signals
 
@@ -30,7 +30,6 @@
 * [Read, watch, listen](help/read-watch-listen.md)
 * [The Erasure Protocol](help/the-erasure-protocol.md)
 * [Uniswap Tutorial](help/uniswap-tutorial.md)
-* [US Taxes](help/us-taxes.md)
 
 ## Community Content
 
@@ -76,13 +75,13 @@
 ## Connect
 
 * [Connect Index](connect/index.md)
-* [RocketChat](https://community.numer.ai/)
+* [RocketChat](https://community.numer.ai)
 * [Twitter](https://twitter.com/numerai)
 * [Medium](https://medium.com/numerai)
 * [r/numerai](https://www.reddit.com/r/numerai/)
 * [Meetup](https://www.meetup.com/Numerai/)
-* [Telegram](https://t.me/NMR_Official)
-* [Forum](https://forum.numer.ai/)
+* [Telegram](https://t.me/NMR\_Official)
+* [Forum](https://forum.numer.ai)
 
 ## Numeraire
 
@@ -91,4 +90,3 @@
 * [Supply information](https://numer.ai/nmr)
 * [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
 * [Contract](https://github.com/numerai/contract)
-
