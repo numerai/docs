@@ -179,7 +179,7 @@ MMC is a concept that is taken from the main Numerai Tournament and the scoring 
 
 Note the computation of Numerai Signals' MMC is completely separate from that of the Numerai Tournament. Specifically, only submissions to Numerai Signals are used to construct the Signals' Meta Model.
 
-## Staking <a href="staking" id="staking"></a>
+## Staking <a href="#staking" id="staking"></a>
 
 You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `mmc` scores.
 
@@ -207,7 +207,9 @@ payout = stake_value * payout_factor * (corr * corr_multiplier + mmc * mmc_multi
 
 The `stake_value` is the value of your stake on the first Friday (scoring day) of the round.
 
-The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 100K threshold the lower the payout factor.
+The `stake_cap_threshold` is a number that determines when the `payout_factor` begins to decay.  At the time of this writing, the Signals `stake_cap_threshold` is 150K. The `stake_cap_threshold` can change per round at Numerai's discretion.
+
+The `payout_factor` is a number that scales with the total NMR staked across all models in the tournament. When the total NMR staked across all models exceeds the `stake_cap_threshold`, the `payout_factor` is reduced.
 
 ![](<../.gitbook/assets/image (92).png>)
 
