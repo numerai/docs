@@ -72,6 +72,10 @@
   * [FAQ in Office Hours](community-content/numerai-community-office-hours/faq-in-office-hours.md)
   * [Cited resources](community-content/numerai-community-office-hours/cited-resources.md)
 
+***
+
+* [NumerCon](numercon.md)
+
 ## Connect
 
 * [Connect Index](connect/index.md)
