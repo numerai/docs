@@ -27,4 +27,10 @@ Venue: SF Scottish Rite Masonic Center&#x20;
 
 **18:30 Numerai Office Soirée**\
 charter bus to the after-party (seats 55)\
-Venue: Numerai HQ, Presidio of San Francisco\
+Venue: Numerai HQ, Presidio of San Francisco
+
+
+
+#### Things to do in San Francisco
+
+_content coming soon_\
