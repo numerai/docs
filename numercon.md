@@ -40,4 +40,6 @@ _\*These recommendations are not affiliated with Numerai nor NumerCon. Numerai h
 
 [Muir Wood and Sausalito tour including a return by ferrry boat](https://www.eventbrite.com/e/muir-wood-and-sausalito-tour-including-a-return-by-ferrry-boat-tickets-169196855349?aff=ebdssbdestsearch)
 
-[Hidden Stairways of San Francisco 2mile walking tour](https://www.eventbrite.com/e/hidden-stairways-of-san-francisco-tickets-231141940767?aff=ebdssbdestsearch)\
+[Hidden Stairways of San Francisco 2mile walking tour](https://www.eventbrite.com/e/hidden-stairways-of-san-francisco-tickets-231141940767?aff=ebdssbdestsearch)
+
+[Boatsetter:](https://www.boatsetter.com) Rent a boat and go out on the bay. Your choice of Captained or not.\
