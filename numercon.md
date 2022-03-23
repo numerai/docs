@@ -25,9 +25,9 @@ Venue: SF Scottish Rite Masonic Center&#x20;
 **13:00 - 18:30 NumerCon**\
 ****Venue opens to general admissions
 
-**18:30 Numerai Office Soirée**\
+**18:30 Soirée and After-Party**\
 charter bus to the after-party (seats 55)\
-Venue: Numerai HQ, Presidio of San Francisco
+Venue: Surprise location&#x20;
 
 
 
