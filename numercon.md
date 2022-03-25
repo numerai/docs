@@ -23,14 +23,18 @@ _April 1st, 2022_
 [Enter with your NumerCon registration](https://www.eventbrite.com/e/numercon-numerai-conference-2022-tickets-166200162159).\
 Venue: SF Scottish Rite Masonic Center&#x20;
 
-**13:00 - 18:30 NumerCon**\
+**11:00 - 13:00**\
+Hang out while we set up for the conference, go for a walk through nearby [Stern Grove](https://sfrecpark.org/facilities/facility/details/Sigmund-Stern-Grove-375), or [check out nearby restaurants](https://www.google.com/maps/search/restaurants/@37.734537,-122.4805883,16z/data=!3m1!4b1). Be sure to be back before 13:20 to get seated! &#x20;
+
+**13:00 NumerCon**\
 ****Venue opens to general admissions
+
+**13:30 Agenda kicks off**
 
 **18:30 Soirée and After-Party**\
 charter bus to the after-party (seats 55)\
-Venue: Surprise location&#x20;
-
-
+Venue: Surprise location \
+Includes: catering, open bar, DJs
 
 #### Things to do in San Francisco\*
 
