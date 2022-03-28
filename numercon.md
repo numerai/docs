@@ -44,6 +44,8 @@ _\*These recommendations are not affiliated with Numerai nor NumerCon. Numerai h
 
 Visit our favorite local theater [Alamo Drafthouse](https://drafthouse.com/sf), or the nearby not-for-profit arthouse cinema [Roxie](https://www.roxie.com)
 
+[California Academy of Science Nightlife](https://www.calacademy.org/nightlife) every Thursday night plus Planetarium events
+
 [Karaoke](https://www.eventbrite.com/e/dj-purple-dance-karaoke-tickets-196060882377?aff=ebdssbdestsearch) on Thursday night with DJ Purple at Slate
 
 [Trivia night](https://www.eventbrite.com/e/trivia-night-tickets-170534471194) on Wednesday at Laszlo
