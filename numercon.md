@@ -15,9 +15,12 @@ _March 31st, 2022_
 [Register at this link](https://www.eventbrite.com/e/brunch-at-the-interval-an-official-numerai-mixer-event-tickets-292815808967). Pw is NUMERCON. \
 Venue: The Interval at Long Now, Fort Mason\
 Space is limited (48 total pax). Please register only if you are able to attend IRL.\
-Includes book giveaway and signing by Ash Fontana - The AI-First Company: How to Compete and Win with Artificial Intelligence
+Includes book giveaway and signing by Ash Fontana - _The AI-First Company: How to Compete and Win with Artificial Intelligence_
 
 _April 1st, 2022_
+
+**08:20 - 08:30 Shuttle departure to NumerCon venue**\
+We have arranged shuttle transportation to the venue from a Union Square and a Presidio Heights location. If you are interested in joining the shuttle transit from either location, please reach out to us on the [official IRL attendee channel](https://rocketchat.numer.ai/channel/NUMERCON\_2022) on RocketChat.
 
 **09:00 - 11:00 Breakfast brainstorm with Richard Craib** \
 [Enter with your NumerCon registration](https://www.eventbrite.com/e/numercon-numerai-conference-2022-tickets-166200162159).\
