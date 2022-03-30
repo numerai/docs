@@ -34,6 +34,28 @@ Hang out while we set up for the conference, go for a walk through nearby [Stern
 
 **13:30 Agenda kicks off**
 
+* Monopolize intelligence
+
+Numerai vision, Richard Craib, Founder and CEO \
+****Technical update: True Contribution, Michael Oliver, Minister of Research&#x20;
+
+* Monopolize data
+
+Data in a True Contribution World, Michael Phillips, Minister of Data\
+Synthetic Data, Michael Oliver, Minister of Research\
+Signals Vision, Richard Craib
+
+* Monopolize money
+
+Deep-dive with Richard Craib\
+Panel with Joey Krug of Pantera Capital, Jonathan Larkin of Columbia Endowment, Richard Craib of Numerai\
+Fireside chat with Richard Craib and Howard Morgan&#x20;
+
+* Decentralize the monopoly
+
+Decentralization vision and update, Anson Chu, CTO of Numerai\
+Closing Remarks, Richard Craib
+
 **18:30 Soirée and After-Party**\
 charter bus to the after-party (seats 55)\
 Venue: Surprise location \
