@@ -146,7 +146,7 @@ Staking means locking up NMR in a [smart contract](https://github.com/numerai/to
 
 You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the model's stake into your wallet after a \~4-5 week delay based on when the stake release request was made. If the stake release request was made **before** the current submission deadline, the release will be effective on the first scoring day of the current round and ultimately applied 4 weeks later (from the first scoring day) after the round has resolved.  If the stake release request is made **after** the current submission deadline, the release request is queued for an additional week and will become effective on the first scoring day of the next round and ultimately released 4 weeks after that. Note, the \~4-5 week release delay is applied to all stake releases and does not take into account last active round for a model. You can also change your stake type, which determines which scores (`corr` and/or `mmc`) you want to stake on.&#x20;
 
-![](<../.gitbook/assets/image (77) (1).png>)
+![](<../.gitbook/assets/image (94).png>)
 
 ## Payouts
 
@@ -160,7 +160,7 @@ The `at_risk_stake` is the value of your stake at the round submission deadline 
 
 The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 300K threshold the lower the payout factor.
 
-![](<../.gitbook/assets/image (89).png>)
+![](<../.gitbook/assets/image (89) (1).png>)
 
 The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
