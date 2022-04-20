@@ -90,11 +90,12 @@ You can also deploy your trained model to the cloud and automate your entire wee
 # setup your cloud infrastructure
 numerai setup
 
-# copy the example model
-numerai docker copy-example
+# configure a node for an example python model
+numerai node config -e tournament-python3
 
-# deploy the example model 
-numerai docker deploy
+# deploy and test the example model 
+numerai node deploy
+numerai node test
 ```
 
 ## Diagnostics
@@ -111,7 +112,7 @@ Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/m
 
 ## Scoring
 
-You are primarily scored on the correlation (`corr`) between your predictions and the targets. The higher the correlation the better.
+You are primarily scored on your true contribution (`tc`) to the Meta Model and the correlation (`corr`) between your predictions and the targets. The higher the score, the better.
 
 ```python
 # method='first' breaks ties based on order in array
@@ -121,13 +122,13 @@ correlation = np.corrcoef(labels, ranked_predictions)[0, 1]
 
 You are also scored on your [meta model contribution](https://docs.numer.ai/tournament/metamodel-contribution) (`mmc`) and [feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) (`fnc`). The higher the meta model contribution and feature neutral correlation the better.
 
-Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the Thursday after the Monday deadline and final score on Wednesday 4 weeks later for a total of 20 scores.
+Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the after the Monday deadline and final score on Wednesday 4 weeks later for a total of 20 scores.
 
-![](../.gitbook/assets/numerai-calendar-2-.png)
+![](../.gitbook/assets/score-calendar-basic.png)
 
 Since a round takes \~4 weeks to resolve, if you submit new predictions every week, you will receive multiple (up to 4) overlapping scores on each scoring day from the 4 ongoing rounds.
 
-![](../.gitbook/assets/numerai-calendar-3-.png)
+![](../.gitbook/assets/score-calendar-overlapping.png)
 
 Your model's live scores can be viewed publicly on its model profile page. Here is an example of a model's final scores over the past 20 rounds.
 
@@ -193,11 +194,11 @@ Your stake value will grow as long as you continue to have positive scores. Here
 
 ## Leaderboard
 
-The leaderboard can be sorted by the reputation of model's `corr`, `mmc`, and `fnc`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.
+The leaderboard can be sorted by the reputation of model's `corr`, `mmc`, `fnc`, `fncv3`, and `tc`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![](<../.gitbook/assets/image (69) (1).png>)
+![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
 
 ## Support
 

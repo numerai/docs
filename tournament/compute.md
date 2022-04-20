@@ -34,9 +34,11 @@ numerai node deploy
 numerai node test
 ```
 
-## Timing <a href="getting-started" id="getting-started"></a>
+## Timing <a href="#getting-started" id="getting-started"></a>
 
 The webhook url assigned to your Prediction Nodes are automatically registered with your Numerai Models. Numerai will execute those webhooks on Saturday at 19:00 UTC (an hour after the round starts). If we haven't successfully received submissions from your models by Sunday 2:00 UTC, we will email you a warning that it looks like your compute jobs have failed. If any failed, we will try to trigger those webhooks again on Sunday 19:00 UTC and if any fail again, we will send out a final email on Monday 2:00 UTC.
+
+The CLI also allows you to setup your node as a timed cron job to run in the cloud. This can be activate by using the "--cron" option when running "numerai node config".
 
 ## Upgrading
 
@@ -47,7 +49,7 @@ pip3 install --upgrade numerai-cli --user
 numerai upgrade
 ```
 
-## Help <a href="getting-started" id="getting-started"></a>
+## Help <a href="#getting-started" id="getting-started"></a>
 
 Follow our step by step [tutorial](https://docs.numer.ai/help/compute-tutorial) or watch the video on [YouTube](https://youtu.be/-3y0N7fqfOI) for help updating to 0.3.0.
 

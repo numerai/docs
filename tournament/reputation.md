@@ -31,6 +31,6 @@ For example, here are the round weights on day 3 for round 204.
 
 Late and missing submissions in the 20 round window are penalized in order for reputation to be comparable across models.
 
-The first late or missed submission will receive the score equivalent to the `example_predictions`. Subsequent late or missed submissions will receive a very low score of `-0.1`.
+The first late or missed submission will receive the equivalent `example_predictions` score for CORR and FNC. Subsequent late or missed submissions will receive a very low score of `-0.1`. For TC, however, users receive only 0 for any missed submission.
 
 To avoid this penalty, automate your weekly submission workflow with [Numerai Compute](https://docs.numer.ai/tournament/compute).
