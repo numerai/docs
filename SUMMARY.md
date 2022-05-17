@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Numerai Tournament Docs](README.md)
-* [Japanese/日本語](https://jp.docs.numer.ai)
+* [Japanese/日本語](https://jp.docs.numer.ai/)
 
 ## Tournament
 
@@ -15,7 +15,7 @@
 * [New Users](tournament/new-users.md)
 * [Numerai tournament FAQ](tournament/faq.md)
 * [Bounties](tournament/bounties.md)
-* [Forum](https://forum.numer.ai)
+* [Forum](https://forum.numer.ai/)
 
 ## Numerai Signals
 
@@ -80,13 +80,13 @@
 ## Connect
 
 * [Connect Index](connect/index.md)
-* [RocketChat](https://community.numer.ai)
+* [RocketChat](https://community.numer.ai/)
 * [Twitter](https://twitter.com/numerai)
 * [Medium](https://medium.com/numerai)
 * [r/numerai](https://www.reddit.com/r/numerai/)
 * [Meetup](https://www.meetup.com/Numerai/)
 * [Telegram](https://t.me/NMR\_Official)
-* [Forum](https://forum.numer.ai)
+* [Forum](https://forum.numer.ai/)
 
 ## Numeraire
 

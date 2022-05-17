@@ -16,7 +16,7 @@ Watch this short film to learn how it all fits together:
 
 ## Summary
 
-1. Sign up at [https://numer.ai/](https://numer.ai)
+1. Sign up at [https://numer.ai/](https://numer.ai/)
 2. Download the dataset with training data and example scripts
 3. Build your model and submit your predictions back to Numerai
 4. Stake NMR on your models to earn/burn based on performance
@@ -71,7 +71,7 @@ You can download the latest dataset and submit your predictions manually using t
 
 ![](<../.gitbook/assets/image (68) (1).png>)
 
-You can also connect directly to our [GraphQL API](https://api-tournament.numer.ai) or via the official [Python](https://github.com/uuazed/numerapi) and [R](https://github.com/Omni-Analytics-Group/Rnumerai) api clients. Here is a basic example using the Python api client.
+You can also connect directly to our [GraphQL API](https://api-tournament.numer.ai/) or via the official [Python](https://github.com/uuazed/numerapi) and [R](https://github.com/Omni-Analytics-Group/Rnumerai) api clients. Here is a basic example using the Python api client.
 
 ```python
 import numerapi
@@ -112,7 +112,7 @@ Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/m
 
 ## Scoring
 
-You are primarily scored on your true contribution (`tc`) to the Meta Model and the correlation (`corr`) between your predictions and the targets. The higher the score, the better.
+You are primarily scored on your [true contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`tc`) to the Meta Model and the correlation (`corr`) between your predictions and the targets. The higher the score, the better.
 
 ```python
 # method='first' breaks ties based on order in array
@@ -140,11 +140,11 @@ You can also zoom in to a specific round and see the 20 daily scores within the 
 
 ## Staking
 
-You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `mmc` scores. You cannot stake on your `fnc` scores.
+You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `tc` scores. You cannot stake on your `fnc` or `mmc` scores.
 
 Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
-You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the model's stake into your wallet after a \~4-5 week delay based on when the stake release request was made. If the stake release request was made **before** the current submission deadline, the release will be effective on the first scoring day of the current round and ultimately applied 4 weeks later (from the first scoring day) after the round has resolved.  If the stake release request is made **after** the current submission deadline, the release request is queued for an additional week and will become effective on the first scoring day of the next round and ultimately released 4 weeks after that. Note, the \~4-5 week release delay is applied to all stake releases and does not take into account last active round for a model. You can also change your stake type, which determines which scores (`corr` and/or `mmc`) you want to stake on.&#x20;
+You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the model's stake into your wallet after a \~4-5 week delay based on when the stake release request was made. If the stake release request was made **before** the current submission deadline, the release will be effective on the first scoring day of the current round and ultimately applied 4 weeks later (from the first scoring day) after the round has resolved.  If the stake release request is made **after** the current submission deadline, the release request is queued for an additional week and will become effective on the first scoring day of the next round and ultimately released 4 weeks after that. Note, the \~4-5 week release delay is applied to all stake releases and does not take into account last active round for a model. You can also change your stake type, which determines which scores (`corr` and/or `tc`) you want to stake on.&#x20;
 
 ![](<../.gitbook/assets/image (94).png>)
 
@@ -153,7 +153,7 @@ You can manage your stake on the website. When you increase your stake, NMR is t
 Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±25% of the stake value per round.
 
 ```python
-payout = at_risk_stake * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
+payout = at_risk_stake * payout_factor * (corr * corr_multiplier + tc * tc_multiplier)
 ```
 
 The `at_risk_stake` is the value of your stake at the round submission deadline `Monday 14:30 UTC.`
@@ -162,12 +162,12 @@ The `payout_factor` is number that scales with the total NMR staked across all m
 
 ![](<../.gitbook/assets/image (89) (1).png>)
 
-The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
+The `corr_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
-|                             |                            |
-| --------------------------- | -------------------------- |
-| **corr multiplier options** | **mmc multiplier options** |
-| 1.0x                        | 0.0x, 0.5x, 1.0x, 2.0x     |
+|                             |                           |
+| --------------------------- | ------------------------- |
+| **corr multiplier options** | **tc multiplier options** |
+| 1.0x                        | 0.0x, 0.5x, 1.0x, 2.0x    |
 
 {% hint style="info" %}
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
