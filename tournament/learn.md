@@ -150,13 +150,15 @@ You can manage your stake on the website. When you increase your stake, NMR is t
 
 ## Payouts
 
-Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±25% of the stake value per round.
+Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. &#x20;
 
 ```python
-payout = at_risk_stake * payout_factor * (corr * corr_multiplier + tc * tc_multiplier)
+payout = payout_factor * at_risk_stake * MAX(-0.25, MIN(0.25, corr * corr_multiplier + tc * tc_multiplier))
 ```
 
 The `at_risk_stake` is the value of your stake at the round submission deadline `Monday 14:30 UTC.`
+
+The maximum combined score per round is clamped at ±0.25
 
 The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 300K threshold the lower the payout factor.
 
@@ -173,14 +175,14 @@ The `corr_multiplier` and `tc_multiplier` are configured by you to control your 
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
 {% endhint %}
 
-Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the payout is capped at ±25% of the stake value.
+Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the stake is capped at ±25% of the stake value and payout factor applied.
 
 | stake value | payout factor | corr  | corr multiplier | mmc   | mmc multiplier | payout    |
 | ----------- | ------------- | ----- | --------------- | ----- | -------------- | --------- |
 | 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 2.0x           | 1.92 NMR  |
 | 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 0.0x           | 1.6 NMR   |
 | 100 NMR     | 0.8           | -0.03 | 1.0x            | 0.002 | 0.5x           | -2.32 NMR |
-| 100 NMR     | 0.8           | 0.15  | 1.0x            | 0.1   | 2.0            | 25 NMR    |
+| 100 NMR     | 0.8           | 0.15  | 1.0x            | 0.1   | 2.0            | 20 NMR    |
 
 With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. You can track your daily payouts with the community-built [Numerai Payouts](https://docs.numer.ai/community-content/community-built-products#numerai-payouts) app.
 
