@@ -103,7 +103,7 @@ Arbitrage proposed using the [feather file format](https://arrow.apache.org/docs
 
 After creating the list from the data and storing it as a feather file, the new memory usage was 606 MB for the training data and 1.8 GB for the tournament data. And, because feather files are language agnostic, they work the same for Python and R, which captures the majority of tournament participants (sorry, [Bor](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-5)).
 
-[JRB](https://numer.ai/jrb) suggested [parquet](https://parquet.apache.org) as another option due to its popularity with enterprise data science teams. As an alternative method, JRB said you could also save the numpy array to disk with something like `numpy.save` and then instead of loading it, pass a flag saying use `mmap` which essentially means the file is memory mapped and doesn't use any physical memory from your machine.
+[JRB](https://numer.ai/jrb) suggested [parquet](https://parquet.apache.org/) as another option due to its popularity with enterprise data science teams. As an alternative method, JRB said you could also save the numpy array to disk with something like `numpy.save` and then instead of loading it, pass a flag saying use `mmap` which essentially means the file is memory mapped and doesn't use any physical memory from your machine.
 
 [Slyfox](https://twitter.com/ansonschu) was on the call and said that he's currently collecting feedback about the Numerai tournament data API to see how they could improve it or make it more functional. He didn't believe it would be prohibitively difficult to generate the data sets in pretty much any format the data scientists would want, and said he is open to delivering it in multiple formats. "Not now, though," he said.
 
@@ -165,7 +165,7 @@ He told us that on that first day they were relying heavily on his model and wer
 
 ![](<../../../.gitbook/assets/20200616\_113812 (1).png>)
 
-**What does the reputation column on** [**numerdash**](https://numerdash.com) **stand for? Is it a new scoring metric?**
+**What does the reputation column on** [**numerdash**](https://numerdash.com/) **stand for? Is it a new scoring metric?**
 
 Keno noted that the reputation column was just removed as it was tracking an old scoring metric.
 

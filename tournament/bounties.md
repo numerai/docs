@@ -77,6 +77,6 @@ If you have any good ideas about how to improve the Numerai propose it to us! If
 
 ### How to give feedback and suggestions
 
-Message us on the [RocketChat](https://community.numer.ai) #[feedback channel](https://community.numer.ai/channel/feedback).
+Message us on the [RocketChat](https://community.numer.ai/) #[feedback channel](https://community.numer.ai/channel/feedback).
 
 If you are going for a large bounty, it would be helpful if you wrote up your idea in a document (pdf or google docs) or a notebook (google colab, github).

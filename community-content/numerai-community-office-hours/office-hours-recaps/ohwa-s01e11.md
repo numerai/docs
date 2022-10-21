@@ -76,7 +76,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** Yeah, have fun with it.
 
-**Themicon:** I've learned so much from the people in [Rocket.Chat](https://community.numer.ai) or [the forum](https://forum.numer.ai) and things like that - I think really spend time reading the posts and trying to understand them.
+**Themicon:** I've learned so much from the people in [Rocket.Chat](https://community.numer.ai/) or [the forum](https://forum.numer.ai/) and things like that - I think really spend time reading the posts and trying to understand them.
 
 **Arbitrage:** That's really good, I think that's important so I'm glad you brought it up. Definitely have fun. I think sometimes that gets forgotten. And it's like I tell my students: look at the source code of [scikit learn](https://scikit-learn.org/stable/index.html) because even the comments there are valuable. Take advice from other people like from Medium posts and whatnot; I mean the quality of the posts in Rocket.Chat is amazing, I don't even understand some of the stuff.
 

@@ -8,7 +8,7 @@ description: The official rules and getting started guide to the Numerai Tournam
 
 The Numerai Tournament is where you build machine learning models on abstract financial data to predict the stock market. Your models can be staked with the NMR cryptocurrency to earn rewards based on performance.
 
-The staked models of Numerai are combined to form the Meta Model which controls the capital of the Numerai hedge fund across the global stock market.
+The staked models of Numerai are combined to form the Meta Model which controls the capital of the [Numerai hedge fund](https://numerai.fund/) across the global stock market.
 
 Watch this short film to learn how it all fits together:
 
@@ -59,19 +59,27 @@ predictions.to_csv("predictions.csv")
 
 You can use any language or framework to build your model. Check out our [example-scripts](https://github.com/numerai/example-scripts) for other example models and exploratory research notebooks. Head over to the [forum](https://forum.numer.ai) for the latest research topics from the team and community.
 
-## Submissions
+## Diagnostics
 
-Every `Saturday at 18:00 UTC` a new `round` opens and new tournament data is released. To participate in the round, you must submit your latest predictions by the deadline on `Monday 14:30 UTC`.
+You can use the diagnostics tool to understand the performance and risk characteristics of your model over the historical validation eras in the dataset.
 
-{% hint style="info" %}
-You must submit predictions **every week** to participate in the Numerai Tournament!
+{% hint style="warning" %}
+Using this historical evaluation tool repeatedly can quickly lead to overfitting. Treat diagnostics only as a final check in your model research process.
 {% endhint %}
 
-You can download the latest dataset and submit your predictions manually using the website.
+![](<../.gitbook/assets/dignostics (1).gif>)
 
-![](<../.gitbook/assets/image (68) (1).png>)
+Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/model-diagnostics-update/902).
 
-You can also connect directly to our [GraphQL API](https://api-tournament.numer.ai/) or via the official [Python](https://github.com/uuazed/numerapi) and [R](https://github.com/Omni-Analytics-Group/Rnumerai) api clients. Here is a basic example using the Python api client.
+## Submissions
+
+On every Tuesday, Wednesday, Thursday, Friday, and Saturday of the week, a new `round` is open and new tournament data is released. To participate in the round you need to download the latest tournament data, generate new predictions, and upload those predictions back to Numerai.
+
+{% hint style="info" %}
+Saturday rounds open at `18:00 UTC` and the submission window is open until Monday `14:30 UTC.`Weekday rounds open at `13:00 UTC` and the submission window is open for 1 hour.&#x20;
+{% endhint %}
+
+You can use our [GraphQL API](https://api-tournament.numer.ai/) or our [Python](https://github.com/uuazed/numerapi) and [R](https://github.com/Omni-Analytics-Group/Rnumerai) api clients to download the dataset and upload your predictions. Here is a basic example in Python.
 
 ```python
 import numerapi
@@ -84,69 +92,41 @@ napi.download_current_dataset(unzip=True)
 napi.upload_predictions("predictions.csv", model_id="model_id")
 ```
 
-You can also deploy your trained model to the cloud and automate your entire weekly submission workflow with the [Numerai Compute](https://github.com/numerai/numerai-cli) framework.
-
-```bash
-# setup your cloud infrastructure
-numerai setup
-
-# configure a node for an example python model
-numerai node config -e tournament-python3
-
-# deploy and test the example model 
-numerai node deploy
-numerai node test
-```
-
-## Diagnostics
-
-Upload your validation predictions to the diagnostics tool to understand the performance and risk characteristics of your model over the historical validation eras.
-
-{% hint style="warning" %}
-Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your model research process.
-{% endhint %}
-
-![](<../.gitbook/assets/dignostics (1).gif>)
-
-Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/model-diagnostics-update/902).
+Once you have your model pipeline working, you can deploy it to AWS using the [Numerai Compute](https://github.com/numerai/numerai-cli) framework to automatically participate in every round. &#x20;
 
 ## Scoring
 
-You are primarily scored on your [true contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`tc`) to the Meta Model and the correlation (`corr`) between your predictions and the targets. The higher the score, the better.
+Submissions are scored against the live target in a number of ways
 
-```python
-# method='first' breaks ties based on order in array
-ranked_predictions = predictions.rank(pct=True, method="first")
-correlation = np.corrcoef(labels, ranked_predictions)[0, 1]
-```
-
-You are also scored on your [meta model contribution](https://docs.numer.ai/tournament/metamodel-contribution) (`mmc`) and [feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) (`fnc`). The higher the meta model contribution and feature neutral correlation the better.
-
-Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the after the Monday deadline and final score on Wednesday 4 weeks later for a total of 20 scores.
-
-![](../.gitbook/assets/score-calendar-basic.png)
-
-Since a round takes \~4 weeks to resolve, if you submit new predictions every week, you will receive multiple (up to 4) overlapping scores on each scoring day from the 4 ongoing rounds.
-
-![](../.gitbook/assets/score-calendar-overlapping.png)
+* Correlation (`CORR`)
+* [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`)&#x20;
+* [Meta model contribution](https://docs.numer.ai/tournament/metamodel-contribution) (`MMC`)&#x20;
+* [Feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) (FNC)
+* ... and more!
 
 Your model's live scores can be viewed publicly on its model profile page. Here is an example of a model's final scores over the past 20 rounds.
 
 ![](<../.gitbook/assets/image (82) (1).png>)
 
-You can also zoom in to a specific round and see the 20 daily scores within the round.
+The live target of the round is constructed using 20 days of returns skipping the first two days of returns, also known as `20D2L`. On each of those 20 days, Numerai will compute a daily update of your submissions score. Here is an example of a submission's 20 score updates within a single round.&#x20;
 
 ![](<../.gitbook/assets/image (84) (1).png>)
 
 ## Staking
 
-You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `tc` scores. You cannot stake on your `fnc` or `mmc` scores.
+You can optionally stake [NMR](https://www.coinbase.com/price/numeraire) cryptocurrency on your model to earn payouts based on your `CORR` and/or `TC` scores.&#x20;
 
-Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
+In order to qualify for payouts in a round, you must be staked at the submission deadline of that round.
 
-You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the model's stake into your wallet after a \~4-5 week delay based on when the stake release request was made. If the stake release request was made **before** the current submission deadline, the release will be effective on the first scoring day of the current round and ultimately applied 4 weeks later (from the first scoring day) after the round has resolved.  If the stake release request is made **after** the current submission deadline, the release request is queued for an additional week and will become effective on the first scoring day of the next round and ultimately released 4 weeks after that. Note, the \~4-5 week release delay is applied to all stake releases and does not take into account last active round for a model. You can also change your stake type, which determines which scores (`corr` and/or `tc`) you want to stake on.&#x20;
+<img src="../.gitbook/assets/image (37).png" alt="" data-size="original">
 
-![](<../.gitbook/assets/image (94).png>)
+Once NMR is staked, it will remain locked until you release it. Staked NMR can only be released after the resolution of any ongoing rounds. While pending release, NMR will not count towards upcoming rounds.
+
+![](<../.gitbook/assets/image (27).png>)
+
+There are a few advanced options that you can also configure on your stake like your `payout mode` which determines where your payout goes and your `score multipliers` which determine how much each score impacts your payouts.&#x20;
+
+![](<../.gitbook/assets/image (8).png>)
 
 ## Payouts
 
@@ -156,7 +136,7 @@ Payouts are a function of your stake value and scores. The higher your stake val
 payout = at_risk_stake * MAX(-0.25, MIN(0.25, payout_factor * (corr * corr_multiplier + tc * tc_multiplier)))
 ```
 
-The `at_risk_stake` is the value of your stake at the round submission deadline `Monday 14:30 UTC.`
+The `at_risk_stake` is the value of your stake at the round's submission deadline.
 
 The maximum combined score per round is clamped at ±0.25
 
@@ -184,19 +164,15 @@ Here are some example payout calculations. The first 2 examples show the impact 
 | 100 NMR     | 0.8           | -0.03 | 1.0x            | 0.002 | 0.5x           | -2.32 NMR |
 | 100 NMR     | 0.8           | 0.15  | 1.0x            | 0.1   | 2.0            | 20 NMR    |
 
-With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. You can track your daily payouts with the community-built [Numerai Payouts](https://docs.numer.ai/community-content/community-built-products#numerai-payouts) app.
+With every daily score update, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts.&#x20;
 
-Final payouts are paid into your stake at the end of the round (Wednesday). When you start staking, your stake value will remain constant for the first 4 rounds. Afterwards, your stake value will update every week based on your payout of the round 4 weeks ago.
-
-![](<../.gitbook/assets/image (87) (1).png>)
-
-Your stake value will grow as long as you continue to have positive scores. Here are some example payout projections assuming that the model gets the same positive scores every week for 52 weeks.
+Your stake value will grow as long as you continue to have positive scores. Here are some example payout projections assuming that the model gets the same positive scores every round for 52 rounds.
 
 ![](<../.gitbook/assets/image (74) (1).png>)
 
 ## Leaderboard
 
-The leaderboard can be sorted by the reputation of model's `corr`, `mmc`, `fnc`, `fncv3`, and `tc`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
+The leaderboard can be sorted by the reputation of model's `CORR`, `MMC`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
