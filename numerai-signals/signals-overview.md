@@ -23,10 +23,10 @@ Stock market signals are feeds of numerical data about stocks used by quantitati
 
 Examples of stock market signals include:
 
-* [Fundamental signals](https://www.investopedia.com/terms/f/fundamentalanalysis.asp) ([P/E ratio](https://www.investopedia.com/terms/p/price-earningsratio.asp), [dividend yield](https://www.investopedia.com/terms/d/dividendyield.asp), [analyst ratings](https://www.investopedia.com/terms/r/rating.asp#:\~:text=A%20rating%20is%20conducted%20by,this%20action%20for%20the%20stock.))
+* [Fundamental signals](https://www.investopedia.com/terms/f/fundamentalanalysis.asp) ([P/E ratio](https://www.investopedia.com/terms/p/price-earningsratio.asp), [dividend yield](https://www.investopedia.com/terms/d/dividendyield.asp), [analyst ratings](https://www.investopedia.com/terms/r/rating.asp))
 * [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) ([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp))
-* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative\_data\_\(finance\)) ([credit card transactions](https://secondmeasure.com), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
-* [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp#:\~:text=The%20Barra%20Risk%20Factor%20Analysis%20is%20a%20multi%2Dfactor%20model,turnover%20and%20senior%20debt%20rating.), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
+* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative\_data\_\(finance\)) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
+* [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
 
 While the underlying data used to generate these signals can be very different (audited financials vs images of parking lots), the signals themselves all come in the same basic format - a list of stock tickers each with an associated numerical value.
 
@@ -37,12 +37,12 @@ While the underlying data used to generate these signals can be very different (
 To create your own signal, you will first need to acquire some stock market data.
 
 {% hint style="info" %}
-Data scientist with no stock market data? Participate in the [Numerai Tournament](https://numer.ai) instead.
+Data scientist with no stock market data? Participate in the [Numerai Tournament](https://numer.ai/) instead.
 {% endhint %}
 
-If you do not already have access to stock market data, there are a number of free or cheap data providers on the internet such as [Yahoo Finance](https://finance.yahoo.com), [Quandl](https://www.quandl.com), and [Koyfin](https://www.koyfin.com).
+If you do not already have access to stock market data, there are a number of free or cheap data providers on the internet such as [Yahoo Finance](https://finance.yahoo.com/), [Quandl](https://www.quandl.com/), and [Koyfin](https://www.koyfin.com/).
 
-There are also platforms that make it easy to create signals such as [QuantConnect](https://www.quantconnect.com), and [Alpaca](https://alpaca.markets).
+There are also platforms that make it easy to create signals such as [QuantConnect](https://www.quantconnect.com/), and [Alpaca](https://alpaca.markets/).
 
 Check out this [forum thread](https://forum.numer.ai/t/free-or-cheap-data-for-erasure-numerai-quant/350) for a list of sources popular data sources, platforms, and tools used by our community.
 
@@ -109,7 +109,7 @@ All of the historical targets used to calculate diagnostics is available [here](
 You must submit your latest signal to Numerai every week
 {% endhint %}
 
-You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either our [GraphQL API](https://api-tournament.numer.ai) or the official python client.
+You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either our [GraphQL API](https://api-tournament.numer.ai/) or the official python client.
 
 {% embed url="https://github.com/uuazed/numerapi#usage-example---numerai-signals" %}
 
@@ -254,7 +254,11 @@ There are two types of dates in Numerai Signals
 
 Submissions, stakes, scores and payouts are grouped into numbered `rounds` to make them easier to talk about.
 
-A new `round` begins every `Saturday at 18:00 UTC`. The deadline for submissions and staking is at `Monday at 14:30 UTC`. Late submissions will not be scored and will not count for payouts. Stake changes made after the deadline will apply to the next round.
+On every Tuesday, Wednesday, Thursday, Friday, and Saturday of the week, a new `round` is open and new tournament data is released.&#x20;
+
+{% hint style="info" %}
+Saturday rounds open at `18:00 UTC` and the submission window is open until Monday `14:30 UTC.`Weekday rounds open at `13:00 UTC` and the submission window is open for 1 hour.&#x20;
+{% endhint %}
 
 Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the Friday after the Monday deadline and final score on Thursday 4 weeks later for a total of 20 scores.
 
