@@ -76,7 +76,7 @@ Read more about model diagnostic in this [forum post](https://forum.numer.ai/t/m
 On every Tuesday, Wednesday, Thursday, Friday, and Saturday of the week, a new `round` is open and new tournament data is released. To participate in the round you need to download the latest tournament data, generate new predictions, and upload those predictions back to Numerai.
 
 {% hint style="info" %}
-Saturday rounds open at `18:00 UTC` and the submission window is open until Monday `14:30 UTC.`Weekday rounds open at `13:00 UTC` and the submission window is open for 1 hour.&#x20;
+Rounds open no earlier than 13:00 UTC. Weekday submission windows are open for 1 hour. Weekend windows open Saturday and close on Monday at 14:00 UTC.
 {% endhint %}
 
 You can use our [GraphQL API](https://api-tournament.numer.ai/) or our [Python](https://github.com/uuazed/numerapi) and [R](https://github.com/Omni-Analytics-Group/Rnumerai) api clients to download the dataset and upload your predictions. Here is a basic example in Python.
@@ -100,7 +100,6 @@ Submissions are scored against the live target in a number of ways
 
 * Correlation (`CORR`)
 * [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`)&#x20;
-* [Meta model contribution](https://docs.numer.ai/tournament/metamodel-contribution) (`MMC`)&#x20;
 * [Feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) (FNC)
 * ... and more!
 
@@ -157,12 +156,12 @@ The payout factor curve and available multiplier options may and will be updated
 
 Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the stake is capped at ±25% of the stake value and payout factor applied.
 
-| stake value | payout factor | corr  | corr multiplier | mmc   | mmc multiplier | payout    |
-| ----------- | ------------- | ----- | --------------- | ----- | -------------- | --------- |
-| 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 2.0x           | 1.92 NMR  |
-| 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 0.0x           | 1.6 NMR   |
-| 100 NMR     | 0.8           | -0.03 | 1.0x            | 0.002 | 0.5x           | -2.32 NMR |
-| 100 NMR     | 0.8           | 0.15  | 1.0x            | 0.1   | 2.0            | 20 NMR    |
+| stake value | payout factor | corr  | corr multiplier | tc    | tc multiplier | payout    |
+| ----------- | ------------- | ----- | --------------- | ----- | ------------- | --------- |
+| 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 2.0x          | 1.92 NMR  |
+| 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 0.0x          | 1.6 NMR   |
+| 100 NMR     | 0.8           | -0.03 | 1.0x            | 0.002 | 0.5x          | -2.32 NMR |
+| 100 NMR     | 0.8           | 0.15  | 1.0x            | 0.1   | 2.0           | 20 NMR    |
 
 With every daily score update, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts.&#x20;
 
@@ -172,7 +171,7 @@ Your stake value will grow as long as you continue to have positive scores. Here
 
 ## Leaderboard
 
-The leaderboard can be sorted by the reputation of model's `CORR`, `MMC`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
+The leaderboard can be sorted by the reputation of model's `CORR`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 

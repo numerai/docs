@@ -9,7 +9,6 @@
 * [Numerai CLI and Compute](tournament/compute.md)
 * [Tools, Libraries, Dashboards](tournament/tools.md)
 * [True Contribution (TC)](tournament/true-contribution-tc.md)
-* [Meta Model Contribution](tournament/metamodel-contribution.md)
 * [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
 * [Reputation](tournament/reputation.md)
 * [New Users](tournament/new-users.md)
