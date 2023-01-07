@@ -28,7 +28,9 @@ At the core of the Numerai Tournament is the free dataset. It is made of high qu
 
 ![](../.gitbook/assets/ex\_data.png)
 
-Each `id` corresponds to a stock at a specific time `era`. The `features` describe the various quantitative attributes of the stock at the time. The `target` represents an abstract measure of performance \~4 weeks into the future.
+Each `id` corresponds to a stock at a specific time `era`. The `features` describe the various quantitative attributes of the stock at the time. The `target` represents an abstract measure of performance \~4 weeks into the future.\
+\
+Visit [numer.ai/data](https://numer.ai/data) for details about the newest available dataset and how to download them.&#x20;
 
 ## Modeling
 
@@ -57,7 +59,9 @@ predictions = model.predict(tournament_data[feature_names])
 predictions.to_csv("predictions.csv")
 ```
 
-You can use any language or framework to build your model. Check out our [example-scripts](https://github.com/numerai/example-scripts) for other example models and exploratory research notebooks. Head over to the [forum](https://forum.numer.ai) for the latest research topics from the team and community.
+You can use any language or framework to build your model.&#x20;
+
+Our [example-scripts](https://github.com/numerai/example-scripts) have more advanced modeling ideas using the latest data available. Also check out the [forum](https://forum.numer.ai) for the latest research topics from the team and community.
 
 ## Diagnostics
 
@@ -82,13 +86,16 @@ Rounds open no earlier than 13:00 UTC. Weekday submission windows are open for 1
 You can use our [GraphQL API](https://api-tournament.numer.ai/) or our [Python](https://github.com/uuazed/numerapi) and [R](https://github.com/Omni-Analytics-Group/Rnumerai) api clients to download the dataset and upload your predictions. Here is a basic example in Python.
 
 ```python
-import numerapi
-napi = numerapi.NumerAPI("public_id", "secret_key")
+from numerapi import NumerAPI
+napi = NumerAPI("public_id", "secret_key")
 
 # download data
-napi.download_current_dataset(unzip=True)
+napi = NumerAPI()
+napi.download_dataset("v4.1/train.parquet", "train.parquet")
+napi.download_dataset("v4.1/live.parquet", "live.parquet")
+napi.download_dataset("v4.1/live_example_preds.parquet", "live_example_preds.parquet")
 
-# upload predictions
+# upload predictions (for example, the live_example_preds, but formatted as a csv) 
 napi.upload_predictions("predictions.csv", model_id="model_id")
 ```
 
