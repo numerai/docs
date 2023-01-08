@@ -146,9 +146,9 @@ The `at_risk_stake` is the value of your stake at the round's submission deadlin
 
 The maximum combined score per round is clamped at ±0.25
 
-The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 300K threshold the lower the payout factor.
+The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 360K threshold the lower the payout factor.
 
-![](<../.gitbook/assets/image (89) (1).png>)
+![](<../.gitbook/assets/image (1).png>)
 
 The `corr_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
