@@ -178,7 +178,7 @@ Your stake value will grow as long as you continue to have positive scores. Here
 
 ## Leaderboard
 
-The leaderboard can be sorted by the reputation of model's `CORR`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
+The leaderboard can be sorted by the reputation of model's `CORR`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
