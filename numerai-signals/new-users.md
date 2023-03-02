@@ -10,7 +10,7 @@ We're in the process of creating new user videos and more tutorials for a range 
 
 End to end notebook for Numerai Signals using completely free data from Yahoo Finance, by [Jason Rosenfeld](https://twitter.com/jrosenfeld13) ([jrAI](https://signals.numer.ai/jrai)).
 
-{% embed url="https://colab.research.google.com/drive/1ECh69C0LDCUnuyvEmNFZ51l:276nkQqo" %}
+{% embed url="https://colab.research.google.com/drive/1ECh69C0LDCUnuyvEmNFZ51l_276nkQqo" %}
 
 {% embed url="https://youtu.be/JxxNx4Qej7M" %}
 
