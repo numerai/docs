@@ -103,12 +103,11 @@ Once you have your model pipeline working, you can deploy it to AWS using the [N
 
 ## Scoring
 
-Submissions are scored against the live target in a number of ways
+Submissions are scored against the live target in a number of ways. Here are a few:
 
-* Correlation (`CORR`)
+* [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`)
 * [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`)&#x20;
 * [Feature neutral correlation](https://docs.numer.ai/tournament/feature-neutral-correlation) (FNC)
-* ... and more!
 
 Your model's live scores can be viewed publicly on its model profile page. Here is an example of a model's final scores over the past 20 rounds.
 

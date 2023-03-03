@@ -25,5 +25,5 @@ By using [cvxpylayers](https://github.com/cvxgrp/cvxpylayers), _we can include a
 
 ## How do I optimize for TC?
 
-We've found a few metrics seem to act as good indicators for TC. Currently, FNCv3 is the best we currently have. Numerai Researcher Michael Oliver also wrote a [forum post](https://forum.numer.ai/t/true-contribution-details/5128) discussing TC.
+We've found a few metrics seem to act as good indicators for TC. Currently, FNCv3 is the best we currently have. Numerai's Chief Data Scientist Michael Oliver also wrote a [forum post](https://forum.numer.ai/t/true-contribution-details/5128) discussing this topic.
 

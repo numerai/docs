@@ -4,33 +4,8 @@
 
 Long term performance is key.
 
-While your payouts depend on your performance in a single round, your reputation and rank depends on your performance over 20 rounds.
-
 ## Calculation
 
-Your reputation for `corr`, `mmc`, and `fnc` on round `n` is a weighted average of that metric over the past 20 rounds including rounds that are currently resolving.
+Your reputation for any given metric on any given day is simply the average of that metric over the past year using only resolved rounds.
 
-The weights on each round change as the round progresses. New rounds start low and gain weight as it nears resolution. Resolved rounds have full weight, but lose weight as it ages until it is dropped entirely.
-
-```python
-# delta is the difference between the current and target round number
-def round_weight(delta, day):
-  if delta < 4:
-      return (5 * delta + day) / 20
-  elif delta >= 16:
-      return (5 * (20 - delta) - day) / 20
-  else:
-      return 1
-```
-
-For example, here are the round weights on day 3 for round 204.
-
-![round\_weights example](<../.gitbook/assets/round\_weights\_horizontal (1).png>)
-
-## Missing scores
-
-Late and missing submissions in the 20 round window are penalized in order for reputation to be comparable across models.
-
-The first late or missed submission will receive the equivalent `example_predictions` score for CORR and FNC. Subsequent late or missed submissions will receive a very low score of `-0.1`. For TC, however, users receive only 0 for any missed submission.
-
-To avoid this penalty, automate your weekly submission workflow with [Numerai Compute](https://docs.numer.ai/tournament/compute).
+Late and missing submissions in the 1 year window are given a score of 0. To avoid this penalty, automate your weekly submission workflow with [Numerai Compute](https://docs.numer.ai/tournament/compute).

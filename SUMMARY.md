@@ -8,6 +8,7 @@
 * [Numerai Tournament Overview](tournament/learn.md)
 * [Numerai CLI and Compute](tournament/compute.md)
 * [Tools, Libraries, Dashboards](tournament/tools.md)
+* [Correlation (CORR)](tournament/correlation-corr.md)
 * [True Contribution (TC)](tournament/true-contribution-tc.md)
 * [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
 * [Reputation](tournament/reputation.md)

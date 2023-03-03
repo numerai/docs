@@ -1,10 +1,8 @@
 # Numerai CLI and Compute
 
-Numerai CLI 0.3.0 is here! This update introduces breaking changes, so if you're already using Numerai CLI 0.1 or 0.2, please make sure you follow the upgrade guide below.
-
 ## Introduction
 
-Numerai CLI (Command Line Interface) is a command line tool that helps you automate your weekly submission workflow by creating your own Numerai Compute Cluster and deploying Prediction Nodes to your cluster. The goal is to provision resources in the cloud for your Numerai models so they can automatically submit each week so you don't have to worry about getting burned by late submissions.
+Numerai CLI is a command line tool that helps you automate your weekly submission workflow by creating your own Numerai Compute Cluster and deploying Prediction Nodes to your cluster. The goal is to provision resources in the cloud for your Numerai models so they can automatically submit each week so you don't have to worry about getting burned by late submissions.
 
 ![Prediction Nodes in the Numerai Network](<../.gitbook/assets/architecture\_prediction\_network (3).png>)
 
