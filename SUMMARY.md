@@ -80,7 +80,7 @@
 ## Connect
 
 * [Connect Index](connect/index.md)
-* [RocketChat](https://community.numer.ai/)
+* [Discord](https://discord.gg/numerai)
 * [Twitter](https://twitter.com/numerai)
 * [Medium](https://medium.com/numerai)
 * [r/numerai](https://www.reddit.com/r/numerai/)
