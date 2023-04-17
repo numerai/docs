@@ -157,7 +157,7 @@ For more information on the exact market days that make up the 6 days of subsequ
 
 ### Scoring
 
-Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the Spearman correlation between the neutralized signal and the target (`target_20d`). This score is simply referred to as `corr` throughout this doc and the website.
+Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the [Numerai Correlation](https://docs.numer.ai/tournament/correlation-corr#calculation) between the neutralized signal and the target (`target_20d`). This score is simply referred to as `corr` throughout this doc and the website.
 
 By neutralizing your signal before scoring, Numerai aligns it with the target which improves its performance against the target. Since the target is also neutralized, the neutralization step effectively optimizes your signal for best performance without Numerai having to give out the data used for neutralization.
 
