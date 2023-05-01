@@ -13,8 +13,8 @@ def numerai_corr(preds, target):
   # rank (keeping ties) then Gaussianize predictions to standardize prediction distributions
   ranked_preds = (preds.rank(method="average").values - 0.5) / preds.count()
   gauss_ranked_preds = stats.norm.ppf(ranked_preds)
-  # make targets centered around 0. This assumes the targets have a mean of 0.5
-  centered_target = target - 0.5
+  # make targets centered around 0
+  centered_target = target - target.mean()
   # raise both preds and target to the power of 1.5 to accentuate the tails
   preds_p15 = np.sign(gauss_ranked_preds) * np.abs(gauss_ranked_preds) ** 1.5
   target_p15 = np.sign(centered_target) * np.abs(centered_target) ** 1.5
