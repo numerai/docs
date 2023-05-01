@@ -58,11 +58,11 @@ The universe is updated every week, but in general only a couple low volume stoc
 
 You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv).
 
-You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv). This file has two target columns: `target_4d` and `target_20d`. You are only scored on the latter.
+You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv). This file has several target columns. You are only scored on `target_20d_factor_feat_neutral`.
 
-Values for `target_4d` and `target_20d` become available after they have resolved, 11 and 33 days respectively from round open. `target_20d` takes longer to resolve, and so the most recent dates will have a value of `NaN` for `target_20d`, while `target_4d` will not.
+Values for all targets become available after they have resolved, 11 and 33 days respectively from round open.&#x20;
 
-`target_20d` is what your Signal is evaluated against for scoring and payouts.
+`target_20d_factor_feat_neutral` is what your Signal is evaluated against for scoring and payouts.
 
 ### Submissions
 
@@ -131,7 +131,7 @@ Every signal uploaded to Numerai Signals is neutralized before being scored. The
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
 {% endhint %}
 
-The targets used to evaluate signals (`target_20d`) are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
+The targets used to evaluate signals (`target_20d_factor_feat_neutral`) are also neutralized. The targets are in effect Numerai's custom "specific return" or "residual return".
 
 The data that is used to perform neutralization is not provided, which means the process is a "blackbox". However, you can use the historical diagnostics of your signal to estimate the impact neutralization will have on your signal in the future although it’s important to note that signals with strong scores over the historical period may not score well in any current or future round.
 
@@ -157,7 +157,7 @@ For more information on the exact market days that make up the 6 days of subsequ
 
 ### Scoring
 
-Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the [Numerai Correlation](https://docs.numer.ai/tournament/correlation-corr#calculation) between the neutralized signal and the target (`target_20d`). This score is simply referred to as `corr` throughout this doc and the website.
+Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the [Numerai Correlation](https://docs.numer.ai/tournament/correlation-corr#calculation) between the neutralized signal and the target (`target_20d_factor_feat_neutral`). This score is referred to as `FNCV4` throughout this doc and the website.
 
 By neutralizing your signal before scoring, Numerai aligns it with the target which improves its performance against the target. Since the target is also neutralized, the neutralization step effectively optimizes your signal for best performance without Numerai having to give out the data used for neutralization.
 
@@ -165,27 +165,13 @@ For example, if your signal is not neutralized to country risks, Numerai Signals
 
 If you only have signals on a subset of the universe (eg only signals on US stocks), you can still submit to Signals and still perform well. For each stock in the universe where you have missing signals, Numerai will automatically fill those in with the median value after the signal is ranked.
 
-### Meta Model Contribution
-
-If `corr` is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai, Meta Model Contribution (MMC) is a measure of how well your signal correlates to a target that is neutralized to all signals known to Numerai _and all other staked signals on Numerai Signals._ This score is simply referred to as `mmc` throughout this doc and the website.
-
-The `mmc` of a signal is computed by first constructing a special signal called the Signals' Meta Model, which is defined as the stake weighted average of all the (ranked and neutralized) signals on Numerai Signals for a given round. The `mmc` of a signal is the correlation of the signal to the target after being neutralized to the Signals' Meta Model.
-
-{% hint style="success" %}
-High and consistent MMC on Signals is doubly impressive because it means your signal has an edge over all of Numerai's data and the combination of all other signals on Numerai Signals as well.
-{% endhint %}
-
-MMC is a concept that is taken from the main Numerai Tournament and the scoring system is very similar. See the [metamodel contribution](https://docs.numer.ai/tournament/metamodel-contribution) section in the Numerai Tournament docs for details on how we compute MMC on Numerai.
-
-Note the computation of Numerai Signals' MMC is completely separate from that of the Numerai Tournament. Specifically, only submissions to Numerai Signals are used to construct the Signals' Meta Model.
-
 ## Staking <a href="#staking" id="staking"></a>
 
-You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `corr` and/or `mmc` scores.
+You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and/or `TC` scores.
 
 Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
-You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores (`corr` and/or `mmc`) you want to stake on.
+You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores (`FNCV4` and/or `TC`) you want to stake on.
 
 ![](https://gblobscdn.gitbook.com/assets%2F-LmGruQ\_-ZYj9XMQUd5x%2F-MTwWeGztnW6NaH6Sd\_A%2F-MTxK8xvV36McXIClWAt%2Fimage.png?alt=media\&token=aea91c60-7079-439b-bbd6-f64e9d8c26d7)
 
@@ -202,7 +188,7 @@ It is important to note that the opportunity to stake your signal is not an offe
 Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±5% of the stake value per round.
 
 ```python
-payout = stake_value * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
+payout = stake_value * payout_factor * (fncv4 * fncv4_multiplier + tc * tc_multiplier)
 ```
 
 The `stake_value` is the value of your stake as of the `close` of the round, minus and pending releases, and 0 if you have no submission.
@@ -213,12 +199,12 @@ The `payout_factor` is a number that scales with the total NMR staked across all
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
+The `fncv4_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
-|                             |                              |
-| --------------------------- | ---------------------------- |
-| **corr multiplier options** | **mmc multiplier options**   |
-| 2.0x                        | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
+|                              |                              |
+| ---------------------------- | ---------------------------- |
+| FNCV4 **multiplier options** | TC **multiplier options**    |
+| 2.0x                         | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
 
 {% hint style="info" %}
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
@@ -226,10 +212,10 @@ The payout factor curve and available multiplier options may and will be updated
 
 Here are some example payout calculations.&#x20;
 
-| stake value | payout factor | corr | corr multiplier | mmc   | mmc multiplier | payout   |
-| ----------- | ------------- | ---- | --------------- | ----- | -------------- | -------- |
-| 100 NMR     | 0.8           | 0.02 | 2.0x            | 0.002 | 2.0x           | 3.52 NMR |
-| 100 NMR     | 0.8           | 0.02 | 2.0x            | 0.002 | 0.0x           | 3.2 NMR  |
+| stake value | payout factor | FNCV4 | FNCV4 multiplier | TC    | TC multiplier | payout   |
+| ----------- | ------------- | ----- | ---------------- | ----- | ------------- | -------- |
+| 100 NMR     | 0.8           | 0.02  | 2.0x             | 0.002 | 2.0x          | 3.52 NMR |
+| 100 NMR     | 0.8           | 0.02  | 2.0x             | 0.002 | 0.0x          | 3.2 NMR  |
 
 ## Dates and Deadlines
 
@@ -260,7 +246,7 @@ The universe of the `round` is defined by the `data_date` of the prior Friday. T
 
 ## Leaderboard
 
-The leaderboard can be sorted by the reputation of model's `corr`, `mmc`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.
+The leaderboard can be sorted by the reputation of model's `FNCV4`, TC. [Reputation](https://docs.numer.ai/tournament/reputation) is the average of a given metric over the past year.
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
