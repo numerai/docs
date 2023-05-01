@@ -137,17 +137,17 @@ There are a few advanced options that you can also configure on your stake like 
 
 Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. &#x20;
 
-```python
-payout = at_risk_stake * MAX(-0.25, MIN(0.25, payout_factor * (corr * corr_multiplier + tc * tc_multiplier)))
-```
+<pre class="language-python"><code class="lang-python">combined_score = corr * corr_mult + tc * tc_mult
+<strong>payout = at_risk * np.clip(payout_factor * combined_score, -0.05, 0.05)
+</strong></code></pre>
 
-The `at_risk_stake` is the value of your stake at the round's submission deadline.
+The `at_risk` is the value of your stake at the round's submission deadline, minus and pending stake releases, and 0 if you have no submission.&#x20;
 
-The maximum combined score per round is clamped at ±0.25
+The maximum payout or burn per round is ±5%
 
-The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 360K threshold the lower the payout factor.
+The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 72K threshold the lower the payout factor.
 
-![](<../.gitbook/assets/image (1).png>)
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 The `corr_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
@@ -160,28 +160,20 @@ The `corr_multiplier` and `tc_multiplier` are configured by you to control your 
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
 {% endhint %}
 
-Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the stake is capped at ±25% of the stake value and payout factor applied.
+Here are some example payout calculations:
 
-| stake value | payout factor | corr  | corr multiplier | tc    | tc multiplier | payout    |
-| ----------- | ------------- | ----- | --------------- | ----- | ------------- | --------- |
-| 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 2.0x          | 1.92 NMR  |
-| 100 NMR     | 0.8           | 0.02  | 1.0x            | 0.002 | 0.0x          | 1.6 NMR   |
-| 100 NMR     | 0.8           | -0.03 | 1.0x            | 0.002 | 0.5x          | -2.32 NMR |
-| 100 NMR     | 0.8           | 0.15  | 1.0x            | 0.1   | 2.0           | 20 NMR    |
-
-With every daily score update, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts.&#x20;
-
-Your stake value will grow as long as you continue to have positive scores. Here are some example payout projections assuming that the model gets the same positive scores every round for 52 rounds.
-
-![](<../.gitbook/assets/image (74) (1).png>)
+| stake value | payout factor | corr  | corr multiplier | tc    | tc multiplier | payout   |
+| ----------- | ------------- | ----- | --------------- | ----- | ------------- | -------- |
+| 100 NMR     | 0.1           | 0.02  | 1.0x            | 0.02  | 2.0x          |  0.6 NMR |
+| 100 NMR     | 0.1           | -0.02 | 1.0x            | 0.002 | 0.0x          | -0.2 NMR |
 
 ## Leaderboard
 
-The leaderboard can be sorted by the reputation of model's `CORR`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 20 rounds.
+The leaderboard can be sorted by the reputation of model's `CORR`, `FNC`, `FNCv3`, and `TC`. [Reputation](https://docs.numer.ai/tournament/reputation) is the weighted average of a given metric over the past 1 year.
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![](<../.gitbook/assets/Screen Shot 2022-04-19 at 2.57.29 PM.png>)
+<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption><p>Leaderboard as of May 1 2023</p></figcaption></figure>
 
 ## Support
 

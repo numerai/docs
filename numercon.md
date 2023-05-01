@@ -30,14 +30,14 @@ Venue: SF Scottish Rite Masonic Center&#x20;
 Hang out while we set up for the conference, go for a walk through nearby [Stern Grove](https://sfrecpark.org/facilities/facility/details/Sigmund-Stern-Grove-375), or [check out nearby restaurants](https://www.google.com/maps/search/restaurants/@37.734537,-122.4805883,16z/data=!3m1!4b1). Be sure to be back before 13:20 to get seated! &#x20;
 
 **13:00 NumerCon**\
-****Venue opens to general admissions
+Venue opens to general admissions
 
 **13:30 Agenda kicks off**
 
 * Monopolize intelligence
 
 Numerai vision, Richard Craib, Founder and CEO \
-****Technical update: True Contribution, Michael Oliver, Minister of Research&#x20;
+Technical update: True Contribution, Michael Oliver, Minister of Research&#x20;
 
 * Monopolize data
 
