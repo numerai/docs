@@ -199,19 +199,19 @@ It is important to note that the opportunity to stake your signal is not an offe
 
 ### Payout function
 
-Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±25% of the stake value per round.
+Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±5% of the stake value per round.
 
 ```python
 payout = stake_value * payout_factor * (corr * corr_multiplier + mmc * mmc_multiplier)
 ```
 
-The `stake_value` is the value of your stake on the first Friday (scoring day) of the round.
+The `stake_value` is the value of your stake as of the `close` of the round, minus and pending releases, and 0 if you have no submission.
 
-The `stake_cap_threshold` is a number that determines when the `payout_factor` begins to decay.  At the time of this writing, the Signals `stake_cap_threshold` is 150K. The `stake_cap_threshold` can change per round at Numerai's discretion.
+The `stake_cap_threshold` is a number that determines when the `payout_factor` begins to decay.  At the time of this writing, the Signals `stake_cap_threshold` is 24K. The `stake_cap_threshold` can change per round at Numerai's discretion.
 
 The `payout_factor` is a number that scales with the total NMR staked across all models in the tournament. When the total NMR staked across all models exceeds the `stake_cap_threshold`, the `payout_factor` is reduced.
 
-![](<../.gitbook/assets/image (92).png>)
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The `corr_multiplier` and `mmc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
@@ -224,22 +224,12 @@ The `corr_multiplier` and `mmc_multiplier` are configured by you to control your
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
 {% endhint %}
 
-Here are some example payout calculations. The first 2 examples show the impact of adjusting score multipliers. The 3rd example shows how a negative score can cause a burn. The 4th example shows how the payout is capped at ±25% of the stake value.
+Here are some example payout calculations.&#x20;
 
-| stake value | payout factor | corr  | corr multiplier | mmc   | mmc multiplier | payout   |
-| ----------- | ------------- | ----- | --------------- | ----- | -------------- | -------- |
-| 100 NMR     | 0.8           | 0.02  | 2.0x            | 0.002 | 2.0x           | 3.52 NMR |
-| 100 NMR     | 0.8           | 0.02  | 2.0x            | 0.002 | 0.0x           | 3.2 NMR  |
-| 100 NMR     | 0.8           | -0.03 | 2.0x            | 0.002 | 0.5x           | -4.8 NMR |
-| 100 NMR     | 0.8           | 0.15  | 2.0x            | 0.07  | 2.0            | 25 NMR   |
-
-### Stake growth
-
-With every daily score, a new daily update on your payout is also computed. These daily payouts are also just updates and only the final payout of a round counts. Final payouts are paid into your stake at the end of the round (Wednesday).
-
-Your stake value will grow as long as you continue to have positive scores. Here are some example payout projections assuming that the model gets the same positive scores every week for 52 weeks.
-
-![](<../.gitbook/assets/image (91).png>)
+| stake value | payout factor | corr | corr multiplier | mmc   | mmc multiplier | payout   |
+| ----------- | ------------- | ---- | --------------- | ----- | -------------- | -------- |
+| 100 NMR     | 0.8           | 0.02 | 2.0x            | 0.002 | 2.0x           | 3.52 NMR |
+| 100 NMR     | 0.8           | 0.02 | 2.0x            | 0.002 | 0.0x           | 3.2 NMR  |
 
 ## Dates and Deadlines
 

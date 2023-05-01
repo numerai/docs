@@ -147,7 +147,7 @@ The maximum payout or burn per round is ±5%
 
 The `payout_factor` is number that scales with the total NMR staked across all models in the tournament. The higher the total NMR staked above the 72K threshold the lower the payout factor.
 
-<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 The `corr_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
@@ -173,7 +173,7 @@ The leaderboard can be sorted by the reputation of model's `CORR`, `FNC`, `FNCv3
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption><p>Leaderboard as of May 1 2023</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption><p>Leaderboard as of May 1 2023</p></figcaption></figure>
 
 ## Support
 
