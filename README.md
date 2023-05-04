@@ -56,7 +56,7 @@ model.fit(
 )
 ```
 
-See the [Example Models](numerai-tournament/example-models/) section for more advanced examples.
+See the [Models](numerai-tournament/models/) section for more advanced example models.
 
 ## Submissions
 
@@ -110,17 +110,7 @@ See the [Scoring](./#scoring) section for more details.
 
 ## Staking
 
-You can stake [NMR](https://www.coinbase.com/price/numeraire) on your model to earn payouts based on performance.
-
-<figure><img src=".gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
-
-Once staked, NMR will remain locked until you release it back to your wallet which takes 1 month.
-
-<figure><img src=".gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
-
-See the [Staking & Payouts](numerai-tournament/staking-and-payouts.md) section for more details.&#x20;
-
-## Payouts
+You can stake [NMR](https://www.coinbase.com/price/numeraire) on your model to earn payouts based on performance.&#x20;
 
 Your payout is a primarily a function of your scores. If you have a positive score you will get a payout. If you have a negative score a portion of your stake will burn.
 
@@ -134,7 +124,7 @@ payout = stake * clip(payout_factor * (corr * corr_mult + tc * tc_mult), -0.05, 
 * `payout_factor` is a dynamic value that scales inversely with total NMR staked
 * `corr_mult` and `tc_mult` are configured by you to control your exposure to each score
 
-See the [Staking & Payouts](numerai-tournament/staking-and-payouts.md) section for more details.&#x20;
+See the [Staking](numerai-tournament/staking.md) section for more details.&#x20;
 
 ## Leaderboard
 

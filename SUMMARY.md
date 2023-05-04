@@ -7,7 +7,7 @@
   * [V4.1 (Sunshine)](https://forum.numer.ai/t/super-massive-data-sunshine/5977)
   * [V4 (Titan)](https://forum.numer.ai/t/v4-tournament-data-announcement/5163)
   * [V3 (Supermassive)](https://forum.numer.ai/t/super-massive-data-release-deep-dive/4053)
-* [Example Models](numerai-tournament/example-models/README.md)
+* [Models](numerai-tournament/models/README.md)
   * [Example Model](https://github.com/numerai/example-scripts/blob/master/example\_model.py)
   * [Example Model Advanced](https://github.com/numerai/example-scripts/blob/master/example\_model\_advanced.py)
   * [Example Model Sunshine](https://github.com/numerai/example-scripts/blob/master/example\_model\_sunshine.py)
@@ -22,7 +22,7 @@
   * [Correlation (CORR)](numerai-tournament/scoring/correlation-corr.md)
   * [True Contribution (TC)](numerai-tournament/scoring/true-contribution-tc.md)
   * [Feature Neutral Correlation (FNC)](numerai-tournament/scoring/feature-neutral-correlation.md)
-* [Staking & Payouts](numerai-tournament/staking-and-payouts.md)
+* [Staking](numerai-tournament/staking.md)
 * [Bug Bounties](numerai-tournament/bounties.md)
 
 ## Numerai Signals
