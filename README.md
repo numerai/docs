@@ -58,20 +58,16 @@ model.fit(
 
 See the [Example Models](numerai-tournament/example-models/) section for more advanced examples.
 
-## Rounds&#x20;
+## Submissions
 
 The tournament is organized into rounds starting Saturday, Tuesday, Wednesday, Thursday and Friday every week.&#x20;
 
-At a high level, each round goes through 4 stages over the span of a month:
+Each round goes through 4 stages over the span of a month:
 
 * Open: live features released and submission window open
 * Closed: submission window closed
 * Scoring: submissions begin scoring
 * Resolved: scoring complete and payouts resolved
-
-See the [Rounds](numerai-tournament/rounds.md) section for more details about the lifecycle and schedule of rounds.
-
-## Submissions
 
 To compete in the tournament you must submit live predictions in every round.
 
@@ -97,7 +93,7 @@ live_predictions.to_csv(f"prediction_{current_round}.csv")
 napi.upload_predictions(f"prediction_{current_round}.csv", model_id="your-model-id")
 ```
 
-See the [Submissions & Automation](broken-reference) section for more details and examples.
+See the [Submissions](numerai-tournament/submissions/) section for more details and examples.
 
 ## Scoring
 
