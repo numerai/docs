@@ -1,4 +1,4 @@
-# Staking & Payouts
+# Staking
 
 ## Staking
 
@@ -36,7 +36,7 @@ payout_factor = min(1, 7200 / total_at_risk)
 
 `corr_mult` and `tc_mult` are configured by you to control your exposure to each score. Here are your options.
 
-| corr multiplier options | tc multiplier options  |
-| ----------------------- | ---------------------- |
-| 1.0x                    | 0.0x, 0.5x, 1.0x, 2.0x |
+| corr multiplier options | tc multiplier options                  |
+| ----------------------- | -------------------------------------- |
+| 0x, 0.5x, 1.0x          | 0.0x, 0.5x, 1.0x, 1.5x, 2.0x, 2.5x, 3x |
 
