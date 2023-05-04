@@ -1,21 +1,30 @@
 # Table of contents
 
-* [Numerai Tournament Docs](README.md)
-* [Japanese/日本語](https://jp.docs.numer.ai/)
+## Numerai Tournament
 
-## Tournament
-
-* [Numerai Tournament Overview](tournament/learn.md)
-* [Numerai CLI and Compute](tournament/compute.md)
-* [Tools, Libraries, Dashboards](tournament/tools.md)
-* [Correlation (CORR)](tournament/correlation-corr.md)
-* [True Contribution (TC)](tournament/true-contribution-tc.md)
-* [Feature Neutral Correlation](tournament/feature-neutral-correlation.md)
-* [Reputation](tournament/reputation.md)
-* [New Users](tournament/new-users.md)
-* [Numerai tournament FAQ](tournament/faq.md)
-* [Bounties](tournament/bounties.md)
-* [Forum](https://forum.numer.ai/)
+* [Overview](README.md)
+* [Data](numerai-tournament/data/README.md)
+  * [V4.1 (Sunshine)](https://forum.numer.ai/t/super-massive-data-sunshine/5977)
+  * [V4 (Titan)](https://forum.numer.ai/t/v4-tournament-data-announcement/5163)
+  * [V3 (Supermassive)](https://forum.numer.ai/t/super-massive-data-release-deep-dive/4053)
+* [Example Models](numerai-tournament/example-models/README.md)
+  * [Example Model](https://github.com/numerai/example-scripts/blob/master/example\_model.py)
+  * [Example Model Advanced](https://github.com/numerai/example-scripts/blob/master/example\_model\_advanced.py)
+  * [Example Model Sunshine](https://github.com/numerai/example-scripts/blob/master/example\_model\_sunshine.py)
+* [Rounds](numerai-tournament/rounds.md)
+* [Submissions & Automation](numerai-tournament/submissions-and-automation/README.md)
+  * [Compute Heavy](https://github.com/numerai/numerai-cli)
+  * [Compute Lite (Beta)](https://docs.google.com/document/d/1RCKgL4SAqEJ2atnMsdaPHdlV-d7pxJl9dB\_\_mSx11CM/edit?usp=sharing)
+  * [CRON Example](https://forum.numer.ai/t/automated-submissions-from-bash-shell-script/5806)
+  * [NGROK Example](https://github.com/Raynos/numerai-example/tree/ngrok-test)
+  * [Google Cloud VM Example](https://forum.numer.ai/t/automated-submission-with-google-cloud/3888)
+  * [Google Cloud Function Example](https://github.com/Raynos/numerai-example)
+* [Scoring](numerai-tournament/scoring/README.md)
+  * [Correlation (CORR)](numerai-tournament/scoring/correlation-corr.md)
+  * [True Contribution (TC)](numerai-tournament/scoring/true-contribution-tc.md)
+  * [Feature Neutral Correlation (FNC)](numerai-tournament/scoring/feature-neutral-correlation.md)
+* [Staking & Payouts](numerai-tournament/staking-and-payouts.md)
+* [Bug Bounties](numerai-tournament/bounties.md)
 
 ## Numerai Signals
 
@@ -23,14 +32,9 @@
 * [Signals New Users](numerai-signals/new-users.md)
 * [Signals FAQ](numerai-signals/signals-faq.md)
 
-## Help
+## Company
 
-* [Compute Tutorial](help/compute-tutorial.md)
-* [Numerai General FAQ](help/numerai-general-faq.md)
-* [Technical Support](help/support.md)
-* [Read, watch, listen](help/read-watch-listen.md)
-* [The Erasure Protocol](help/the-erasure-protocol.md)
-* [Uniswap Tutorial](help/uniswap-tutorial.md)
+* [About Numerai](company/about-numerai.md)
 
 ## Community Content
 
@@ -79,19 +83,14 @@
 
 ## Connect
 
-* [Connect Index](connect/index.md)
 * [Discord](https://discord.gg/numerai)
-* [Twitter](https://twitter.com/numerai)
-* [Medium](https://medium.com/numerai)
-* [r/numerai](https://www.reddit.com/r/numerai/)
-* [Meetup](https://www.meetup.com/Numerai/)
-* [Telegram](https://t.me/NMR\_Official)
 * [Forum](https://forum.numer.ai/)
+* [Twitter](https://twitter.com/numerai)
+* [Youtube](https://youtube.com/numerai)
 
 ## Numeraire
 
-* [Numeraire Index](numeraire/index.md)
-* [Tournament stake info](https://numer.ai/tournament)
-* [Supply information](https://numer.ai/nmr)
-* [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
-* [Contract](https://github.com/numerai/contract)
+* [Token Information](https://www.coinbase.com/price/numeraire)
+* [Supply Information](https://numer.ai/nmr)
+* [Contract on Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
+* [Contract on Github](https://github.com/numerai/contract)

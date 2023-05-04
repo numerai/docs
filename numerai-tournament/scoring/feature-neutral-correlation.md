@@ -1,8 +1,8 @@
-# Feature Neutral Correlation
+# Feature Neutral Correlation (FNC)
 
-## Motivation
+## What is FNC?
 
-Feature neutral correlation \(FNC\) is the correlation of a model with the target, after its predictions have been neutralized to all of Numerai’s features.
+Feature neutral correlation (FNC) is the correlation of a model with the target, after its predictions have been neutralized to all of Numerai’s features.
 
 A model that is overly reliant on a small set of features will have a low FNC, but might still have a high correlation in the short term. However, it is also more likely to burn significantly in the long term.
 
@@ -41,7 +41,10 @@ def calculate_fnc(sub, targets, features):
     return fnc
 ```
 
+## FNC on the website
+
+The current version of FNC shown on the website is called `FNCv3` which is nuetral to all the features in the V3 data.
+
 ## Discussion
 
 Read more about feature neutralization and feature exposure [here](https://forum.numer.ai/t/model-diagnostics-feature-exposure/899).
-

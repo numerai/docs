@@ -238,7 +238,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** Okay. I said earlier that I was getting into Selenium a little bit and it's like a world of hurt that I never knew existed, but it's a great learning experience. In fact, my script failed like 15 minutes ago, but oh well. This is where it gets a little difficult because you don't technically participate, but do you have three tips for people starting out?
 
-**Harsh:** Yeah, and I did write them down. One is ask questions and talk in [Rocket.Chat](https://community.numer.ai); second is use [Compute](../../../tournament/compute.md#introduction) and don't miss submissions; and third is stake more money. More skin in the game means you'll work harder, perform better, and earn more money.
+**Harsh:** Yeah, and I did write them down. One is ask questions and talk in [Rocket.Chat](https://community.numer.ai); second is use [Compute](broken-reference) and don't miss submissions; and third is stake more money. More skin in the game means you'll work harder, perform better, and earn more money.
 
 **Arbitrage:** You know, I think you're the first person to touch on that. It's true: if you have money on the line, you're going to be more protective of it. I think that's completely right. Here's the billboard question: if you could have a billboard with anything on it, what would it be and why?
 
