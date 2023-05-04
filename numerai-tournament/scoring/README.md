@@ -25,5 +25,5 @@ Only the final scores for rounds count towards a model's live performance.
 
 The 1 year average score is also called `reputation` and your model's rank on the leaderboard is primarily based on your model's 1 year average TC score.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (97) (1).png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (97) (1) (1).png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
 

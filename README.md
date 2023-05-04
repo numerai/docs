@@ -126,7 +126,7 @@ See the [Staking](numerai-tournament/staking.md) section for more details.&#x20;
 
 The 1 year average score is also called `reputation` and your rank on the leaderboard is based on your model's 1 year average `TC` score.&#x20;
 
-<figure><img src=".gitbook/assets/image (97) (1).png" alt=""><figcaption><p>numer.ai/leaderboard</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (97) (1) (1).png" alt=""><figcaption><p>numer.ai/leaderboard</p></figcaption></figure>
 
 ## Support
 

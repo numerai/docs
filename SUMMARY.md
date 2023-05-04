@@ -79,5 +79,6 @@
 ## NMR
 
 * [Coinbase](https://www.coinbase.com/price/numeraire)
+* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
 * [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
 * [Github](https://github.com/numerai/contract)
