@@ -60,18 +60,14 @@ See the [Models](numerai-tournament/models/) section for more advanced example m
 
 ## Submissions
 
-The tournament is organized into rounds starting Saturday, Tuesday, Wednesday, Thursday and Friday every week.&#x20;
-
-Each round goes through 4 stages over the span of a month:
+The tournament is organized into rounds starting Saturday, Tuesday, Wednesday, Thursday and Friday every week. Each round goes through 4 stages over the span of a month:
 
 * Open: live features released and submission window open
 * Closed: submission window closed
 * Scoring: submissions begin scoring
 * Resolved: scoring complete and payouts resolved
 
-To compete in the tournament you must submit live predictions in every round.
-
-Here is an example of how to make a submission in Python using [NumerAPI](https://github.com/uuazed/numerapi):
+To compete in the tournament you must submit live predictions in every round. Here is an example in Python using [NumerAPI](https://github.com/uuazed/numerapi):
 
 ```python
 # Authenticate
