@@ -6,7 +6,7 @@ description: From July 30, 2020 / Interview with Bouwe Ceunen
 
 For episode eight, Arbitrage interviewed [Bouwe Ceunen](https://twitter.com/BouweCeunen), Numerai [tournament participant](https://numer.ai/ceunen) and creator of the [Numerai Payouts](https://twitter.com/NPayouts) app that was teased in the [previous episode](ohwa-s02e07.md#office-hours-exclusive-preview).
 
-![Thanks for joining, Bouwe](<../../../.gitbook/assets/hello (1).gif>)
+![Thanks for joining, Bouwe](<../../../../.gitbook/assets/hello (1).gif>)
 
 The full interview with Bouwe will be uploaded on YouTube.
 

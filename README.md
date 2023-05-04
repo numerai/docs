@@ -134,6 +134,4 @@ The 1 year average score is also called `reputation` and your rank on the leader
 
 ## Support
 
-We are here to help.
-
 Find us on [Discord](https://discord.gg/numerai) for questions, support, and feedback!

@@ -6,7 +6,7 @@ description: From July 9, 2020 / Mike P interview
 
 Arbitrage had a special surprise for Episode 06 with the [Master Key](https://numer.ai/master\_key) himself [Easy Mike P](https://twitter.com/easymikep) joining in the hot seat.
 
-![Arbitrage is very excited](<../../../.gitbook/assets/excited (1).png>)
+![Arbitrage is very excited](<../../../../.gitbook/assets/excited (1).png>)
 
 You can check out [the full interview after the questions from Slido below](ohwa-s02e06.md#interview-with-mike-p).
 
@@ -90,7 +90,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** So fun surprise, Elaine here is actually my mom.
 
-![Thank you for joining!](<../../../.gitbook/assets/elaine (1).gif>)
+![Thank you for joining!](<../../../../.gitbook/assets/elaine (1).gif>)
 
 **Arbitrage:** Whoa!
 
@@ -110,7 +110,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** That makes perfect sense. Use words that are super smart sounding that you're not sure you understand and you know for sure other people don't understand. That's a perfect strategy. Thank you so much for joining. You know you have to come back now. You're like the Zoom Marm making sure that we behave. All these people here are a bunch of rascals.
 
-![](<../../../.gitbook/assets/rascals (1).png>)
+![](<../../../../.gitbook/assets/rascals (1).png>)
 
 **Elaine:** Well life is less fun if you're constantly behaving.
 
@@ -190,7 +190,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P cont:** Tip two is: take the time to set up [Compute](https://docs.numer.ai/tournament/compute). I think part of what makes the tournament seem overwhelming is that submitting every week feels like a burden. It makes people not want to add more models. It's easy to give up and feel like it's not worth your time to iterate on your model because it means you might not be submitting every week anyway. But if you have something running every week and you can count on it, it takes a lot of the stress off of it and you can work on improving it whenever you want. Especially if you have ten models, it's way better to have some kind of automation set up.
 
-![](<../../../.gitbook/assets/calendar (1).jpg>)
+![](<../../../../.gitbook/assets/calendar (1).jpg>)
 
 **Arbitrage:** Were you around pre-Compute?
 
@@ -212,7 +212,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** Yeah. And it's just awesome art. Everybody should have to look at it when they drive to work.
 
-![Mike P's dream commute](../../../.gitbook/assets/mike-p-billboard.png)
+![Mike P's dream commute](../../../../.gitbook/assets/mike-p-billboard.png)
 
 **Arbitrage:** I'll buy into that, I like that. So that's your billboard. I don't even know if I should ask this next question. I hemmed and hawed before I started recording about what to do with this one. We're doing it live. Mike P, who's your favorite team member? See he's trapped because if I asked him who his favorite participant was and he didn't pick me, I'd kick him right out of Zoom. And if he doesn't pick Richard, he's going to get fired, so it's lose-lose. It's not fair, but let's do it anyway.
 
@@ -250,7 +250,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** I actually studied computer science after I already knew how to code. I was doing some data science stuff in high school, and then decided it made sense to also study computer science in college. Most people's first coding problem is how to make a list or a `for` loop. Mine was how to slice a numpy array with extra dimensions, so it was totally the wrong way to learn it.
 
-![](<../../../.gitbook/assets/code (1).gif>)
+![](<../../../../.gitbook/assets/code (1).gif>)
 
 **Arbitrage:** I know I've said this a few times, but pick a project in your domain and do it in code. Because you know the data, and that's going to help because you'll know what the results should look like. If you could step into my shoes, Mike, what would you ask yourself that I didn't?
 

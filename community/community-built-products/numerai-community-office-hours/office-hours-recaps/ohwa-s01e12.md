@@ -6,7 +6,7 @@ description: From May 21, 2020 / JRB interview
 
 After what was totally not product placement for a popular brand of flavored carbonated water, Arbitrage kicked off episode 12 by interviewing longtime tournament data scientist [JRB](https://numer.ai/jrb).
 
-![It was La Croix](../../../.gitbook/assets/la-croix.gif)
+![It was La Croix](../../../../.gitbook/assets/la-croix.gif)
 
 ## The one where Arbitrage interviews JRB
 
@@ -56,7 +56,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** I don't really like Python that much -
 
-![](<../../../.gitbook/assets/gasp (1).gif>)
+![](<../../../../.gitbook/assets/gasp (1).gif>)
 
 **JRB:** I used to work on making Python faster at Facebook for Instagram. I think I know a little bit too much about the internals of Python to like it. But it's super convenient for the tournament. So I just use Python for the tournament.
 
@@ -108,7 +108,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** Oh, that's tough.
 
-![](<../../../.gitbook/assets/uno (1).png>)
+![](<../../../../.gitbook/assets/uno (1).png>)
 
 **JRB:** What's the tally for the votes at the moment?
 
@@ -120,7 +120,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **JRB:** I think I'll go with [Patrick](https://twitter.com/pschork) because the multi-models thing has been a game changer.
 
-![They did not expect that.](../../../.gitbook/assets/cheer-for-patrick.gif)
+![They did not expect that.](../../../../.gitbook/assets/cheer-for-patrick.gif)
 
 **Arbitrage:** That was unexpected - I love it when that happens. Makes for good entertainment value. NJ and Anson are tied, 3-3 split, and now Patrick has a vote.
 
@@ -136,7 +136,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** If we had honorable mentions, I do think Mike's pretty high up there.
 
-![Mike accepts his score](<../../../.gitbook/assets/3rd (1).png>)
+![Mike accepts his score](<../../../../.gitbook/assets/3rd (1).png>)
 
 **Arbitrage:** What is your number one feature request or suggestion for improvement for the tournament?
 
@@ -178,7 +178,7 @@ Mike P added that the live targets are calculated exactly the same as the traini
 
 "It is a Richard Craib creation, so it's going to be a little funky," Arbitrage said, "and I mean that with all due respect."
 
-![Dr. Craibenstein](<../../../.gitbook/assets/craibenstein (1).jpg>)
+![Dr. Craibenstein](<../../../../.gitbook/assets/craibenstein (1).jpg>)
 
 **What's the neural net equivalent of the** [**Integration Test**](https://numer.ai/integration\_test) **model?**
 

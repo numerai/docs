@@ -6,7 +6,7 @@ description: From August 6, 2020 / Wigglemuse interview
 
 For this, the ninth episode of season two, Arbitrage interviewed longtime tournament participant and [Rocket.Chat](https://community.numer.ai) all-start [Wigglemuse](https://numer.ai/wigglemuse).
 
-![Wigglemuse gets the center square, the Square of Honor](<../../../.gitbook/assets/wigglemuse (1).png>)
+![Wigglemuse gets the center square, the Square of Honor](<../../../../.gitbook/assets/wigglemuse (1).png>)
 
 The full interview with Wigglemuse will be published on YouTube.
 

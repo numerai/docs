@@ -38,7 +38,7 @@ In a scenario where a submission is 75% long and 25% short with positive correla
 
 The [Numerati Dashboard](https://www.jofaichow.co.uk/numerati/) is a project by tournament data scientist [Jo-fai](https://twitter.com/matlabulous) (Joe) aka [IA\_AI](https://numer.ai/ia\_ai). Joe built the dashboard to easily compare multiple tournament models. You can even select individual models to compare:
 
-![Comparing Arbitrage with Beanstalk](../../../.gitbook/assets/beanstalk-v-arbitrage.png)
+![Comparing Arbitrage with Beanstalk](../../../../.gitbook/assets/beanstalk-v-arbitrage.png)
 
 **Arbitrage asks Richard: what is the best submission type for the meta-model right now? What does that model look like?**
 
@@ -69,7 +69,7 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Quantverse:** I live in Prague, the capitol of the Czech Republic, a small country in Central Europe. It's already like, 10:00 pm now here.
 
-![](<../../../.gitbook/assets/prague (1).png>)
+![](<../../../../.gitbook/assets/prague (1).png>)
 
 **Arbitrage:** So Quantverse, what do you do for a living?
 
@@ -87,7 +87,7 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Quantverse:** Yeah... that's a good question! They basically know I'm doing projects related to bitcoin. They kind of know what bitcoin is already. Actually, they think I work for some weird American hedge fund.
 
-![Fair enough.](../../../.gitbook/assets/hedge-fund.png)
+![Fair enough.](../../../../.gitbook/assets/hedge-fund.png)
 
 **Quantverse:** It was really difficult to explain how the whole Numerai project actually works, so they probably just think I'm an employee or contractor. Pretty much they know I'm doing some stuff related to brokers and exchanges, but they don't really know the details. I think it's enough for them to grasp the principles of what I'm doing.
 
@@ -139,7 +139,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ ðŸ•ºðŸ
 
 **Arbitrage:** You at least announced it this time last year, if I remember correctly.
 
-![This was posted on a Wednesday: on Saturday July 13, Round 168 opened with the new targets](<../../../.gitbook/assets/kazutsugi (1).png>)
+![This was posted on a Wednesday: on Saturday July 13, Round 168 opened with the new targets](<../../../../.gitbook/assets/kazutsugi (1).png>)
 
 **Arbitrage:** And then there was work leading up to launching. So let's call it an 18-month development process with iterations on it live. I think this is the most stable we've seen the tournament. What's changed, of course, is that binary outcome where you have a full loss if you burn. To me, that's been the most welcome change because it's given a lot of stability and confidence in my modeling.
 
@@ -199,13 +199,13 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ ðŸ•ºðŸ
 
 **Arbitrage:** There it is! Ant, that's the one.
 
-![The family-friendly edition.](../../../.gitbook/assets/drive-carefully-safe-.png)
+![The family-friendly edition.](../../../../.gitbook/assets/drive-carefully-safe-.png)
 
 **Arbitrage:** Here's a controversial question that I love asking: who is your favorite team member?
 
 **Quantverse:** That's a tough question, but I think I'll vote for Anson actually. I've met him already in Prague.
 
-![Slyfox has a handsome lead.](../../../.gitbook/assets/anson-again.gif)
+![Slyfox has a handsome lead.](../../../../.gitbook/assets/anson-again.gif)
 
 **Arbitrage:** Yeah, he's a cool dude, I'll vouch for him.
 

@@ -24,7 +24,7 @@ description: June 04, 2020 / Interview with Joakim
 
 **Joakim:** Really just participating in their contests and the challenges they've been having lately and having success there. One key lesson for me has been learning not to overfit because it's **so** easy to overfit.
 
-![](<../../../.gitbook/assets/overfit (1).png>)
+![](<../../../../.gitbook/assets/overfit (1).png>)
 
 **Arbitrage:** Awesome. What do you do for a living? Are you doing full-time quant gig work?
 
@@ -163,7 +163,7 @@ He told us that on that first day they were relying heavily on his model and wer
 
 **Arbitrage:** Yeah Kazutsugi opened with two months of major burns.
 
-![](<../../../.gitbook/assets/20200616\_113812 (1).png>)
+![](<../../../../.gitbook/assets/20200616\_113812 (1).png>)
 
 **What does the reputation column on** [**numerdash**](https://numerdash.com/) **stand for? Is it a new scoring metric?**
 
