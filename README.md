@@ -51,7 +51,7 @@ model = lgb.LGBMRegressor(
       colsample_bytree=0.1
 )
 model.fit(
-      training_data[f for f in training_data.columns if "feature" in f],
+      training_data[[f for f in training_data.columns if "feature" in f]],
       training_data["target"]
 )
 ```
@@ -79,7 +79,7 @@ current_round = napi.get_current_round()
 # Download latest live features
 napi.download_dataset(f"v4.1/live_{current_round}.parquet")
 live_data = pd.read_parquet(f"v4.1/live_{current_round}.parquet")
-live_features = live_data[f for f in live_data.columns if "feature" in f]
+live_features = live_data[[f for f in live_data.columns if "feature" in f]]
 
 # Generate live predictions
 live_predictions = model.predict(live_features)
