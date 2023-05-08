@@ -12,7 +12,11 @@ At a high level, each row represents a stock at a specific point in time, where 
 
 There are many features in the dataset, ranging from fundamentals like P/E ratio, to technical signals like RSI, to market data like short interest, to secondary data like analyst ratings, and much more.
 
-Each feature has been meticulously designed and engineered by Numerai to be predictive of the target or additive to other features that are. We have taken special care to clean and prepare the data       &#x20;
+Each feature has been meticulously designed and engineered by Numerai to be predictive of the target or additive to other features. We have taken extreme care to make sure all features are point-in-time to avoid leakage issues.
+
+While many features can be predictive of the targets on their own, their predictive power is known to be inconsistent across over time. Therefore, we strongly advise against building models that rely too heavily on or are highly correlated to a small number of features as this will likely lead to inconsistent performance.&#x20;
+
+See this [forum post](https://forum.numer.ai/t/model-diagnostics-feature-exposure/899) for more information. &#x20;
 
 ### Targets&#x20;
 
@@ -28,7 +32,9 @@ Even though our objective is to predict the main target, we have found it helpfu
 
 Eras represents different points in time, where feature values are as-of that point in time, and target values as forward looking relative to the point in time.
 
-In historical data (train, validation), eras are 1 week apart but the target values can be forward looking by 20 days or 60 days. This means that the target values are "overlapping" so special care must be taken when applying cross validation. See this [forum post](https://forum.numer.ai/t/era-wise-time-series-cross-validation/791) for more information. &#x20;
+In historical data (train, validation), eras are 1 week apart but the target values can be forward looking by 20 days or 60 days. This means that the target values are "overlapping" so special care must be taken when applying cross validation.&#x20;
+
+See this [forum post](https://forum.numer.ai/t/era-wise-time-series-cross-validation/791) for more information. &#x20;
 
 ## Data API
 

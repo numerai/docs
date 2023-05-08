@@ -24,7 +24,7 @@ The maximum payout or burn per round is capped at ±5%
 payout = stake * clip(payout_factor * (corr * corr_mult + tc * tc_mult), -0.05, 0.05) 
 ```
 
-`stake` is the your model's stake value at the `close` of the round. This is also referred to the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstake amounts that are pending release, and is set to 0 if you have no valid submission for a round.
+`stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstaked amounts that are pending release, and is set to 0 if you have no valid submission for a round.
 
 `payout_factor` is a dynamic value that scales inversely with total NMR staked across the tournament, or more precisely the total stake value `at-risk` across the tournament at the `close` of the round.
 

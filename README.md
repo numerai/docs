@@ -8,8 +8,6 @@ description: Everything you need to know to get started in under 5 minutes
 
 The Numerai Data Science tournament is where data scientists from around the world build machine learning models on Numerai's obfuscated financial dataset to predict the stock market.&#x20;
 
-If you are just getting started, this is the overview for you!
-
 ## Data
 
 The Numerai dataset is a tabular dataset that describes the global stock market over time.

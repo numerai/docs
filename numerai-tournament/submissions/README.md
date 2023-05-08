@@ -17,9 +17,9 @@ Here is a visualization of the schedule of tournament rounds.
 
 <figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
-## Round Schedule
+## Submission Window
 
-We generally we expect rounds to follow this schedule:
+We generally expect rounds to follow this schedule:
 
 | Round   | Open          | Close         |
 | ------- | ------------- | ------------- |
