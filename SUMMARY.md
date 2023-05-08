@@ -30,7 +30,8 @@
 * [Numerai Signals Overview](numerai-signals/signals-overview.md)
 * [Signals New Users](numerai-signals/new-users.md)
 * [Signals FAQ](numerai-signals/signals-faq.md)
-* [QuantConnect Integration](numerai-signals/quantconnect-integration.md)
+* [Integrations](numerai-signals/integrations/README.md)
+  * [QuantConnect Integration](numerai-signals/integrations/quantconnect-integration.md)
 
 ## Community
 
