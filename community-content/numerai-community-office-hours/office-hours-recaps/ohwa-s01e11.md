@@ -20,7 +20,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Themicon:** I'm an astrophysicist.
 
-![勞](<../../../.gitbook/assets/explode (1).gif>)
+![勞](../../../.gitbook/assets/explode.gif)
 
 **Arbitrage:** This group is amazing! Let me get this straight: we have a user who works for NASA JPL, another user who does pandemic modeling, and now we have an astrophysicist and this astrophysicist says that Numerai is hard enough to simulate some of the things he's doing. I just wanted to make sure I have that straight because every time I ask people what they do I'm blown away. So please, carry on! You're an astrophysicist ...
 
@@ -38,7 +38,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Themicon:** Yeah that's [my profile](https://www.salt.ac.za/news/meet-the-team-dr-rudi-kuhn/).
 
-![Astrophysicist. Alien hunter. Numerai data scientist.](../../../.gitbook/assets/rudi.jpg)
+![Astrophysicist. Alien hunter. Numerai data scientist.](../../../.gitbook/assets/Rudi.jpg)
 
 **Arbitrage:** I'm going to have to open that up, but I'm also going to let you continue talking about these exoplanets. So basically you look for aliens.
 
@@ -46,7 +46,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** Does that explain your profile picture?
 
-![Aliens exist (probably)](<../../../.gitbook/assets/themicon (1).jpg>)
+![Aliens exist (probably)](../../../.gitbook/assets/themicon.jpg)
 
 **Themicon:** Yes it does.
 
@@ -86,7 +86,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Themicon:** Well it has to be either [Richard](https://twitter.com/richardcraib) or [NJ](https://twitter.com/tasha\_jade) - Cape Town for the win!
 
-![Table Bay Harbour in Cape Town](<../../../.gitbook/assets/table-bay-harbour-3541607\_960\_720 (1).jpg>)
+![Table Bay Harbour in Cape Town](../../../.gitbook/assets/table-bay-harbour-3541607\_960\_720.jpg)
 
 **Arbitrage:** You gotta pick one.
 
@@ -145,7 +145,7 @@ Arbitrage believes that the high correlation was a byproduct of increased volati
 
 > "When I look at my own performance from back then it's like, 'whoa what happened? Was I just really bad?' I didn't change anything, thankfully, but I was sure scared." - Arbitrage
 
-![We don't talk about the beginning of Kazutsugi](<../../../.gitbook/assets/cupcake (1).jpg>)
+![We don't talk about the beginning of Kazutsugi](../../../.gitbook/assets/cupcake.jpg)
 
 Mike P mentioned that they use that period as a benchmark for how predictions would hold up during a period of really low performance. Ultimately, though, he doesn't believe there was any one specific cause for why eras 168-171 were so difficult, chalking it up to market behavior that had never been present in the test data up until that point. He did add that it seems like it correlates with the beginning of Kazutsugi, but that's completely coincidental.
 

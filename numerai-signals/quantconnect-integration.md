@@ -1,7 +1,3 @@
----
-description: Supercharge your models with novel datasets and automate your submissions with QuantConnect.
----
-
 # QuantConnect Integration
 
 QuantConnect was founded in 2012 to serve quants everywhere with the best possible algorithmic trading technology. Seeking to disrupt a notoriously closed-source industry, QuantConnect takes a radically open-source approach to algorithmic trading. The QuantConnect Cloud Platform enables more than 50,000 quants on a monthly basis to backtest, research, and trade various asset classes, including Equities, Options, Futures, Crypto, Forex, and CFDs.
@@ -22,15 +18,12 @@ self.SignalExport.AddSignalExportProviders(NumeraiSignalExport(publicId, secretI
 
 The `NumeraiSignalExport` constructor accepts the following arguments:
 
-
-
-| Argument | Data Type | Description | Default Value |
-|---|---|---|---|
-| `publicId`  | `string` | Your Numerai API key. |   |
-| `secretId`  | `string` | Your Numerai API secret. |   |
-| `modelId`   | `string` | The Id of the Numerai model. |   |
-| `fileName`  | `string` | The name for the signal file. If you use a file name that already exists, the new file overwrites the old one. | "predictions.csv" |
-
+| Argument   | Data Type | Description                                                                                                    | Default Value     |
+| ---------- | --------- | -------------------------------------------------------------------------------------------------------------- | ----------------- |
+| `publicId` | `string`  | Your Numerai API key.                                                                                          |                   |
+| `secretId` | `string`  | Your Numerai API secret.                                                                                       |                   |
+| `modelId`  | `string`  | The Id of the Numerai model.                                                                                   |                   |
+| `fileName` | `string`  | The name for the signal file. If you use a file name that already exists, the new file overwrites the old one. | "predictions.csv" |
 
 ## Universe Selection
 
@@ -58,11 +51,11 @@ def OnSecuritiesChanged(self, changes: SecurityChanges) -> None:
 
 When you submit signals to Numerai Signals, abide by the following rules:
 
-- All signals must be between 0 and 1 (exclusive)
-- You must submit at least 10 different signals per submission
-- At least 1 signal value must be unique from the rest of the securities in the universe
+* All signals must be between 0 and 1 (exclusive)
+* You must submit at least 10 different signals per submission
+* At least 1 signal value must be unique from the rest of the securities in the universe
 
-To create signals, create `PortfolioTarget` objects. 
+To create signals, create `PortfolioTarget` objects.
 
 ```python
 targets = [PortfolioTarget(symbol, weight) for symbol, weight in weight_by_symbol.items()]
@@ -89,15 +82,13 @@ self.Schedule.On(
     self.submit_signals)
 ```
 
-In the preceding example, the `submit_signals` method will automatically run at 13:00 UTC every trading day. 
-
+In the preceding example, the `submit_signals` method will automatically run at 13:00 UTC every trading day.
 
 ## Deploying Live Algorithms
 
 Follow these steps to deploy a live algorithm on QuantConnect that submits signals to Numerai Signals:
 
 1. [Create a new project](https://www.quantconnect.com/docs/v2/cloud-platform/projects/getting-started#03-Create-Projects).
-
 2. In the [Initialize method](https://www.quantconnect.com/docs/v2/writing-algorithms/initialization), add a US Equity universe.
 
 ```python
@@ -164,7 +155,7 @@ def submit_signals(self):
 
 For more information about requesting historical stock prices and alternative data, see [History Requests](https://www.quantconnect.com/docs/v2/writing-algorithms/historical-data/history-requests).
 
-8. At the top of the web IDE, click the **Backtest** icon. 
+8. At the top of the web IDE, click the **Backtest** icon.
 
 QuantConnect doesn’t send targets to Numerai during backtests, but running a backtest is a quick way to test if the algorithm has coding errors before deploying live.
 

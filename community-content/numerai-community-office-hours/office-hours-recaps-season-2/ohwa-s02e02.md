@@ -26,7 +26,7 @@ Against advice not to, Arbitrage speculated that some of the factors being picke
 
 **From chat: frisbee golf is the real golf**
 
-!["No"](<../../../.gitbook/assets/uncomfortable (1).png>)
+!["No"](../../../.gitbook/assets/uncomfortable.png)
 
 **Is the apprentice now the master?**
 
@@ -64,7 +64,7 @@ Bor mentioned that with a lot of the linear models that have done well in the to
 
 Slyfox's position is that more MMC is just straight up good.
 
-![](<../../../.gitbook/assets/more (1).jpg>)
+![](../../../.gitbook/assets/more.jpg)
 
 Arbitrage asked if that's only the case with models with positive correlation. Slyfox explained that Numerai needs the models with high correlation as well because they need them to work alongside the high MMC models.
 
@@ -80,7 +80,7 @@ Jason joined the Office Hours call mostly because of how much he likes Arbitrage
 
 Erasure Quant was written in such a way that it was incompatible with the Numerai data set and was based on the [Russel 3000](https://www.ftserussell.com/products/indices/russell-us) index, which Numerai doesn't really trade off. It made sense to bring the Quant data under the Numerai umbrella in some way and at that point it made sense to enable account sharing and wallet sharing (when staking is available).
 
-![](<../../../.gitbook/assets/signals (1).png>)
+![](../../../.gitbook/assets/signals.png)
 
 **Will there be limits on Numerai Signals rewards and burns?** **Not having clarity or estimates makes it hard to justify the time to submit again.**
 

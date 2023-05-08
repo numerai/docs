@@ -6,7 +6,7 @@ description: From September 17, 2020 / Michael Oliver round two
 
 For the second episode of Season Three, longtime competitor and now Numerai team member [Michael Oliver](https://numer.ai/mdo) returned to talk about [Target Nomi](https://forum.numer.ai/t/new-target-nomi-release/959), the latest iteration of the Numerai tournament.
 
-![Kazutsugi vs Nomi](<../../../.gitbook/assets/target-nomi (1).png>)
+![Kazutsugi vs Nomi](../../../.gitbook/assets/target-nomi.png)
 
 The full interview and discussion with Michael Oliver on Target Nomi will be published on YouTube.
 

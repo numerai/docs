@@ -6,7 +6,7 @@ description: June 18, 2020 / John Scaife Interview
 
 For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Scaife](https://numer.ai/johnscaife\_):
 
-![A model worth talking about](../../../.gitbook/assets/john.png)
+![A model worth talking about](../../../.gitbook/assets/John.png)
 
 **Arbitrage:** So, let's get to it. Where do you live?
 
@@ -28,7 +28,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **John:** I'm a middle school math and science teacher. I just finished up my first year. Next year I'm probably going to lean towards just teaching math rather than science, but I'm open to both. The bulk of my career was spent as a cotton options market maker. First independently, and then on a team of three - I was in my mid-twenties and this group of veteran traders in their 40's signed me on. .
 
-![Different kind of cotton options](../../../.gitbook/assets/organiccotton.jpg)
+![Different kind of cotton options](../../../.gitbook/assets/Organiccotton.jpg)
 
 **John cont:** But career priorities shift, right? I told my wife that if Numerai goes really well, I would consider going back to school because recently I've been hooked on [Carlo Rovelli's](http://www.cpt.univ-mrs.fr/\~rovelli/#about-me) exploration of quantum theory. It's an avenue that really fascinates me. Pending success financially and other avenues, I would consider going back to school.
 
@@ -64,7 +64,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **John:** Living in the city for all those years, we love to go explore new food joints. Especially in New York City and Boston. I like fishing, I like the beach, I like ping pong, and recently I've become addicted to audiobooks. I kind of resisted jumping on the bandwagon, and now I can't get the earbuds out of my ears.
 
-![Audiobooks have their own unique risks](<../../../.gitbook/assets/audiobook (1).jpg>)
+![Audiobooks have their own unique risks](../../../.gitbook/assets/audiobook.jpg)
 
 **Arbitrage:** I can't listen to people talk, I need to see them talk. It's always been a challenge for me to listen to that kind of stuff so I would rather read it. Something about a physical book, too. I don't know, maybe it's because I'm 36 and I'm just on that edge of, 'I grew up with the tech change.' My grandmother had a rotary phone - so I know how to use a rotary phone but anybody who's two or three years younger than I am don't have any idea how to use a rotary phone.
 
@@ -102,7 +102,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **John:** Yeah, I'm sure risk tolerance plays a part of it, but (and I don't want to beat a dead horse) the noise in this data set is insane. Trying to find a signal, or MMC, I say you have to think like a right angle. How do you do that? I'm trying to figure it out too... Can you imagine if I tied emotion to it when I was trading cotton? We're talking about an illiquid market with wide markets and I'm holding hundreds of thousands of contracts. You can imagine the mark to market there. It takes a lot to rattle me.
 
-![Good ol' reliable cotton](<../../../.gitbook/assets/cotton (1).png>)
+![Good ol' reliable cotton](../../../.gitbook/assets/cotton.png)
 
 **Arbitrage:** That's a good point, and something I talk about in chat too with [Sorios](https://numer.ai/sorios). That account is swinging houses around, and personally I couldn't do that. Not where I am now as a PhD student (which is another reason why you shouldn't go back to school). But yeah he's swinging houses around and I just couldn't tell my girlfriend, "hey, I lost a house today." That's just me - risk is relative. Thank you for mentioning that - I think it's important to have this discussion in front of other people so they can understand what I mean by that. A little bit about your workflow - what programming language do you use and why do you use it?
 
@@ -132,7 +132,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** Different colored inks because you never have the same pen around.
 
-![John Scaife's secret sauce? Or Daniel Faraday's temporal-displacement equations?](<../../../.gitbook/assets/notebook (1).jpg>)
+![John Scaife's secret sauce? Or Daniel Faraday's temporal-displacement equations?](../../../.gitbook/assets/notebook.jpg)
 
 **Arbitrage:** You're definitely not ready to go back to school if you're using different colored ink. I can't have you in a PhD program switching pens around trying to trigger my like that.
 
@@ -142,13 +142,13 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **John:** I guess we all think alike.
 
-![Notebook appreciation post](<../../../.gitbook/assets/notebooks (1).png>)
+![Notebook appreciation post](../../../.gitbook/assets/notebooks.png)
 
 **Arbitrage:** I got a Bloomberg notebook, a red & black ... Oh! You're a finance guy so you know about red & black.
 
 **John:** Oh yeah!
 
-![Wall Street standard](../../../.gitbook/assets/wall-st-finest.png)
+![Wall Street standard](<../../../.gitbook/assets/wall st finest.png>)
 
 **Arbitrage:** I just buy notebooks and write stuff. It's all disorganized- my academic ideas blend in with my Numerai ideas, and then I don't even look at my notes so you know what? You probably shouldn't take my advice either.
 
@@ -156,7 +156,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** Bor and [this guy](https://numer.ai/themicon). \[gestures]
 
-![](../../../.gitbook/assets/this-guy.png)
+![](<../../../.gitbook/assets/this guy.png>)
 
 **John:** Last tip, and this really came out of nowhere: I started thinking about this when I was off the record bitching, and Richard directed me to focus on feature exposure. When he said that, it really clicked, and I said to myself, 'I need to focus on this right now and try to get my correlation with the meta-model as low as possible.' My last tip, and this has been the most beneficial for me, is: like what Richard said about what the market is inefficient with respect to, what about the data set is inefficient with respect to the market? That's how I think.
 
@@ -170,7 +170,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** Yeah - that's a good one. Ant, make sure you write that down, that's a good one.
 
-![Author's note: I got you.](<../../../.gitbook/assets/billboard (1).jpg>)
+![Author's note: I got you.](../../../.gitbook/assets/billboard.jpg)
 
 **Arbitrage:** This one is always controversial. I'm sorry, I don't mean to be controversial for your first time with us. Who is your favorite team member?
 
@@ -200,7 +200,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **John:** I'm finding similarities in the way I approach this competition to the early, Wild West days of online poker in the early 2000's. The only difference is MMC is one million times harder than it was figuring out how to exploit uneducated poker players back in the day. But my stake strategy is sort of similar. Back in those days, in order to move up in stakes you had to take calculated risk. Say I had a bankroll of $1,000 and I'm risking 5% of that bankroll every time I'm playing whatever limits I was playing. There will come a time where, if you're getting more confident in your game, or you want to try to maximize your reward, where you're going to need to take risks if you want to accelerate your growth. That was my approach to online poker in the early 2000's, and it's a similar approach to what I'm doing now.
 
-![](<../../../.gitbook/assets/chip (1).jpg>)
+![](../../../.gitbook/assets/chip.jpg)
 
 I cut off my risk for a period of time as I was grinding back from that drawdown; I reached a percentage above my original investment in terms of NMR (not total dollar amount), and I said to myself, 'I reached the threshold, now it's risk-on again.' If I get burned, it's risk-off, we're going to grind again, we have to be X% above the high watermark to be risk-on again. That's kind of the process that I follow.
 
@@ -238,7 +238,7 @@ _Author's note: Same._
 
 **Arbitrage:** Sunrise is a very special time in South Florida. Dawn patrol, baby! Get out on a long board and just ride. That's what I used to do. I skipped a lot of high school to go surfing. My parents were like, "it was a miracle you graduated high school- don't do that again." Then I went to college, flunked out the first time because I was partying too much, so I closely resemble what you said earlier about not partying so much. But that's life, right? Look where I am now.
 
-![](<../../../.gitbook/assets/rank (1).png>)
+![](../../../.gitbook/assets/rank.png)
 
 **Arbitrage:** I think I'm alright. And you're doing well, too, so it all works out. And the other one you said was, 'interesting career story' - give us one!
 
@@ -250,7 +250,7 @@ _Author's note: Same._
 
 **John cont:** It got to the point where his book was so messed up that I literally could not reconcile his positions. During this chaotic time, people are very angry and don't want to be bothered. As a young kid, I'm running around trying to get information, 'did he make this trade?' Long story short, he was so stressed out, I said, "I think we're long X amount of deltas and have these spreads on." As a trading assistant I'm doing this. He's like, "just do what you need to do."
 
-![](../../../.gitbook/assets/buy-sell.gif)
+![](<../../../.gitbook/assets/buy sell.gif>)
 
 **John:** So as a 23-year-old kid, I'm saying to myself, "he wants me to go execute 400 futures and 500 spreads? What do I do?" And then he started yelling, "go do it! Go do it!" So, I calculated his position and I executed it and ended up saving a ton of money, which he was grateful for. That was a very unique and stressful experience as a young trading assistant.
 

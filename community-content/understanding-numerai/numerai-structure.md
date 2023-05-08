@@ -88,7 +88,7 @@ The data set is cleaned, regularized, and most importantly: obfuscated. That mea
 
 Why is all this information hidden? The main reason is that they couldn't give you the data otherwise! High-quality financial data is _very_ expensive, and because of license restrictions they cannot just give it to you for free. But, if the data is obfuscated so that you can't tell what the stocks or the features are, they've worked it out so they can freely give away the data for you to make models.
 
-![the data](../../.gitbook/assets/ex\_data.png)
+![the data](../../.gitbook/assets/Ex\_data.png)
 
 There are a ton of common questions and confusions about the data set and what is expected of your models. A few of the most common ones are below. But many more ~~are~~ \[will be soon] covered in detail in the following pages. For now, it is enough to know that for you to participate in the Tournament, you don't need to bring anything but your data science and machine learning skills. (And if you don't have those skills, this is a great project to work on in order to learn them.)
 

@@ -6,7 +6,7 @@ description: From July 2, 2020 / Yuki interview
 
 For the fifth episode of Season 2, Arbitrage was joined by [Yuki](https://twitter.com/blog\_uki), a machine learning trader based in Japan and who recently wrote [an outstanding article on the Numerai tournament](https://towardsdatascience.com/numerai-tournament-blending-traditional-quantitative-approach-modern-machine-learning-67ebbb69e00c).
 
-![Office Hours starts at 5:00 am for Yuki ](../../../.gitbook/assets/uki.png)
+![Office Hours starts at 5:00 am for Yuki ](../../../.gitbook/assets/Uki.png)
 
 You can check out [the full interview after the Slido questions below](ohwa-s02e05.md#interview-with-yuki).
 
@@ -193,7 +193,7 @@ Richard Craib : *sqrt(12)
 
 **Yuki:** Okay, okay. Favorite member of Numerai. It's definitely [NJ](https://twitter.com/tasha\_jade).
 
-![](../../../.gitbook/assets/vote-for-nj.gif)
+![](<../../../.gitbook/assets/vote for nj.gif>)
 
 **Yuki:** When I write articles, she's very good at helping me out.
 
@@ -221,7 +221,7 @@ Richard Craib : *sqrt(12)
 
 **Yuki:** It's a difficult question. But, if I were you, I would ask tips for the _real_ market.
 
-![Did someone say "real" market?](<../../../.gitbook/assets/ooooo (1).gif>)
+![Did someone say "real" market?](../../../.gitbook/assets/ooooo.gif)
 
 **Arbitrage:** I definitely have kind of avoided that. So Yuki, what are your tips for the real stock market?
 

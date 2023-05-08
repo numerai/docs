@@ -6,7 +6,7 @@ description: From October 01, 2020 / Fireside chat post-mortem
 
 For episode four of the season, Arbitrage wanted to discuss the previous day's [Q4 fireside chat](https://www.youtube.com/watch?v=mbwMXUzPot4\&feature=youtu.be) with [Richard Craib](https://twitter.com/richardcraib) and [Anson Chu](https://twitter.com/ansonschu).
 
-![Check out the fireside chat on YouTube](../../../.gitbook/assets/fireside-boys.png)
+![Check out the fireside chat on YouTube](<../../../.gitbook/assets/fireside boys.png>)
 
 The full discussion of the fireside chat will be available on the [Numerai YouTube channel](https://youtube.com/numerai).
 

@@ -19,7 +19,7 @@ Numerai Signals is a part of the Numerai master plan to build the world's last h
 
 Stock market signals are feeds of numerical data about stocks used by quantitative hedge funds like Numerai to construct portfolios.
 
-![An example stock market signal](<../.gitbook/assets/group-42-2 (1).png>)
+![An example stock market signal](../.gitbook/assets/group-42-2.png)
 
 Examples of stock market signals include:
 
@@ -85,7 +85,7 @@ Submissions that include the `validation` time period must include two extra col
 * A `friday_date` column - values must be Fridays as week periods begin on Friday in Numerai Signals.
 * A `data_type` column - values can only be `live` or `validation`. Rows with `data_type` of `live` must contain the date of the most recent Friday.
 
-![An example submission with ticker](<../.gitbook/assets/example (1).png>)
+![An example submission with ticker](../.gitbook/assets/example.png)
 
 Download the latest example submission [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example\_signal/latest.csv).
 
@@ -93,7 +93,7 @@ Download the latest example submission [here](https://numerai-signals-public-dat
 
 Once your submission has been accepted, it will be queued for diagnostics. This usually takes 10-15 minutes depending on the number of weeks and tickers that span your submission.
 
-![An example diagnostics report](../.gitbook/assets/screen-shot-2020-10-10-at-4.19.28-pm.png)
+![An example diagnostics report](<../.gitbook/assets/Screen Shot 2020-10-10 at 4.19.28 PM.png>)
 
 These diagnostics serve as a guide for you to estimate whether your signal is good enough to be worth staking on. It is important to note that signals with strong diagnostics over the historical `validation` period may not score well in any current or future `live` periods.
 
@@ -125,7 +125,7 @@ Numerai has a variety of existing signals. Our existing signals include Barra fa
 
 Every signal uploaded to Numerai Signals is neutralized before being scored. The point of the neutralization is to isolate the original or orthogonal component of the signal that is not already present in known signals.
 
-![A visualization of neutralization against a single known signal](<../.gitbook/assets/image (53) (1).png>)
+![A visualization of neutralization against a single known signal](<../.gitbook/assets/image (50) (1).png>)
 
 {% hint style="info" %}
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
@@ -197,7 +197,7 @@ The `stake_cap_threshold` is a number that determines when the `payout_factor` b
 
 The `payout_factor` is a number that scales with the total NMR staked across all models in the tournament. When the total NMR staked across all models exceeds the `stake_cap_threshold`, the `payout_factor` is reduced.
 
-<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (69) (3).png" alt=""><figcaption></figcaption></figure>
 
 The `fncv4_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
@@ -238,11 +238,11 @@ Saturday rounds open at `18:00 UTC` and the submission window is open until Mond
 
 Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the Friday after the Monday deadline and final score on Thursday 4 weeks later for a total of 20 scores.
 
-![Effective dates for a round](../.gitbook/assets/signals-calendar-3-.png)
+![Effective dates for a round](<../.gitbook/assets/Signals Calendar (3).png>)
 
 The universe of the `round` is defined by the `data_date` of the prior Friday. The 20 days of scoring and payouts are based on `3day-2day` through `22day-2day` neutralized returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `22day-2day` neutralized returns are up to Tuesday market close, but only become available on Thursday.
 
-![Data dates for a round](../.gitbook/assets/signals-calendar-2-.png)
+![Data dates for a round](<../.gitbook/assets/Signals Calendar (2).png>)
 
 ## Leaderboard
 
@@ -250,7 +250,7 @@ The leaderboard can be sorted by the reputation of model's `FNCV4`, TC. [Reputat
 
 Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
 
-![](<../.gitbook/assets/image (93).png>)
+![](<../.gitbook/assets/image (88).png>)
 
 ## Support
 

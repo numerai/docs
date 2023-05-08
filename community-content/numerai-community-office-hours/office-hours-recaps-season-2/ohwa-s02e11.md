@@ -6,7 +6,7 @@ description: From August 20, 2020 / Carlo Lepelaars interview
 
 On episode 11, Arbitrage interviewed Carlo Lepelaars who recently wrote a [guide to competing in the Numerai tournament](https://app.wandb.ai/carlolepelaars/numerai\_tutorial/reports/Build-the-World-s-Open-Hedge-Fund-by-Modeling-the-Stock-Market--VmlldzoxODU0NTQ).
 
-![Carlo in the hot seat on Arbitrage's right](../../../.gitbook/assets/carlo.png)
+![Carlo in the hot seat on Arbitrage's right](../../../.gitbook/assets/Carlo.png)
 
 Check out the full interview with Carlo [on YouTube](https://www.youtube.com/channel/UCQt3RVSKsDpFgYIm1A-nWbA).
 

@@ -14,7 +14,7 @@ If you are just getting started, this is the overview for you!
 
 The Numerai dataset is a tabular dataset that describes the global stock market over time.
 
-![Numerai's obfuscated dataset](.gitbook/assets/ex\_data.png)
+![Numerai's obfuscated dataset](.gitbook/assets/Ex\_data.png)
 
 Each row represents a stock at a specific point in time, where `id` is the stock id and the `era` is the date. The  `features` describe the known attributes of the stock at the time (eg. P/E ratio) and the `target` represents a measure of future returns (eg. after 20 days).
 
@@ -100,7 +100,7 @@ There are two main scores:
 
 Here are the `CORR` and `TC` scores of our example model over the past 1 year of submissions.
 
-<figure><img src=".gitbook/assets/image (98).png" alt=""><figcaption><p><a href="https://numer.ai/integration_test/">https://numer.ai/integration_test</a></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (104).png" alt=""><figcaption><p><a href="https://numer.ai/integration_test/">https://numer.ai/integration_test</a></p></figcaption></figure>
 
 See the [Scoring](./#scoring) section for more details.
 

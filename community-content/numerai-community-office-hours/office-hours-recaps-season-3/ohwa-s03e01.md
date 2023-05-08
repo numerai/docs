@@ -6,7 +6,7 @@ description: From September 10, 2020 / HB Interview
 
 To kick-start Season 3 of Office Hours, Arbitrage interviewed one of the most requested users, NASA JPL scientist [HB](https://numer.ai/hb).
 
-![You could say his model spent some time in the #1 spot](../../../.gitbook/assets/hb.png)
+![You could say his model spent some time in the #1 spot](../../../.gitbook/assets/HB.png)
 
 The full interview with HB will be published on YouTube.
 

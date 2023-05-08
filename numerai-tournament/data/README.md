@@ -4,7 +4,7 @@
 
 The Numerai dataset is a tabular dataset that describes the global stock market over time.
 
-<figure><img src="../../.gitbook/assets/ex_data.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Ex_data.png" alt=""><figcaption></figcaption></figure>
 
 At a high level, each row represents a stock at a specific point in time, where `id` is the stock id and the `era` is the date. The  `features` describe the attributes of the stock (eg. P/E ratio) known on the date and the `target` is a measure of future returns (eg. after 20 days) relative to the date.
 

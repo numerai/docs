@@ -6,7 +6,7 @@ description: From July 23, 2020 / Harsh interview, MMC+Corr, special preview
 
 For this episode, Arbitrage had a jam-packed agenda including an interview with Harsh, Numerai team member and designer extraordinaire, Mike P discussed his recent forum post, and Arbitrage had a special preview for the audience.
 
-![You can recognize Harsh by the Numerai shirt and suave mustache.](../../../.gitbook/assets/welcome-harsh.png)
+![You can recognize Harsh by the Numerai shirt and suave mustache.](<../../../.gitbook/assets/welcome Harsh.png>)
 
 Check out the [full transcript of Harsh's interview](ohwa-s02e07.md#interview-with-harsh), [Mike's discussion](ohwa-s02e07.md#discussion-with-mike-p), and [Arbitrage's preview](ohwa-s02e07.md#office-hours-exclusive-preview) after the Slido questions below.
 
@@ -86,7 +86,7 @@ Richard said there's been some unusual market activity, including a high degree 
 
 You already might be familiar with some of Harsh's work:
 
-![Thank Harsh the next time you click on this little guy](../../../.gitbook/assets/dark-mode.png)
+![Thank Harsh the next time you click on this little guy](<../../../.gitbook/assets/dark mode.png>)
 
 **Arbitrage:** Harsh, tell us what else you've done so people are aware of your contributions to the project.
 
@@ -100,7 +100,7 @@ You already might be familiar with some of Harsh's work:
 
 **Harsh:** Right.
 
-![](<../../../.gitbook/assets/compute (1).png>)
+![](../../../.gitbook/assets/compute.png)
 
 **Arbitrage:** Sweet. Harsh, I did want to run through my famous set of questions. You pre-warned me, you said, "I don't really do the data science." I feel like that doesn't matter, I think you have a lot to add. You've been with the team for how long now?
 
@@ -138,7 +138,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** Oh cool!
 
-![The future of apartment hunting is powered by Erasure Bay](../../../.gitbook/assets/eb-for-rent.png)
+![The future of apartment hunting is powered by Erasure Bay](<../../../.gitbook/assets/EB for rent.png>)
 
 **Arbitrage:** Harsh, what do you do for a living? What is your profession / title?
 
@@ -158,7 +158,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** I saw this comic once that showed the difference between design intention and actual use, and it was people cutting the corners and walking on the grass instead of taking this winding sidewalk that was really pretty. I think of that when you mention the UX stuff.
 
-!['Desire lines' / 'desire paths' are signs of use that show how users prefer to interact with something](../../../.gitbook/assets/design-vs-ux.png)
+!['Desire lines' / 'desire paths' are signs of use that show how users prefer to interact with something](<../../../.gitbook/assets/design vs ux.png>)
 
 **Harsh:** A good example would be Apple. They take a design and UX-first approach; it's not an engineering-first company, it's a design-first company. Google is cool, but they're an engineering-first company and their design is not as good as Apple.
 
@@ -186,7 +186,7 @@ You already might be familiar with some of Harsh's work:
 
 **Harsh:** It's a Kawasaki Ninja.
 
-![Harsh having a good UX](../../../.gitbook/assets/ninja-harsh.jpg)
+![Harsh having a good UX](<../../../.gitbook/assets/ninja harsh.jpg>)
 
 **Arbitrage:** Ah so you like sport bikes. Nice. My girlfriend won't let me get a motorcycle.
 
@@ -248,7 +248,7 @@ You already might be familiar with some of Harsh's work:
 
 **Harsh:** I'm sure that would produce a lot of accidents on the road.
 
-![Totally readable and safe billboard](../../../.gitbook/assets/harsh-billboard.png)
+![Totally readable and safe billboard](<../../../.gitbook/assets/harsh billboard.png>)
 
 **Arbitrage:** Don't try to read it while you're driving, yeah. So Harsh, who's your favorite team member?
 
@@ -284,7 +284,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** I have a question: what's the picture behind you? Did you draw it?
 
-!["Picture?"](<../../../.gitbook/assets/picture (1).png>)
+!["Picture?"](../../../.gitbook/assets/picture.png)
 
 **Harsh:** No ... One second. \[Speaking off-screen] Maria, where did we get this picture?
 
@@ -322,7 +322,7 @@ Mike said that he would try to release something so tournament participants coul
 
 Arbitrage got to show off a preview of [a community-built mobile app](https://twitter.com/numerai/status/1288179925246124032):
 
-![](<../../../.gitbook/assets/app (1).gif>)
+![](../../../.gitbook/assets/app.gif)
 
 Community member [Bouwe Ceunen](https://twitter.com/BouweCeunen) built the Numerai Payouts app to help tournament participants track their payouts.
 

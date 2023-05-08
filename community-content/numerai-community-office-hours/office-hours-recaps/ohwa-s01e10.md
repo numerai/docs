@@ -41,7 +41,7 @@ Prior to the ten account rule, Arbitrage would take the total number of submissi
 
 A quick poll of the audience revealed that most of the Office Hours regulars have ten (or close to ten) accounts.
 
-![Office Hours regulars](<../../../.gitbook/assets/the\_breakfast\_club (1).jpg>)
+![Office Hours regulars](../../../.gitbook/assets/the\_breakfast\_club.jpg)
 
 Bor mentioned that, with at least 100 people focused solely on data modeling, that would rank Numerai up with some of the top quantitative hedge funds in the world in terms of data resources.
 
@@ -86,7 +86,7 @@ Arbitrage’s first idea: MMC needs its own leaderboard with a rank to brag abou
 
 **Slyfox (in chat):** No payouts for non-staked models.
 
-![No NMR for you](<../../../.gitbook/assets/soup (1).jpg>)
+![No NMR for you](../../../.gitbook/assets/soup.jpg)
 
 **Arbitrage:** I just got killed on that. But! We can still do what I’m talking about, just on staked models. Payout on stability.
 
@@ -118,7 +118,7 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Jason**: My data science knowledge is pretty poor. I’m more on the side of experimenting with the Numerai tournament using anonymous accounts (for now).
 
-![Jason submitting to the tournament](<../../../.gitbook/assets/hacker-3342696\_1920 (1).jpg>)
+![Jason submitting to the tournament](../../../.gitbook/assets/hacker-3342696\_1920.jpg)
 
 **Jason**: Data science isn’t my forte. It’s certainly something I want to learn more of. I’m sorry - data science I’m good at, a lot of my jobs are data pipelines or data munging jobs. As far as AI goes, I’m lacking. I haven’t done deep AI since college and that was ten years ago. The most complicated things we did were SVMs and neural nets; beginner’s stuff compared to today.
 
@@ -160,7 +160,7 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Jason**: We haven’t been doing much contract stuff lately, sadly. We wrote the Erasure tournament contract and that was pretty much the last thing. I was just looking at it again today, I was sad because I want to update it and do things with it. Now that we have multi-accounts, it’s not quite a bug, but there’s a lingering issue there. That’s why daily scores were delayed this morning, by the way, that was me testing multi-accounts with staking.
 
-![When daily scores are delayed](../../../.gitbook/assets/a\_crowd\_of\_angry\_looking\_people\_are\_shouting.jpg)
+![When daily scores are delayed](../../../.gitbook/assets/A\_crowd\_of\_angry\_looking\_people\_are\_shouting.jpg)
 
 **Arbitrage**: Can you tell us your top three tips for the tournament?
 
@@ -176,7 +176,7 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Arbitrage**: Oh! That’s three for the slyest of foxes!
 
-![Slyfox graciously accepting Jason's vote](../../../.gitbook/assets/anson-cheering.gif)
+![Slyfox graciously accepting Jason's vote](<../../../.gitbook/assets/anson cheering.gif>)
 
 **Arbitrage**: He’s got a commanding lead, by the way.
 

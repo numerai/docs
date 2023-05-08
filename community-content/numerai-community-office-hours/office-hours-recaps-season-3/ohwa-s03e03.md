@@ -6,7 +6,7 @@ description: From September 24, 2020 / Discussing Nomi with Michael Oliver
 
 For episode three, [Michael Oliver](https://numer.ai/mdo) returned to discuss some of the initial results from [the tournament's new target, Nomi](https://forum.numer.ai/t/new-target-nomi-release/959/3?u=jrb).
 
-![Michael Oliver pt III](<../../../.gitbook/assets/mdo (1).png>)
+![Michael Oliver pt III](../../../.gitbook/assets/mdo.png)
 
 The full video of Michael Oliver's Nomi discussion will be uploaded to [YouTube](https://youtube.com/numerai).
 

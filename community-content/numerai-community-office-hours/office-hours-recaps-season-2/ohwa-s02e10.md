@@ -6,7 +6,7 @@ description: From August 13, 2020 / Suraj interview
 
 For this episode, Arbitrage interviewed data scientist [Suraj P](https://numer.ai/surajp), who recently published a [guide to participating in the Numerai tournament](https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690).
 
-![Great turnout for episode 10](<../../../.gitbook/assets/everybody (1).png>)
+![Great turnout for episode 10](../../../.gitbook/assets/everybody.png)
 
 Check out Suraj's interview on YouTube:
 
