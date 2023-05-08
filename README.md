@@ -83,9 +83,12 @@ live_features = live_data[[f for f in live_data.columns if "feature" in f]]
 
 # Generate live predictions
 live_predictions = model.predict(live_features)
-live_predictions.to_csv(f"prediction_{current_round}.csv")
 
-# Submit predictions 
+# Format submission
+submission = pd.Series(live_predictions, index=live_features.index).to_frame("prediction")
+submission.to_csv(f"prediction_{current_round}.csv")
+
+# Upload submission 
 napi.upload_predictions(f"prediction_{current_round}.csv", model_id="your-model-id")
 ```
 
