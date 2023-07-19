@@ -256,4 +256,4 @@ Keep an eye on the leaderboard to see how your models compare to all other model
 
 We are here to help.
 
-Find us on [RocketChat](https://community.numer.ai) for questions, support, and feedback!
+Find us on [Discord](https://discord.gg/numerai)) for questions, support, and feedback!
