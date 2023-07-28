@@ -204,7 +204,7 @@ The `fncv4_multiplier` and `tc_multiplier` are configured by you to control your
 |                              |                              |
 | ---------------------------- | ---------------------------- |
 | FNCV4 **multiplier options** | TC **multiplier options**    |
-| 2.0x                         | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
+| 1.0x, 1.5x, 2.0x             | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
 
 {% hint style="info" %}
 The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
