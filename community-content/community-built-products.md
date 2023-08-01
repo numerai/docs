@@ -10,17 +10,11 @@ The community marketplace for Numerai by [ResTrading](https://twitter.com/Res\_d
 
 {% embed url="https://numerbay.ai/" %}
 
-## **Numerai Insights**
-
-A dashboard for analyzing model performance by [james.g9](https://numer.ai/fuka\_eri).
-
-{% embed url="https://www.numerai-insights.com/" %}
-
 ## **Numerai Payouts**
 
 An app to help you track and visualize your payouts by [Bouwe Ceunen](https://twitter.com/BouweCeunen)
 
-{% embed url="https://numeraipayouts.com/" %}
+[Numerai Payouts](https://numeraipayouts.com/)
 
 ## Numerati Dashboard
 
