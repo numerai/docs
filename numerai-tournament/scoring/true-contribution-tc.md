@@ -17,7 +17,7 @@ Read this [medium post](https://medium.com/numerai/alien-stock-market-intelligen
 
 This is possible using new techniques developed by Stephen Boyd of Stanford University, Brandon Amos from Facebook AI et al (see their paper: [Differentiable Convex Optimization Layers](https://web.stanford.edu/\~boyd/papers/pdf/diff\_cvxpy.pdf))
 
-By using [cvxpylayers](https://github.com/cvxgrp/cvxpylayers), _we can include a cvxpy defined convex portfolio optimization as a layer in a PyTorch model._ This lets us efficiently compute the gradient of the optimized portfolio return with respect to the stake values and determine the True Contribution of every signal submitted to Numerai.
+By using [cvxpylayers](https://github.com/cvxgrp/cvxpylayers), we can include a cvxpy defined convex portfolio optimization as a layer in a PyTorch model. This lets us efficiently compute the gradient of the optimized portfolio return with respect to the stake values and determine the True Contribution of every signal submitted to Numerai.
 
 ## How do I optimize for TC?
 

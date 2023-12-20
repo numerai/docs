@@ -2,16 +2,20 @@
 
 ## Scores
 
-There are two main scores used for payouts
+There are two main scores currently used for payouts
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
 * [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`):  Your prediction's contribution to the hedge fund's returns&#x20;
 
+On Jan 2, 2024 the payout metric will change to [Meta Model Contribution](meta-model-contribution-mmc-and-bmc.md) (`MMC`): Your predictions correlation to the target after neutralizing to the Meta Model.&#x20;
+
 We also have informational scores not used for payouts
 
 * [Feature Neutral Correlation (FNC)](feature-neutral-correlation.md): Your prediction's correlation to the target after neutralizing against all features &#x20;
+* Correlation with the Meta Model (CWMM): Your prediction's correlation to the Meta Model (stake weighted average of all predictions).
+* Benchmark Model Contribution (BMC): Your prediction's correlation to the target after neutralizing against the stake-weighted Benchmark Models.
 
-## Daily score updates
+## Live Scoring
 
 Within a single round, submissions will receive 20 score updates until the final score of the round is computed.&#x20;
 
@@ -29,7 +33,24 @@ For example, the first day of scoring on Friday 12th uses a 1D2L target, which i
 
 Only the final scores for rounds count towards a model's live performance.
 
-The 1 year average score is also called `reputation` and your model's rank on the leaderboard is primarily based on your model's 1 year average TC score. &#x20;
+The 1 year average score is also called `reputation` and your model's rank on the leaderboard is primarily based on your model's 1 year average TC score. This will change to MMC on Jan 2, 2024.
 
-<figure><img src="../../.gitbook/assets/image (97) (1) (1).png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
 
+## Diagnostics (Validation Scoring)
+
+Diagnostics is a tool to help you compute and visualize your scores over the validation dataset.
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>An example diagnostics report</p></figcaption></figure>
+
+If you uploaded your model via [Model Upload](../submissions/model-uploads.md), then Numerai will automatically run your model over the validation dataset to generate diagnostics.
+
+If you wish, you may also manually run diagnostics by heading over to [numer.ai/scores](https://numer.ai/scores) and clicking on the Run Diagnostics button.  &#x20;
+
+&#x20; &#x20;
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+To note, all of the scoring code we use to generate diagnostics is also available in our [example scripts repository](https://github.com/numerai/example-scripts) if you wish to replicate this locally.&#x20;
+
+A word of caution: past performance is no guarantee of future performance. This is especially true in the domain of financial machine learning. Take care not to rely too heavily on validation metrics during your research process to avoid overfitting to the validation dataset. If you train on the validation dataset, then don't expect your in-sample validation metrics to generalize out-of-sample.

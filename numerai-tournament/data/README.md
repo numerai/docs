@@ -4,7 +4,7 @@
 
 The Numerai dataset is a tabular dataset that describes the global stock market over time.
 
-<figure><img src="../../.gitbook/assets/Ex_data.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ex_data.png" alt=""><figcaption></figcaption></figure>
 
 At a high level, each row represents a stock at a specific point in time, where `id` is the stock id and the `era` is the date. The  `features` describe the attributes of the stock (eg. P/E ratio) known on the date and the `target` is a measure of future returns (eg. after 20 days) relative to the date.
 
@@ -14,9 +14,9 @@ There are many features in the dataset, ranging from fundamentals like P/E ratio
 
 Each feature has been meticulously designed and engineered by Numerai to be predictive of the target or additive to other features. We have taken extreme care to make sure all features are point-in-time to avoid leakage issues.
 
-While many features can be predictive of the targets on their own, their predictive power is known to be inconsistent across over time. Therefore, we strongly advise against building models that rely too heavily on or are highly correlated to a small number of features as this will likely lead to inconsistent performance.&#x20;
+While many features can be predictive of the targets on their own, their predictive power is known to be inconsistent across over time. Therefore, we strongly advise against building models that rely too heavily on or are highly correlated to a small number of features as this will likely lead to inconsistent performance. See this [forum post](https://forum.numer.ai/t/model-diagnostics-feature-exposure/899) for more information. &#x20;
 
-See this [forum post](https://forum.numer.ai/t/model-diagnostics-feature-exposure/899) for more information. &#x20;
+Note: some features values can be NaN. This is because some feature data is just not available at that point in time, and instead of making up a fake value we are letting you choose how to deal with it yourself.
 
 ### Targets&#x20;
 
@@ -28,13 +28,17 @@ Apart from the main target we provide many auxiliary targets that are different 
 
 Even though our objective is to predict the main target, we have found it helpful to also model these auxiliary targets. Sometimes, a model trained on an auxiliary target can even outperform a model trained on the main target. In other scenarios, we have found that building an ensemble of models trained on different targets can also help with performance. &#x20;
 
+Note: some auxiliary target values can be NaN but the main `target` will never be NaN. This is because some target data is just not available at that point in time, and instead of making up a fake value we are letting you choose how to deal with it yourself.
+
 ### Eras
 
 Eras represents different points in time, where feature values are as-of that point in time, and target values as forward looking relative to the point in time.
 
-In historical data (train, validation), eras are 1 week apart but the target values can be forward looking by 20 days or 60 days. This means that the target values are "overlapping" so special care must be taken when applying cross validation.&#x20;
+Instead of treating each row as a single data point, you should strongly consider treating each era as a single data point. For this same reason, many of the metrics on Numerai are "per-era", for example mean correlation per-era.  &#x20;
 
-See this [forum post](https://forum.numer.ai/t/era-wise-time-series-cross-validation/791) for more information. &#x20;
+In historical data (train, validation), eras are 1 week apart but the target values can be forward looking by 20 days or 60 days. This means that the target values are "overlapping" so special care must be taken when applying cross validation. See this [forum post](https://forum.numer.ai/t/era-wise-time-series-cross-validation/791) for more information. &#x20;
+
+In the live tournament, each new round contains a new era of live features but are only 1 day apart. &#x20;
 
 ## Data API
 
@@ -50,29 +54,26 @@ Here is how to query the data API to see what files are available and how to dow
 from numerapi import NumerAPI
 napi = NumerAPI()
 
-# Let's see what files are available for download in the latest v4.1 dataset
-[f for f in napi.list_datasets() if f.startswith("v4.1")] 
+# Let's see what files are available for download in the latest v4.2 dataset
+[f for f in napi.list_datasets() if f.startswith("v4.2")] 
 
-['v4.1/features.json',
- 'v4.1/live.parquet',
- 'v4.1/live_example_preds.csv',
- 'v4.1/live_example_preds.parquet',
- 'v4.1/live_int8.parquet',
- 'v4.1/meta_model.parquet',
- 'v4.1/train.parquet',
- 'v4.1/train_int8.parquet',
- 'v4.1/validation.parquet',
- 'v4.1/validation_example_preds.csv',
- 'v4.1/validation_example_preds.parquet',
- 'v4.1/validation_int8.parquet']
+['v4.2/features.json',
+ 'v4.2/live_int8.parquet',
+ 'v4.2/live_example_preds.csv',
+ 'v4.2/live_example_preds.parquet',
+ 'v4.2/meta_model.parquet',
+ 'v4.2/train_int8.parquet',
+ 'v4.2/validation_example_preds.csv',
+ 'v4.2/validation_example_preds.parquet',
+ 'v4.2/validation_int8.parquet']
  
 # Download the training data 
-napi.download_dataset("v4.1/train.parquet")
+napi.download_dataset("v4.2/train_int8.parquet")
 ```
 
-* `train.parquet` contains the historical data with features and targets
-* `validation.parquet` contains more historical data with features and targets
-* `live.parquet` contains the latest live features with no targets of the current round
+* `train_int8.parquet` contains the historical data with features and targets
+* `validation_int8.parquet` contains more historical data with features and targets
+* `live_int8.parquet` contains the latest live features with no targets of the current round
 * `features.json` contains metadata about the features and feature sets
 * `meta_model.parquet` contains the meta model predictions of past rounds
 * `live_example_preds.parquet` contains the latest live predictions of the example model&#x20;
@@ -90,6 +91,7 @@ The Numerai dataset is a living and breathing dataset that is constantly improvi
 
 Improvements to the dataset are released as new versions of the dataset to preserve backwards compatibility of models trained on older versions.
 
+* [V4.2 (Rain)](https://forum.numer.ai/t/rain-data-release/6657)
 * [V4.1 (Sunshine)](https://forum.numer.ai/t/super-massive-data-sunshine/5977)
 * [V4 (Titan)](https://forum.numer.ai/t/v4-tournament-data-announcement/5163)
 * [V3 (Supermassive)](https://forum.numer.ai/t/super-massive-data-release-deep-dive/4053)

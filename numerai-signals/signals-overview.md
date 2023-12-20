@@ -13,13 +13,14 @@ Numerai Signals is a part of the Numerai master plan to build the world's last h
 1. Sign up to [Numerai Signals](https://signals.numer.ai) or sign in with your existing Numerai tournament account.
 2. Upload your signal on Numerai's stock universe to receive performance, risk, and profitability diagnostics over the historical portion of your signal.
 3. Stake NMR on the live portion of your signal to earn or lose NMR based on your performance relative to Numerai's custom targets.
-4. Automate the weekly upload of your signal by connecting directly to our API and grow the value of your stake over time.
+4. Automate the daily upload of your signal by connecting directly to our API or use [numerai-cli](https://github.com/numerai/numerai-cli)\
+   &#x20;and grow the value of your stake over time.
 
 ## What are stock market signals?
 
 Stock market signals are feeds of numerical data about stocks used by quantitative hedge funds like Numerai to construct portfolios.
 
-![An example stock market signal](../.gitbook/assets/group-42-2.png)
+![An example stock market signal](<../.gitbook/assets/group-42-2 (1).png>)
 
 Examples of stock market signals include:
 
@@ -50,13 +51,15 @@ Check out this [forum thread](https://forum.numer.ai/t/free-or-cheap-data-for-er
 Finding unique and differentiated datasets is key to creating original signals.
 {% endhint %}
 
+You can download the universe, examples, and historic targets [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/latest\_signals\_dataset.zip).
+
 ### Universe
 
 The Numerai Signals stock market universe covers roughly the top 5000 largest stocks in the world.
 
-The universe is updated every week, but in general only a couple low volume stocks will move in or out on a given week.
+The universe is updated every day, but in general only a couple low volume stocks will move in or out on a given day.
 
-You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/universe/latest.csv).
+You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/latest\_universe.csv).
 
 You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv). This file has several target columns. You are only scored on `target_20d_factor_feat_neutral`.
 
@@ -73,27 +76,27 @@ When you submit a signal to Numerai Signals, you must include at least two colum
 
 Additionally, for a submission to be valid:
 
-* There must be at least 10 rows with predictions for tickers in the Signals stock market universe for the current `live` time period.
+* There must be at least 100 rows with predictions for tickers in the Signals stock market universe for the current `live` time period.
 * A ticker cannot appear in the current `live` time period more than once.
 
 Submissions with only two columns are assumed to correspond to the current `live` time period.
 
-You may also to upload your signal over a historical `validation` time period to receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans from `20130104` to the present.
+Refer to the [Submissions](signals-overview.md#submissions) docs to understand how and when submission windows take place.
 
-Submissions that include the `validation` time period must include two extra columns:
+### Diagnostics & Validation Predictions
 
-* A `friday_date` column - values must be Fridays as week periods begin on Friday in Numerai Signals.
-* A `data_type` column - values can only be `live` or `validation`. Rows with `data_type` of `live` must contain the date of the most recent Friday.
+You may also use the diagnostics tool (click the beaker next to your model on the [scores](https://signals.numer.ai/scores) page) to upload your signal over a historical `validation` time period and receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans from `20130104` to the present.
 
-![An example submission with ticker](../.gitbook/assets/example.png)
+Uploads over the `validation` time period must include two extra columns:
 
-Download the latest example submission [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/example\_signal/latest.csv).
+* A `friday_date` column - historic data is weekly and the diagnostics tool jjassumes your predictions for a given week are made using market close data of the latest Friday
+* A `data_type` column - values can only be `live` or `validation`. Rows with `data_type` of `live` should be for the date of the most recent Friday and any Friday before \~1 month before the latest Friday is considered `validation`
 
-### Diagnostics
+![An example submission with ticker](<../.gitbook/assets/example (1).png>)
 
-Once your submission has been accepted, it will be queued for diagnostics. This usually takes 10-15 minutes depending on the number of weeks and tickers that span your submission.
+Once your upload is validated, diagnostics will start running. This usually takes 5-10 minutes depending on the number of weeks and tickers that span your submission.
 
-![An example diagnostics report](<../.gitbook/assets/Screen Shot 2020-10-10 at 4.19.28 PM.png>)
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-18 at 1.53.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 These diagnostics serve as a guide for you to estimate whether your signal is good enough to be worth staking on. It is important to note that signals with strong diagnostics over the historical `validation` period may not score well in any current or future `live` periods.
 
@@ -101,17 +104,19 @@ These diagnostics serve as a guide for you to estimate whether your signal is go
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process.
 {% endhint %}
 
-All of the historical targets used to calculate diagnostics is available [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv).
-
 ### API and Automation
 
 {% hint style="info" %}
-You must submit your latest signal to Numerai every week
+You must submit your latest signal to Numerai every day
 {% endhint %}
 
-You can automate your submission workflow by using [Numerai Compute](https://docs.numer.ai/tournament/compute) and either our [GraphQL API](https://api-tournament.numer.ai/) or the official python client.
+You can automate your submission workflow by using:
 
-{% embed url="https://github.com/uuazed/numerapi#usage-example---numerai-signals" %}
+* The API:
+  * [Numerapi](https://github.com/uuazed/numerapi) (official Python client)
+  * [RNumerai](https://github.com/OmniacsDAO/Rnumerai) (unofficial R client)
+  * Raw [GraphQL API](https://api-tournament.numer.ai/) for other languages
+* Our open-source cloud automation tool [Numerai Compute](https://docs.numer.ai/tournament/compute)
 
 ## Signal Evaluation
 
@@ -125,7 +130,7 @@ Numerai has a variety of existing signals. Our existing signals include Barra fa
 
 Every signal uploaded to Numerai Signals is neutralized before being scored. The point of the neutralization is to isolate the original or orthogonal component of the signal that is not already present in known signals.
 
-![A visualization of neutralization against a single known signal](<../.gitbook/assets/image (50) (1).png>)
+![A visualization of neutralization against a single known signal](<../.gitbook/assets/image (53) (1).png>)
 
 {% hint style="info" %}
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
@@ -197,7 +202,7 @@ The `stake_cap_threshold` is a number that determines when the `payout_factor` b
 
 The `payout_factor` is a number that scales with the total NMR staked across all models in the tournament. When the total NMR staked across all models exceeds the `stake_cap_threshold`, the `payout_factor` is reduced.
 
-<figure><img src="../.gitbook/assets/image (69) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 The `fncv4_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
 
@@ -217,40 +222,34 @@ Here are some example payout calculations.&#x20;
 | 100 NMR     | 0.8           | 0.02  | 2.0x             | 0.002 | 2.0x          | 3.52 NMR |
 | 100 NMR     | 0.8           | 0.02  | 2.0x             | 0.002 | 0.0x          | 3.2 NMR  |
 
-## Dates and Deadlines
+## Grandmasters Rankings and Tiers
 
-### Data Date vs Effective Date
+Signals Grandmasters is identical to Numerai, but has slightly different tier qualifications:
 
-There are two types of dates in Numerai Signals
+**Grandmasters** place first
 
-* `data_date` - dates corresponding to the underlying stock market data. All `data_dates` refer to the market close of that date and do not include a time. For example, values in the `friday_date` column of submissions are of type `data_date`.
-* `effective_date`- dates corresponding to actions or events that take place on Numerai Signals and may include a time which is always specified in UTC. There is usually a delay between the `data_date` and the `effective_date` because of time zones and the time it takes for stock market data to be processed. Unless otherwise specified, all dates mentioned in the website and this doc are of type `effective_date`.
+**Masters** place in the top 10
 
-### Rounds
+**Experts** place in the top 25%
 
-Submissions, stakes, scores and payouts are grouped into numbered `rounds` to make them easier to talk about.
+**Researchers** place in the top 50%
 
-On every Tuesday, Wednesday, Thursday, Friday, and Saturday of the week, a new `round` is open and new tournament data is released.&#x20;
+**Contributors** place in the top 75%
 
-{% hint style="info" %}
-Saturday rounds open at `18:00 UTC` and the submission window is open until Monday `14:30 UTC.`Weekday rounds open at `13:00 UTC` and the submission window is open for 1 hour.&#x20;
-{% endhint %}
+**Apprentices** place in the bottom 25%
 
-Each submission will be scored over the \~4 week duration of the round. Submissions will receive its first score starting on the Friday after the Monday deadline and final score on Thursday 4 weeks later for a total of 20 scores.
+**Novices** have not yet made 20 qualified submissions
 
-![Effective dates for a round](<../.gitbook/assets/Signals Calendar (3).png>)
 
-The universe of the `round` is defined by the `data_date` of the prior Friday. The 20 days of scoring and payouts are based on `3day-2day` through `22day-2day` neutralized returns. There is a 2 day lag between market close for a day and when the data becomes available for scoring. For example, the `22day-2day` neutralized returns are up to Tuesday market close, but only become available on Thursday.
 
-![Data dates for a round](<../.gitbook/assets/Signals Calendar (2).png>)
+## Grandmasters Canon Scores
 
-## Leaderboard
+In the context of the Signals tournament, Canonical Scores (or “Canon Scores”) are particularly relevant. For example, the FNC score, which is a payout metric, has undergone updates. Initially, the payout score was 'CORR20' until round 498. It evolved into 'FNCv4' starting from round 499. The 'Canon FNC' score accounts for these changes by combining them into a unified score — it is 'CORR20' for rounds up to and including 498 and 'FNCv4' for rounds thereafter.
 
-The leaderboard can be sorted by the reputation of model's `FNCV4`, TC. [Reputation](https://docs.numer.ai/tournament/reputation) is the average of a given metric over the past year.
+The 'TC' score has remained consistent throughout the tournament's history, meaning 'Canon TC' and 'TC' are equivalent.
 
-Keep an eye on the leaderboard to see how your models compare to all other models in terms of performance and returns from staking.
+\
 
-![](<../.gitbook/assets/image (88).png>)
 
 ## Support
 

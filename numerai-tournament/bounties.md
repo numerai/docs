@@ -2,7 +2,7 @@
 description: Help us improve Numerai and earn NMR!
 ---
 
-# Bounties
+# Bug Bounties
 
 We need and want your help to improve Numerai so we will aim to be generous and fair with our bounties where possible. If you feel like you deserve more/less bounty for your contribution just let us know!
 
@@ -27,7 +27,7 @@ Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account
 
 We consider the follow to be of negligible security impact unless the researcher provides concrete explanation and valid proof-of-concept to support claims:
 
-* Unchained open redirects
+* Missing security headers
 * Reports that state that software is out of date/vulnerable without a proof-of-concept
 * Highly speculative reports about theoretical damage
 * Vulnerabilities as reported by automated tools without additional analysis as to how they're an issue
@@ -36,6 +36,7 @@ We consider the follow to be of negligible security impact unless the researcher
 * Open ports without an accompanying proof-of-concept demonstrating vulnerability
 * Subdomain takeovers - please demonstrate that you are able to take over the page by leaving a non-offensive message, such as your username
 * CSV injection
+* Unchained open redirects
 * Best practices concerns
 * Protocol mismatch
 * Rate limiting
@@ -50,8 +51,6 @@ We consider the follow to be of negligible security impact unless the researcher
 * Stack traces
 * Path disclosure
 * Directory listings
-* Banner grabbing issues (figuring out what web server we use, etc.)
-* If a site is abiding by the privacy policy, there is no vulnerability.
 
 ### Exclusions
 
@@ -77,6 +76,6 @@ If you have any good ideas about how to improve the Numerai propose it to us! If
 
 ### How to give feedback and suggestions
 
-Message us on the [RocketChat](https://community.numer.ai/) #[feedback channel](https://community.numer.ai/channel/feedback).
+Message us on the [Discord](https://discord.gg/numerai).&#x20;
 
 If you are going for a large bounty, it would be helpful if you wrote up your idea in a document (pdf or google docs) or a notebook (google colab, github).

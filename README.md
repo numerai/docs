@@ -1,42 +1,30 @@
 ---
-description: Everything you need to know to get started in under 5 minutes
+description: Everything you need to know to get started in under 5 minutes!
 ---
 
 # Overview
 
 ## Introduction
 
-The Numerai Data Science tournament is where data scientists from around the world build machine learning models on Numerai's obfuscated financial dataset to predict the stock market.&#x20;
+Numerai is a data science competition where you build machine learning models to predict the stock market.
 
 ## Data
 
-The Numerai dataset is a tabular dataset that describes the global stock market over time.
+Start with Numerai's free dataset made of clean and regularized financial data.&#x20;
 
-![Numerai's obfuscated dataset](.gitbook/assets/Ex\_data.png)
+The dataset is _obfuscated_ so that it can be given out for free and modeled without any financial domain knowledge.
 
-Each row represents a stock at a specific point in time, where `id` is the stock id and the `era` is the date. The  `features` describe the known attributes of the stock at the time (eg. P/E ratio) and the `target` represents a measure of future returns (eg. after 20 days).
+![Numerai's obfuscated dataset](.gitbook/assets/ex\_data.png)
 
-Here is how to download the data in Python using [NumerAPI](https://github.com/uuazed/numerapi):
+Each row in the dataset corresponds to a stock at a specific point in time, represented by the `era`. The `features` are quantitative attributes (e.g P/E ratio) known about the stock at the time, and the `target` is a measure of stock market returns 20 days into the future. &#x20;
 
-{% code lineNumbers="true" %}
-```python
-# NumerAPI is the official Python client
-from numerapi import NumerAPI
-napi = NumerAPI()
-
-# Download training data
-napi.download_dataset("v4.1/train.parquet")
-training_data = pd.read_parquet("v4.1/train.parquet")
-```
-{% endcode %}
-
-See the [Data](numerai-tournament/data/) section for more details and examples.&#x20;
+See the [Data](numerai-tournament/data/) section for more details.&#x20;
 
 ## Modeling
 
-Your objective is to build machine learnings models to predict the target.
+Your objective is to build machine learning models to predict the `target`.
 
-Here is an example model in Python using [LightGBM](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html):
+Here is an example model in Python using [LightGBM](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html), but you can use any language or framework that you like.
 
 ```python
 import lightgbm as lgb
@@ -54,18 +42,13 @@ model.fit(
 )
 ```
 
-See the [Models](numerai-tournament/models/) section for more advanced example models.
+See the [Models](numerai-tournament/benchmark\_models.md) section for more examples.
 
 ## Submissions
 
-The tournament is organized into rounds starting Saturday, Tuesday, Wednesday, Thursday and Friday every week. Each round goes through 4 stages over the span of a month:
+Every business day, new `live features` are released which represent the current state of the stock market. Your job is to generate `live predictions` and submit them to Numerai.
 
-* Open: live features released and submission window open
-* Closed: submission window closed
-* Scoring: submissions begin scoring
-* Resolved: scoring complete and payouts resolved
-
-To compete in the tournament you must submit live predictions in every round. Here is an example in Python using [NumerAPI](https://github.com/uuazed/numerapi):
+Here is an example of how you generate and upload live predictions in Python:
 
 ```python
 # Authenticate
@@ -75,8 +58,8 @@ napi = numerapi.NumerAPI("api-public-id", "api-secret-key")
 current_round = napi.get_current_round()
 
 # Download latest live features
-napi.download_dataset(f"v4.1/live_{current_round}.parquet")
-live_data = pd.read_parquet(f"v4.1/live_{current_round}.parquet")
+napi.download_dataset(f"v4.2/live_int8_{current_round}.parquet")
+live_data = pd.read_parquet(f"v4.2/live_int8_{current_round}.parquet")
 live_features = live_data[[f for f in live_data.columns if "feature" in f]]
 
 # Generate live predictions
@@ -90,44 +73,37 @@ submission.to_csv(f"prediction_{current_round}.csv")
 napi.upload_predictions(f"prediction_{current_round}.csv", model_id="your-model-id")
 ```
 
+This is what a submission looks like:
+
+![](<.gitbook/assets/image (89).png>)
+
 See the [Submissions](numerai-tournament/submissions/) section for more details and examples.
 
 ## Scoring
 
-There are two main scores:
+Submissions are scored against two main metrics:
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
 * [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`):  Your prediction's contribution to the hedge fund's returns&#x20;
 
-Here are the `CORR` and `TC` scores of our example model over the past 1 year of submissions.
-
-<figure><img src=".gitbook/assets/image (104).png" alt=""><figcaption><p><a href="https://numer.ai/integration_test/">https://numer.ai/integration_test</a></p></figcaption></figure>
+Since the `target` is a measure of 20 day stock market returns, it takes 20 days for each submission to be scored.
 
 See the [Scoring](./#scoring) section for more details.
 
 ## Staking
 
-You can stake [NMR](https://www.coinbase.com/price/numeraire) on your model to earn payouts based on performance.&#x20;
+When you are ready and confident in your model's performance, you may stake it with [NMR](https://www.coinbase.com/price/numeraire) - Numerai's cryptocurrency.&#x20;
 
-Your payout is a primarily a function of your scores. If you have a positive score you will get a payout. If you have a negative score a portion of your stake will burn.
+After the 20 days of scoring for each submission, models with positive scores are rewarded with more NMR, while those with negative scores have a portion of their staked NMR _burned_.&#x20;
 
-The maximum payout or burn per round is capped at ±5%
+Behind the scenes, Numerai combines the predictions of all staked models into the _stake-weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
 
-```python
-payout = stake * clip(payout_factor * (corr * corr_mult + tc * tc_mult), -0.05, 0.05) 
-```
+Staking serves two important functions:
 
-* `stake` is the your model's stake value at the `close` of the round
-* `payout_factor` is a dynamic value that scales inversely with total NMR staked
-* `corr_mult` and `tc_mult` are configured by you to control your exposure to each score
+1. "Skin in the game" allows Numerai to trust the quality of staked predictions.   &#x20;
+2. Payouts and burns continuously improve the weights of the Meta Model.      &#x20;
 
 See the [Staking](numerai-tournament/staking.md) section for more details.&#x20;
-
-## Leaderboard
-
-The 1 year average score is also called `reputation` and your rank on the leaderboard is based on your model's 1 year average `TC` score.&#x20;
-
-<figure><img src=".gitbook/assets/image (97) (1) (1).png" alt=""><figcaption><p>numer.ai/leaderboard</p></figcaption></figure>
 
 ## Support
 
