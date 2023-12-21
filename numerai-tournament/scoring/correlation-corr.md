@@ -37,4 +37,4 @@ You may see different variations of CORR on the website&#x20;
 
 * `CORR20V2` - the latest CORR score against the 20 day version of main target&#x20;
 * `CORJ60` - correlation to the 60 day version of the auxiliary target named Jerome &#x20;
-* `CORR20` - the legacy CORR score soon to be deprecated
+* `CORT20 -`correlation to the 20 day version of the auxiliary target named teager &#x20;
