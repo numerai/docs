@@ -17,9 +17,9 @@ The validation and live predictions are available through the [api](https://gith
 ```python
 from numerapi import NumerAPI
 napi = NumerAPI()
-napi.download_dataset("v4.2/train_benchmark_models.parquet", "train_benchmark_models.parquet")
-napi.download_dataset("v4.2/validation_benchmark_models.parquet", "validation_benchmark_models.parquet")
-napi.download_dataset("v4.2/live_benchmark_models.parquet", "live_benchmark_models.parquet")
+napi.download_dataset("v4.3/train_benchmark_models.parquet", "train_benchmark_models.parquet")
+napi.download_dataset("v4.3/validation_benchmark_models.parquet", "validation_benchmark_models.parquet")
+napi.download_dataset("v4.3/live_benchmark_models.parquet", "live_benchmark_models.parquet")
 ```
 
 
@@ -142,7 +142,7 @@ def neutralize(
 
 **{data\_version}\_LGBM\_{target}**
 
-There are many models that have some combination of a data version (V2, V3, V4, V41, V42) and a target (Nomi20, Sam60).&#x20;
+There are many models that have some combination of a data version (V2, V3, V4, V41, V42, V43) and a target (Nomi20, Sam60).&#x20;
 
 These are models trained in the standard walk-forward way, with standard LGBM parameters, using the specified data version and target. That's all!
 
@@ -212,9 +212,9 @@ Echo60: 1.7%
 V42\_RAIN\_ENSEMBLE2 uses the same set of 11 targets, but with no weight on the 60D versions.  It is also neutral to the serenity set of features.  \
 
 
-**V42\_LGBM\_CT\_BLEND**
+**V{42/43}\_LGBM\_CT\_BLEND**
 
-This is a simple 50/50 blend of V42\_LGBM\_TEAGER20 and V42\_LGBM\_CYRUS20
+This is a simple 50/50 blend of V{42/43}\_LGBM\_TEAGER20 and V{42/43}\_LGBM\_CYRUS20
 
 
 
