@@ -41,7 +41,7 @@ def calculate_fnc(sub, targets, features):
 
 ## FNC on the website
 
-The current version of FNC shown on the website is called `FNCv3` which is nuetral to the "medium" subset of features in the V3 data.
+The current version of FNC shown on the website is called `FNCv3` which is neutral to the "medium" subset of features in the V3 data.
 
 ## Discussion
 
