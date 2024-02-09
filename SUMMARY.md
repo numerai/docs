@@ -31,6 +31,7 @@
 ## Numerai Signals
 
 * [Numerai Signals Overview](numerai-signals/signals-overview.md)
+* [Signals Data](numerai-signals/signals-data.md)
 * [Signals New Users](numerai-signals/new-users.md)
 * [Signals FAQ](numerai-signals/signals-faq.md)
 * [Integrations](numerai-signals/integrations/README.md)

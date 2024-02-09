@@ -35,7 +35,7 @@ While the underlying data used to generate these signals can be very different (
 
 ### Data and Tools
 
-To create your own signal, you will first need to acquire some stock market data.
+To create your own signal you can start with the given features in the V1 dataset, but will need to acquire stock market data to make constructive submissions.
 
 {% hint style="info" %}
 Data scientist with no stock market data? Participate in the [Numerai Tournament](https://numer.ai/) instead.
@@ -51,27 +51,19 @@ Check out this [forum thread](https://forum.numer.ai/t/free-or-cheap-data-for-er
 Finding unique and differentiated datasets is key to creating original signals.
 {% endhint %}
 
-You can download the universe, examples, and historic targets [here](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/latest\_signals\_dataset.zip).
-
 ### Universe
 
 The Numerai Signals stock market universe covers roughly the top 5000 largest stocks in the world.
 
 The universe is updated every day, but in general only a couple low volume stocks will move in or out on a given day.
 
-You can see the latest universe by downloading the [latest universe file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/latest\_universe.csv).
-
-You can see the historical universe by downloading the [historical targets file](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv). This file has several target columns. You are only scored on `target_20d_factor_feat_neutral`.
-
-Values for all targets become available after they have resolved, 11 and 33 days respectively from round open.&#x20;
-
-`target_20d_factor_feat_neutral` is what your Signal is evaluated against for scoring and payouts.
+You can see the latest universe by downloading the [live.parquet file](signals-data.md#files).
 
 ### Submissions
 
 When you submit a signal to Numerai Signals, you must include at least two columns:
 
-* A `cusip`, `sedol`, or `numerai_ticker` column - values must be valid tickers associated with the ticker type in the header.
+* A `cusip`, `sedol`, `bloomberg_ticker`, `composite_figi`, or `numerai_ticker` column - values must be valid tickers associated with the ticker type in the header.
 * A `signal` column - values must be between 0 and 1 (exclusive).
 
 Additionally, for a submission to be valid:
@@ -85,14 +77,13 @@ Refer to the [Submissions](signals-overview.md#submissions) docs to understand h
 
 ### Diagnostics & Validation Predictions
 
-You may also use the diagnostics tool (click the beaker next to your model on the [scores](https://signals.numer.ai/scores) page) to upload your signal over a historical `validation` time period and receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans from `20130104` to the present.
+You may also use the diagnostics tool (click the beaker next to your model on the [scores](https://signals.numer.ai/scores) page) to upload your signal over a historical `validation` time period and receive diagnostics metrics on your performance, risk, and potential earnings. The `validation` time period spans from `20130104` to the latest `validation` date.
 
-Uploads over the `validation` time period must include two extra columns:
+Uploads over the `validation` time period must include one extra column:
 
-* A `friday_date` column - historic data is weekly and the diagnostics tool jjassumes your predictions for a given week are made using market close data of the latest Friday
-* A `data_type` column - values can only be `live` or `validation`. Rows with `data_type` of `live` should be for the date of the most recent Friday and any Friday before \~1 month before the latest Friday is considered `validation`
+* A `date` column - historic data is weekly and the diagnostics tool assumes your predictions for a given week are made using market close data of the latest Friday
 
-![An example submission with ticker](<../.gitbook/assets/example (1).png>)
+<figure><img src="../.gitbook/assets/signals_validation_example_preds.png" alt=""><figcaption></figcaption></figure>
 
 Once your upload is validated, diagnostics will start running. This usually takes 5-10 minutes depending on the number of weeks and tickers that span your submission.
 
@@ -162,7 +153,7 @@ For more information on the exact market days that make up the 6 days of subsequ
 
 ### Scoring
 
-Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the [Numerai Correlation](https://docs.numer.ai/tournament/correlation-corr#calculation) between the neutralized signal and the target (`target_20d_factor_feat_neutral`). This score is referred to as `FNCV4` throughout this doc and the website.
+Before scoring, signals are first ranked between \[0, 1] and then neutralized. Finally the score is computed by taking the [Numerai Correlation](https://docs.numer.ai/tournament/correlation-corr#calculation) between the neutralized signal and the target (`target_factor_feat_neutral_20`). This score is referred to as `FNCV4` throughout this doc and the website.
 
 By neutralizing your signal before scoring, Numerai aligns it with the target which improves its performance against the target. Since the target is also neutralized, the neutralization step effectively optimizes your signal for best performance without Numerai having to give out the data used for neutralization.
 
