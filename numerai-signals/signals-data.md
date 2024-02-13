@@ -13,6 +13,51 @@ The Signals dataset contains:
 1. Factors, which are similar to the factors which the target is neutral to. Use these to determine if your model is sufficiently unique, use them to neutralize your predictions, or use them as additional features in your dataset.
 2. Some starter features, which are relatively simple classic quant features constructed from returns series.
 
+#### V1 Features
+
+The features in the V1 dataset are:
+
+```
+feature_adv_20d_factor
+feature_beta_factor
+feature_book_to_price_factor
+feature_country
+feature_dividend_yield_factor
+feature_earnings_yield_factor
+feature_exchange_code
+feature_growth_factor
+feature_impact_cost_factor
+feature_market_cap_factor
+feature_momentum_12w_factor
+feature_momentum_26w_factor
+feature_momentum_52w_factor
+feature_momentum_52w_less_4w_factor
+feature_ppo_60d_130d_country_ranknorm
+feature_ppo_60d_90d_country_ranknorm
+feature_price_factor
+feature_rsi_130d_country_ranknorm
+feature_rsi_60d_country_ranknorm
+feature_rsi_90d_country_ranknorm
+feature_trix_130d_country_ranknorm
+feature_trix_60d_country_ranknorm
+feature_value_factor
+feature_volatility_factor
+```
+
+Features with `{n}(d|w)` in the name (for example, `feature_adv_20d_factor`) are time-series features that are computed over `n` days or `n` weeks.
+
+Features with `country_ranknorm` in the name are grouped by country, then ranked, then gaussianized.
+
+Features with `factor` in the name refer to risk factors that most of the targets are neutral to.
+
+PPO is a percentage price oscillator that compares shorter and longer moving averages in a ratio
+
+RSI is the relative strength index usually used as an overbought/oversold indicator
+
+TRIX is a triple exponential moving average indicator usually used as momentum or reversal feature
+
+momentum\_52w\_less\_4w refers to one year return of a stock excluding the last 4 weeks.
+
 ### Targets
 
 The target of the dataset is specifically engineered to match the strategy of the hedge fund.&#x20;
