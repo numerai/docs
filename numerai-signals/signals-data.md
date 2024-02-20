@@ -24,7 +24,6 @@ feature_book_to_price_factor
 feature_country
 feature_dividend_yield_factor
 feature_earnings_yield_factor
-feature_exchange_code
 feature_growth_factor
 feature_impact_cost_factor
 feature_market_cap_factor
