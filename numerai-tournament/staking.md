@@ -87,4 +87,8 @@ To stake NMR on your model you must first deposit NMR into your Numerai wallet a
 We recommend two places for buying and selling NMR&#x20;
 
 * [Coinbase](https://www.coinbase.com/price/numeraire) - a safe and easy place to buy NMR with USD, GBP, EUR or Bitcoin. A good place to start if you are new to crypto. Availability depends on your region.
-* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671) - a decentralized exchange you can use to swap Ethereum based tokens like ETH or USDC for NMR. Requires you to bring your own wallet like MetaMask. Great for DeFi enthusiasts.&#x20;
+* [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671) - a decentralized exchange you can use to swap Ethereum based tokens like ETH or USDC for NMR. Requires you to bring your own wallet like MetaMask. Great for DeFi enthusiasts.
+
+## Tax Reporting
+
+We usually release tax reports for the previous year in mid-January. You can find these by hovering over the account icon in the top right > click "Settings" > "TAXES & REPORTS" section.&#x20;
