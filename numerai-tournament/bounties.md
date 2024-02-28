@@ -59,10 +59,11 @@ While researching, we'd like to ask you to refrain from:
 * Denial of service
 * Spamming
 * Rate limiting attacks (unless it constitutes a significant risk)
+* Attacking or compromising user accounts
 
 ### How to submit a vulnerability report
 
-Send email to <mark style="color:blue;">security@numer.ai</mark> explaining the vulnerability, it's impact, and proof-of-concept to support claims.
+Send email to <mark style="color:blue;">security@numer.ai</mark> explaining the vulnerability, it's impact, and proof-of-concept to support claims. The proof-of-concept must provide steps to execute an attack or exploit the vulnerability. Reports submitted after an actual attack takes place will be ineligible for a bounty.
 
 ## Feedback & Suggestions
 
