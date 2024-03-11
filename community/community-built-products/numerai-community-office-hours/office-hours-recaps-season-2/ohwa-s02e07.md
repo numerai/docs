@@ -298,7 +298,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** Photorealism?
 
-**Harsh:** Yeah, I'd say so. If you want to check out my work it's at [harsh.work](https://harsh.work), that's my website.
+**Harsh:** Yeah, I'd say so. If you want to check out my work it's at harsh.work, that's my website.
 
 **Arbitrage:** Post it in the Zoom chat - I'm sure most people will want to check out your website while I talk about nonsense and they ignore me. Well thanks Harsh! I appreciate you coming on with us today and hanging out. I hope you'll continue to hang out because you're a cool dude and I appreciate the work you do to make the website super awesome.
 

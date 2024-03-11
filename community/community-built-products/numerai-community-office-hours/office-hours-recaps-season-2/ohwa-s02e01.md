@@ -165,7 +165,7 @@ He told us that on that first day they were relying heavily on his model and wer
 
 ![](<../../../../.gitbook/assets/20200616\_113812 (1).png>)
 
-**What does the reputation column on** [**numerdash**](https://numerdash.com/) **stand for? Is it a new scoring metric?**
+**What does the reputation column on** **numerdash** **stand for? Is it a new scoring metric?**
 
 Keno noted that the reputation column was just removed as it was tracking an old scoring metric.
 

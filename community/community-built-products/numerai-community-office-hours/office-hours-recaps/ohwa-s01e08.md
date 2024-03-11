@@ -120,7 +120,7 @@ Arbitrage doesn’t like when users create models that don’t contribute to the
 
 A point of contention in this debate around what’s an acceptable submission is the idea that ‘[code is law](https://harvardmagazine.com/2000/01/code-is-law-html)’ which, basically, suggests that if something is possible within the constraints of a given piece of software, it is acceptable, and any unacceptable or ‘illegal’ behavior needs to be prevented in how the software is programmed.
 
-_Author’s note: read about_ [_The DAO hack_](https://medium.com/@pullnews/understanding-the-dao-hack-for-journalists-2312dd43e993#.kw0ufw25q) _for more debate around how ‘code is law’ impacts the blockchain and cryptocurrency industries._
+_Author’s note: read about_ _The DAO hack_ _for more debate around how ‘code is law’ impacts the blockchain and cryptocurrency industries._
 
 “While there are still humans involved,” Arbitrage said, “I have no problem with intervention from the team to set things straight. I think it’s called for and justified.” He added that the fact Madmin was the top contributor on both the traditional leaderboard and MMC leaderboard is very interesting. Arbitrage’s conclusion, after reading [Mike P’s forum post](https://forum.numer.ai/t/leaderboard-bonus-exploit-uncovered/200), was that Madmin is performant, so actually contributing to the hedge fund, but the person behind the model designed other accounts to neutralize the risk.
 
