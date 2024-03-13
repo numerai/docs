@@ -78,16 +78,31 @@ payout_factor = min(1, stake_threshold / total_at_risk)
 
 ## NMR
 
-Numeraire (NMR) is the cryptocurrency that powers staking and payouts on Numerai.&#x20;
+Numeraire (NMR) is the cryptocurrency that powers staking and payouts on Numerai.
 
-To stake NMR on your model you must first deposit NMR into your Numerai wallet at your account's unique deposit address.
+* You can read more about NMR on Github: [https://github.com/erasureprotocol/NMR](https://github.com/erasureprotocol/NMR)
+* You can see token statistics here: [https://numer.ai/nmr](https://numer.ai/nmr)
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>numer.ai/wallet</p></figcaption></figure>
+To stake NMR on your model you must first acquire NMR, then deposit it into your [Numerai wallet](https://numer.ai/wallet). When you are ready, you can withdraw it to a given eth address. See below for details.
 
-We recommend two places for buying and selling NMR&#x20;
+### Depositing to your wallet
+
+We recommend two places for buying NMR&#x20;
 
 * [Coinbase](https://www.coinbase.com/price/numeraire) - a safe and easy place to buy NMR with USD, GBP, EUR or Bitcoin. A good place to start if you are new to crypto. Availability depends on your region.
 * [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671) - a decentralized exchange you can use to swap Ethereum based tokens like ETH or USDC for NMR. Requires you to bring your own wallet like MetaMask. Great for DeFi enthusiasts.
+
+Once you own some NMR, copy your adress from the [Wallet Page](https://numer.ai/wallet):
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>numer.ai/wallet</p></figcaption></figure>
+
+### Withdrawing from your wallet
+
+When you are ready to withdraw visit the [Wallet Page](https://numer.ai/wallet), specify an amound, and copy your destination address into the relevant text box:
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-03-13 at 4.42.37 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+
+Finally, click "Next" and wait for the page to show a confirmation. It may take a few moments to complete the transaction, so please be patient.
 
 ## Tax Reporting
 
