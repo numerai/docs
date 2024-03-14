@@ -1,9 +1,8 @@
 # Models
 
-Learn about how to build models in our tutorial:\
-[https://numer.ai/tutorial/hello-numerai](https://numer.ai/tutorial/hello-numerai)
+The best way to learn about building models on our data is through our tutorials:
 
-
-
-You can find more examples of models in our example-script repository: [https://github.com/numerai/example-scripts](https://github.com/numerai/example-scripts)
+1. [Hello Numerai](https://numer.ai/tutorial/hello-numerai)
+2. [Feature Neutralization](https://numer.ai/tutorial/feature-neutralization)
+3. [Target Ensembles](https://numer.ai/tutorial/target-ensemble)
 

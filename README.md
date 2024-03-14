@@ -30,10 +30,9 @@ napi = NumerAPI()
 # Use int8 to save on storage and memory
 napi.download_dataset("v4.3/train_int8.parquet")
 training_data = pd.read_parquet("v4.3/train_int8.parquet")
-print(training_data)
 ```
 
-See the [Data](numerai-tournament/data/) section for more details.&#x20;
+See the [Data](numerai-tournament/data.md) section for more details.&#x20;
 
 ## Modeling
 

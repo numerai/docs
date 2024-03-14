@@ -81,7 +81,7 @@ This target is used to calculate RIC and MMC. Since Numerai’s hedge funds are 
 
 **target\_factor\_feat\_neutral**
 
-This target is neutral to a large set of factors and all of the features in the [Numerai v4 dataset](../numerai-tournament/data/).
+This target is neutral to a large set of factors and all of the features in the [Numerai v4 dataset](../numerai-tournament/data.md).
 
 This is the mian `target` in the Signals dataset, and is used to score CORRv4 and FNCv4.&#x20;
 

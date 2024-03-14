@@ -5,9 +5,7 @@
 There are two main scores currently used for payouts
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
-* [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`):  Your prediction's contribution to the hedge fund's returns&#x20;
-
-On Jan 2, 2024 the payout metric will change to [Meta Model Contribution](meta-model-contribution-mmc-and-bmc.md) (`MMC`): Your predictions correlation to the target after neutralizing to the Meta Model.&#x20;
+* [Meta Model Contribution](meta-model-contribution-mmc-and-bmc.md) (`MMC`): Your predictions contribution to the Meta Model
 
 We also have informational scores not used for payouts
 
