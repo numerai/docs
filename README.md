@@ -6,28 +6,45 @@ description: Everything you need to know to get started in under 5 minutes!
 
 ## Introduction
 
-Numerai is a data science competition where you build machine learning models to predict the stock market.
+Numerai is a data science competition where you build machine learning models to predict the stock market. You are provided with free, high quality data that you can use to train models and submit predictions daily. Numerai computes the performance of these predictions over the following month and you can stake NMR on your model, to earn (or burn) based on your model's performance.
+
+You can [sign up](https://numer.ai/signup) and visit your [home page](https://numer.ai/home) for a full suite of tutorials.
 
 ## Data
 
-Start with Numerai's free dataset made of clean and regularized financial data.&#x20;
+Numerai's free dataset is made of clean and regularized financial data. The dataset is _**obfuscated**_ so that it can be given out for free and modeled without any financial domain knowledge. This also means that models you build on this data cannot be used outside of the Numerai tournament.
 
-The dataset is _obfuscated_ so that it can be given out for free and modeled without any financial domain knowledge.
+Here is an example of the general structure of our dataest:
 
 ![Numerai's obfuscated dataset](.gitbook/assets/ex\_data.png)
 
-Each row in the dataset corresponds to a stock at a specific point in time, represented by the `era`. The `features` are quantitative attributes (e.g P/E ratio) known about the stock at the time, and the `target` is a measure of stock market returns 20 days into the future. &#x20;
+Each row in the dataset corresponds to a specific stock at a specific point in time. The point in time is noted by the `era` - each represents a week. The IDs are unique in each era such that you cannot match stocks across eras - this is necessary for the obfuscation. The `features` are quantitative attributes known about the stock at the time (e.g P/E ratio, ADV, etc.). The `target` is a measure of stock market returns 20 days into the future where low means bad performance and high means good performance.
+
+Here is an example of how to get our dataset:
+
+```python
+from numerapi import NumerAPI
+import pandas as pd
+
+napi = NumerAPI()
+# Use int8 to save on storage and memory
+napi.download_dataset("v4.3/train_int8.parquet")
+training_data = pd.read_parquet("v4.3/train_int8.parquet")
+print(training_data)
+```
 
 See the [Data](numerai-tournament/data/) section for more details.&#x20;
 
 ## Modeling
 
-Your objective is to build machine learning models to predict the `target`.
+Your objective is to build machine learning models to predict the `target` given the `features`. You can use any language or framework that you like.
 
-Here is an example model in Python using [LightGBM](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html), but you can use any language or framework that you like.
+Here is an example model in Python using [LightGBM](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html):
 
 ```python
 import lightgbm as lgb
+
+features = [f for f in training_data.columns if "feature" in f]
 
 model = lgb.LGBMRegressor(
       n_estimators=2000,
@@ -37,7 +54,7 @@ model = lgb.LGBMRegressor(
       colsample_bytree=0.1
 )
 model.fit(
-      training_data[[f for f in training_data.columns if "feature" in f]],
+      training_data[features],
       training_data["target"]
 )
 ```
@@ -46,36 +63,38 @@ See the [Models](numerai-tournament/benchmark\_models.md) section for more examp
 
 ## Submissions
 
-Every business day, new `live features` are released which represent the current state of the stock market. Your job is to generate `live predictions` and submit them to Numerai.
+Each day (Tuesday through Saturday), new `live data` is released. This represents the current state of the stock market. You must generate `live predictions` and submit them to Numerai.
 
 Here is an example of how you generate and upload live predictions in Python:
 
 ```python
-# Authenticate
-napi = numerapi.NumerAPI("api-public-id", "api-secret-key")
-
-# Get current round
-current_round = napi.get_current_round()
+# Use API keys to authenticate
+napi = NumerAPI("[your api public id]", "[your api secret key]")
 
 # Download latest live features
-napi.download_dataset(f"v4.2/live_int8_{current_round}.parquet")
-live_data = pd.read_parquet(f"v4.2/live_int8_{current_round}.parquet")
-live_features = live_data[[f for f in live_data.columns if "feature" in f]]
+napi.download_dataset(f"v4.3/live_int8.parquet")
+live_data = pd.read_parquet(f"v4.3/live_int8.parquet")
+features = [f for f in live_data.columns if "feature" in f]
+live_features = live_data[features]
 
 # Generate live predictions
 live_predictions = model.predict(live_features)
 
-# Format submission
-submission = pd.Series(live_predictions, index=live_features.index).to_frame("prediction")
-submission.to_csv(f"prediction_{current_round}.csv")
+# Format and save submission
+submission = pd.Series(
+    live_predictions, index=live_features.index
+).to_frame("prediction")
+submission.to_csv(f"submission.csv")
 
-# Upload submission 
-napi.upload_predictions(f"prediction_{current_round}.csv", model_id="your-model-id")
+# Upload submission
+napi.upload_predictions(f"submission.csv")
 ```
 
-This is what a submission looks like:
+This is what a submission might look like:
 
 ![](<.gitbook/assets/image (89).png>)
+
+Behind the scenes, Numerai combines the predictions of all models into the S_take-Weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
 
 See the [Submissions](numerai-tournament/submissions/) section for more details and examples.
 
@@ -84,19 +103,15 @@ See the [Submissions](numerai-tournament/submissions/) section for more details 
 Submissions are scored against two main metrics:
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
-* [True contribution](https://docs.numer.ai/tournament/true-contribution-tc) (`TC`):  Your prediction's contribution to the hedge fund's returns&#x20;
+* [Meta Model Contribution](numerai-tournament/scoring/meta-model-contribution-mmc-and-bmc.md) (`MMC`):  Your prediction's contribution to the Meta Model&#x20;
 
-Since the `target` is a measure of 20 day stock market returns, it takes 20 days for each submission to be scored.
+Since the `target` is a measure of 20 business days of stock market returns, it takes about 1 month for each submission to be fully scored.
 
 See the [Scoring](./#scoring) section for more details.
 
 ## Staking
 
-When you are ready and confident in your model's performance, you may stake it with [NMR](https://www.coinbase.com/price/numeraire) - Numerai's cryptocurrency.&#x20;
-
-After the 20 days of scoring for each submission, models with positive scores are rewarded with more NMR, while those with negative scores have a portion of their staked NMR _burned_.&#x20;
-
-Behind the scenes, Numerai combines the predictions of all staked models into the _stake-weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
+When you are ready and confident in your model's performance, you may stake on it with [NMR](https://www.coinbase.com/price/numeraire) - Numerai's cryptocurrency. After the 20 days of scoring for each submission, models with positive scores are rewarded with more NMR, while those with negative scores have a portion of their staked NMR _burned_ (destroyed such that no one, not even Numerai, can access it).&#x20;
 
 Staking serves two important functions:
 
