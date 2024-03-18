@@ -12,7 +12,7 @@
   * [CRON Example](https://forum.numer.ai/t/automated-submissions-from-bash-shell-script/5806)
 * [Scoring](numerai-tournament/scoring/README.md)
   * [Correlation (CORR)](numerai-tournament/scoring/correlation-corr.md)
-  * [Meta Model Contribution (MMC & BMC)](numerai-tournament/scoring/meta-model-contribution-mmc-and-bmc.md)
+  * [Meta Model Contribution (MMC)](numerai-tournament/scoring/meta-model-contribution-mmc.md)
   * [Feature Neutral Correlation (FNC)](numerai-tournament/scoring/feature-neutral-correlation.md)
   * [True Contribution (TC)](numerai-tournament/scoring/true-contribution-tc.md)
 * [Staking](numerai-tournament/staking.md)

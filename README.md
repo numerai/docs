@@ -102,7 +102,7 @@ See the [Submissions](numerai-tournament/submissions/) section for more details 
 Submissions are scored against two main metrics:
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
-* [Meta Model Contribution](numerai-tournament/scoring/meta-model-contribution-mmc-and-bmc.md) (`MMC`):  Your prediction's contribution to the Meta Model&#x20;
+* [Meta Model Contribution](numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`):  Your prediction's contribution to the Meta Model&#x20;
 
 Since the `target` is a measure of 20 business days of stock market returns, it takes about 1 month for each submission to be fully scored.
 

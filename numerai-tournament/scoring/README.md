@@ -5,7 +5,7 @@
 There are two main scores currently used for payouts
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
-* [Meta Model Contribution](meta-model-contribution-mmc-and-bmc.md) (`MMC`): Your predictions contribution to the Meta Model
+* [Meta Model Contribution](meta-model-contribution-mmc.md) (`MMC`): Your predictions contribution to the Meta Model
 
 We also have informational scores not used for payouts
 
@@ -15,40 +15,40 @@ We also have informational scores not used for payouts
 
 ## Live Scoring
 
-Within a single round, submissions will receive 20 score updates until the final score of the round is computed.&#x20;
+Within a single round, submissions will receive 20 score updates until the final score of the round is computed. Let's look at the example of a weekend round:
 
-For example, here is what the scoring schedule looks like for a hypothetical weekend round opening on Saturday 6th and closing on Monday 8th. The first day of scoring is on Friday 12th, with daily updates every Tuesday-Saturday, until the final score 4 weeks later on Thursday 8th of the next month.
+<figure><img src="../../.gitbook/assets/scoring_calendar_1 (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="https://documents.lucid.app/documents/9e91ae48-1fb7-4603-bf30-8428d1a4fe1e/pages/0_0?a=20594&#x26;x=1874&#x26;y=34&#x26;w=1452&#x26;h=1180&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%20041ead69d99460102bf7ff0651835450958d6314c654fad6321e20ca012d975a-ts%3D1683569516" alt=""><figcaption></figcaption></figure>
+The round opens on Saturday the 6th and closing on Monday the 8th. The first day of scoring is on Friday 12th (4 days later), with daily updates every day, Tuesday through Saturday. The final score is released about a month later, on Thursday the 8th.
 
-The reason why scoring is done over these 20 days is because the main target is built on 20 days of returns ignoring the first 2 days after round close. This is commonly referred to as "20D2L", where "20D" means "20 days of returns" and "2L" means "ignoring the first two days". Each score update is computed using an expanding window of returns.
+Scoring is done over these 20 days because the main target is calculated using 20 days of total returns. It takes 4 days to get the first score because it takes 2 days to process data and the main target lags 2 days behind trading - this means we ignore 2 days of returns before starting the 20 day clock. This timeline is commonly referred to as "**20D2L**" - **20** **D**ays of returns after **2** **L**ag days:
 
-For example, the first day of scoring on Friday 12th uses a 1D2L target, which includes returns from Wednesday 10th only. The second day of scoring on Saturday 13th uses a 2D2L target which includes returns from Wednesday 10th through Thursday 11th. The final day of scoring 4 weeks later on Thursday 8th of next month uses a 20D2L target which includes returns starting from Wednesday 10th through Tuesday 6th of the next month.&#x20;
+<figure><img src="../../.gitbook/assets/scoring_calendar_2.png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="https://documents.lucid.app/documents/9e91ae48-1fb7-4603-bf30-8428d1a4fe1e/pages/0_0?a=20588&#x26;x=1898&#x26;y=1331&#x26;w=1276&#x26;h=1100&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%20ca357e5e86017bddb4fd4a7f3e09ec7a62e4bc008858a2b65b0c9d4746587bad-ts%3D1683569516" alt=""><figcaption></figcaption></figure>
+The first day of scoring on Friday the  12th uses a 1D2L target, which includes returns from Wednesday 10th only. The second day of scoring on Saturday 13th uses a 2D2L target which includes returns from Wednesday 10th through Thursday 11th. The final day of scoring 4 weeks later on Thursday 8th of next month uses a 20D2L target which includes returns starting from Wednesday 10th through Tuesday 6th of the next month. Take a look at the full scoring timeline:
 
-## The Leaderboard
+<figure><img src="../../.gitbook/assets/scoring_calendar_3.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Only the final scores for rounds count towards a model's live performance.
+## The Leaderboards
 
-The 1 year average score is also called `reputation` and your model's rank on the leaderboard is primarily based on your model's 1 year average TC score. This will change to MMC on Jan 2, 2024.
+Only the final scores for count towards a model's live performance. We rank you both on an account level and on a model level. The primary aggregate score is called your `reputation`.
+
+Your model's `reputation` is just it's 1 year average score. This directly determines the rank of models on the model leaderboard.
+
+Your account's `reputation` is determined by the Stake-Weighted-Average Score of your models. Each round, we multiply each of your model's scores by it's proportion of stake relative to your account and add them together. This means if you have a single model with no stake, your account score is the same as your `reputation` of your model.
 
 <figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
 
-## Diagnostics (Validation Scoring)
+## Diagnostics
 
-Diagnostics is a tool to help you compute and visualize your scores over the validation dataset.
+The diagnostics tool computes and charts your scores over the validation dataset.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>An example diagnostics report</p></figcaption></figure>
 
-If you uploaded your model via [Model Upload](../submissions/model-uploads.md), then Numerai will automatically run your model over the validation dataset to generate diagnostics.
-
-If you wish, you may also manually run diagnostics by heading over to [numer.ai/scores](https://numer.ai/scores) and clicking on the Run Diagnostics button.  &#x20;
+If you uploaded your model via [Model Upload](../submissions/model-uploads.md), then Numerai will automatically run your model over the validation dataset to generate diagnostics. If you wish, you may also manually run diagnostics by heading over to [numer.ai/scores](https://numer.ai/scores) and clicking on the Run Diagnostics button.  &#x20;
 
 &#x20; &#x20;
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
-
-To note, all of the scoring code we use to generate diagnostics is also available in our [example scripts repository](https://github.com/numerai/example-scripts) if you wish to replicate this locally.&#x20;
 
 A word of caution: past performance is no guarantee of future performance. This is especially true in the domain of financial machine learning. Take care not to rely too heavily on validation metrics during your research process to avoid overfitting to the validation dataset. If you train on the validation dataset, then don't expect your in-sample validation metrics to generalize out-of-sample.

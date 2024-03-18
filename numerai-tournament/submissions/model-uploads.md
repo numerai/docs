@@ -6,19 +6,23 @@ description: Free, zero-setup automation
 
 ## Introduction
 
-Model uploads is a simple and free way to automate your daily submissions.
+Model uploads are a simple and free way to automate your daily submissions. You upload a `.pkl`file with your trained model and we handle generating and submitting the predictions for you. You don't need to worry about reliability, infrastructure, scheduling, etc. **you just focus on data science.**
 
-## How it works&#x20;
+See [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/hello\_numerai.ipynb) for a full tutorial or [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/example\_model.ipynb) for a barebones example.&#x20;
 
-1. Wrap your model in a function that takes live features and outputs live predictions
-2. Pickle your function with the [cloudpickle](https://github.com/cloudpipe/cloudpickle) library and upload the pickle file to Numerai
-3. Numerai will run your model every day to generate live predictions in the [numerai-predict](https://github.com/numerai/numerai-predict) execution environment
+## How it works
 
-<figure><img src="https://lh3.googleusercontent.com/XthD6GjwyuPt036TdPBVnj1yxUPGs5bmV5nv1AXSo-QhJnIwkKauoFwvvqKrWOTJ-JgN8zktL0tz3ctpzyuEnTBg3TdbnH3R6k478X4jq5bgoIz4zJwgrTJHcIk8eSDw4Dp7AfWQkN3rDUo_MONKo8E" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://lh3.googleusercontent.com/XthD6GjwyuPt036TdPBVnj1yxUPGs5bmV5nv1AXSo-QhJnIwkKauoFwvvqKrWOTJ-JgN8zktL0tz3ctpzyuEnTBg3TdbnH3R6k478X4jq5bgoIz4zJwgrTJHcIk8eSDw4Dp7AfWQkN3rDUo_MONKo8E" alt=""><figcaption><p>The Model Upload System</p></figcaption></figure>
 
-## How to pickle your model
+### 1. Trained Model
 
-Once you have a trained model that you are ready to upload, simply wrap it with a function that takes live features and outputs live predictions.
+Install requirements from the [Numerai Predict](https://github.com/numerai/numerai-predict/blob/master/requirements.txt) execution environment and train a model. These are strict package version requirements that will help ensure your model always runs correctly. You may try to install later minor versions / patches of the packages listed as long as it is backwards-compatible with this environment.&#x20;
+
+Anything not listed is not available, but we do take requests over on [Discord](https://discord.gg/numerai).
+
+### 2. Prediction Pipeline
+
+Wrap your model in a function that takes live features and outputs live predictions:
 
 ```python
 # Wrap your model with a function that takes live features and returns live predictions
@@ -28,7 +32,11 @@ def predict(live_features: pd.DataFrame) -> pd.DataFrame:
     return submission.to_frame("prediction")
 ```
 
-Then, use the [cloudpickle](https://github.com/cloudpipe/cloudpickle) library to serialize your function into a file.&#x20;
+This is the only way for Numerai to properly run your model for you. If your pickle doesn't have a predict function with this signature, it will fail.
+
+### 3. Cloudpickle
+
+Pickle your function with the [cloudpickle](https://github.com/cloudpipe/cloudpickle) library and upload the pickle file to Numerai:
 
 ```python
 # Use the cloudpickle library to serialize your function
@@ -38,29 +46,39 @@ with open("predict.pkl", "wb") as f:
 f.write(p)
 ```
 
-See [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/hello\_numerai.ipynb) for a full tutorial or [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/example\_model.ipynb) for a barebones example.&#x20;
+This library  is used in other computing frameworks like [Dask](https://www.dask.org/) and [Ray](https://www.anyscale.com/ray-open-source) and allows you to easily run your local Python code remotely in the cloud. The main benefit of using cloudpickle over the standard [pickle](https://docs.python.org/3/library/pickle.html) library is that it serializes your local context along with your code. This makes it very convenient to package up code developed locally in any environment.
 
-## How to upload your pickle file
+In the example above, our `predict` function references `model` and `feature_cols`  defined in the global scope. Cloudpickle is smart enough to correctly serialize both  `model` and `feature_cols` by value so that it is also available when this function is run by Numerai.
 
-Head to [numer.ai/submissions](http://numer.ai/submissions) and find the Upload Model button on the right side of the models table.&#x20;
+### 4. Upload the Pickle
 
-![](<../../.gitbook/assets/image (106).png>)
+Upload your Model on the [Submissions page](http://numer.ai/submissions) (the Upload Model button on the right):
 
-Click on the Upload Model button to open the modal upload modal. Select the pickle file you wish to upload, set the Python version used to create the pickle, then click Upload.&#x20;
+<div align="center">
 
-![](<../../.gitbook/assets/image (123).png>)
+<figure><img src="../../.gitbook/assets/image (106).png" alt="" width="224"><figcaption></figcaption></figure>
 
-Once your upload is complete, Numerai will immediately run your model to generate a live submission for the current round and against the validation dataset to generate diagnostics.&#x20;
+</div>
 
-<figure><img src="https://documents.lucid.app/documents/1ac83fbf-7df7-4f26-a606-f04b8c742692/pages/0_0?a=278&#x26;x=-1896&#x26;y=-1052&#x26;w=1892&#x26;h=255&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%2036ee9770a1f7aecad5f59dead64e8b85373184e69f69a7f345e0e14ef1596de7-ts%3D1687892551" alt=""><figcaption></figcaption></figure>
+Select your pickle file, set the Python version you used, then click Upload
 
-Once these complete, you should see a submission block in the submissions column, the success status under the latest submission column, a link to view diagnostics under diagnostics column.
+<figure><img src="../../.gitbook/assets/image (123).png" alt="" width="295"><figcaption></figcaption></figure>
 
-<figure><img src="https://documents.lucid.app/documents/1ac83fbf-7df7-4f26-a606-f04b8c742692/pages/0_0?a=317&#x26;x=-1827&#x26;y=-831&#x26;w=1690&#x26;h=242&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%2017f77d78498ba7e3f5486e98afb16cf1b0fa69909ea695f4bf00a4a009cfb7ab-ts%3D1687892551" alt=""><figcaption></figcaption></figure>
+Numerai will execute your model to generate a live submission for the current round:
 
-## How to track your submission status
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 3.29.52 PM.png" alt=""><figcaption></figcaption></figure>
 
-If everything is working correctly, you will see the latest submission cycle through these 4 statuses:
+If this succeeds, a block will appear in the "submissions" column grid, you'll be able to review the execution logs for your model, and Numerai will generate diagnostics over the validation dataset for your model:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 3.13.58 PM (1).png" alt=""><figcaption></figcaption></figure>
+
+Once diagnostics complete, you'll also be able to view the diagnostics for this model:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 3.13.43 PM.png" alt=""><figcaption></figcaption></figure>
+
+### 5. Running Daily
+
+Once uploaded, Numerai runs your model every day to generate and submit live predictions for you. If everything is working correctly, you will see the latest submission cycle through these 4 statuses:
 
 1. Pending: Numerai is provisioning the cloud resources to run your model
 2. Running: Numerai is now running your model&#x20;
@@ -78,57 +96,37 @@ If there was a problem, you will see 2 possible statuses:
 
 <figure><img src="https://lh5.googleusercontent.com/LgpMWSaDZ8W4M_pCIBX1qtDLWCZTfZiRklRs2HGN8K-_yJE3E40q9A_JvOZB8KbLWIn87DBIB2G8FV4rGGOCzWmfkvtRtjQVRTKS79i1kHfkjiWcq5zf8dBIW8t3fWypMVpJn4XIIfNVwSIOK0lzgqY" alt=""><figcaption></figcaption></figure>
 
-## Understanding Cloudpickle
+## FAQ
 
-[Cloudpickle](https://github.com/cloudpipe/cloudpickle) is a library that allows you to easily run your local Python code remotely in the cloud. It is used behind the scenes by many popular distributed computing frameworks like [Dask](https://www.dask.org/) and [Ray](https://www.anyscale.com/ray-open-source).
+### Can my model access the internet?
 
-The main benefit of using cloudpickle over the [pickle](https://docs.python.org/3/library/pickle.html) standard library is that it serializes your local context along with your code. This makes it very convenient to package up code developed locally in a notebook environment like Google Colab.
+No, we do not give your model internet access.
 
-In the example below, our function references `model` and `feature_cols`  defined in the global scope. Cloudpickle is smart enough to correctly serialize both  `model` and `feature_cols` by value so that it is also available when this function is run by Numerai.
+### What are the Mem / CPU limitations?
 
-```python
-def predict(features: pd.DataFrame) -> pd.DataFrame:
-   # model and feature_cols are defined in the global scope
-   live_predictions = model.predict(features[feature_cols])
-   submission = pd.Series(live_predictions, index=features.index)
-   return submission.to_frame("prediction")
-```
+By default, we will provision each model a machine with 1 CPU with 4GB of ram and allow runtime of up to 10 minutes (does not include time spent queueing).&#x20;
 
-## Understanding Numerai Predict
+LightGBM Benchmarks:
 
-[Numerai-predict](https://github.com/numerai/numerai-predict) is the execution environment for your model.
+* 20K trees using the small feature set runs in under 1 minute&#x20;
+* 90K trees using the full feature set runs in under 6 minutes&#x20;
 
-Since cloudpickle does not serialize Python itself or Python libraries in your local environment, you will need to make sure that your code is compatible with the exact Python versions listed and libraries supported in the [requirements.txt](https://github.com/numerai/numerai-predict/blob/master/requirements.txt).&#x20;
+### Can I still upload predictions manually?
 
-When debugging issues, it may be helpful to download the numerai-predict docker container for local testing.
+No, once you upload your model, you will no longer be able to upload submissions via the API.
 
-We aim to support all industry standard python machine learning libraries. If your pipeline is using a library that is not currently unsupported, please let us know and we will consider adding it.&#x20;
+### Can I have a webhook on my model?
 
-## Resource constraints and limitations
+No, to avoid race conditions after you upload your model, you cannot configure any webhooks on it.  You will need to disable any existing compute configuration in order to upload your model.&#x20;
 
-For security reasons, your uploaded model will have no access to the internet.&#x20;
+### Does Numerai have full access to my trained model?
 
-By default, we will provision each model a machine with 1 CPU with 4GB of ram and allow runtime of up to 10 minutes (does not include time spent queueing).
-
-Benchmarks:
-
-* LGBM model with 20K trees (in example notebooks above) using the small feature set runs in under 1 minute&#x20;
-* LGBM model with 90K trees using the full feature set runs in under 6 minutes&#x20;
-
-## Interactions with submission upload and compute
-
-To avoid race conditions, you will need to disable any existing compute configuration in order to upload your model.&#x20;
-
-Similarly, once you upload your model, you will no longer be able to upload submissions via the API or configure compute on your model.
-
-## Why you may not want to use this feature
-
-This feature is designed for new and intermediate users who don’t want to invest time in setting up and managing their own model hosting infrastructure.
-
-The obvious downside of this feature is that you need to upload (and give Numerai access to) your trained model. If you are not comfortable with this, you are 100% free to continue using Compute Heavy, Compute Lite or any [other automation solution](https://docs.numer.ai/numerai-tournament/submissions#automation) of your choice.
+Yes, Numerai has access to and can unpickle your trained model.  If you are not comfortable with this, you should consider using [another automation solution](https://docs.numer.ai/numerai-tournament/submissions#automation).
 
 ## Terms of service
 
-Numerai reserves the right to disable your model for any reason, including security concerns or if your account is no longer active.
+Numerai reserves the right to disable your model for any reason, including (but not limited to) security, abuse, account inactivity, poor performance, etc.
 
-Numerai will try our best to support your usage of this feature but ultimately it is still your responsibility to make sure your submission pipeline is set up properly.
+Numerai will try our best to support your usage of this feature, but ultimately it is still your responsibility to make sure your submission pipeline is set up properly. We do not guarantee that your model will submit 100% of the time.
+
+Numerai is not responsible for the gains or losses you might experience due to the performance of your uploaded model. You are solely responsible for the performance of the model.
