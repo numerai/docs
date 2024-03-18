@@ -6,7 +6,7 @@ description: Help us improve Numerai and earn NMR!
 
 We need and want your help to improve Numerai so we will aim to be generous and fair with our bounties where possible. If you feel like you deserve more/less bounty for your contribution just let us know!
 
-The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion. **Actual bounty payout amounts, if any, will be determined by Numerai at its sole discretion.**&#x20;
+The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion. **Actual bounty payout amounts, if any, will be determined by Numerai at its sole discretion. Please allow 3-5 business days for a response to reports.**&#x20;
 
 ## Bugs
 
