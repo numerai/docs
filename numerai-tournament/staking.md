@@ -2,7 +2,7 @@
 
 ## Introduction
 
-When you are ready and confident in your model's performance, you may stake it with [NMR](https://www.coinbase.com/price/numeraire) - Numerai's cryptocurrency.&#x20;
+When you are ready and confident in your model's performance, you may optionally stake it with [NMR](https://www.coinbase.com/price/numeraire) - Numerai's cryptocurrency. "Staking" on a model or submission means locking up NMR during the scoring period of submissions. For the duration of staked submissions, Numerai is given the permission to payout or burn the NMR staked.
 
 After the 20 days of scoring for each submission, models with positive scores are rewarded with more NMR, while those with negative scores have a portion of their staked NMR _burned_.&#x20;
 
@@ -11,7 +11,13 @@ Behind the scenes, Numerai combines the predictions of all staked models into th
 Staking serves two important functions:
 
 1. "Skin in the game" allows Numerai to trust the quality of staked predictions.   &#x20;
-2. Payouts and burns continuously improve the weights of the Meta Model.      &#x20;
+2. Payouts and burns continuously improve the weights of the Meta Model.&#x20;
+
+{% hint style="info" %}
+It is important to note that the opportunity to stake your signal is not an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Users with different expectations should not stake.
+
+**Please read our** [**Terms of Service**](https://numer.ai/terms) **for further information.**
+{% endhint %}
 
 ## How to stake on your model
 

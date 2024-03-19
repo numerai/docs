@@ -256,6 +256,6 @@ Richard then brought up the Validation 2 data set Slyfox mentioned during [Offic
 
 If you’re passionate about finance, machine learning, or data science and you’re not competing in [the most challenging data science tournament in the world](https://numer.ai/tournament), what are you waiting for?
 
-Don’t miss the next Office Hours with Arbitrage — you never know who might join. Follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on [Rocket.Chat](https://community.numer.ai/home) for the next time and date.
+Don’t miss the next Office Hours with Arbitrage — you never know who might join. Follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on Rocket.Chat for the next time and date.
 
 _Thank you to_ [_Richard Craib_](https://twitter.com/richardcraib) _for joining this Office Hours call, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Michael P_](https://numer.ai/master\_key)_, Keno, and_ [_Bor_](https://numer.ai/bor3) _for contributing to the conversation._ [_NJ_](https://twitter.com/tasha\_jade)_, sorry you had to learn R._

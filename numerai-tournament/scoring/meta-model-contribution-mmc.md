@@ -2,7 +2,7 @@
 
 ## What is MMC (and BMC)?
 
-Meta Model Contribution (MMC) is the covariance of a model with the target, after its predictions have been neutralized to the Meta Model. Similarly, Benchmark Model Contribution (BMC) is the covariance of a model with the target, after its predictions have been neutralized to the stake-weighted [Benchmark Models](https://numer.ai/\~benchmark\_models).
+Meta Model Contribution (MMC) is the covariance of a model with the target, after its predictions have been neutralized to the Meta Model. Similarly, Benchmark Model Contribution (BMC) is the covariance of a model with the target, after its predictions have been neutralized to the stake-weighted [Benchmark Models](../models.md#benchmark-models).
 
 These metrics tell us how the unique component of a model contributes to the correlation of the Meta Model (or the Benchmark Models in the case of BMC). By neutralizing the model's predictions by the Meta Model or Benchmark Models, the remaining orthogonal component's covariance with the target is that model's contribution.
 

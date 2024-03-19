@@ -14,7 +14,7 @@ You can [sign up](https://numer.ai/signup) and visit your [home page](https://nu
 
 Numerai's free dataset is made of clean and regularized financial data. The dataset is _**obfuscated**_ so that it can be given out for free and modeled without any financial domain knowledge. This also means that models you build on this data cannot be used outside of the Numerai tournament.
 
-Here is an example of the general structure of our dataest:
+Here is an example of the general structure of our dataset:
 
 ![Numerai's obfuscated dataset](.gitbook/assets/ex\_data.png)
 
@@ -58,11 +58,15 @@ model.fit(
 )
 ```
 
-See the [Models](numerai-tournament/benchmark\_models.md) section for more examples.
+See the [Models](broken-reference) section for more examples.
 
 ## Submissions
 
-Each day (Tuesday through Saturday), new `live data` is released. This represents the current state of the stock market. You must generate `live predictions` and submit them to Numerai.
+Each day (Tuesday through Saturday), new `live data` is released. This represents the current state of the stock market. You must generate `live predictions` and submit them to Numerai. You are asked to submit a prediction value for each id in the `live` data.
+
+This is what a submission might look like:
+
+<figure><img src=".gitbook/assets/image (89).png" alt="" width="290"><figcaption></figcaption></figure>
 
 Here is an example of how you generate and upload live predictions in Python:
 
@@ -89,10 +93,6 @@ submission.to_csv(f"submission.csv")
 napi.upload_predictions(f"submission.csv")
 ```
 
-This is what a submission might look like:
-
-![](<.gitbook/assets/image (89).png>)
-
 Behind the scenes, Numerai combines the predictions of all models into the S_take-Weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
 
 See the [Submissions](numerai-tournament/submissions/) section for more details and examples.
@@ -101,12 +101,12 @@ See the [Submissions](numerai-tournament/submissions/) section for more details 
 
 Submissions are scored against two main metrics:
 
-* [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORR`): Your prediction's correlation to the target
+* [Correlation](numerai-tournament/scoring/correlation-corr.md) (`CORR`): Your prediction's correlation to the target
 * [Meta Model Contribution](numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`):  Your prediction's contribution to the Meta Model&#x20;
 
 Since the `target` is a measure of 20 business days of stock market returns, it takes about 1 month for each submission to be fully scored.
 
-See the [Scoring](./#scoring) section for more details.
+See the [Scoring](numerai-tournament/scoring/) section for more details.
 
 ## Staking
 
@@ -118,6 +118,20 @@ Staking serves two important functions:
 2. Payouts and burns continuously improve the weights of the Meta Model.      &#x20;
 
 See the [Staking](numerai-tournament/staking.md) section for more details.&#x20;
+
+## FAQ
+
+### Do I have to stake?
+
+No. You can submit your prediction file and receive performance without staking.
+
+### Why wouldn't I just trade it myself?
+
+You can't trade the predictions for the Numerai Tournament. Since our data is obfuscated, it's impossible to use it for your own trading.
+
+### Why not pay in USD?
+
+USD cannot be burned. NMR was designed to be burned and thus can be sent to a null address, making it completely unusable by anyone. This is important because if NMR is burned due to bad performance, you can be sure that the NMR is disappearing, not simply being sent to another user.
 
 ## Support
 

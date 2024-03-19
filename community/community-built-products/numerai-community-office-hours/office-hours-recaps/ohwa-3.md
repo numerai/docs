@@ -149,7 +149,7 @@ The reputation system still hasn’t been switched over (at the time of recordin
 
 If you’re passionate about finance, machine learning, or data science and you’re not competing in [the most challenging data science tournament in the world](https://numer.ai/tournament), what are you waiting for?
 
-Don’t miss the next Office Hours with Arbitrage — you never know who might join. Follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on [Rocket.Chat](https://community.numer.ai/home) for the next time and date.
+Don’t miss the next Office Hours with Arbitrage — you never know who might join. Follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on Rocket.Chat for the next time and date.
 
 ![Pictured: happy data scientists](https://cdn-images-1.medium.com/max/1600/1\*cN6GC2Of9VLDne5e2Jjtrw.png)
 

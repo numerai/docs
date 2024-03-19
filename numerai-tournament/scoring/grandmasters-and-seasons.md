@@ -1,4 +1,10 @@
-# Grandmasters
+---
+description: A prestige system for the Numerati.
+---
+
+# Grandmasters & Seasons
+
+{% embed url="https://www.youtube.com/watch?v=R81Bdu2Suoo" %}
 
 Grandmasters is a prestige system for Numerai participants. In Grandmasters, users are awarded for their stake-weighted model performance over the calendar year.
 
@@ -107,7 +113,7 @@ To connect your Discord account:
 3. You’ll be redirect to the Discord authorization page
 4. Authorize the Numerai Discord bot, named ‘The Craibinator’, to link your account.
 
-<img src="https://lh7-us.googleusercontent.com/_WDG-6YMi5LLgz3bjkKj3R0bYRCE3T6toeA8eskjgJJJgM-boH3xzfw_sMXpUpdCnVC7xDRhyvEiqpaeeF3EaLshmyXJOAVtuh7tBemQji5yhRot6lojzLu0II9abSINiaL1gxpyApaAMRZuzBb-Uco" alt="" data-size="original">
+<figure><img src="https://lh7-us.googleusercontent.com/_WDG-6YMi5LLgz3bjkKj3R0bYRCE3T6toeA8eskjgJJJgM-boH3xzfw_sMXpUpdCnVC7xDRhyvEiqpaeeF3EaLshmyXJOAVtuh7tBemQji5yhRot6lojzLu0II9abSINiaL1gxpyApaAMRZuzBb-Uco" alt="" width="375"><figcaption></figcaption></figure>
 
 Once authorized, your Grandmasters titles will automatically appear as roles in your Discord account. Additionally, your Discord profile will be visible on your Numerai profile page, enhancing your presence in the community.
 

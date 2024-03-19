@@ -36,8 +36,11 @@ To properly compete in the tournament you should submit live predictions in ever
 Here is an example of how to make a submission in Python using [NumerAPI](https://github.com/uuazed/numerapi):
 
 ```python
+from numerapi import NumerAPI
+import pandas as pd
+
 # Authenticate
-napi = numerapi.NumerAPI("api-public-id", "api-secret-key")
+napi = NumerAPI("[your api public id]", "[your api secret key]")
 
 # Get current round
 current_round = napi.get_current_round()
@@ -86,8 +89,6 @@ If you prefer to keep things on-premises you can go with one of these. They are 
 
 * [CRON example](https://forum.numer.ai/t/automated-submissions-from-bash-shell-script/5806) - scheduling your script to run regularly and detect when to submit
 * [NGROK example](https://github.com/Raynos/numerai-example/tree/ngrok-test)  - setup a webhook for Numerai to notify you when to submit
-
-##
 
 ## Queued and Delayed Submissions
 

@@ -15,19 +15,19 @@
   * [Meta Model Contribution (MMC)](numerai-tournament/scoring/meta-model-contribution-mmc.md)
   * [Feature Neutral Correlation (FNC)](numerai-tournament/scoring/feature-neutral-correlation.md)
   * [True Contribution (TC)](numerai-tournament/scoring/true-contribution-tc.md)
+  * [Grandmasters & Seasons](numerai-tournament/scoring/grandmasters-and-seasons.md)
 * [Staking](numerai-tournament/staking.md)
-* [Benchmark Models](numerai-tournament/benchmark\_models.md)
-* [Grandmasters](numerai-tournament/grandmasters.md)
 * [Bug Bounties](numerai-tournament/bounties.md)
 
 ## Numerai Signals
 
-* [Numerai Signals Overview](numerai-signals/signals-overview.md)
-* [Signals Data](numerai-signals/signals-data.md)
-* [Signals New Users](numerai-signals/new-users.md)
-* [Signals FAQ](numerai-signals/signals-faq.md)
-* [Integrations](numerai-signals/integrations/README.md)
-  * [QuantConnect Integration](numerai-signals/integrations/quantconnect-integration.md)
+* [Overview](numerai-signals/signals-overview.md)
+* [Data](numerai-signals/data.md)
+* [Models](numerai-signals/models.md)
+* [Submissions](numerai-signals/submissions.md)
+* [Scoring](numerai-signals/scoring.md)
+* [Staking](numerai-signals/staking.md)
+* [Signals + QuantConnect](numerai-signals/signals-+-quantconnect.md)
 
 ## Community
 

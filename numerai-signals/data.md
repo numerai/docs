@@ -1,6 +1,6 @@
-# Signals Data
+# Data
 
-### Data Structure
+## Data Structure
 
 The Numerai Signals dataset is a tabular dataset that describes the global stock market over time.
 

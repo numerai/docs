@@ -6,7 +6,7 @@ description: March 5, 2020
 
 #### Office Hours with Arbitrage #1
 
-If you’ve ever entered Numerai’s [data science tournament](https://numer.ai/tournament) or you’re active in the [RocketChat](https://community.numer.ai/), you’re probably familiar with [Arbitrage](https://numer.ai/arbitrage). A third-year PhD Student studying finance and focusing on Fintech and Bank Distress, Arbitrage has been involved with the Numerai tournament since 2016 (often ranking in the top 100 users), and teaches several finance courses including Financial Machine Learning with Python where he uses Numerai data.
+If you’ve ever entered Numerai’s [data science tournament](https://numer.ai/tournament) or you’re active in the RocketChat, you’re probably familiar with [Arbitrage](https://numer.ai/arbitrage). A third-year PhD Student studying finance and focusing on Fintech and Bank Distress, Arbitrage has been involved with the Numerai tournament since 2016 (often ranking in the top 100 users), and teaches several finance courses including Financial Machine Learning with Python where he uses Numerai data.
 
 In early March, Arbitrage held his first office hours for users to talk about the tournament at a high level and get help and feedback on their models. Here’s a recap for those who couldn’t attend or want to revisit any of the discussion.
 
@@ -102,6 +102,6 @@ The challenge is how to reduce volatility, encourage participation, and make pay
 
 If you’re passionate about finance, machine learning, or data science and you’re not competing in [the most challenging data science tournament in the world](https://numer.ai/tournament), take a minute to sign up.
 
-Don’t miss the next Office Hours with Arbitrage: follow [Numerai](http://twitter.com/numerai) on Twitter or join the discussion on [Rocket.Chat](https://community.numer.ai/home) for the next time and date.
+Don’t miss the next Office Hours with Arbitrage: follow [Numerai](http://twitter.com/numerai) on Twitter or join the discussion on Rocket.Chat for the next time and date.
 
 _Thank you to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting Office Hours and for collaborating on this post._

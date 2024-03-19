@@ -149,6 +149,6 @@ Alongside that, Slyfox said they continue to monitor the ever-growing test set t
 
 If you’re passionate about finance, machine learning, or data science and you’re not competing in [the most challenging data science tournament in the world](https://numer.ai/tournament), take a minute to sign up.
 
-Don’t miss the next Office Hours with Arbitrage: follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on [Rocket.Chat](https://community.numer.ai/home) for the next time and date.
+Don’t miss the next Office Hours with Arbitrage: follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on Rocket.Chat for the next time and date.
 
 _Thank you to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting Office Hours, and to Arbitrage,_ [_Slyfox_](https://numer.ai/slyfox)_, and_ [_Michael_](https://numer.ai/master\_key) _for collaborating on this post._
