@@ -19,7 +19,7 @@ Within a single round, submissions will receive 20 score updates until the final
 
 <figure><img src="../../.gitbook/assets/scoring_calendar_1 (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-The round opens on Saturday the 6th and closing on Monday the 8th. The first day of scoring is on Friday 12th (4 days later), with daily updates every day, Tuesday through Saturday. The final score is released about a month later, on Thursday the 8th.
+The round opens on Saturday the 6th and closes on Monday the 8th. The first day of scoring is on Friday 12th (4 days later), with daily updates every day, Tuesday through Saturday. The final score is released about a month later, on Thursday the 8th.
 
 Scoring is done over these 20 days because the main target is calculated using 20 days of total returns. It takes 4 days to get the first score because it takes 2 days to process data and the main target lags 2 days behind trading - this means we ignore 2 days of returns before starting the 20 day clock. This timeline is commonly referred to as "**20D2L**" - **20** **D**ays of returns after **2** **L**ag days:
 
