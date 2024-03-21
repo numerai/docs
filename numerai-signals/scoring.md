@@ -79,7 +79,7 @@ Uploads over the `validation` time period must include one extra column:
 
 Once your upload is validated, diagnostics will start running. This usually takes 5-10 minutes depending on the number of weeks and tickers that span your submission.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-08-18 at 1.53.00 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-08-18 at 1.53.00 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 These diagnostics serve as a guide for you to estimate whether your signal is good enough to be worth staking on. It is important to note that signals with strong diagnostics over the historical `validation` period may not score well in any current or future `live` periods.
 
