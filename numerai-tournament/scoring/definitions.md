@@ -1,5 +1,5 @@
 ---
-description: Overview of all definitions and vocabulary used to speak about
+description: Overview of all definitions and vocabulary used to speak about scoring
 ---
 
 # Definitions
