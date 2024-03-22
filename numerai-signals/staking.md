@@ -1,12 +1,10 @@
 # Staking
 
-You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and/or `TC` scores. Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
+You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and/or `TC` scores (Note: on March 30, 2024, this will change to FNCv4 **and** MMC). Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
-You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores (`FNCV4` and/or `TC`) you want to stake on.
+You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores you want to stake on.
 
 ![](https://docs.numer.ai/\~gitbook/image?url=https:%2F%2Fgblobscdn.gitbook.com%2Fassets%252F-LmGruQ\_-ZYj9XMQUd5x%252F-MTwWeGztnW6NaH6Sd\_A%252F-MTxK8xvV36McXIClWAt%252Fimage.png%3Falt=media%26token=aea91c60-7079-439b-bbd6-f64e9d8c26d7\&width=768\&dpr=4\&quality=100\&sign=c26f0dc43daabd09b8834fe5fa0d22f7e105ca7c1b17f4fb0c4b1aa5c8ff0b2e)
-
-
 
 {% hint style="info" %}
 It is important to note that the opportunity to stake your signal is not an offer by Numerai to participate in an investment contract, a security, a swap based on the return of any financial assets, an interest in Numerai’s hedge fund, or in Numerai itself or any fees we earn. Payouts will be made at our discretion, based on a blackbox target that will not be disclosed to users. Fundamentally, Numerai Signals is a service offered by Numerai that allows users to assess the value of their signals, using NMR staking as a way to validate “real” signals. In return, Numerai uses the staked signals and related data in the Numerai hedge fund. Users with different expectations should not stake signals.
@@ -19,7 +17,7 @@ It is important to note that the opportunity to stake your signal is not an offe
 Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±5% of the stake value per round.
 
 ```python
-payout = stake_value * payout_factor * (fncv4 * fncv4_multiplier + tc * tc_multiplier)
+payout = stake_value * payout_factor * (fncv4 * 1 + tc * 2)
 ```
 
 The `stake_value` is the value of your stake as of the `close` of the round, minus and pending releases, and 0 if you have no submission.
@@ -29,21 +27,3 @@ The `stake_cap_threshold` is a number that determines when the `payout_factor` b
 The `payout_factor` is a number that scales with the total NMR staked across all models in the tournament. When the total NMR staked across all models exceeds the `stake_cap_threshold`, the `payout_factor` is reduced.
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-The `fncv4_multiplier` and `tc_multiplier` are configured by you to control your exposure to each score. You are given the following multiplier options.
-
-|                              |                              |
-| ---------------------------- | ---------------------------- |
-| FNCV4 **multiplier options** | TC **multiplier options**    |
-| 1.0x, 1.5x, 2.0x             | 0.0x, 0.5x, 1.0x, 2.0x, 3.0x |
-
-{% hint style="info" %}
-The payout factor curve and available multiplier options may and will be updated by Numerai in the future alongside major tournament releases.
-{% endhint %}
-
-Here are some example payout calculations.&#x20;
-
-| stake value | payout factor | FNCV4 | FNCV4 multiplier | TC    | TC multiplier | payout   |
-| ----------- | ------------- | ----- | ---------------- | ----- | ------------- | -------- |
-| 100 NMR     | 0.8           | 0.02  | 2.0x             | 0.002 | 2.0x          | 3.52 NMR |
-| 100 NMR     | 0.8           | 0.02  | 2.0x             | 0.002 | 0.0x          | 3.2 NMR  |

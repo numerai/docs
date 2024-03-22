@@ -106,6 +106,7 @@ Described below are the vast majority of definitions for functions and statistic
 
 * Stake-Weighted Meta Model (SWMM)
   * A stake-weighted average of Numerai submissions
+  * The Numerai Hedge Fund uses this for trading
 * Benchmark Meta Model (BMM)
   * A stake-weighted average of Benchmark Models
 
