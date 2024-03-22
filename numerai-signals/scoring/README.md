@@ -2,28 +2,24 @@
 
 There are two main scores currently used for payouts
 
-* [Feature Neutral Correlation](../numerai-tournament/scoring/feature-neutral-correlation.md) (FNCv4): Your [neutralized](scoring.md#neutralization) prediction's correlation to the target
-  * The target used for this is `target_factor_feat_neutral_20` (returns [neutralized](scoring.md#neutralization) to common features and factors, yielding "residual return")
-* [True Contribution](../numerai-tournament/scoring/true-contribution-tc.md) (`TC`): Your predictions contribution to the hedge fund
-  * On March 30, 2024, this will be replaced by [Meta Model Contribution](../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`).
+* [Feature Neutral Correlation](../../numerai-tournament/scoring/feature-neutral-correlation.md) (FNCv4): Your [neutralized](./#neutralization) prediction's correlation to the target
+  * The target used for this is `target_factor_feat_neutral_20` (returns [neutralized](./#neutralization) to common features and factors, yielding "residual return")
+* [True Contribution](../../numerai-tournament/scoring/true-contribution-tc.md) (`TC`): Your predictions contribution to the hedge fund
+  * On March 30, 2024, this will be replaced by [Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`).
 
 We also have informational scores not used for payouts:
 
 * [Correlation](https://docs.numer.ai/tournament/correlation-corr) (`CORRv4`): Your prediction's correlation to the target
 * Information Coefficient (`ICv2`): Your prediction's correlation to raw returns
-* Residual Information Coefficient (`RIC`): Your prediction's correlation to residual returns (returns [neutralized](scoring.md#neutralization) to common factors)
+* Residual Information Coefficient (`RIC`): Your prediction's correlation to residual returns (returns [neutralized](./#neutralization) to common factors)
 
-Before scoring, Numerai processes each signal as follows:
-
-1. Rank the signal values between \[0, 1]
-2. Fill missing tickers with the median value
-3. Neutralize against existing signals
+For a full list of detailed explanations please see the [defitions docs](definitions.md).
 
 ## Neutralization
 
 A signal or target is considered "neutral" when it has zero correlation with some set of existing signals. The point of the neutralization is to isolate the original or orthogonal component of the signal that is not already present in existing signals.
 
-![A visualization of neutralization against a single known signal](<../.gitbook/assets/image (53) (1).png>)
+![A visualization of neutralization against a single known signal](<../../.gitbook/assets/image (53) (1).png>)
 
 {% hint style="warning" %}
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
@@ -39,7 +35,7 @@ To understand broader implications of feature exposure and neutralization, read 
 
 ## The Target
 
-Signals are evaluated against a custom blackbox target created by Numerai. This target is also a [20D2L](../numerai-tournament/scoring/#live-scoring) target like the Numerai Tournament, but are neutralized against our existing signals.
+Signals are evaluated against a custom blackbox target created by Numerai. This target is also a [20D2L](../../numerai-tournament/scoring/#live-scoring) target like the Numerai Tournament, but are neutralized against our existing signals.
 
 We do not use shorter time horizons because signals that only work on short time horizons are difficult or impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
 
@@ -75,11 +71,11 @@ Uploads over the `validation` time period must include one extra column:
 
 * A `date` column - historic data is weekly and the diagnostics tool assumes your predictions for a given week are made using market close data of the latest Friday
 
-<figure><img src="../.gitbook/assets/signals_validation_example_preds.png" alt="" width="266"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/signals_validation_example_preds.png" alt="" width="266"><figcaption></figcaption></figure>
 
 Once your upload is validated, diagnostics will start running. This usually takes 5-10 minutes depending on the number of weeks and tickers that span your submission.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-08-18 at 1.53.00 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-18 at 1.53.00 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 These diagnostics serve as a guide for you to estimate whether your signal is good enough to be worth staking on. It is important to note that signals with strong diagnostics over the historical `validation` period may not score well in any current or future `live` periods.
 

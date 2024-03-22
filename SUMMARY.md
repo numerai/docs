@@ -11,6 +11,7 @@
   * [NGROK Example](https://github.com/Raynos/numerai-example/tree/ngrok-test)
   * [CRON Example](https://forum.numer.ai/t/automated-submissions-from-bash-shell-script/5806)
 * [Scoring](numerai-tournament/scoring/README.md)
+  * [Definitions](numerai-tournament/scoring/definitions.md)
   * [Correlation (CORR)](numerai-tournament/scoring/correlation-corr.md)
   * [Meta Model Contribution (MMC)](numerai-tournament/scoring/meta-model-contribution-mmc.md)
   * [Feature Neutral Correlation (FNC)](numerai-tournament/scoring/feature-neutral-correlation.md)
@@ -25,7 +26,8 @@
 * [Data](numerai-signals/data.md)
 * [Models](numerai-signals/models.md)
 * [Submissions](numerai-signals/submissions.md)
-* [Scoring](numerai-signals/scoring.md)
+* [Scoring](numerai-signals/scoring/README.md)
+  * [Definitions](numerai-signals/scoring/definitions.md)
 * [Staking](numerai-signals/staking.md)
 * [Signals + QuantConnect](numerai-signals/signals-+-quantconnect.md)
 

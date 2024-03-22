@@ -110,7 +110,7 @@ The primary difference is that Numerai first neutralizes each signal to our own 
 
 Furthermore, Signals Grandmasters has different tier qualifications.
 
-See the [Scoring](scoring.md) section for more details.
+See the [Scoring](scoring/) section for more details.
 
 ## Staking <a href="#staking" id="staking"></a>
 
