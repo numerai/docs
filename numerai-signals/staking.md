@@ -1,6 +1,6 @@
 # Staking
 
-You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and/or `TC` scores (Note: on March 30, 2024, this will change to FNCv4 **and** MMC). Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
+You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and `MMC` scores. Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
 You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores you want to stake on.
 
@@ -17,7 +17,7 @@ It is important to note that the opportunity to stake your signal is not an offe
 Payouts are a function of your stake value and scores. The higher your stake value and the higher your scores, the more you will earn. If you have a negative score, then a portion of your stake will be burned. Payouts are limited to ±5% of the stake value per round.
 
 ```python
-payout = stake_value * payout_factor * (fncv4 * 1 + tc * 2)
+payout = stake_value * payout_factor * (fncv4 * 1 + mmc * 2)
 ```
 
 The `stake_value` is the value of your stake as of the `close` of the round, minus and pending releases, and 0 if you have no submission.
