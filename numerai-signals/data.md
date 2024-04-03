@@ -4,7 +4,7 @@
 
 The Numerai Signals dataset is a tabular dataset that describes the global stock market over time.
 
-At a high level, each row represents a stock at a specific point in time identified by its `numerai_ticker` or `composite_figi` and the date. The `target` is a measure of future returns (eg. after 20 days) relative to the date.
+At a high level, each row represents a stock at a specific point in time identified by its `numerai_ticker` or `composite_figi` and the `date`. The `date` represents the day that market close data was used to generate the features - in the context of rounds and live data, this is the day before a round opens. The `target` is a measure of future returns (eg. after 20 days) relative to the `date`.
 
 ### Features
 
