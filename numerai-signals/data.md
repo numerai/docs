@@ -121,9 +121,9 @@ napi = NumerAPI()
 napi.download_dataset("signals/v1.0/train.parquet")
 ```
 
-* `train.parquet` contains the historical data with features and targets
-* `validation.parquet` contains more historical data with features and targets
-* `live.parquet` contains the latest live features with no targets of the current round
+* `train.parquet` contains the historical data with tickers, features, and targets
+* `validation.parquet` contains more historical data with tickers, features and targets
+* `live.parquet` contains the latest ticker universe and live features with no targets of the current round
 * `live_example_preds.parquet` contains the latest live predictions of the example model&#x20;
 * `validation_example_preds.parquet` contains the validation predictions of the example model
 
