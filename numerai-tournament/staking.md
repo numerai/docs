@@ -31,9 +31,13 @@ We recommend two places for buying NMR&#x20;
 * [Coinbase](https://www.coinbase.com/price/numeraire) - a safe and easy place to buy NMR with USD, GBP, EUR or Bitcoin. A good place to start if you are new to crypto. Availability depends on your region.
 * [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671) - a decentralized exchange you can use to swap Ethereum based tokens like ETH or USDC for NMR. Requires you to bring your own wallet like MetaMask. Great for DeFi enthusiasts.
 
-Once you own some NMR, copy your adress from the [Wallet Page](https://numer.ai/wallet):
+Once you own NMR, use the [Wallet](https://numer.ai/wallet) address to send NMR to your Numerai Wallet:
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>numer.ai/wallet</p></figcaption></figure>
+
+### Restrictions
+
+To prevent fraud and money laundering, we place withdrawal restrictions on new accounts. In order to withdraw from your Numerai Wallet, your account must either be 30 days old or you must withdraw more than 0.1 NMR. This means if you just created your account and deposit 0.1 NMR, you cannot withdraw this amount until either your account reaches 30 days of age or you deposit more NMR first.
 
 ## Increasing Stake
 
@@ -82,7 +86,7 @@ payout_factor = min(1, stake_threshold / total_at_risk)
 
 ## Withdrawing NMR
 
-When you are ready to withdraw NMR from your Numerai Wallet visit the [Wallet Page](https://numer.ai/wallet), specify an amound, and copy your destination address into the relevant text box:
+When you are ready to withdraw NMR from your Numerai Wallet visit the [Wallet Page](https://numer.ai/wallet), specify an amount, and copy your destination address into the relevant text box:
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-03-13 at 4.42.37 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
