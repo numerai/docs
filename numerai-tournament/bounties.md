@@ -2,78 +2,107 @@
 description: Help us improve Numerai and earn NMR!
 ---
 
-# Bug Bounties
+# Bounties
 
-We need and want your help to improve Numerai so we will aim to be generous and fair with our bounties where possible. If you feel like you deserve more/less bounty for your contribution just let us know!
+We need and want your help to improve Numerai so we will aim to be clear and fair with our bounties. The examples listed below are not exhaustive and the bounty amounts are only rough guidelines - the exact amounts depends on the impact and the difficulty of the bug, feedback or exploit. **Actual bounties paid, if any, will be determined by Numerai at its sole discretion.**
 
-The examples listed below are not exhaustive and the bounty amounts listed above are only rough guidelines. The exact amounts depends on the actual bug, feedback or suggestion. **Actual bounty payout amounts, if any, will be determined by Numerai at its sole discretion. Please allow 3-5 business days for a response to reports.**&#x20;
+Please allow 3-5 business days for a response to reports and an additional 7-10 business days to resolve any reports. We kindly ask for your patience - we are a small team and must prioritize large, high-impact projects.
+
+{% hint style="warning" %}
+You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](broken-reference). **Regardless of your tax jurisdiction, you are solely responsible for any tax implications related to any bounty payouts you may receive.**
+{% endhint %}
 
 ## Bugs
 
-If you see anything that is broken, report it! If it turns out to be a real issue and your report helped us fix it then we will give you a bounty!
+If you see anything that is broken, report it! If it turns out to be a real issue and your report helped us fix it then we will give you a bounty:
 
-| Bug report                                                        | Bounty    |
-| ----------------------------------------------------------------- | --------- |
-| Small _website display issues, broken email, broken links_        | 0.1-1 NMR |
-| Minor _exploits or vulnerabilities that do not risk user funds_   | 0.1-1 NMR |
-| Medium _data errors, incorrect payouts, cannot submit/stake_      | 1-5 NMR   |
-| Major _exploits, security issues, smart contract vulnerabilities_ | 1-100 NMR |
+<table><thead><tr><th width="365">Bug report</th><th>Bounty</th></tr></thead><tbody><tr><td>Small website display / styling issues, broken emails, broken links, typos</td><td>0.1-1 NMR</td></tr><tr><td>Incorrect data / scoring / payouts or broken services (e.g. cannot submit / stake)</td><td>1-5 NMR</td></tr></tbody></table>
 
-Note: You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](broken-reference).&#x20;
+## Feedback
 
-**Regardless of your tax jurisdiction, you are solely responsible for any tax implications related to any bounty payouts you may receive.**
+If you have a great idea for improving Numerai, reach out and let us know! We may be able to work with you directly, support your project, or pay you a bounty if we implement your idea:
 
-### **Out-of-Scope**
+| Feedback & Suggestions                                                | Bounty     |
+| --------------------------------------------------------------------- | ---------- |
+| Small features / improvements                                         | 1 NMR      |
+| Moderate features / improvements                                      | 1-5 NMR    |
+| Major features, scoring / payout rule changes, or supporting projects | 10-100 NMR |
 
-We consider the follow to be of negligible security impact unless the researcher provides concrete explanation and valid proof-of-concept to support claims:
+## Security Exploits & Vulnerabilities
 
-* Missing security headers
-* Reports that state that software is out of date/vulnerable without a proof-of-concept
-* Highly speculative reports about theoretical damage
-* Vulnerabilities as reported by automated tools without additional analysis as to how they're an issue
-* Reports from automated web vulnerability scanners (Acunetix, Vega, etc.) that have not been validated
-* SSL/TLS scan reports (this means output from sites such as SSL Labs)
-* Open ports without an accompanying proof-of-concept demonstrating vulnerability
+At Numerai, we take security very seriously, but we are also a small team and place an emphasis on priority, severity, and impact of exploits & vulnerabilities:
+
+
+
+| Vulnerability Report                                                                                           | Bounty     |
+| -------------------------------------------------------------------------------------------------------------- | ---------- |
+| Low-impact exploits & vulnerabilities that cannot risk funds of Numerai or its users                           | 0.1-2 NMR  |
+| Moderate-impact exploits & vulnerabilities that could risk funds of Numerai or its users in some circumstances | 2-10 NMR   |
+| High-impact exploits & vulnerabilities that easily risk funds of Numerai or its users                          | 10-20 NMR  |
+| Exploits & vulnerabilities that risk most or all funds of Numerai or its users                                 | 20-100 NMR |
+
+Before you start researching, we'd like to ask you to refrain from the following while you research:
+
+* Spamming, Denial of service, or other impacts to Numerai's production services
+* Rate limiting attacks (unless there is a very low bar and it constitutes a significant risk)
+* Attacking or compromising other users accounts
+
+### High Priority
+
+We consider the following to be serious security concerns:
+
+* Gaining access to User accounts without direct action from the user
+* Compromising API tokens, website credentials, or other sensitive information
+* Loss of funds for Numerai or its users that involve no interaction from Numerai or its users
+* Gaining access to or control of Numerai's production services with no interaction from Numerai
+* Exploits of any Numerai tournament that could lead to unintended payouts
 * Subdomain takeovers - please demonstrate that you are able to take over the page by leaving a non-offensive message, such as your username
-* CSV injection
-* Unchained open redirects
-* Best practices concerns
-* Protocol mismatch
-* Rate limiting
-* Exposed login panels
-* Dangling IPs
-* Vulnerabilities that cannot be used to exploit other users or Numerai-- e.g. self-xss or having a user paste JavaScript into the browser console
-* Content injection issues
-* Missing cookie flags on non-authentication cookies
-* Cross-site Request Forgery (CSRF) with minimal security implications (Logout CSRF, etc.)
-* Reports that affect only outdated user agents or app versions -- we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE and the versions of our application that are currently in the app stores
-* Issues that require physical access to a victim’s computer/device
-* Stack traces
-* Path disclosure
-* Directory listings
 
-### Exclusions
+Generally, we will resolve the above within 1-3 business days and the bounty will on the higher end.
 
-While researching, we'd like to ask you to refrain from:
+### **Low Priority**&#x20;
 
-* Denial of service
-* Spamming
-* Rate limiting attacks (unless it constitutes a significant risk)
-* Attacking or compromising user accounts
+We consider the following to be of negligible security impact. We ask that researchers generally refrain from reporting these unless their is a clear and significant exploit that can be easily used to cause a high impact. Researchers must provide a concrete explanation as to how these vulnerabilities could be used to harm Numerai and it's users as well as a valid proof-of-concept to harness the exploit:
 
-### How to submit a vulnerability report
+* Concerns about best practices.
+* Reports that are highly speculative or reference theoretical damage without a clear proof-of-concept with a step-by-step guide showing how to easily use an exploit.
+* Reports that only affect outdated user agents or app versions -- we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE and the versions of our application.
+* Vulnerabilities that cannot be used to exploit Numerai or other users of Numerai (e.g. self-xss or having a user paste JavaScript into the browser console are not valid exploits).
+* Vulnerabilities as reported by automated scanners / tools (Acunetix, Vega, OSINT Framework, etc.) without a clear and significant exploit.
+* Vulnerabilities in the form of missing configurations / certificates that cannot be easily used to harm Numerai or its users:
+  * Missing security headers
+  * SSL/TLS scan reports (such as SSL Labs)
+  * Missing DNS configurations / certificates
+  * Open ports
+  * CSV injection
+  * Unchained open redirects
+  * Protocol mismatch
+  * Rate limiting
+  * Exposed login panels
+  * Dangling IPs
+  * Missing cookie flags on non-authentication cookies
+  * Cross-site Request Forgery (CSRF) with minimal security implications (Logout CSRF, etc.)
+* Vulnerabilities citing disclosure of some internal structure that could be used for a theoretical attack without concrete proof of an actual attack:
+  * Stack traces
+  * Path disclosure
+  * Directory listings
+* Vulnerabilities that require significant lapse in user judgement:
+  * External link (e.g. links in users bios)
+  * Content injection (e.g. HTML style / anchor tags on our forum)
+  * Issues that require physical access to a victim’s computer/device
+  * Phishing, social engineering, or public computer concerns
 
-Send email to <mark style="color:blue;">security@numer.ai</mark> explaining the vulnerability, it's impact, and proof-of-concept to support claims. The proof-of-concept must provide steps to execute an attack or exploit the vulnerability. Reports submitted after an actual attack takes place will be ineligible for a bounty.
+### How to report Exploits & Vulnerabilities
 
-## Feedback & Suggestions
+Reports must include:
 
-If you have any good ideas about how to improve the Numerai propose it to us! If it is a good idea and we end up using it then we will give you a bounty!
+* An explanation of the exploit or vulnerability.
+* The concrete impact this could have on Numerai or its users.
+* A discussion on how easily this exploit or vulnerability could be used.
+* A step-by-step guide on how to execute an attack.
+* A proof-of-concept video showing how the attack would work (if the attack impacts production services or users other than yourself, the report will be ineligible for a bounty)
 
-| Feedback & Suggestions                              | Bounty     |
-| --------------------------------------------------- | ---------- |
-| Small _website features_                            | 1 NMR      |
-| Medium _data, submissions and staking improvements_ | 1-5 NMR    |
-| Large _tournament rules/payouts, reputation_        | 10-100 NMR |
+Once you have compiled your report, send an email to <mark style="color:blue;">security@numer.ai</mark> with the subject "\[Security Report] Short Title of Report" where "Short Title of Report" is a clear and concise name for the exploit or vulnerability.
 
 ### How to give feedback and suggestions
 
