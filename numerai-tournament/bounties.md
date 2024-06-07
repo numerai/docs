@@ -82,6 +82,8 @@ We consider the following to be of negligible security impact. We ask that resea
   * Issues that require physical access to a victim’s computer/device
   * Phishing, social engineering, or public computer concerns
 
+Generally, these may take as long as 5-20 business days to resolve depending on the severity and the bounty range will likely be on the lower end.
+
 ### How to report Exploits & Vulnerabilities
 
 Reports must include:
