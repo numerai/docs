@@ -18,16 +18,6 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 
 <table><thead><tr><th width="365">Bug report</th><th>Bounty</th></tr></thead><tbody><tr><td>Small website display / styling issues, broken emails, broken links, typos</td><td>0.1-1 NMR</td></tr><tr><td>Incorrect data / scoring / payouts or broken services (e.g. cannot submit / stake)</td><td>1-5 NMR</td></tr></tbody></table>
 
-## Feedback
-
-If you have a great idea for improving Numerai, reach out and let us know! We may be able to work with you directly, support your project, or pay you a bounty if we implement your idea:
-
-| Feedback & Suggestions                                                | Bounty     |
-| --------------------------------------------------------------------- | ---------- |
-| Small features / improvements                                         | 1 NMR      |
-| Moderate features / improvements                                      | 1-5 NMR    |
-| Major features, scoring / payout rule changes, or supporting projects | 10-100 NMR |
-
 ## Security Exploits & Vulnerabilities
 
 At Numerai, we take security very seriously, but we are also a small team and place an emphasis on priority, severity, and impact of exploits & vulnerabilities:
