@@ -91,6 +91,8 @@ Do not submit the following as examples of vulnerabilities. These are not real v
 * 500 internal server errors
 * Brute force password attacks
 * HTML style / anchor tags on our forum
+* Excess / junk data storage (e.g. old uploads of any kind)
+*
 
 ### How to report Exploits & Vulnerabilities
 
