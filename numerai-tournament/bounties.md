@@ -86,7 +86,7 @@ Generally, these may take as long as 5-20 business days to resolve depending on 
 
 ### **No Priority**&#x20;
 
-Do not submit the following as examples of vulnerabilities:
+Do not submit the following as examples of vulnerabilities. These are not real vulnerabilities and, if cited, will make your report invalid:
 
 * 500 internal server errors
 * Brute force password attacks
