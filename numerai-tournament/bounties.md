@@ -78,11 +78,19 @@ We consider the following to be of negligible security impact. We ask that resea
   * Directory listings
 * Vulnerabilities that require significant lapse in user judgement:
   * External link (e.g. links in users bios)
-  * Content injection (e.g. HTML style / anchor tags on our forum)
+  * Content injection (do not claim HTML style / anchor tags on our forum are vulnerabilities)
   * Issues that require physical access to a victim’s computer/device
   * Phishing, social engineering, or public computer concerns
 
 Generally, these may take as long as 5-20 business days to resolve depending on the severity and the bounty range will likely be on the lower end.
+
+### **No Priority**&#x20;
+
+Do not submit the following as examples of vulnerabilities:
+
+* 500 internal server errors
+* Brute force password attacks
+* HTML style / anchor tags on our forum
 
 ### How to report Exploits & Vulnerabilities
 
