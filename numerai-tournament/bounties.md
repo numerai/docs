@@ -64,7 +64,6 @@ We consider the following to be of negligible security impact. We ask that resea
   * SSL/TLS scan reports (such as SSL Labs)
   * Missing DNS configurations / certificates
   * Open ports
-  * CSV injection
   * Unchained open redirects
   * Protocol mismatch
   * Rate limiting
@@ -91,8 +90,8 @@ Do not submit the following as examples of vulnerabilities. These are not real v
 * 500 internal server errors
 * Brute force password attacks
 * HTML style / anchor tags on our forum
+* "CSV injection" (i.e. uploading a submission)
 * Excess / junk data storage (e.g. old uploads of any kind)
-*
 
 ### How to report Exploits & Vulnerabilities
 
