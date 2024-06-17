@@ -9,7 +9,7 @@ We need and want your help to improve Numerai so we will aim to be clear and fai
 Please allow 3-5 business days for a response to reports and an additional 7-10 business days to resolve any reports. We kindly ask for your patience - we are a small team and must prioritize large, high-impact projects - please do not follow up more than once about a report.
 
 {% hint style="warning" %}
-You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](broken-reference). **Regardless of your tax jurisdiction, you are solely responsible for any tax implications related to any bounty payouts you may receive.**
+You must have a [Numerai Tournament](https://numer.ai/tournament/) account to receive bounty payment. US persons receiving a bounty valued > $600 USD will be required to submit [W9 taxpayer information](broken-reference/). **Regardless of your tax jurisdiction, you are solely responsible for any tax implications related to any bounty payouts you may receive.**
 {% endhint %}
 
 ## Bugs
@@ -21,8 +21,6 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 ## Security Exploits & Vulnerabilities
 
 At Numerai, we take security very seriously, but we are also a small team and place an emphasis on priority, severity, and impact of exploits & vulnerabilities:
-
-
 
 | Vulnerability Report                                                                                           | Bounty     |
 | -------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -50,7 +48,7 @@ We consider the following to be serious security concerns:
 
 Generally, we will resolve the above within 1-3 business days and the bounty will on the higher end.
 
-### **Low Priority**&#x20;
+### **Low Priority**
 
 We consider the following to be of negligible security impact. We ask that researchers generally refrain from reporting these unless their is a clear and significant exploit that can be easily used to cause a high impact. Researchers must provide a concrete explanation as to how these vulnerabilities could be used to harm Numerai and it's users as well as a valid proof-of-concept to harness the exploit:
 
@@ -75,15 +73,10 @@ We consider the following to be of negligible security impact. We ask that resea
   * Stack traces
   * Path disclosure
   * Directory listings
-* Vulnerabilities that require significant lapse in user judgement:
-  * External link (e.g. links in users bios)
-  * Content injection (do not claim HTML style / anchor tags on our forum are vulnerabilities)
-  * Issues that require physical access to a victim’s computer/device
-  * Phishing, social engineering, or public computer concerns
 
 Generally, these may take as long as 5-20 business days to resolve depending on the severity and the bounty range will likely be on the lower end.
 
-### **No Priority**&#x20;
+### **No Priority**
 
 Do not submit the following as examples of vulnerabilities. These are not real vulnerabilities and, if cited, will make your report invalid:
 
@@ -92,6 +85,11 @@ Do not submit the following as examples of vulnerabilities. These are not real v
 * HTML style / anchor tags on our forum
 * "CSV injection" (i.e. uploading a submission)
 * Excess / junk data storage (e.g. old uploads of any kind)
+* Significant lapses in user judgement:
+  * External links (e.g. links in users bios)
+  * Using HTML style / anchor tags on our forum
+  * Issues that require physical access to a victim’s computer/device
+  * Phishing, social engineering, or public computer concerns
 
 ### How to report Exploits & Vulnerabilities
 
@@ -107,6 +105,6 @@ Once you have compiled your report, send an email to <mark style="color:blue;">s
 
 ### How to give feedback and suggestions
 
-Message us on the [Discord](https://discord.gg/numerai).&#x20;
+Message us on the [Discord](https://discord.gg/numerai).
 
 If you are going for a large bounty, it would be helpful if you wrote up your idea in a document (pdf or google docs) or a notebook (google colab, github).
