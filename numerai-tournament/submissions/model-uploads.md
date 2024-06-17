@@ -12,8 +12,6 @@ See [this notebook](https://colab.research.google.com/github/numerai/example-scr
 
 ## How it works
 
-<figure><img src="https://lh3.googleusercontent.com/XthD6GjwyuPt036TdPBVnj1yxUPGs5bmV5nv1AXSo-QhJnIwkKauoFwvvqKrWOTJ-JgN8zktL0tz3ctpzyuEnTBg3TdbnH3R6k478X4jq5bgoIz4zJwgrTJHcIk8eSDw4Dp7AfWQkN3rDUo_MONKo8E" alt=""><figcaption><p>The Model Upload System</p></figcaption></figure>
-
 ### 1. Trained Model
 
 Install requirements from the [Numerai Predict](https://github.com/numerai/numerai-predict/blob/master/requirements.txt) execution environment and train a model. These are strict package version requirements that will help ensure your model always runs correctly. You may try to install later minor versions / patches of the packages listed as long as it is backwards-compatible with this environment.&#x20;
