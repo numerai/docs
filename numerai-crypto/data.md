@@ -18,17 +18,16 @@ The best way to access the Numerai Crypto dataset is via the data API:
 from numerapi import NumerAPI
 napi = NumerAPI()
 
-[f for f in napi.list_datasets() if f.startswith("crypto/v1.0")] 
+[f for f in napi.list_datasets() if f.startswith("crypto/v1.0")]
 
 [
  'crypto/v1.0/live_universe.parquet',
- 'crypto/v1.0/historical_targets.parquet',
+ 'crypto/v1.0/train_targets.parquet',
 ]
- 
-# Download the training data 
-napi.download_dataset("crypto/v1.0/historical_targets.parquet")
+
+# Download the training data
+napi.download_dataset("crypto/v1.0/train_targets.parquet")
 ```
 
-* `historical_targets.parquet` contains the historical symbols and targets
-* `live_universe.parquet` contains the latest token universe with no targets of the current round
-
+- `train_targets.parquet` contains the historical symbols and targets
+- `live_universe.parquet` contains the latest token universe with no targets of the current round
