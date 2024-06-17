@@ -13,7 +13,7 @@ We also have informational scores not used for payouts:
 * Information Coefficient (`ICv2`): Your prediction's correlation to raw returns
 * Residual Information Coefficient (`RIC`): Your prediction's correlation to residual returns (returns [neutralized](./#neutralization) to common factors)
 
-For a full list of detailed explanations please see the [definitions docs](definitions.md).
+For a full list of detailed explanations please see the [defitions docs](definitions.md).
 
 ## Neutralization
 

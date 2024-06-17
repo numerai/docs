@@ -31,15 +31,6 @@
 * [Staking](numerai-signals/staking.md)
 * [Signals + QuantConnect](numerai-signals/signals-+-quantconnect.md)
 
-## Numerai Crypto
-
-* [Overview](numerai-crypto/crypto-overview.md)
-* [Data](numerai-crypto/data.md)
-* [Submissions](numerai-crypto/submissions.md)
-* [Scoring](numerai-crypto/scoring/README.md)
-  * [Definitions](numerai-crypto/scoring/definitions.md)
-* [Staking](numerai-crypto/staking.md)
-
 ## Community
 
 * [Discord](https://discord.gg/numerai)
