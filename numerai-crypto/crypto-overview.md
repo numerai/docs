@@ -109,8 +109,13 @@ live["signal"] = live["signal"].rank(pct=True)
 # Format and save submission
 live[['symbol', 'signal']].to_parquet("submission.parquet")
 
-# Upload submission
-napi.upload_predictions("submission.parquet", tournament=12)
+# Get model ids and submit models
+models = napi.get_models(tournament=12)
+for model_name, model_id in models.items():
+    print(f'submitting {model_name}...')
+    napi.upload_predictions("submission.parquet", model_id=model_id, tournament=12)
+
+print('done!')
 ```
 
 Read more about submissions [here](submissions.md).
