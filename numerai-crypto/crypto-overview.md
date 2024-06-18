@@ -6,13 +6,13 @@ description: Everything you need to know about Numerai Crypto.
 
 ## Introduction
 
-Similar to [Numerai Signals](broken-reference), [Numerai Crypto](https://crypto.numer.ai) asks you to bring your own data - your own unique signal. A signal in the crypto market (or "CryptoSignal") is a feed of information. It is numerical data about tokens that can be used by crypto traders. These feeds of information are used to model the crypto market and construct the Numerai Crypto Meta Model, which we give back to you **free of charge.**
+Similar to [Numerai Signals](broken-reference/), [Numerai Crypto](https://crypto.numer.ai) asks you to bring your own data - your own unique signal. A signal in the crypto market (or "CryptoSignal") is a feed of information. It is numerical data about tokens that can be used by crypto traders. These feeds of information are used to model the crypto market and construct the Numerai Crypto Meta Model, which we give back to you **free of charge.**
 
 Examples of crypto market signals include:
 
-- [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) ([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp))
-- [Alternative data signals](<https://en.wikipedia.org/wiki/Alternative_data_(finance)>) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
-- [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
+* [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) ([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp))
+* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative\_data\_\(finance\)) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
+* [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
 
 If you're a data provider you can submit unique features directly as signals. If you're a data scientist, you can model unique data to submit predictions as signals. Signals are then scored against our targets and other submitted signals. Signals can be staked with the NMR cryptocurrency to earn (or burn) NMR based on performance.
 
@@ -54,8 +54,8 @@ def generate_training_features(df: pd.DataFrame) -> List[str]:
 
 
 # Historical targets file contains ["symbol", "date", "target"] columns
-napi.download_dataset("crypto/1.0/train_targets.parquet")
-train_df = pd.read_parquet("crypto/1.0/train_targets.parquet")
+napi.download_dataset("crypto/v1.0/train_targets.parquet")
+train_df = pd.read_parquet("crypto/v1.0/train_targets.parquet")
 
 # Add training features for each (symbol, date)
 feature_cols = generate_training_features(train_df)
@@ -79,7 +79,7 @@ model.fit(
 
 Numerai Crypto submissions are very similar to Numerai Signals (see [here](../numerai-signals/submissions.md)), except you use token symbols instead of stock tickers. Your submission should be a list of symbols each with a numerical value predicting **returns**:
 
-![An example crypto market signal](../.gitbook/assets/cryptosignals_ex_sub.png)
+![An example crypto market signal](../.gitbook/assets/cryptosignals\_ex\_sub.png)
 
 The list of symbols in your submission are defined by the **Numerai Crypto token universe.** And the numerical values should be between 0 and 1.
 
