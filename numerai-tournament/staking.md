@@ -71,7 +71,9 @@ payout = stake * clip(payout_factor * (corr * 0.5 + mmc * 2), -0.05, 0.05)
 
 `stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstaked amounts that are pending release, and is set to 0 if you have no valid submission for a round.
 
-`payout_factor` is a dynamic value that scales inversely with total NMR staked based on the `staking_threshold`.&#x20;
+#### The Payout Factor
+
+The `payout_factor` is a dynamic value that scales inversely with total NMR staked based on the `staking_threshold`.&#x20;
 
 ```python
 payout_factor = min(1, stake_threshold / total_at_risk) 
@@ -81,6 +83,9 @@ payout_factor = min(1, stake_threshold / total_at_risk)
 | ---------- | --------------- |
 | Numerai    | 72000           |
 | Signals    | 36000           |
+| Crypto     | 10000           |
+
+Here is an example of what the Numerai payout factor looks as stake grows:
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 

@@ -22,8 +22,4 @@ payout = stake_value * payout_factor * (fncv4 * 1 + mmc * 2)
 
 The `stake_value` is the value of your stake as of the `close` of the round, minus and pending releases, and 0 if you have no submission.
 
-The `stake_cap_threshold` is a number that determines when the `payout_factor` begins to decay.  At the time of this writing, the Signals `stake_cap_threshold` is 24K. The `stake_cap_threshold` can change per round at Numerai's discretion.
-
-The `payout_factor` is a number that scales with the total NMR staked across all models in the tournament. When the total NMR staked across all models exceeds the `stake_cap_threshold`, the `payout_factor` is reduced.
-
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+The `payout_factor` reduces logarithmically as the total NMR staked grows over the `stake_cap_threshold.`See the values of `stake_cap_threshold` [here](../numerai-tournament/staking.md#the-payout-factor).
