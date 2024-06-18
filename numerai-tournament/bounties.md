@@ -80,17 +80,24 @@ Generally, these may take as long as 5-20 business days to resolve depending on 
 
 ### **No Priority**&#x20;
 
-Do not submit the following as examples of vulnerabilities. These are not real vulnerabilities and, if cited, will make your report invalid:
+Do not submit the following as examples of vulnerabilities. We do not consider these to be vulnerabilities and, if cited, will make your report invalid:
 
+* Uploading files
 * 500 internal server errors
 * Brute force password attacks
 * HTML style / anchor tags on our forum
-* "CSV injection" (i.e. uploading a submission)
 * Excess / junk data storage (e.g. old uploads of any kind)
+<<<<<<< chris/cryptosignals
+* Vulnerabilities that require significant lapse in user judgement:
+  * External link (e.g. links in users bios)
+  * HTML style / anchor tags on our forum
+  * Issues that require physical access to a victim’s computer/device
+=======
 * HTML style / anchor tags on our forum
 * Lapse in user judgement:
   * Following malicious links (e.g. links in users bios)
   * Gaining physical access to a victim’s computer/device
+>>>>>>> master
   * Phishing, social engineering, or public computer concerns
 
 ### How to report Exploits & Vulnerabilities
