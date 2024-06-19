@@ -30,17 +30,17 @@ Additionally, for a `live` submission to be valid:
 
 Please refer to the [Numerai Tournament Submissions docs](../numerai-tournament/submissions/) to understand the basics of how and when submission windows take place.
 
-You can automate your submission workflow by using the API. Here is an example of how to make a submission once you've generated a CSV with your predictions:
+You can automate your submission workflow by using the API. The submissions API supports both Parquet and CSV file formats. Here is some example of how to upload a submission via NumerAPI:
 
 ```python
 from numerapi import NumerAPI
 
 # Authenticate
 napi = NumerAPI("[your api public id]", "[your api secret key]")
-napi.upload_predictions("[path to your submission].csv", tournament=12)
+napi.upload_predictions("[path to your submission]", tournament=12)
 ```
 
-* You can use any of following&#x20;
+* You can use any of following
   * [Numerapi](https://github.com/uuazed/numerapi) (official Python client)
   * Raw [GraphQL API](https://api-tournament.numer.ai/) for other languages
 * Our open-source cloud automation tool [Numerai Compute](https://docs.numer.ai/tournament/compute)
