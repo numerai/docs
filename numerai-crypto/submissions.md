@@ -2,7 +2,7 @@
 
 While the underlying data used to create CryptoSignals can be very different (audited financials vs news articles vs images of parking lots), the CryptoSignals themselves all come in the same basic format - a list of token symbols each with an associated numerical value:
 
-![An example crypto market signal](../.gitbook/assets/cryptosignals\_ex\_sub.png)
+<figure><img src="../.gitbook/assets/example-prediction (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 The list of token symbols in your submission are defined by the **Numerai Crypto token universe.** It covers roughly the top 300 largest tokens in the world and it is updated every day. In general, only a handful of low volume tokens will move in or out on a given day, but this is dependant on market volatility and (as we all know) crypto can be very volatile.
 

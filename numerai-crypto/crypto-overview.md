@@ -79,7 +79,7 @@ model.fit(
 
 Numerai Crypto submissions are very similar to Numerai Signals (see [here](../numerai-signals/submissions.md)), except you use token symbols instead of stock tickers. Your submission should be a list of symbols each with a numerical value predicting **returns**:
 
-![An example crypto market signal](../.gitbook/assets/cryptosignals\_ex\_sub.png)
+<figure><img src="../.gitbook/assets/example-prediction.png" alt="" width="375"><figcaption></figcaption></figure>
 
 The list of symbols in your submission are defined by the **Numerai Crypto token universe.** And the numerical values should be between 0 and 1.
 
