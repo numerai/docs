@@ -76,24 +76,23 @@ We consider the following to be of negligible security impact. We ask that resea
 
 Generally, these may take as long as 5-20 business days to resolve depending on the severity and the bounty range will likely be on the lower end.
 
-### **No Priority**
+### **No Priority / Out-of-Scope**
 
 Do not submit the following as examples of vulnerabilities. We do not consider these to be vulnerabilities and, if cited, will make your report invalid:
 
-* Uploading files
-* 500 internal server errors
 * Brute force password attacks
-* HTML style / anchor tags on our forum
-* Excess / junk data storage (e.g. old uploads of any kind) <<<<<<< chris/cryptosignals
-* Vulnerabilities that require significant lapse in user judgement:
-  * External link (e.g. links in users bios)
-  * HTML style / anchor tags on our forum
-  * Issues that require physical access to a victim’s computer/device =======
-* HTML style / anchor tags on our forum
-* Lapse in user judgement:
-  * Following malicious links (e.g. links in users bios)
+* Uploading non-executable files (CSVs, images, parquet, etc.) without a clear exploit
+* Any error messages that do not disclose sensitive information
+* Excess / junk data storage (e.g. old uploads of any kind)
+* Sending tokens to trusted third-parties (Google Analytics, etc.)
+* Public URLs that are randomly generated and non-guessable
+* Information from non-sensitive public APIs used in Numerai's public websites such as the APIs serving numer.ai, signals.numer.ai, crypto.numer.ai, forum.numer.ai, etc.
+* Lack of password re-input for actions that already require authentication
+* Significant lapse in user judgement:
+  * Following user-driven links (e.g. users bio links, forum post links, etc.)
+  * "Deception" using HTML style / anchor tags on our forum
   * Gaining physical access to a victim’s computer/device
-* Phishing, social engineering, or public computer concerns
+  * Phishing, social engineering, or public computer concerns
 
 ### How to report Exploits & Vulnerabilities
 
