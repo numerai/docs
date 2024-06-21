@@ -134,7 +134,7 @@ A set of stock tickers / symbols that can be traded. Numerai wants predictions f
 
 **What is the difference between Numerai Tournament and Numerai Signals?**
 
-Bring your own data. For Signals, users have to use their own features. Numerai provides a [historical targets](https://numerai-signals-public-data.s3-us-west-2.amazonaws.com/signals\_train\_val\_bbg.csv) file to train the models and evaluate on validation data, but signals users must collect and process their own features to train models.
+Bring your own data. For Signals, users have to use their own features. Numerai does provide a small set of features to guide feature development, but Signals users must collect and process their own features to train models for success in the tournament.
 
 **Where can I find stock price data and data in general?**
 
