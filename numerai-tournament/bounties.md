@@ -80,9 +80,11 @@ Generally, these may take as long as 5-20 business days to resolve depending on 
 
 Do not submit the following as examples of vulnerabilities. We do not consider these to be vulnerabilities and, if cited, will make your report invalid:
 
+* Errors, error messages, or stack traces that:
+  * are from 500 internal server errors
+  * do not disclose sensitive information
 * Brute force password attacks
 * Uploading non-executable files (CSVs, images, parquet, etc.) without a clear exploit
-* Any error messages that do not disclose sensitive information
 * Excess / junk data storage (e.g. old uploads of any kind)
 * Sending tokens to trusted third-parties (Google Analytics, etc.)
 * Public URLs that are randomly generated and non-guessable
