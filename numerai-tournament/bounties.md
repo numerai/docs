@@ -54,7 +54,6 @@ We consider the following to be of negligible security impact. We ask that resea
 
 * Concerns about best practices.
 * Reports that are highly speculative or reference theoretical damage without a clear proof-of-concept with a step-by-step guide showing how to easily use an exploit.
-* Reports that only affect outdated user agents or app versions -- we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE and the versions of our application.
 * Vulnerabilities that cannot be used to exploit Numerai or other users of Numerai (e.g. self-xss or having a user paste JavaScript into the browser console are not valid exploits).
 * Vulnerabilities as reported by automated scanners / tools (Acunetix, Vega, OSINT Framework, etc.) without a clear and significant exploit.
 * Vulnerabilities in the form of missing configurations / certificates that cannot be easily used to harm Numerai or its users:
@@ -80,6 +79,7 @@ Generally, these may take as long as 5-20 business days to resolve depending on 
 
 Do not submit the following as examples of vulnerabilities. We do not consider these to be vulnerabilities and, if cited, will make your report invalid:
 
+* Vulnerabilities only affecting outdated user agents / app versions - we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE,  etc.
 * Errors, error messages, or stack traces that:
   * are from 500 internal server errors
   * do not disclose sensitive information
