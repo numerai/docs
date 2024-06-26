@@ -83,7 +83,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Errors, error messages, or stack traces that:
   * are from 500 internal server errors
   * do not disclose sensitive information
-* Brute force password attacks
+* Password policies and/or brute force password attacks
 * Uploading non-executable files (CSVs, images, parquet, etc.) without a clear exploit
 * Excess / junk data storage (e.g. old uploads of any kind)
 * Sending tokens to trusted third-parties (Google Analytics, etc.)
