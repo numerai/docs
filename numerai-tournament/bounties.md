@@ -95,6 +95,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
   * "Deception" using HTML style / anchor tags on our forum
   * Gaining physical access to a victim’s computer/device
   * Phishing, social engineering, or public computer concerns
+* Any security issues with the Numerai Forum - we use the Discourse platform, so any security issues should be logged with them. See [here](https://github.com/discourse/discourse/security) for details.
 
 ### How to report Exploits & Vulnerabilities
 
