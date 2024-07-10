@@ -52,8 +52,6 @@ Generally, we will resolve the above within 1-3 business days and the bounty wil
 
 We consider the following to be of negligible security impact. We ask that researchers generally refrain from reporting these unless their is a clear and significant exploit that can be easily used to cause a high impact. Researchers must provide a concrete explanation as to how these vulnerabilities could be used to harm Numerai and it's users as well as a valid proof-of-concept to harness the exploit:
 
-* Reports that are highly speculative or reference theoretical damage without a clear proof-of-concept with a step-by-step guide showing how to easily use an exploit.
-* Vulnerabilities that cannot be used to exploit Numerai or other users of Numerai (e.g. self-xss or having a user paste JavaScript into the browser console are not valid exploits).
 * Vulnerabilities as reported by automated scanners / tools (Acunetix, Vega, OSINT Framework, etc.) without a clear and significant exploit.
 * Vulnerabilities in the form of missing configurations / certificates that cannot be easily used to harm Numerai or its users:
   * Missing security headers
@@ -78,6 +76,8 @@ Generally, these may take as long as 5-20 business days to resolve depending on 
 
 Do not submit the following as examples of vulnerabilities. We do not consider these to be vulnerabilities and reports citing these will not be eligible for a bounty:
 
+* Reports that are highly speculative or reference theoretical damage without a clear proof-of-concept with a step-by-step guide showing how to easily use an exploit.
+* Vulnerabilities that cannot be used to easily exploit Numerai or other users of Numerai (e.g. self-xss or having a user paste JavaScript into the browser console are not valid exploits).
 * Concerns about best practices / industry standards - while we agree it's necessary to implement security best practices in the long-term, these are usually not primary attack vectors and we are only concerned with ways to compromise accounts, user funds, sensitive data, etc.
 * Vulnerabilities only affecting outdated user agents / app versions - we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE,  etc.
 * Errors, error messages, or stack traces that:
