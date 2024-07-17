@@ -4,6 +4,10 @@ description: Submitting your predictions to Numerai
 
 # Submissions
 
+## What are Submissions?
+
+Submissions are a vector of floats attempting to predict ranked [returns](https://www.investopedia.com/terms/r/return.asp). Predictions must be between 0 and 1 where 0 means lowest return, 0.5 means average return, and 1 means highest return. The targets in our data are meant to train your model to predict these returns.
+
 ## Rounds
 
 Each submission is associated with a "Round" of the tournament.
