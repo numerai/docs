@@ -104,6 +104,8 @@ Described below are the vast majority of definitions for functions and statistic
 
 ### Meta Models
 
+Meta Models aggregate submissions into a single signal that Numerai uses to trade:
+
 * Stake-Weighted Meta Model (SWMM)
   * A stake-weighted average of Numerai submissions
   * The Numerai Hedge Fund uses this for trading
