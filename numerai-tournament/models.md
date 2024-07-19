@@ -34,7 +34,17 @@ All predictions are made using a Walk-Forward framework.  This means all predict
 
 Specifically, the data is split up into chunks of 156 eras.  Then for each chunk of eras, the predictions are given by a model which is trained up to first\_era\_of\_chunk - purge\_eras.  The number of purge\_eras is always 8 for 20D targets, and 16 for 60D targets. &#x20;
 
-So eras 157 to 313 are predicted using a model trained up to era148, and then eras 314-470 are predicted using a model trained up to 306, and so on. &#x20;
+So a model is trained on eras 1 through 148, then purge eras 149 through 156, and then predict eras 157 through 312. Next, train on eras 1 through 304, purge 305 through 312, predict 313 through 468, and so on.  Your walk-forward validation windows should look something like this:
+
+
+
+| Window | Train Start | Train End | Val Start | Val End |
+| ------ | ----------- | --------- | --------- | ------- |
+| 1      | 1           | 148       | 157       | 312     |
+| 2      | 1           | 304       | 313       | 468     |
+| 3      | 1           | 460       | 469       | 624     |
+| 4      | 1           | 616       | 625       | 780     |
+| ...    | ...         | ...       | ...       | ...     |
 
 **Standard Large LGBM params**
 
@@ -50,9 +60,20 @@ standard_large_lgbm_params = {
 }
 ```
 
-We've found that having more trees can be helpful, and we've found that having less trees with more depth can also achieve similar results with lower compute requirements.&#x20;
+We've found that having more trees can be helpful, and we've found that having less trees with more depth can also achieve similar results with lower compute requirements.  You can read more about this hyper-parameter research in [this forum post](https://forum.numer.ai/t/super-massive-lgbm-grid-search/6463).
 
-You can read more about our hyper-parameter research in [this forum post](https://forum.numer.ai/t/super-massive-lgbm-grid-search/6463).
+With the release of v5 data, our benchmarks were updated to have more and deeper trees with more leaves. We found that larger lgbm models using this "deep" configuration perform much better in backtests:
+
+```
+{
+    "n_estimators": 30_000,
+    "learning_rate": 0.001,
+    "max_depth": 10,
+    "num_leaves": 2**10,
+    "colsample_bytree": 0.1,
+    "min_data_in_leaf": 10_000,
+}
+```
 
 **Ensembles**
 
@@ -142,11 +163,23 @@ The naming formula for many benchmarks is as follows:
 
 **{data\_version}\_LGBM\_{target}**
 
-There are many models that have some combination of a data version (V2, V3, V4, V41, V42, V43) and a target (Nomi20, Sam60). These are models trained in the standard walk-forward way, with standard LGBM parameters, using the specified data version and target. That's all!
+There are many models that have some combination of a data version (V2, V3, V4, V41, V42, V43, V5) and a target (e.g. cyrusd\_20, teager2b\_20, etc.). These are models trained in the standard walk-forward way, with standard LGBM parameters, using the specified data version and target. That's all!
 
 
 
 There are also unique models we created that don't have that naming scheme:&#x20;
+
+**V5\_LGBM\_CT\_BLEND (coming soon)**
+
+This is a simple 50/50 blend of V5\_LGBM\_TEAGER2B20 and V5\_LGBM\_CYRUSD20
+
+
+
+**V{42 | 43}\_LGBM\_CT\_BLEND**
+
+This is a simple 50/50 blend of V{42 | 43}\_LGBM\_TEAGER20 and V{42 | 43}\_LGBM\_CYRUS20
+
+
 
 **V42\_RAIN\_ENSEMBLE**&#x20;
 
@@ -167,12 +200,6 @@ Alpha60: 1.7%, Bravo60: 1.7%, Charlie60: 1.7%, Delta60: 1.7%, Echo60: 1.7%
 This is the same as v42\_RAIN\_ENSEMBLE, but with no weight on the 60D versions.
 
 It is also neutral to the serenity set of features. &#x20;
-
-
-
-**V{42/43}\_LGBM\_CT\_BLEND**
-
-This is a simple 50/50 blend of V{42/43}\_LGBM\_TEAGER20 and V{42/43}\_LGBM\_CYRUS20
 
 
 
@@ -202,7 +229,7 @@ This is a standard model trained on the v2 equivalent feature set and the Nomi20
 
 
 
-The following models are on the Benchmark Models page, but their predictions aren't present in the predictions files because they are either obsolete or reproducible:
+The following models are on the Benchmark Models page, but their predictions aren't present in the predictions files because they are either obsolete or easily reproducible:
 
 **V4\_EXAMPLE\_PREDS** - A standard model on V4 data and Nomi20, and is neutral to the 50 "riskiest features" calculated by which features have the biggest change in mean correlation with Nomi between half1 and half2 of the training data.&#x20;
 
