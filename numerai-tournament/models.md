@@ -36,8 +36,6 @@ Specifically, the data is split up into chunks of 156 eras.  Then for each chunk
 
 So a model is trained on eras 1 through 148, then purge eras 149 through 156, and then predict eras 157 through 312. Next, train on eras 1 through 304, purge 305 through 312, predict 313 through 468, and so on.  Your walk-forward validation windows should look something like this:
 
-
-
 | Window | Train Start | Train End | Val Start | Val End |
 | ------ | ----------- | --------- | --------- | ------- |
 | 1      | 1           | 148       | 157       | 312     |
@@ -61,19 +59,6 @@ standard_large_lgbm_params = {
 ```
 
 We've found that having more trees can be helpful, and we've found that having less trees with more depth can also achieve similar results with lower compute requirements.  You can read more about this hyper-parameter research in [this forum post](https://forum.numer.ai/t/super-massive-lgbm-grid-search/6463).
-
-With the release of v5 data, our benchmarks were updated to have more and deeper trees with more leaves. We found that larger lgbm models using this "deep" configuration perform much better in backtests:
-
-```
-{
-    "n_estimators": 30_000,
-    "learning_rate": 0.001,
-    "max_depth": 10,
-    "num_leaves": 2**10,
-    "colsample_bytree": 0.1,
-    "min_data_in_leaf": 10_000,
-}
-```
 
 **Ensembles**
 
