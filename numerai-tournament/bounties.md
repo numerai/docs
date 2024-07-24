@@ -84,7 +84,8 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
   * are from 500 internal server errors
   * do not disclose sensitive information
 * Password policies and/or brute force password attacks
-* Uploading non-executable files (CSVs, images, parquet, etc.) without a clear exploit
+* Uploading non-executable files (CSVs, images, parquet, etc.) through our API
+* Downloading public files (CSVs, images, parquet, etc.) listed in our API
 * Excess / junk data storage (e.g. old uploads of any kind)
 * Sending tokens to trusted third-parties (Google Analytics, etc.)
 * Public URLs that are randomly generated and non-guessable
