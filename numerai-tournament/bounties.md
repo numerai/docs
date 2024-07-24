@@ -84,7 +84,8 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
   * are from 500 internal server errors
   * do not disclose sensitive information
 * Password policies and/or brute force password attacks
-* Brute-force attacks of any kind that don't cicumvent our rate limits
+* Brute-force attacks of any kind that don't circumvent our rate limits
+* User enumeration that doesn't circumvent our rate limits
 * Uploading non-executable files (CSVs, images, parquet, etc.) through our API
 * Downloading public files (CSVs, images, parquet, etc.) listed in our API
 * Excess / junk data storage (e.g. old uploads of any kind)
