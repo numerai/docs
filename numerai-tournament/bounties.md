@@ -95,10 +95,11 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Lack of password re-input for actions that already require authentication
 * Significant lapse in user judgement:
   * Following user-driven links (e.g. users bio links, forum post links, etc.)
-  * "Deception" using HTML style / anchor tags on our forum
   * Gaining physical access to a victim’s computer/device
   * Phishing, social engineering, or public computer concerns
-* Any security issues with the Numerai Forum - we use the Discourse platform, so any security issues should be logged with them. See [here](https://github.com/discourse/discourse/security) for details.
+* Our Forum:
+  * Using basic HTML tags such as headers (\<h1>) or anchors (\<a>) on our forum
+  * Any security issues with the Numerai Forum - we use the Discourse platform, so any security issues should be logged with them. See [here](https://github.com/discourse/discourse/security) for details.
 
 ### How to report Exploits & Vulnerabilities
 
