@@ -26,7 +26,7 @@ napi.download_dataset("v4.3/validation_benchmark_models.parquet", "validation_be
 napi.download_dataset("v4.3/live_benchmark_models.parquet", "live_benchmark_models.parquet")
 ```
 
-### How they made
+### How they are made
 
 **Walk Forward Cross Validation**
 
