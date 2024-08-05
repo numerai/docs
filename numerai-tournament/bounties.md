@@ -91,7 +91,8 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Excess / junk data storage (e.g. old uploads of any kind)
 * Sending tokens to trusted third-parties (Google Analytics, etc.)
 * Public URLs that are randomly generated and non-guessable
-* Information from non-sensitive public APIs used in Numerai's public websites such as the APIs serving numer.ai, signals.numer.ai, crypto.numer.ai, forum.numer.ai, etc.
+* Information from non-sensitive public APIs used in Numerai's public websites such as the APIs serving numer.ai, signals.numer.ai, crypto.numer.ai, forum.numer.ai, etc.&#x20;
+  * This includes GraphQL introspection.
 * Lack of password re-input for actions that already require authentication
 * Significant lapse in user judgement:
   * Following user-driven links (e.g. users bio links, forum post links, etc.)
