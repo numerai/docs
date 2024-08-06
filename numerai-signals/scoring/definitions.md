@@ -38,7 +38,7 @@ Please refer to the [main definitions docs](../../numerai-tournament/scoring/def
   * tie-kept rank the submission
   * fill nans with 0.5
 * MMC - Meta Model Contribution
-  * correlation contribution of a submission, SSWMMmin10, and target\_20d\_factor\_neutral
+  * correlation contribution of a submission, SNWMMmin10, and target\_20d\_factor\_neutral
   * timeline: 20D2L (+ 2 days data lag)
 * CORRV4 - Correlation v4
   * numerai corr of a submission and target\_20d\_factor\_feat\_neutral
