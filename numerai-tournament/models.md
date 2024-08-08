@@ -60,6 +60,19 @@ standard_large_lgbm_params = {
 
 We've found that having more trees can be helpful, and we've found that having less trees with more depth can also achieve similar results with lower compute requirements.  You can read more about this hyper-parameter research in [this forum post](https://forum.numer.ai/t/super-massive-lgbm-grid-search/6463).
 
+After the release of v5 data, we announced the higher performance "deep" parameters:
+
+```python
+deep_lgbm_params = {
+  "n_estimators": 30000,
+  "learning_rate": 0.001,
+  "max_depth": 10,
+  "num_leaves": 1024,
+  "colsample_bytree": 0.1,
+  "min_data_in_leaf": 10000
+}
+```
+
 **Ensembles**
 
 All of the ensembles use the following steps:
