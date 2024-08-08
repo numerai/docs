@@ -46,7 +46,7 @@ So a model is trained on eras 1 through 148, then purge eras 149 through 156, an
 
 **Standard Large LGBM params**
 
-All of the models use the following LGBM parameters:
+Most models use the following LGBM parameters:
 
 ```python
 standard_large_lgbm_params = {
@@ -58,9 +58,11 @@ standard_large_lgbm_params = {
 }
 ```
 
+#### Deep LGBM params
+
 We've found that having more trees can be helpful, and we've found that having less trees with more depth can also achieve similar results with lower compute requirements.  You can read more about this hyper-parameter research in [this forum post](https://forum.numer.ai/t/super-massive-lgbm-grid-search/6463).
 
-After the release of v5 data, we announced the higher performance "deep" parameters:
+After the release of v5 data, we announced the higher performance "deep" parameters we used to train the v5 benchmark models:
 
 ```python
 deep_lgbm_params = {
