@@ -47,7 +47,7 @@ Features with `{n}(d|w)` in the name (for example, `feature_adv_20d_factor`) are
 
 Features with `country_ranknorm` in the name are grouped by country, then ranked, then gaussianized.
 
-Features with `factor` in the name refer to risk factors that most of the targets are neutral to.
+Features with `factor` in the name refer to risk factors that most of the targets are neutral to. Price factor is grouped by country, then ranked.
 
 PPO is a percentage price oscillator that compares shorter and longer moving averages in a ratio
 
