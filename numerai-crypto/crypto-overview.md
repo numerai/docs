@@ -142,7 +142,7 @@ It is important to note that the opportunity to stake your signal is not an offe
 
 **What is a token universe?**
 
-A set of well-known cryptocurrency token symbols that can be traded. Numerai wants predictions for only these symbols. See [here](../numerai-signals/submissions.md) for details.
+A set of well-known cryptocurrency token symbols that can be traded. Numerai wants predictions for only these symbols. See [here](submissions.md) for details.
 
 **What is the difference between Numerai Tournament, Numerai Signals, and Numerai Crypto?**
 
