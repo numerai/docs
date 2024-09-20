@@ -86,6 +86,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Password policies and/or brute force password attacks
 * Brute-force attacks of any kind that don't circumvent our rate limits
 * User enumeration that doesn't circumvent our rate limits
+* Signing up with a "victim" email to block that email from creating an account
 * Uploading non-executable files (CSVs, images, parquet, etc.) through our API
 * Downloading public files (CSVs, images, parquet, etc.) listed in our API
 * Excess / junk data storage (e.g. old uploads of any kind)
