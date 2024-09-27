@@ -52,8 +52,8 @@ napi = NumerAPI("[your api public id]", "[your api secret key]")
 current_round = napi.get_current_round()
 
 # Download latest live features
-napi.download_dataset(f"v4.1/live_{current_round}.parquet")
-live_data = pd.read_parquet(f"v4.1/live_{current_round}.parquet")
+napi.download_dataset(f"v5.0/live_{current_round}.parquet")
+live_data = pd.read_parquet(f"v5.0/live_{current_round}.parquet")
 live_features = live_data[[f for f in live_data.columns if "feature" in f]]
 
 # Generate live predictions
