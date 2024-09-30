@@ -70,17 +70,7 @@ You'll even see versions available for our other tournament, [Signals](https://s
 
 ### Files
 
-The Numerai dataset is made up of many different files in a few different formats. Here is a list of the common files we will usually give out with every version:
-
-* `features.json` contains metadata about the features and feature sets, this is critical to use when you have limited resources, more on this below
-* `train_int8.parquet` contains the historical data with features and targets
-* `validation_int8.parquet` contains more historical data with features and targets
-* `live_int8.parquet` contains the latest live features with no targets of the current round
-* `meta_model.parquet` contains the meta model predictions of past rounds
-* `live_example_preds.parquet` contains the latest live predictions of the example model&#x20;
-* `validation_example_preds.parquet` contains the validation predictions of the example model
-
-Here is how to get a small set of training features from the data API in Python:
+The Numerai dataset is made up of many different files in a few different formats. Visit the [Numerai Data Page](https://numer.ai/data) for a full list of files and short descriptions of each file. Here is how to get a small set of training features from the data API in Python:
 
 ```python
 import pandas as pd
@@ -95,12 +85,10 @@ small_feature_set = feature_metadata["feature_sets"]["small"]
 columns = ["era"]+features+["target"]
 
 # Download and read the training data 
-napi.download_dataset("v5.0/train_int8.parquet")
-training_data = pd.read_parquet("v5.0/train_int8.parquet", columns=columns)
+napi.download_dataset("v5.0/train.parquet")
+training_data = pd.read_parquet("v5.0/train.parquet", columns=columns)
 ```
 
 ### Formats
 
 The main file format of our data API is [Parquet](https://parquet.apache.org/), which works great for large columnar data - we highly encourage that you become familiar with Parquet if you are not already. You can also find CSV versions of all files if you prefer, but training and validation data are quite large and take a while to load in a CSV format.
-
-You'll also notice that many files have an `int8` suffix. This denotes that the data in that file is stored using integers (0, 1, 2, 3, 4) rather than floats (0.0, 0.25, 0.5, 0.75, 1.0). We offer these files because of the size of our datasets, it requires less resources for models to train on int8 than on float32.

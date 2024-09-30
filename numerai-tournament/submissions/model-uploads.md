@@ -92,7 +92,17 @@ If there was a problem, you will see 2 possible statuses:
    * Out of memory
    * Timeout
 
-<figure><img src="https://lh5.googleusercontent.com/LgpMWSaDZ8W4M_pCIBX1qtDLWCZTfZiRklRs2HGN8K-_yJE3E40q9A_JvOZB8KbLWIn87DBIB2G8FV4rGGOCzWmfkvtRtjQVRTKS79i1kHfkjiWcq5zf8dBIW8t3fWypMVpJn4XIIfNVwSIOK0lzgqY" alt=""><figcaption></figcaption></figure>
+### 6. Disabling the Pickle
+
+If, at any point, you would like to disable your uploaded model:
+
+1. Visit the [Submissions Page](https://numer.ai/submissions)
+2.  Click the Model Upload button:
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2024-09-27 at 12.30.57 PM.png" alt=""><figcaption></figcaption></figure>
+3.  In the "Settings" tab, select "Disable"
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2024-09-27 at 12.27.57 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## FAQ
 
