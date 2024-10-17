@@ -93,7 +93,7 @@ Where _**s(t)**_ is Signal's submission at time _**t**_.
 
 ### Why calculate churn?
 
-If a Signals submission has high churn, then Numerai can’t trade the signal. Many models built on the original Numerai tournament data have low churn organically, but Signals churn is very high. Most Signals models have high churn by default.
+If a Signals submission has high churn, then Numerai can’t trade the signal. Many models built on the original Numerai tournament data have low churn organically, but Signals models seem to have naturally high churn.
 
 We know that this negatively impacts the churn of the Signals Meta Model because the average churn across individual Signals models is highly correlated with the churn of the Signals Meta Model. This means Numerai must disallow high churn Signals models.
 
