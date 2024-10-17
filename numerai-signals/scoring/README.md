@@ -82,3 +82,27 @@ These diagnostics serve as a guide for you to estimate whether your signal is go
 {% hint style="warning" %}
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process.
 {% endhint %}
+
+## What is Churn?
+
+Churn is a statistic describing how much a signal changes over time. We open-sourced the code we use to calculate churn in Signals. You can find it [here](https://github.com/numerai/numerai-tools/commit/f58990854c81eb870cf9a252f1d72aace1a34857#diff-8ff14dc2bf7de3c1800d64eec9d066618b1ab49243bfc99f1bd8c7f3fe307d56R12-R43). In short:
+
+_churn(t0, t1) = 1 - correlation(s(t0), s(t1))_
+
+Where _**s(t)**_ is Signal's submission at time _**t**_.
+
+### Why calculate churn?
+
+If a Signals submission has high churn, then Numerai can’t trade the signal. Many models built on the original Numerai tournament data have low churn organically, but Signals churn is very high. Most Signals models have high churn by default.
+
+We know that this negatively impacts the churn of the Signals Meta Model because the average churn across individual Signals models is highly correlated with the churn of the Signals Meta Model. This means Numerai must disallow high churn Signals models.
+
+### The Churn Threshold
+
+Any model that has not submitted in the previous week will have it’s stake set to 0. This is because any model that does not submit weekly will naturally cause high churn in the Meta Model.
+
+If your model has submitted within the last week, when you upload a new submission we calculate maximum churn with respect to this model’s submissions from the previous week. So if we treat the current upload period as time _**t**_, the max churn would be:
+
+_max\_churn = max(\[churn(t, t-1), churn(t, t-2), ..., churn(t, t-5)])_
+
+If **max\_churn** >= 15%, then this submissions stake is set to 0.

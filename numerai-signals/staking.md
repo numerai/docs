@@ -1,6 +1,10 @@
+---
+description: How to earn (or burn) NMR with your Signals model
+---
+
 # Staking
 
-You can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and `MMC` scores. Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
+If your signal has sufficiently low [churn](scoring/#what-is-churn), you can optionally `stake` [NMR](https://www.coinbase.com/price/numeraire) on your model to earn or burn based on your `FNCV4` and `MMC` scores. Staking means locking up NMR in a [smart contract](https://github.com/numerai/tournament-contracts) on the [Ethereum](https://ethereum.org/en/whitepaper/) blockchain. For the duration of the stake, Numerai is given the permission to add payouts to or burn from the NMR locked up.
 
 You can manage your stake on the website. When you increase your stake, NMR is transferred from your wallet to the staking contract. When you decrease your stake, NMR is transferred from the staking contract back into your wallet after a \~4 week delay. You can also change your stake type, which determines which scores you want to stake on.
 

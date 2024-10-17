@@ -1,6 +1,12 @@
+---
+description: Everything you need to know to make your first Signals submission.
+---
+
 # Submissions
 
-While the underlying data used to create signals can be very different (audited financials vs news articles vs images of parking lots), the signals themselves all come in the same basic format - a list of stock tickers each with an associated numerical value:
+## What is a Signal submission?
+
+Underlying data used to create signals can be very different (audited financials vs news articles vs images of parking lots), but all Signals submissions must use the same basic format - a list of stock tickers each with an associated numerical value between 0 and 1:
 
 ![An example stock market signal](<../.gitbook/assets/group-42-2 (1).png>)
 
@@ -18,7 +24,11 @@ Additionally, for a `live` submission to be valid:
 * There must be at least 100 tickers from our universe with valid values (0 to 1).
 * A ticker cannot appear in the current `live` time period more than once.
 
+## When to submit
+
 Please refer to the [Numerai Tournament Submissions docs](../numerai-tournament/submissions/) to understand the basics of how and when submission windows take place.
+
+## How to automate
 
 You can automate your submission workflow by using the API. Here is an example of how to make a submission once you've generated a CSV with your predictions:
 
