@@ -100,7 +100,7 @@ submission.to_csv(f"submission.csv")
 sapi.upload_predictions(f"submission.csv")
 ```
 
-Read more about submissions [here](signals-overview.md#submissions).
+Numerai has a number of requirements for the structure of your Signals Submissions. To understand all of these requirements, read more about submissions [here](signals-overview.md#submissions).
 
 ## Scoring
 
