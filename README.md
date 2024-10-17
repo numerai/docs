@@ -65,7 +65,7 @@ Each day (Tuesday through Saturday), new `live data` is released. This represent
 
 This is what a submission might look like:
 
-<figure><img src=".gitbook/assets/image (89).png" alt="" width="290"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (89).png" alt="A sample submission" width="290"><figcaption><p>A sample submission</p></figcaption></figure>
 
 Here is an example of how you generate and upload live predictions in Python:
 
