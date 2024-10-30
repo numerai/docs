@@ -6,18 +6,9 @@ description: Apps and content built by the Numerai Community
 
 ## **NumerBay by Restrading**
 
-The community marketplace for Numerai by [ResTrading](https://twitter.com/Res\_dot\_Trading).
+[ResTrading](https://twitter.com/Res\_dot\_Trading) has created [Numerbay](https://numerbay.ai/), a marketplace to buy and sell Numerai models. Numerai does not guarantee the performance of these models and any model purchased from Numerbay is done at your own risk.
 
-{% embed url="https://numerbay.ai/" %}
+## Community Dashboards
 
-## **Numerai Payouts**
-
-An app to help you track and visualize your payouts by [Bouwe Ceunen](https://twitter.com/BouweCeunen)
-
-[Numerai Payouts](https://numeraipayouts.com/)
-
-## Numerati Dashboard
-
-"Yet another dashboard for the Numerai tournament" by [Jo-fai Chow](https://twitter.com/matlabulous).
-
-{% embed url="https://www.jofaichow.co.uk/numerati/" %}
+* &#x20;[Jo-fai Chow](https://twitter.com/matlabulous) (AKA "AI Joe") created [Shiny Numerai Dashboard](https://huggingface.co/spaces/jofaichow/shiny-numerati) and [Numerati Dashboard](https://www.jofaichow.co.uk/numerati/)
+* [Numerologist](https://numer.ai/\~numerologist) created [YAND - Yet Another Numerai Dashboard](https://yand.pythonanywhere.com/) by&#x20;

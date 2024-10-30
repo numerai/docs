@@ -46,7 +46,6 @@
 * [Forum](https://forum.numer.ai/)
 * [Twitter](https://twitter.com/numerai)
 * [Youtube](https://youtube.com/numerai)
-* [NumerCon](community/numercon.md)
 * [Apps & Content](community/community-built-products/README.md)
   * [Office Hours with Arbitrage](community/community-built-products/numerai-community-office-hours/README.md)
     * [Office Hours Recaps: Season 1](community/community-built-products/numerai-community-office-hours/office-hours-recaps/README.md)
@@ -83,7 +82,6 @@
     * [FAQ in Office Hours](community/community-built-products/numerai-community-office-hours/faq-in-office-hours.md)
     * [Cited resources](community/community-built-products/numerai-community-office-hours/cited-resources.md)
   * [Structure of Numerai by Wigglemuse](community/community-built-products/numerai-structure.md)
-  * [Numerai Starter Pack with StudyM8](https://www.youtube.com/watch?v=YeEpOm5JjFk\&list=PLlOOibxKpQUlM28lqa4TiUTJ5gjLG5haQ)
 
 ## NMR
 
