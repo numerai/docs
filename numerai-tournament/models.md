@@ -165,8 +165,6 @@ The naming formula for many benchmarks is as follows:
 
 There are many models that have some combination of a data version (V2, V3, V4, V41, V42, V43, V5) and a target (e.g. cyrusd\_20, teager2b\_20, etc.). These are models trained in the standard walk-forward way, with standard LGBM parameters, using the specified data version and target. That's all!
 
-
-
 There are also unique models we created that don't have that naming scheme:&#x20;
 
 **V5\_LGBM\_CT\_BLEND (coming soon)**
@@ -175,65 +173,9 @@ This is a simple 50/50 blend of V5\_LGBM\_TEAGER2B20 and V5\_LGBM\_CYRUSD20
 
 
 
-**V{42 | 43}\_LGBM\_CT\_BLEND**
+The following models are on the Benchmark Models page, but their predictions aren't present in the predictions files because they are easily reproducible:
 
-This is a simple 50/50 blend of V{42 | 43}\_LGBM\_TEAGER20 and V{42 | 43}\_LGBM\_CYRUS20
-
-
-
-**V42\_RAIN\_ENSEMBLE**&#x20;
-
-This is an ensemble of 22 different standard models. It uses the 11 best targets that we had made as of the release of the Rain dataset, with an emphasis on Cyrus, the scoring target, and twice as much weight on 20D targets as on 60D targets. The target weights are:
-
-Cyrus20: 33%, Ralph20: 3.3%, Jeremy20: 3.3%, Waldo20: 3.3%, Tyler20: 3.3%, Victor20: 3.3%
-
-Cyrus60: 17%, Ralph60: 1.7%, Jeremy60: 1.7%, Waldo60: 1.7%, Tyler60: 1.7%, Victor60: 1.7%
-
-Alpha20: 3.3%, Bravo20: 3.3%, Charlie20: 3.3%, Delta20: 3.3%, Echo20: 3.3%
-
-Alpha60: 1.7%, Bravo60: 1.7%, Charlie60: 1.7%, Delta60: 1.7%, Echo60: 1.7%
-
-
-
-**V42\_RAIN\_ENSEMBLE2**
-
-This is the same as v42\_RAIN\_ENSEMBLE, but with no weight on the 60D versions.
-
-It is also neutral to the serenity set of features. &#x20;
-
-
-
-**V42\_EXAMPLE\_PREDS**
-
-This is a standard model using V42 data and Cyrus20 target.&#x20;
-
-
-
-**V41\_EXAMPLE\_PREDS**
-
-This is what was once the Sunshine Example Model.  It uses standard models built on 6 different targets: Nomi20, Jerome60, Ralph20, Victor20, Waldo20, Tyler20.
-
-These models are equal weight in the ensemble and the final predictions are neutralized at a proportion of 50% to the V4.1 "medium" feature set.
-
-
-
-**V3\_EXAMPLE\_PREDS**
-
-This is a standard model trained on the v3 equivalent feature set and the Ralph20 target.
-
-
-
-**V2\_EXAMPLE\_PREDS**
-
-This is a standard model trained on the v2 equivalent feature set and the Nomi20 target.
-
-
-
-The following models are on the Benchmark Models page, but their predictions aren't present in the predictions files because they are either obsolete or easily reproducible:
-
-**V4\_EXAMPLE\_PREDS** - A standard model on V4 data and Nomi20, and is neutral to the 50 "riskiest features" calculated by which features have the biggest change in mean correlation with Nomi between half1 and half2 of the training data.&#x20;
-
-**INTEGRATION\_TEST** - Submits our favorite model at the time. For years, this was V2 example predictions, but with the advent of v3 and v4 datasets it evolves over time. At the time of writing this, it is submitting RAIN\_ENSEMBLE predictions.
+**INTEGRATION\_TEST** - Submits our favorite model at the time. This has transitions through V2, V3, and V4 example predictions. It is now v5\_lgbm\_ct\_blend.
 
 **NB\_HELLO\_NUMERAI** - Submits the model created by the default Hello Numerai tutorial notebook.
 
@@ -242,4 +184,8 @@ The following models are on the Benchmark Models page, but their predictions are
 **NB\_TARGET\_ENSEMBLE** - Submits the model created by the target ensemble tutorial notebook.
 
 **NB\_EXAMPLE\_MODEL** - Submits the model created by the barebones example\_model notebook.
+
+## Community Models
+
+The Numerai community has also developed [Numerbay](https://numerbay.ai/), a website to buy and sell models built by and for the Numerai community. Keep in mind that Numerai does not gaurantee the performance of any model listed on Numerbay,&#x20;
 

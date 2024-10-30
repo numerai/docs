@@ -124,6 +124,13 @@ See the [Staking](numerai-tournament/staking.md) section for more details.&#x20;
 
 No. You can submit your prediction file and receive performance without staking.
 
+### Can I stake on another model?
+
+No, but their are 2 places you can download other models:
+
+1. Numerai releases [benchmark models](numerai-tournament/models.md#benchmark-models) for free.&#x20;
+2. The community developed [a community marketplace to buy and sell models](numerai-tournament/models.md#community-models). &#x20;
+
 ### Why wouldn't I just trade it myself?
 
 You can't trade the predictions for the Numerai Tournament. Since our data is obfuscated, it's impossible to use it for your own trading.
