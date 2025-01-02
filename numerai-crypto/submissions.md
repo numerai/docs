@@ -33,11 +33,11 @@ Please refer to the [Numerai Tournament Submissions docs](../numerai-tournament/
 You can automate your submission workflow by using the API. The submissions API supports both Parquet and CSV file formats. Here is some example of how to upload a submission via NumerAPI:
 
 ```python
-from numerapi import NumerAPI
+from numerapi import CryptoAPI
 
 # Authenticate
-napi = NumerAPI("[your api public id]", "[your api secret key]")
-napi.upload_predictions("[path to your submission]", tournament=12)
+napi = CryptoAPI("[your api public id]", "[your api secret key]")
+napi.upload_predictions("[path to your submission]")
 ```
 
 * You can use any of following
