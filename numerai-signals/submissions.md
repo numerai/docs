@@ -32,7 +32,7 @@ Please refer to the [Numerai Tournament Submissions docs](../numerai-tournament/
 
 You can automate your submission workflow by using the API. Here is an example of how to make a submission once you've generated a CSV with your predictions:
 
-```
+```python
 from numerapi import SignalsAPI
 
 # Authenticate

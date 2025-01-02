@@ -12,7 +12,7 @@ Examples of stock market signals include:
 
 * [Fundamental signals](https://www.investopedia.com/terms/f/fundamentalanalysis.asp) ([P/E ratio](https://www.investopedia.com/terms/p/price-earningsratio.asp), [dividend yield](https://www.investopedia.com/terms/d/dividendyield.asp), [analyst ratings](https://www.investopedia.com/terms/r/rating.asp))
 * [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) ([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp))
-* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative\_data\_\(finance\)) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
+* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative_data_\(finance\)) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
 * [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
 
 If you're a data provider you can submit unique features directly as signals. If you're a data scientist, you can model unique data to submit predictions as signals. Signals are then scored against our targets and other submitted signals. Signals can be staked with the NMR cryptocurrency to earn (or burn) NMR based on performance.
@@ -29,8 +29,8 @@ import pandas as pd
 
 napi = NumerAPI()
 # Use int8 to save on storage and memory
-napi.download_dataset("signals/v1.0/train.parquet")
-training_data = pd.read_parquet("signals/v1.0/train.parquet")
+napi.download_dataset("signals/v2.0/train.parquet")
+training_data = pd.read_parquet("signals/v2.0/train.parquet")
 ```
 
 This data is primarily meant to be used to either add to your own data or [neutralize](signals-overview.md#neutralization) your signal, because it's data we already have and know how to use. **You will need to acquire distinct and unique stock market data to generate a high quality signal.** There are a number of other data providers you can also use to get started such as [Yahoo Finance](https://finance.yahoo.com/), [Quandl](https://www.quandl.com/) and [Koyfin](https://www.koyfin.com/). There are also platforms that make it easy to create signals such as [QuantConnect](https://www.quantconnect.com/), and [Alpaca](https://alpaca.markets/). Check out this [forum thread](https://forum.numer.ai/t/free-or-cheap-data-for-erasure-numerai-quant/350) for a list of data sources, platforms, and tools.
@@ -84,8 +84,8 @@ Here is an example of how you generate and upload live predictions in Python:
 sapi = SignalsAPI("[your api public id]", "[your api secret key]")
 
 # Download latest live features
-sapi.download_dataset(f"signals/v1.0/live.parquet")
-live_data = pd.read_parquet(f"signals/v1.0/live.parquet")
+sapi.download_dataset(f"signals/v2.0/live.parquet")
+live_data = pd.read_parquet(f"signals/v2.0/live.parquet")
 
 # Generate live predictions
 live_predictions = model.predict(live_data[features])

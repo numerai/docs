@@ -107,18 +107,20 @@ Here is how to query the data API to see what files are available and how to dow
 from numerapi import NumerAPI
 napi = NumerAPI()
 
-[f for f in napi.list_datasets() if f.startswith("signals/v1.0")] 
+DATA_VERSION = "signals/2.0"
 
-['signals/v1.0/live.parquet',
- 'signals/v1.0/live_example_preds.csv',
- 'signals/v1.0/live_example_preds.parquet',
- 'signals/v1.0/train.parquet',
- 'signals/v1.0/validation.parquet',
- 'signals/v1.0/validation_example_preds.csv',
- 'signals/v1.0/validation_example_preds.parquet']
+[f for f in napi.list_datasets() if f.startswith(DATA_VERSION)] 
+
+[f'{DATA_VERSION}/live.parquet',
+ f'{DATA_VERSION}/live_example_preds.csv',
+ f'{DATA_VERSION}/live_example_preds.parquet',
+ f'{DATA_VERSION}/train.parquet',
+ f'{DATA_VERSION}/validation.parquet',
+ f'{DATA_VERSION}/validation_example_preds.csv',
+ f'{DATA_VERSION}/validation_example_preds.parquet']
  
 # Download the training data 
-napi.download_dataset("signals/v1.0/train.parquet")
+napi.download_dataset(f'{DATA_VERSION}/train.parquet')
 ```
 
 * `train.parquet` contains the historical data with tickers, features, and targets
