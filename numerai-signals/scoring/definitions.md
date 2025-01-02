@@ -44,10 +44,10 @@ Please refer to the [main definitions docs](../../numerai-tournament/scoring/def
   * numerai corr of a submission and target\_20d\_factor\_feat\_neutral
   * 20 score days w/ 2 days returns lag (+ 2 days data lag)
 * ICV2 - Information Coefficient V2
-  * spearman correlation between binned returns and submission
+  * numerai corr between binned returns and submission
   * 20 score days w/ 2 days returns lag (+ 2 days data lag)
 * RIC - Residual Information Coefficient
-  * spearman correlation between target\_20d\_factor\_neutral and submission
+  * numerai corr between target\_20d\_factor\_neutral and submission
   * 20 score days w/ 2 days returns lag (+ 2 days data lag)
 * FNCV4 - Feature Neutral Correlation v4
   * submission is tie-kept-ranked then gaussianized then neutralized
