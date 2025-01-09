@@ -8,15 +8,18 @@ The list of token symbols in your submission are defined by the **Numerai Crypto
 
 You can see the latest universe by downloading the live.parquet file.
 
-The token universe is defined by the top 300 tokens by market cap, excluding:
+The token universe is defined by reviewing all tokens then we:
 
-* Stablecoins, wrapped tokens, liquid staking tokens (e.g. stETH, rpETH)
-* Tokens less than two years old
-* Tokens with less than $1,000,000 trading volume in the last 24 hours
-* Lower market cap tokens for duplicate symbols
-* After the above are removed, tokens that are either too stable or highly correlated:
-  * Stable: Average 6 month daily returns less than 0.00001
-  * Correlated: Removal of tokens with a correlation in daily returns >= 0.95 over the past 6 months, keeping the one with the highest market cap
+1. always keep BTC, ETH, and NMR in the universe
+2. remove symbols tagged as stablecoin, wrapped, or liquid staking (e.g. stETH, rpETH)
+3. remove symbols with less than 30 data points and < 2 years old
+4. remove symbols with 0 latest market cap
+5. remove symbols with < $500,000 in 24h trading volume
+6. remove symbol duplicates with lower latest market cap
+7. remove symbols with volume below min\_latest\_volume
+8. remove symbols with low (less than 0.00001) absolute mean return
+9. remove symbols highly correlated (>= 0.95) with higher market cap tokens
+10. return the top 500 tokens by market cap
 
 When you submit a signal, you must include at least two columns:
 
