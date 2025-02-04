@@ -4,8 +4,7 @@ There are two main scores currently used for payouts
 
 * [Feature Neutral Correlation](../../numerai-tournament/scoring/feature-neutral-correlation.md) (FNCv4): Your [neutralized](./#neutralization) prediction's correlation to the target
   * The target used for this is `target_factor_feat_neutral_20` (returns [neutralized](./#neutralization) to common features and factors, yielding "residual return")
-* [True Contribution](../../numerai-tournament/scoring/true-contribution-tc.md) (`TC`): Your predictions contribution to the hedge fund
-  * On March 30, 2024, this will be replaced by [Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`).
+* &#x20;[Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`): Your predictions contribution to the Meta Model
 
 We also have informational scores not used for payouts:
 
