@@ -2,9 +2,7 @@
 
 ## What is CORR?
 
-The primary scoring metric on Numerai is the correlation between your model's predictions and the target.&#x20;
-
-Numerai uses a special variation of correlation we call "Numerai Corr". At a high level, this metric is designed to be a good proxy for actual portfolio returns if the predictions were used in live trading.
+A fundamental scoring metric on Numerai is the correlation between your model's predictions and the target. Numerai uses a special variation of correlation we call "Numerai Corr". At a high level, this metric is designed to be a good proxy for actual portfolio returns if the predictions were used in live trading.
 
 ## How is CORR computed?
 

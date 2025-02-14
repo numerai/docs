@@ -16,7 +16,7 @@ Numerai's free dataset is made of clean and regularized financial data. The data
 
 Here is an example of the general structure of our dataset:
 
-![Numerai's obfuscated dataset](.gitbook/assets/ex\_data.png)
+![Numerai's obfuscated dataset](.gitbook/assets/ex_data.png)
 
 Each row in the dataset corresponds to a specific stock at a specific point in time. The point in time is noted by the `era` - each represents a week. The IDs are unique in each era such that you cannot match stocks across eras - this is necessary for the obfuscation. The `features` are quantitative attributes known about the stock at the time (e.g P/E ratio, ADV, etc.). The `target` is a measure of stock market returns 20 days into the future where low means bad performance and high means good performance.
 
@@ -92,7 +92,7 @@ submission.to_csv(f"submission.csv")
 napi.upload_predictions(f"submission.csv")
 ```
 
-Behind the scenes, Numerai combines the predictions of all models into the S_take-Weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
+Behind the scenes, Numerai combines the predictions of all models into the &#x53;_&#x74;ake-Weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
 
 See the [Submissions](numerai-tournament/submissions/) section for more details and examples.
 

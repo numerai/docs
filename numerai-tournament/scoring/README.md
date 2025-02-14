@@ -37,7 +37,7 @@ Your model's `reputation` is just it's 1 year average score. This directly deter
 
 Your account's `reputation` is determined by the Stake-Weighted-Average Score of your models. Each round, we multiply each of your model's scores by it's proportion of stake relative to your account and add them together. This means if you have a single model with no stake, your account score is the same as your `reputation` of your model.
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-13 at 17.19.04.png" alt=""><figcaption><p><a href="https://numer.ai/leaderboard">numer.ai/leaderboard</a></p></figcaption></figure>
 
 ## Diagnostics
 

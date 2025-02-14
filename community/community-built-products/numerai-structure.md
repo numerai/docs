@@ -88,7 +88,7 @@ The data set is cleaned, regularized, and most importantly: obfuscated. That mea
 
 Why is all this information hidden? The main reason is that they couldn't give you the data otherwise! High-quality financial data is _very_ expensive, and because of license restrictions they cannot just give it to you for free. But, if the data is obfuscated so that you can't tell what the stocks or the features are, they've worked it out so they can freely give away the data for you to make models.
 
-![the data](../../.gitbook/assets/ex\_data.png)
+![the data](../../.gitbook/assets/ex_data.png)
 
 There are a ton of common questions and confusions about the data set and what is expected of your models. A few of the most common ones are below. But many more ~~are~~ \[will be soon] covered in detail in the following pages. For now, it is enough to know that for you to participate in the Tournament, you don't need to bring anything but your data science and machine learning skills. (And if you don't have those skills, this is a great project to work on in order to learn them.)
 
@@ -160,7 +160,7 @@ Your actual performance score that determines the amounts of your earns and burn
 If we consider the staking mechanism and the earns and burns solely from the user point-of-view as a risk vs reward math problem, then yes, it fits into that framework. But that's a unnecessarily disingenuous label to put on it, because the same basic equation applies to so many other things we wouldn't dismiss as "mere gambling". Stock market investment for one! Or any kind of investment like buying real estate, starting a business, even things like getting married, etc etc. No risk, no reward is a basic truism everywhere in life. Also, in true gambling-type gambling, there is a "house" hoping for you to lose -- someone that will gain by your loss. Not so here. Everybody wants you to win! Staking at Numerai is about establishing that trust relationship as I mentioned, but the amount you stake is also a indicator of the confidence you have in your predictions -- the more you stake, the more weight your signal is given in the metamodel that determines the trading decisions for the hedge fund. In fact, from what we understand from the team, stake value is actually the _only_ thing that they use to determine how much weight to give to a user model in the metamodel ensemble. (You'll often hear the longer term "stake-weighted metamodel" used, because that's how it is created.)
 
 **So if I suffer a burn and lose some of my stake, where does that lost portion go? Who gets it?**\
-_This is where it gets a bit weird._ Nobody gets it. It is just destroyed.
+&#xNAN;_&#x54;his is where it gets a bit weird._ Nobody gets it. It is just destroyed.
 
 **What do you mean it is just destroyed? What is this sorcery?**\
 I haven't yet discussed _what_ you are actually staking. For staking on Numerai, we use a cryptocurrency token called Numeraire, or NMR. This is an ERC-20 token on the Ethereum (ETH) blockchain. NMR powers a protocol called Erasure. The Erasure Protocol can be used to create smart contracts that enable such things as... surprise, the Numerai staking mechanism! _Numerai staking runs on the ETH blockchain using the Erasure Protocol powered by the token NMR._ Wow!

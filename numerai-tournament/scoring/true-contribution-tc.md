@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # True Contribution (TC)
 
 ## What is TC?
@@ -15,7 +19,7 @@ Read this [medium post](https://medium.com/numerai/alien-stock-market-intelligen
 
 ![End-to-end diagram of Numerai's portfolio creation](../../.gitbook/assets/tc-e2e-signal-eval.png)
 
-This is possible using new techniques developed by Stephen Boyd of Stanford University, Brandon Amos from Facebook AI et al (see their paper: [Differentiable Convex Optimization Layers](https://web.stanford.edu/\~boyd/papers/pdf/diff\_cvxpy.pdf))
+This is possible using new techniques developed by Stephen Boyd of Stanford University, Brandon Amos from Facebook AI et al (see their paper: [Differentiable Convex Optimization Layers](https://web.stanford.edu/~boyd/papers/pdf/diff_cvxpy.pdf))
 
 By using [cvxpylayers](https://github.com/cvxgrp/cvxpylayers), we can include a cvxpy defined convex portfolio optimization as a layer in a PyTorch model. This lets us efficiently compute the gradient of the optimized portfolio return with respect to the stake values and determine the True Contribution of every signal submitted to Numerai.
 
