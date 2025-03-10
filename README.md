@@ -28,7 +28,7 @@ import pandas as pd
 
 napi = NumerAPI()
 napi.download_dataset("v5.0/train.parquet")
-training_data = pd.read_parquet("v5.0/tra.parquet")
+training_data = pd.read_parquet("v5.0/train.parquet")
 ```
 
 See the [Data](numerai-tournament/data.md) section for more details.&#x20;
