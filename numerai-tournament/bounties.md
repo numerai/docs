@@ -41,6 +41,7 @@ We consider the following to be serious security concerns:
 
 * Gaining access to User accounts without direct action from the user
 * Compromising API tokens, website credentials, or other sensitive information
+  * When reporting credentials leaks, the leaked credentials must contain a valid password that can be used to login to an existing Numerai account.
 * Loss of funds for Numerai or its users that involve no interaction from Numerai or its users
 * Gaining access to or control of Numerai's production services with no interaction from Numerai
 * Exploits of any Numerai tournament that could lead to unintended payouts
