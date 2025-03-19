@@ -45,7 +45,7 @@ We consider the following to be serious security concerns:
   * Reward amounts for this kind of report are based on the following criteria:
     * No stake (Low-impact) = 1 NMR per account
     * Staked w/ 2FA active (Low/Moderate-impact) = 2 NMR per account
-    * Staked no 2FA (Moderate/impact) = 5 NMR per account or 10% of stake
+    * Staked no 2FA (Moderate-impact) = minimum 5 NMR up to 10% of stake per account
 * Loss of funds for Numerai or its users that involve no interaction from Numerai or its users
 * Gaining access to or control of Numerai's production services with no interaction from Numerai
 * Exploits of any Numerai tournament that could lead to unintended payouts
