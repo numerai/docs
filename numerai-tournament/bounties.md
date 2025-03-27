@@ -44,7 +44,7 @@ We consider the following to be serious security concerns:
   * When reporting credentials leaks, the leaked credentials must contain a valid password that can be used to login to an existing Numerai account.
   * Reward amounts for this kind of report are based on the following criteria:
     * If you cannot actually steal NMR from the account, this is considered "low impact" and you will recieve 0.1 NMR per leaked account.&#x20;
-    * If you **can** steal the NMR from the account, we will payout up to 10% of stake in that account
+    * If you **can** steal the NMR from the account, we will pay you up to the full stake in the account
 * Loss of funds for Numerai or its users that involve no interaction from Numerai or its users
 * Gaining access to or control of Numerai's production services with no interaction from Numerai
 * Exploits of any Numerai tournament that could lead to unintended payouts
