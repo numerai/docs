@@ -8,7 +8,7 @@ description: Free, zero-setup automation
 
 Model uploads are a simple and free way to automate your daily submissions. You upload a `.pkl`file with your trained model and we handle generating and submitting the predictions for you. You don't need to worry about reliability, infrastructure, scheduling, etc. **you just focus on data science.**
 
-See [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/hello\_numerai.ipynb) for a full tutorial or [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/example\_model.ipynb) for a barebones example.
+See [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/hello_numerai.ipynb) for a full tutorial or [this notebook](https://colab.research.google.com/github/numerai/example-scripts/blob/master/example_model.ipynb) for a barebones example.
 
 ## How it works
 
@@ -24,7 +24,10 @@ Wrap your model in a function that takes live features and outputs live predicti
 
 ```python
 # Wrap your model with a function that takes live features and returns live predictions
-def predict(live_features: pd.DataFrame) -> pd.DataFrame:
+def predict(
+    live_features: pd.DataFrame,
+    live_benchmark_models: pd.DataFrame
+ ) -> pd.DataFrame:
     live_predictions = model.predict(live_features[feature_cols])
     submission = pd.Series(live_predictions, index=live_features.index)
     return submission.to_frame("prediction")
@@ -52,11 +55,7 @@ In the example above, our `predict` function references `model` and `feature_col
 
 Upload your Model on the [Submissions page](http://numer.ai/submissions) (the Upload Model button on the right):
 
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/image (106).png" alt="" width="224"><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../.gitbook/assets/image (106).png" alt="" width="224"><figcaption></figcaption></figure></div>
 
 Select your pickle file, set the Python version you used, then click Upload
 
