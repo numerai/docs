@@ -30,14 +30,14 @@ Please refer to the [Numerai Tournament Submissions docs](../numerai-tournament/
 
 ## How to automate
 
-You can automate your submission workflow by using the API. Here is an example of how to make a submission once you've generated a CSV with your predictions:
+You can automate your submission workflow by using the API. Here is an example of how to make a submission once you've generated a Parquet or CSV file with your predictions:
 
 ```python
 from numerapi import SignalsAPI
 
 # Authenticate
 sapi = SignalsAPI("[your api public id]", "[your api secret key]")
-sapi.upload_predictions("[path to your submission].csv", model_id="your-model-id")
+sapi.upload_predictions("[path to your submission]", model_id="your-model-id")
 ```
 
 * You can use any of following&#x20;

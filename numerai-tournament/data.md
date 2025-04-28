@@ -91,4 +91,4 @@ training_data = pd.read_parquet("v5.0/train.parquet", columns=columns)
 
 ### Formats
 
-The main file format of our data API is [Parquet](https://parquet.apache.org/), which works great for large columnar data - we highly encourage that you become familiar with Parquet if you are not already. You can also find CSV versions of all files if you prefer, but training and validation data are quite large and take a while to load in a CSV format.
+The main file format of our data API is [Parquet](https://parquet.apache.org/), which works great for large columnar data - we highly encourage that you become familiar with Parquet if you are not already as it is a widely-used format in big data and data science.
