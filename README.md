@@ -69,9 +69,8 @@ This is what a submission might look like:
 
 Here is an example of how you generate and upload live predictions in Python:
 
-```python
-# Use API keys to authenticate
-napi = NumerAPI("[your api public id]", "[your api secret key]")
+<pre class="language-python"><code class="lang-python"><strong># Use API keys to authenticate
+</strong>napi = NumerAPI("[your api public id]", "[your api secret key]")
 
 # Download latest live features
 napi.download_dataset(f"v5.0/live.parquet")
@@ -89,8 +88,8 @@ submission = pd.Series(
 submission.to_csv(f"submission.csv")
 
 # Upload submission
-napi.upload_predictions(f"submission.csv")
-```
+napi.upload_predictions(f"submission.csv", model_id="your-model-id")
+</code></pre>
 
 Behind the scenes, Numerai combines the predictions of all models into the &#x53;_&#x74;ake-Weighted_ _Meta Model_, which in turn is fed into the Numerai Hedge Fund for trading.&#x20;
 

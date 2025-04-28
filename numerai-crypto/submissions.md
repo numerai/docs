@@ -40,7 +40,7 @@ from numerapi import CryptoAPI
 
 # Authenticate
 napi = CryptoAPI("[your api public id]", "[your api secret key]")
-napi.upload_predictions("[path to your submission]")
+napi.upload_predictions("[path to your submission]", model_id="your-model-id")
 ```
 
 * You can use any of following

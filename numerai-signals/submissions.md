@@ -37,7 +37,7 @@ from numerapi import SignalsAPI
 
 # Authenticate
 sapi = SignalsAPI("[your api public id]", "[your api secret key]")
-sapi.upload_predictions("[path to your submission].csv")
+sapi.upload_predictions("[path to your submission].csv", model_id="your-model-id")
 ```
 
 * You can use any of following&#x20;
