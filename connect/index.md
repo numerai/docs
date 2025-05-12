@@ -15,5 +15,5 @@ description: An index of our official contact information.
 {% hint style="warning" %}
 Security Notice
 
-Numerai will never initiate contact via phone, SMS, or messaging platforms outside of our official Discord channel. We do not actively solicit services or outreach through unofficial channels. If you are contacted unexpectedly by an individual claiming to be from Numerai, please report it to [security@numer.ai](mailto:security@numer.ai).
+Numerai will only ever communicate via these channels. Numerai will never initiate contact via phone or SMS, or messaging platforms outside of our official Discord channel. We do not actively solicit services or outreach through unofficial channels. If you are contacted unexpectedly by an individual claiming to be from Numerai, please report it to [security@numer.ai](mailto:security@numer.ai).
 {% endhint %}
