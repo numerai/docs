@@ -12,7 +12,7 @@ description: An index of our official contact information.
   * the\_arkivist (ark)
   * smoothmike (MikeP)
   * 2chanes (2chanes)
-  * linds (linds\_ay)
+  * linds\_ay (linds)
 
 {% hint style="warning" %}
 Security Notice
