@@ -8,11 +8,9 @@ description: An index of our official contact information.
 * Technical Support - support@numer.ai
 * Security Reports - security@numer.ai
 * Fund Investment - investing@numer.ai
-* Discord Community Team
-  * the\_arkivist (ark)
-  * smoothmike (MikeP)
-  * 2chanes (2chanes)
-  * linds\_ay (linds)
+* Official Discord
+  * Channel - [https://discord.com/numerai](https://discord.com/invite/numerai)
+  * Admin - the\_arkivist (ark)
 
 {% hint style="warning" %}
 Security Notice
