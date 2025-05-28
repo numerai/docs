@@ -6,7 +6,7 @@ description: May 14, 2020 / Interview with Dr. Rudi Kuhn 🇿🇦
 
 As the last of the stragglers logged onto the call, Arbitrage pointed out that the day's daily scores were his first opportunity to check how his models trained with Validation 2 performed compared to those only trained on Validation 1. "I was slightly more performant on those models," he said, "compared to my main models which are only trained on Validation 1 and the training data."
 
-Before tackling the questions from Slido, Arbitrage gave another shout out to [Patrick](https://twitter.com/pschork) for his work on [multi-model accounts](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399). Thanks to Patrick's work, one account for the Numerai [tournament](broken-reference) can support up to ten different models and easily manage your allocated stake. After enabling the multi-model feature on your account page, you can easily absorb any previous models you've created into your primary account or generate new ones.
+Before tackling the questions from Slido, Arbitrage gave another shout out to [Patrick](https://twitter.com/pschork) for his work on [multi-model accounts](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399). Thanks to Patrick's work, one account for the Numerai [tournament](../../../../) can support up to ten different models and easily manage your allocated stake. After enabling the multi-model feature on your account page, you can easily absorb any previous models you've created into your primary account or generate new ones.
 
 For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who graciously agreed to sit in the hot seat.
 
@@ -68,7 +68,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** That's wild. So what programming language do you use and why?
 
-**Themicon:** Python. I started off with, when I was a kid, programming in [Turbo Pascal](https://wiki.freepascal.org/Turbo\_Pascal), then I moved on to Fortran, there was some C in there, and then in undergraduate I moved onto Python and haven't looked back since 2004 or something like that.
+**Themicon:** Python. I started off with, when I was a kid, programming in [Turbo Pascal](https://wiki.freepascal.org/Turbo_Pascal), then I moved on to Fortran, there was some C in there, and then in undergraduate I moved onto Python and haven't looked back since 2004 or something like that.
 
 **Arbitrage:** This has come up a few times. I would say the majority of people are using Python, but there's still quite a bit of other languages being used. But yeah, Python has the most tools, I think. Like I've said before, it's like a Swiss army knife - you can do just about everything. It may not be the best scalpel, but it'll get the job done. Can you tell us your top three tips for the tournament? I'm going to take notes because I have a feeling I'm going to learn something today.
 
@@ -84,9 +84,9 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** So 1. Take notes; 2. Be patient; and 3. Have fun. That's great! I think that's awesome. I'll buy into that. Here comes a really big question, and this is going to be fought over, I'm sure: who's your favorite team member?
 
-**Themicon:** Well it has to be either [Richard](https://twitter.com/richardcraib) or [NJ](https://twitter.com/tasha\_jade) - Cape Town for the win!
+**Themicon:** Well it has to be either [Richard](https://twitter.com/richardcraib) or [NJ](https://twitter.com/tasha_jade) - Cape Town for the win!
 
-![Table Bay Harbour in Cape Town](../../../../.gitbook/assets/table-bay-harbour-3541607\_960\_720.jpg)
+![Table Bay Harbour in Cape Town](../../../../.gitbook/assets/table-bay-harbour-3541607_960_720.jpg)
 
 **Arbitrage:** You gotta pick one.
 
@@ -129,7 +129,7 @@ There are two things Arbitrage is looking at:
 
 His hypothesis is that as people switch their models for MMC, his correlation with the meta-model will drop and his MMC will rise. If Arbitrage sees correlation drop for his [primary model](https://numer.ai/arbitrage) (which has always had greater than 95% correlation with the meta-model), that would be a strong indicator that some number of tournament participants are changing their models for MMC.
 
-Arbitrage mentioned a [forum post](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220) by [Mike P](https://numer.ai/master\_key) where he said MMC was more profitable than correlation for the top tournament participants and asked if Mike has done any further analysis since that post.
+Arbitrage mentioned a [forum post](https://forum.numer.ai/t/mmc-payout-details-and-analysis/220) by [Mike P](https://numer.ai/master_key) where he said MMC was more profitable than correlation for the top tournament participants and asked if Mike has done any further analysis since that post.
 
 **Mike P:** Very briefly. The correlation scores of everyone's models have been so high over the last five weeks, so MMC doesn't look as good as compared to when I did that analysis a month ago. But if you're doing good and you think you're going to keep doing good so you stake on correlation, that tells us something as well. It tells us you think these models are so good it's going to be hard to find something that's unique to compete with them. What you can do to look at your profitability is look at your MMC reputation versus your correlation reputation and if your MMC rep is about half or better than your correlation rep, then that's kind of an indicator that you might want to be staking on MMC.
 
@@ -153,7 +153,7 @@ Mike P mentioned that they use that period as a benchmark for how predictions wo
 
 Mr. Numerai himself Richard Craib stepped in to answer this question.
 
-> **Richard:** We have been thinking about new data: new features and a new target. We talked recently about having a target that's feature neutral _in_ the target. That way you're not paid for any feature exposures. What you would have seen, if we had a feature neutral target, is that those first two months of Kazutsugi would have been kind of normal and people would have made money if they were neutral over that period. But then they wouldn't have made much money in the last month or so where things have gone _really_ well. That's kind of why we gave that feature neutral code away in the[ analysis and tips doc](https://github.com/numerai/example-scripts/blob/master/analysis\_and\_tips.ipynb). You can tweak it yourself, you can say, 'I want to be 50% neutral,' or, '60% neutral,' it's kind of like deciding how optimized you want your portfolio to be. The more neutral, the better to some extent from some perspective of sharpe. However, as many people have noted, there are diminishing returns. It looks like going beyond 50% neutral starts to cut into your profitability.
+> **Richard:** We have been thinking about new data: new features and a new target. We talked recently about having a target that's feature neutral _in_ the target. That way you're not paid for any feature exposures. What you would have seen, if we had a feature neutral target, is that those first two months of Kazutsugi would have been kind of normal and people would have made money if they were neutral over that period. But then they wouldn't have made much money in the last month or so where things have gone _really_ well. That's kind of why we gave that feature neutral code away in the[ analysis and tips doc](https://github.com/numerai/example-scripts/blob/master/analysis_and_tips.ipynb). You can tweak it yourself, you can say, 'I want to be 50% neutral,' or, '60% neutral,' it's kind of like deciding how optimized you want your portfolio to be. The more neutral, the better to some extent from some perspective of sharpe. However, as many people have noted, there are diminishing returns. It looks like going beyond 50% neutral starts to cut into your profitability.
 >
 > So when we thought about this feature neutral target, which we actually had ready, we decided not to release it and instead tried to make a Kazutsugi-style target without feature neutrality but with a few tweaks that make it a bit better, more performant, and more generalizable. One of the ideas we had is we don't want to make everybody retrain their models if there's only a minor difference in the target, and the other thing is that if we gave out the target, we want models trained on the new target to actually do better than would have even scored against the Kazutsugi target. In a sense, basically, can we make a new target that's strictly better and wouldn't hurt anybody? It feels like we have that, and we're a few days away from feeling like it's ready. It could be within the next few weeks that we put something out as a, "take a look at this," preview. Then everybody will have a chance to play with it to see that it really does help. But, we won't switch to payouts based on it for quite a while. Maybe at the end of June or something, we'll see.
 >
