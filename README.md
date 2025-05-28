@@ -57,7 +57,7 @@ model.fit(
 )
 ```
 
-See the [Models](broken-reference) section for more examples.
+See the [Models](./#modeling) section for more examples.
 
 ## Submissions
 
