@@ -6,7 +6,7 @@ description: May 14, 2020 / Interview with Dr. Rudi Kuhn 🇿🇦
 
 As the last of the stragglers logged onto the call, Arbitrage pointed out that the day's daily scores were his first opportunity to check how his models trained with Validation 2 performed compared to those only trained on Validation 1. "I was slightly more performant on those models," he said, "compared to my main models which are only trained on Validation 1 and the training data."
 
-Before tackling the questions from Slido, Arbitrage gave another shout out to [Patrick](https://twitter.com/pschork) for his work on [multi-model accounts](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399). Thanks to Patrick's work, one account for the Numerai [tournament](../../../../) can support up to ten different models and easily manage your allocated stake. After enabling the multi-model feature on your account page, you can easily absorb any previous models you've created into your primary account or generate new ones.
+Before tackling the questions from Slido, Arbitrage gave another shout out to [Patrick](https://twitter.com/pschork) for his work on [multi-model accounts](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399). Thanks to Patrick's work, one account for the Numerai [tournament](<../../../../README (1).md>) can support up to ten different models and easily manage your allocated stake. After enabling the multi-model feature on your account page, you can easily absorb any previous models you've created into your primary account or generate new ones.
 
 For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who graciously agreed to sit in the hot seat.
 

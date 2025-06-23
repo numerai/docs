@@ -158,7 +158,7 @@ No. It's trivial to overfit a signal on validation and it would be impossible to
 
 **Do I need know coding / finance in order to participate?**
 
-While example models and exploratory notebooks are available to get started, people new to coding and finance are encouraged to try [Numerai Tournament](../) rather than Signals. Signals requires a high-level of coding and finance knowledge to be successful.
+While example models and exploratory notebooks are available to get started, people new to coding and finance are encouraged to try [Numerai Tournament](<../README (1).md>) rather than Signals. Signals requires a high-level of coding and finance knowledge to be successful.
 
 ## Support
 

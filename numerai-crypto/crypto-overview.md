@@ -11,7 +11,7 @@ Similar to [Numerai Signals](broken-reference/), [Numerai Crypto](https://crypto
 Examples of crypto market signals include:
 
 * [Technical signals](https://www.investopedia.com/terms/t/technicalindicator.asp) ([MACD](https://www.investopedia.com/terms/m/macd.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [MFI](https://www.investopedia.com/terms/m/mfi.asp))
-* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative\_data\_\(finance\)) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
+* [Alternative data signals](https://en.wikipedia.org/wiki/Alternative_data_\(finance\)) ([credit card transactions](https://secondmeasure.com/), [satellite images](https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/), [social media sentiment](https://www.swaggystocks.com/dashboard/wallstreetbets/realtime))
 * [Blended signals](https://www.investopedia.com/terms/m/multifactor-model.asp) ([Barra risk factors](https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp), [Fama French factors](https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp))
 
 If you're a data provider you can submit unique features directly as signals. If you're a data scientist, you can model unique data to submit predictions as signals. Signals are then scored against our targets and other submitted signals. Signals can be staked with the NMR cryptocurrency to earn (or burn) NMR based on performance.
@@ -162,7 +162,7 @@ You can and we can't stop you. However, Numerai is equipped to tell you if your 
 
 **Do I need know coding / finance in order to participate?**
 
-While example models and exploratory notebooks are available to get started, people new to coding and finance are encouraged to try [Numerai Tournament](../) rather than Numerai Crypto. Numerai Crypto requires a high-level of coding and market knowledge to be successful.
+While example models and exploratory notebooks are available to get started, people new to coding and finance are encouraged to try [Numerai Tournament](<../README (1).md>) rather than Numerai Crypto. Numerai Crypto requires a high-level of coding and market knowledge to be successful.
 
 #### Does Numerai trade cryptocurrencies?
 

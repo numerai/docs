@@ -41,7 +41,8 @@ We consider the following to be serious security concerns:
 
 * Gaining access to User accounts without direct action from the user
 * Compromising API tokens, website credentials, or other sensitive information
-  * When reporting credentials leaks, the leaked credentials must contain a valid password that can be used to login to an existing Numerai account.
+  * When reporting credentials leaks, the leaked credentials must contain a valid email / password combination that can be used to login to an existing Numerai account.
+  * To submit these credentials, please include a valid CSV file with columns \["email", "password"]. We will not be able to accept or verify credentials submitted any other way.
   * Reward amounts for this kind of report are based on the following criteria:
     * If you cannot actually steal NMR from the account, this is considered "low impact" and you will recieve 0.1 NMR per leaked account.&#x20;
     * If you **can** steal the NMR from the account, we will pay you up to the full stake in the account
