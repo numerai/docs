@@ -162,7 +162,7 @@ You can and we can't stop you. However, Numerai is equipped to tell you if your 
 
 **Do I need know coding / finance in order to participate?**
 
-While example models and exploratory notebooks are available to get started, people new to coding and finance are encouraged to try [Numerai Tournament](<../README (1).md>) rather than Numerai Crypto. Numerai Crypto requires a high-level of coding and market knowledge to be successful.
+While example models and exploratory notebooks are available to get started, people new to coding and finance are encouraged to try [Numerai Tournament](../) rather than Numerai Crypto. Numerai Crypto requires a high-level of coding and market knowledge to be successful.
 
 #### Does Numerai trade cryptocurrencies?
 

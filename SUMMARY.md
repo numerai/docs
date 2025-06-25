@@ -2,8 +2,7 @@
 
 ## Numerai Tournament
 
-* [Contents](README.md)
-* [Overview](<README (1).md>)
+* [Overview](README.md)
 * [Data](numerai-tournament/data.md)
 * [Models](numerai-tournament/models.md)
 * [Submissions](numerai-tournament/submissions/README.md)
