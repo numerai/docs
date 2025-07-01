@@ -107,7 +107,7 @@ Here is how to query the data API to see what files are available and how to dow
 from numerapi import NumerAPI
 napi = NumerAPI()
 
-DATA_VERSION = "signals/2.0"
+DATA_VERSION = "signals/v2.0"
 
 [f for f in napi.list_datasets() if f.startswith(DATA_VERSION)] 
 
