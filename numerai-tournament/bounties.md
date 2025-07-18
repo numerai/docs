@@ -22,12 +22,12 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 
 At Numerai, we take security very seriously, but we are also a small team and place an emphasis on priority, severity, and impact of exploits & vulnerabilities:
 
-| Vulnerability Report                                                                                           | Bounty     |
-| -------------------------------------------------------------------------------------------------------------- | ---------- |
-| Low-impact exploits & vulnerabilities that cannot risk funds of Numerai or its users                           | 0.1-2 NMR  |
-| Moderate-impact exploits & vulnerabilities that could risk funds of Numerai or its users in some circumstances | 2-10 NMR   |
-| High-impact exploits & vulnerabilities that easily risk funds of Numerai or its users                          | 10-20 NMR  |
-| Exploits & vulnerabilities that risk most or all funds of Numerai or its users                                 | 20-100 NMR |
+| Vulnerability Report                                                                                                    | Bounty     |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Low-impact exploits & vulnerabilities that cannot risk funds of Numerai or its users                                    | 0.1-2 NMR  |
+| Moderate-impact exploits & vulnerabilities that could risk funds of Numerai or its users in some circumstances          | 2-10 NMR   |
+| High-impact exploits & vulnerabilities that easily risk funds of Numerai or its users                                   | 10-100 NMR |
+| Significant security risks that could risk all funds of our Numerai and it's stakers, effectively ending the tournament | 100+ NMR   |
 
 Before you start researching, we'd like to ask you to refrain from the following while you research:
 
