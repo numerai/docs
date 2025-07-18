@@ -51,7 +51,7 @@ We consider the following to be serious security concerns:
 * Exploits of any Numerai tournament that could lead to unintended payouts
 * Subdomain takeovers - please demonstrate that you are able to take over the page by leaving a non-offensive message, such as your username
 
-Generally, we will resolve the above within 1-3 business days and the bounty will on the higher end.
+Generally, we will resolve the above within 3-5 business days and the bounty will on the higher end.
 
 ### **Low Priority**
 
