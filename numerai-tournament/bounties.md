@@ -34,6 +34,7 @@ Before you start researching, we'd like to ask you to refrain from the following
 * Spamming, Denial of service, or other impacts to Numerai's production services
 * Rate limiting attacks (unless there is a very low bar and it constitutes a significant risk)
 * Attacking or compromising other users accounts
+* Publicly disclosing the exploit or vulnerability
 
 ### High Priority
 
