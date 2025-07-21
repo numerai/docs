@@ -22,18 +22,19 @@ If you see anything that is broken, report it! If it turns out to be a real issu
 
 At Numerai, we take security very seriously, but we are also a small team and place an emphasis on priority, severity, and impact of exploits & vulnerabilities:
 
-| Vulnerability Report                                                                                           | Bounty     |
-| -------------------------------------------------------------------------------------------------------------- | ---------- |
-| Low-impact exploits & vulnerabilities that cannot risk funds of Numerai or its users                           | 0.1-2 NMR  |
-| Moderate-impact exploits & vulnerabilities that could risk funds of Numerai or its users in some circumstances | 2-10 NMR   |
-| High-impact exploits & vulnerabilities that easily risk funds of Numerai or its users                          | 10-20 NMR  |
-| Exploits & vulnerabilities that risk most or all funds of Numerai or its users                                 | 20-100 NMR |
+| Vulnerability Report                                                                                                    | Bounty     |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Low-impact exploits & vulnerabilities that cannot risk funds of Numerai or its users                                    | 0.1-2 NMR  |
+| Moderate-impact exploits & vulnerabilities that could risk funds of Numerai or its users in some circumstances          | 2-10 NMR   |
+| High-impact exploits & vulnerabilities that easily risk funds of Numerai or its users                                   | 10-100 NMR |
+| Significant security risks that could risk all funds of our Numerai and it's stakers, effectively ending the tournament | 100+ NMR   |
 
 Before you start researching, we'd like to ask you to refrain from the following while you research:
 
 * Spamming, Denial of service, or other impacts to Numerai's production services
 * Rate limiting attacks (unless there is a very low bar and it constitutes a significant risk)
 * Attacking or compromising other users accounts
+* Publicly disclosing the exploit or vulnerability
 
 ### High Priority
 
@@ -51,7 +52,7 @@ We consider the following to be serious security concerns:
 * Exploits of any Numerai tournament that could lead to unintended payouts
 * Subdomain takeovers - please demonstrate that you are able to take over the page by leaving a non-offensive message, such as your username
 
-Generally, we will resolve the above within 1-3 business days and the bounty will on the higher end.
+Generally, we will resolve the above within 3-5 business days and the bounty will on the higher end.
 
 ### **Low Priority**
 
