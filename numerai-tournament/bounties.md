@@ -93,6 +93,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * User enumeration that doesn't circumvent our rate limits
 * Signing up with a "victim" email to block that email from creating an account
 * Signing up with an email alias
+* Signing up with a temporary or disposable email
 * Uploading non-executable files (CSVs, images, parquet, etc.) through our API
 * Downloading public files (CSVs, images, parquet, etc.) listed in our API
 * Excess / junk data storage (e.g. old uploads of any kind)
