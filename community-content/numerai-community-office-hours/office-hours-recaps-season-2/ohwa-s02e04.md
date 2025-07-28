@@ -48,7 +48,7 @@ Richard explained that if the example predictions had a correlation of 0.03 and 
 
 Getting good performance residual to the example predictions is a good measure. "The more we work on the meta-model," Richard said, "the more we learn about what we really want. Michael Oliver sharing [smart sharpe on the forum](https://forum.numer.ai/t/performance-stationarity/151/2) did give us a new way of looking at things, and autocorrelation seemed like the thing we should be minimizing."
 
-Richard said that he and [Mike P](https://twitter.com/easymikep) want to improve the feedback data displayed when predictions are uploaded. They noticed that as soon as Validation Sharpe was displayed on upload, people started caring about it more and subsequently models improved.
+Richard said that he and Mike P want to improve the feedback data displayed when predictions are uploaded. They noticed that as soon as Validation Sharpe was displayed on upload, people started caring about it more and subsequently models improved.
 
 Richard posted this equation in the chat for anyone who wants to calculate what a model's sharpe would look like on an actual backtest:
 

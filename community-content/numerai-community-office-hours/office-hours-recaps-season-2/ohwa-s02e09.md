@@ -34,7 +34,7 @@ Ultimately, whether or not training a model on the additional data will improve 
 
 Since [accounts were expanded to support up to ten models](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399), [Michael Oliver](https://numer.ai/mdo) noted that generally tournament health has improved and there's slightly more variance among models.
 
-**Michael Oliver:** There are some weird models that people submit. I'm not even sure that they're training these models; they're just transforms of the data. I clearly don't think that's a good idea... As [Mike P](https://twitter.com/easymikep) is always telling people, just because something is unique, doesn't mean it's good. We want different **and** good. There are infinite ways to be different and bad, and so we don't want those models. Stake weighting still seems to be working quite well, there's been a good feedback loop.
+**Michael Oliver:** There are some weird models that people submit. I'm not even sure that they're training these models; they're just transforms of the data. I clearly don't think that's a good idea... As Mike P is always telling people, just because something is unique, doesn't mean it's good. We want different **and** good. There are infinite ways to be different and bad, and so we don't want those models. Stake weighting still seems to be working quite well, there's been a good feedback loop.
 
 When asked about the changes to the meta-model the team has mentioned, Michael Oliver explained that they implemented a change, but it wasn't nearly as drastic as they originally anticipated.
 

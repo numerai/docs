@@ -4,7 +4,7 @@ description: 'From July 9, 2020 / Mike P interview'
 
 # OHwA S02E06
 
-Arbitrage had a special surprise for Episode 06 with the [Master Key](https://numer.ai/master_key) himself [Easy Mike P](https://twitter.com/easymikep) joining in the hot seat.
+Arbitrage had a special surprise for Episode 06 with the [Master Key](https://numer.ai/master_key) himself Mike P joining in the hot seat.
 
 ![Arbitrage is very excited](../../.gitbook/assets/excited.png)
 

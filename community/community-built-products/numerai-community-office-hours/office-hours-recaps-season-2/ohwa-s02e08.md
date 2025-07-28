@@ -32,7 +32,7 @@ _Author's note: **\[He did.]\(link to Episode 9)**_
 
 **When do we get the Corr + MMC leaderboard?**
 
-This question refers to the leaderboard changes discussed with [Mike P](https://twitter.com/easymikep) during the [previous Office Hours](ohwa-s02e07.md#discussion-with-mike-p).
+This question refers to the leaderboard changes discussed with Mike P during the [previous Office Hours](ohwa-s02e07.md#discussion-with-mike-p).
 
 **Slyfox:** It's going to come closer to when the reputation bonus gets phased out.
 

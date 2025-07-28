@@ -118,7 +118,7 @@ Arbitrage admitted that he doesn’t have much experience in computer science \(
 
 **JRB:** I’ve been using [Jax](https://github.com/google/jax/blob/master/README.md) for a while now and it’s pretty good.
 
-**Arbitrage:** How about you, [Mike P](https://twitter.com/EasyMikeP)? The [Master Key](https://numer.ai/master_key) model’s built in which framework?
+**Arbitrage:** How about you, Mike P? The [Master Key](https://numer.ai/master_key) model’s built in which framework?
 
 **Mike P:** Master Key is built in a very simple framework called [scikit-nn](https://scikit-neuralnetwork.readthedocs.io/en/latest/), it’s a basic Keras wrapper for scikit learn. It lets you play with all of your models like XGBoost just using simple, feet-forward monads, so it’s pretty crazy. It gives you access to things like dropout and all of the popular bells and whistles, but it doesn’t let you try crazy stuff like custom loss functions or anything like that.
 
@@ -250,5 +250,5 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 _Don’t miss the next Office Hours with Arbitrage : follow_ [_Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_ [_Rocket.Chat_](https://community.numer.ai/home) _for the next time and date._
 
-_Thank you to_ [_Richard_](https://twitter.com/richardcraib?lang=en)_,_ [_Mike P_](https://twitter.com/EasyMikeP)_,_ [_Patrick_](https://twitter.com/pschork)_,_ [_JRB_](https://numer.ai/jrb)_, and_ [_Michael Oliver_](https://numer.ai/mdo) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Richard_](https://twitter.com/richardcraib?lang=en)_,_ _Mike P_, [_Patrick_](https://twitter.com/pschork)_,_ [_JRB_](https://numer.ai/jrb)_, and_ [_Michael Oliver_](https://numer.ai/mdo) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 

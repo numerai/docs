@@ -62,7 +62,7 @@ Yuki believes there's still a lot of skepticism out there for integrating machin
 
 **Any news on more metrics? Live sharpe? Drawdown length / depth? Others' validation performance?**
 
-[Mike P](https://twitter.com/easymikep) pointed out that because you can train on the validation set, making participants' validation performance publicly viewable wouldn't necessarily be informative that often.
+Mike P pointed out that because you can train on the validation set, making participants' validation performance publicly viewable wouldn't necessarily be informative that often.
 
 Arbitrage agreed with Mike that it probably wouldn't be useful, but he also doesn't care if anyone can see his validation performance.
 
@@ -239,6 +239,6 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Richard_](https://twitter.com/richardcraib)_,_ [_JRB_](https://numer.ai/jrb)_, and_ [_Mike P_](https://twitter.com/easymikep) _for contributing to answers during this Office Hours, to_ [_Yuki_](https://numer.ai/uki) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+Thank you to\_ [_Richard_](https://twitter.com/richardcraib)_,_ [_JRB_](https://numer.ai/jrb)_, and_ _Mike P_ _for contributing to answers during this Office Hours, to_ [_Yuki_](https://numer.ai/uki) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 _Take some time to read_ [_Yuki's post on the Numerai tournament_](https://towardsdatascience.com/numerai-tournament-blending-traditional-quantitative-approach-modern-machine-learning-67ebbb69e00c)_._

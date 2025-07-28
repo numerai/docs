@@ -128,7 +128,7 @@ After what was totally not product placement for a popular brand of flavored car
 
 **Arbitrage:** Well he only revealed himself for the first time [a few weeks ago](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e08), so that's his own fault.
 
-**JRB:** I hope [Mike P](https://twitter.com/EasyMikeP) gets a vote as well.
+**JRB:** I hope Mike P gets a vote as well.
 
 **Arbitrage:** I think Mike has a vote. I don't remember, I only keep track of the top. Mike, do you remember your vote count?
 
@@ -196,4 +196,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 _Don’t miss the next Office Hours with Arbitrage : follow_ [_Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_ [_Rocket.Chat_](https://community.numer.ai/home) _for the next time and date._
 
-_Thank you to_ [_Mike P_](https://twitter.com/EasyMikeP) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_JRB_](https://numer.ai/jrb) _for being interviewed._
+_Thank you to_ _Mike P_ _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_JRB_](https://numer.ai/jrb) _for being interviewed._
