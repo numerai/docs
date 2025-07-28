@@ -72,4 +72,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi, to_ [_Richard_ ](https://twitter.com/richardcraib)_for joining and contributing to answers,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi,_ to_ [_Richard_ ](https://twitter.com/richardcraib)_for joining and contributing to answers,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

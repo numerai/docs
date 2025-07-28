@@ -181,4 +181,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Richard_](https://twitter.com/richardcraib)_,_ [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Keno_](https://numer.ai/wander)_, and_ [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours,_ [_Joakim_](https://numer.ai/joakim\_arvidsson) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_Richard_](https://twitter.com/richardcraib)_, [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Keno_](https://numer.ai/wander)_, and_ [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours,_ [_Joakim_](https://numer.ai/joakim\_arvidsson) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

@@ -98,4 +98,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Slyfox_](https://twitter.com/ansonschu)_,_ [_Keno_](https://numer.ai/wander)_, and_ [_Wigglemuse_](https://numer.ai/wigglemuse) _for contributing to answers during this Office Hours, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for being interviewed and his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_Slyfox_](https://twitter.com/ansonschu)_, [_Keno_](https://numer.ai/wander)_, and_ [_Wigglemuse_](https://numer.ai/wigglemuse) _for contributing to answers during this Office Hours, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for being interviewed and his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

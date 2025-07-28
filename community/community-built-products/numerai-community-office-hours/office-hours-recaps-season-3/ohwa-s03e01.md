@@ -36,4 +36,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_HB_](https://numer.ai/hb) _for returning to the Earth's surface to be interviewed_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_HB_](https://numer.ai/hb)_ _for returning to the Earth's surface to be interviewed_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
