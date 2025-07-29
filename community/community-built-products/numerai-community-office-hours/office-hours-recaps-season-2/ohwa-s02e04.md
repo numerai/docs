@@ -48,7 +48,7 @@ Richard explained that if the example predictions had a correlation of 0.03 and 
 
 Getting good performance residual to the example predictions is a good measure. "The more we work on the meta-model," Richard said, "the more we learn about what we really want. Michael Oliver sharing [smart sharpe on the forum](https://forum.numer.ai/t/performance-stationarity/151/2) did give us a new way of looking at things, and autocorrelation seemed like the thing we should be minimizing."
 
-Richard said that he and [Mike P](https://twitter.com/easymikep) want to improve the feedback data displayed when predictions are uploaded. They noticed that as soon as Validation Sharpe was displayed on upload, people started caring about it more and subsequently models improved.
+Richard said that he and Mike P want to improve the feedback data displayed when predictions are uploaded. They noticed that as soon as Validation Sharpe was displayed on upload, people started caring about it more and subsequently models improved.
 
 Richard posted this equation in the chat for anyone who wants to calculate what a model's sharpe would look like on an actual backtest:
 
@@ -239,4 +239,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Richard_](https://twitter.com/richardcraib)_,_ [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Quantverse_](https://numer.ai/quantverse) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_Richard_](https://twitter.com/richardcraib)_, [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Quantverse_](https://numer.ai/quantverse) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

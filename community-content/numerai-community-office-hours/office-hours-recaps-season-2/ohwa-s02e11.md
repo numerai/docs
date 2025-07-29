@@ -50,6 +50,6 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Michael Oliver_](https://numer.ai/mdo) _for contributing to answers during this Office Hours, to Carlo for being interviewed and writing an awesome_ [_guide to the tournament_](https://app.wandb.ai/carlolepelaars/numerai\_tutorial/reports/Build-the-World-s-Open-Hedge-Fund-by-Modeling-the-Stock-Market--VmlldzoxODU0NTQ)_,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_Michael Oliver_](https://numer.ai/mdo) _for contributing to answers during this Office Hours, to Carlo for being interviewed and writing an awesome_ [_guide to the tournament_](https://app.wandb.ai/carlolepelaars/numerai\_tutorial/reports/Build-the-World-s-Open-Hedge-Fund-by-Modeling-the-Stock-Market--VmlldzoxODU0NTQ)_, _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 \*\*\*\*
