@@ -28,6 +28,8 @@
 * [Submissions](numerai-signals/submissions.md)
 * [Scoring](numerai-signals/scoring/README.md)
   * [Definitions](numerai-signals/scoring/definitions.md)
+  * [Alpha](numerai-signals/scoring/alpha.md)
+  * [Meta Portfolio Contribution (MPC)](numerai-signals/scoring/meta-portfolio-contribution-mpc.md)
 * [Staking](numerai-signals/staking.md)
 * [Signals + QuantConnect](numerai-signals/signals-+-quantconnect.md)
 
