@@ -304,7 +304,7 @@ You already might be familiar with some of Harsh's work:
 
 ### Discussion with Mike P
 
-After a kickass interview with Harsh, Arbitrage caught up with [Easy Mike P](https://twitter.com/easymikep) the [Master Key](https://numer.ai/master\_key) himself to talk about his [recent forum post on MMC payouts](https://forum.numer.ai/t/mmc-payouts-adjustment-proposal/614).
+After a kickass interview with Harsh, Arbitrage caught up with Mike P the [Master Key](https://numer.ai/master\_key) himself to talk about his [recent forum post on MMC payouts](https://forum.numer.ai/t/mmc-payouts-adjustment-proposal/614).
 
 As a data scientist working on the Numerai tournament, Mike spends a lot of his time working on how to make it function better: more closely aligning the incentives of the participants and Numerai, figuring out better payout schemes, etc. Mike believes that the added burden of deciding whether to stake on MMC or Correlation each week introduces unnecessary friction and distracts data scientists from focusing on building great models.
 
@@ -332,4 +332,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Richard_](https://twitter.com/richardcraib)_,_ [_Slyfox_](https://twitter.com/ansonschu)_,_ [_Mike P_](https://twitter.com/easymikep)_,_ [_Michael Oliver_](https://numer.ai/mdo)_, and_ [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours, to_ [_Harsh_](https://harsh.work) _for being interviewed, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+Thank you to [_Richard_](https://twitter.com/richardcraib)_,_ [_Slyfox_](https://twitter.com/ansonschu)_, _Mike P_, [_Michael Oliver_](https://numer.ai/mdo)_, and [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours, to_ [_Harsh_](https://harsh.work) _for being interviewed, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

@@ -6,7 +6,8 @@ description: 'From May 7, 2020 / Interview with Jason @Numerai'
 
 Arbitrage opened with a brief note on how Office Hours has grown since [number one](ohwa-1.md): we’ve had many people come back week after week, with lots of new faces each time. He noted that about half of the people who visit the Office Hours summaries actually read the post, and each week he sees lots of questions posted on Slido and sent to him directly on Rocket.Chat.
 
-Arbitrage gave a shout-out to Patrick for his work on multi-model accounts, then in beta. This feature had been in the works for a while, first teased by Slyfox during Office Hours with Arbitrage [S01E02](ohwa-2.md).
+
+Arbitrage gave a shout-out to Patrick for his work on multi-model accounts, then in beta. This feature had been in the works for a while, first teased by Slyfox during Office Hours with Arbitrage [S01E02](ohwa-2.md).
 
 _Author’s note: one week after this episode was recorded, multi-model accounts were made generally available:_ [_https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399_](https://forum.numer.ai/t/announcing-general-availability-of-multi-model-account-support-for-all-users/399)\_\_
 
@@ -25,7 +26,8 @@ According to Arbitrage, the quickest way to do a spot check on whether a strateg
 
 > “You can post a big score, but that might be a spurious correlation. I don’t want to see a big score, I want something kind of average. But I want my [MMC](https://forum.numer.ai/t/metamodel-contribution-live/449) to be high, so I want my correlation with the meta-model to be low.” -Arbitrage
 
-In Rocket.Chat, Joakim mentioned that if the eras are time-ordered, applying something early to a later period is not consistent with time-series studies. That would be true if the data Numerai gives the data scientists weren’t already adjusted for the time period.  
+In Rocket.Chat, Joakim mentioned that if the eras are time-ordered, applying something early to a later period is not consistent with time-series studies. That would be true if the data Numerai gives the data scientists weren’t already adjusted for the time period.
+  
   
 Arbitrage frames it this way: each era is a bucket of time that’s been neutralized for whatever correlation exists throughout time. That means if you treat each bin separately and don’t train and test on the same bin, your model should be fine. Tournament participants know that some eras are tougher than others, and Arbitrage believes these represent different market regimes. You can’t adjust your model to compensate for the regimes, however, because we don’t know what the regimes are. The difficult regimes become valuable as additional training data and to test out of sample model performance.
 
@@ -64,15 +66,18 @@ Arbitrage said that in isolation, equities pricing data is probably the most min
 
 **How can I best take advantage of the new ten accounts limit? Too many of my models are highly correlated with each other.**
 
-This is a challenge Arbitrage is intimately familiar with. He explained that he likes how he built three of his models and they’ve been performant over time, so he trains them on different subsets of the data and lets them coexist even though they’re highly correlated. Arbitrage allocates his stake based on the models in which he has the most confidence.  
+This is a challenge Arbitrage is intimately familiar with. He explained that he likes how he built three of his models and they’ve been performant over time, so he trains them on different subsets of the data and lets them coexist even though they’re highly correlated. Arbitrage allocates his stake based on the models in which he has the most confidence.
+  
   
 Breaking it down: Arbitrage has three main models, each of which generates three sets of predictions \(one for each subset of training data\) for a total of nine submissions. His final slot, the tenth account, is the model he’s using to experiment with MMC. He uses a manual genetic process, killing off his lowest performing model roughly every ten weeks and replaces it with something new. 
 
 **I want to start staking, but I’m afraid of recent NMR price increases.**
 
-The longer you wait to stake, the longer it takes to get paid, so if you’re considering staking but are skittish about NMR price volatility, Arbitrage suggested one strategy might be easing in and trying dollar cost averaging, adding small amounts at regular intervals.  
+The longer you wait to stake, the longer it takes to get paid, so if you’re considering staking but are skittish about NMR price volatility, Arbitrage suggested one strategy might be easing in and trying dollar cost averaging, adding small amounts at regular intervals.
   
-Arbitrage mentioned that he’s withdrawing a portion of the profits within his stake to mitigate some of his risk, but he pointed out that doing so also limits his potential future earnings. “That’s the tradeoff,” he said.
+  
+Arbitrage mentioned that he’s withdrawing a portion of the profits within his stake to mitigate some of his risk, but he pointed out that doing so also limits his potential future earnings. “That’s the tradeoff,” he said
+.
 
 **Any chance of Numerai Quant providing basic, free clean data?**
 
@@ -80,7 +85,8 @@ Highly unlikely- that data is very expensive.
 
 **Please discuss future ideas or plans for MMC rep.**
 
-Arbitrage’s first idea: MMC needs its own leaderboard with a rank to brag about and put on resumes. As a fund, Numerai wants stability, so Arbitrage’s suggestion is to reward data scientists for keeping their models consistent by having something like a quarterly payout based on MMC rep tied only to performance, not amount at stake. This would give unstaked models a chance to earn some NMR while keeping payouts non-linear.  
+Arbitrage’s first idea: MMC needs its own leaderboard with a rank to brag about and put on resumes. As a fund, Numerai wants stability, so Arbitrage’s suggestion is to reward data scientists for keeping their models consistent by having something like a quarterly payout based on MMC rep tied only to performance, not amount at stake. This would give unstaked models a chance to earn some NMR while keeping payouts non-linear.
+  
   
 **Slyfox \(in chat\):** No payouts for non-staked models.
 
@@ -92,7 +98,8 @@ Arbitrage’s first idea: MMC needs its own leaderboard with a rank to brag abou
 
 **We got lower sharpe numbers with Validation 2 - what exactly is in Validation 2? Would using them generate very specific models which would have high volatility?**
 
-Validation 2 contains the Covid-19 market drawdown, so Arbitrage assumes the data starts around mid-February and ends mid-March which would include the highs from February and the selloff into March.  
+Validation 2 contains the Covid-19 market drawdown, so Arbitrage assumes the data starts around mid-February and ends mid-March which would include the highs from February and the selloff into March.
+  
   
 You get lower sharpes with Validation 2 because that data represents a significant anomaly in market time-series data.
 
@@ -104,73 +111,101 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 ### Where Arbitrage unexpectedly interviews Jason
 
-**Arbitrage**: Jason, how long have you been with the team now?
+**Arbitrage**: Jason, how long have you been with the team now?
+
 
 **Jason**: It’s been… over a year now. Last March \(2019\) I started.
 
-**Arbitrage**: How did you discover Numerai?
+**Arbitrage**: How did you discover Numerai?
 
-**Jason**: I was just looking on AngelList, truthfully. I knew what kind of job I was looking for: something in AI, something at a small, scrappy startup. I had never heard of the Numerai tournament before starting, which is sad because I had a little break between my last job and starting at Numerai and this is something I would have done in my free time. 
 
-**Arbitrage**: I’d be scared to compete against you so I’m really glad you didn’t find out beforehand.
+**Jason**: I was just looking on AngelList, truthfully. I knew what kind of job I was looking for: something in AI, something at a small, scrappy startup. I had never heard of the Numerai tournament before starting, which is sad because I had a little break between my last job and starting at Numerai and this is something I would have done in my free time. 
+
+
+**Arbitrage**: I’d be scared to compete against you so I’m really glad you didn’t find out beforehand.
+
 
 **Jason**: My data science knowledge is pretty poor. I’m more on the side of experimenting with the Numerai tournament using anonymous accounts \(for now\).
 
 ![Jason submitting to the tournament](../../.gitbook/assets/hacker-3342696_1920.jpg)
 
-**Jason**: Data science isn’t my forte. It’s certainly something I want to learn more of. I’m sorry - data science I’m good at, a lot of my jobs are data pipelines or data munging jobs. As far as AI goes, I’m lacking. I haven’t done deep AI since college and that was ten years ago. The most complicated things we did were SVMs and neural nets; beginner’s stuff compared to today.
+**Jason**: Data science isn’t my forte. It’s certainly something I want to learn more of. I’m sorry - data science I’m good at, a lot of my jobs are data pipelines or data munging jobs. As far as AI goes, I’m lacking. I haven’t done deep AI since college and that was ten years ago. The most complicated things we did were SVMs and neural nets; beginner’s stuff compared to today.
 
-**Arbitrage**: Man, I don’t know, some of the beginner’s stuff is pretty performant.
 
-**Jason**: Totally, and it’s nice to have the simplicity, too.
+**Arbitrage**: Man, I don’t know, some of the beginner’s stuff is pretty performant.
 
-**Arbitrage**: Unlike Bor over here with his genetic nonsense. I don’t even know what to say about that anymore, but more power to him! So you kind of participate but you don’t, you’ve been with the team for about a year, and you live in San Francisco? Because that’s where the firm is located and I’ve seen you at the office - so I know you live at least close enough to commute… What is your official title at Numerai?
 
-**Jason**: I don’t know if we have titles at Numerai. I would say software developer?
+**Jason**: Totally, and it’s nice to have the simplicity, too.
 
-**NJ**: In press we refer to Jason as a Senior Engineer.
 
-**Jason**: Senior Engineer, okay.
+**Arbitrage**: Unlike Bor over here with his genetic nonsense. I don’t even know what to say about that anymore, but more power to him! So you kind of participate but you don’t, you’ve been with the team for about a year, and you live in San Francisco? Because that’s where the firm is located and I’ve seen you at the office - so I know you live at least close enough to commute… What is your official title at Numerai?
 
-**Arbitrage**: Or Chief Problem Solver.
 
-**NJ**: Or the Compute Daddy. We’ve called him Compute Daddy internally.
+**Jason**: I don’t know if we have titles at Numerai. I would say software developer?
 
-**Jason**: That’s harder to list to people.
 
-**Arbitrage**: All I know is that when I have some problem, or I think I have a problem, and I tell Jason, he says, “no this actually isn’t a problem, and here’s all you have to do to fix it,” and I think, “oh my god … this guy …”
+**NJ**: In press we refer to Jason as a Senior Engineer.
 
-**Jason**: It’s a feature, not a bug!
 
-**Arbitrage**: Although I did identify that bug when I was in the office in June!
+**Jason**: Senior Engineer, okay.
 
-**Jason**: Which one?
 
-**Arbitrage**: When you were doing the smart contracts.
+**Arbitrage**: Or Chief Problem Solver.
 
-**Jason**: Oh yeah, moving the smart contracts, that was scary stuff.
 
-**Arbitrage**: What programming language do you use and why?
+**NJ**: Or the Compute Daddy. We’ve called him Compute Daddy internally.
 
-**Jason**: I’m all over the place, but if it’s a small project or a data project I stick with Python. I learned a lot of Go- I was at Cloudflare for almost two years and they’re almost exclusively Go. I love Go for bigger projects where type safety helps and you want a little bit more speed, but for data stuff it’s kind of terrible so I stick with Python there.
 
-**Arbitrage**: But you write Sol\(Solidity\), don’t you?
+**Jason**: That’s harder to list to people.
+
+
+**Arbitrage**: All I know is that when I have some problem, or I think I have a problem, and I tell Jason, he says, “no this actually isn’t a problem, and here’s all you have to do to fix it,” and I think, “oh my god … this guy …”
+
+
+**Jason**: It’s a feature, not a bug!
+
+
+**Arbitrage**: Although I did identify that bug when I was in the office in June!
+
+
+**Jason**: Which one?
+
+
+**Arbitrage**: When you were doing the smart contracts.
+
+
+**Jason**: Oh yeah, moving the smart contracts, that was scary stuff.
+
+
+**Arbitrage**: What programming language do you use and why?
+
+
+**Jason**: I’m all over the place, but if it’s a small project or a data project I stick with Python. I learned a lot of Go- I was at Cloudflare for almost two years and they’re almost exclusively Go. I love Go for bigger projects where type safety helps and you want a little bit more speed, but for data stuff it’s kind of terrible so I stick with Python there.
+
+
+**Arbitrage**: But you write Sol\(Solidity\), don’t you?
+
 
 **Jason**: We haven’t been doing much contract stuff lately, sadly. We wrote the Erasure tournament contract and that was pretty much the last thing. I was just looking at it again today, I was sad because I want to update it and do things with it. Now that we have multi-accounts, it’s not quite a bug, but there’s a lingering issue there. That’s why daily scores were delayed this morning, by the way, that was me testing multi-accounts with staking.
 
 ![When daily scores are delayed](../../.gitbook/assets/a_crowd_of_angry_looking_people_are_shouting.jpg)
 
-**Arbitrage**: Can you tell us your top three tips for the tournament?
+**Arbitrage**: Can you tell us your top three tips for the tournament?
 
-**Jason**: A lot of them have been said already in different forms, but basically don’t aim for maximum returns or correlation or whichever metric. You want to maximize your sharpe or things that take into account volatility. It’s going to be much more consistent. We are seeing volatile periods, even in Kazutsugi where we didn’t expect them to happen as much. 
+
+**Jason**: A lot of them have been said already in different forms, but basically don’t aim for maximum returns or correlation or whichever metric. You want to maximize your sharpe or things that take into account volatility. It’s going to be much more consistent. We are seeing volatile periods, even in Kazutsugi where we didn’t expect them to happen as much. 
+
 
 **Arbitrage**: So you’re working on Erasure Quant now, that’s your current project taking up all of your time?
 
-**Jason**: Yeah, that’s 100% of my time now, although I still get pulled onto things. Like last week we redid the website.
+**Jason**: Yeah, that’s 100% of my time now, although I still get pulled onto things. Like last week we redid the website.
 
-**Arbitrage**: Well it’s a scrappy startup, you get to do all kinds of things. Who’s your favorite team member? Let’s throw that gauntlet down.
 
-**Jason**: \[Pauses\] It’s got to be Anson because Anson’s been around the longest -
+**Arbitrage**: Well it’s a scrappy startup, you get to do all kinds of things. Who’s your favorite team member? Let’s throw that gauntlet down.
+
+
+**Jason**: \[Pauses\] It’s got to be Anson because Anson’s been around the longest -
+
 
 **Arbitrage**: Oh! That’s three for the slyest of foxes!
 
@@ -180,13 +215,17 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Jason**: I will say though I was a little hesitant because Patrick’s been great. It’s nice having another senior developer on the team where he just takes a project and gets it done. And they’re huge projects, too - multi-account’s been a huge thing. It’s almost here and it’s looking good.
 
-**Arbitrage**: Just a reminder, if you’re in Zoom \(even if you came late\) just send a message to Patrick in [Rocket.Chat](http://community.numer.ai) and he’ll add you to the multi-account beta. A very nice “airdrop” of sorts that we can do. Very cool, thanks for that. So Jason- should I quit my PhD program now?
+**Arbitrage**: Just a reminder, if you’re in Zoom \(even if you came late\) just send a message to Patrick in [Rocket.Chat](http://community.numer.ai) and he’ll add you to the multi-account beta. A very nice “airdrop” of sorts that we can do. Very cool, thanks for that. So Jason- should I quit my PhD program now?
 
-**Jason**: Before we got rid of the leaderboard bonus, maybe. It was getting there.With MMC - if your model is high performing on MMC, you’re going to do just fine. It’s just a question of where you fall on that MMC leaderboard.
 
-**Arbitrage**: I think you misheard me but technically your answer still counts. I think you’re saying I can make enough with MMC that I can quit my PhD, go all-in on my model development, and then just peel off some NMR any time I want to do something fun.
+**Jason**: Before we got rid of the leaderboard bonus, maybe. It was getting there.With MMC - if your model is high performing on MMC, you’re going to do just fine. It’s just a question of where you fall on that MMC leaderboard.
 
-**Jason**: Yeah, I mean, that’s the idea - that you could make a job out of Numerai. We’re not quite there, we’re close.
+
+**Arbitrage**: I think you misheard me but technically your answer still counts. I think you’re saying I can make enough with MMC that I can quit my PhD, go all-in on my model development, and then just peel off some NMR any time I want to do something fun.
+
+
+**Jason**: Yeah, I mean, that’s the idea - that you could make a job out of Numerai. We’re not quite there, we’re close.
+
 
 **Arbitrage**: I just did a quick number crunch and if this payout level sustains, I’d be on pace for about a thousand a week if I were to withdraw just the profit, and you know in some parts of the world that is a lot. I think that’s amazing. But you have to be very diligent about how you run this stuff, and you have to try not to overfit! Jason that’s all I have for you - thank you so much for answering my questions and for all of the hard work you’re doing. I want to see you back next week and you should try the hair tie.
 
@@ -194,7 +233,7 @@ _If you’re passionate about finance, machine learning, or data science and you
   
 Don’t miss the next Office Hours with Arbitrage : follow_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) _for the next time and date.  
   
-Thank you to_ [_Mike P_](https://twitter.com/EasyMikeP)_,_ [_Patrick_](https://twitter.com/pschork)_, and_ [_Joakim_](https://numer.ai/joakim_arvidsson) _for contributing to answers during this Office Hours, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+Thank you to_ _Mike P_, [_Patrick_](https://twitter.com/pschork)_, and_ [_Joakim_](https://numer.ai/joakim_arvidsson) _for contributing to answers during this Office Hours, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 
 

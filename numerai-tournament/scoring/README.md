@@ -29,6 +29,8 @@ The first day of scoring on Friday the  12th uses a 1D2L target, which includes 
 
 <figure><img src="../../.gitbook/assets/scoring_calendar_3.png" alt="" width="563"><figcaption></figcaption></figure>
 
+Numerai also shows **60D2L** scores, which follow the same logic as **20D2L** scores, but end up resolving 40 business days later (8 weeks later for a total timeline of 12 weeks). Any rounds paying out on **60D2L** scores, will lock up your stake for 12 weeks.
+
 ## The Leaderboards
 
 Only the final scores for count towards a model's live performance. We rank you both on an account level and on a model level. The primary aggregate score is called your `reputation`.

@@ -362,6 +362,6 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to\_ [_Jason_](https://numer.ai/rockorun)_,_ [_Mike P,_](https://twitter.com/easymikep) \_\_[_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_John Scaife_](https://numer.ai/johnscaife\_) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to [_Jason_](https://numer.ai/rockorun)_, _Mike P_, [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_John Scaife_](https://numer.ai/johnscaife\_) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 \*\*\*\*

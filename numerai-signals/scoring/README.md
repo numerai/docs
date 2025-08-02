@@ -2,9 +2,14 @@
 
 There are two main scores currently used for payouts
 
-* [Feature Neutral Correlation](../../numerai-tournament/scoring/feature-neutral-correlation.md) (FNCv4): Your [neutralized](./#neutralization) prediction's correlation to the target
+* [Feature Neutral Correlation](../../numerai-tournament/scoring/feature-neutral-correlation.md) (`FNCv4`): Your [neutralized](./#neutralization) prediction's correlation to the target
   * The target used for this is `target_factor_feat_neutral_20` (returns [neutralized](./#neutralization) to common features and factors, yielding "residual return")
-* &#x20;[Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`): Your predictions contribution to the Meta Model
+* &#x20;[Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`): Your predictions' contribution to the Meta Model
+
+Numerai be will transitioning to paying on different scores for rounds on or after September 2, 2025:
+
+* Alpha: Your neutral-weighted predictions multiplied by the `chili` target&#x20;
+* Meta Portfolio Contribution (`MPC` ): Your predictions' contribution to the Meta Portfolio
 
 We also have informational scores not used for payouts:
 
@@ -24,19 +29,17 @@ A signal or target is considered "neutral" when it has zero correlation with som
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
 {% endhint %}
 
-Numerai has a variety of existing signals including Barra factors (like size, value, momentum, etc), country and sector risk factors, and custom stock features. These existing signals are not provided to you, which makes this process "blackbox". The code used to neutralize a signal is open source and you can learn more about the neutralization process in [this example notebook](https://numer.ai/tutorial/feature-neutralization).
+Numerai has a variety of existing signals including Barra factors (like size, value, momentum, etc), country and sector risk factors, and custom stock features. Not all of these existing signals are not provided to you, which makes this process somewhat "blackbox".&#x20;
 
 By neutralizing your signal before scoring, Numerai aligns it with the neutralized target which may improve its performance against the target without Numerai having to give out the data used for neutralization. For example, if your signal is not neutralized to country risks, Numerai Signals will neutralize your signal against country risks before scoring. This allows you to focus on creating an original signal without having to worry about country risk neutralization.
 
 A signal may have strong predictive when considered alone, but could score poorly on Numerai Signals due to this neutralization. This highlights the key unique aspect of Signals: **Numerai Signals is not about predicting stock returns, it is about finding original signals that Numerai doesn't already have.**
 
-To understand broader implications of feature exposure and neutralization, read [this forum post](https://forum.numer.ai/t/model-diagnostics-feature-exposure/899).
-
 ## The Target
 
-Signals are evaluated against a custom blackbox target created by Numerai. This target is also a [20D2L](../../numerai-tournament/scoring/#live-scoring) target like the Numerai Tournament, but are neutralized against our existing signals.
+Signals are evaluated against a custom blackbox target that is neutralized against our existing signals.
 
-We do not use shorter time horizons because signals that only work on short time horizons are difficult or impossible for large hedge funds to implement. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
+We provide both [20D2L and 60D2L](../../numerai-tournament/scoring/#live-scoring) targets in our dataset. We do not use shorter time horizons because signals that only work on short time horizons are nearly impossible for large hedge funds to trade. For example, even if a signal can accurately predict the 1 hour return of stocks, it is not very useful if it takes a hedge fund 24 hours to fully trade into that position. Signals that are most useful to large hedge funds have predictive power over a long time horizon which is also known as having "low alpha decay".
 
 ## Grandmasters
 
@@ -57,8 +60,6 @@ We do not use shorter time horizons because signals that only work on short time
 ## Canon Scores
 
 In the context of the Signals tournament, Canonical Scores (or “Canon Scores”) are particularly relevant. For example, the FNC score, which is a payout metric, has undergone updates. Initially, the payout score was 'CORR20' until round 498. It evolved into 'FNCv4' starting from round 499. The 'Canon FNC' score accounts for these changes by combining them into a unified score — it is 'CORR20' for rounds up to and including 498 and 'FNCv4' for rounds thereafter.
-
-The 'TC' score has remained consistent throughout the tournament's history, meaning 'Canon TC' and 'TC' are equivalent.
 
 ## Diagnostics
 
@@ -82,26 +83,30 @@ These diagnostics serve as a guide for you to estimate whether your signal is go
 Using this historical evaluation tool repeatedly will quickly lead to overfitting. Treat diagnostics only as a final check in your signal creation process.
 {% endhint %}
 
-## What is Churn?
+## What is Churn and Turnover?
 
-Churn is a statistic describing how much a signal changes over time. We open-sourced the code we use to calculate churn in Signals. You can find it [here](https://github.com/numerai/numerai-tools/commit/f58990854c81eb870cf9a252f1d72aace1a34857#diff-8ff14dc2bf7de3c1800d64eec9d066618b1ab49243bfc99f1bd8c7f3fe307d56R12-R43). In short:
+"Churn" is a statistic describing how much a signal changes over time. Similarly, "turnover" describes how much portfolio changes over time. We open-sourced the code we use to calculate churn and turnover in Signals. You can find it [here](https://github.com/numerai/numerai-tools/blob/master/numerai_tools/signals.py#L12-L72). In short:
 
 _churn(t0, t1) = 1 - correlation(s(t0), s(t1))_
 
-Where _**s(t)**_ is Signal's submission at time _**t**_.
+_turnover(t0, t1) =_ (p(t0) - p(t1)).abs().sum() / 2
 
-### Why calculate churn?
+Where _**s(t)**_ is your signal at time _**t**_ and _**p(t)**_ is your portfolio at time _**t**_.
 
-If a Signals submission has high churn, then Numerai can’t trade the signal. Many models built on the original Numerai tournament data have low churn organically, but Signals models seem to have naturally high churn.
+### Why calculate churn or turnover?
 
-We know that this negatively impacts the churn of the Signals Meta Model because the average churn across individual Signals models is highly correlated with the churn of the Signals Meta Model. This means Numerai must disallow high churn Signals models.
+If a Signals submission has high churn/turnover, then Numerai can’t trade the signal. Many models built on the original Numerai tournament data have low churn and turnover organically, but Signals models seem to have naturally high churn and turnover.
 
-### The Churn Threshold
+We know that this negatively impacts the churn of the Signals Meta Model because the average churn across individual Signals models is highly correlated with the churn of the Signals Meta Model. This means Numerai must disallow high churn and turnover Signals models.
 
-Any model that has not submitted in the previous week will have it’s stake set to 0. This is because any model that does not submit weekly will naturally cause high churn in the Meta Model.
+### The Churn and Turnover Thresholds
 
-If your model has submitted within the last week, when you upload a new submission we calculate maximum churn with respect to this model’s submissions from the previous week. So if we treat the current upload period as time _**t**_, the max churn would be:
+Any model that has not submitted in the previous week will have it’s stake set to 0. This is because any model that does not submit weekly will naturally cause high churn in the Meta Model and turnover in the portfolio derived from the Meta Model.
+
+If your model has submitted within the last week, when you upload a new submission we calculate maximum churn and turnover with respect to this model’s submissions from the previous week. So if we treat the current upload period as time _**t**_, the max churn and turnover would be:
 
 _max\_churn = max(\[churn(t, t-1), churn(t, t-2), ..., churn(t, t-5)])_
 
-If **max\_churn** >= 15%, then this submissions stake is set to 0.
+_max\_turnover = max(\[turnover(t, t-1), turnover(t, t-2), ..., turnover(t, t-5)])_
+
+If **max\_churn** >= 15% or **max\_turnover** ≥ 20% then this submissions stake is set to 0.

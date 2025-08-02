@@ -196,7 +196,7 @@ Banking on the fact that most people have played some team sport by age five, Ar
 
 Extrapolating that example to the Numerai tournament: if all of the data scientists competing were pitchers, then the meta model would be terrible. But if we had a bunch of unique skillsets and played as a team, then we can win.
 
-[NJ](https://twitter.com/tasha_jade) shared that [Michael P](https://twitter.com/EasyMikeP) used a similar explanation at Numerai HQ in the past \(although Numerai engineer Jason didn’t quite agree\).
+[NJ](https://twitter.com/tasha_jade) shared that Michael P used a similar explanation at Numerai HQ in the past \(although Numerai engineer Jason didn’t quite agree\).
 
 Michael P’s controversial example opted for a basketball team with four Shaquille O’Neals \(one of the most dominant players ever but with a specific skill set\) and posed the question: would that team be better off with a fifth Shaq or literally any other player with a different skill set \(even if that player isn’t as talented\). Slyfox and Arbitrage were quick to side with Jason and draft Shaq \#5.
 
@@ -336,5 +336,5 @@ If you’re passionate about finance, machine learning, or data science and you�
 
 Don’t miss the next Office Hours with Arbitrage : follow [Numerai on Twitter](http://twitter.com/numerai) or join the discussion on [Rocket.Chat](https://community.numer.ai/home) for the next time and date. And remember to stick around until the end for the exclusive conversation that doesn’t make it to publication.
 
-_Thank you to_ [_Slyfox_](https://twitter.com/ansonschu)_, and_ [_Michael P_](https://twitter.com/EasyMikeP) _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_Zen / Nasdaq Jockey_](https://numer.ai/nasdaqjockey) _for being interviewed._
+_Thank you to_ [_Slyfox_](https://twitter.com/ansonschu)_, and_ _Michael P_ _for fielding questions during this Office Hours, to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting, and to_ [_Zen / Nasdaq Jockey_](https://numer.ai/nasdaqjockey) _for being interviewed._
 
