@@ -107,7 +107,7 @@ If, at any point, you would like to disable your uploaded model:
 
 ### What versions of Python/packages work?
 
-The default version is Python 3.11, but Python >=3.9 and <= 3.11 is supported and can be selected when uploading a model.&#x20;
+The default version is Python 3.11, but Python >=3.10 and <= 3.12 is supported and can be selected when uploading a model.&#x20;
 
 To see which package versions are used in the Model Uploads environment, see the Numerai Predict requirements.txt: [https://github.com/numerai/numerai-predict/blob/master/requirements.txt](https://github.com/numerai/numerai-predict/blob/master/requirements.txt)
 
