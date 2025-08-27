@@ -23,7 +23,7 @@ payout = stake * clip(payout_factor * (fncv4 * 1 + mmc * 2), -0.05, 0.05)
 For rounds starting on September 2nd, 2025, the payout function will change to:
 
 ```python
-payout = stake * clip(payout_factor * (alpha * 0.3 + mpc * 0.8), -0.01, 0.01)  
+payout = stake * clip(payout_factor * (alpha * 0.3 + mpc * 0.8), -0.017, 0.017)  
 ```
 
 The `payout_factor` reduces logarithmically as the total NMR staked grows over the `stake_cap_threshold.`See the values of `stake_cap_threshold` [here](../numerai-tournament/staking.md#the-payout-factor).
