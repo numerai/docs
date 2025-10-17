@@ -21,10 +21,9 @@ If you're a data provider you can submit unique features directly as signals. If
 You can get started with the the Numerai Data API:
 
 ```python
-from numerapi import NumerAPI
 import pandas as pd
-
-napi = NumerAPI()
+from numerapi import CryptoAPI
+napi = CryptoAPI()
 napi.download_dataset("crypto/v1.0/train_targets.parquet")
 training_data = pd.read_parquet("crypto/v1.0/train_targets.parquet")
 ```
@@ -41,10 +40,9 @@ If you're not sure where to start with modeling your data, we highly recommend l
 import lightgbm as lgb
 import pandas as pd
 import random
-from numerapi import NumerAPI
 from typing import List
-
-napi = NumerAPI()
+from numerapi import CryptoAPI
+napi = CryptoAPI()
 
 
 def generate_training_features(df: pd.DataFrame) -> List[str]:

@@ -34,9 +34,7 @@ You can automate your submission workflow by using the API. Here is an example o
 
 ```python
 from numerapi import SignalsAPI
-
-# Authenticate
-sapi = SignalsAPI("[your api public id]", "[your api secret key]")
+napi = SignalsAPI("[your api public id]", "[your api secret key]")
 sapi.upload_predictions("[path to your submission]", model_id="your-model-id")
 ```
 

@@ -15,8 +15,8 @@ Numerai Crypto has one target, which is the returns of the token after 30 days. 
 The best way to access the Numerai Crypto dataset is via the data API:
 
 ```python
-from numerapi import NumerAPI
-napi = NumerAPI()
+from numerapi import CryptoAPI
+napi = CryptoAPI()
 
 [f for f in napi.list_datasets() if f.startswith("crypto/v1.0")]
 
@@ -37,4 +37,4 @@ napi.download_dataset("crypto/v1.0/train_targets.parquet")
 The Numerai Council of Elders partnered with [YIEDL](https://yiedl.ai/) to bring the YIEDL crypto dataset to Numerai Crypto. This comprehensive collection encompasses over ten years of cryptocurrency data, featuring components such as price volume momentum (PVM), sentiment analysis, and on-chain metrics.
 
 * Read the [Official Announcement](https://medium.com/numerai-council-of-elders/yiedl-and-the-numerai-council-of-elders-join-forces-to-enhance-numerai-crypto-b191f9024486)
-* Run the [Example Notebook](https://github.com/councilofelders/notebooks/blob/main/yiedl\_crypto\_data/yiedl\_crypto\_data\_for\_numerai\_example.ipynb)
+* Run the [Example Notebook](https://github.com/councilofelders/notebooks/blob/main/yiedl_crypto_data/yiedl_crypto_data_for_numerai_example.ipynb)

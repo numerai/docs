@@ -24,10 +24,9 @@ Numerai Signals is one part of the Numerai master plan to build the world's last
 You can get started with the Signals V1 Data:
 
 ```python
-from numerapi import NumerAPI
 import pandas as pd
-
-napi = NumerAPI()
+from numerapi import SignalsAPI
+napi = SignalsAPI()
 # Use int8 to save on storage and memory
 napi.download_dataset("signals/v2.0/train.parquet")
 training_data = pd.read_parquet("signals/v2.0/train.parquet")

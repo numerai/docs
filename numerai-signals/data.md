@@ -59,7 +59,7 @@ momentum\_52w\_less\_4w refers to one year return of a stock excluding the last 
 
 ### Targets
 
-The target of the dataset is specifically engineered to match the strategy of the hedge fund.&#x20;
+The target of the dataset is specifically engineered to match the strategy of the hedge fund.
 
 Given our hedge fund is market/country/sector and factor neutral, you can basically interpret the target as stock-specific returns that are not explained by broader trends in the market/country/sector or well known factors. In simple terms: what we are after is "alpha".
 
@@ -67,7 +67,7 @@ Given our hedge fund is market/country/sector and factor neutral, you can basica
 
 Signals has three different targets that can be used to help tune your model performance.
 
-**target\_raw\_return**&#x20;
+**target\_raw\_return**
 
 It can be difficult for even an experienced data scientist to build a subsequent return column correctly if they are calculating it themselves from publicly available data. This is due to complications with returns such as stock splits and dividends. This target handles all of those complications, and then bins the returns into Numerai’s standard distribution.
 
@@ -83,13 +83,13 @@ This target is used to calculate RIC and MMC. Since Numerai’s hedge funds are 
 
 This target is neutral to a large set of factors and all of the features in the [Numerai v4 dataset](../numerai-tournament/data.md).
 
-This is the mian `target` in the Signals dataset, and is used to score CORRv4 and FNCv4.&#x20;
+This is the mian `target` in the Signals dataset, and is used to score CORRv4 and FNCv4.
 
 #### Auxiliary Targets
 
-Apart from the main target we provide many auxiliary targets that are different types of stock specific returns. Like the main target, these auxiliary targets are also based on stock specific returns but are different in what is residualized (eg. market/country vs sector/factor) and time horizon (eg. 20 day vs 60 days).  &#x20;
+Apart from the main target we provide many auxiliary targets that are different types of stock specific returns. Like the main target, these auxiliary targets are also based on stock specific returns but are different in what is residualized (eg. market/country vs sector/factor) and time horizon (eg. 20 day vs 60 days).
 
-Even though our objective is to predict the main target, we have found it helpful to also model these auxiliary targets. Sometimes, a model trained on an auxiliary target can even outperform a model trained on the main target. In other scenarios, we have found that building an ensemble of models trained on different targets can also help with performance. &#x20;
+Even though our objective is to predict the main target, we have found it helpful to also model these auxiliary targets. Sometimes, a model trained on an auxiliary target can even outperform a model trained on the main target. In other scenarios, we have found that building an ensemble of models trained on different targets can also help with performance.
 
 Note: some auxiliary target values can be NaN but the main `target` will never be NaN. This is because some target data is just not available at that point in time, and instead of making up a fake value we are letting you choose how to deal with it yourself.
 
@@ -104,8 +104,8 @@ The Numerai dataset is made up of many different files.
 Here is how to query the data API to see what files are available and how to download a file.
 
 ```python
-from numerapi import NumerAPI
-napi = NumerAPI()
+from numerapi import SignalsAPI
+napi = SignalsAPI()
 
 DATA_VERSION = "signals/v2.0"
 
@@ -126,6 +126,5 @@ napi.download_dataset(f'{DATA_VERSION}/train.parquet')
 * `train.parquet` contains the historical data with tickers, features, and targets
 * `validation.parquet` contains more historical data with tickers, features and targets
 * `live.parquet` contains the latest ticker universe and live features with no targets of the current round
-* `live_example_preds.parquet` contains the latest live predictions of the example model&#x20;
+* `live_example_preds.parquet` contains the latest live predictions of the example model
 * `validation_example_preds.parquet` contains the validation predictions of the example model
-
