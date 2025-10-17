@@ -45,18 +45,18 @@ We consider the following to be serious security concerns:
   * When reporting credentials leaks, the leaked credentials must contain a valid email / password combination that can be used to login to an existing Numerai account.
   * To submit these credentials, please include a valid CSV file with columns \["email", "password"]. We will not be able to accept or verify credentials submitted any other way.
   * Reward amounts for this kind of report are based on the following criteria:
-    * If you cannot actually steal NMR from the account, this is considered "low impact" and you will recieve 0.1 NMR per leaked account.&#x20;
+    * If you cannot actually steal NMR from the account, this is considered "low impact" and you will recieve 0.1 NMR per leaked account.
     * If you **can** steal the NMR from the account, we will pay you up to the full stake in the account
 * Loss of funds for Numerai or its users that involve no interaction from Numerai or its users
 * Gaining access to or control of Numerai's production services with no interaction from Numerai
 * Exploits of any Numerai tournament that could lead to unintended payouts
 * Subdomain takeovers - please demonstrate that you are able to take over the page by leaving a non-offensive message, such as your username
 
-Generally, we will resolve the above within 3-5 business days and the bounty will on the higher end.
+Generally, we will resolve the above within 3-5 business days and the bounty will be on the higher end.
 
 ### **Low Priority**
 
-We consider the following to be of negligible security impact. We ask that researchers generally refrain from reporting these unless their is a clear and significant exploit that can be easily used to cause a high impact. Researchers must provide a concrete explanation as to how these vulnerabilities could be used to harm Numerai and it's users as well as a valid proof-of-concept to harness the exploit:
+We consider the following to be of negligible security impact. We ask that researchers generally refrain from reporting these unless there is a clear and significant exploit that can be easily used to cause a high impact. Researchers must provide a concrete explanation as to how these vulnerabilities could be used to harm Numerai and it's users as well as a valid proof-of-concept to harness the exploit:
 
 * Vulnerabilities as reported by automated scanners / tools (Acunetix, Vega, OSINT Framework, etc.) without a clear and significant exploit.
 * Vulnerabilities in the form of missing configurations / certificates that cannot be easily used to harm Numerai or its users:
@@ -85,7 +85,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Reports that are highly speculative or reference theoretical damage without a clear proof-of-concept with a step-by-step guide showing how to easily use an exploit.
 * Vulnerabilities that cannot be used to easily exploit Numerai or other users of Numerai (e.g. self-xss or having a user paste JavaScript into the browser console are not valid exploits).
 * Concerns about best practices / industry standards - while we agree it's necessary to implement security best practices in the long-term, these are usually not primary attack vectors and we are only concerned with ways to compromise accounts, user funds, sensitive data, etc.
-* Vulnerabilities only affecting outdated user agents / app versions - we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE,  etc.
+* Vulnerabilities only affecting outdated user agents / app versions - we only consider exploits in the latest browser versions for Safari, FireFox, Chrome, Edge, IE, etc.
 * Errors, error messages, or stack traces that:
   * are from 500 internal server errors
   * do not disclose sensitive information
@@ -100,7 +100,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Excess / junk data storage (e.g. old uploads of any kind)
 * Sending tokens to trusted third-parties (Google Analytics, etc.)
 * Public URLs that are randomly generated and non-guessable
-* Information from non-sensitive public APIs used in Numerai's public websites such as the APIs serving numer.ai, signals.numer.ai, crypto.numer.ai, forum.numer.ai, etc.&#x20;
+* Information from non-sensitive public APIs used in Numerai's public websites such as the APIs serving numer.ai, signals.numer.ai, crypto.numer.ai, forum.numer.ai, etc.
   * This includes GraphQL introspection.
 * Lack of password re-input for actions that already require authentication
 * Significant lapse in user judgement:

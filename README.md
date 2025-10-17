@@ -125,7 +125,7 @@ No. You can submit your prediction file and receive performance without staking.
 
 ### Can I stake on another model?
 
-No, but their are 2 places you can download other models:
+No, but there are 2 places you can download other models:
 
 1. Numerai releases [benchmark models](numerai-tournament/models.md#benchmark-models) for free.&#x20;
 2. The community developed [a community marketplace to buy and sell models](numerai-tournament/models.md#community-models). &#x20;
