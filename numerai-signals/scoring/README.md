@@ -109,4 +109,4 @@ _max\_churn = max(\[churn(t, t-1), churn(t, t-2), ..., churn(t, t-5)])_
 
 _max\_turnover = max(\[turnover(t, t-1), turnover(t, t-2), ..., turnover(t, t-5)])_
 
-If **max\_churn** >= 15% or **max\_turnover** ≥ 20% then this submissions stake is set to 0.
+If **max\_churn** >= 15% or **max\_turnover** ≥ 25% then this submissions stake is set to 0.
