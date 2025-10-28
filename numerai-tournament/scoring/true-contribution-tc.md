@@ -8,7 +8,7 @@ hidden: true
 
 True Contribution is a measure of your model's contribution to the hedge fund's returns.
 
-Read this [medium post](https://medium.com/numerai/alien-stock-market-intelligence-numerais-true-contribution-6bc7652bd6ac) for the full background and motivation.&#x20;
+Read this [blog post](https://blog.numer.ai/alien-stock-market-intelligence-numerais-true-contribution) for the full background and motivation.&#x20;
 
 ## **How is TC computed?**
 

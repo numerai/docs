@@ -191,7 +191,7 @@ Fortunately for Arbitrage, Mr. Numerai himself Richard Craib was on the call and
 
 Richard explained that Numerai is a global equities hedge fund driven by the machine learning models of their data science community. They’ve never traded anything besides equity, and they’re, “long/short, market neutral, country neutral, sector neutral, currency neutral, factor neutral… just trying to find the edges that other people can’t find and that aren’t exposed to the risk factors that other funds are exposed to.”
 
-_Author’s note: to hear more from Richard on Numerai, the tournament, and the hedge fund industry, check out his OH interview at_ [_Office Hours with Arbitrage \#4_](https://medium.com/numerai/office-hours-with-arbitrage-4-2c5da71ef40)_._
+_Author’s note: to hear more from Richard on Numerai, the tournament, and the hedge fund industry, check out his OH interview at_ _Office Hours with Arbitrage #4_.
 
 **Is there a difference between using R and Python? Is one better than the other? I know they should be the same, but are they? Or is one faster?**
 
@@ -227,7 +227,7 @@ Arbitrage said that he’s a fan of Occam’s Razor: the simple explanation is t
 
 “Which one of us is making more money for our effort? Well I’m going to claim that one because I don’t do anything to the data.”
 
-Along with that, Arbitrage noted that feature selection is very important \(and discussed at greater length in [Office Hours with Arbitrage \#1](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d)\). “You don’t want to over sample too much,” he said, referring to Richard’s advice that the example model only looks at 10% of features at a time. Using a small sample of the feature space per iteration is very important and helps to control overfitting. “And of course treat the eras separately,” he concluded.
+Along with that, Arbitrage noted that feature selection is very important \(and discussed at greater length in Office Hours with Arbitrage #1\). “You don’t want to over sample too much,” he said, referring to Richard’s advice that the example model only looks at 10% of features at a time. Using a small sample of the feature space per iteration is very important and helps to control overfitting. “And of course treat the eras separately,” he concluded.
 
 Feature exposure range is something Arbitrage is still figuring out. Looking at his top performing model, he noted that the feature exposure is lower than his main model, which suggests lower may be better. For his models, Arbitrage said anything above 0.08 seems too high, but he hasn’t been able to get below 0.07.
 
@@ -241,9 +241,9 @@ Arbitrage suggested that any kind of ensemble will probably perform relatively w
 
 **The data is encrypted — is it really homomorphic? Are some mathematical properties lost? Our models may be tricked! Is there anything to avoid?**
 
-**Richard**: The homomorphic thing comes up so much, I think it’s a cool word. When we first launched … the homepage said ‘structure-preserving encryption’ in December 2015, but the [Medium post](https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8) said ‘using encryption techniques like [homomorphic encryption](https://news.ycombinator.com/item?id=14947768)’ and people really latched onto us using precisely homomorphic encryption schemes. Which [I did try to do](https://www.reddit.com/r/MachineLearning/comments/3zvuge/encrypted_data_for_efficient_markets_an_mnist_for/cyprq84/), and I had the data encrypted in this way, but it turned one megabyte of data into 16 gigabytes.
+**Richard**: The homomorphic thing comes up so much, I think it’s a cool word. When we first launched … the homepage said ‘structure-preserving encryption’ in December 2015, but the [blog post](https://blog.numer.ai/encrypted-data-for-efficient-markets) said ‘using encryption techniques like [homomorphic encryption](https://news.ycombinator.com/item?id=14947768)’ and people really latched onto us using precisely homomorphic encryption schemes. Which [I did try to do](https://www.reddit.com/r/MachineLearning/comments/3zvuge/encrypted_data_for_efficient_markets_an_mnist_for/cyprq84/), and I had the data encrypted in this way, but it turned one megabyte of data into 16 gigabytes.
 
-![https://medium.com/numerai/encrypted-data-for-efficient-markets-fffbe9743ba8](https://cdn-images-1.medium.com/max/1600/1*cCCz6ASL4cTanIFN4ha7Zw.png)
+![https://blog.numer.ai/encrypted-data-for-efficient-markets](https://cdn-images-1.medium.com/max/1600/1*cCCz6ASL4cTanIFN4ha7Zw.png)
 
 **Richard**: The data went from normal nice numbers like you have now to very high dimensional polynomials that you had to operate on.To any normal data scientist, or even expert data scientists, it looked so weird to have these strange polynomials that you have to operate on. So I decided not to launch with that, and instead went with a different kind of obfuscation. Encryption implies that there’s a key that if you had, you could unlock it, but the data is really just obfuscated.
 
@@ -257,7 +257,7 @@ Arbitrage mentioned that this would fall outside the scope of the tournament tea
 
 **Has Numerai ever discussed what a solution to this competition looks like? Perhaps metric thresholds i.e. MMC 2, Sortino, or Sharpe through multiple regimes?**
 
-**Richard**: We’ve been refining the problem while people are refining solutions to the problem,” Richard said. “We change the targets, and [these new targets that are out now](https://medium.com/numerai/numerai-in-2019-1ad686348538) are an attempt at a better way of thinking about the problem. If you can be good at these targets, you’re really good. If you could be good at the previous targets, I would sometimes wonder, ‘Why do I prefer this model in position 100 over the model that’s coming in first?’ That’s really bad for the tournament. Even the users can tell that they could be at the top by making a bad model they would never stake.
+**Richard**: We’ve been refining the problem while people are refining solutions to the problem,” Richard said. “We change the targets, and [these new targets that are out now](https://blog.numer.ai/numerai-in-2019) are an attempt at a better way of thinking about the problem. If you can be good at these targets, you’re really good. If you could be good at the previous targets, I would sometimes wonder, ‘Why do I prefer this model in position 100 over the model that’s coming in first?’ That’s really bad for the tournament. Even the users can tell that they could be at the top by making a bad model they would never stake.
 
 What’s true right now, thinking about the feature-neutral targets or whatever future targets are going to be, we want the situation to be that a model that was in 20th but now is 25th, well we like the model that’s now in 20th even more. And that’s because we’ve refined the problem.
 
@@ -267,7 +267,7 @@ It’s kind of open ended, and that’s why no one will ever really know the ans
 
 **Are there any rules for what Numerai can do with the NMR token or can they choose freely?**
 
-Arbitrage noted that he imagines what the team can do with the tokens is pretty heavily regulated, and Richard mentioned [an earlier post from Numerai detailing their plans for the future of NMR](https://medium.com/numerai/nmr2point0-66a45a9a5e70) that details some of their allocations for users and investors.
+Arbitrage noted that he imagines what the team can do with the tokens is pretty heavily regulated, and Richard mentioned [an earlier post from Numerai detailing their plans for the future of NMR](https://blog.numer.ai/nmr-2-0-is-now-live) that details some of their allocations for users and investors.
 
 “We wouldn’t want it to be that 70% of the tokens are owned by investors who are never going to use Numerai or Erasure,” Richard said. “We think it’s very important to have that. I like the way our tokens look: there are a lot out in the community and a lot have been given away. When we sold to investors, it hasn’t been too much, and it’s often very much helped the token.”
 

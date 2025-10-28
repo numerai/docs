@@ -36,7 +36,7 @@ Richard said that signal performance is very connected, explaining that most mod
 
 > “It’s hard to say, some days it looks correlated, but it’s not, really.”
 
-Arbitrage pointed out that several data scientists have apologized on [Twitter](https://twitter.com/Object\_Science/status/1243237851484925952) and [RocketChat](http://community.numer.ai); Arbitrage himself admitted [not long ago](https://medium.com/numerai/office-hours-with-arbitrage-2-a0686dc88417) that he was wrong about how market volatility would impact model performance.
+Arbitrage pointed out that several data scientists have apologized on [Twitter](https://twitter.com/Object\_Science/status/1243237851484925952) and [RocketChat](http://community.numer.ai); Arbitrage himself admitted not long ago that he was wrong about how market volatility would impact model performance.
 
 ![OG data scientist Object Science captured the sentiment](https://cdn-images-1.medium.com/max/1600/1\*zn1nZ3jg9Oah-dyOMoC7Jw.png)
 
@@ -54,7 +54,7 @@ Data scientists therefore can’t tie correlation to the fund’s performance. A
 
 ![Pictured: correlation](https://cdn-images-1.medium.com/max/1600/1\*2k8N\_Br0TdSwCPH2y3MO4w.png)
 
-“What is possible,” Richard said, “is for your own models to take on feature exposure.” Arbitrage discussed feature exposure in the [first](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d) and [second](https://medium.com/numerai/office-hours-with-arbitrage-2-a0686dc88417) Office Hours, and Richard’s point about models taking on feature exposure reinforced what Arbitrage said specifically about how optimizing for features can lead to overfitting the data. Richard said they were looking into neutralizing to the features, suggesting that looking at correlation against the Validation data **after** neutralizing out all of the features is a better way to gauge how well a model will perform out of sample.
+“What is possible,” Richard said, “is for your own models to take on feature exposure.” Arbitrage discussed feature exposure in the first and second Office Hours, and Richard’s point about models taking on feature exposure reinforced what Arbitrage said specifically about how optimizing for features can lead to overfitting the data. Richard said they were looking into neutralizing to the features, suggesting that looking at correlation against the Validation data **after** neutralizing out all of the features is a better way to gauge how well a model will perform out of sample.
 
 > “It’s like saying, you do your own optimization and take out all of the feature exposure you can: if your exposure is .10, get that down, and if you get that down, you’re going to have a better model.” — Richard
 
@@ -136,8 +136,6 @@ This follows closely with something Richard has been planning to do. He explaine
 
 [Erasure Quant](https://signals.numer.ai) (_since ported to Numerai Signals_) is set up to do two things: signal generation and optimization. But if the optimization is all machine learning, “it feels like you better tell the machine learning model what is going to happen to its signal. Otherwise, it **will** learn things.”
 
-![https://medium.com/numerai/introducing-erasure-quant-963e8e74c80c](https://cdn-images-1.medium.com/max/1600/1\*lr1Gag9\_pD9Hw49kwHwFaQ.png)
-
 Richard shared that the first thing Numerai is going to do about this is introduce a new version of the target (which doesn’t have a name yet). The new target is going to be a feature-neutralized Kazutsugi target. Currently, the features all have exposure to the target, so when data scientists are training models, they like to use the features because they have correlation with the target. But, as Richard explained, making a feature neutral target forces data scientists to see how good their signals are independent of the features Numerai provides.
 
 “That’s one way of getting at the same problem, where we’re at least telling you that we’re going to feature neutralize you down the process for the optimizer and the meta-model, so we might as well tell you to learn to get good at feature neutral modeling.” He expressed that this will be a continuous, ongoing effort, adding that getting the data scientists “closer to the real problem has been the story of Numerai, and this will be the next phase of that. Maybe the final phase will be this portfolio management idea, but I’m not sure if we need it if the feature neutralizing works well.”
@@ -184,7 +182,7 @@ Richard brought up a post by a Numerai data scientist who shared his performance
 
 Stelian proposed the idea to set specific conditions when data scientists submit their models to act as virtual “insurance,” allowing the user to set some guard rails to protect against extreme volatility. He agreed with Richard’s statement that, “There’s no insurance in this business, it happens, everybody’s in the same boat and you can’t just buy insurance,” but pointed out that from a researcher’s perspective, it would be useful to have these conditions if you know that at a given time a model doesn’t perform well with high volatility. Following from that idea, Stelian asked if the features are provided in an obfuscated way to data scientists so they can make sure there’s no correlation when a model is created.
 
-“The big trick there,” Richard said, “is that the _target_ is neutral to these things. The Kazutsugi target is neutral to volatility: it’s exactly zero. If anybody says, ‘oh it’s volatility…’ it’s not.” Richard explained that because the Kazutsugi target is neutral to volatility, changes in the VIX, for example, would not be the sole cause of poor model performance. Instead, large swings in the VIX can affect other factors, which could impact a model (depending on how those features were incorporated during training).![](https://cdn-images-1.medium.com/max/1600/1\*2zPO8wDXDckxiy4bd6jcLQ.jpeg)Learn more about Kazutsugi in [Numerai in 2019](https://medium.com/numerai/numerai-in-2019-1ad686348538)
+“The big trick there,” Richard said, “is that the _target_ is neutral to these things. The Kazutsugi target is neutral to volatility: it’s exactly zero. If anybody says, ‘oh it’s volatility…’ it’s not.” Richard explained that because the Kazutsugi target is neutral to volatility, changes in the VIX, for example, would not be the sole cause of poor model performance. Instead, large swings in the VIX can affect other factors, which could impact a model (depending on how those features were incorporated during training).![](https://cdn-images-1.medium.com/max/1600/1\*2zPO8wDXDckxiy4bd6jcLQ.jpeg)Learn more about Kazutsugi in [Numerai in 2019](https://blog.numer.ai/numerai-in-2019)
 
 To emphasize his point about MMC, Richard pulled up a data scientist’s model which scored positive MMC nearly every week. He pointed out that despite the volatility of the market and the subsequent drop in performance of the Integration Test model, this model still managed to come out ahead in the majority of weeks.![](https://cdn-images-1.medium.com/max/1600/1\*cQjw\_dBsu-\_V8QVANPpIOQ.jpeg)Model [Niam](https://numer.ai/niam) from data scientist [Michael Oliver](https://numer.ai/mdo).
 
@@ -250,7 +248,7 @@ Slyfox opened that question up to everyone on the call, asking how other data sc
 
 [Michael P](https://numer.ai/master\_key) answered this question, noting that validation sharpes are high values, with the Example Prediction model’s sharpe being around 1.5. Michael added the advice that the Example Prediction sharpe is “verification that you’re calculating things correctly, but you want to calculate your sharpe yourself on the cross validation and training set. You don’t want to rely on the validation sharpe to pick your model because the validation eras are too easy.”
 
-Richard then brought up the Validation 2 data set Slyfox mentioned during [Office Hours #2](https://medium.com/numerai/office-hours-with-arbitrage-2-a0686dc88417). Validation 2 is a data set the Numerai team are exploring which contains the previous year of live data, meant to be used as a more robust validation data set (or additional training data as Arbitrage and Bor pointed out).
+Richard then brought up the Validation 2 data set Slyfox mentioned during Office Hours #2. Validation 2 is a data set the Numerai team are exploring which contains the previous year of live data, meant to be used as a more robust validation data set (or additional training data as Arbitrage and Bor pointed out).
 
 ![](https://cdn-images-1.medium.com/max/1600/1\*ET-ZvrpiXKsxzbELOww9-w.gif)Excited for new data.
 

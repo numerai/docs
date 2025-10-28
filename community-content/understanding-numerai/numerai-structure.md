@@ -216,8 +216,8 @@ In this document, I'm trying to stick to _the way things are_. Questions about w
 
 **Here are some links to more info about NMR and Erasure:**\
 [Erasure World](https://erasure.world/) (Erasure home page)\
-[NMR 2.0 is now live!](https://medium.com/numerai/nmr2point0-66a45a9a5e70) (article)\
-[The Erasure Protocol Awakens on Ethereum Mainnet](https://medium.com/numerai/the-erasure-protocol-awakens-48a34cc4b5d0) (article)\
+[NMR 2.0 is now live!](https://blog.numer.ai/nmr-2-0-is-now-live) (article)\
+[The Erasure Protocol Awakens on Ethereum Mainnet](https://blog.numer.ai/the-erasure-protocol-awakens) (article)\
 [Numerai Terms of Service](https://numer.ai/terms) -- the TOS actually has a fair bit of good info about the token and about everything -- worth _actually_ reading
 
 \* note that "Erasure Quant" is dead -- Numerai Signals is the replacement

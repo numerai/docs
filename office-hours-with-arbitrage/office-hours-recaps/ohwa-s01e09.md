@@ -36,7 +36,7 @@ Arbitrage brought up a previous tournament iteration where competitors could ear
 
 **Joe asks: Would you blend or optimize your models to maximize Validation 2 correlation or sharpe? If so, what is your strategy to avoid overfitting the Validation 2 data?**
 
-Arbitrage answered by explaining that he’s not certain maximizing on the [Validation 2](https://forum.numer.ai/t/validation-2-announcement/166) data is the correct path because the data is from a crisis period and, as Richard has [mentioned previously](https://medium.com/numerai/office-hours-with-arbitrage-4-2c5da71ef40), the data isn’t a full year. Because it encompasses the COVID-19 drawdown, it represents a special segment of the Numerai data. “I would be concerned to have a model that performed well on Validation 2 but perhaps didn’t do well on Validation 1,” he said, “I want it to do well on Validation 1 **and** 2.”
+Arbitrage answered by explaining that he’s not certain maximizing on the [Validation 2](https://forum.numer.ai/t/validation-2-announcement/166) data is the correct path because the data is from a crisis period and, as Richard has mentioned previously, the data isn’t a full year. Because it encompasses the COVID-19 drawdown, it represents a special segment of the Numerai data. “I would be concerned to have a model that performed well on Validation 2 but perhaps didn’t do well on Validation 1,” he said, “I want it to do well on Validation 1 **and** 2.”
 
 How do you do that? Arbitrage said he doesn’t know, he hasn’t experimented enough with Validation 2 yet, but he’s created models trained on both validation data sets. And as of the week before this Office Hours, Arbitrage finally installed XGBoost.
 
@@ -126,7 +126,7 @@ Arbitrage admitted that he doesn’t have much experience in computer science \(
 
 **I feel emboldened by the new machine I got. Does it make sense to make a massive neural net with hundreds of layers and tons of custom features, or am I wasting my time?**
 
-Fresh off of building a new computer \(with input from Joakim\) and with XGBoost finally installed, Arbitrage related to this question. He doesn’t think it makes sense to build a complex model, referring back to his [conversation with Bor](https://medium.com/numerai/office-hours-with-arbitrage-5-421ea23f4eec) \(who uses an intricate genetic algorithm\) comparing their model performance.
+Fresh off of building a new computer \(with input from Joakim\) and with XGBoost finally installed, Arbitrage related to this question. He doesn’t think it makes sense to build a complex model, referring back to his conversation with Bor \(who uses an intricate genetic algorithm\) comparing their model performance.
 
 “It goes back to Occam’s razor, which is going to be my default answer when it comes to choosing complexity over simplicity.”
 
@@ -172,7 +172,7 @@ Arbitrage asked Richard if he’s aware of any indices that track flow of funds 
 
 **How can I time the moment so I can change the stake of my model?**
 
-This refers back to the topic of risk management \(discussed at length in the [previous Office Hours](https://medium.com/numerai/office-hours-with-arbitrage-8-a1c3071ea504)\).
+This refers back to the topic of risk management \(discussed at length in the previous Office Hours\).
 
 > “I decided I don’t want more than 400 NMR at stake on Arbitrage, so in the current regime I have to guess if I’m going to go over and time it one month out how much I should withdraw. The alternative is: if your model is consistently growing, queue up a withdrawal of a fixed amount every time that you can.”
 
