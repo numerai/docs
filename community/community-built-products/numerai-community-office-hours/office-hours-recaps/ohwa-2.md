@@ -6,7 +6,7 @@ description: March 12, 2020 / Written by http://twitter.com/mandelliant
 
 #### Office Hours with Arbitrage #2
 
-Following the great Q\&A that came out of [his first office hours](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d), Arbitrage returned to answer more questions from the community about staking, finance, and [Numerai’s data science tournament](http://numer.ai/tournament) with special guest [Slyfox](https://numer.ai/slyfox) ([_Anson Chu_](https://twitter.com/ansonschu)_, CTO of Numerai_).
+Following the great Q\&A that came out of his first office hours, Arbitrage returned to answer more questions from the community about staking, finance, and [Numerai’s data science tournament](http://numer.ai/tournament) with special guest [Slyfox](https://numer.ai/slyfox) ([_Anson Chu_](https://twitter.com/ansonschu)_, CTO of Numerai_).
 
 After a quick proof of credibility, Arbitrage dove into the questions from Slido.
 
