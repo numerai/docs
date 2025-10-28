@@ -158,7 +158,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** Wow that was six months ago. Time flies. How did you find out about Numerai?
 
-**Mike P:** One of my friends sent me an article. I think it was the Erasure unstoppable marketplace blog postfrom like, 2018 I think.
+**Mike P:** One of my friends sent me an article. I think it was the Erasure unstoppable marketplace blog post from like, 2018 I think.
 
 {% embed url="https://www.youtube.com/watch?time:continue=4&v=gh-hjXpDDz4&feature=emb:logo" %}
 
