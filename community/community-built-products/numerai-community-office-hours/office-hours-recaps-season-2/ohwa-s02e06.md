@@ -158,7 +158,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** Wow that was six months ago. Time flies. How did you find out about Numerai?
 
-**Mike P:** One of my friends sent me an article. I think it was the [Erasure unstoppable marketplace blog post](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a) from like, 2018 I think.
+**Mike P:** One of my friends sent me an article. I think it was the Erasure unstoppable marketplace blog post from like, 2018 I think.
 
 {% embed url="https://www.youtube.com/watch?time:continue=4&v=gh-hjXpDDz4&feature=emb:logo" %}
 
@@ -202,7 +202,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** I completely agree. I'm embarrassed to admit that until three or four weeks ago, I only cared about average correlation. I didn't even care how it did per-era. And I really believe I just got lucky in my model design. And this is what I teach, right? Have a good approach prior to even looking at the data. Set up in your head how you're going to go about this, and then at the end, if it's good, run with it. I think I just got lucky, and I'm not afraid to admit that. I'll take my six in the top 50 staked and run with that for now. We'll see how these new iterations come about. So here's a fun one: if you could have a billboard with anything on it, what would it say and why?
 
-**Mike P:** Yeah this is the hardest question by far. I decided, I think, has everyone seen the meta-model contribution art that Jonathan did that's at the top of the [Medium post I put out](https://medium.com/numerai/a-new-data-science-competition-where-being-different-pays-251c2aecc40a)? [Jonathan](https://twitter.com/jonathansidego) did that art and it's insane. I talked to him before about what the meta-model logo should look like, and it was always this idea of multiple things coming together in some powerful way. He put it in the Numerai style. Basically it's three panes of glass that overlap and in the center is the Numerai logo and it's more opaque because they're overlapping. It was _exactly_ what I think it should look like. I was blown away by that and want to stick that on a giant billboard somewhere.
+**Mike P:** Yeah this is the hardest question by far. I decided, I think, has everyone seen the meta-model contribution art that Jonathan did that's at the top of the [blog post I put out](https://blog.numer.ai/a-new-data-science-competition-where-being-different-pays)? [Jonathan](https://twitter.com/jonathansidego) did that art and it's insane. I talked to him before about what the meta-model logo should look like, and it was always this idea of multiple things coming together in some powerful way. He put it in the Numerai style. Basically it's three panes of glass that overlap and in the center is the Numerai logo and it's more opaque because they're overlapping. It was _exactly_ what I think it should look like. I was blown away by that and want to stick that on a giant billboard somewhere.
 
 **Arbitrage:** Cool man. It's your billboard, you can do anything you want with it.
 
@@ -264,7 +264,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** Yeah, definitely the feature part and PCA part are the most prone to overfitting. That's something that I didn't really understand, not being in a financial domain beforehand. That's like, in the training if the Charisma features never fail, the my algorithm is going to think that you should always keep all of the Charisma features and drop everything else. But in real life, it's going to be the Charisma ones that fail and everything else does well. You kind of have to think about the whole regime idea completely differently. We'll get more into it in the Slido.
 
-**Arbitrage:** So you had a [big write up](https://medium.com/numerai/a-new-data-science-competition-where-being-different-pays-251c2aecc40a), want to talk about that a little bit then we'll dive into the questions?
+**Arbitrage:** So you had a [big write up](https://blog.numer.ai/a-new-data-science-competition-where-being-different-pays), want to talk about that a little bit then we'll dive into the questions?
 
 **Mike P:** So that wasn't really for current participants. I'm glad you all read it and enjoyed it, but I feel like it was stuff that you all already knew and we've talked about a lot. I kind of wrote it with the purpose of introducing people to Numerai and why I think meta-model contribution makes data science tournaments a lot more interesting. It's kind of a pitch to get new users in a way. I really do think that it's totally different. We've always said that it's different from all the other data science tournaments, and it is in a lot of ways, but I think the meta-model contribution idea can, if we do it correctly (which we're still trying to improve, obviously), can be super appealing to people who are bored with other competitions. That was the purpose of it.
 

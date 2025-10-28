@@ -76,7 +76,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **Arbitrage:** Close enough - same decade! We're going to count it. So let's get on to Numerai - how did you find out about Numerai and when did you start participating?
 
-**John:** I don't remember exactly - I think it popped up on [Medium](https://medium.com/numerai) or something like that. Or it was some online search related to hedge funds that trade crypto. I was sort of casting my line to see what's out there, what's new, what's going on, are there any new data science competitions, things like that. 
+**John:** I don't remember exactly - I think it popped up on [the blog](https://blog.numer.ai/) or something like that. Or it was some online search related to hedge funds that trade crypto. I was sort of casting my line to see what's out there, what's new, what's going on, are there any new data science competitions, things like that. 
 
 **Arbitrage:** Around what time of year was that? 
 

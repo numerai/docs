@@ -6,7 +6,7 @@ description: March 12, 2020 / Written by http://twitter.com/mandelliant
 
 #### Office Hours with Arbitrage #2
 
-Following the great Q\&A that came out of [his first office hours](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d), Arbitrage returned to answer more questions from the community about staking, finance, and [Numerai’s data science tournament](http://numer.ai/tournament) with special guest [Slyfox](https://numer.ai/slyfox) ([_Anson Chu_](https://twitter.com/ansonschu)_, CTO of Numerai_).
+Following the great Q\&A that came out of his first office hours, Arbitrage returned to answer more questions from the community about staking, finance, and [Numerai’s data science tournament](http://numer.ai/tournament) with special guest [Slyfox](https://numer.ai/slyfox) ([_Anson Chu_](https://twitter.com/ansonschu)_, CTO of Numerai_).
 
 After a quick proof of credibility, Arbitrage dove into the questions from Slido.
 
@@ -16,7 +16,7 @@ After a quick proof of credibility, Arbitrage dove into the questions from Slido
 
 **Can you talk about the hyperparameter optimization you use, and the score you optimize for?**
 
-Similar to Arbitrage’s three tips for performing well from [the first office hours](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d), he explained that he uses half of the training data and does a grid search for whichever model he’s using. Regarding score, Arbitrage checks to make sure his model doesn’t produce too strong of a signal as that likely means it’s overfit on the data.
+Similar to Arbitrage’s three tips for performing well from the first office hours, he explained that he uses half of the training data and does a grid search for whichever model he’s using. Regarding score, Arbitrage checks to make sure his model doesn’t produce too strong of a signal as that likely means it’s overfit on the data.
 
 > “In this close correlation environment, I want 4% — no higher than 4.5%.”
 
@@ -69,7 +69,7 @@ As Slyfox finished, Arbitrage noticed that Daily Scores were posted so he briefl
 
 “This makes me have to eat crow.”
 
-Arbitrage expected recent volatility in the global stock markets to have a dramatic impact on model performance, bringing up the idea of burn insurance he mentioned in [the first office hours](https://medium.com/numerai/office-hours-with-arbitrage-1-aadc0ba4c53d) but noting that he thinks it may be unnecessary based on the latest tournament results (at the time of recording).
+Arbitrage expected recent volatility in the global stock markets to have a dramatic impact on model performance, bringing up the idea of burn insurance he mentioned in the first office hours but noting that he thinks it may be unnecessary based on the latest tournament results (at the time of recording).
 
 In response, Slyfox said: “If this was back in the Bernie days, I think we would have problems, but the new Kazutsugi target, as [Richard](https://twitter.com/richardcraib) says, is much more stable and we are not that correlated with the overall markets — certainly not just the US \[market].” He then reiterated that the targets in the Numerai data are based on global markets, adding that they’re certainly not limited to longs only.
 

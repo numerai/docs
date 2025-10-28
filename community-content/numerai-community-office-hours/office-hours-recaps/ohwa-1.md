@@ -22,9 +22,9 @@ Arbitrage began by answering questions from Slido, which was shared in advance o
 
 Originally, there were to be 21 million Numeraire (NMR). The initial distribution included about two million tokens, of which not all were shipped and many were locked up, making this difficult to track over time.\
 The biggest change came in 2019 when [Numerai reduced the maximum supply to 11 million NMR](https://www.coindesk.com/numerai-to-cut-token-supply-by-10-million-to-become-decentralized-as-fck), dramatically shifting the possible circulation.\
-Learn more about the change [here](https://medium.com/numerai/nmr2point0-66a45a9a5e70).
+Learn more about the change [here](https://blog.numer.ai/nmr-2-0-is-now-live).
 
-Many of the tokens from the [initial distribution](https://medium.com/numerai/an-ai-hedge-fund-goes-live-on-ethereum-a80470c6b681) went to public float, and a portion being locked because they were never withdrawn (or someone lost their keys). Arbitrage also pointed out that a lot of tokens were burned, noting that because of all of this, he’s unsure of the exact amount of NMR in public circulation but noted it’s nowhere near the maximum.
+Many of the tokens from the [initial distribution](https://blog.numer.ai/an-ai-hedge-fund-goes-live-on-ethereum) went to public float, and a portion being locked because they were never withdrawn (or someone lost their keys). Arbitrage also pointed out that a lot of tokens were burned, noting that because of all of this, he’s unsure of the exact amount of NMR in public circulation but noted it’s nowhere near the maximum.
 
 ![Learn more about NMR numbers at https://numer.ai/nmr](https://cdn-images-1.medium.com/max/1600/1\*d9L6F2yuJ7suon-emqbZFQ.png)
 

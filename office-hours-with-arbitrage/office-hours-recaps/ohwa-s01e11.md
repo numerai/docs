@@ -14,7 +14,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** You joined the tournament in August 2016, but how did you find out about Numerai?
 
-**Themicon:** I was looking for a really hard data science or machine learning program. I needed to find something similar to the work I do, so all of the toy models and things like that were just not doing it for me. So I was looking for something really hard, then I came across the Numerai tournament by a Medium post \(I think\). I thought, "hey this is really interesting, let's see if I can use something I learn from Numerai in my day job."
+**Themicon:** I was looking for a really hard data science or machine learning program. I needed to find something similar to the work I do, so all of the toy models and things like that were just not doing it for me. So I was looking for something really hard, then I came across the Numerai tournament by a blog post \(I think\). I thought, "hey this is really interesting, let's see if I can use something I learn from Numerai in my day job."
 
 **Arbitrage:** So let's change the order a little bit since you brought it up - what do you do for a living?
 
@@ -78,7 +78,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Themicon:** I've learned so much from the people in [Rocket.Chat](https://community.numer.ai/) or [the forum](https://forum.numer.ai/) and things like that - I think really spend time reading the posts and trying to understand them.
 
-**Arbitrage:** That's really good, I think that's important so I'm glad you brought it up. Definitely have fun. I think sometimes that gets forgotten. And it's like I tell my students: look at the source code of [scikit learn](https://scikit-learn.org/stable/index.html) because even the comments there are valuable. Take advice from other people like from Medium posts and whatnot; I mean the quality of the posts in Rocket.Chat is amazing, I don't even understand some of the stuff.
+**Arbitrage:** That's really good, I think that's important so I'm glad you brought it up. Definitely have fun. I think sometimes that gets forgotten. And it's like I tell my students: look at the source code of [scikit learn](https://scikit-learn.org/stable/index.html) because even the comments there are valuable. Take advice from other people like from blog posts and whatnot; I mean the quality of the posts in Rocket.Chat is amazing, I don't even understand some of the stuff.
 
 **Themicon:** Yeah, there's a couple of posts in the forum recently that just blew my mind, like wow. I did not even imagine things like that were real and people do them all the time. Definitely read those and try to get your head around them and if you learn something, you learn something. And if you didn't, you didn't.
 

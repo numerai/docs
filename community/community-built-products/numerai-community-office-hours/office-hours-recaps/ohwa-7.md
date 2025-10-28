@@ -60,7 +60,7 @@ Kicking off number seven, Arbitrage welcomed data scientist [Zen](https://numer.
 
 **Zen:** I use Python. I’m self taught, started a few years ago. I actually used Python maybe ten years ago for various little things when it was easier to use something that already existed. But I’ve used just about every language on the planet. Right now everything I do for Numerai is in Python.
 
-**Arbitrage:** I’ve generally found that to be true. [Except Bor who likes to cut his wild streak and run his own way.](https://medium.com/numerai/office-hours-with-arbitrage-5-421ea23f4eec) But I imagine he’s going to switch to Python, he talked a lot about the simplicity.
+**Arbitrage:** I’ve generally found that to be true. Except Bor who likes to cut his wild streak and run his own way. But I imagine he’s going to switch to Python, he talked a lot about the simplicity.
 
 **Zen:** Bor is \[running] R?
 
@@ -84,7 +84,7 @@ Kicking off number seven, Arbitrage welcomed data scientist [Zen](https://numer.
 
 **Arbitrage:** Alright, so that’s one tip.
 
-**Zen:** Consistency across the validation eras is important. There’s a couple of them that are really tough to get on, and that’s what Nasdaq Jockey does. It might not be so great at some of the eras in the validation data, but it’s really good on a couple of the tough ones. I’m looking forward to that new \[[Validation 2](https://medium.com/numerai/office-hours-with-arbitrage-4-2c5da71ef40)] data because now I’m interested in seeing how I’m going to have to change what I do to tune to the new Validation data set.
+**Zen:** Consistency across the validation eras is important. There’s a couple of them that are really tough to get on, and that’s what Nasdaq Jockey does. It might not be so great at some of the eras in the validation data, but it’s really good on a couple of the tough ones. I’m looking forward to that new \[Validation 2] data because now I’m interested in seeing how I’m going to have to change what I do to tune to the new Validation data set.
 
 **Arbitrage:** I’m going to ask you more about that in a second, but I’m still waiting on tip #3.
 
@@ -140,7 +140,7 @@ Kicking off number seven, Arbitrage welcomed data scientist [Zen](https://numer.
 
 **Zen:** Otherwise, I think the whole [layout of the tournament](https://numer.ai/) with the leaderboard and MMC; it’s all good, it’s just very convoluted right now. It’s hard to tell what we’re going to end up with. You’re setting an objective function for the company — that’s the way I look at it.
 
-It’s like, their objective is to get the best models so that they can create a good metamodel. So they’re tweaking all of our rewards so we give them what they want. I think it’s working, at least it seems to be working. It’s hard to tell. I didn’t like [the answer the other day](https://medium.com/numerai/office-hours-with-arbitrage-6-f0171c6d4c81) when \[Richard] said that he’s okay when people want to stake on the example model. I don’t know, that kind of seemed odd to me.
+It’s like, their objective is to get the best models so that they can create a good metamodel. So they’re tweaking all of our rewards so we give them what they want. I think it’s working, at least it seems to be working. It’s hard to tell. I didn’t like the answer the other day when \[Richard] said that he’s okay when people want to stake on the example model. I don’t know, that kind of seemed odd to me.
 
 **Arbitrage:** I was kind of irked by that too, but if you take a huge step back and think about it, the way it was answered made sense.
 
@@ -184,7 +184,7 @@ It’s like, their objective is to get the best models so that they can create a
 
 **Zen:** Hey, no problem.
 
-**Arbitrage:** It was really helpful. There is a theme, I’ve noticed, with a lot of the people talking about avoiding overfitting, make sure you average across the eras, and also take good notes. That was [Bor’s number one suggestion](https://medium.com/numerai/office-hours-with-arbitrage-5-421ea23f4eec): good note taking. You can see that that’s consistent across users at the top of the leaderboard. I’m really excited about the questions today, because this first one, I’ve thought about for a while.
+**Arbitrage:** It was really helpful. There is a theme, I’ve noticed, with a lot of the people talking about avoiding overfitting, make sure you average across the eras, and also take good notes. That was Bor’s number one suggestion: good note taking. You can see that that’s consistent across users at the top of the leaderboard. I’m really excited about the questions today, because this first one, I’ve thought about for a while.
 
 #### Questions from Slido
 

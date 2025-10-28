@@ -17,7 +17,7 @@ Examples of stock market signals include:
 
 If you're a data provider you can submit unique features directly as signals. If you're a data scientist, you can model unique data to submit predictions as signals. Signals are then scored against our targets and other submitted signals. Signals can be staked with the NMR cryptocurrency to earn (or burn) NMR based on performance.
 
-Numerai Signals is one part of the Numerai master plan to build the world's last hedge fund. Read the [Medium Post](https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c) and watch [the short film](https://youtu.be/GWeC2PK4yXQ) to learn more about how it all fits together.
+Numerai Signals is one part of the Numerai master plan to build the world's last hedge fund. Read the [Blog Post](https://blog.numer.ai/building-the-last-hedge-fund-introducing-numerai-signals) and watch [the short film](https://youtu.be/GWeC2PK4yXQ) to learn more about how it all fits together.
 
 ## Data
 
@@ -149,7 +149,7 @@ No. You can submit your prediction file and receive performance without staking.
 
 **Why shouldn't I just trade on my own?**
 
-You can and we can't stop. However, Numerai is equipped to tell you if your signal is already known and being used by everyone else - it's not very valuable to trade a signal that everyone else is already trading. [Learn more in this Medium post](https://medium.com/numerai/building-the-last-hedge-fund-introducing-numerai-signals-12de26dfa69c).
+You can and we can't stop. However, Numerai is equipped to tell you if your signal is already known and being used by everyone else - it's not very valuable to trade a signal that everyone else is already trading. [Learn more in this blog post](https://blog.numer.ai/building-the-last-hedge-fund-introducing-numerai-signals).
 
 **Can you tell me if my diagnostics are good?**
 
