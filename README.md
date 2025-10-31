@@ -27,8 +27,8 @@ from numerapi import NumerAPI
 import pandas as pd
 
 napi = NumerAPI()
-napi.download_dataset("v5.0/train.parquet")
-training_data = pd.read_parquet("v5.0/train.parquet")
+napi.download_dataset("v5.1/train.parquet")
+training_data = pd.read_parquet("v5.1/train.parquet")
 ```
 
 See the [Data](numerai-tournament/data.md) section for more details.&#x20;
@@ -73,8 +73,8 @@ Here is an example of how you generate and upload live predictions in Python:
 </strong>napi = NumerAPI("[your api public id]", "[your api secret key]")
 
 # Download latest live features
-napi.download_dataset(f"v5.0/live.parquet")
-live_data = pd.read_parquet(f"v5.0/live.parquet")
+napi.download_dataset(f"v5.1/live.parquet")
+live_data = pd.read_parquet(f"v5.1/live.parquet")
 features = [f for f in live_data.columns if "feature" in f]
 live_features = live_data[features]
 

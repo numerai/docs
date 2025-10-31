@@ -12,7 +12,7 @@ The best way to learn about building models on our data is through our tutorials
 
 Numerai Benchmark Models are a set of standard models that the Numerai team built.  Their predictions are then given out every round so that anyone can easily submit them and stake on them if they want. These models are an easy way to compare your model to the current state-of-the-art.
 
-The list of models and their recent performance is here:  [numer.ai/\~benchmark\_models](https://numer.ai/\~benchmark\_models)
+The list of models and their recent performance is here:  [numer.ai/\~benchmark\_models](https://numer.ai/~benchmark_models)
 
 ### Download
 
@@ -21,9 +21,9 @@ The validation and live predictions are available through the [api](https://gith
 ```python
 from numerapi import NumerAPI
 napi = NumerAPI()
-napi.download_dataset("v5.0/train_benchmark_models.parquet", "train_benchmark_models.parquet")
-napi.download_dataset("v5.0/validation_benchmark_models.parquet", "validation_benchmark_models.parquet")
-napi.download_dataset("v5.0/live_benchmark_models.parquet", "live_benchmark_models.parquet")
+napi.download_dataset("v5.1/train_benchmark_models.parquet", "train_benchmark_models.parquet")
+napi.download_dataset("v5.1/validation_benchmark_models.parquet", "validation_benchmark_models.parquet")
+napi.download_dataset("v5.1/live_benchmark_models.parquet", "live_benchmark_models.parquet")
 ```
 
 ### How they are made

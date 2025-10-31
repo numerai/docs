@@ -77,16 +77,16 @@ import pandas as pd
 import json
 
 # Download and read the features json file
-napi.download_dataset("v5.0/features.json")
-feature_metadata = json.load(open("v5.0/features.json"))
+napi.download_dataset("v5.1/features.json")
+feature_metadata = json.load(open("v5.1/features.json"))
 
 # use the small feature set to reduce memory usage
 small_feature_set = feature_metadata["feature_sets"]["small"]
 columns = ["era"]+features+["target"]
 
 # Download and read the training data 
-napi.download_dataset("v5.0/train.parquet")
-training_data = pd.read_parquet("v5.0/train.parquet", columns=columns)
+napi.download_dataset("v5.1/train.parquet")
+training_data = pd.read_parquet("v5.1/train.parquet", columns=columns)
 ```
 
 ### Formats
