@@ -4,7 +4,7 @@ description: Overview of all definitions and vocabulary used to speak about scor
 
 # Definitions
 
-Described below are the vast majority of definitions for functions and statistical tools used to publish scores. Read the open-sourced code at [numerai-tools/scoring](https://github.com/numerai/numerai-tools/blob/master/numerai\_tools/scoring.py). Install the package with:
+Described below are the vast majority of definitions for functions and statistical tools used to publish scores. Read the open-sourced code at [numerai-tools/scoring](https://github.com/numerai/numerai-tools/blob/master/numerai_tools/scoring.py). Install the package with:
 
 ```bash
 > pip install numerai_tools
@@ -13,18 +13,18 @@ Described below are the vast majority of definitions for functions and statistic
 ## Statistics
 
 * tie-broken rank
-  * [percentile rank](https://en.wikipedia.org/wiki/Percentile\_rank) a series
+  * [percentile rank](https://en.wikipedia.org/wiki/Percentile_rank) a series
   * break ties based on id / index
 * tie-kept rank
-  * [percentile rank ](https://en.wikipedia.org/wiki/Percentile\_rank)a series
+  * [percentile rank ](https://en.wikipedia.org/wiki/Percentile_rank)a series
   * for each set of ties set their ranks to the average of that set's tie-broken ranks
 * correlation
   * correlation coefficient between two series
 * spearman correlation
-  * [spearman correlation coefficient](https://en.wikipedia.org/wiki/Spearman's\_rank\_correlation\_coefficient) between live target and predictions
+  * [spearman correlation coefficient](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient) between live target and predictions
   * different than tie-broken-rank correlation b/c spearman ranking keeps ties by assigning mean rank
 * pearson correlation
-  * [pearson correlation coefficient](https://en.wikipedia.org/wiki/Pearson\_correlation\_coefficient) between live target and predictions
+  * [pearson correlation coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) between live target and predictions
   * different that other correlations b/c pearson does not use ranking
 * tie-broken-rank correlation
   * correlation between live target and tie-broken ranked predictions (w/ sorted index, no nans)
@@ -56,7 +56,7 @@ Described below are the vast majority of definitions for functions and statistic
   * given target vector t, meta model vector m, and prediction vector s, find how much s contributes to m’s correlation with t:
     * m\` = tie-kept rank then gaussianize m
     * s\` = tie-kept rank then gaussianize s
-    * s\`\` = orthogonalize s\` with respect to m
+    * s\`\` = orthogonalize s\` with respect to m\`
   * get the covariance of s\`\` and t
 
 ### Factors & Features
