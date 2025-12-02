@@ -107,7 +107,7 @@ If, at any point, you would like to disable your uploaded model:
 
 ### What versions of Python/packages work?
 
-The default version is Python 3.11, but Python >=3.10 and <= 3.12 is supported and can be selected when uploading a model.&#x20;
+The default version is Python 3.11, but Python >=3.10 and <= 3.12 is supported and can be selected when uploading a model.
 
 To see which package versions are used in the Model Uploads environment, see the Numerai Predict requirements.txt: [https://github.com/numerai/numerai-predict/blob/master/requirements.txt](https://github.com/numerai/numerai-predict/blob/master/requirements.txt)
 
@@ -135,6 +135,16 @@ No, to avoid race conditions after you upload your model, you cannot configure a
 ### Does Numerai have full access to my trained model?
 
 Yes, Numerai has access to and can unpickle your trained model. If you are not comfortable with this, you should consider using [another automation solution](https://docs.numer.ai/numerai-tournament/submissions#automation).
+
+### Can I re-download my pickled model?
+
+Yes, on the [submissions page](https://numer.ai/submissions), on the right, click the Cloud Icon > "Settings" > "Download"
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-12-02 at 09.42.23.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-12-02 at 09.42.40.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Terms of service
 
