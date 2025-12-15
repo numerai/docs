@@ -24,8 +24,8 @@ You can get started with the the Numerai Data API:
 import pandas as pd
 from numerapi import CryptoAPI
 napi = CryptoAPI()
-napi.download_dataset("crypto/v1.0/train_targets.parquet")
-training_data = pd.read_parquet("crypto/v1.0/train_targets.parquet")
+napi.download_dataset("crypto/v2.0/train_targets.parquet")
+training_data = pd.read_parquet("crypto/v2.0/train_targets.parquet")
 ```
 
 **You will need to acquire distinct and unique crypto market data to generate a high quality signal.** There are a number of other data providers you can also use to get started such as [Messari](https://messari.io/api) and [CoinMarketCap](https://coinmarketcap.com/api)<mark style="background-color:yellow;">.</mark>
@@ -52,8 +52,8 @@ def generate_training_features(df: pd.DataFrame) -> List[str]:
 
 
 # Historical targets file contains ["symbol", "date", "target"] columns
-napi.download_dataset("crypto/v1.0/train_targets.parquet")
-train_df = pd.read_parquet("crypto/v1.0/train_targets.parquet")
+napi.download_dataset("crypto/v2.0/train_targets.parquet")
+train_df = pd.read_parquet("crypto/v2.0/train_targets.parquet")
 
 # Add training features for each (symbol, date)
 feature_cols = generate_training_features(train_df)
@@ -92,8 +92,8 @@ def generate_features(df: pd.DataFrame):
 napi = NumerAPI("[your api public id]", "[your api secret key]")
 
 # Download latest live universe
-napi.download_dataset("crypto/v1.0/live_universe.parquet")
-live = pd.read_parquet("crypto/v1.0/live_universe.parquet")
+napi.download_dataset("crypto/v2.0/live_universe.parquet")
+live = pd.read_parquet("crypto/v2.0/live_universe.parquet")
 
 # Generate features for the live universe
 generate_features(live)
