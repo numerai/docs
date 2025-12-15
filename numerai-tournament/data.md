@@ -76,17 +76,19 @@ The Numerai dataset is made up of many different files in a few different format
 import pandas as pd
 import json
 
+VERSION = "v5.2"
+
 # Download and read the features json file
-napi.download_dataset("v5.1/features.json")
-feature_metadata = json.load(open("v5.1/features.json"))
+napi.download_dataset(f"{VERSION}/features.json")
+feature_metadata = json.load(open(f"{VERSION}/features.json"))
 
 # use the small feature set to reduce memory usage
 small_feature_set = feature_metadata["feature_sets"]["small"]
 columns = ["era"]+features+["target"]
 
 # Download and read the training data 
-napi.download_dataset("v5.1/train.parquet")
-training_data = pd.read_parquet("v5.1/train.parquet", columns=columns)
+napi.download_dataset(f"{VERSION}/train.parquet")
+training_data = pd.read_parquet(f"{VERSION}/train.parquet", columns=columns)
 ```
 
 ### Formats

@@ -21,9 +21,10 @@ The validation and live predictions are available through the [api](https://gith
 ```python
 from numerapi import NumerAPI
 napi = NumerAPI()
-napi.download_dataset("v5.1/train_benchmark_models.parquet", "train_benchmark_models.parquet")
-napi.download_dataset("v5.1/validation_benchmark_models.parquet", "validation_benchmark_models.parquet")
-napi.download_dataset("v5.1/live_benchmark_models.parquet", "live_benchmark_models.parquet")
+VERSION = "v5.2"
+napi.download_dataset(f"{VERSION}/train_benchmark_models.parquet", "train_benchmark_models.parquet")
+napi.download_dataset(f"{VERSION}/validation_benchmark_models.parquet", "validation_benchmark_models.parquet")
+napi.download_dataset(f"{VERSION}/live_benchmark_models.parquet", "live_benchmark_models.parquet")
 ```
 
 ### How they are made
