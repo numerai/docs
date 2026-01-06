@@ -113,7 +113,7 @@ To connect your Discord account:
 3. You’ll be redirect to the Discord authorization page
 4. Authorize the Numerai Discord bot, named ‘The Craibinator’, to link your account.
 
-<figure><img src="https://lh7-us.googleusercontent.com/_WDG-6YMi5LLgz3bjkKj3R0bYRCE3T6toeA8eskjgJJJgM-boH3xzfw_sMXpUpdCnVC7xDRhyvEiqpaeeF3EaLshmyXJOAVtuh7tBemQji5yhRot6lojzLu0II9abSINiaL1gxpyApaAMRZuzBb-Uco" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-01-06 at 10.39.59.png" alt="" width="375"><figcaption></figcaption></figure>
 
 Once authorized, your Grandmasters titles will automatically appear as roles in your Discord account. Additionally, your Discord profile will be visible on your Numerai profile page, enhancing your presence in the community.
 
