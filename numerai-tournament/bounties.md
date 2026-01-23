@@ -116,12 +116,15 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 Reports must include:
 
 * An explanation of the exploit or vulnerability.
+* A link to the page or endpoint in question.
 * The concrete impact this could have on Numerai or its users.
 * A discussion on how easily this exploit or vulnerability could be used.
 * A step-by-step guide on how to execute an attack.
 * A proof-of-concept video showing how the attack would work (if the attack impacts production services or users other than yourself, the report will be ineligible for a bounty)
 
 Once you have compiled your report, send an email to <mark style="color:blue;">security@numer.ai</mark> with the subject "\[Security Report] Short Title of Report" where "Short Title of Report" is a clear and concise name for the exploit or vulnerability.
+
+We **will not** respond to emails sent through `bcc`. The report must have <mark style="color:blue;">security@numer.ai</mark> in the `to` field.
 
 ### How to give feedback and suggestions
 
