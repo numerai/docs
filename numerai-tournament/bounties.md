@@ -124,7 +124,7 @@ Reports must include:
 
 Once you have compiled your report, send an email to <mark style="color:blue;">security@numer.ai</mark> with the subject "\[Security Report] Short Title of Report" where "Short Title of Report" is a clear and concise name for the exploit or vulnerability.
 
-We **will not** respond to emails sent through `bcc`. The report must have <mark style="color:blue;">security@numer.ai</mark> in the `to` field.
+We **will not** respond to emails sent through `bcc`. The report must have <mark style="color:blue;">security@numer.ai</mark> in the `to` field of the email.
 
 ### How to give feedback and suggestions
 
