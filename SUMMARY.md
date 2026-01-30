@@ -18,6 +18,7 @@
   * [True Contribution (TC)](numerai-tournament/scoring/true-contribution-tc.md)
   * [Grandmasters & Seasons](numerai-tournament/scoring/grandmasters-and-seasons.md)
 * [Staking](numerai-tournament/staking.md)
+* [MCP](numerai-tournament/mcp.md)
 * [Bounties](numerai-tournament/bounties.md)
 
 ## Numerai Signals
