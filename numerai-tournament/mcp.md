@@ -81,7 +81,7 @@ Whether you are using a previously generated API key or creating a new MCP key, 
 This can be stored in your terminal environment using the following command:
 
 ```
-export NUMERAI_AUTH="PUBLIC_KEY\$PRIVATE_KEY"
+export NUMERAI_MCP_AUTH="Token PUBLIC_KEY\$PRIVATE_KEY"
 ```
 
 {% hint style="warning" %}
