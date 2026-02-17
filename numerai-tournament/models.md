@@ -188,5 +188,5 @@ The following models are on the Benchmark Models page, but their predictions are
 
 ## Community Models
 
-The Numerai community has also developed [Numerbay](https://numerbay.ai/), a website to buy and sell models built by and for the Numerai community. Keep in mind that Numerai does not gaurantee the performance of any model listed on Numerbay,&#x20;
+The Numerai community has also developed [Numerbay](https://numerbay.ai/), a website to buy and sell models built by and for the Numerai community. Numerbay is an independent, community-operated platform. Numerai does not endorse, review, verify, or guarantee the performance, accuracy, or reliability of any model listed on Numerbay. Any performance information is provided by third parties and may not be indicative of future results. Participation involves risk, and users are solely responsible for their decisions and due diligence.
 
