@@ -6,6 +6,32 @@
 * [Cursor](https://cursor.com/home)
 * [Claude Code](https://claude.com/product/claude-code)
 
+## Authenticating
+
+Numerai MCP by leveraging the normal Numerai API Key which can be created by going to your [Account Settings](https://numer.ai/account) and scrolling down to the Automation section.
+
+<figure><img src="https://1171682275-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LmGruQ_-ZYj9XMQUd5x%2Fuploads%2FbGk8Q48y4gxS5xteyvfX%2FScreenshot%202026-01-29%20at%201.05.48%E2%80%AFAM.png?alt=media&#x26;token=c5ce5ec8-2680-434f-a65f-fe6daf3bc96c" alt=""><figcaption></figcaption></figure>
+
+We now have a new button for **Create MCP Key**, the only difference from a normal API key is we automatically select all of the scopes that are needed for the MCP to have full functionality. Currently, these scopes are:
+
+* Upload submissions and pickled models
+* Download previous submissions and pickled models
+* View historical submission info
+* View user info, (e.g. balance, withdrawal history)
+
+Whether you are using a previously generated API key or creating a new MCP key, you will end up having a **PUBLIC\_KEY** and **PRIVATE\_KEY**. These need to be stored in an environment variable called `NUMERAI_MCP_AUTH` in the following format: `NUMERAI_MCP_AUTH="Token PUBLIC_KEY$PRIVATE_KEY"`&#x20;
+
+This can be stored in your terminal environment using the following command:
+
+```bash
+export NUMERAI_MCP_AUTH="Token PUBLIC_KEY\$PRIVATE_KEY"
+```
+
+{% hint style="warning" %}
+In many operating systems, the `$` character needs to be escaped. This is why in the above export command there is a `\$` between the public and private keys
+{% endhint %}
+
+
 ## Installing
 
 #### Codex CLI
@@ -47,46 +73,13 @@ Installing the MCP in cursor requires modifying the `~/.cursor/mcp.json` file, a
 
 #### Claude Code
 
-Installing the MCP to Claude Code also involves editing the `~/.config/claude/mcp.json` file:
+Installing the MCP to Claude Code can be done by running this command:
 
-```json
-{
-  "servers": {
-    "numerai": {
-      "transport": "sse",
-      "url": "https://api-tournament.numer.ai/mcp/sse",
-      "headers": {
-        "Authorization": "Token ${NUMERAI_MCP_AUTH}"
-      }
-    }
-  }
-}
+**Note: you must `export NUMERAI_MCP_AUTH` before running this command, otherwise the MCP will be added without the proper authentication header and will not work.**
+
+```bash
+claude mcp add --transport http numerai https://api-tournament.numer.ai/mcp --header "Authorization: Token ${NUMERAI_MCP_AUTH}"
 ```
-
-## Authenticating
-
-Numerai MCP by leveraging the normal Numerai API Key which can be created by going to your [Account Settings](https://numer.ai/account) and scrolling down to the Automation section.
-
-<figure><img src="https://1171682275-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LmGruQ_-ZYj9XMQUd5x%2Fuploads%2FbGk8Q48y4gxS5xteyvfX%2FScreenshot%202026-01-29%20at%201.05.48%E2%80%AFAM.png?alt=media&#x26;token=c5ce5ec8-2680-434f-a65f-fe6daf3bc96c" alt=""><figcaption></figcaption></figure>
-
-We now have a new button for **Create MCP Key**, the only difference from a normal API key is we automatically select all of the scopes that are needed for the MCP to have full functionality. Currently, these scopes are:
-
-* Upload submissions and pickled models
-* Download previous submissions and pickled models
-* View historical submission info
-* View user info, (e.g. balance, withdrawal history)
-
-Whether you are using a previously generated API key or creating a new MCP key, you will end up having a **PUBLIC\_KEY** and **PRIVATE\_KEY**. These need to be stored in an environment variable called `NUMERAI_MCP_AUTH` in the following format: `NUMERAI_MCP_AUTH="Token PUBLIC_KEY$PRIVATE_KEY"`&#x20;
-
-This can be stored in your terminal environment using the following command:
-
-```
-export NUMERAI_MCP_AUTH="Token PUBLIC_KEY\$PRIVATE_KEY"
-```
-
-{% hint style="warning" %}
-In many operating systems, the `$` character needs to be escaped. This is why in the above export command there is a `\$` between the public and private keys
-{% endhint %}
 
 ## Usage
 
