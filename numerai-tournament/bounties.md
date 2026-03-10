@@ -103,6 +103,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
 * Information from non-sensitive public APIs used in Numerai's public websites such as the APIs serving numer.ai, signals.numer.ai, crypto.numer.ai, forum.numer.ai, etc.
   * This includes GraphQL introspection.
 * Lack of password re-input for actions that already require authentication
+* Sensitive data in `LocalStorage` without a clearly proven attack shown
 * Significant lapse in user judgement:
   * Following user-driven links (e.g. users bio links, forum post links, etc.)
   * Gaining physical access to a victim’s computer/device
