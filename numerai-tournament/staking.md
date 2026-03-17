@@ -47,11 +47,7 @@ Head over to [numer.ai/staking](https://numer.ai/staking), and click on the "man
 
 This will open the Stake Modal. You can use this to stake NMR from your wallet on your model:
 
-<div align="center">
-
-<figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure></div>
 
 ## Releasing Stake
 
@@ -66,10 +62,12 @@ Your payout is a primarily a function of your scores. If you have a positive sco
 The maximum payout or burn per round is capped at ±5% and uses the following formula:
 
 ```
-payout = stake * clip(payout_factor * (corr * 0.5 + mmc * 2), -0.05, 0.05) 
+score = corr20 * corr_multiplier + mmc20 * mmc_multiplier
+payout = stake * clip(payout_factor * (score), -0.05, 0.05) 
 ```
 
-`stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstaked amounts that are pending release, and is set to 0 if you have no valid submission for a round.
+* `corr20` and `mmc20` are the 20-day [CORR](scoring/correlation-corr.md) and [MMC](scoring/meta-model-contribution-mmc.md) scores respectively. These are multiplied by their relevant multipliers, which don't change often and can be checked on a round-by-round basis on your model's detail page.
+* `stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstaked amounts that are pending release, and is set to 0 if you have no valid submission for a round.
 
 #### The Payout Factor
 
