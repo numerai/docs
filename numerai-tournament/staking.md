@@ -66,7 +66,7 @@ score = corr20 * corr_multiplier + mmc20 * mmc_multiplier
 payout = stake * clip(payout_factor * (score), -0.05, 0.05) 
 ```
 
-* `corr20` and `mmc20` are the 20-day [CORR](scoring/correlation-corr.md) and [MMC](scoring/meta-model-contribution-mmc.md) scores respectively. These are multiplied by their relevant multipliers, which don't change often and can be checked on a round-by-round basis on your model's detail page.
+* `corr20` and `mmc20` are the 20-day [CORR](scoring/correlation-corr.md) and [MMC](scoring/meta-model-contribution-mmc.md) scores respectively. These are multiplied by their relevant multipliers, which don't change often and can be checked on a round-by-round basis (see the latest round [here](https://numer.ai/round/latest)).
 * `stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstaked amounts that are pending release, and is set to 0 if you have no valid submission for a round.
 
 #### The Payout Factor
