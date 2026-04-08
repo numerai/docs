@@ -18,9 +18,7 @@ The term 'Canon scores' refers to the standardized metrics used to unify differe
 
 In the context of the Numerai tournament, Canonical Scores (or “Canon Scores”) are particularly relevant. For example, the CORR score, which is a payout metric, has undergone updates. Initially, the payout score was 'CORR20' until round 484. It evolved into 'CORR20v2' starting from round 485. The 'Canon CORR' score accounts for these changes by combining them into a unified score — it is 'CORR20' for rounds up to and including 484 and 'CORR20v2' for rounds thereafter.
 
-The 'TC' score has remained consistent throughout the tournament's history, meaning 'Canon TC' and 'TC' are equivalent.
-
-For the 2022 and 2023 seasons, scores are based on Canon TC and Canon CORR. However, the scoring criteria for future seasons may be revised.
+The goal of canon scores are to offer a single "official" score that was used at a given point in time.
 
 ## Stake-weighted Average (SWA) Scores
 
