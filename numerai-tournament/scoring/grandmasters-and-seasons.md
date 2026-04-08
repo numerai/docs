@@ -14,11 +14,9 @@ At the end of the season when the last round has been resolved and rankings fina
 
 ## Canon Scores
 
-The term 'Canon scores' refers to the standardized metrics used to unify different scoring versions into a single, consistent performance measure.
+Canonical Scores (or “Canon Scores”) are the official score values for a given round. These scores are canonical because they settle different scoring versions into a single, consistent metric.
 
-In the context of the Numerai tournament, Canonical Scores (or “Canon Scores”) are particularly relevant. For example, the CORR score, which is a payout metric, has undergone updates. Initially, the payout score was 'CORR20' until round 484. It evolved into 'CORR20v2' starting from round 485. The 'Canon CORR' score accounts for these changes by combining them into a unified score — it is 'CORR20' for rounds up to and including 484 and 'CORR20v2' for rounds thereafter.
-
-The goal of canon scores are to offer a single "official" score that was used at a given point in time.
+In the context of the Numerai tournament, canon scores are particularly relevant. For example, the payout score "CORR20" has undergone many updates. Initially, the payout score used simple spearman correlation, then it evolved to start using the modern "[numerai\_corr](correlation-corr.md)". Thus, the 'Canon CORR' score handles these version changes and provides a single, seamless score that was the official score for that point in time.
 
 ## Stake-weighted Average (SWA) Scores
 
