@@ -28,11 +28,7 @@ napi.download_dataset("crypto/v2.0/train.parquet")
 training_data = pd.read_parquet("crypto/v2.0/train.parquet")
 ```
 
-{% hint style="info" %}
-If you are migrating from v1.0 to v2.0, make sure to upgrade numerapi to the latest version:
-
-`pip install --upgrade numerapi`
-{% endhint %}
+> **Note:** If you are migrating from v1.0 to v2.0, make sure to upgrade numerapi to the latest version: `pip install --upgrade numerapi`
 
 **You will need to acquire distinct and unique crypto market data to generate a high quality signal.** There are a number of other data providers you can also use to get started such as [Messari](https://messari.io/api) and [CoinMarketCap](https://coinmarketcap.com/api)<mark style="background-color:yellow;">.</mark>
 
