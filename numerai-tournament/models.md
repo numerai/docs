@@ -4,9 +4,8 @@
 
 The best way to learn about building models on our data is through our tutorials:
 
-1. [Hello Numerai](https://numer.ai/tutorial/hello-numerai)
-2. [Feature Neutralization](https://numer.ai/tutorial/feature-neutralization)
-3. [Target Ensembles](https://numer.ai/tutorial/target-ensemble)
+1. [Tournament Basics](https://numer.ai/tutorial/tournament-basics)
+2. [Optimize Your Models](https://numer.ai/tutorial/optimize-your-models)
 
 ## Benchmark Models
 
@@ -178,7 +177,7 @@ The following models are on the Benchmark Models page, but their predictions are
 
 **INTEGRATION\_TEST** - Submits our favorite model at the time. This has transitions through V2, V3, and V4 example predictions. It is now v5\_lgbm\_ct\_blend.
 
-**NB\_HELLO\_NUMERAI** - Submits the model created by the default Hello Numerai tutorial notebook.
+**NB\_BASIC** - Submits the model created by the default Tournament Basics notebook.
 
 **NB\_FEATURE\_NEUTRAL** - Submits the model created by the feature neutralization tutorial notebook.
 
