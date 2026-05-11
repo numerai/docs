@@ -16,7 +16,7 @@ You can see the latest universe by downloading the [live.parquet file](data.md#f
 
 When you submit a signal, you must include at least two columns:
 
-* A `cusip`, `sedol`, `bloomberg_ticker`, `composite_figi`, or `numerai_ticker` column - values must be valid tickers associated with the ticker type in the header.
+* A `sedol`, `bloomberg_ticker`, `composite_figi`, or `numerai_ticker` column - values must be valid tickers associated with the ticker type in the header.
 * A `signal` column - values must be between 0 and 1 (exclusive).
 
 Additionally, for a `live` submission to be valid:
