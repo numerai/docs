@@ -21,19 +21,17 @@ Each round goes through 4 stages over the span of a month:
 * Score: the days that submissions are given scores
 * Resolve: when final scores and payouts are resolved
 
-A new round starts each day Tuesday through Saturday. Each round spans about one month, so with 5 new rounds starting each week, we end up with an overlapping round schedule. At any given time, we can have up to 25 overlapping rounds.  &#x20;
-
-Here is a visualization of the schedule of tournament rounds:
+A new round starts each day Tuesday through Saturday. A round spans 24 business days, or about one month. Since a new round is created on each of those days, we end up with 24 overlapping rounds at any given time. Here is a visualization of the schedule of tournament rounds:
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Visual representation of Rounds 453 - 477 overlapping</p></figcaption></figure>
 
-Notice that rounds starting Saturday occupy the full weekend - opening on Saturday and closing on Monday - whereas Rounds starting Tuesday through Friday are open only for 1 hour. Also notice that there are no scores released on Sundays and Mondays.
-
-We generally expect rounds to follow this schedule:
+Rounds starting Tuesday through Friday are open only for 1 hour, but rounds starting Saturday close on Sunday. Also notice that there are no scores released on Sundays and Mondays. We generally expect rounds to follow this schedule:
 
 <table><thead><tr><th width="99">Round</th><th width="148">Open Time*</th><th width="148">Close Time*</th><th width="125">Scores Start</th><th>Resolve Time</th></tr></thead><tbody><tr><td>Tue</td><td>Tue 12:00 UTC</td><td>Tue 13:00 UTC</td><td>Next Sat.</td><td>~31 days later (Fri.)</td></tr><tr><td>Wed</td><td>Wed 12:00 UTC</td><td>Wed 13:00 UTC</td><td>Next Tue.</td><td>~31 days later (Sat.)</td></tr><tr><td>Thu</td><td>Thu 12:00 UTC</td><td>Thu 13:00 UTC</td><td>Next Wed.</td><td>~33 days later (Tue.)</td></tr><tr><td>Fri</td><td>Fri 12:00 UTC</td><td>Fri 13:00 UTC</td><td>Next Thu.</td><td>~33 days later (Wed.)</td></tr><tr><td>Sat</td><td>Sat 12:00 UTC</td><td>Sun 14:00 UTC</td><td>Next Fri.</td><td>~33 days later (Thu.)</td></tr></tbody></table>
 
-\*Actual open and close times may vary from round to round, but we will always maintain a minimum 1 hour submission window and guarantee that Rounds will **open** **no earlier than 12:00 UTC and end no earlier than 13:00 UTC.**
+{% hint style="info" %}
+Actual open and close times may vary from round to round, but we will always maintain a minimum 1 hour submission window and guarantee that Rounds will **open** **no earlier than 12:00 UTC and end no earlier than 13:00 UTC.** The phrase **"no earlier"** implies rounds actual start/end times can be later.
+{% endhint %}
 
 ## Making a Submission
 
@@ -95,11 +93,11 @@ Read more about this on the [Numerai-CLI Github page](https://github.com/numerai
 If you prefer to keep things on-premises you can go with one of these. They are relatively simple and cheap, but running your own local computer comes with the burden of ensuring reliability and running your own tech support.
 
 * [CRON example](https://forum.numer.ai/t/automated-submissions-from-bash-shell-script/5806) - scheduling your script to run regularly and detect when to submit
-* [NGROK example](https://github.com/Raynos/numerai-example/tree/ngrok-test)  - setup a webhook for Numerai to notify you when to submit
+* [NGROK example](https://github.com/Raynos/numerai-example/tree/ngrok-test) - setup a webhook for Numerai to notify you when to submit
 
 ## Queued and Delayed Submissions
 
-If you miss the submission window of the current round, your submission will be automatically "queued" for the upcoming round.&#x20;
+If you miss the submission window of the current round, your submission will be automatically "queued" for the upcoming round.
 
 Queued submissions turn into on-time submissions immediately after the upcoming round opens. Since the ids of the live data changes every round, Numerai will automatically map your prediction's ids from the previous round to the latest round's ids.
 
