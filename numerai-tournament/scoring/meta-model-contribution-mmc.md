@@ -65,12 +65,12 @@ def contribution(
 
 ## BMC in Diagnostics
 
-In Diagnostics, BMC is calculated not against the stake-weighted Benchmark Models, but instead against a single model - the benchmark model with the highest stake (see [here](https://numer.ai/\~benchmark\_models)). There is a difference between BMC on the Leaderboard and BMC in Diagnostics because:
+In Diagnostics, BMC is calculated not against the stake-weighted Benchmark Models, but instead against a single model - the benchmark model trained on the payout target (see [here](https://numer.ai/~benchmark_models)). There is a difference between BMC on the Leaderboard and BMC in Diagnostics because:
 
 * The Leaderboard (LB) show **live performance** - this means the BMC calculated here is in the context of what Numerai and data scientists knew at the time so it's fair to judge models against stake-weighted benchmark models **at the time**. For example, early rounds the only benchmark model were the v2 example predictions, but recent rounds have more sophisticated models.
 * Diagnostics show **validation performance** - this means you might be using better modeling techniques with better data and better targets and it would be misleading to judge you against example predictions from the v2 dataset. Instead, we should be judging you against the latest greatest model we can make.
 
-If you still aren't sure why BMC is different between the LB and diagnostics, please take a look at our [target ensemble notebook](https://github.com/numerai/example-scripts/blob/master/target\_ensemble.ipynb) which touches on these ideas.
+If you still aren't sure why BMC is different between the LB and diagnostics, please take a look at our [target ensemble notebook](https://github.com/numerai/example-scripts/blob/master/target_ensemble.ipynb) which touches on these ideas.
 
 ## Discussion
 
