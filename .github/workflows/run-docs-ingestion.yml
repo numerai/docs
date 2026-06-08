@@ -1,0 +1,38 @@
+name: Run New User Agent Docs Ingestion
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: run-docs-ingestion-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: us-west-2
+  AWS_ACCOUNT_ID: "074996771758"
+  INGEST_STATE_MACHINE_ARN: arn:aws:states:us-west-2:074996771758:stateMachine:new-user-agent-ingest-prod
+
+jobs:
+  run-docs-ingestion:
+    name: Run New User Agent Docs Ingestion
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7 # v6.0.0
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/github-actions
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Start New User Agent Docs Ingestion
+        run: |
+          aws stepfunctions start-execution \
+            --state-machine-arn "$INGEST_STATE_MACHINE_ARN" \
+            --input '{"command":[]}'
