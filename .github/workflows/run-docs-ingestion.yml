@@ -28,7 +28,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7 # v6.0.0
         with:
-          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/github-actions
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/docs-ingestion-github-actions
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Start New User Agent Docs Ingestion
