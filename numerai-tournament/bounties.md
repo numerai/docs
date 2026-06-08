@@ -129,6 +129,4 @@ We **will not** respond to emails.
 
 ### How to give feedback and suggestions
 
-Message us on the [Discord](https://discord.gg/numerai).
-
-If you are going for a large bounty, it would be helpful if you wrote up your idea in a document (pdf or google docs) or a notebook (google colab, github).
+Feedback and suggestions are also welcome and can be submitted through the same process as above. We will review all feedback and suggestions but we will not be able to respond to all of them. If your feedback or suggestion leads to a significant improvement to Numerai, we may give you a bounty at our discretion.
