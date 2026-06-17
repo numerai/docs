@@ -108,6 +108,7 @@ Do not submit the following as examples of vulnerabilities. We do not consider t
   * Following user-driven links (e.g. users bio links, forum post links, etc.)
   * Gaining physical access to a victim’s computer/device
   * Phishing, social engineering, or public computer concerns
+  * A user publishing their own sensitive information publicly (e.g. on a forum post, a public Github repo, etc.)
 * Our Forum:
   * Using basic HTML tags such as headers (\<h1>) or anchors (\<a>) on our forum
   * Any security issues with the Numerai Forum - we use the Discourse platform, so any security issues should be logged with them. See [here](https://github.com/discourse/discourse/security) for details.
