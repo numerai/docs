@@ -22,44 +22,36 @@ NMR is the cryptocurrency that powers staking and payouts on Numerai.
 * You can read more about NMR on Github: [https://github.com/erasureprotocol/NMR](https://github.com/erasureprotocol/NMR)
 * You can see token statistics here: [https://numer.ai/nmr](https://numer.ai/nmr)
 
-To stake NMR on your model you must first acquire NMR, then deposit it into your [Numerai wallet](https://numer.ai/wallet). When you are ready, you can withdraw it to a given eth address.
+To stake NMR on your model you must first acquire NMR, then use the [Atomic Blockchain Staking](atomic-blockchain-staking.md) flow to fund your Privy embedded wallet, enable your allocation strategy, and configure per-model stake settings.
 
-## Depositing NMR
+## Getting NMR
 
 We recommend two places for buying NMR&#x20;
 
 * [Coinbase](https://www.coinbase.com/price/numeraire) - a safe and easy place to buy NMR with USD, GBP, EUR or Bitcoin. A good place to start if you are new to crypto. Availability depends on your region.
 * [Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0x1776e1f26f98b1a5df9cd347953a26dd3cb46671) - a decentralized exchange you can use to swap Ethereum based tokens like ETH or USDC for NMR. Requires you to bring your own wallet like MetaMask. Great for DeFi enthusiasts.
 
-Once you own NMR, use the [Wallet](https://numer.ai/wallet) address to send NMR to your Numerai Wallet:
+Once you own NMR, send it to the Privy embedded wallet address shown on the [V3 Stakes](https://numer.ai/dashboard/v3-stakes) page.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>numer.ai/wallet</p></figcaption></figure>
+## Atomic Blockchain Staking
 
-### Restrictions
+Current staking setup and stake management are handled through the standalone [Atomic Blockchain Staking](atomic-blockchain-staking.md) flow. Use that page for:
 
-To prevent fraud and money laundering, we place withdrawal restrictions on new accounts. In order to withdraw from your Numerai Wallet, your account must either be 30 days old or you must withdraw more than 0.1 NMR. This means if you just created your account and deposit 0.1 NMR, you cannot withdraw this amount until either your account reaches 30 days of age or you deposit more NMR first.
+* enabling and funding your allocation strategy.
+* configuring each model's per-round stake.
+* choosing Compound or Fixed mode.
+* understanding atomic per-round locks, claims, and migration.
+* reducing future stake exposure.
+* withdrawing idle strategy NMR.
+* using the staking v3 API fields for automation.
 
-## Increasing Stake
+## Legacy Continuous Staking Payouts
 
-Head over to [numer.ai/staking](https://numer.ai/staking), and click on the "manage stake" button next to the model on which you would like to stake:&#x20;
+Your payout is primarily a function of your scores. If you have a positive score you will get a payout. If you have a negative score a portion of your stake will burn.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-03-22 at 1.56.52 PM.png" alt=""><figcaption><p>If you're on a smaller screen, you may need to scroll to find this button.</p></figcaption></figure>
+The formula below describes the legacy continuous staking payout function. Atomic Blockchain Staking removes continuous-stake overlap leverage and the legacy per-round clip; see [Atomic Blockchain Staking](atomic-blockchain-staking.md#claims-and-payouts).
 
-This will open the Stake Modal. You can use this to stake NMR from your wallet on your model:
-
-<div align="center"><figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure></div>
-
-## Releasing Stake
-
-Staked NMR will remain locked until you release it back to your wallet, which takes 1 month. Specifically, the NMR will be released at the resolution of your last active round at the time of the request. While pending release, the unstaked amount may still be subject to burns but will not count towards upcoming payouts.
-
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
-
-## Payouts
-
-Your payout is a primarily a function of your scores. If you have a positive score you will get a payout. If you have a negative score a portion of your stake will burn.
-
-The maximum payout or burn per round is capped at ±5% and uses the following formula:
+The maximum payout or burn per round is capped at +/-5% and uses the following formula:
 
 ```
 score = corr20 * corr_multiplier + mmc20 * mmc_multiplier
@@ -67,7 +59,7 @@ payout = stake * clip(payout_factor * (score), -0.05, 0.05)
 ```
 
 * `corr20` and `mmc20` are the 20-day [CORR](scoring/correlation-corr.md) and [MMC](scoring/meta-model-contribution-mmc.md) scores respectively. These are multiplied by their relevant multipliers, which don't change often and can be checked on a round-by-round basis (see the latest round [here](https://numer.ai/round/latest)).
-* `stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include any unstaked amounts that are pending release, and is set to 0 if you have no valid submission for a round.
+* `stake` is your model's stake value at the `close` of the round. This is also referred to as the stake value `at-risk` for a round. Your stake value `at-risk` for a round does not include idle strategy NMR, and is set to 0 if you have no valid submission for a round.
 
 #### The Payout Factor
 
@@ -89,11 +81,7 @@ Here is an example of what the Numerai payout factor looks as stake grows:
 
 ## Withdrawing NMR
 
-When you are ready to withdraw NMR from your Numerai Wallet visit the [Wallet Page](https://numer.ai/wallet), specify an amount, and copy your destination address into the relevant text box:
-
-<figure><img src="../.gitbook/assets/Screenshot 2024-03-13 at 4.42.37 PM.png" alt="" width="375"><figcaption></figcaption></figure>
-
-Finally, click "Next" and wait for the page to show a confirmation. It may take a few moments to complete the transaction, so please be patient.
+For Atomic Blockchain Staking, see [Withdrawing NMR](atomic-blockchain-staking.md#withdrawing-nmr). Active round stake remains locked until settlement.
 
 ## Tax Reporting
 
