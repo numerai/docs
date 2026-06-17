@@ -1,6 +1,6 @@
 # Atomic Blockchain Staking
 
-Atomic Blockchain Staking is Numerai's current blockchain-native staking system. It is also referred to as staking v3 in API and contract names. It locks NMR atomically per round, tracks each model's stake independently, and lets resolved stakes be claimed when a round resolves.
+Atomic Blockchain Staking is Numerai's new blockchain-native staking system. It is also referred to as staking v3 in API and contract names. It locks NMR atomically per round, tracks each model's stake independently, and lets resolved stakes be claimed when a round resolves.
 
 You can interact with Atomic Blockchain Staking manually through the contracts and API, or automate staking with an account allocation strategy. Most users should use the Dashboard > **V3 Stakes** page, which manages the Privy embedded wallet and allocation strategy flow.
 
