@@ -75,3 +75,9 @@ Once a tournament's Atomic Blockchain Staking flag is enabled, the legacy V2 sta
 ## Withdrawing NMR
 
 When you are ready to withdraw idle NMR, first withdraw it from the allocation strategy to your Privy embedded wallet from the V3 Stakes page. You can then use the embedded wallet controls to send NMR to an external Ethereum address. Active round stake remains locked until settlement.
+
+## Official Contract Addresses
+
+| Tournament | Staking                                      | Strategy Factory                             | Batch Invoker                                | Credits                                      |
+| ---------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
+| 12         | `0x82fc3999151f2a7b0a643ee0156790b19e10cd91` | `0x932387f83b45ee29f8c34771cab1227a1fcca0c7` | `0x586b44b0dd165b8c31ba5ad3560fd154c354cbce` | `0x2664303a33034977016def8787de346f6ed391e3` |
