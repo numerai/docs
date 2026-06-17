@@ -78,7 +78,7 @@ When you are ready to withdraw idle NMR, first withdraw it from the allocation s
 
 ## Official Contracts
 
-* Staking Contract: [https://etherscan.io/address/0x82fc3999151f2a7b0a643ee0156790b19e10cd91#code](https://etherscan.io/address/0x82fc3999151f2a7b0a643ee0156790b19e10cd91#code)
-* Strategy Implementation: [https://etherscan.io/address/0x5d6bb8387703d722fe045cf55cf32ad8568b51e8#code](https://etherscan.io/address/0x5d6bb8387703d722fe045cf55cf32ad8568b51e8#code)
-* Strategy Factory: [https://etherscan.io/address/0xEe080C969587dee61608EB6C250f283696B62BBB#code](https://etherscan.io/address/0xEe080C969587dee61608EB6C250f283696B62BBB#code)
-* Batch Invoker: [https://etherscan.io/address/0x586b44b0dd165b8c31ba5ad3560fd154c354cbce#code](https://etherscan.io/address/0x586b44b0dd165b8c31ba5ad3560fd154c354cbce#code)
+* [Staking Contract](https://etherscan.io/address/0x82fc3999151f2a7b0a643ee0156790b19e10cd91#code) - this is the base staking logic responsible for rounds and stake accounting.
+* [Strategy Implementation](https://etherscan.io/address/0x5d6bb8387703d722fe045cf55cf32ad8568b51e8#code) - this is a clone-able implementation of the stake strategy contracts.
+* [Strategy Factory](https://etherscan.io/address/0xEe080C969587dee61608EB6C250f283696B62BBB#code) - this is the factory that clones the stake strategies.
+* [Batch Invoker](https://etherscan.io/address/0x586b44b0dd165b8c31ba5ad3560fd154c354cbce#code) - this invokes strategies in bulk to improve speed and cost.
