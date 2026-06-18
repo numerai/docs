@@ -30,7 +30,7 @@ The allocation strategy shows you a few things:
 * The address of your deployed `contract`, which stores your staking configurations. You could send NMR directly to this address in order to replenish your idle balance.
 * The address of Numerai's `operator` contract, which "invokes" your strategy. This is how we can automate your staking for you and it's explained later on.
 * The `idle balance` available is not currently staked NMR, it's currently-unused NMR owned by this contract. This balance can be used to automatically stake your models next round or you can withdraw to your wallet.
-* A `deposit` / `withdraw` input for moving NMR between your wallet and your allocation strategy. Due to security, NMR withdrawn from your strategy must go to the owning wallet.
+* You can `deposit` NMR from your wallet into your allocation strategy or `withdraw` NMR from your idle balance into your wallet. Due to security, NMR withdrawn from your strategy must go directly to the owning wallet.
 
 Once you have an allocation strategy, each model allows you to configure stake settings for it:
 
