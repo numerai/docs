@@ -6,7 +6,7 @@ description: June 04, 2020 / Interview with Joakim
 
 **Arbitrage:** So, how did you first hear about Numerai?
 
-\*\*\*\*[**Joakim**](https://numer.ai/joakim\_arvidsson)**:** I think it was through Quantopian. I've been an active user on Quantopian for a couple of years now and I think it was through a forum post there. Or I was looking up Quantopian's competitors. Then I found Numerai, and it looked really difficult so I didn't try it, but I actually just started a couple of months ago. Early on I wanted to build my own stock market prediction strategy, and Quantopian is good for that, but now I want to learn machine learning and data science, and Numerai is just perfect for that.
+\*\*\*\*[**Joakim**](https://numer.ai/joakim_arvidsson)**:** I think it was through Quantopian. I've been an active user on Quantopian for a couple of years now and I think it was through a forum post there. Or I was looking up Quantopian's competitors. Then I found Numerai, and it looked really difficult so I didn't try it, but I actually just started a couple of months ago. Early on I wanted to build my own stock market prediction strategy, and Quantopian is good for that, but now I want to learn machine learning and data science, and Numerai is just perfect for that.
 
 **Arbitrage:** Can you talk to me a little bit about how Quantopian prepared you for Numerai or maybe Numerai enhanced your skills for Quantopian? While they're related, they're completely, totally different.
 
@@ -24,7 +24,7 @@ description: June 04, 2020 / Interview with Joakim
 
 **Joakim:** Really just participating in their contests and the challenges they've been having lately and having success there. One key lesson for me has been learning not to overfit because it's **so** easy to overfit.
 
-![](<../../../../.gitbook/assets/overfit (1).png>)
+![](../../../../.gitbook/assets/overfit.png)
 
 **Arbitrage:** Awesome. What do you do for a living? Are you doing full-time quant gig work?
 
@@ -54,7 +54,7 @@ description: June 04, 2020 / Interview with Joakim
 
 **Joakim:** I don't really have a feature request, but I have a complaint if that works? It's not really a complaint... The thing I struggle with the most is that I'd like to be able to stake more, but I'm also too afraid to buy NMR because I'm afraid it's going to drop by 90% tomorrow. So I think doing something around the volatility of the token we're staking with (if that's possible) ... if something could be done with that, that would be my number one request.
 
-**Arbitrage:** That's totally valid- it's something I've talked about with the team a lot. It's about as difficult a question as this being the most difficult data science competition in the world. Solving that volatility question is extremely complex - I haven't really figured out a mechanism for that. People have tried! I think [OF\_S](https://numer.ai/of\_s) has a pretty decent proposal related to an option strategy. It is complex, but it's sound from an empirical and quantitative perspective through the finance lens that I look at it. Thank you for taking my questions, Jo, and for your attendance! You're always on!
+**Arbitrage:** That's totally valid- it's something I've talked about with the team a lot. It's about as difficult a question as this being the most difficult data science competition in the world. Solving that volatility question is extremely complex - I haven't really figured out a mechanism for that. People have tried! I think [OF\_S](https://numer.ai/of_s) has a pretty decent proposal related to an option strategy. It is complex, but it's sound from an empirical and quantitative perspective through the finance lens that I look at it. Thank you for taking my questions, Jo, and for your attendance! You're always on!
 
 **Joakim:** Thank you for having me on!
 
@@ -125,15 +125,15 @@ Arbitrage had the thought that someone could start a hedge fund that holds a lar
 
 **Why are Michael Oliver's accounts (**[**MDO**](https://numer.ai/mdo)**,** [**Niam**](https://numer.ai/niam)**,** [**NMRO**](https://numer.ai/nmro)**) still on the board? Isn't this a conflict of interest?**
 
-Longtime tournament participant and frequent guest of Office Hours [Michael Oliver](https://twitter.com/the\_moliver) announced in a [previous episode](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e09) that he would be joining the Numerai team full time as a data scientist.
+Longtime tournament participant and frequent guest of Office Hours [Michael Oliver](https://twitter.com/the_moliver) announced in a [previous episode](https://docs.numer.ai/office-hours-with-arbitrage/office-hours-recaps/ohwa-s01e09) that he would be joining the Numerai team full time as a data scientist.
 
 "It's an _alignment_ of interests," Richard said.
 
 Richard said that they still need to talk about it more internally, but ultimately, if there's a prize like the former reputation bonus (where only the top _n_ participants are paid out), then it's bad for Numerai to have their own models on the top of the leaderboard. But if there are no rewards like that, Richard doesn't see the harm in Numerai team members staking on models in the tournament.
 
-When [Mike P](https://numer.ai/master\_key) joined the Numerai team earlier in the year, while the reputation bonus was still active, they requested that he withdraw his stake. But now, without the reputation bonus, Richard said they want Michael Oliver to keep managing his models the way he has been so that Michael can keep that link to the perspective of what it's like to be a tournament participant.
+When [Mike P](https://numer.ai/master_key) joined the Numerai team earlier in the year, while the reputation bonus was still active, they requested that he withdraw his stake. But now, without the reputation bonus, Richard said they want Michael Oliver to keep managing his models the way he has been so that Michael can keep that link to the perspective of what it's like to be a tournament participant.
 
-Richard wants to ultimately implement something to make it more clear which models are Numerai team members (or [Integration Test](https://numer.ai/integration\_test)) when looking at the leaderboard by greying those models out or otherwise altering their appearance.
+Richard wants to ultimately implement something to make it more clear which models are Numerai team members (or [Integration Test](https://numer.ai/integration_test)) when looking at the leaderboard by greying those models out or otherwise altering their appearance.
 
 Arbitrage explained that, as someone who has helped the Numerai team with several projects, any insight to the tournament data does not help. Arbitrage said he hasn't seen the data and doesn't want to see the data because that would only bias how he uses it. The same applies to anyone at Numerai: peeking at the data isn't an advantage so much as a detriment because it introduces bias that needs to be overcome. He referenced [Sugaku](https://numer.ai/sugaku), a model by another Numerai team member experimenting with [era boosting](https://forum.numer.ai/t/era-boosted-models/189). Despite access to the Numerai data, Sugaku still couldn't beat Integration Test (which simply submits the example predictions each week). "Even with this tremendous amount of insight that we all don't have," Arbitrage said, "it still didn't help."
 
@@ -163,7 +163,7 @@ He told us that on that first day they were relying heavily on his model and wer
 
 **Arbitrage:** Yeah Kazutsugi opened with two months of major burns.
 
-![](<../../../../.gitbook/assets/20200616\_113812 (1).png>)
+![](../../../../.gitbook/assets/20200616_113812.png)
 
 **What does the reputation column on** **numerdash** **stand for? Is it a new scoring metric?**
 
@@ -181,4 +181,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Richard_](https://twitter.com/richardcraib)_, [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Keno_](https://numer.ai/wander)_, and_ [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours,_ [_Joakim_](https://numer.ai/joakim\_arvidsson) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Richard_](https://twitter.com/richardcraib), [_Michael Oliver_](https://numer.ai/mdo)_,_ [_Keno_](https://numer.ai/wander)_, and_ [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours,_ [_Joakim_](https://numer.ai/joakim_arvidsson) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

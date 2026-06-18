@@ -4,7 +4,7 @@ description: From July 9, 2020 / Mike P interview
 
 # OHwA S02E06
 
-Arbitrage had a special surprise for Episode 06 with the [Master Key](https://numer.ai/master\_key) himself Mike P joining in the hot seat.
+Arbitrage had a special surprise for Episode 06 with the [Master Key](https://numer.ai/master_key) himself Mike P joining in the hot seat.
 
 ![Arbitrage is very excited](../../../../.gitbook/assets/excited.png)
 
@@ -48,7 +48,7 @@ September 30th.
 
 Arbitrage explained that MMC is a moving target so there isn't really a good answer for that, but the remaining metrics are essentially portfolio theory. Max drawdown is very important because you have to climb out of the hole; if you drawdown less than whatever benchmark you establish, you're inherently building alpha. You can have the same positive scores, but if you just drawdown less once, you've earned alpha. That means limiting the downside is very important.
 
-He said that really what you want to look at is to compare your models' per-era validation performance to [Integration Test](https://numer.ai/integration\_test):
+He said that really what you want to look at is to compare your models' per-era validation performance to [Integration Test](https://numer.ai/integration_test):
 
 > "Download Integration Test's validation predictions, put it through that [notebook](https://github.com/numerai/example-scripts/blob/master/making-your-first-submission-on-numerai.ipynb), save the outputs, then put your model through. Then do a side by side comparison. Use a snipping tool and look at the metrics. When you had a really good era, did you out perform Integration Test? Or were you slightly below? Then the next era, what happened?" - Arbitrage
 
@@ -60,7 +60,7 @@ Jason said that they're not ready to fully share what they've been working on, b
 
 **How did Mike P realize the model he used looked good but actually wasn't?**
 
-**Mike P:** Day one I got here and looked at my test set and realized it was low-performing. That's all. It's built for sharpe, so it looks like a poor performer if you look at it from a maximizing mean perspective. But there's only two models right now that haven't had a down week in the last \~20 weeks and [Master Key](https://numer.ai/master\_key) is one of them so it's doing it's job of not losing money ever. But it just doesn't make money either.
+**Mike P:** Day one I got here and looked at my test set and realized it was low-performing. That's all. It's built for sharpe, so it looks like a poor performer if you look at it from a maximizing mean perspective. But there's only two models right now that haven't had a down week in the last \~20 weeks and [Master Key](https://numer.ai/master_key) is one of them so it's doing it's job of not losing money ever. But it just doesn't make money either.
 
 **How uncorrelated is too uncorrelated? I have a feeling that when correlation is too low, the model is no good.**
 
@@ -90,7 +90,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** So fun surprise, Elaine here is actually my mom.
 
-![Thank you for joining!](<../../../../.gitbook/assets/elaine (1).gif>)
+![Thank you for joining!](../../../../.gitbook/assets/elaine.gif)
 
 **Arbitrage:** Whoa!
 
@@ -166,7 +166,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** I agree, you're definitely right about that. So that's how you found out about Numerai. Many people believe the tournament is challenging to the point that it becomes overwhelming and too much to handle. Why do you think people believe that it's overwhelming?
 
-**Mike P:** I can see how the rules could be overwhelming, especially when our docs weren't as nice as they are now. Anson when through and cleaned up the docs recently to make them a lot less overwhelming. But overall, ultimately it's a tournament that you can but as much or as little effort into as you want. So if you're feeling overwhelmed, yeah, you can just submit the [example script](https://github.com/numerai/example-scripts/blob/master/example\_model.py) and let it run and just come back and improve it if you want to. It doesn't feel like it should be overwhelming as long as you understand that you don't have to be a genius to be good at it.
+**Mike P:** I can see how the rules could be overwhelming, especially when our docs weren't as nice as they are now. Anson when through and cleaned up the docs recently to make them a lot less overwhelming. But overall, ultimately it's a tournament that you can but as much or as little effort into as you want. So if you're feeling overwhelmed, yeah, you can just submit the [example script](https://github.com/numerai/example-scripts/blob/master/example_model.py) and let it run and just come back and improve it if you want to. It doesn't feel like it should be overwhelming as long as you understand that you don't have to be a genius to be good at it.
 
 **Arbitrage:** Yeah, I mean somehow I'm still around so that's definitely true. I don't remember if you've told me this before, but what programming language do you use and why?
 
@@ -198,7 +198,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** I remember many, many Saturdays lost to the vapor of waiting for the data. Yeah, I definitely think people should use Compute. Big fan. Love having my weekends back. So what's your third one, my friend?
 
-**Mike P:** Third one is a little more technical. I think people should test their models in a lot more different ways and measure more metrics. I hear people talking about how they train on train, test on Validation, and whichever has the highest mean, that's the model they use. I think it's important to do different types of cross validation: do walk-forward to make sure there's no problems there, try different types of holdout, and don't just measure the mean. Keep track of your sharpe, your mean, your drawdown, any metrics you might care about. When you experiment in that way, you learn so much more about your model. Your not just getting one perspective of what's good, and you can learn a lot about, for example, why your mean is low because of a drawdown, and it might point you down another path of exploration measuring all of these different things in different ways. It's really the [key](https://numer.ai/master\_key) to understanding your model and how to improve it. People really should invest more time into how they measure their models.
+**Mike P:** Third one is a little more technical. I think people should test their models in a lot more different ways and measure more metrics. I hear people talking about how they train on train, test on Validation, and whichever has the highest mean, that's the model they use. I think it's important to do different types of cross validation: do walk-forward to make sure there's no problems there, try different types of holdout, and don't just measure the mean. Keep track of your sharpe, your mean, your drawdown, any metrics you might care about. When you experiment in that way, you learn so much more about your model. Your not just getting one perspective of what's good, and you can learn a lot about, for example, why your mean is low because of a drawdown, and it might point you down another path of exploration measuring all of these different things in different ways. It's really the [key](https://numer.ai/master_key) to understanding your model and how to improve it. People really should invest more time into how they measure their models.
 
 **Arbitrage:** I completely agree. I'm embarrassed to admit that until three or four weeks ago, I only cared about average correlation. I didn't even care how it did per-era. And I really believe I just got lucky in my model design. And this is what I teach, right? Have a good approach prior to even looking at the data. Set up in your head how you're going to go about this, and then at the end, if it's good, run with it. I think I just got lucky, and I'm not afraid to admit that. I'll take my six in the top 50 staked and run with that for now. We'll see how these new iterations come about. So here's a fun one: if you could have a billboard with anything on it, what would it say and why?
 
@@ -212,7 +212,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** Yeah. And it's just awesome art. Everybody should have to look at it when they drive to work.
 
-![Mike P's dream commute](../../../../.gitbook/assets/mike-p-billboard.png)
+![Mike P's dream commute](<../../../../.gitbook/assets/MIke P billboard.png>)
 
 **Arbitrage:** I'll buy into that, I like that. So that's your billboard. I don't even know if I should ask this next question. I hemmed and hawed before I started recording about what to do with this one. We're doing it live. Mike P, who's your favorite team member? See he's trapped because if I asked him who his favorite participant was and he didn't pick me, I'd kick him right out of Zoom. And if he doesn't pick Richard, he's going to get fired, so it's lose-lose. It's not fair, but let's do it anyway.
 
@@ -228,7 +228,7 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Arbitrage:** I think we should change that, too. I told my students they absolutely should list even just that they've participated. At this stage of their careers it's extremely valuable because it shows a potential employer that they have the ability to work with big data. So Mike, I hope you don't have ten models but how many models do you have right now?
 
-**Mike P:** I just have two models. [Master Key](https://numer.ai/master\_key) and [Apprentice Key](https://numer.ai/apprentice\_key).
+**Mike P:** I just have two models. [Master Key](https://numer.ai/master_key) and [Apprentice Key](https://numer.ai/apprentice_key).
 
 **Arbitrage:** You said in chat that your Master Key model is very similar to the neural net that I divulged [last week](ohwa-s02e05.md).
 
@@ -250,11 +250,11 @@ Mike P agreed that it seems really difficult to have high Correlation if you hav
 
 **Mike P:** I actually studied computer science after I already knew how to code. I was doing some data science stuff in high school, and then decided it made sense to also study computer science in college. Most people's first coding problem is how to make a list or a `for` loop. Mine was how to slice a numpy array with extra dimensions, so it was totally the wrong way to learn it.
 
-![](<../../../../.gitbook/assets/code (1).gif>)
+![](../../../../.gitbook/assets/code.gif)
 
 **Arbitrage:** I know I've said this a few times, but pick a project in your domain and do it in code. Because you know the data, and that's going to help because you'll know what the results should look like. If you could step into my shoes, Mike, what would you ask yourself that I didn't?
 
-**Mike P:** I would ask about my models a little bit more. We'll talk about them more during Slido, I'm sure, but I'll explain what [Master Key](https://numer.ai/master\_key) is. A lot of it is similar to stuff [Bor](https://numer.ai/bor1)'s talked about where you basically give a genetic algorithm an objective function and let it do everything. I wrote the genetic algorithm that I use just for fun, and I gave it a bunch of different pre-processing steps, algorithms, transformations, hyper-parameters, all these feature selection options, as many options as I could think of. I let that churn for like, two weeks.
+**Mike P:** I would ask about my models a little bit more. We'll talk about them more during Slido, I'm sure, but I'll explain what [Master Key](https://numer.ai/master_key) is. A lot of it is similar to stuff [Bor](https://numer.ai/bor1)'s talked about where you basically give a genetic algorithm an objective function and let it do everything. I wrote the genetic algorithm that I use just for fun, and I gave it a bunch of different pre-processing steps, algorithms, transformations, hyper-parameters, all these feature selection options, as many options as I could think of. I let that churn for like, two weeks.
 
 **Arbitrage:** Two weeks?
 

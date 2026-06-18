@@ -6,7 +6,7 @@ description: From July 30, 2020 / Interview with Bouwe Ceunen
 
 For episode eight, Arbitrage interviewed [Bouwe Ceunen](https://twitter.com/BouweCeunen), Numerai [tournament participant](https://numer.ai/ceunen) and creator of the [Numerai Payouts](https://twitter.com/NPayouts) app that was teased in the [previous episode](ohwa-s02e07.md#office-hours-exclusive-preview).
 
-![Thanks for joining, Bouwe](<../../../../.gitbook/assets/hello (1).gif>)
+![Thanks for joining, Bouwe](../../../../.gitbook/assets/hello.gif)
 
 The full interview with Bouwe will be uploaded on YouTube.
 
@@ -14,7 +14,7 @@ The full interview with Bouwe will be uploaded on YouTube.
 
 **Round 219 looks like a big burn for most models - with just one week difference between rounds, do we have any clue as to why that might be?**
 
-Arbitrage noted that many models, including [Integration Test](https://numer.ai/integration\_test), had a bad burn during round 219 but not everyone. He said one of his models performed better than Integration Test that round, adding, "I just don't want to burn as much as Integration Test... if you don't draw down as much, then you've outperformed."
+Arbitrage noted that many models, including [Integration Test](https://numer.ai/integration_test), had a bad burn during round 219 but not everyone. He said one of his models performed better than Integration Test that round, adding, "I just don't want to burn as much as Integration Test... if you don't draw down as much, then you've outperformed."
 
 Regarding the one week time between rounds, Arbitrage said that there would be similarities week to week. This means that tournament participants are making predictions on potentially the same group of stocks with only a week's space between the data. If the same conditions are present within the data, you'll probably get the same result.
 
@@ -50,7 +50,7 @@ If the models are stable, then yes. But if a significant percentage of users are
 
 Arbitrage said yes and no.
 
-Yes: During burn periods, he's outperforming [Integration Test](https://numer.ai/integration\_test). The model is still burning, but not as bad. In round 219, Leverage was down 0.025 while Integration Test was down 0.04. Then in Round 220, Leverage's MMC and Corr were both positive while Integration Test remained negative.
+Yes: During burn periods, he's outperforming [Integration Test](https://numer.ai/integration_test). The model is still burning, but not as bad. In round 219, Leverage was down 0.025 while Integration Test was down 0.04. Then in Round 220, Leverage's MMC and Corr were both positive while Integration Test remained negative.
 
 No: Leverage isn't burning as much, but it's **just straight burning** 🔥. The consistent burns started when he changed his model. For now, he's okay with that because the model is still beating Integration Test in the same time frame.
 
@@ -64,7 +64,7 @@ Arbitrage's goal with the Leverage model was strictly to not burn as much as Int
 
 Arbitrage pointed out that this runs the risk of people fraudulently creating new accounts.
 
-**Why such a big difference in rank between** [**Integration Test**](http://numer.ai/integration\_test) **and** [**Integration Test 7**](https://numer.ai/integration\_test\_7)**?**
+**Why such a big difference in rank between** [**Integration Test**](http://numer.ai/integration_test) **and** [**Integration Test 7**](https://numer.ai/integration_test_7)**?**
 
 **Wigglemuse:** I know that one! There was a glitch last week where Integration Test didn't submit and it's late and now it's go a penalty. If you look a week ago, they were the same rank, same score, now they're diverging in the last five days.
 
@@ -78,7 +78,7 @@ Arbitrage's advice is to focus on one metric and run the model multiple times, c
 
 **For each model, would having the beta coefficient to the meta-model variance of accurate target predictions be a useful metric to have? Similar to smart beta to the SPY.**
 
-As [Joakim](https://numer.ai/joakim\_arvidsson) explained, this is similar to beta two for the market but instead of returns it focuses on how accurate you are to the targets.
+As [Joakim](https://numer.ai/joakim_arvidsson) explained, this is similar to beta two for the market but instead of returns it focuses on how accurate you are to the targets.
 
 Arbitrage pointed out that, because everything is neutralized, the targets are zero so he isn't sure how the matrix would look. He isn't sure it would work because data scientists don't have a proxy for the meta-model and if it only marginally wins, he doesn't think it would give a strong metric. Arbitrage also encouraged Joakim to open a discussion in the [Numerai forum](https://forum.numer.ai).
 
@@ -98,4 +98,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Slyfox_](https://twitter.com/ansonschu)_, [_Keno_](https://numer.ai/wander)_, and_ [_Wigglemuse_](https://numer.ai/wigglemuse) _for contributing to answers during this Office Hours, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for being interviewed and his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Slyfox_](https://twitter.com/ansonschu), [_Keno_](https://numer.ai/wander)_, and_ [_Wigglemuse_](https://numer.ai/wigglemuse) _for contributing to answers during this Office Hours, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for being interviewed and his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

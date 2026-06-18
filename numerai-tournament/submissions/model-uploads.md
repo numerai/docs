@@ -67,7 +67,7 @@ Numerai will execute your model to generate a live submission for the current ro
 
 If this succeeds, a block will appear in the "submissions" column grid, you'll be able to review the execution logs for your model, and Numerai will generate diagnostics over the validation dataset for your model:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 3.13.58 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-18 at 3.13.58 PM.png" alt=""><figcaption></figcaption></figure>
 
 Once diagnostics complete, you'll also be able to view the diagnostics for this model:
 
@@ -143,8 +143,6 @@ Yes, on the [submissions page](https://numer.ai/submissions), on the right, clic
 <figure><img src="../../.gitbook/assets/Screenshot 2025-12-02 at 09.42.23.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-12-02 at 09.42.40.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Terms of service
 

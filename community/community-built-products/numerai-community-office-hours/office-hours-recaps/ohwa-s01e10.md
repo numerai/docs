@@ -17,7 +17,7 @@ Because Numerai doesn’t tell us the dates covered by any of their data sets, t
 
 > “I want as much data as possible, but I don’t only want those very difficult, high correlation eras because that will bias to those kinds of events.” -Arbitrage
 
-Following from that question, Arbitrage asked [Joakim](https://numer.ai/joakim\_arvidsson) to expand on a previous conversation from [Rocket.Chat](http://community.numer.ai) about combining eras.
+Following from that question, Arbitrage asked [Joakim](https://numer.ai/joakim_arvidsson) to expand on a previous conversation from [Rocket.Chat](http://community.numer.ai) about combining eras.
 
 Joakim explained that he wanted a validation set and a test set that were representative of his training data so he can train his model to generalize on the validation data. To do this, he likes to include eras from a wider variety of different regimes in his training, validation, and test sets. He includes eras from early within the data set, as well as some from the Validation 2 set, so his model will generalize as much as possible.
 
@@ -41,7 +41,7 @@ Prior to the ten account rule, Arbitrage would take the total number of submissi
 
 A quick poll of the audience revealed that most of the Office Hours regulars have ten (or close to ten) accounts.
 
-![Office Hours regulars](../../../../.gitbook/assets/the\_breakfast\_club.jpg)
+![Office Hours regulars](../../../../.gitbook/assets/the_breakfast_club.jpg)
 
 Bor mentioned that, with at least 100 people focused solely on data modeling, that would rank Numerai up with some of the top quantitative hedge funds in the world in terms of data resources.
 
@@ -49,7 +49,7 @@ Bor mentioned that, with at least 100 people focused solely on data modeling, th
 
 On Richard Craib’s post on the Numerai forum about [performance stationarity](https://forum.numer.ai/t/performance-stationarity/151), Michael Oliver referenced [smart sharpe](https://forum.numer.ai/t/performance-stationarity/151/2?u=beanstalk), a modified sharpe calculation that accounts for autocorrelation.
 
-The [paper](https://www.keyquant.com/Download/GetFile?Filename=%5CPublications%5CKeyQuant\_WhitePaper\_APT\_Part2.pdf) [Michael Oliver](https://numer.ai/mdo) referenced \[_not endorsement_] posits that smart sharpe leads to better model performance out of sample, which would be an advantage for anyone competing in the Numerai tournament. Michael noted that in model selection, smart sharpe offered tighter parameters than traditional sharpe, meaning it was more clear which models performed best according to smart sharpe.
+The [paper](https://www.keyquant.com/Download/GetFile?Filename=%5CPublications%5CKeyQuant_WhitePaper_APT_Part2.pdf) [Michael Oliver](https://numer.ai/mdo) referenced \[_not endorsement_] posits that smart sharpe leads to better model performance out of sample, which would be an advantage for anyone competing in the Numerai tournament. Michael noted that in model selection, smart sharpe offered tighter parameters than traditional sharpe, meaning it was more clear which models performed best according to smart sharpe.
 
 **Quant revamp is coming soon - what are good data sets to get started?**
 
@@ -86,7 +86,7 @@ Arbitrage’s first idea: MMC needs its own leaderboard with a rank to brag abou
 
 **Slyfox (in chat):** No payouts for non-staked models.
 
-![No NMR for you](<../../../../.gitbook/assets/soup (1).jpg>)
+![No NMR for you](../../../../.gitbook/assets/soup.jpg)
 
 **Arbitrage:** I just got killed on that. But! We can still do what I’m talking about, just on staked models. Payout on stability.
 
@@ -118,7 +118,7 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Jason**: My data science knowledge is pretty poor. I’m more on the side of experimenting with the Numerai tournament using anonymous accounts (for now).
 
-![Jason submitting to the tournament](../../../../.gitbook/assets/hacker-3342696\_1920.jpg)
+![Jason submitting to the tournament](../../../../.gitbook/assets/hacker-3342696_1920.jpg)
 
 **Jason**: Data science isn’t my forte. It’s certainly something I want to learn more of. I’m sorry - data science I’m good at, a lot of my jobs are data pipelines or data munging jobs. As far as AI goes, I’m lacking. I haven’t done deep AI since college and that was ten years ago. The most complicated things we did were SVMs and neural nets; beginner’s stuff compared to today.
 
@@ -160,7 +160,7 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Jason**: We haven’t been doing much contract stuff lately, sadly. We wrote the Erasure tournament contract and that was pretty much the last thing. I was just looking at it again today, I was sad because I want to update it and do things with it. Now that we have multi-accounts, it’s not quite a bug, but there’s a lingering issue there. That’s why daily scores were delayed this morning, by the way, that was me testing multi-accounts with staking.
 
-![When daily scores are delayed](../../../../.gitbook/assets/a\_crowd\_of\_angry\_looking\_people\_are\_shouting.jpg)
+![When daily scores are delayed](../../../../.gitbook/assets/a_crowd_of_angry_looking_people_are_shouting.jpg)
 
 **Arbitrage**: Can you tell us your top three tips for the tournament?
 
@@ -176,7 +176,7 @@ But, there is merit to having a blockchain-validated repository of data where yo
 
 **Arbitrage**: Oh! That’s three for the slyest of foxes!
 
-![Slyfox graciously accepting Jason's vote](../../../../.gitbook/assets/anson-cheering.gif)
+![Slyfox graciously accepting Jason's vote](<../../../../.gitbook/assets/anson cheering.gif>)
 
 **Arbitrage**: He’s got a commanding lead, by the way.
 
@@ -196,6 +196,6 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to _Mike P,_ [_Patrick_](https://twitter.com/pschork)_, and_ [_Joakim_](https://numer.ai/joakim\_arvidsson) _for contributing to answers during this Office Hours, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+Thank you to _Mike P,_ [_Patrick_](https://twitter.com/pschork)_, and_ [_Joakim_](https://numer.ai/joakim_arvidsson) _for contributing to answers during this Office Hours, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 \*\*\*\*

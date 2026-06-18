@@ -6,7 +6,7 @@ description: From July 23, 2020 / Harsh interview, MMC+Corr, special preview
 
 For this episode, Arbitrage had a jam-packed agenda including an interview with Harsh, Numerai team member and designer extraordinaire, Mike P discussed his recent forum post, and Arbitrage had a special preview for the audience.
 
-![You can recognize Harsh by the Numerai shirt and suave mustache.](../../../../.gitbook/assets/welcome-harsh.png)
+![You can recognize Harsh by the Numerai shirt and suave mustache.](<../../../../.gitbook/assets/welcome Harsh.png>)
 
 Check out the [full transcript of Harsh's interview](ohwa-s02e07.md#interview-with-harsh), [Mike's discussion](ohwa-s02e07.md#discussion-with-mike-p), and [Arbitrage's preview](ohwa-s02e07.md#office-hours-exclusive-preview) after the Slido questions below.
 
@@ -24,7 +24,7 @@ Arbitrage said to wait until Saturday (July 25) for the new round to open (Round
 
 **Do the eras have time gaps between them to limit data leakage between eras?**
 
-This is something that Arbitrage has always wondered (and therefore couldn't answer). Mike P, however, could. He told us that the training data is non-overlapping so there's no leakage across eras, they should be independent, and they're not putting any time buffers in between them. [Joakim](https://numer.ai/joakim\_arvidsson) suggested there could still be a risk of data leakage without a buffer.
+This is something that Arbitrage has always wondered (and therefore couldn't answer). Mike P, however, could. He told us that the training data is non-overlapping so there's no leakage across eras, they should be independent, and they're not putting any time buffers in between them. [Joakim](https://numer.ai/joakim_arvidsson) suggested there could still be a risk of data leakage without a buffer.
 
 **Richard:** It depends on how bad the auto-correlation is in your data. I don't think one era to another era is significant enough, but if, for example, we had daily data and daily targets, I would be very concerned about this and would want to have some gaps but it's monthly, and the features themselves are monthly or much longer.
 
@@ -40,7 +40,7 @@ Arbitrage pointed out that the validation data has to be the same time frame as 
 
 "Yes, there were weeks that flowed, but they selected **a** week to represent the monthly era," Arbitrage said, "so for July with four trading weeks, you pick one of those weeks to represent the month - am I on the right path?"
 
-Arbitrage elected [Michael Oliver](https://twitter.com/the\_moliver) to tackle this question: with the new validation data that rolls in, live results are weeks that take one month to resolve, but when they enter the validation set it's no longer a week- it represents a month, which Michael Oliver confirmed.
+Arbitrage elected [Michael Oliver](https://twitter.com/the_moliver) to tackle this question: with the new validation data that rolls in, live results are weeks that take one month to resolve, but when they enter the validation set it's no longer a week- it represents a month, which Michael Oliver confirmed.
 
 **Michael Oliver:** Yes.
 
@@ -86,7 +86,7 @@ Richard said there's been some unusual market activity, including a high degree 
 
 You already might be familiar with some of Harsh's work:
 
-![Thank Harsh the next time you click on this little guy](../../../../.gitbook/assets/dark-mode.png)
+![Thank Harsh the next time you click on this little guy](<../../../../.gitbook/assets/dark mode.png>)
 
 **Arbitrage:** Harsh, tell us what else you've done so people are aware of your contributions to the project.
 
@@ -100,7 +100,7 @@ You already might be familiar with some of Harsh's work:
 
 **Harsh:** Right.
 
-![](<../../../../.gitbook/assets/compute (1).png>)
+![](../../../../.gitbook/assets/compute.png)
 
 **Arbitrage:** Sweet. Harsh, I did want to run through my famous set of questions. You pre-warned me, you said, "I don't really do the data science." I feel like that doesn't matter, I think you have a lot to add. You've been with the team for how long now?
 
@@ -138,7 +138,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** Oh cool!
 
-![The future of apartment hunting is powered by Erasure Bay](../../../../.gitbook/assets/eb-for-rent.png)
+![The future of apartment hunting is powered by Erasure Bay](<../../../../.gitbook/assets/EB for rent.png>)
 
 **Arbitrage:** Harsh, what do you do for a living? What is your profession / title?
 
@@ -158,7 +158,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** I saw this comic once that showed the difference between design intention and actual use, and it was people cutting the corners and walking on the grass instead of taking this winding sidewalk that was really pretty. I think of that when you mention the UX stuff.
 
-!['Desire lines' / 'desire paths' are signs of use that show how users prefer to interact with something](../../../../.gitbook/assets/design-vs-ux.png)
+!['Desire lines' / 'desire paths' are signs of use that show how users prefer to interact with something](<../../../../.gitbook/assets/design vs ux.png>)
 
 **Harsh:** A good example would be Apple. They take a design and UX-first approach; it's not an engineering-first company, it's a design-first company. Google is cool, but they're an engineering-first company and their design is not as good as Apple.
 
@@ -186,7 +186,7 @@ You already might be familiar with some of Harsh's work:
 
 **Harsh:** It's a Kawasaki Ninja.
 
-![Harsh having a good UX](../../../../.gitbook/assets/ninja-harsh.jpg)
+![Harsh having a good UX](<../../../../.gitbook/assets/ninja harsh.jpg>)
 
 **Arbitrage:** Ah so you like sport bikes. Nice. My girlfriend won't let me get a motorcycle.
 
@@ -194,19 +194,19 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** Have you ever participated in the tournament?
 
-**Harsh:** I created an account to test my designs. That's basically it. The only predictions I've submitted are the [example predictions](https://github.com/numerai/example-scripts/blob/master/example\_model.py).
+**Harsh:** I created an account to test my designs. That's basically it. The only predictions I've submitted are the [example predictions](https://github.com/numerai/example-scripts/blob/master/example_model.py).
 
 **Arbitrage:** Did you _stake_ on the example predictions?
 
 **Harsh:** I did- 0.1 NMR.
 
-**Arbitrage:** Ahhhhh see!? There it is! I knew it. Somebody was going to fess up someday. That's cool, it's a [good model](https://numer.ai/integration\_test). I only beat it recently, and there's not that many people that can consistently stay above Example Predictions. Here's an interesting question: how did you find out about Numerai?
+**Arbitrage:** Ahhhhh see!? There it is! I knew it. Somebody was going to fess up someday. That's cool, it's a [good model](https://numer.ai/integration_test). I only beat it recently, and there's not that many people that can consistently stay above Example Predictions. Here's an interesting question: how did you find out about Numerai?
 
 **Harsh:** They found me, actually. 😎
 
 **Arbitrage:** Oh really? This is something I want to hear.
 
-**Harsh:** I got a call from [Jonathan](https://twitter.com/jonathansidego) one day. I was at an event in college where you put up your work and employers come to see it. Then I got a call from Jonathan who said, "I like your work, you do film and design and graphic design, you program - seems like a good fit." That's when I joined. I looked at the website and it seemed like really cool work. I think they found me [through my website](https://docs.google.com/presentation/d/1e8Uk\_cOh\_W0s6n9AbMUToJe7-6SLxqPlvWczAs3FjmY/pub?start=true\&loop=false\&delayms=60000\&slide=id.p).
+**Harsh:** I got a call from [Jonathan](https://twitter.com/jonathansidego) one day. I was at an event in college where you put up your work and employers come to see it. Then I got a call from Jonathan who said, "I like your work, you do film and design and graphic design, you program - seems like a good fit." That's when I joined. I looked at the website and it seemed like really cool work. I think they found me [through my website](https://docs.google.com/presentation/d/1e8Uk_cOh_W0s6n9AbMUToJe7-6SLxqPlvWczAs3FjmY/pub?start=true\&loop=false\&delayms=60000\&slide=id.p).
 
 **Arbitrage:** Usually it's like, they have to throw us all out because they can't get rid of us, but they _found_ you so I don't know how that push-pull relationship works there. I think you can answer this question, I'm going to reframe it a little bit. The question is 'what do you wish you had known when you started out,' but instead, since you're not a participant, I'd like you to comment on what you think people should know **when** they start out.
 
@@ -238,7 +238,7 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** Okay. I said earlier that I was getting into Selenium a little bit and it's like a world of hurt that I never knew existed, but it's a great learning experience. In fact, my script failed like 15 minutes ago, but oh well. This is where it gets a little difficult because you don't technically participate, but do you have three tips for people starting out?
 
-**Harsh:** Yeah, and I did write them down. One is ask questions and talk in [Rocket.Chat](https://community.numer.ai); second is use [Compute](broken-reference) and don't miss submissions; and third is stake more money. More skin in the game means you'll work harder, perform better, and earn more money.
+**Harsh:** Yeah, and I did write them down. One is ask questions and talk in [Rocket.Chat](https://community.numer.ai); second is use [Compute](broken-reference/) and don't miss submissions; and third is stake more money. More skin in the game means you'll work harder, perform better, and earn more money.
 
 **Arbitrage:** You know, I think you're the first person to touch on that. It's true: if you have money on the line, you're going to be more protective of it. I think that's completely right. Here's the billboard question: if you could have a billboard with anything on it, what would it be and why?
 
@@ -248,7 +248,7 @@ You already might be familiar with some of Harsh's work:
 
 **Harsh:** I'm sure that would produce a lot of accidents on the road.
 
-![Totally readable and safe billboard](../../../../.gitbook/assets/harsh-billboard.png)
+![Totally readable and safe billboard](<../../../../.gitbook/assets/harsh billboard.png>)
 
 **Arbitrage:** Don't try to read it while you're driving, yeah. So Harsh, who's your favorite team member?
 
@@ -256,13 +256,13 @@ You already might be familiar with some of Harsh's work:
 
 **Arbitrage:** You better pick your roommate.
 
-**Harsh:** This is tough because I've had so many good times with everyone at the company. I've really enjoyed working here: [Anson](https://twitter.com/ansonschu)'s cool, Jonathan I have a lot of fun with, Richard's cool, haven't really met Michael in person yet but I'm sure he's cool too. [NJ](https://twitter.com/tasha\_jade) and I are really good friends, too. It's like picking one out of your group of best friends.
+**Harsh:** This is tough because I've had so many good times with everyone at the company. I've really enjoyed working here: [Anson](https://twitter.com/ansonschu)'s cool, Jonathan I have a lot of fun with, Richard's cool, haven't really met Michael in person yet but I'm sure he's cool too. [NJ](https://twitter.com/tasha_jade) and I are really good friends, too. It's like picking one out of your group of best friends.
 
 **Arbitrage:** I'm going to save you a lot of trouble and count your vote for Richard. I think that's the safe play here. I don't want to cause any trouble at home. So you just pushed an improvement to the website (Compute badges) - what else are you working on?
 
 **Harsh:** We have a lot of things coming up this quarter. A feature that I'm really excited about, that we might or might not have (it hasn't been decided yet), might be more information about the models and more feedback about how the models are doing. Right now, we give you data, you make something, and you have to do your own research into whether it's doing well or not. I think it would be good to provide some benchmarks besides just the leaderboard and the score but a more in-depth view of where you should improve.
 
-**Arbitrage:** Cool, so you're talking about more metrics on the models. I know I made [a big post on the forum](https://forum.numer.ai/t/more-metrics-for-ya/636) and threw a bunch of sloppy code up there ([Michael Oliver](https://twitter.com/the\_moliver) found a mistake, thank you for finding that). I assume it's something related to that, so we're going to see more metrics on sharpe performance and other cool stuff. Are there any specific things that you can tell us?
+**Arbitrage:** Cool, so you're talking about more metrics on the models. I know I made [a big post on the forum](https://forum.numer.ai/t/more-metrics-for-ya/636) and threw a bunch of sloppy code up there ([Michael Oliver](https://twitter.com/the_moliver) found a mistake, thank you for finding that). I assume it's something related to that, so we're going to see more metrics on sharpe performance and other cool stuff. Are there any specific things that you can tell us?
 
 **Harsh:** We haven't decided completely yet. We've been looking at other references and gathering ideas for what can be done, given that we don't actually know what your model is. It's still in the ideation phase.
 
@@ -304,7 +304,7 @@ You already might be familiar with some of Harsh's work:
 
 ### Discussion with Mike P
 
-After a kickass interview with Harsh, Arbitrage caught up with Mike P the [Master Key](https://numer.ai/master\_key) himself to talk about his [recent forum post on MMC payouts](https://forum.numer.ai/t/mmc-payouts-adjustment-proposal/614).
+After a kickass interview with Harsh, Arbitrage caught up with Mike P the [Master Key](https://numer.ai/master_key) himself to talk about his [recent forum post on MMC payouts](https://forum.numer.ai/t/mmc-payouts-adjustment-proposal/614).
 
 As a data scientist working on the Numerai tournament, Mike spends a lot of his time working on how to make it function better: more closely aligning the incentives of the participants and Numerai, figuring out better payout schemes, etc. Mike believes that the added burden of deciding whether to stake on MMC or Correlation each week introduces unnecessary friction and distracts data scientists from focusing on building great models.
 
@@ -326,10 +326,10 @@ Arbitrage got to show off a preview of [a community-built mobile app](https://tw
 
 Community member [Bouwe Ceunen](https://twitter.com/BouweCeunen) built the Numerai Payouts app to help tournament participants track their payouts.
 
-In early access at the time of recording, Numerai Payouts is now available for [Android](https://play.google.com/store/apps/details?id=app.numeraipayouts.numerai\_payouts) and [iPhone](https://apps.apple.com/app/id1522158691).
+In early access at the time of recording, Numerai Payouts is now available for [Android](https://play.google.com/store/apps/details?id=app.numeraipayouts.numerai_payouts) and [iPhone](https://apps.apple.com/app/id1522158691).
 
 _If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)\_, what are you waiting for?
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-Thank you to [_Richard_](https://twitter.com/richardcraib)_,_ [_Slyfox_](https://twitter.com/ansonschu)_, _Mike P_, [_Michael Oliver_](https://numer.ai/mdo)_, and [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours, to_ [_Harsh_](https://harsh.work) _for being interviewed, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+Thank you to [_Richard_](https://twitter.com/richardcraib)_,_ [_Slyfox_](https://twitter.com/ansonschu)_, Mike P,_ [_Michael Oliver_](https://numer.ai/mdo), and [_JRB_](https://numer.ai/jrb) _for contributing to answers during this Office Hours, to_ [_Harsh_](https://harsh.work) _for being interviewed, to_ [_Bouwe Ceunen_](https://twitter.com/BouweCeunen) _for his work on the Numerai payouts app,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

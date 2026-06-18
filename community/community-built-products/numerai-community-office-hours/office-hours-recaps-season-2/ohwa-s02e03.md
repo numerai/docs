@@ -4,7 +4,7 @@ description: June 18, 2020 / John Scaife Interview
 
 # OHwA S02E03
 
-For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Scaife](https://numer.ai/johnscaife\_):
+For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Scaife](https://numer.ai/johnscaife_):
 
 ![A model worth talking about](../../../../.gitbook/assets/john.png)
 
@@ -22,7 +22,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **Arbitrage:** So if I just drop out, basically Anson's in charge. That's the way this is going to work. Well ... he's in charge anyway so that's not really a shock. John, what do you do for a living?
 
-**John:** Just want to bump in there real quick - we all know [NJ](https://twitter.com/tasha\_jade) is in charge.
+**John:** Just want to bump in there real quick - we all know [NJ](https://twitter.com/tasha_jade) is in charge.
 
 **Slyfox:** True story.
 
@@ -30,7 +30,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 ![Different kind of cotton options](../../../../.gitbook/assets/organiccotton.jpg)
 
-**John cont:** But career priorities shift, right? I told my wife that if Numerai goes really well, I would consider going back to school because recently I've been hooked on [Carlo Rovelli's](http://www.cpt.univ-mrs.fr/\~rovelli/#about-me) exploration of quantum theory. It's an avenue that really fascinates me. Pending success financially and other avenues, I would consider going back to school.
+**John cont:** But career priorities shift, right? I told my wife that if Numerai goes really well, I would consider going back to school because recently I've been hooked on [Carlo Rovelli's](http://www.cpt.univ-mrs.fr/~rovelli/#about-me) exploration of quantum theory. It's an avenue that really fascinates me. Pending success financially and other avenues, I would consider going back to school.
 
 **Arbitrage:** Don't do it, John. I went back to school. Don't do it. And all the other PhD's in the room are going to tell you, 'don't do it.' Stay in industry. You can read the papers just the same way I can, and you can make money while you're reading. That's my small aside. You should do what makes you happy, that's my ultimate answer.
 
@@ -64,7 +64,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **John:** Living in the city for all those years, we love to go explore new food joints. Especially in New York City and Boston. I like fishing, I like the beach, I like ping pong, and recently I've become addicted to audiobooks. I kind of resisted jumping on the bandwagon, and now I can't get the earbuds out of my ears.
 
-![Audiobooks have their own unique risks](<../../../../.gitbook/assets/audiobook (1).jpg>)
+![Audiobooks have their own unique risks](../../../../.gitbook/assets/audiobook.jpg)
 
 **Arbitrage:** I can't listen to people talk, I need to see them talk. It's always been a challenge for me to listen to that kind of stuff so I would rather read it. Something about a physical book, too. I don't know, maybe it's because I'm 36 and I'm just on that edge of, 'I grew up with the tech change.' My grandmother had a rotary phone - so I know how to use a rotary phone but anybody who's two or three years younger than I am don't have any idea how to use a rotary phone.
 
@@ -88,7 +88,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **Arbitrage:** That's really good - I appreciate you telling us what you wish you had known. Many people believe the tournament is so challenging that it's overwhelming and it's too much to handle. Why do you think people believe that?
 
-**John:** I think that for this tournament, you have to leave your ego at the door. Part of the reason why I made my username [my name](https://numer.ai/johnscaife\_) was free marketing, but also because I want to be exposed. If my model sucks, let the world see. I have nothing to hide, right? If you fail, you just get back up and try it again and iterate over it. I'm fortunate to have played baseball my whole life where failure is deemed successful, but risk tolerance is relative. I think that's really what it comes down to: risk tolerance.
+**John:** I think that for this tournament, you have to leave your ego at the door. Part of the reason why I made my username [my name](https://numer.ai/johnscaife_) was free marketing, but also because I want to be exposed. If my model sucks, let the world see. I have nothing to hide, right? If you fail, you just get back up and try it again and iterate over it. I'm fortunate to have played baseball my whole life where failure is deemed successful, but risk tolerance is relative. I think that's really what it comes down to: risk tolerance.
 
 **Arbitrage:** I'm just going to interject for one second because that was really a golden nugget that I want to hold on to. You've just independently verified what I've been saying for months: **risk is relative.** That comes up a lot. Didn't mean to interrupt, but I had to tag that.
 
@@ -102,7 +102,7 @@ For Season 2 Episode 3, Arbitrage interviewed tournament data scientist [John Sc
 
 **John:** Yeah, I'm sure risk tolerance plays a part of it, but (and I don't want to beat a dead horse) the noise in this data set is insane. Trying to find a signal, or MMC, I say you have to think like a right angle. How do you do that? I'm trying to figure it out too... Can you imagine if I tied emotion to it when I was trading cotton? We're talking about an illiquid market with wide markets and I'm holding hundreds of thousands of contracts. You can imagine the mark to market there. It takes a lot to rattle me.
 
-![Good ol' reliable cotton](<../../../../.gitbook/assets/cotton (1).png>)
+![Good ol' reliable cotton](../../../../.gitbook/assets/cotton.png)
 
 **Arbitrage:** That's a good point, and something I talk about in chat too with [Sorios](https://numer.ai/sorios). That account is swinging houses around, and personally I couldn't do that. Not where I am now as a PhD student (which is another reason why you shouldn't go back to school). But yeah he's swinging houses around and I just couldn't tell my girlfriend, "hey, I lost a house today." That's just me - risk is relative. Thank you for mentioning that - I think it's important to have this discussion in front of other people so they can understand what I mean by that. A little bit about your workflow - what programming language do you use and why do you use it?
 
@@ -142,13 +142,13 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **John:** I guess we all think alike.
 
-![Notebook appreciation post](<../../../../.gitbook/assets/notebooks (1).png>)
+![Notebook appreciation post](../../../../.gitbook/assets/notebooks.png)
 
 **Arbitrage:** I got a Bloomberg notebook, a red & black ... Oh! You're a finance guy so you know about red & black.
 
 **John:** Oh yeah!
 
-![Wall Street standard](../../../../.gitbook/assets/wall-st-finest.png)
+![Wall Street standard](<../../../../.gitbook/assets/wall st finest.png>)
 
 **Arbitrage:** I just buy notebooks and write stuff. It's all disorganized- my academic ideas blend in with my Numerai ideas, and then I don't even look at my notes so you know what? You probably shouldn't take my advice either.
 
@@ -156,7 +156,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** Bor and [this guy](https://numer.ai/themicon). \[gestures]
 
-![](../../../../.gitbook/assets/this-guy.png)
+![](<../../../../.gitbook/assets/this guy.png>)
 
 **John:** Last tip, and this really came out of nowhere: I started thinking about this when I was off the record bitching, and Richard directed me to focus on feature exposure. When he said that, it really clicked, and I said to myself, 'I need to focus on this right now and try to get my correlation with the meta-model as low as possible.' My last tip, and this has been the most beneficial for me, is: like what Richard said about what the market is inefficient with respect to, what about the data set is inefficient with respect to the market? That's how I think.
 
@@ -170,7 +170,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** Yeah - that's a good one. Ant, make sure you write that down, that's a good one.
 
-![Author's note: I got you.](<../../../../.gitbook/assets/billboard (1).jpg>)
+![Author's note: I got you.](../../../../.gitbook/assets/billboard.jpg)
 
 **Arbitrage:** This one is always controversial. I'm sorry, I don't mean to be controversial for your first time with us. Who is your favorite team member?
 
@@ -178,7 +178,7 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** You can _only_ pick one. And yes, you do have to pick.
 
-**John:** Oh man, I love everybody. I've had nothing but positive interactions with the Numerai team from you, Jon, to [Anson](https://twitter.com/ansonschu), to [NJ](https://twitter.com/tasha\_jade), to [Richard](https://twitter.com/richardcraib), to [Jonathan](https://twitter.com/jonathansidego) ... everyone is just so approachable and friendly. I think that's such an important characteristic of a startup. Approachability is so important because in the hedge fund space we see a lack of that. So I don't have a tally for who won each week or the total count but I think I'll give Jonathan a shout out because he totally taught me a phrase called **conspicuous consumption** which is basically calling out baby boomers for needing to keep up with the Joneses. We were talking about the diamond market.
+**John:** Oh man, I love everybody. I've had nothing but positive interactions with the Numerai team from you, Jon, to [Anson](https://twitter.com/ansonschu), to [NJ](https://twitter.com/tasha_jade), to [Richard](https://twitter.com/richardcraib), to [Jonathan](https://twitter.com/jonathansidego) ... everyone is just so approachable and friendly. I think that's such an important characteristic of a startup. Approachability is so important because in the hedge fund space we see a lack of that. So I don't have a tally for who won each week or the total count but I think I'll give Jonathan a shout out because he totally taught me a phrase called **conspicuous consumption** which is basically calling out baby boomers for needing to keep up with the Joneses. We were talking about the diamond market.
 
 **Arbitrage:** DeBeers makes a lot of money for selling little rocks.
 
@@ -190,13 +190,13 @@ _Author's note: Arbitrage occasionally goes by the irl handle Jon._
 
 **Arbitrage:** So do you have ten models now?
 
-**John:** As of now, yes. My tenth model is spelled like this: \[in chat] [big\_joe](https://numer.ai/big\_joe). I have four staked accounts, and now six other accounts that are just for testing. Big Joe is the last one. I think Big Joe is a slightly better (only slightly better) version of [Rock o Run](https://numer.ai/rockorun), but I'm going to be testing because it is different.
+**John:** As of now, yes. My tenth model is spelled like this: \[in chat] [big\_joe](https://numer.ai/big_joe). I have four staked accounts, and now six other accounts that are just for testing. Big Joe is the last one. I think Big Joe is a slightly better (only slightly better) version of [Rock o Run](https://numer.ai/rockorun), but I'm going to be testing because it is different.
 
 **Arbitrage:** Yeah, I just staked on all ten of my accounts now, so I'm out of testing and I'm doing it live, fam. That started today, so we'll see how it goes. John I would just encourage you to put a small amount on every one of them. \*\*\*\*I put 25 NMR at risk, took some out of my main account and moved it into those test accounts. They seem to be doing okay. I would say, don't be afraid to test it in production. Here's where I get the confidence to say that: if you have a main model you're staking on, you're very unlikely to make such a tragic mistake that you burn every single week at 25%. You've already proven to yourself that you know enough about the data not to make a tragic error. Once you cross that threshold, then, I think, you have enough confidence in yourself that you can put a little skin in the game, if you will.
 
 **John:** For sure.
 
-**Arbitrage:** I also think it holds you a little more accountable, too. I was screwing around on [Arbitrage 4](https://numer.ai/arbitrage\_4) before but now that I've staked on it, I have to be careful.
+**Arbitrage:** I also think it holds you a little more accountable, too. I was screwing around on [Arbitrage 4](https://numer.ai/arbitrage_4) before but now that I've staked on it, I have to be careful.
 
 **John:** I'm finding similarities in the way I approach this competition to the early, Wild West days of online poker in the early 2000's. The only difference is MMC is one million times harder than it was figuring out how to exploit uneducated poker players back in the day. But my stake strategy is sort of similar. Back in those days, in order to move up in stakes you had to take calculated risk. Say I had a bankroll of $1,000 and I'm risking 5% of that bankroll every time I'm playing whatever limits I was playing. There will come a time where, if you're getting more confident in your game, or you want to try to maximize your reward, where you're going to need to take risks if you want to accelerate your growth. That was my approach to online poker in the early 2000's, and it's a similar approach to what I'm doing now.
 
@@ -238,7 +238,7 @@ _Author's note: Same._
 
 **Arbitrage:** Sunrise is a very special time in South Florida. Dawn patrol, baby! Get out on a long board and just ride. That's what I used to do. I skipped a lot of high school to go surfing. My parents were like, "it was a miracle you graduated high school- don't do that again." Then I went to college, flunked out the first time because I was partying too much, so I closely resemble what you said earlier about not partying so much. But that's life, right? Look where I am now.
 
-![](<../../../../.gitbook/assets/rank (1).png>)
+![](../../../../.gitbook/assets/rank.png)
 
 **Arbitrage:** I think I'm alright. And you're doing well, too, so it all works out. And the other one you said was, 'interesting career story' - give us one!
 
@@ -250,7 +250,7 @@ _Author's note: Same._
 
 **John cont:** It got to the point where his book was so messed up that I literally could not reconcile his positions. During this chaotic time, people are very angry and don't want to be bothered. As a young kid, I'm running around trying to get information, 'did he make this trade?' Long story short, he was so stressed out, I said, "I think we're long X amount of deltas and have these spreads on." As a trading assistant I'm doing this. He's like, "just do what you need to do."
 
-![](../../../../.gitbook/assets/buy-sell.gif)
+![](<../../../../.gitbook/assets/buy sell.gif>)
 
 **John:** So as a 23-year-old kid, I'm saying to myself, "he wants me to go execute 400 futures and 500 spreads? What do I do?" And then he started yelling, "go do it! Go do it!" So, I calculated his position and I executed it and ended up saving a ton of money, which he was grateful for. That was a very unique and stressful experience as a young trading assistant.
 
@@ -264,7 +264,7 @@ _Author's note: Same._
 
 **Arbitrage:** I love open trading pits and the research around that. Tyler Shumway has a [great journal article](https://www.jstor.org/stable/3094570?seq=1) on that about the weather effecting pit trading. It's brilliant. John, thank you so much for coming on today and taking some of my questions. Really appreciate it. We're at time for questions, but if you can stick around, maybe we can circle back and talk about some of your models if you want to talk about that? We mentioned the 22% swing today and you wanted to speak to that. Let me pull up the questions. Did you see Slyfox's question about what books are you reading or listening to?
 
-**John:** Oh, I did not, sorry. I'll type those in right now. \[In chat] [Reality is not What it Seems](https://www.penguinrandomhouse.com/books/549244/reality-is-not-what-it-seems-by-carlo-rovelli/) & [The Order of Time](https://www.amazon.com/The-Order-of-Time-Benedict-Cumberbatch/dp/B07B4JS88Q/ref=sr\_1\_2?dchild=1\&keywords=the+order+of+time\&qid=1592931493\&s=books\&sr=1-2).
+**John:** Oh, I did not, sorry. I'll type those in right now. \[In chat] [Reality is not What it Seems](https://www.penguinrandomhouse.com/books/549244/reality-is-not-what-it-seems-by-carlo-rovelli/) & [The Order of Time](https://www.amazon.com/The-Order-of-Time-Benedict-Cumberbatch/dp/B07B4JS88Q/ref=sr_1_2?dchild=1\&keywords=the+order+of+time\&qid=1592931493\&s=books\&sr=1-2).
 
 ### Questions from Slido
 
@@ -292,7 +292,7 @@ John explained a bit of his approach to MMC models: when looking at the data set
 
 **Can one measure potential MMC before going 'live'? If not, how many live rounds are needed to evaluate an MMC model?**
 
-Arbitrage pointed out that there are good proxies for the meta-model: [Example Predictions](https://numer.ai/integration\_test) are around 95% correlated with the meta-model almost all the time. He suggested starting there and then going orthogonal to a different model type, like XGBoost. That should give you positive correlation and MMC.
+Arbitrage pointed out that there are good proxies for the meta-model: [Example Predictions](https://numer.ai/integration_test) are around 95% correlated with the meta-model almost all the time. He suggested starting there and then going orthogonal to a different model type, like XGBoost. That should give you positive correlation and MMC.
 
 > "If you're 95% of the way there, there's not much left for you to be wrong about." - Arbitrage
 
@@ -362,6 +362,6 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Jason_](https://numer.ai/rockorun)_, _Mike P_, [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_John Scaife_](https://numer.ai/johnscaife\_) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Jason_](https://numer.ai/rockorun), _Mike P_, [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_John Scaife_](https://numer.ai/johnscaife_) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 \*\*\*\*

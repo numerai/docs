@@ -36,9 +36,9 @@ In a scenario where a submission is 75% long and 25% short with positive correla
 
 **Any feedback or feature requests for the Numerati Dashboard?**
 
-The [Numerati Dashboard](https://www.jofaichow.co.uk/numerati/) is a project by tournament data scientist [Jo-fai](https://twitter.com/matlabulous) (Joe) aka [IA\_AI](https://numer.ai/ia\_ai). Joe built the dashboard to easily compare multiple tournament models. You can even select individual models to compare:
+The [Numerati Dashboard](https://www.jofaichow.co.uk/numerati/) is a project by tournament data scientist [Jo-fai](https://twitter.com/matlabulous) (Joe) aka [IA\_AI](https://numer.ai/ia_ai). Joe built the dashboard to easily compare multiple tournament models. You can even select individual models to compare:
 
-![Comparing Arbitrage with Beanstalk](../../../../.gitbook/assets/beanstalk-v-arbitrage.png)
+![Comparing Arbitrage with Beanstalk](<../../../../.gitbook/assets/beanstalk v arbitrage.png>)
 
 **Arbitrage asks Richard: what is the best submission type for the meta-model right now? What does that model look like?**
 
@@ -69,7 +69,7 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Quantverse:** I live in Prague, the capitol of the Czech Republic, a small country in Central Europe. It's already like, 10:00 pm now here.
 
-![](<../../../../.gitbook/assets/prague (1).png>)
+![](../../../../.gitbook/assets/prague.png)
 
 **Arbitrage:** So Quantverse, what do you do for a living?
 
@@ -87,7 +87,7 @@ Arbitrage thought that would be a good idea because it would make it apparent wh
 
 **Quantverse:** Yeah... that's a good question! They basically know I'm doing projects related to bitcoin. They kind of know what bitcoin is already. Actually, they think I work for some weird American hedge fund.
 
-![Fair enough.](../../../../.gitbook/assets/hedge-fund.png)
+![Fair enough.](<../../../../.gitbook/assets/hedge fund.png>)
 
 **Quantverse:** It was really difficult to explain how the whole Numerai project actually works, so they probably just think I'm an employee or contractor. Pretty much they know I'm doing some stuff related to brokers and exchanges, but they don't really know the details. I think it's enough for them to grasp the principles of what I'm doing.
 
@@ -187,7 +187,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Arbitrage:** Quantverse I imagine that's probably why we huddle together \[on the leaderboard] sometimes, because I'm doing that with some of my stuff. We had a huge sidebar on your first tip, which is cross validation; what's your second one?
 
-**Quantverse:** Second tip is mostly for people new to the competition. If you look at the example predictions, it's [actually quite a good model](https://numer.ai/integration\_test). So for people just starting, maybe it's okay for them to take that model and try to understand how it works and why, and try to beat it. Use it as a baseline to beat, because if you beat it by just one rank, you're at rank 35 or 34.
+**Quantverse:** Second tip is mostly for people new to the competition. If you look at the example predictions, it's [actually quite a good model](https://numer.ai/integration_test). So for people just starting, maybe it's okay for them to take that model and try to understand how it works and why, and try to beat it. Use it as a baseline to beat, because if you beat it by just one rank, you're at rank 35 or 34.
 
 **Arbitrage:** I think some people who are struggling, even after a period of participation, would benefit from doing that too. So what is your third tip, my friend?
 
@@ -205,7 +205,7 @@ _Author's note: can confirm the salsa dancing scene in Prague is awesome_ 🕺�
 
 **Quantverse:** That's a tough question, but I think I'll vote for Anson actually. I've met him already in Prague.
 
-![Slyfox has a handsome lead.](../../../../.gitbook/assets/anson-again.gif)
+![Slyfox has a handsome lead.](<../../../../.gitbook/assets/anson again.gif>)
 
 **Arbitrage:** Yeah, he's a cool dude, I'll vouch for him.
 
@@ -239,4 +239,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Richard_](https://twitter.com/richardcraib)_, [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Quantverse_](https://numer.ai/quantverse) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Richard_](https://twitter.com/richardcraib), [_JRB,_](https://numer.ai/jrb) _and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Quantverse_](https://numer.ai/quantverse) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

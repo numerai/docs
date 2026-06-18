@@ -6,7 +6,7 @@ description: From September 17, 2020 / Michael Oliver round two
 
 For the second episode of Season Three, longtime competitor and now Numerai team member [Michael Oliver](https://numer.ai/mdo) returned to talk about [Target Nomi](https://forum.numer.ai/t/new-target-nomi-release/959), the latest iteration of the Numerai tournament.
 
-![Kazutsugi vs Nomi](<../../../../.gitbook/assets/target-nomi (1).png>)
+![Kazutsugi vs Nomi](../../../../.gitbook/assets/target-nomi.png)
 
 The full interview and discussion with Michael Oliver on Target Nomi will be published on YouTube.
 
@@ -48,7 +48,7 @@ Richard explained that because the new diagnostics make the average user more aw
 
 Michael Oliver explained that Nomi targets have a different distribution so the extreme values (0, 1) are only going to be 5% of the targets per era (previously they were each 20%). He said that 0.25's and 0.75's will each be 20%, and that 0's would be 50%. In terms of correlation, the models seem to perform almost identically but with lower volatility for your score on the new targets.
 
-**When feature neutralization tutorial** [**on Twitch**](https://www.twitch.tv/prof\_jtaylor)**?**
+**When feature neutralization tutorial** [**on Twitch**](https://www.twitch.tv/prof_jtaylor)**?**
 
 Arbitrage is working through some technical challenges, but hopes to have one soon.
 
@@ -72,4 +72,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi,_ to_ [_Richard_ ](https://twitter.com/richardcraib)_for joining and contributing to answers,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi, to_ [_Richard_ ](https://twitter.com/richardcraib)_for joining and contributing to answers,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

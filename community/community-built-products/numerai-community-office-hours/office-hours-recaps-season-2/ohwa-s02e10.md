@@ -6,7 +6,7 @@ description: From August 13, 2020 / Suraj interview
 
 For this episode, Arbitrage interviewed data scientist [Suraj P](https://numer.ai/surajp), who recently published a [guide to participating in the Numerai tournament](https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690).
 
-![Great turnout for episode 10](<../../../../.gitbook/assets/everybody (1).png>)
+![Great turnout for episode 10](../../../../.gitbook/assets/everybody.png)
 
 Check out Suraj's interview on YouTube:
 
@@ -26,7 +26,7 @@ One of the most mysterious users on the leaderboard, Sorios is often requested a
 
 Arbitrage explained that he's staked six of his ten models on MMC + Corr, and he's mostly happy with that decision. "Only one model is hurting me, but overall I think it's been good," he said. MMC performance is highly dependent on how everyone else is doing, making it more unpredictable, but Arbitrage is going to stick with it.
 
-From the team, [Mike P](https://numer.ai/master\_key) said that they're happy with how many people are using MMC. He added that he's overall really happy with MMC, but doesn't think the community will be as enthusiastic as he is because it's _very_ difficult to consistently perform well on MMC. "I think there's always going to be an air of confusion around 'why is it down?' and that bothers me a bit," Mike said, "But other than that, I'm happy with all of the usage and how it's working out."
+From the team, [Mike P](https://numer.ai/master_key) said that they're happy with how many people are using MMC. He added that he's overall really happy with MMC, but doesn't think the community will be as enthusiastic as he is because it's _very_ difficult to consistently perform well on MMC. "I think there's always going to be an air of confusion around 'why is it down?' and that bothers me a bit," Mike said, "But other than that, I'm happy with all of the usage and how it's working out."
 
 **What kind of leaderboard do we want/need once reputation bonuses phase out?**
 
@@ -48,7 +48,7 @@ Arbitrage definitely sees a future where that's possible for someone who _choose
 
 **Are Numerai employees allowed to actively participate in the tournament? Or are they only allowed to submit models created before hiring?**
 
-[Mike P](https://numer.ai/master\_key) said that Numerai previously had a rule prohibiting team members from participating because of the potential to take reputation bonuses away from other users. With the rep bonus phasing out, it's less clear how employees being in the tournament effect other users; as Mike said, "there's no real victim in letting the employees actively participate," noting also that this is something they're discussing internally.
+[Mike P](https://numer.ai/master_key) said that Numerai previously had a rule prohibiting team members from participating because of the potential to take reputation bonuses away from other users. With the rep bonus phasing out, it's less clear how employees being in the tournament effect other users; as Mike said, "there's no real victim in letting the employees actively participate," noting also that this is something they're discussing internally.
 
 [Slyfox](https://twitter.com/ansonschu) added that if there were any data the Numerai team had access to which would result in better model performance, the first thing they would do is release that data to the tournament participants. As Slyfox explained, Numerai makes money when the meta-model predictions are accurate, so the incentives are aligned between the team and the data scientists. "There's nothing that we are trying to win from you," he said.
 
@@ -76,10 +76,10 @@ Arbitrage suspects that in the near future, models that handle burn periods well
 
 **When do you interview yourself for Office Hours with Arbitrage? I would love to hear your top 3 tips.**
 
-Arbitrage would love to, so stay tuned. There's also another Data Science Happy Hour in the works, and [NJ](https://twitter.com/tasha\_jade) will be a special guest on an upcoming episode.
+Arbitrage would love to, so stay tuned. There's also another Data Science Happy Hour in the works, and [NJ](https://twitter.com/tasha_jade) will be a special guest on an upcoming episode.
 
 _If you’re passionate about finance, machine learning, or data science and you’re not competing in_[ _the most challenging data science tournament in the world_](https://numer.ai/tournament)\_, what are you waiting for?
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_JRB_](https://numer.ai/jrb)_, _Mike P, and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Suraj_](https://numer.ai/surajp) _for being interviewed and writing an awesome_ [_guide to the tournament_](https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690)_,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_JRB_](https://numer.ai/jrb), _Mike P, and_ [_Slyfox_](https://twitter.com/ansonschu) _for contributing to answers during this Office Hours, to_ [_Suraj_](https://numer.ai/surajp) _for being interviewed and writing an awesome_ [_guide to the tournament_](https://medium.com/@parmarsuraj99/a-guide-to-the-hardest-data-science-tournament-on-the-planet-748f46e83690)_,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

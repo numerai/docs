@@ -6,7 +6,7 @@ description: From October 01, 2020 / Fireside chat post-mortem
 
 For episode four of the season, Arbitrage wanted to discuss the previous day's [Q4 fireside chat](https://www.youtube.com/watch?v=mbwMXUzPot4\&feature=youtu.be) with [Richard Craib](https://twitter.com/richardcraib) and [Anson Chu](https://twitter.com/ansonschu).
 
-![Check out the fireside chat on YouTube](../../../../.gitbook/assets/fireside-boys.png)
+![Check out the fireside chat on YouTube](<../../../../.gitbook/assets/fireside boys.png>)
 
 The full discussion of the fireside chat will be available on the [Numerai YouTube channel](https://youtube.com/numerai).
 
@@ -48,4 +48,4 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi (again again),_ to_ [_Wigglemuse_](https://numer.ai/wigglemuse) _and_ [_JRB_ ](https://numer.ai/jrb)_for contributing to this week's discussion,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Michael Oliver_](https://numer.ai/mdo) _for talking about Nomi (again again), to_ [_Wigglemuse_](https://numer.ai/wigglemuse) _and_ [_JRB_ ](https://numer.ai/jrb)_for contributing to this week's discussion,_ _and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._

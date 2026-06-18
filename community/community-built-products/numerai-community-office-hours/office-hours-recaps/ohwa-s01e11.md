@@ -46,7 +46,7 @@ For episode 11, Dr. Rudi Kuhn aka [Themicon](https://numer.ai/themicon), who gra
 
 **Arbitrage:** Does that explain your profile picture?
 
-![Aliens exist (probably)](<../../../../.gitbook/assets/themicon (1).jpg>)
+![Aliens exist (probably)](../../../../.gitbook/assets/themicon.jpg)
 
 **Themicon:** Yes it does.
 

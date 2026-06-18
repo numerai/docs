@@ -8,7 +8,7 @@ description: Everything you need to know to make your first Signals submission.
 
 Underlying data used to create signals can be very different (audited financials vs news articles vs images of parking lots), but all Signals submissions must use the same basic format - a list of stock tickers each with an associated numerical value between 0 and 1:
 
-![An example stock market signal](<../.gitbook/assets/group-42-2 (1).png>)
+![An example stock market signal](../.gitbook/assets/group-42-2.png)
 
 The list of stock tickers in your submission are defined by the **Numerai Signals stock market universe.** It covers roughly the top 5000 largest stocks in the world and it is updated every day. In general, only a couple low volume stocks will move in or out on a given day.
 
@@ -38,7 +38,7 @@ napi = SignalsAPI("[your api public id]", "[your api secret key]")
 sapi.upload_predictions("[path to your submission]", model_id="your-model-id")
 ```
 
-* You can use any of following&#x20;
+* You can use any of following
   * [Numerapi](https://github.com/uuazed/numerapi) (official Python client)
   * [RNumerai](https://github.com/OmniacsDAO/Rnumerai) (unofficial R client)
   * Raw [GraphQL API](https://api-tournament.numer.ai/) for other languages

@@ -4,7 +4,7 @@ description: From July 2, 2020 / Yuki interview
 
 # OHwA S02E05
 
-For the fifth episode of Season 2, Arbitrage was joined by [Yuki](https://twitter.com/blog\_uki), a machine learning trader based in Japan and who recently wrote [an outstanding article on the Numerai tournament](https://towardsdatascience.com/numerai-tournament-blending-traditional-quantitative-approach-modern-machine-learning-67ebbb69e00c).
+For the fifth episode of Season 2, Arbitrage was joined by [Yuki](https://twitter.com/blog_uki), a machine learning trader based in Japan and who recently wrote [an outstanding article on the Numerai tournament](https://towardsdatascience.com/numerai-tournament-blending-traditional-quantitative-approach-modern-machine-learning-67ebbb69e00c).
 
 ![Office Hours starts at 5:00 am for Yuki ](../../../../.gitbook/assets/uki.png)
 
@@ -16,7 +16,7 @@ You can check out [the full interview after the Slido questions below](ohwa-s02e
 
 > "Yes! They still need us!" - Arbitrage
 
-Groupthink is real and can be a problem. Arbitrage used the example of [Michael Oliver](https://numer.ai/mdo) and [Mike P](https://numer.ai/master\_key), both top competitors who now work for Numerai. He pointed out that the differences in their learning has converged now that they're in the same environment, so Numerai gets the immediate benefit of hiring a highly skilled outsider but over time that new hire converges to confirm with their peers.
+Groupthink is real and can be a problem. Arbitrage used the example of [Michael Oliver](https://numer.ai/mdo) and [Mike P](https://numer.ai/master_key), both top competitors who now work for Numerai. He pointed out that the differences in their learning has converged now that they're in the same environment, so Numerai gets the immediate benefit of hiring a highly skilled outsider but over time that new hire converges to confirm with their peers.
 
 Ultimately Numerai will still need other data scientists because everyone who competes has different life experiences influencing their modeling and how they look at the problem set. "That's how we're going to move the meta-model forward," Arbitrage said, "by having a very diverse user base that's just trying to solve the problem in a different way. Numerai could never hire enough data scientists to get the meta-model just right, because once you get the data, you overfit."
 
@@ -44,11 +44,11 @@ Arbitrage asked Yuki to help answer this one.
 
 Arbitrage sees it expanding but hopes that as more new people join, they'll stick around longer. "There's too much churn," he said. More users help because they bring more eyes onto the problem.
 
-**How sad is it that most of us can't seem to beat the** [**example predictions**](https://numer.ai/integration\_test)**?**
+**How sad is it that most of us can't seem to beat the** [**example predictions**](https://numer.ai/integration_test)**?**
 
 According to Arbitrage, the example predictions have really high correlation but they're not optimizing for sharpe. That means staking on the example model is risky (as someone pointed out in [Rocket.Chat](https://community.numer.ai), the example model fell below rank 500 for a period of time).
 
-Arbitrage's current hypothesis is that if you can beat the example predictions' Numerai sharpe ([explained in Season 2 Episode 4](https://app.gitbook.com/@numerai/s/numerai-tournament/\~/drafts/-MBk52zVAW8rxh18b6UM/office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e04)), your model is likely to beat the example model.
+Arbitrage's current hypothesis is that if you can beat the example predictions' Numerai sharpe ([explained in Season 2 Episode 4](https://app.gitbook.com/@numerai/s/numerai-tournament/~/drafts/-MBk52zVAW8rxh18b6UM/office-hours-with-arbitrage/office-hours-recaps-season-2/ohwa-s02e04)), your model is likely to beat the example model.
 
 **Are MMC and correlation so different such that we would never see a single model be ranked in the top 50 for both tournaments?**
 
@@ -191,9 +191,9 @@ Richard Craib : *sqrt(12)
 
 **Arbitrage:** We're sticking to someone on the team, I don't want to cause fights among my friends.
 
-**Yuki:** Okay, okay. Favorite member of Numerai. It's definitely [NJ](https://twitter.com/tasha\_jade).
+**Yuki:** Okay, okay. Favorite member of Numerai. It's definitely [NJ](https://twitter.com/tasha_jade).
 
-![](../../../../.gitbook/assets/vote-for-nj.gif)
+![](<../../../../.gitbook/assets/vote for nj.gif>)
 
 **Yuki:** When I write articles, she's very good at helping me out.
 
@@ -221,7 +221,7 @@ Richard Craib : *sqrt(12)
 
 **Yuki:** It's a difficult question. But, if I were you, I would ask tips for the _real_ market.
 
-![Did someone say "real" market?](<../../../../.gitbook/assets/ooooo (1).gif>)
+![Did someone say "real" market?](../../../../.gitbook/assets/ooooo.gif)
 
 **Arbitrage:** I definitely have kind of avoided that. So Yuki, what are your tips for the real stock market?
 
@@ -239,6 +239,6 @@ _If you’re passionate about finance, machine learning, or data science and you
 
 Don’t miss the next Office Hours with Arbitrage : follow\_[ _Numerai on Twitter_](http://twitter.com/numerai) _or join the discussion on_[ _Rocket.Chat_](https://community.numer.ai/home) \_for the next time and date.
 
-_Thank you to [_Richard_](https://twitter.com/richardcraib)_, [_JRB_](https://numer.ai/jrb)_, and_ _Mike P_ _for contributing to answers during this Office Hours, to_ [_Yuki_](https://numer.ai/uki) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
+_Thank you to_ [_Richard_](https://twitter.com/richardcraib), [_JRB_](https://numer.ai/jrb)_, and_ _Mike P_ _for contributing to answers during this Office Hours, to_ [_Yuki_](https://numer.ai/uki) _for being interviewed, and to_ [_Arbitrage_](https://numer.ai/arbitrage) _for hosting._
 
 _Take some time to read_ [_Yuki's post on the Numerai tournament_](https://towardsdatascience.com/numerai-tournament-blending-traditional-quantitative-approach-modern-machine-learning-67ebbb69e00c)_._

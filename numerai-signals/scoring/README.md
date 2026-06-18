@@ -4,11 +4,11 @@ There are two main scores currently used for payouts
 
 * [Feature Neutral Correlation](../../numerai-tournament/scoring/feature-neutral-correlation.md) (`FNCv4`): Your [neutralized](./#neutralization) prediction's correlation to the target
   * The target used for this is `target_factor_feat_neutral_20` (returns [neutralized](./#neutralization) to common features and factors, yielding "residual return")
-* &#x20;[Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`): Your predictions' contribution to the Meta Model
+* [Meta Model Contribution](../../numerai-tournament/scoring/meta-model-contribution-mmc.md) (`MMC`): Your predictions' contribution to the Meta Model
 
 Numerai be will transitioning to paying on different scores for rounds on or after September 2, 2025:
 
-* Alpha: Your neutral-weighted predictions multiplied by the `chili` target&#x20;
+* Alpha: Your neutral-weighted predictions multiplied by the `chili` target
 * Meta Portfolio Contribution (`MPC` ): Your predictions' contribution to the Meta Portfolio
 
 We also have informational scores not used for payouts:
@@ -23,13 +23,13 @@ For a full list of detailed explanations please see the [definitions docs](defin
 
 A signal or target is considered "neutral" when it has zero correlation with some set of existing signals. The point of the neutralization is to isolate the original or orthogonal component of the signal that is not already present in existing signals.
 
-![A visualization of neutralization against a single known signal](<../../.gitbook/assets/image (53) (1).png>)
+![A visualization of neutralization against a single known signal](<../../.gitbook/assets/image (40).png>)
 
 {% hint style="warning" %}
 If you submit a simple linear combination of a few well-known signals, there will be little to no orthogonal component after neutralization.
 {% endhint %}
 
-Numerai has a variety of existing signals including Barra factors (like size, value, momentum, etc), country and sector risk factors, and custom stock features. Not all of these existing signals are not provided to you, which makes this process somewhat "blackbox".&#x20;
+Numerai has a variety of existing signals including Barra factors (like size, value, momentum, etc), country and sector risk factors, and custom stock features. Not all of these existing signals are not provided to you, which makes this process somewhat "blackbox".
 
 By neutralizing your signal before scoring, Numerai aligns it with the neutralized target which may improve its performance against the target without Numerai having to give out the data used for neutralization. For example, if your signal is not neutralized to country risks, Numerai Signals will neutralize your signal against country risks before scoring. This allows you to focus on creating an original signal without having to worry about country risk neutralization.
 

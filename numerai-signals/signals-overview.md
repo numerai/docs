@@ -72,7 +72,7 @@ model.fit(
 
 Signals submissions are very similar to the Numerai Tournament (see [here](../numerai-tournament/submissions/)), except you use stock tickers instead of ids. Your signals should be a list of stock tickers each with a numerical value:
 
-![An example stock market signal](<../.gitbook/assets/group-42-2 (1).png>)
+![An example stock market signal](../.gitbook/assets/group-42-2.png)
 
 The list of stock tickers in your submission are defined by the **Numerai Signals stock market universe.** And the numerical values should be between 0 and 1.
 
