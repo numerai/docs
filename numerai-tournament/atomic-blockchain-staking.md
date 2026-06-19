@@ -68,7 +68,7 @@ The payout settings for each tournament will migrate to the following:
 | ---------- | ---- | -------------- | ---------------- |
 | Crypto     | 1    | 10000          | 0.1xCORR + 1xMMC |
 | Signals    | 1    | 36000          | 4xALPHA + 8xMPC  |
-| Numerai    | 1    | 72000          | 4.5xCORR + 9xMMC |
+| Numerai    | 1    | 72000          | 3xCORR + 9xMMC   |
 
 ## Withdrawing NMR
 
