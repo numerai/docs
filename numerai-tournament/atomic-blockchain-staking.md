@@ -67,8 +67,8 @@ The payout settings for each tournament will migrate to the following:
 | Tournament | Clip | Stake Threshol | Multipliers      |
 | ---------- | ---- | -------------- | ---------------- |
 | Crypto     | 1    | 10000          | 0.1xCORR + 1xMMC |
-| Numerai    | 1    | 36000          | 4.5xCORR + 9xMMC |
-| Signals    | 1    | 72000          | 4xALPHA + 8xMPC  |
+| Signals    | 1    | 36000          | 4xALPHA + 8xMPC  |
+| Numerai    | 1    | 72000          | 4.5xCORR + 9xMMC |
 
 ## Withdrawing NMR
 
