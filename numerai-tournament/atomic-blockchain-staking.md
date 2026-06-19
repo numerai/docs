@@ -67,7 +67,7 @@ The payout settings for each tournament will migrate to the following:
 | Tournament | New Clip | New Payout Factor | Multipliers      |
 | ---------- | -------- | ----------------- | ---------------- |
 | Crypto     | 1        | 1                 | 0.1xCORR + 1xMMC |
-| Numerai    | 1        | 1                 | 5xCORR + 1xMMC   |
+| Numerai    | 1        | 1                 | 5xCORR + 10xMMC  |
 | Signals    | 1        | 1                 | 4xALPHA + 8xMPC  |
 
 ## Withdrawing NMR
