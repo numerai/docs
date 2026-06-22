@@ -105,8 +105,8 @@ The legacy off-chain continuous staking system is being replaced by Atomic Block
 | Tournament | First v3 staking round | Expected migration length |
 | ---------- | ---------------------- | ------------------------- |
 | Crypto     | June 18, 2026          | 24 business days          |
-| Numerai    | June 25, 2026          | 24 business days          |
-| Signals    | June 25, 2026          | 64 business days          |
+| Numerai    | July 10, 2026          | 24 business days          |
+| Signals    | July 10, 2026          | 64 business days          |
 
 Migrating from the current continuous staking protocol to the new Atomic Blockchain Staking protocol is complicated. So let’s break down what that will look like:
 
