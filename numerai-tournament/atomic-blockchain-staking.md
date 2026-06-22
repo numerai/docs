@@ -1,8 +1,8 @@
 # Atomic Blockchain Staking
 
-Atomic Blockchain Staking (ABS) is Numerai's new blockchain-native staking system. It is also referred to as "v3 staking". It locks NMR atomically per round, tracks each model's stake independently, and lets resolved stakes be claimed when a round resolves. ABS is currently only supported for [Numerai Crypto](https://app.gitbook.com/s/-LmGruQ_-ZYj9XMQUd5x/numerai-crypto "mention") with support for other tournaments coming soon.
+Atomic Blockchain Staking is Numerai's new blockchain-native staking system. It is also referred to as "v3 staking". It locks NMR atomically per round, tracks each model's stake independently, and lets resolved stakes be claimed when a round resolves. Atomic Blockchain Staking is currently only supported for [Numerai Crypto](https://app.gitbook.com/s/-LmGruQ_-ZYj9XMQUd5x/numerai-crypto "mention") with support for other tournaments coming soon.
 
-You can interact with ABS on the [Dashboard](https://numer.ai/dashboard) > **V3 Stakes page:**, which allows you to connect to your wallet and manage your staking strategy:
+You can interact with Atomic Blockchain Staking on the [Dashboard](https://numer.ai/dashboard) > **V3 Stakes page:**, which allows you to connect to your wallet and manage your staking strategy:
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-06-18 at 10.37.43.png" alt=""><figcaption></figcaption></figure>
 
