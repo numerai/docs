@@ -9,27 +9,27 @@ There are two main scores currently used for payouts
 
 We also have informational scores not used for payouts
 
-* [Feature Neutral Correlation (FNC)](feature-neutral-correlation.md): Your prediction's correlation to the target after neutralizing against all features &#x20;
+* [Feature Neutral Correlation (FNC)](feature-neutral-correlation.md): Your prediction's correlation to the target after neutralizing against all features
 * Correlation with the Meta Model (CWMM): Your prediction's correlation to the Meta Model (stake weighted average of all predictions).
 * Benchmark Model Contribution (BMC): Your prediction's correlation to the target after neutralizing against the stake-weighted Benchmark Models.
 
 ## Live Scoring
 
-Within a single round, submissions will receive 20 score updates until the final score of the round is computed. Let's look at the example of a weekend round:
+Within a single round, submissions will receive 20 score updates until the final score of the round is computed. Let's look at an example of a weekend round:
 
-<figure><img src="../../.gitbook/assets/scoring_calendar_1 (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Numerai Engineering Master - General.png" alt=""><figcaption></figcaption></figure>
 
-The round opens on Saturday the 6th and closes on Monday the 8th. The first day of scoring is on Friday 12th (4 days later), with daily updates every day, Tuesday through Saturday. The final score is released about a month later, on Thursday the 8th.
+We score you against a target loosely based market returns of a stock. These market returns take 2 days to process, then we ignore the first 2 days of returns (known as **2 Lag** days) because they are noisy. Thus, 4 total business days elapse before we can start scoring. The final score is released 4 weeks later because we care about the stock returns over **20** (business) **Days.**
 
-Scoring is done over these 20 days because the main target is calculated using 20 days of total returns. It takes 4 days to get the first score because it takes 2 days to process data and the main target lags 2 days behind trading - this means we ignore 2 days of returns before starting the 20 day clock. This timeline is commonly referred to as "**20D2L**" - **20** **D**ays of returns after **2** **L**ag days:
+This is known as a "_**20D2L target**_" - _**20**_ _**D**_&#x61;ys of returns after _**2**_ _**L**_&#x61;g days:
 
-<figure><img src="../../.gitbook/assets/scoring_calendar_2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Numerai Engineering Master - General (1).png" alt=""><figcaption></figcaption></figure>
 
-The first day of scoring on Friday the  12th uses a 1D2L target, which includes returns from Wednesday 10th only. The second day of scoring on Saturday 13th uses a 2D2L target which includes returns from Wednesday 10th through Thursday 11th. The final day of scoring 4 weeks later on Thursday 8th of next month uses a 20D2L target which includes returns starting from Wednesday 10th through Tuesday 6th of the next month. Take a look at the full scoring timeline:
+So, the first day of scoring uses the 1D2L target from 2 days prior. Subsequent days of scoring use the 2D2L target, then 3D2L, etc. The final day of scoring is 4 weeks later, using the final 20D2L target. Here is the full breakdown:
 
-<figure><img src="../../.gitbook/assets/scoring_calendar_3.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Numerai Engineering Master - General (2).png" alt=""><figcaption></figcaption></figure>
 
-Numerai also shows **60D2L** scores, which follow the same logic as **20D2L** scores, but end up resolving 40 business days later (8 weeks later for a total timeline of 12 weeks). Any rounds paying out on **60D2L** scores, will lock up your stake for 12 weeks.
+Numerai also has **60D2L** scores, which follow the same logic as **20D2L** scores, but resolve after 60 business days. Any rounds paying out on **60D2L** scores, will lock up your stake for 12 weeks.
 
 ## The Leaderboards
 
