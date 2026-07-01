@@ -21,9 +21,11 @@ Each round goes through 4 stages over the span of a month:
 * Score: the days that submissions are given scores
 * Resolve: when final scores and payouts are resolved
 
-A new round starts each day Tuesday through Saturday. A round spans 24 business days, or about one month. Since a new round is created on each of those days, we end up with 24 overlapping rounds at any given time. Here is a visualization of the schedule of tournament rounds:
+A new round starts each day Tuesday through Saturday. A round spans 24 business days, or about one month. Since a new round is created on each of those days, we end up with 24 overlapping rounds at any given time.
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Visual representation of Rounds 453 - 477 overlapping</p></figcaption></figure>
+Here is a visualization of our general round schedule of tournament rounds:
+
+<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 Rounds starting Tuesday through Friday are open only for 1 hour, but rounds starting Saturday close on Sunday. Also notice that there are no scores released on Sundays and Mondays. We generally expect rounds to follow this schedule:
 
